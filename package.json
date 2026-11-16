@@ -10,7 +10,8 @@
     "test": "vitest run",
     "e2e": "playwright test",
     "content:check": "tsx scripts/validate-content.ts",
-    "contrast": "tsx scripts/check-contrast.ts"
+    "contrast": "tsx scripts/check-contrast.ts",
+    "build:demo": "vite build --config spa/vite.config.mts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.9.0",
@@ -36,10 +37,12 @@
     "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
     "postcss": "^8.5.33",
     "tailwindcss": "^4.3.5",
     "tsx": "^4.23.15",
     "typescript": "^5.9.3",
+    "vite-plugin-singlefile": "^2.3.4",
     "vitest": "^5.1.0"
   }
 }

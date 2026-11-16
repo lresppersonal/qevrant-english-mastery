@@ -10,6 +10,12 @@ import { ExercisePlayer } from "./ExercisePlayer";
 import { MasteryChip } from "./MasteryChip";
 import { useLearner } from "./StoreProvider";
 
+/** Works for normal URLs and for the single-file demo's #/route URLs. */
+function setSectionHash(name: string | null) {
+  const route = location.hash.startsWith("#/") ? `#${location.hash.slice(1).split("#")[0]}` : "";
+  history.replaceState(null, "", route ? (name ? `${route}#${name}` : route) : (name ? `#${name}` : location.pathname));
+}
+
 const LINK_LABEL = { prerequisite: "Builds on", extends: "Leads to", contrasts_with: "Compare with", practises: "Practised in", appears_in: "Appears in" } as const;
 
 export function LessonView({ lesson, exercises }: { lesson: GrammarLesson; exercises: Exercise[] }) {
@@ -20,7 +26,7 @@ export function LessonView({ lesson, exercises }: { lesson: GrammarLesson; exerc
   // Deep links: #section-id opens Theory at that section, #practice opens Practice.
   useEffect(() => {
     const apply = () => {
-      const h = decodeURIComponent(location.hash.slice(1));
+      const h = decodeURIComponent(location.hash.split("#").pop() ?? "");
       if (h === "practice") { setTab("practice"); return; }
       if (lesson.sections.some((s) => s.id === h)) {
         setTab("theory");
@@ -70,7 +76,7 @@ export function LessonView({ lesson, exercises }: { lesson: GrammarLesson; exerc
         <p className="mt-3 max-w-2xl text-[17px] leading-relaxed text-muted">{lesson.summary}</p>
       </header>
 
-      <Tabs.Root value={tab} onValueChange={(v) => { setTab(v as typeof tab); history.replaceState(null, "", v === "practice" ? "#practice" : location.pathname); }}>
+      <Tabs.Root value={tab} onValueChange={(v) => { setTab(v as typeof tab); setSectionHash(v === "practice" ? "practice" : null); }}>
         <Tabs.List aria-label="Lesson parts" className="mb-6 inline-flex rounded-xl border border-line bg-surface p-1">
           {(["theory", "practice"] as const).map((t) => (
             <Tabs.Trigger key={t} value={t} className="rounded-lg px-5 py-2 text-sm font-semibold capitalize text-muted data-[state=active]:bg-primary data-[state=active]:text-primary-fg">
@@ -109,7 +115,7 @@ export function LessonView({ lesson, exercises }: { lesson: GrammarLesson; exerc
                 </ul>
               </section>
 
-              <button onClick={() => { setTab("practice"); history.replaceState(null, "", "#practice"); window.scrollTo({ top: 0 }); }} className="btn btn-primary">
+              <button onClick={() => { setTab("practice"); setSectionHash("practice"); window.scrollTo({ top: 0 }); }} className="btn btn-primary">
                 Go to practice <ArrowRight size={16} aria-hidden="true" />
               </button>
             </div>
