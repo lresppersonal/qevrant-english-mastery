@@ -1,0 +1,25 @@
+{
+  "id": "96e5942d-4bd9-45ce-9cbf-b6490c462d1c",
+  "slug": "is-failure-the-best-teacher",
+  "title": "Is failure the best teacher?",
+  "standfirst": "Schools and universities increasingly praise ‘productive failure’. But not every setback teaches a lesson, and not every learner can afford to fail.",
+  "level": "C1",
+  "topics": ["education"],
+  "minutes": 6,
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "paragraphs": [
+    "Ask a room of successful adults what shaped them most, and many will describe a failure rather than a triumph: the exam they had to resit, the university that rejected them, the first business that collapsed. It has become almost a cliché of graduation speeches that setbacks build character. What is asked less often is whether failure itself does the teaching, or whether it simply creates the conditions in which learning might happen.",
+    "The idea has serious research behind it. Researchers who study what they call ‘productive failure’ have found that students who struggle with a problem before being taught the method often grasp the underlying concept more deeply than those who are shown the method first. The struggle, it seems, prepares the mind: having tried and failed, learners recognise what the solution is actually for.",
+    "This runs against a long tradition of teaching in which the teacher explains, the students practise, and mistakes are something to be kept to a minimum. Rote learning and carefully graded worksheets have their place, particularly when students need to acquire basic facts quickly. Critics argue, however, that a system which spoon-feeds learners and punishes every error tends to stifle the very qualities that employers and universities say they want: curiosity, critical thinking and a willingness to take intellectual risks.",
+    "Supporters of failure-friendly teaching point to formative assessment, which gives students feedback while they are still learning rather than a final grade once it is too late to improve. Whoever has had an essay returned covered in comments, with no chance to rewrite it, will understand the difference. When mistakes carry no permanent penalty, students are more likely to experiment, and experiment is how much of science has progressed: by trial and error, by hypotheses that turned out to be wrong, and by the occasional breakthrough that nobody planned.",
+    "Yet the enthusiasm for failure has limits, and the most important of them is fairness. A student whose parents can pay for private tuition, or who can afford to repeat a year, experiences failure very differently from one for whom a single bad result means losing a scholarship. For learners who are already falling behind, another low mark is unlikely to feel ‘productive’; it may simply confirm a belief that they are not clever enough. The students most likely to drop out after a difficult first year are often those with the least support at home.",
+    "There is also a difference between failure that is designed and failure that is merely endured. In a well-run classroom, the difficult problem comes before the explanation for a reason, and the teacher is there afterwards to help students make sense of what went wrong. A learner who is left to struggle alone, with no feedback and no second attempt, is not experiencing productive failure. They are experiencing the school of hard knocks, which teaches some people resilience and teaches others to stop trying.",
+    "What, then, makes the difference? The research points to three conditions. First, the stakes must be low enough for a mistake to be survivable. Second, there must be feedback that turns a wrong answer into information. Third, the learner must have a chance to try again, ideally soon. Where these conditions are met, students who fail early often outperform those who were never allowed to fail at all. Where they are missing, failure is just failure.",
+    "None of this means that schools should start setting impossible tasks or celebrating poor grades. It means that the question ‘Did the student fail?’ is less useful than ‘What happened next?’ The ability to bounce back from a setback is not a fixed trait that some children are born with; it is something that a curriculum can either foster or undermine. Perhaps the best teacher is not failure itself but the second attempt, and whoever designs our education systems should make sure that everyone gets one."
+  ],
+  "exercises": ["failure-reading-tfng"]
+}

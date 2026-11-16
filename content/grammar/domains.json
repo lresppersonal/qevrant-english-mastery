@@ -1,0 +1,65 @@
+[
+  { "key": "tense-aspect", "number": 1, "title": "Tense and aspect", "description": "How English marks time, completion and duration, and why aspect is often a choice rather than a rule.", "topics": [
+    { "title": "Present perfect simple and continuous", "level": "B2", "lesson": null },
+    { "title": "Past perfect simple and continuous", "level": "B2", "lesson": null },
+    { "title": "Continuous and perfect aspect as a system", "level": "C1", "lesson": null },
+    { "title": "Narrative tenses and the historic present", "level": "C1", "lesson": null } ] },
+  { "key": "future-time", "number": 2, "title": "Future forms and time clauses", "description": "Prediction, probability, plans and arrangements, and the tenses used after when, as soon as and until.", "topics": [
+    { "title": "Future probability", "level": "B2", "lesson": null },
+    { "title": "Future continuous and future perfect", "level": "B2", "lesson": null },
+    { "title": "Time clauses", "level": "B2+", "lesson": null },
+    { "title": "Will and would for certainty and assumption", "level": "C1", "lesson": null } ] },
+  { "key": "habitual", "number": 3, "title": "Habitual actions", "description": "Talking about typical behaviour in the present and the past.", "topics": [
+    { "title": "Used to, would and be used to", "level": "B2", "lesson": null },
+    { "title": "Will and would for typical and irritating behaviour", "level": "C1", "lesson": null } ] },
+  { "key": "modality", "number": 4, "title": "Modals and modality", "description": "Obligation, possibility, deduction and stance, with modal verbs and beyond them.", "topics": [
+    { "title": "Necessity, prohibition and permission", "level": "B2", "lesson": null },
+    { "title": "Past modals of deduction", "level": "B2", "lesson": null },
+    { "title": "Modal meaning beyond modal verbs", "level": "C1", "lesson": null } ] },
+  { "key": "conditionals", "number": 5, "title": "Conditionals and hypothetical meaning", "description": "Real and unreal conditions, regret and wishes, and conditions without if.", "topics": [
+    { "title": "Wish, if only and should have", "level": "B2", "lesson": null },
+    { "title": "Conditionals with unless, provided and as long as", "level": "B2+", "lesson": null },
+    { "title": "Mixed and implied conditionals", "level": "C1", "lesson": null } ] },
+  { "key": "passive", "number": 6, "title": "Passive and causative", "description": "Choosing what a sentence is about, and arranging for things to be done.", "topics": [
+    { "title": "The passive: forms and reasons", "level": "B2", "lesson": null },
+    { "title": "Get-passives, passive infinitives and -ing forms, causatives", "level": "C1", "lesson": null } ] },
+  { "key": "complex-sentences", "number": 7, "title": "Clauses and complex sentences", "description": "Contrast, concession and ellipsis: building sentences that carry an argument.", "topics": [
+    { "title": "While, whereas and whilst", "level": "B2", "lesson": null },
+    { "title": "Adverbials of concession", "level": "B2+", "lesson": null },
+    { "title": "Omitting words: ellipsis and substitution", "level": "C1", "lesson": null } ] },
+  { "key": "relative-clauses", "number": 8, "title": "Relative and reduced relative clauses", "description": "Adding information to nouns, and turning whole clauses into noun phrases.", "topics": [
+    { "title": "Relative clauses: defining, non-defining and comment clauses", "level": "B2", "lesson": "relative-clauses" },
+    { "title": "Reduced relative clauses", "level": "B2+", "lesson": null },
+    { "title": "Nominal relative clauses", "level": "C1", "lesson": "nominal-relative-clauses" } ] },
+  { "key": "participle-clauses", "number": 9, "title": "Participle clauses", "description": "Compressing information into -ing and -ed clauses, especially in writing.", "topics": [
+    { "title": "Participle clauses for time, reason and result", "level": "B2+", "lesson": null },
+    { "title": "Perfect and passive participle clauses in formal writing", "level": "C1", "lesson": null } ] },
+  { "key": "noun-phrases", "number": 10, "title": "Noun phrases, articles, determiners and quantifiers", "description": "Packing meaning into noun phrases and choosing a, the or nothing.", "topics": [
+    { "title": "Articles: generic and specific reference", "level": "B2", "lesson": null },
+    { "title": "Quantifiers", "level": "B2", "lesson": null },
+    { "title": "Complex noun phrases", "level": "C1", "lesson": null } ] },
+  { "key": "verb-patterns", "number": 11, "title": "Verb patterns, gerunds and infinitives", "description": "What follows a verb, and how the pattern can change the meaning.", "topics": [
+    { "title": "Infinitive and -ing forms", "level": "B2", "lesson": null },
+    { "title": "Meaning-changing verb patterns", "level": "C1", "lesson": null } ] },
+  { "key": "reported-speech", "number": 12, "title": "Reported speech", "description": "Reporting what others say and signalling what you think of it.", "topics": [
+    { "title": "Reporting orders, requests and advice", "level": "B2", "lesson": null },
+    { "title": "Evaluative reporting and summarising verbs", "level": "C1", "lesson": null } ] },
+  { "key": "comparison", "number": 13, "title": "Comparison, degree and modification", "description": "Comparing precisely and grading adjectives.", "topics": [
+    { "title": "Comparatives and superlatives with modifiers", "level": "B2", "lesson": null },
+    { "title": "Advanced ways of comparing", "level": "C1", "lesson": null } ] },
+  { "key": "questions-inversion", "number": 14, "title": "Questions, tags and inversion", "description": "Question forms, tags and inverted word order after negative adverbials.", "topics": [
+    { "title": "Indirect questions and question tags", "level": "B2", "lesson": null },
+    { "title": "Inversion after negative and limiting adverbials", "level": "C1", "lesson": null } ] },
+  { "key": "emphasis", "number": 15, "title": "Emphasis and information structure", "description": "Controlling what the reader notices first.", "topics": [
+    { "title": "Cleft sentences and auxiliary do", "level": "B2", "lesson": null },
+    { "title": "Inversion, clefting, fronting and tailing", "level": "C1", "lesson": null } ] },
+  { "key": "linking", "number": 16, "title": "Linking devices", "description": "Connecting ideas across sentences and paragraphs.", "topics": [
+    { "title": "Contrast and concession linkers", "level": "B2", "lesson": null },
+    { "title": "Attitude and viewpoint adverbials", "level": "C1", "lesson": null } ] },
+  { "key": "prepositions", "number": 17, "title": "Prepositions", "description": "Dependent prepositions and prepositional phrases.", "topics": [
+    { "title": "Dependent prepositions", "level": "B2", "lesson": null },
+    { "title": "Prepositional phrases", "level": "C1", "lesson": null } ] },
+  { "key": "register", "number": 18, "title": "Register, formality and style", "description": "Matching language to reader, purpose and medium.", "topics": [
+    { "title": "Vague language and fillers", "level": "B2", "lesson": null },
+    { "title": "Academic register: nominalisation and hedging", "level": "C1", "lesson": null } ] }
+]

@@ -1,0 +1,24 @@
+{
+  "id": "d311973e-88ad-4650-83ac-4f1b7f17c045",
+  "slug": "failure-reading-tfng",
+  "title": "Is failure the best teacher? True / False / Not given",
+  "skill": "reading",
+  "format": "tfng",
+  "level": "C1",
+  "topics": ["education"],
+  "target": { "type": "text", "ref": "is-failure-the-best-teacher" },
+  "passageRef": "is-failure-the-best-teacher",
+  "instructions": "Do the statements agree with the information in the text? Choose True if the statement agrees, False if it contradicts the text, and Not given if the text does not say.",
+  "status": "published", "version": 1, "author": "QEVRANT editorial (AI-assisted draft)", "reviewer": null, "publishedAt": "2026-11-16",
+  "questions": [
+    { "kind": "choice", "id": "q1", "prompt": "Graduation speeches often present setbacks as good for a person's character.", "options": ["True", "False", "Not given"], "answer": 0, "explanation": "Paragraph 1: it has become *almost a cliché of graduation speeches that setbacks build character*.", "theoryAnchor": null },
+    { "kind": "choice", "id": "q2", "prompt": "In ‘productive failure’ studies, students who were shown the method first understood the concept better.", "options": ["True", "False", "Not given"], "answer": 1, "explanation": "Paragraph 2 says the opposite: students who struggled first often understood the concept *more deeply than those who are shown the method first*.", "theoryAnchor": null },
+    { "kind": "choice", "id": "q3", "prompt": "The writer thinks rote learning should be removed from schools.", "options": ["True", "False", "Not given"], "answer": 1, "explanation": "Paragraph 3: rote learning and graded worksheets *have their place*, so the writer does not want them removed.", "theoryAnchor": null },
+    { "kind": "choice", "id": "q4", "prompt": "Formative assessment gives students feedback before it is too late to improve.", "options": ["True", "False", "Not given"], "answer": 0, "explanation": "Paragraph 4: it gives feedback *while they are still learning rather than a final grade once it is too late to improve*.", "theoryAnchor": null },
+    { "kind": "choice", "id": "q5", "prompt": "Most scientific breakthroughs happened by accident.", "options": ["True", "False", "Not given"], "answer": 2, "explanation": "Paragraph 4 mentions *the occasional breakthrough that nobody planned*, but says nothing about what proportion of breakthroughs were accidental.", "theoryAnchor": null },
+    { "kind": "choice", "id": "q6", "prompt": "Students who have private tuition fail exams less often than other students.", "options": ["True", "False", "Not given"], "answer": 2, "explanation": "Paragraph 5 says such students *experience* failure differently, not that they fail less often. The text gives no information about how often.", "theoryAnchor": null },
+    { "kind": "choice", "id": "q7", "prompt": "A learner who fails with no feedback and no second attempt may give up.", "options": ["True", "False", "Not given"], "answer": 0, "explanation": "Paragraph 6: the school of hard knocks *teaches others to stop trying*.", "theoryAnchor": null },
+    { "kind": "choice", "id": "q8", "prompt": "According to the writer, the ability to recover from setbacks is mostly something people are born with.", "options": ["True", "False", "Not given"], "answer": 1, "explanation": "Paragraph 8: bouncing back *is not a fixed trait that some children are born with*; a curriculum can *foster or undermine* it.", "theoryAnchor": null },
+    { "kind": "choice", "id": "q9", "prompt": "The writer suggests that schools should give more low grades.", "options": ["True", "False", "Not given"], "answer": 1, "explanation": "Paragraph 8: *None of this means that schools should start setting impossible tasks or celebrating poor grades.*", "theoryAnchor": null }
+  ]
+}

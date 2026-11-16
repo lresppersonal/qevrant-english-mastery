@@ -1,0 +1,10 @@
+[
+  { "slug": "education", "title": "Education, learning and research", "family": "Society and ideas", "summary": "How people learn, how institutions teach, and how knowledge is tested and produced.", "available": true },
+  { "slug": "work", "title": "Work, careers and business", "family": "Society and ideas", "summary": "Jobs, workplaces, organisations and the economy of work.", "available": false },
+  { "slug": "health", "title": "Health, medicine and wellbeing", "family": "People", "summary": "Body, mind, care systems and public health.", "available": false },
+  { "slug": "society", "title": "Society, politics and law", "family": "Society and ideas", "summary": "Institutions, rights, justice and public policy.", "available": false },
+  { "slug": "science", "title": "Science, technology and innovation", "family": "Society and ideas", "summary": "Discovery, invention and their consequences.", "available": false },
+  { "slug": "environment", "title": "Environment, climate and nature", "family": "World", "summary": "Ecosystems, climate change and sustainability.", "available": false },
+  { "slug": "media", "title": "Communication, language and media", "family": "People", "summary": "News, persuasion, platforms and how we talk.", "available": false },
+  { "slug": "culture", "title": "Arts, culture and history", "family": "World", "summary": "Heritage, creativity and the stories societies tell.", "available": false }
+]

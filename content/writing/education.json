@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "learning-from-failure", "title": "Learning from failure", "level": "B2+", "topics": ["education"], "genre": "opinion",
+    "prompt": "Some people believe that students learn more from their failures than from their successes. To what extent do you agree or disagree?",
+    "minWords": 250, "suggestedMinutes": 40,
+    "guidance": [
+      "State your position clearly in the introduction and keep it consistent to the end.",
+      "Give each body paragraph one main idea, supported by an explanation and a specific example.",
+      "Acknowledge at least one limitation of your view: when does failure not teach anything?",
+      "Finish with a conclusion that answers the question directly; don't introduce new arguments."
+    ],
+    "usefulLanguage": ["setback-n", "bounce-back", "trial-and-error", "formative-assessment", "undermine-v", "outperform-v"],
+    "status": "published", "version": 1, "author": "QEVRANT editorial (AI-assisted draft)", "reviewer": null, "publishedAt": "2026-11-16"
+  },
+  {
+    "slug": "who-should-pay-for-university", "title": "Who should pay for university?", "level": "C1", "topics": ["education"], "genre": "discussion",
+    "prompt": "Some people think university education should be free for everyone, paid for by the state. Others believe students should pay at least part of the cost themselves. Discuss both views and give your own opinion.",
+    "minWords": 250, "suggestedMinutes": 40,
+    "guidance": [
+      "Discuss BOTH views fairly, in separate paragraphs, before giving your opinion.",
+      "Make your own opinion explicit: in the introduction, the conclusion, or both.",
+      "Use precise, academic vocabulary (tuition fees, access, attainment) instead of general words like ‘good’ or ‘things’.",
+      "Use a range of linking devices, but don't start every sentence with one."
+    ],
+    "usefulLanguage": ["tuition-fees", "scholarship-funding", "attainment-n", "vocational-adj", "drop-out-v", "foster-v"],
+    "status": "published", "version": 1, "author": "QEVRANT editorial (AI-assisted draft)", "reviewer": null, "publishedAt": "2026-11-16"
+  },
+  {
+    "slug": "exams-versus-coursework", "title": "Exams or continuous assessment?", "level": "C1", "topics": ["education"], "genre": "advantages_disadvantages",
+    "prompt": "In many universities, final exams are being replaced by continuous assessment through essays and projects. Do the advantages of this development outweigh the disadvantages?",
+    "minWords": 250, "suggestedMinutes": 40,
+    "guidance": [
+      "Weigh the two sides: the question asks which is greater, so your conclusion must say which.",
+      "Consider different groups: students, teachers, employers.",
+      "Address risks such as plagiarism and unequal support at home.",
+      "Use hedging where claims are uncertain: ‘tends to’, ‘is likely to’, ‘may’."
+    ],
+    "usefulLanguage": ["assess-v", "formative-assessment", "plagiarism-n", "rigorous-adj", "rote-learning", "fail-to-do"],
+    "status": "published", "version": 1, "author": "QEVRANT editorial (AI-assisted draft)", "reviewer": null, "publishedAt": "2026-11-16"
+  }
+]

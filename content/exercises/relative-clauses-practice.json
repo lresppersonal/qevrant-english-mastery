@@ -1,0 +1,32 @@
+{
+  "id": "81e9b112-4b1a-45a1-8746-ce86a651077b",
+  "slug": "relative-clauses-practice",
+  "title": "Relative clauses in context",
+  "skill": "grammar",
+  "format": "gap_fill",
+  "level": "B2",
+  "topics": ["education"],
+  "target": { "type": "lesson", "ref": "relative-clauses" },
+  "instructions": "Choose or type the best answer. Every explanation links back to the part of the lesson that covers it.",
+  "status": "published", "version": 1, "author": "QEVRANT editorial (AI-assisted draft)", "reviewer": null, "publishedAt": "2026-11-16",
+  "questions": [
+    { "kind": "choice", "id": "q1", "prompt": "My supervisor, ___ has published widely on assessment, agreed to read my draft.", "options": ["who", "that", "which", "whose"], "answer": 0,
+      "explanation": "This is a non-defining clause (between commas) about a person, so only *who* is possible. *That* is never used in non-defining clauses.", "errorTag": "that-in-non-defining", "theoryAnchor": { "lesson": "relative-clauses", "section": "form" } },
+    { "kind": "choice", "id": "q2", "prompt": "Which sentence means that ONLY SOME of the candidates were interviewed?", "options": ["The candidates who had relevant experience were interviewed.", "The candidates, who had relevant experience, were interviewed."], "answer": 0,
+      "explanation": "Without commas, the clause is defining: it picks out the candidates with experience from the others. With commas, all the candidates had experience and all were interviewed.", "errorTag": "defining-vs-non-defining", "theoryAnchor": { "lesson": "relative-clauses", "section": "defining-vs-non-defining" } },
+    { "kind": "text", "id": "q3", "prompt": "Many lectures are now recorded, ___ allows students to review them at their own pace.", "accepted": ["which"],
+      "explanation": "The clause comments on the whole idea (that lectures are recorded), so it is a comment clause with *which*. *What* and *that* are not possible here.", "errorTag": "comment-clause", "theoryAnchor": { "lesson": "relative-clauses", "section": "comment-clauses" } },
+    { "kind": "text", "id": "q4", "prompt": "She's the student ___ thesis won this year's prize.", "accepted": ["whose"],
+      "explanation": "*whose* + noun shows possession: the thesis belongs to the student.", "errorTag": "whose", "theoryAnchor": { "lesson": "relative-clauses", "section": "form" } },
+    { "kind": "text", "id": "q5", "prompt": "The survey questioned 500 teachers, most of ___ said they felt overworked.", "accepted": ["whom"],
+      "explanation": "After a quantifier + *of* in a non-defining clause, use *whom* for people (*most of whom*) and *which* for things.", "errorTag": "quantifier-of-whom", "theoryAnchor": { "lesson": "relative-clauses", "section": "quantifiers" } },
+    { "kind": "choice", "id": "q6", "prompt": "This is the department ___ my father worked for thirty years.", "options": ["where", "which", "when", "what"], "answer": 0,
+      "explanation": "The clause is complete without a preposition (*my father worked there*), so use *where*. You could also say *which my father worked **in***.", "errorTag": "where-preposition", "theoryAnchor": { "lesson": "relative-clauses", "section": "place-time-reason" } },
+    { "kind": "choice", "id": "q7", "prompt": "Formal report: ‘The conditions ___ candidates sit the exam are strictly controlled.’", "options": ["under which", "under that", "which under", "under where"], "answer": 0,
+      "explanation": "In formal style the preposition moves to the front, and only *which* (things) or *whom* (people) can follow it.", "errorTag": "preposition-placement", "theoryAnchor": { "lesson": "relative-clauses", "section": "prepositions" } },
+    { "kind": "choice", "id": "q8", "prompt": "Which sentence is correct?", "options": ["The essay which I wrote it was too long.", "The essay I wrote was too long.", "The essay what I wrote was too long."], "answer": 1,
+      "explanation": "The relative word replaces the object, so don't repeat *it*. Because it is the object, you can also omit the relative word completely. *What* cannot follow a noun.", "errorTag": "resumptive-pronoun", "theoryAnchor": { "lesson": "relative-clauses", "section": "errors" } },
+    { "kind": "choice", "id": "q9", "prompt": "Students ___ plagiarise their coursework are usually given a zero.", "options": ["who", "which", "whom", "what"], "answer": 0,
+      "explanation": "The clause is the subject of *plagiarise* and refers to people, so use *who* (or *that*). *Which* is for things; *whom* is an object form.", "errorTag": "who-which", "theoryAnchor": { "lesson": "relative-clauses", "section": "form" } }
+  ]
+}

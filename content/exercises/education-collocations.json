@@ -1,0 +1,24 @@
+{
+  "id": "c913d8f1-7092-48c1-8730-b1524fdf2744",
+  "slug": "education-collocations",
+  "title": "Education collocations",
+  "skill": "vocabulary",
+  "format": "matching",
+  "level": "B2+",
+  "topics": ["education"],
+  "target": { "type": "vocab_set", "ref": "education" },
+  "instructions": "Choose the word that forms the strongest natural collocation.",
+  "status": "published", "version": 1, "author": "QEVRANT editorial (AI-assisted draft)", "reviewer": null, "publishedAt": "2026-11-16",
+  "questions": [
+    { "kind": "choice", "id": "q1", "prompt": "Only half the class managed to ___ the deadline.", "options": ["meet", "reach", "do", "make"], "answer": 0, "explanation": "We **meet** or **miss** a deadline.", "theoryAnchor": null, "targetSense": "meet-a-deadline" },
+    { "kind": "choice", "id": "q2", "prompt": "Over 600 candidates will ___ the exam on Saturday. (British English)", "options": ["sit", "write on", "give", "pass on"], "answer": 0, "explanation": "In British English you **sit** or **take** an exam. *Give an exam* is what an examiner does in some varieties, not a candidate.", "theoryAnchor": null, "targetSense": "sit-an-exam" },
+    { "kind": "choice", "id": "q3", "prompt": "The team ___ research in twelve schools.", "options": ["conducted", "made", "performed on", "led on"], "answer": 0, "explanation": "**Conduct**, **carry out** or **do** research. *Make research* is a common error.", "theoryAnchor": null, "targetSense": "conduct-research" },
+    { "kind": "choice", "id": "q4", "prompt": "You'll need a good ___ of statistics for this module.", "options": ["grasp", "catch", "hold", "seizure"], "answer": 0, "explanation": "**a good / firm grasp of** something = a good understanding of it.", "theoryAnchor": null, "targetSense": "grasp-n" },
+    { "kind": "choice", "id": "q5", "prompt": "Too much testing can ___ creativity.", "options": ["stifle", "choke off on", "drown", "close"], "answer": 0, "explanation": "**stifle** creativity / innovation / debate = stop it developing.", "theoryAnchor": null, "targetSense": "stifle-v" },
+    { "kind": "choice", "id": "q6", "prompt": "Group projects are designed to ___ independence and cooperation.", "options": ["foster", "rise", "grow up", "breed up"], "answer": 0, "explanation": "**foster** = encourage something to develop (formal). *Rise* is intransitive and *grow up* is used for people.", "theoryAnchor": null, "targetSense": "foster-v" },
+    { "kind": "choice", "id": "q7", "prompt": "If you miss two seminars, it's easy to fall ___ with the reading.", "options": ["behind", "back", "down", "out"], "answer": 0, "explanation": "**fall behind (with)** = fail to keep up. *Fall back* means retreat; *fall out* means argue.", "theoryAnchor": null, "targetSense": "fall-behind-v" },
+    { "kind": "choice", "id": "q8", "prompt": "She ___ back from a terrible first year and graduated with distinction.", "options": ["bounced", "jumped", "came up", "turned"], "answer": 0, "explanation": "**bounce back (from)** = recover after a difficult period.", "theoryAnchor": null, "targetSense": "bounce-back" },
+    { "kind": "choice", "id": "q9", "prompt": "Weekly quizzes work as ___ assessment: they count for nothing but show you what to revise.", "options": ["formative", "formal", "informative", "forming"], "answer": 0, "explanation": "**formative assessment** gives feedback during learning; **summative assessment** gives a final grade.", "theoryAnchor": null, "targetSense": "formative-assessment" },
+    { "kind": "choice", "id": "q10", "prompt": "The report links low educational ___ to a shortage of specialist teachers.", "options": ["attainment", "achieving", "reaching", "obtainment"], "answer": 0, "explanation": "**educational attainment** and **the attainment gap** are fixed academic collocations.", "theoryAnchor": null, "targetSense": "attainment-n" }
+  ]
+}

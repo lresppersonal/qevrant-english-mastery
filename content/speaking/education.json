@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "your-studies", "title": "Your studies and learning habits", "level": "B2", "topics": ["education"], "format": "interview",
+    "prompt": "Answer these questions as if you were in a conversation with an examiner. Aim for two or three developed sentences for each.",
+    "points": ["What are you studying at the moment, or what did you study?", "How do you usually prepare for an important exam?", "Is there a subject you found difficult at school? Why?"],
+    "prepSeconds": 15, "speakSeconds": 90,
+    "usefulLanguage": ["revise-study", "fall-behind-v", "catch-up-v", "sit-an-exam", "learn-by-heart"],
+    "status": "published", "version": 1, "author": "QEVRANT editorial (AI-assisted draft)", "reviewer": null, "publishedAt": "2026-11-16"
+  },
+  {
+    "slug": "a-failure-that-taught-you", "title": "A failure that taught you something", "level": "B2+", "topics": ["education"], "format": "long_turn",
+    "prompt": "Describe a time when you failed at something but learned from the experience.",
+    "points": ["what you were trying to do", "why it went wrong", "how you felt at the time", "and explain what you learned from it"],
+    "prepSeconds": 60, "speakSeconds": 120,
+    "usefulLanguage": ["setback-n", "bounce-back", "trial-and-error", "resilience-n", "school-of-hard-knocks"],
+    "status": "published", "version": 1, "author": "QEVRANT editorial (AI-assisted draft)", "reviewer": null, "publishedAt": "2026-11-16"
+  },
+  {
+    "slug": "grades-and-learning", "title": "Grades, pressure and real learning", "level": "C1", "topics": ["education"], "format": "discussion",
+    "prompt": "Discuss the question below. Give your opinion, support it with reasons and examples, and consider the other side.",
+    "points": ["Do exams and grades help students learn, or do they mostly measure who is good at exams?", "Should schools allow students to fail without penalty while they are learning?", "Who benefits most from a highly competitive education system?"],
+    "prepSeconds": 30, "speakSeconds": 180,
+    "usefulLanguage": ["formative-assessment", "rote-learning", "stifle-v", "foster-v", "attainment-n", "critical-thinking"],
+    "status": "published", "version": 1, "author": "QEVRANT editorial (AI-assisted draft)", "reviewer": null, "publishedAt": "2026-11-16"
+  }
+]

@@ -1,0 +1,172 @@
+{
+  "id": "af2eda04-6fe1-4c42-8015-05a5138306a8",
+  "slug": "relative-clauses",
+  "title": "Relative clauses: defining, non-defining and comment clauses",
+  "level": "B2",
+  "domain": "relative-clauses",
+  "topics": ["education"],
+  "summary": "Use relative clauses to identify which person or thing you mean, to add extra information about something already identified, and to comment on a whole idea.",
+  "minutes": 20,
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "sections": [
+    {
+      "id": "overview",
+      "kind": "overview",
+      "title": "What relative clauses do",
+      "blocks": [
+        { "type": "p", "text": "A relative clause gives information about a noun. It starts with a relative word (**who**, **which**, **that**, **whose**, **where**, **when**, **why**), or sometimes with no relative word at all." },
+        { "type": "p", "text": "There are three jobs a relative clause can do, and the job decides the grammar:" },
+        { "type": "list", "items": [
+          "**Defining**: it tells us *which* one. Without it, the sentence is incomplete or means something else.",
+          "**Non-defining**: the noun is already clear; the clause adds extra information. It sits between commas.",
+          "**Comment**: a clause with **which** that comments on the whole previous idea, not on one noun."
+        ] },
+        { "type": "examples", "items": [
+          { "en": "Students **who revise little and often** usually remember more.", "note": "Defining: which students? The ones who revise little and often." },
+          { "en": "My tutor, **who has taught here for twenty years**, still marks every essay by hand.", "note": "Non-defining: I have one tutor; the clause adds a fact about her." },
+          { "en": "The exam was moved to a Saturday, **which annoyed almost everyone**.", "note": "Comment: *which* refers to the whole event of moving the exam." }
+        ] }
+      ]
+    },
+    {
+      "id": "form",
+      "kind": "form",
+      "title": "Form: choosing the relative word",
+      "blocks": [
+        { "type": "table", "head": ["Refers to", "Defining clause", "Non-defining clause"], "rows": [
+          ["People", "who / that", "who (never that)"],
+          ["Things, ideas", "which / that", "which (never that)"],
+          ["Possession", "whose", "whose"],
+          ["Places", "where / in which", "where"],
+          ["Times", "when / that", "when"],
+          ["Reasons (after *the reason*)", "why / that", "not used"]
+        ] },
+        { "type": "p", "text": "In a **defining** clause you can leave out the relative word when it is the **object** of the clause: *the course (that) she recommended*. You cannot leave it out when it is the **subject**: *the course that changed my mind*, not ~~the course changed my mind~~." },
+        { "type": "examples", "items": [
+          { "en": "The textbook (that) **we were given** is already out of date.", "note": "*that* = object of *were given*, so it can be omitted." },
+          { "en": "The textbook **that explains** this best is the old one.", "note": "*that* = subject of *explains*, so it must stay." },
+          { "en": "She is the researcher **whose study** changed how we teach reading.", "note": "*whose* + noun shows possession, for people and things." }
+        ] }
+      ]
+    },
+    {
+      "id": "defining-vs-non-defining",
+      "kind": "uses",
+      "title": "Defining or non-defining? The comma test",
+      "blocks": [
+        { "type": "p", "text": "Commas are not decoration here: they change the meaning. Ask yourself: **if I remove the clause, do I still know exactly who or what I mean?** If yes, it is non-defining and needs commas. If no, it is defining and takes no commas." },
+        { "type": "examples", "items": [
+          { "en": "The students **who had attended every seminar** passed easily.", "note": "Only some students attended every seminar, and those ones passed." },
+          { "en": "The students, **who had attended every seminar**, passed easily.", "note": "All the students attended every seminar, and all of them passed." }
+        ] },
+        { "type": "p", "text": "Proper nouns and nouns that are already unique (*my mother*, *Oxford*, *the head of the department*) almost always take non-defining clauses, because they are already identified." },
+        { "type": "note", "tone": "tip", "text": "In speech, a non-defining clause is said as a separate chunk, with a small pause before and after it. Reading your sentence aloud is a fast way to decide whether you need commas." }
+      ]
+    },
+    {
+      "id": "comment-clauses",
+      "kind": "uses",
+      "title": "Comment clauses with which",
+      "blocks": [
+        { "type": "p", "text": "A non-defining clause starting with **which** can refer back to the **whole previous clause**. This is a very common way to add your opinion or a consequence at the end of a sentence." },
+        { "type": "examples", "items": [
+          { "en": "Many universities now record their lectures, **which means** students can review difficult points at their own pace." },
+          { "en": "He failed his first-year exams, **which was a shock** to everyone who knew him." },
+          { "en": "The school abolished homework for younger pupils, **which I think was** a sensible decision." }
+        ] },
+        { "type": "p", "text": "Only **which** works here. *What* and *that* cannot introduce a comment clause." },
+        { "type": "examples", "items": [
+          { "en": "~~The library closes at six, what is inconvenient for part-time students.~~", "wrong": true },
+          { "en": "The library closes at six, **which** is inconvenient for part-time students." }
+        ] }
+      ]
+    },
+    {
+      "id": "place-time-reason",
+      "kind": "uses",
+      "title": "Where, when and why",
+      "blocks": [
+        { "type": "p", "text": "Use **where** after nouns of place, including abstract places like *situation*, *case*, *stage* and *point*." },
+        { "type": "examples", "items": [
+          { "en": "This is the lab **where** the first experiments took place." },
+          { "en": "We reached a point **where** nobody wanted to compromise." },
+          { "en": "There was a time **when** a degree almost guaranteed a good job." },
+          { "en": "The reason **(why)** so many students drop out is often financial." }
+        ] },
+        { "type": "note", "tone": "warning", "text": "Use *where* only if the clause is complete without a preposition: *the town **where** I studied* or *the town **which** I studied **in***, but not ~~the town where I studied in~~." }
+      ]
+    },
+    {
+      "id": "prepositions",
+      "kind": "register",
+      "title": "Prepositions and register",
+      "blocks": [
+        { "type": "p", "text": "When the relative word is the object of a preposition, English gives you two options. They differ in **register**." },
+        { "type": "table", "head": ["Everyday / spoken", "Formal / academic"], "rows": [
+          ["the topic (that) she specialises **in**", "the topic **in which** she specialises"],
+          ["the professor (who) I spoke **to**", "the professor **to whom** I spoke"],
+          ["the conditions (that) students work **under**", "the conditions **under which** students work"]
+        ] },
+        { "type": "p", "text": "After a preposition, use **which** for things and **whom** for people. *That* and *who* cannot follow a preposition." },
+        { "type": "note", "tone": "register", "text": "In academic essays, *in which*, *by which* and *to whom* sound precise and controlled. In conversation they can sound stiff, so end with the preposition instead." }
+      ]
+    },
+    {
+      "id": "quantifiers",
+      "kind": "uses",
+      "title": "Quantifier + of which / of whom",
+      "blocks": [
+        { "type": "p", "text": "In non-defining clauses you can begin with a quantifier or number followed by **of which** (things) or **of whom** (people). This lets you add a statistic or a detail without starting a new sentence." },
+        { "type": "examples", "items": [
+          { "en": "The survey questioned 2,000 graduates, **most of whom** were working in their field." },
+          { "en": "The course has six modules, **two of which** are assessed by exam." },
+          { "en": "She published three papers, **none of which** received much attention at the time." }
+        ] }
+      ]
+    },
+    {
+      "id": "errors",
+      "kind": "errors",
+      "title": "Common errors",
+      "blocks": [
+        { "type": "examples", "items": [
+          { "en": "~~My brother, that studies law, lives in Kazan.~~", "wrong": true, "note": "No *that* in non-defining clauses. → *My brother, **who** studies law, …*" },
+          { "en": "~~The book which I bought it is excellent.~~", "wrong": true, "note": "The relative word replaces the object; do not repeat it. → *The book (which) I bought is excellent.*" },
+          { "en": "~~Students which plagiarise are expelled.~~", "wrong": true, "note": "*which* is for things. → *Students **who** plagiarise …*" },
+          { "en": "~~He passed every exam what surprised his parents.~~", "wrong": true, "note": "Comment clauses need a comma and *which*. → *…every exam, **which** surprised his parents.*" },
+          { "en": "~~The university where I applied to rejected me.~~", "wrong": true, "note": "Drop either *where* or the preposition. → *The university **(that)** I applied **to** …*" }
+        ] },
+        { "type": "note", "tone": "tip", "text": "For Russian speakers: *который* covers both *who* and *which*, and Russian puts a comma before every relative clause. In English the comma signals non-defining meaning, so leave it out of defining clauses." }
+      ]
+    },
+    {
+      "id": "summary",
+      "kind": "summary",
+      "title": "Summary",
+      "blocks": [
+        { "type": "list", "items": [
+          "Defining clauses identify; no commas; *that* is possible; the object pronoun can be omitted.",
+          "Non-defining clauses add information; commas; never *that*; never omitted.",
+          "Comment clauses: *, which …* refers to the whole previous idea.",
+          "Formal style moves the preposition forward: *in which*, *to whom*.",
+          "*most of whom*, *some of which* add details inside a non-defining clause."
+        ] }
+      ]
+    }
+  ],
+  "links": [
+    { "type": "extends", "to": "nominal-relative-clauses", "label": "Nominal relative clauses (what, whatever, whoever)", "level": "C1", "published": true },
+    { "type": "extends", "to": "reduced-relative-clauses", "label": "Reduced relative clauses", "level": "B2+", "published": false },
+    { "type": "extends", "to": "participle-clauses", "label": "Participle clauses", "level": "B2+", "published": false },
+    { "type": "appears_in", "to": "is-failure-the-best-teacher", "label": "Reading: Is failure the best teacher?", "level": "C1", "published": true }
+  ],
+  "exercises": ["relative-clauses-practice"],
+  "sources": [
+    { "book": "Speakout 3rd B2", "unit": "3", "lesson": "3A", "confidence": "verified" },
+    { "book": "Speakout 3rd B2", "unit": "5", "lesson": "5D", "confidence": "verified" }
+  ]
+}

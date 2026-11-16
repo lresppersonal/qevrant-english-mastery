@@ -1,0 +1,32 @@
+{
+  "id": "1ee630e2-1d6c-47a8-8634-eb649db92bd7",
+  "slug": "nominal-relatives-practice",
+  "title": "Nominal relative clauses and pseudo-clefts",
+  "skill": "grammar",
+  "format": "transformation",
+  "level": "C1",
+  "topics": ["education"],
+  "target": { "type": "lesson", "ref": "nominal-relative-clauses" },
+  "instructions": "Choose or type the best answer. Contractions count as two words.",
+  "status": "published", "version": 1, "author": "QEVRANT editorial (AI-assisted draft)", "reviewer": null, "publishedAt": "2026-11-16",
+  "questions": [
+    { "kind": "text", "id": "q1", "prompt": "___ the government should do is invest in teacher training.", "accepted": ["what"],
+      "explanation": "*What* = *the thing that*. The clause *What the government should do* is the subject of *is*.", "errorTag": "what-subject", "theoryAnchor": { "lesson": "nominal-relative-clauses", "section": "emphasis" } },
+    { "kind": "choice", "id": "q2", "prompt": "Everything ___ she told us turned out to be true.", "options": ["that", "what", "who", "whose"], "answer": 0,
+      "explanation": "There is already a noun-like word (*everything*), so you need an ordinary relative (*that*), not *what*.", "errorTag": "what-after-noun", "theoryAnchor": { "lesson": "nominal-relative-clauses", "section": "what-vs-that" } },
+    { "kind": "choice", "id": "q3", "prompt": "___ wrote this report clearly hadn't looked at the data.", "options": ["Whoever", "Who", "That", "Which"], "answer": 0,
+      "explanation": "You need a word meaning *the person who*. Modern English uses *whoever* for this; plain *who* can't start a nominal clause.", "errorTag": "who-for-whoever", "theoryAnchor": { "lesson": "nominal-relative-clauses", "section": "errors" } },
+    { "kind": "text", "id": "q4", "prompt": "You can sit the exam in May or in June, ___ suits you better.", "accepted": ["whichever"],
+      "explanation": "There is a fixed set of two choices, so use *whichever* (= the one that).", "errorTag": "whichever", "theoryAnchor": { "lesson": "nominal-relative-clauses", "section": "form" } },
+    { "kind": "choice", "id": "q5", "prompt": "___ hard you try, you won't learn a language in a week.", "options": ["However", "Whatever", "Whenever", "How"], "answer": 0,
+      "explanation": "*However* + adjective/adverb means *no matter how*. *Whatever* cannot be followed directly by an adjective.", "errorTag": "however-concession", "theoryAnchor": { "lesson": "nominal-relative-clauses", "section": "ever-words" } },
+    { "kind": "choice", "id": "q6", "prompt": "Honestly, I don't understand ___.", "options": ["what she means", "what does she mean", "that she means", "which she means"], "answer": 0,
+      "explanation": "Inside a nominal relative clause, use statement word order (subject + verb), not question word order.", "errorTag": "question-word-order", "theoryAnchor": { "lesson": "nominal-relative-clauses", "section": "errors" } },
+    { "kind": "text", "id": "q7", "prompt": "Complete with TWO words so the meaning stays the same. ‘The thing that worries me is the cost.’ → ‘What ___ is the cost.’", "accepted": ["worries me"],
+      "explanation": "*What* replaces *the thing that*, so the rest of the clause stays the same: *What worries me is the cost.*", "errorTag": "what-transformation", "theoryAnchor": { "lesson": "nominal-relative-clauses", "section": "overview" } },
+    { "kind": "choice", "id": "q8", "prompt": "What I need ___ more time to prepare.", "options": ["is", "it is", "are", "being"], "answer": 0,
+      "explanation": "The *what*-clause is already the subject. Don't add *it*.", "errorTag": "extra-subject", "theoryAnchor": { "lesson": "nominal-relative-clauses", "section": "errors" } },
+    { "kind": "choice", "id": "q9", "prompt": "___ happened was that the deadline was moved forward without warning.", "options": ["What", "That", "Which", "It"], "answer": 0,
+      "explanation": "*What happened was (that)…* is a pseudo-cleft used to introduce an event and focus on it.", "errorTag": "pseudo-cleft", "theoryAnchor": { "lesson": "nominal-relative-clauses", "section": "emphasis" } }
+  ]
+}
