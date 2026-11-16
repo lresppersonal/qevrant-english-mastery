@@ -19,7 +19,7 @@ export default async function VocabEntry({ params }: { params: Promise<{ slug: s
 
   return (
     <article className="max-w-3xl">
-      <Link href="/vocabulary" className="mb-4 inline-flex items-center gap-1 text-sm font-medium text-muted hover:text-ink"><ArrowLeft size={15} aria-hidden="true" /> Vocabulary</Link>
+      <Link href="/vocabulary" className="mb-2 inline-flex items-center gap-1 py-2.5 text-sm font-medium text-muted hover:text-ink"><ArrowLeft size={15} aria-hidden="true" /> Vocabulary</Link>
       <h1 className="sr-only">{item.lemma}</h1>
       <ItemHeader item={item} />
       <p className="mt-2 flex flex-wrap items-center gap-2 text-sm">

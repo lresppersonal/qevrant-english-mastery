@@ -2,7 +2,7 @@ import { NextResponse, type NextRequest } from "next/server";
 import { createServerClient } from "@supabase/ssr";
 import { SUPABASE_URL, SUPABASE_ANON_KEY, isDemoMode } from "@/lib/supabase/config";
 
-const PUBLIC = ["/", "/sign-in", "/sign-up", "/auth", "/privacy"];
+const PUBLIC = ["/", "/sign-in", "/sign-up", "/auth", "/privacy", "/offline"];
 
 export async function middleware(req: NextRequest) {
   if (isDemoMode) return NextResponse.next();
@@ -38,5 +38,5 @@ export async function middleware(req: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico|icon.svg|.*\\.(?:png|jpg|svg|webp|woff2?)$).*)"],
+  matcher: ["/((?!_next/static|_next/image|favicon.ico|icon.svg|sw.js|manifest.webmanifest|.*\\.(?:png|jpg|svg|webp|woff2?|js|webmanifest)$).*)"],
 };

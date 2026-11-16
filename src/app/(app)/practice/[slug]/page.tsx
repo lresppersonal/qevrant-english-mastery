@@ -17,7 +17,7 @@ export default async function PracticePage({ params }: { params: Promise<{ slug:
   if (!ex) notFound();
   return (
     <div className="max-w-3xl">
-      <Link href="/topics/education" className="mb-4 inline-flex items-center gap-1 text-sm font-medium text-muted hover:text-ink"><ArrowLeft size={15} aria-hidden="true" /> Education</Link>
+      <Link href="/topics/education" className="mb-2 inline-flex items-center gap-1 py-2.5 text-sm font-medium text-muted hover:text-ink"><ArrowLeft size={15} aria-hidden="true" /> Education</Link>
       <div className="mb-2"><LevelBadge level={ex.level} /></div>
       <h1 className="text-3xl font-extrabold">{ex.title}</h1>
       <p className="mb-6 mt-2 text-muted">{ex.instructions}</p>

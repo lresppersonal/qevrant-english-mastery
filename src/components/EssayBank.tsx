@@ -21,10 +21,10 @@ export function EssayBank({ cards, guides }: { cards: EssayCard[]; guides: Essay
 
   return (
     <>
-      <div role="tablist" aria-label="Essay type" className="mb-4 flex flex-wrap gap-1.5">
+      <div role="tablist" aria-label="Essay type" className="scroll-row mb-4">
         {(["all", ...ESSAY_TYPES] as const).map((t) => (
           <button key={t} role="tab" aria-selected={type === t} onClick={() => setType(t)}
-            className={clsx("rounded-lg border px-3 py-1.5 text-sm font-semibold", type === t ? "border-primary bg-primary text-primary-fg" : "border-line bg-surface text-muted hover:text-ink")}>
+            className={clsx("whitespace-nowrap rounded-lg border px-3 py-1.5 text-sm font-semibold", type === t ? "border-primary bg-primary text-primary-fg" : "border-line bg-surface text-muted hover:text-ink")}>
             {t === "all" ? "All types" : ESSAY_LABEL[t]} <span className="font-normal">{t === "all" ? cards.length : cards.filter((c) => c.genre === t).length}</span>
           </button>
         ))}

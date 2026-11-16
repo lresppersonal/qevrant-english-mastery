@@ -173,7 +173,7 @@ export function SpeakingWorkspace({ prompt }: { prompt: SpeakingPrompt }) {
 
   return (
     <article>
-      <Link href="/speaking" className="mb-4 inline-flex items-center gap-1 text-sm font-medium text-muted hover:text-ink"><ArrowLeft size={15} aria-hidden="true" /> Speaking</Link>
+      <Link href="/speaking" className="mb-2 inline-flex items-center gap-1 py-2.5 text-sm font-medium text-muted hover:text-ink"><ArrowLeft size={15} aria-hidden="true" /> Speaking</Link>
       <div className="grid gap-6 lg:grid-cols-[1fr_300px]">
         <div className="min-w-0">
           <div className="mb-2 flex flex-wrap items-center gap-2"><LevelBadge level={prompt.level} /><span className="chip">Prepare {prompt.prepSeconds}s</span><span className="chip">Speak up to {fmt(prompt.speakSeconds)}</span></div>

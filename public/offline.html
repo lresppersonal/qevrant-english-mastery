@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#08101F">
+<title>Offline · English Mastery</title>
+<style>
+  :root { color-scheme: light dark; --bg:#F5F7FB; --text:#0E1A33; --muted:#4A5876; --primary:#1B3668; --primary-fg:#fff; --border:#D5DCE8; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#08101F; --text:#E7ECF5; --muted:#A2AEC6; --primary:#93B4EE; --primary-fg:#08101F; --border:#26385C; } }
+  body { margin:0; min-height:100dvh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:max(2rem, env(safe-area-inset-top)) 1.5rem max(2rem, env(safe-area-inset-bottom)); background:var(--bg); color:var(--text); font-family:system-ui, -apple-system, "Segoe UI", sans-serif; }
+  h1 { font-size:1.6rem; margin:1.25rem 0 .5rem; }
+  p { color:var(--muted); max-width:22rem; line-height:1.5; margin:0; }
+  nav { display:flex; flex-wrap:wrap; gap:.5rem; justify-content:center; margin-top:1.5rem; }
+  a { display:inline-flex; align-items:center; min-height:44px; padding:0 1.1rem; border-radius:10px; border:1px solid var(--border); color:var(--text); text-decoration:none; font-weight:600; }
+  a.primary { background:var(--primary); color:var(--primary-fg); border-color:var(--primary); }
+  svg { width:56px; height:56px; }
+</style>
+</head>
+<body>
+  <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0E1A33"/><path d="M18 46V18h22M18 32h16M18 46h22" fill="none" stroke="#E7ECF5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="46" cy="46" r="4" fill="#F0B44C"/></svg>
+  <h1>You're offline</h1>
+  <p>This page hasn't been saved on your device yet. Pages you've opened before are still available.</p>
+  <nav><a class="primary" href="/dashboard">Dashboard</a><a href="/review">Review</a><a href="/vocabulary">Vocabulary</a><a href="/grammar">Grammar</a></nav>
+</body>
+</html>

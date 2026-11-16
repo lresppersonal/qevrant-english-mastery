@@ -6,6 +6,7 @@ import { useLearnerData } from "@/components/useLearnerData";
 import { computeStreak, daysThisWeek, dueItems } from "@/lib/progress";
 import { getWritingPrompt, getSpeakingPrompt } from "@/lib/content";
 import { ProgressBar } from "@/components/ui";
+import { InstallBanner } from "@/components/PwaSupport";
 
 export default function Dashboard() {
   const { profile, saved } = useLearner();
@@ -29,6 +30,8 @@ export default function Dashboard() {
         <p className="eyebrow mb-2">Dashboard</p>
         <h1 className="text-3xl font-extrabold md:text-4xl">{name ? `Good to see you, ${name}.` : "Welcome."}</h1>
       </header>
+
+      <InstallBanner />
 
       {!profile.onboardedAt && (
         <div className="card mb-6 flex flex-wrap items-center gap-4 border-accent/60 p-5">

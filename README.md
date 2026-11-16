@@ -2,6 +2,13 @@
 
 A structured B2–C2 English learning platform: vocabulary organised by 23 themes (CEFR as metadata), 17 grammar lessons with separate theory and practice pages, a 12-text reading library with IELTS-style tasks, an essay bank of 44 questions across 8 essay types, speaking practice, and AI practice feedback on essays and speaking. See `docs/CONTENT-REPORT.md` for content statistics and provenance.
 
+### On phones (iPhone and Android)
+The platform is an installable progressive web app (PWA): a manifest, icons, a service worker (`public/sw.js`) and iPhone settings. Once deployed:
+- **Android** (Chrome, Samsung Internet): the app offers **Install**, or use the browser menu ⋮ → *Install app*.
+- **iPhone/iPad** (Safari): Share → *Add to Home Screen*.
+It then opens full-screen from the home screen. Pages already visited work offline, and a clear offline screen appears for pages not yet opened. Saving progress to the database needs a connection. The layout handles the notch and home bar (safe areas), uses 16 px form fields (no zoom on focus) and 44 px touch targets. Settings → *App on your phone* has install help.
+To publish in the App Store and Google Play, the same code can be wrapped with Capacitor (needs an Apple Developer account and a Mac with Xcode for iOS; a Google Play developer account for Android).
+
 ### Authoring content
 Content is written in compact formats in `content/src/` and compiled with `npm run content:build` (formats are documented at the top of `scripts/build-content.ts`). The build validates every record and cross-reference; content errors stop the build.
 

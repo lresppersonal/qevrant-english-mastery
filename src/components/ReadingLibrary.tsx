@@ -23,7 +23,7 @@ export function ReadingLibrary({ cards }: { cards: ReadingCard[] }) {
           {cats.map(([k, t]) => <option key={k} value={k}>{t} ({cards.filter((c) => c.category === k).length})</option>)}
         </select>
         <span className="mx-1 hidden h-6 w-px bg-line sm:block" />
-        <div role="group" aria-label="Filter by level" className="flex flex-wrap gap-2">
+        <div role="group" aria-label="Filter by level" className="scroll-row w-full md:w-auto">
           {(["all", ...LEVELS] as const).map((l) => <button key={l} aria-pressed={level === l} onClick={() => setLevel(l)} className={chip(level === l)}>{l === "all" ? "All levels" : l}</button>)}
         </div>
       </div>

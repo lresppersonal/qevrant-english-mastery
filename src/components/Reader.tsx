@@ -97,7 +97,7 @@ export function Reader({ text, forms, items }: { text: ReadingText; forms: Recor
 
       {sel && (
         <div ref={panelRef} tabIndex={-1} role="dialog" aria-modal="false" aria-label={`Meaning of ${sel.phrase}`}
-          className="card fixed inset-x-3 bottom-20 z-40 max-h-[60vh] overflow-y-auto p-5 outline-none md:inset-x-auto md:bottom-6 md:right-6 md:w-[400px]">
+          className="sheet-pos card fixed inset-x-3 z-40 max-h-[60vh] overflow-y-auto p-5 outline-none md:inset-x-auto md:right-6 md:w-[400px]">
           <button onClick={close} className="btn btn-ghost absolute right-3 top-3 h-9 w-9 !min-h-0 !p-0" aria-label="Close"><X size={16} /></button>
           {item ? (
             <div className="space-y-4 pr-8">

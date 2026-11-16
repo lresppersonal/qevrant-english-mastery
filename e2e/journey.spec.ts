@@ -1,4 +1,4 @@
-import { test, expect, type Page } from "@playwright/test";
+import { test, expect, devices, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
 /**
@@ -207,4 +207,41 @@ test("the IELTS pathway is removed but Academic Writing remains", async ({ page 
   await expect(nav.getByRole("link", { name: "Academic Writing" })).toBeVisible();
   await expect(nav.getByRole("link", { name: /Listening/ })).toBeVisible();
   expect((await page.goto("/ielts"))?.status()).toBe(404);
+});
+
+for (const [name, device] of [["iPhone 14", "iPhone 14"], ["Pixel 7", "Pixel 7"]] as const) {
+  test.describe(`phone: ${name}`, () => {
+    const d = devices[device];
+    test.use({ viewport: d.viewport, userAgent: d.userAgent, deviceScaleFactor: d.deviceScaleFactor, isMobile: d.isMobile, hasTouch: d.hasTouch });
+    test("every main page fits the screen, with bottom navigation and no zoom-on-focus inputs", async ({ page }) => {
+      test.setTimeout(120_000);
+      const paths = ["/dashboard", "/learn", "/topics/environment", "/vocabulary", "/vocabulary/topics/crime-law", "/grammar", "/grammar/verb-patterns",
+        "/grammar/practice", "/grammar/verb-patterns/practice", "/reading", "/reading/loneliness", "/speaking/your-studies", "/writing", "/writing/gig-economy", "/review", "/library", "/progress", "/settings"];
+      for (const p of paths) {
+        await page.goto(p);
+        await page.waitForTimeout(300);
+        const r = await page.evaluate(() => ({
+          overflow: document.documentElement.scrollWidth > window.innerWidth + 1,
+          smallInputs: [...document.querySelectorAll("input:not([type=checkbox]):not([type=radio]):not([type=range]), select, textarea")].filter((e) => parseFloat(getComputedStyle(e).fontSize) < 16).length,
+        }));
+        expect(r, p).toEqual({ overflow: false, smallInputs: 0 });
+        await expect(page.getByRole("navigation", { name: "Main" }).last()).toBeVisible();
+      }
+    });
+  });
+}
+
+test("installable app: manifest, icons and service worker", async ({ page, request }) => {
+  const m = await (await request.get("/manifest.webmanifest")).json();
+  expect(m.display).toBe("standalone");
+  expect(m.icons.some((i: { sizes: string; purpose: string }) => i.sizes === "512x512" && i.purpose === "maskable")).toBe(true);
+  for (const i of m.icons) expect((await request.get(i.src)).status(), i.src).toBe(200);
+  expect((await request.get("/apple-touch-icon.png")).status()).toBe(200);
+  expect((await request.get("/offline.html")).status()).toBe(200);
+  await page.goto("/dashboard");
+  await expect(page.locator('link[rel="manifest"]')).toHaveCount(1);
+  await expect(page.locator('meta[name="apple-mobile-web-app-capable"], meta[name="mobile-web-app-capable"]').first()).toHaveCount(1);
+  expect(await page.evaluate(() => navigator.serviceWorker.ready.then((r) => !!r.active))).toBe(true);
+  await page.goto("/settings");
+  await expect(page.getByRole("heading", { name: "App on your phone" })).toBeVisible();
 });

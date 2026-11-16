@@ -9,6 +9,7 @@ import { SearchDialog } from "./SearchDialog";
 import { NAV, NAV_FOOTER, MOBILE_NAV, mobileSection } from "@/lib/nav";
 import { isDemoMode } from "@/lib/supabase/config";
 import { useLearner } from "./StoreProvider";
+import { OfflineBanner } from "./PwaSupport";
 
 export function ThemeToggle() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -84,12 +85,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       </aside>
 
       <div className="flex min-w-0 flex-col">
-        {isDemoMode && (
-          <div role="note" className="border-b border-line bg-primary-soft px-4 py-1.5 text-center text-xs font-medium text-primary">
-            Demo mode: no database is connected, so your progress is saved in this browser only.
-          </div>
-        )}
-        <header className="sticky top-0 z-30 flex items-center gap-3 border-b border-line bg-bg/85 px-4 py-3 backdrop-blur md:px-8">
+        <header className="safe-top sticky top-0 z-30 flex items-center gap-3 border-b border-line bg-bg/85 px-4 pb-3 backdrop-blur md:px-8">
           <Link href="/dashboard" className="md:hidden" aria-label="Dashboard"><Logo compact /></Link>
           <button onClick={() => setSearchOpen(true)}
             className="flex h-10 flex-1 items-center gap-2 rounded-xl border border-line bg-surface px-3 text-left text-sm text-muted hover:border-primary md:max-w-md">
@@ -100,18 +96,24 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           <ThemeToggle />
         </header>
 
-        <main id="main" className="mx-auto w-full max-w-5xl flex-1 px-4 pb-28 pt-6 md:px-8 md:pb-16 md:pt-8">{children}</main>
+        <OfflineBanner />
+        {isDemoMode && (
+          <div role="note" className="border-b border-line bg-primary-soft px-4 py-1.5 text-center text-xs font-medium text-primary">
+            Demo mode: no database is connected, so your progress is saved in this browser only.
+          </div>
+        )}
+        <main id="main" className="main-mobile mx-auto w-full max-w-5xl flex-1 px-4 pt-6 md:px-8 md:pb-16 md:pt-8">{children}</main>
       </div>
 
       {/* Mobile bottom nav */}
-      <nav aria-label="Main" className="fixed inset-x-0 bottom-0 z-40 border-t border-line bg-surface/95 backdrop-blur md:hidden">
+      <nav aria-label="Main" className="safe-bottom fixed inset-x-0 bottom-0 z-40 border-t border-line bg-surface/95 backdrop-blur md:hidden">
         <ul className="grid grid-cols-5">
           {MOBILE_NAV.map((it) => {
             const on = mobileSection(path) === it.href;
             return (
               <li key={it.href}>
                 <Link href={it.href} aria-current={on ? "page" : undefined}
-                  className={clsx("flex flex-col items-center gap-0.5 py-2.5 text-[11px] font-semibold", on ? "text-primary" : "text-muted")}>
+                  className={clsx("flex min-h-[52px] flex-col items-center justify-center gap-0.5 py-2 text-[11px] font-semibold", on ? "text-primary" : "text-muted")}>
                   <it.icon size={20} aria-hidden="true" />{it.label}
                 </Link>
               </li>

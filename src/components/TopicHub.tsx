@@ -16,7 +16,7 @@ function Section({ icon: Icon, title, count, children, href, hrefLabel = "See al
       <div className="mb-3 flex items-center gap-2">
         <Icon size={19} className="text-primary" aria-hidden="true" />
         <h2 id={`h-${title}`} className="flex-1 text-lg font-bold">{title} <span className="text-sm font-medium text-muted">({count})</span></h2>
-        {href && <Link href={href} className="text-sm font-semibold text-primary underline-offset-4 hover:underline">{hrefLabel}</Link>}
+        {href && <Link href={href} className="py-2.5 text-sm font-semibold text-primary underline-offset-4 hover:underline">{hrefLabel}</Link>}
       </div>
       {count === 0 ? <p className="text-sm text-muted">Nothing at this level yet.</p> : children}
     </section>
@@ -41,7 +41,7 @@ export function TopicHub(props: {
   return (
     <>
       <PageHeader eyebrow={`Topic · ${props.theme.group}`} title={props.theme.title} intro={props.theme.summary} />
-      <div className="mb-6 flex flex-wrap gap-2" role="group" aria-label="Filter by level">
+      <div className="scroll-row mb-6" role="group" aria-label="Filter by level">
         {(["all", ...LEVELS] as const).map((l) => (
           <button key={l} aria-pressed={level === l} onClick={() => setLevel(l)}
             className={clsx("rounded-full border px-3.5 py-1.5 text-sm font-semibold", level === l ? "border-primary bg-primary text-primary-fg" : "border-line bg-surface text-muted hover:text-ink")}>

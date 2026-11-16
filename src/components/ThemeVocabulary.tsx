@@ -53,10 +53,10 @@ export function ThemeVocabulary({ entries, families, distinctions }: {
 
   return (
     <div>
-      <div role="tablist" aria-label="Lexical classification" className="-mx-1 mb-4 flex flex-wrap gap-1.5">
+      <div role="tablist" aria-label="Lexical classification" className="scroll-row mb-4">
         {TABS.filter((t) => counts[t.key] > 0 || t.key === "all").map((t) => (
           <button key={t.key} role="tab" aria-selected={tab === t.key} onClick={() => setTab(t.key)}
-            className={clsx("rounded-lg border px-3 py-1.5 text-sm font-semibold", tab === t.key ? "border-primary bg-primary text-primary-fg" : "border-line bg-surface text-muted hover:text-ink")}>
+            className={clsx("whitespace-nowrap rounded-lg border px-3 py-1.5 text-sm font-semibold", tab === t.key ? "border-primary bg-primary text-primary-fg" : "border-line bg-surface text-muted hover:text-ink")}>
             {t.label} <span className="font-normal">{counts[t.key]}</span>
           </button>
         ))}

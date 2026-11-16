@@ -56,7 +56,7 @@ export function LessonView({ lesson, exercises }: { lesson: GrammarLesson; exerc
 
   return (
     <article>
-      <Link href="/grammar" className="mb-4 inline-flex items-center gap-1 text-sm font-medium text-muted hover:text-ink"><ArrowLeft size={15} aria-hidden="true" /> Grammar map</Link>
+      <Link href="/grammar" className="mb-2 inline-flex items-center gap-1 py-2.5 text-sm font-medium text-muted hover:text-ink"><ArrowLeft size={15} aria-hidden="true" /> Grammar map</Link>
       <header className="mb-6">
         <div className="mb-3 flex flex-wrap items-center gap-2">
           <span className="chip !text-primary">Theory</span>
@@ -127,7 +127,7 @@ export function LessonPractice({ lesson, exercises }: { lesson: GrammarLesson; e
   const formats = [...new Set(exercises.flatMap((e) => e.questions.map((q) => q.format).filter(Boolean)))];
   return (
     <article>
-      <Link href="/grammar/practice" className="mb-4 inline-flex items-center gap-1 text-sm font-medium text-muted hover:text-ink"><ArrowLeft size={15} aria-hidden="true" /> Grammar practice</Link>
+      <Link href="/grammar/practice" className="mb-2 inline-flex items-center gap-1 py-2.5 text-sm font-medium text-muted hover:text-ink"><ArrowLeft size={15} aria-hidden="true" /> Grammar practice</Link>
       <header className="mb-6">
         <div className="mb-3 flex flex-wrap items-center gap-2"><span className="chip !text-primary">Practice</span><LevelBadge level={lesson.level} /><MasteryChip target={lesson.slug} /></div>
         <h1 className="text-3xl font-extrabold leading-tight md:text-4xl">{lesson.title}</h1>

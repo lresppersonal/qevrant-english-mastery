@@ -4,13 +4,20 @@ import "@fontsource-variable/inter";
 import "./globals.css";
 import { BRAND } from "@/lib/brand";
 import { StoreProvider } from "@/components/StoreProvider";
+import { ServiceWorkerRegistration, ThemeColorSync } from "@/components/PwaSupport";
 
 export const metadata: Metadata = {
   title: { default: BRAND.full, template: `%s · ${BRAND.product}` },
   description: "A structured B2–C2 English learning system: grammar, vocabulary, reading, speaking and academic writing.",
-  icons: { icon: "/icon.svg" },
+  applicationName: BRAND.product,
+  icons: { icon: [{ url: "/icon.svg", type: "image/svg+xml" }, { url: "/icons/icon-192.png", sizes: "192x192" }], apple: "/apple-touch-icon.png" },
+  appleWebApp: { capable: true, title: BRAND.product, statusBarStyle: "black-translucent" },
+  formatDetection: { telephone: false },
 };
 export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
   themeColor: [{ media: "(prefers-color-scheme: light)", color: "#F5F7FB" }, { media: "(prefers-color-scheme: dark)", color: "#08101F" }],
 };
 
@@ -25,6 +32,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="min-h-dvh bg-bg text-ink">
         <StoreProvider>{children}</StoreProvider>
+        <ServiceWorkerRegistration />
+        <ThemeColorSync />
       </body>
     </html>
   );

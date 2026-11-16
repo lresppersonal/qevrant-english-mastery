@@ -7,6 +7,7 @@ import { useLearner } from "@/components/StoreProvider";
 import { ProfileForm } from "@/components/ProfileForm";
 import { ThemeToggle } from "@/components/AppShell";
 import { PageHeader } from "@/components/ui";
+import { InstallAppPanel } from "@/components/PwaSupport";
 
 export default function Settings() {
   const { store, profile, refresh, toast } = useLearner();
@@ -37,6 +38,11 @@ export default function Settings() {
         <h2 id="h-plan" className="mb-1 text-lg font-bold">Study plan</h2>
         {profile?.email && <p className="mb-5 text-sm text-muted">Signed in as {profile.email}</p>}
         <ProfileForm submitLabel="Save changes" />
+      </section>
+
+      <section className="card mb-6 space-y-3 p-6" aria-labelledby="h-install">
+        <h2 id="h-install" className="text-lg font-bold">App on your phone</h2>
+        <InstallAppPanel />
       </section>
 
       <section className="card mb-6 space-y-4 p-6" aria-labelledby="h-pref">
