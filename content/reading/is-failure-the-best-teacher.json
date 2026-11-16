@@ -4,7 +4,9 @@
   "title": "Is failure the best teacher?",
   "standfirst": "Schools and universities increasingly praise ‘productive failure’. But not every setback teaches a lesson, and not every learner can afford to fail.",
   "level": "C1",
-  "topics": ["education"],
+  "topics": [
+    "education"
+  ],
   "minutes": 6,
   "status": "published",
   "version": 1,
@@ -21,5 +23,80 @@
     "What, then, makes the difference? The research points to three conditions. First, the stakes must be low enough for a mistake to be survivable. Second, there must be feedback that turns a wrong answer into information. Third, the learner must have a chance to try again, ideally soon. Where these conditions are met, students who fail early often outperform those who were never allowed to fail at all. Where they are missing, failure is just failure.",
     "None of this means that schools should start setting impossible tasks or celebrating poor grades. It means that the question ‘Did the student fail?’ is less useful than ‘What happened next?’ The ability to bounce back from a setback is not a fixed trait that some children are born with; it is something that a curriculum can either foster or undermine. Perhaps the best teacher is not failure itself but the second attempt, and whoever designs our education systems should make sure that everyone gets one."
   ],
-  "exercises": ["failure-reading-tfng"]
+  "exercises": [
+    "failure-reading-tfng"
+  ],
+  "category": "education",
+  "keyVocabulary": [
+    {
+      "term": "setback",
+      "definition": "a problem that delays progress",
+      "ru": "неудача, препятствие",
+      "sense": "setback-n"
+    },
+    {
+      "term": "formative assessment",
+      "definition": "assessment that gives feedback during learning",
+      "ru": "формирующее оценивание",
+      "sense": "formative-assessment"
+    },
+    {
+      "term": "rote learning",
+      "definition": "learning by repetition without necessarily understanding",
+      "ru": "зубрёжка",
+      "sense": "rote-learning"
+    },
+    {
+      "term": "stifle",
+      "definition": "to stop something from developing",
+      "ru": "подавлять",
+      "sense": "stifle-v"
+    },
+    {
+      "term": "resilience",
+      "definition": "the ability to recover from difficulties",
+      "ru": "жизнестойкость",
+      "sense": "resilience-n"
+    },
+    {
+      "term": "outperform",
+      "definition": "to achieve better results than others",
+      "ru": "превосходить",
+      "sense": "outperform-v"
+    },
+    {
+      "term": "foster / undermine",
+      "definition": "to encourage / to weaken gradually",
+      "ru": "развивать / подрывать",
+      "sense": "foster-v"
+    }
+  ],
+  "expressions": [
+    {
+      "phrase": "the school of hard knocks",
+      "meaning": "learning from difficult life experience"
+    },
+    {
+      "phrase": "runs against a long tradition",
+      "meaning": "is contrary to established practice"
+    },
+    {
+      "phrase": "the stakes must be low",
+      "meaning": "there must be little to lose"
+    }
+  ],
+  "critical": [
+    {
+      "question": "Does the writer's argument apply equally to learning a language? Where might 'productive failure' work, and where not?",
+      "points": "Consider: low-stakes speaking practice vs high-stakes exams; the role of feedback; anxiety; whether errors fossilise without correction."
+    },
+    {
+      "question": "The writer argues that fairness limits the value of failure. What could a school do to make second attempts available to everyone?",
+      "points": "Consider: resits without penalty, mastery grading, funding, time, and who decides when a student is 'ready'."
+    },
+    {
+      "question": "Think of something you learned through failure. Which of the writer's three conditions were present?",
+      "points": "Low stakes, useful feedback, a chance to try again. Was any missing, and how did that change the outcome?"
+    }
+  ]
 }

@@ -1,6 +1,9 @@
 # English Mastery by QEVRANT
 
-A structured B2–C2 English learning platform. Phase 2 (design system + app shell) and Phase 3 (Education vertical slice with accounts, persistence and AI feedback) are complete.
+A structured B2–C2 English learning platform: vocabulary organised by 23 themes (CEFR as metadata), 17 grammar lessons with separate theory and practice pages, a 12-text reading library with IELTS-style tasks, an essay bank of 44 questions across 8 essay types, speaking practice, and AI practice feedback on essays and speaking. See `docs/CONTENT-REPORT.md` for content statistics and provenance.
+
+### Authoring content
+Content is written in compact formats in `content/src/` and compiled with `npm run content:build` (formats are documented at the top of `scripts/build-content.ts`). The build validates every record and cross-reference; content errors stop the build.
 
 **Stack:** Next.js 15 · React 19 · TypeScript · Tailwind 4 · Radix UI · Supabase (Postgres + Auth + Storage, EU region) · Vercel · Claude API for AI practice feedback · FSRS for spaced revision.
 

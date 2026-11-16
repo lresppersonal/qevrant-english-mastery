@@ -139,8 +139,7 @@
   ],
   "links": [
     { "type": "prerequisite", "to": "relative-clauses", "label": "Relative clauses: defining, non-defining and comment clauses", "level": "B2", "published": true },
-    { "type": "contrasts_with", "to": "cleft-sentences", "label": "Cleft sentences (It is … that …)", "level": "B2", "published": false },
-    { "type": "extends", "to": "fronting-and-inversion", "label": "Inversion, clefting, fronting and tailing", "level": "C1", "published": false },
+    { "type": "contrasts_with", "to": "inversion-and-emphasis", "label": "Cleft sentences (It is … that …)", "level": "C1", "published": true },
     { "type": "appears_in", "to": "is-failure-the-best-teacher", "label": "Reading: Is failure the best teacher?", "level": "C1", "published": true }
   ],
   "exercises": ["nominal-relatives-practice"],

@@ -1,0 +1,2022 @@
+{
+ "guides": [
+  {
+   "type": "opinion",
+   "title": "Opinion essays",
+   "recognise": "\"To what extent do you agree or disagree?\" / \"Do you agree or disagree?\" / \"Is this a positive or negative idea?\"",
+   "structure": [
+    "Introduction: paraphrase the question and state your position clearly",
+    "Body 1: your strongest reason, explained and illustrated",
+    "Body 2: a second reason, or a concession followed by your counter-argument",
+    "Conclusion: restate your position and summarise the reasons"
+   ],
+   "linking": [
+    "In my view,",
+    "I would argue that",
+    "It is undeniable that",
+    "Admittedly,",
+    "Nevertheless,",
+    "For this reason,",
+    "On balance,"
+   ]
+  },
+  {
+   "type": "discussion",
+   "title": "Discussion essays",
+   "recognise": "\"Discuss both these views and give your own opinion.\"",
+   "structure": [
+    "Introduction: present the two views and signal your opinion",
+    "Body 1: the first view, explained fairly",
+    "Body 2: the second view, explained fairly",
+    "Conclusion: your opinion, with the main reason"
+   ],
+   "linking": [
+    "Some people argue that",
+    "Others contend that",
+    "Proponents of",
+    "On the other hand,",
+    "Critics maintain that",
+    "Having considered both views,",
+    "I am inclined to believe that"
+   ]
+  },
+  {
+   "type": "advantages_disadvantages",
+   "title": "Advantages and disadvantages essays",
+   "recognise": "\"What are the advantages and disadvantages?\" / \"Do the advantages outweigh the disadvantages?\"",
+   "structure": [
+    "Introduction: paraphrase",
+    "if asked, state which side outweighs",
+    "Body 1: main advantages with examples",
+    "Body 2: main disadvantages with examples",
+    "Conclusion: summarise and give a clear verdict if required"
+   ],
+   "linking": [
+    "One major advantage is",
+    "A further benefit is",
+    "The main drawback is",
+    "On the downside,",
+    "This is outweighed by",
+    "All things considered,"
+   ]
+  },
+  {
+   "type": "problem_solution",
+   "title": "Problem and solution essays",
+   "recognise": "\"What problems does this cause? What solutions can you suggest?\" / \"How can this problem be solved?\"",
+   "structure": [
+    "Introduction: introduce the situation",
+    "Body 1: two specific problems with consequences",
+    "Body 2: matching solutions, with who should act",
+    "Conclusion: summarise and evaluate"
+   ],
+   "linking": [
+    "One serious consequence is",
+    "This leads to",
+    "This could be tackled by",
+    "An effective solution would be",
+    "Governments should",
+    "If these measures were adopted,"
+   ]
+  },
+  {
+   "type": "two_part",
+   "title": "Two-part question essays",
+   "recognise": "Two direct questions, e.g. \"Why is this happening? Is it a positive development?\"",
+   "structure": [
+    "Introduction: paraphrase and answer both questions briefly",
+    "Body 1: answer question 1 with explanation",
+    "Body 2: answer question 2 with explanation",
+    "Conclusion: summarise both answers"
+   ],
+   "linking": [
+    "The main reason for this is",
+    "This can be explained by",
+    "As for whether",
+    "In my opinion, this is",
+    "To sum up,"
+   ]
+  },
+  {
+   "type": "positive_negative",
+   "title": "Positive or negative development essays",
+   "recognise": "\"Is this a positive or negative development?\"",
+   "structure": [
+    "Introduction: paraphrase and state whether it is mainly positive or negative",
+    "Body 1: the side you agree with less (briefly)",
+    "Body 2: your main side, developed fully",
+    "Conclusion: clear judgement"
+   ],
+   "linking": [
+    "While it is true that",
+    "Admittedly,",
+    "However, on balance,",
+    "The benefits far outweigh",
+    "It is therefore a largely positive/negative development"
+   ]
+  },
+  {
+   "type": "cause_effect",
+   "title": "Cause and effect essays",
+   "recognise": "\"What are the causes of this? What effects does it have?\"",
+   "structure": [
+    "Introduction: introduce the trend",
+    "Body 1: two or three main causes",
+    "Body 2: the main effects",
+    "Conclusion: summarise and, if relevant, comment"
+   ],
+   "linking": [
+    "This is largely due to",
+    "stems from",
+    "can be attributed to",
+    "As a result,",
+    "This has led to",
+    "Consequently,",
+    "One knock-on effect is"
+   ]
+  },
+  {
+   "type": "cause_problem_solution",
+   "title": "Cause, problem and solution essays",
+   "recognise": "\"Why is this happening? What problems does it cause? How can it be solved?\"",
+   "structure": [
+    "Introduction",
+    "Body 1: causes",
+    "Body 2: problems",
+    "Body 3 (or combined): solutions linked to the causes",
+    "Conclusion"
+   ],
+   "linking": [
+    "The root cause is",
+    "This gives rise to",
+    "To address this,",
+    "A long-term solution would be",
+    "Unless action is taken,"
+   ]
+  }
+ ],
+ "prompts": [
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "grades-in-primary-school",
+   "title": "Grades in primary school",
+   "level": "B2+",
+   "topics": [
+    "education"
+   ],
+   "genre": "opinion",
+   "prompt": "Some educators believe that young children should not receive grades at school, only written feedback. To what extent do you agree or disagree?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "State your position clearly in the introduction and keep it consistent.",
+    "Give each body paragraph one main reason, explained and supported with an example.",
+    "Acknowledge an opposing view briefly and show why yours is stronger.",
+    "Conclude by restating your answer to the exact question."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Position: partly agree",
+    "Body 1: grades can create anxiety and comparison at an early age",
+    "Body 2: but parents and teachers need clear indicators of progress",
+    "Conclusion: feedback first, simple grades later"
+   ],
+   "vocabulary": [
+    "formative assessment",
+    "motivation",
+    "self-esteem",
+    "benchmark"
+   ],
+   "collocations": [
+    "give feedback",
+    "track progress",
+    "foster a love of learning"
+   ],
+   "ideas": [
+    "Grades motivate some children but discourage others",
+    "Written feedback is more informative but takes more teacher time",
+    "Early labels can become self-fulfilling"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "banning-phones-in-schools",
+   "title": "Banning phones in schools",
+   "level": "C1",
+   "topics": [
+    "science-technology"
+   ],
+   "genre": "opinion",
+   "prompt": "Smartphones should be completely banned from schools during the school day. To what extent do you agree or disagree?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "State your position clearly in the introduction and keep it consistent.",
+    "Give each body paragraph one main reason, explained and supported with an example.",
+    "Acknowledge an opposing view briefly and show why yours is stronger.",
+    "Conclude by restating your answer to the exact question."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Position: agree with exceptions",
+    "Body 1: distraction and cyberbullying undermine learning",
+    "Body 2: phones can be useful tools, so controlled use in lessons may be justified",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "distraction",
+    "attention span",
+    "digital literacy",
+    "enforce"
+   ],
+   "collocations": [
+    "impose a ban",
+    "pose a threat to",
+    "undermine concentration"
+   ],
+   "ideas": [
+    "Bans improve focus and social interaction",
+    "Parents want to contact children in emergencies",
+    "Pupils need to learn responsible use"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "paying-for-plastic",
+   "title": "Paying for plastic",
+   "level": "C1",
+   "topics": [
+    "environment"
+   ],
+   "genre": "opinion",
+   "prompt": "Governments should make manufacturers, not consumers, pay for the cost of recycling plastic packaging. Do you agree or disagree?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "State your position clearly in the introduction and keep it consistent.",
+    "Give each body paragraph one main reason, explained and supported with an example.",
+    "Acknowledge an opposing view briefly and show why yours is stronger.",
+    "Conclude by restating your answer to the exact question."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Position: agree",
+    "Body 1: producers decide how products are packaged",
+    "Body 2: costs would encourage less packaging",
+    "concede prices may rise",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "producer responsibility",
+    "incentive",
+    "landfill",
+    "biodegradable"
+   ],
+   "collocations": [
+    "bear the cost",
+    "reduce waste",
+    "shift responsibility"
+   ],
+   "ideas": [
+    "The polluter-pays principle",
+    "Companies pass costs on to consumers",
+    "Design changes at source are more effective than consumer behaviour"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "taxing-sugary-drinks",
+   "title": "Taxing sugary drinks",
+   "level": "B2+",
+   "topics": [
+    "health-medicine"
+   ],
+   "genre": "opinion",
+   "prompt": "Taxing sugary drinks is the most effective way to reduce obesity. To what extent do you agree or disagree?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "State your position clearly in the introduction and keep it consistent.",
+    "Give each body paragraph one main reason, explained and supported with an example.",
+    "Acknowledge an opposing view briefly and show why yours is stronger.",
+    "Conclude by restating your answer to the exact question."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Position: disagree that it is the MOST effective",
+    "Body 1: taxes can reduce consumption",
+    "Body 2: obesity has many causes",
+    "education, urban design and food labelling also matter",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "obesity",
+    "sedentary",
+    "levy",
+    "public health"
+   ],
+   "collocations": [
+    "childhood obesity",
+    "healthy eating",
+    "change behaviour"
+   ],
+   "ideas": [
+    "Taxes raise revenue for health programmes",
+    "Poorer households pay a larger share of income",
+    "Exercise and diet education address root causes"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "remote-work-and-young-employees",
+   "title": "Remote work and young employees",
+   "level": "C1",
+   "topics": [
+    "work-careers"
+   ],
+   "genre": "opinion",
+   "prompt": "Working from home is harmful to the careers of young employees. Do you agree or disagree?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "State your position clearly in the introduction and keep it consistent.",
+    "Give each body paragraph one main reason, explained and supported with an example.",
+    "Acknowledge an opposing view briefly and show why yours is stronger.",
+    "Conclude by restating your answer to the exact question."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Position: largely agree",
+    "Body 1: informal learning and mentoring happen in person",
+    "Body 2: but flexibility and wider job access can benefit them",
+    "Conclusion: hybrid arrangements"
+   ],
+   "vocabulary": [
+    "mentor",
+    "visibility",
+    "isolation",
+    "productivity"
+   ],
+   "collocations": [
+    "learn on the job",
+    "career progression",
+    "work-life balance"
+   ],
+   "ideas": [
+    "Young staff learn by observing colleagues",
+    "Promotions may favour visible employees",
+    "Remote work opens jobs beyond big cities"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "public-money-for-the-arts",
+   "title": "Public money for the arts",
+   "level": "C1",
+   "topics": [
+    "arts-culture"
+   ],
+   "genre": "opinion",
+   "prompt": "Public money should be spent on hospitals and schools rather than on theatres and museums. To what extent do you agree or disagree?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "State your position clearly in the introduction and keep it consistent.",
+    "Give each body paragraph one main reason, explained and supported with an example.",
+    "Acknowledge an opposing view briefly and show why yours is stronger.",
+    "Conclude by restating your answer to the exact question."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Position: disagree",
+    "Body 1: culture brings social and economic benefits",
+    "Body 2: concede priorities in times of crisis",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "subsidise",
+    "cultural heritage",
+    "well-being",
+    "tourism revenue"
+   ],
+   "collocations": [
+    "allocate funds",
+    "public spending",
+    "enrich society"
+   ],
+   "ideas": [
+    "Arts budgets are small compared with health",
+    "Culture attracts tourists and investment",
+    "Access to arts should not depend on wealth"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "practical-skills-or-academic-subjects",
+   "title": "Practical skills or academic subjects",
+   "level": "B2+",
+   "topics": [
+    "education"
+   ],
+   "genre": "discussion",
+   "prompt": "Some people think schools should teach practical skills such as cooking and managing money, while others believe academic subjects are more important. Discuss both views and give your own opinion.",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Present BOTH views fairly in separate paragraphs.",
+    "Make your own opinion explicit (introduction and conclusion).",
+    "Avoid simply listing arguments: explain why each one matters.",
+    "Keep your opinion consistent with the paragraph you weight most."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Intro",
+    "Body 1: life skills prepare young people for independence",
+    "Body 2: academic subjects build knowledge and open university routes",
+    "Conclusion: integrate both"
+   ],
+   "vocabulary": [
+    "life skills",
+    "financial literacy",
+    "curriculum",
+    "well-rounded"
+   ],
+   "collocations": [
+    "prepare students for",
+    "acquire skills",
+    "broaden the curriculum"
+   ],
+   "ideas": [
+    "Many adults lack basic financial knowledge",
+    "Time in the curriculum is limited",
+    "Practical skills can be taught through academic subjects"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "prison-or-rehabilitation",
+   "title": "Prison or rehabilitation",
+   "level": "C1",
+   "topics": [
+    "crime-law"
+   ],
+   "genre": "discussion",
+   "prompt": "Some people believe that the main aim of prison should be punishment, while others think it should be rehabilitation. Discuss both views and give your opinion.",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Present BOTH views fairly in separate paragraphs.",
+    "Make your own opinion explicit (introduction and conclusion).",
+    "Avoid simply listing arguments: explain why each one matters.",
+    "Keep your opinion consistent with the paragraph you weight most."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Intro",
+    "Body 1: punishment as justice and deterrent",
+    "Body 2: rehabilitation reduces reoffending",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "deterrent",
+    "rehabilitation",
+    "reoffend",
+    "offender"
+   ],
+   "collocations": [
+    "serve a sentence",
+    "reduce reoffending",
+    "reintegrate into society"
+   ],
+   "ideas": [
+    "Victims expect justice",
+    "Most prisoners are eventually released",
+    "Education in prison lowers repeat crime"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "who-should-care-for-the-elderly",
+   "title": "Who should care for the elderly",
+   "level": "C1",
+   "topics": [
+    "society-politics"
+   ],
+   "genre": "discussion",
+   "prompt": "Some argue that families should take care of elderly relatives, while others believe this is the responsibility of the state. Discuss both views and give your opinion.",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Present BOTH views fairly in separate paragraphs.",
+    "Make your own opinion explicit (introduction and conclusion).",
+    "Avoid simply listing arguments: explain why each one matters.",
+    "Keep your opinion consistent with the paragraph you weight most."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Intro",
+    "Body 1: family care, tradition and emotional support",
+    "Body 2: state care, professional standards, ageing populations",
+    "Conclusion: shared responsibility"
+   ],
+   "vocabulary": [
+    "ageing population",
+    "welfare",
+    "caregiver",
+    "burden"
+   ],
+   "collocations": [
+    "provide care",
+    "place a strain on",
+    "social security"
+   ],
+   "ideas": [
+    "Families may lack time or skills",
+    "State care requires high taxes",
+    "Cultural expectations differ"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "regulating-social-media",
+   "title": "Regulating social media",
+   "level": "C1",
+   "topics": [
+    "communication-media"
+   ],
+   "genre": "discussion",
+   "prompt": "Some people think governments should strictly regulate social media companies, while others believe this would threaten free speech. Discuss both views and give your opinion.",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Present BOTH views fairly in separate paragraphs.",
+    "Make your own opinion explicit (introduction and conclusion).",
+    "Avoid simply listing arguments: explain why each one matters.",
+    "Keep your opinion consistent with the paragraph you weight most."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Intro",
+    "Body 1: harmful content, misinformation and child safety",
+    "Body 2: censorship risks",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "misinformation",
+    "censorship",
+    "regulation",
+    "accountability"
+   ],
+   "collocations": [
+    "hold companies accountable",
+    "spread misinformation",
+    "freedom of expression"
+   ],
+   "ideas": [
+    "Platforms profit from engagement",
+    "Governments may abuse power",
+    "Independent regulators as a middle way"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "free-public-transport",
+   "title": "Free public transport",
+   "level": "B2+",
+   "topics": [
+    "transport-movement"
+   ],
+   "genre": "discussion",
+   "prompt": "Some people think public transport should be free for everyone, while others believe passengers should pay. Discuss both views and give your own opinion.",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Present BOTH views fairly in separate paragraphs.",
+    "Make your own opinion explicit (introduction and conclusion).",
+    "Avoid simply listing arguments: explain why each one matters.",
+    "Keep your opinion consistent with the paragraph you weight most."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Intro",
+    "Body 1: free transport reduces congestion and helps poorer residents",
+    "Body 2: cost to taxpayers and need for investment",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "congestion",
+    "infrastructure",
+    "subsidy",
+    "commuter"
+   ],
+   "collocations": [
+    "reduce car use",
+    "cut emissions",
+    "fund investment"
+   ],
+   "ideas": [
+    "Fares fund maintenance",
+    "Free travel may cause overcrowding",
+    "Cities that tried it had mixed results"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "choosing-a-partner",
+   "title": "Choosing a partner",
+   "level": "B2+",
+   "topics": [
+    "relationships-personality"
+   ],
+   "genre": "discussion",
+   "prompt": "Some people believe that it is best to choose a partner with similar interests and background, while others think differences make a relationship stronger. Discuss both views and give your own opinion.",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Present BOTH views fairly in separate paragraphs.",
+    "Make your own opinion explicit (introduction and conclusion).",
+    "Avoid simply listing arguments: explain why each one matters.",
+    "Keep your opinion consistent with the paragraph you weight most."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Intro",
+    "Body 1: shared values reduce conflict",
+    "Body 2: differences encourage growth",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "compatibility",
+    "values",
+    "compromise",
+    "rapport"
+   ],
+   "collocations": [
+    "share interests",
+    "see eye to eye",
+    "broaden horizons"
+   ],
+   "ideas": [
+    "Shared values matter more than hobbies",
+    "Differences can cause conflict",
+    "Communication is key in both cases"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "online-degrees",
+   "title": "Online degrees",
+   "level": "B2+",
+   "topics": [
+    "education"
+   ],
+   "genre": "advantages_disadvantages",
+   "prompt": "More universities are offering complete degrees online. Do the advantages of this outweigh the disadvantages?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Cover both advantages and disadvantages.",
+    "If asked whether one outweighs the other, give a clear verdict.",
+    "Weigh the points: who benefits, who loses, in the short and long term?",
+    "Support each point with a specific consequence or example."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Verdict: advantages outweigh for adult learners",
+    "Body 1: flexibility, cost, access",
+    "Body 2: isolation, lower completion, practical subjects",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "flexibility",
+    "dropout rate",
+    "self-discipline",
+    "accessible"
+   ],
+   "collocations": [
+    "study at your own pace",
+    "widen access",
+    "face-to-face interaction"
+   ],
+   "ideas": [
+    "Working adults can study",
+    "Employers' perception of online degrees",
+    "Labs and clinical training are difficult online"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "global-brands",
+   "title": "Global brands",
+   "level": "C1",
+   "topics": [
+    "economics-globalisation"
+   ],
+   "genre": "advantages_disadvantages",
+   "prompt": "Large international companies are opening branches in small towns around the world. Do the advantages outweigh the disadvantages?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Cover both advantages and disadvantages.",
+    "If asked whether one outweighs the other, give a clear verdict.",
+    "Weigh the points: who benefits, who loses, in the short and long term?",
+    "Support each point with a specific consequence or example."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Verdict",
+    "Body 1: jobs, investment, consistent quality",
+    "Body 2: local businesses close, profits leave, towns look the same",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "multinational",
+    "homogenisation",
+    "local economy",
+    "profit"
+   ],
+   "collocations": [
+    "create jobs",
+    "drive out competition",
+    "boost investment"
+   ],
+   "ideas": [
+    "Local shops cannot compete on price",
+    "Global brands train workers",
+    "Cultural identity of town centres"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "space-tourism",
+   "title": "Space tourism",
+   "level": "B2+",
+   "topics": [
+    "travel-tourism"
+   ],
+   "genre": "advantages_disadvantages",
+   "prompt": "Private companies now offer short trips into space for wealthy tourists. What are the advantages and disadvantages of this development?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Cover both advantages and disadvantages.",
+    "If asked whether one outweighs the other, give a clear verdict.",
+    "Weigh the points: who benefits, who loses, in the short and long term?",
+    "Support each point with a specific consequence or example."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Body 1: funding for space technology, inspiration",
+    "Body 2: emissions, inequality, safety",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "emissions",
+    "innovation",
+    "elite",
+    "commercial"
+   ],
+   "collocations": [
+    "push the boundaries",
+    "carbon footprint",
+    "luxury market"
+   ],
+   "ideas": [
+    "Revenue drives cheaper launch technology",
+    "High emissions per passenger",
+    "Symbol of inequality"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "health-apps",
+   "title": "Health apps",
+   "level": "C1",
+   "topics": [
+    "health-medicine"
+   ],
+   "genre": "advantages_disadvantages",
+   "prompt": "Many people now use apps to monitor their health and fitness. Do the advantages outweigh the disadvantages?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Cover both advantages and disadvantages.",
+    "If asked whether one outweighs the other, give a clear verdict.",
+    "Weigh the points: who benefits, who loses, in the short and long term?",
+    "Support each point with a specific consequence or example."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Verdict: advantages if data is protected",
+    "Body 1: motivation, early warning",
+    "Body 2: privacy, anxiety, inaccurate advice",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "data privacy",
+    "well-being",
+    "self-diagnosis",
+    "accuracy"
+   ],
+   "collocations": [
+    "monitor your health",
+    "set goals",
+    "data breach"
+   ],
+   "ideas": [
+    "Tracking encourages exercise",
+    "Data may be sold",
+    "Obsessive monitoring can cause anxiety"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "living-in-high-rise-buildings",
+   "title": "Living in high-rise buildings",
+   "level": "C1",
+   "topics": [
+    "cities-urban"
+   ],
+   "genre": "advantages_disadvantages",
+   "prompt": "In many cities, more people now live in tall apartment buildings. What are the advantages and disadvantages of this?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Cover both advantages and disadvantages.",
+    "If asked whether one outweighs the other, give a clear verdict.",
+    "Weigh the points: who benefits, who loses, in the short and long term?",
+    "Support each point with a specific consequence or example."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Body 1: efficient land use, housing supply, services",
+    "Body 2: lack of community, green space, fire safety",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "density",
+    "sprawl",
+    "amenities",
+    "community"
+   ],
+   "collocations": [
+    "make efficient use of land",
+    "densely populated",
+    "sense of community"
+   ],
+   "ideas": [
+    "Reduces urban sprawl",
+    "Families lack outdoor space",
+    "Good design matters"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "traffic-in-city-centres",
+   "title": "Traffic in city centres",
+   "level": "B2+",
+   "topics": [
+    "cities-urban"
+   ],
+   "genre": "problem_solution",
+   "prompt": "Many city centres suffer from serious traffic congestion. What problems does this cause, and what solutions can you suggest?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Identify two or three specific problems, not vague ones.",
+    "Match each solution to a problem.",
+    "Say who should act (governments, companies, individuals).",
+    "Consider whether solutions are realistic."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Body 1: air pollution, lost time, stress",
+    "Body 2: congestion charges, better public transport, cycling",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "congestion",
+    "emissions",
+    "commute",
+    "pedestrian"
+   ],
+   "collocations": [
+    "traffic jam",
+    "congestion charge",
+    "public transport network"
+   ],
+   "ideas": [
+    "Health effects of pollution",
+    "Delivery vehicles",
+    "Park-and-ride schemes"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "food-waste",
+   "title": "Food waste",
+   "level": "C1",
+   "topics": [
+    "environment"
+   ],
+   "genre": "problem_solution",
+   "prompt": "A large proportion of food produced worldwide is wasted. What are the problems associated with this, and how can they be addressed?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Identify two or three specific problems, not vague ones.",
+    "Match each solution to a problem.",
+    "Say who should act (governments, companies, individuals).",
+    "Consider whether solutions are realistic."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Body 1: environmental and economic costs",
+    "Body 2: supermarkets, labelling, redistribution",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "food waste",
+    "landfill",
+    "best-before date",
+    "redistribute"
+   ],
+   "collocations": [
+    "throw away",
+    "tackle waste",
+    "methane emissions"
+   ],
+   "ideas": [
+    "Confusing date labels",
+    "Supermarket standards for appearance",
+    "Food banks"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "skills-shortages",
+   "title": "Skills shortages",
+   "level": "C1",
+   "topics": [
+    "work-careers"
+   ],
+   "genre": "problem_solution",
+   "prompt": "Many countries face shortages of skilled workers in areas such as healthcare and engineering. What problems does this cause, and what can be done?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Identify two or three specific problems, not vague ones.",
+    "Match each solution to a problem.",
+    "Say who should act (governments, companies, individuals).",
+    "Consider whether solutions are realistic."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Body 1: pressure on services, slower growth",
+    "Body 2: training, vocational routes, immigration",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "skills shortage",
+    "vocational",
+    "workforce",
+    "retain"
+   ],
+   "collocations": [
+    "fill vacancies",
+    "train staff",
+    "attract talent"
+   ],
+   "ideas": [
+    "Long training times",
+    "Better pay and conditions",
+    "Recognising foreign qualifications"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "online-misinformation",
+   "title": "Online misinformation",
+   "level": "C1",
+   "topics": [
+    "communication-media"
+   ],
+   "genre": "problem_solution",
+   "prompt": "False information spreads quickly on the internet. What problems does this cause, and what solutions can you suggest?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Identify two or three specific problems, not vague ones.",
+    "Match each solution to a problem.",
+    "Say who should act (governments, companies, individuals).",
+    "Consider whether solutions are realistic."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Body 1: health risks, political polarisation, loss of trust",
+    "Body 2: media literacy, platform design, fact-checking",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "misinformation",
+    "polarisation",
+    "media literacy",
+    "fact-check"
+   ],
+   "collocations": [
+    "spread false information",
+    "erode trust",
+    "critical thinking"
+   ],
+   "ideas": [
+    "Vaccine rumours",
+    "Teaching students to verify sources",
+    "Labels and slower sharing"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "loneliness-among-the-elderly",
+   "title": "Loneliness among the elderly",
+   "level": "B2+",
+   "topics": [
+    "relationships-personality"
+   ],
+   "genre": "problem_solution",
+   "prompt": "Many older people today live alone and feel lonely. What problems does this cause, and how could it be reduced?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Identify two or three specific problems, not vague ones.",
+    "Match each solution to a problem.",
+    "Say who should act (governments, companies, individuals).",
+    "Consider whether solutions are realistic."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Body 1: health and mental effects",
+    "Body 2: community programmes, intergenerational housing, technology",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "isolation",
+    "well-being",
+    "intergenerational",
+    "volunteer"
+   ],
+   "collocations": [
+    "feel isolated",
+    "social contact",
+    "community centre"
+   ],
+   "ideas": [
+    "Health costs",
+    "Students living with older residents",
+    "Digital skills classes"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "living-alone",
+   "title": "Living alone",
+   "level": "B2+",
+   "topics": [
+    "relationships-personality"
+   ],
+   "genre": "two_part",
+   "prompt": "More and more adults are choosing to live alone. Why is this happening? Is it a positive or negative trend?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Answer BOTH questions; give each its own paragraph.",
+    "Answer each question directly in its topic sentence.",
+    "Develop answers with explanation and examples.",
+    "Your conclusion should summarise both answers."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Body 1: reasons: independence, later marriage, urban jobs",
+    "Body 2: mostly positive for personal freedom, but risks of loneliness",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "independence",
+    "single-person household",
+    "isolation"
+   ],
+   "collocations": [
+    "live independently",
+    "delay marriage",
+    "social network"
+   ],
+   "ideas": [
+    "Higher incomes allow living alone",
+    "Housing costs",
+    "Loneliness in old age"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "learning-foreign-languages",
+   "title": "Learning foreign languages",
+   "level": "C1",
+   "topics": [
+    "education"
+   ],
+   "genre": "two_part",
+   "prompt": "Fewer students in some English-speaking countries are studying foreign languages. Why might this be? What can be done to encourage language learning?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Answer BOTH questions; give each its own paragraph.",
+    "Answer each question directly in its topic sentence.",
+    "Develop answers with explanation and examples.",
+    "Your conclusion should summarise both answers."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Body 1: English as global language, exam pressure",
+    "Body 2: earlier start, exchanges, career links",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "lingua franca",
+    "motivation",
+    "curriculum",
+    "exchange programme"
+   ],
+   "collocations": [
+    "global language",
+    "learn a language",
+    "career prospects"
+   ],
+   "ideas": [
+    "Belief that English is enough",
+    "Languages seen as difficult subjects",
+    "Cultural benefits"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "popularity-of-old-films",
+   "title": "Popularity of old films",
+   "level": "C1",
+   "topics": [
+    "arts-culture"
+   ],
+   "genre": "two_part",
+   "prompt": "Remakes of old films are increasingly common. Why do film studios do this? Is it good for cinema?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Answer BOTH questions; give each its own paragraph.",
+    "Answer each question directly in its topic sentence.",
+    "Develop answers with explanation and examples.",
+    "Your conclusion should summarise both answers."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Body 1: lower risk, nostalgia, global markets",
+    "Body 2: mixed: revives classics but limits originality",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "remake",
+    "franchise",
+    "originality",
+    "box office"
+   ],
+   "collocations": [
+    "play it safe",
+    "appeal to audiences",
+    "creative risk"
+   ],
+   "ideas": [
+    "Guaranteed audiences",
+    "New generations discover stories",
+    "Fewer original scripts funded"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "young-offenders",
+   "title": "Young offenders",
+   "level": "C1",
+   "topics": [
+    "crime-law"
+   ],
+   "genre": "two_part",
+   "prompt": "In some countries, crime among teenagers is rising. What are the causes? What should be done?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Answer BOTH questions; give each its own paragraph.",
+    "Answer each question directly in its topic sentence.",
+    "Develop answers with explanation and examples.",
+    "Your conclusion should summarise both answers."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Body 1: causes: poverty, lack of supervision, peer pressure",
+    "Body 2: youth programmes, education, parenting support",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "peer pressure",
+    "deprivation",
+    "rehabilitation",
+    "youth centre"
+   ],
+   "collocations": [
+    "commit a crime",
+    "turn to crime",
+    "positive role model"
+   ],
+   "ideas": [
+    "Gangs and social media",
+    "Funding for youth services",
+    "Restorative justice"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "children-and-coding",
+   "title": "Children and coding",
+   "level": "B2+",
+   "topics": [
+    "science-technology"
+   ],
+   "genre": "two_part",
+   "prompt": "Many schools now teach computer programming to young children. Why is this? Is it a good idea?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Answer BOTH questions; give each its own paragraph.",
+    "Answer each question directly in its topic sentence.",
+    "Develop answers with explanation and examples.",
+    "Your conclusion should summarise both answers."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Body 1: digital economy, problem-solving",
+    "Body 2: good, if balanced with creativity and play",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "coding",
+    "digital literacy",
+    "problem-solving",
+    "automation"
+   ],
+   "collocations": [
+    "prepare for the future",
+    "logical thinking",
+    "screen time"
+   ],
+   "ideas": [
+    "Future job markets",
+    "Coding teaches persistence",
+    "Risk of narrowing the curriculum"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "gig-economy",
+   "title": "Gig economy",
+   "level": "C1",
+   "topics": [
+    "work-careers"
+   ],
+   "genre": "positive_negative",
+   "prompt": "More people now work as freelancers through apps rather than as permanent employees. Is this a positive or negative development?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Decide whether the development is mainly positive or negative and say so.",
+    "Discuss both sides, giving more weight to your view.",
+    "Think about different groups affected.",
+    "End with a clear judgement."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Position: mainly negative for workers",
+    "Body 1: flexibility and extra income",
+    "Body 2: insecurity, no sick pay or pension",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "gig economy",
+    "freelance",
+    "job security",
+    "benefits"
+   ],
+   "collocations": [
+    "flexible hours",
+    "lack of security",
+    "workers' rights"
+   ],
+   "ideas": [
+    "Students and parents value flexibility",
+    "No holiday pay",
+    "Algorithms control work"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "cheap-flights",
+   "title": "Cheap flights",
+   "level": "B2+",
+   "topics": [
+    "travel-tourism"
+   ],
+   "genre": "positive_negative",
+   "prompt": "Air travel has become much cheaper, so more people travel abroad. Is this a positive or negative development?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Decide whether the development is mainly positive or negative and say so.",
+    "Discuss both sides, giving more weight to your view.",
+    "Think about different groups affected.",
+    "End with a clear judgement."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Position",
+    "Body 1: cultural exchange, tourism income",
+    "Body 2: emissions, overtourism",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "overtourism",
+    "carbon footprint",
+    "cultural exchange"
+   ],
+   "collocations": [
+    "broaden your horizons",
+    "cut emissions",
+    "boost the local economy"
+   ],
+   "ideas": [
+    "Travel no longer only for the rich",
+    "Environmental cost",
+    "Crowded historic centres"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "ageing-populations",
+   "title": "Ageing populations",
+   "level": "C1",
+   "topics": [
+    "society-politics"
+   ],
+   "genre": "positive_negative",
+   "prompt": "In many countries the proportion of older people is increasing. Is this a positive or negative development?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Decide whether the development is mainly positive or negative and say so.",
+    "Discuss both sides, giving more weight to your view.",
+    "Think about different groups affected.",
+    "End with a clear judgement."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Position: challenge rather than simply negative",
+    "Body 1: pressure on pensions and healthcare",
+    "Body 2: longer, healthier lives and experienced workers",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "life expectancy",
+    "pension",
+    "workforce",
+    "dependency ratio"
+   ],
+   "collocations": [
+    "ageing population",
+    "raise the retirement age",
+    "burden on"
+   ],
+   "ideas": [
+    "Medical progress",
+    "Fewer young workers",
+    "Older volunteers contribute"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "cashless-societies",
+   "title": "Cashless societies",
+   "level": "C1",
+   "topics": [
+    "economics-globalisation"
+   ],
+   "genre": "positive_negative",
+   "prompt": "In some countries, cash is rapidly being replaced by card and phone payments. Is this a positive or negative development?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Decide whether the development is mainly positive or negative and say so.",
+    "Discuss both sides, giving more weight to your view.",
+    "Think about different groups affected.",
+    "End with a clear judgement."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Position",
+    "Body 1: convenience, less crime",
+    "Body 2: exclusion of older and poorer people, privacy",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "cashless",
+    "financial inclusion",
+    "privacy",
+    "transaction"
+   ],
+   "collocations": [
+    "digital payment",
+    "leave people behind",
+    "track spending"
+   ],
+   "ideas": [
+    "Easier tax collection",
+    "Elderly people without smartphones",
+    "Power outages"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "news-from-social-media",
+   "title": "News from social media",
+   "level": "B2+",
+   "topics": [
+    "communication-media"
+   ],
+   "genre": "positive_negative",
+   "prompt": "More young people now get their news from social media rather than newspapers or TV. Is this a positive or negative development?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Decide whether the development is mainly positive or negative and say so.",
+    "Discuss both sides, giving more weight to your view.",
+    "Think about different groups affected.",
+    "End with a clear judgement."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Position: mainly negative",
+    "Body 1: accessibility, variety",
+    "Body 2: misinformation, echo chambers",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "echo chamber",
+    "misinformation",
+    "reliable source"
+   ],
+   "collocations": [
+    "keep up with the news",
+    "verify sources",
+    "a wide range of views"
+   ],
+   "ideas": [
+    "Instant updates",
+    "Algorithms show similar opinions",
+    "Decline of local journalism"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "moving-to-cities",
+   "title": "Moving to cities",
+   "level": "B2+",
+   "topics": [
+    "cities-urban"
+   ],
+   "genre": "cause_effect",
+   "prompt": "Large numbers of young people are leaving rural areas to live in cities. What are the causes and effects of this?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Explain the causes in one part and the effects in another.",
+    "Link causes to effects logically.",
+    "Use cause-and-effect language precisely (leads to, stems from, as a result).",
+    "Prioritise the most significant causes and effects."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Body 1: jobs, education, lifestyle",
+    "Body 2: ageing villages, urban housing pressure",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "urbanisation",
+    "rural depopulation",
+    "amenities"
+   ],
+   "collocations": [
+    "job opportunities",
+    "put pressure on",
+    "ageing population"
+   ],
+   "ideas": [
+    "Lack of rural jobs",
+    "Services close in villages",
+    "Rising city rents"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "rising-stress-levels",
+   "title": "Rising stress levels",
+   "level": "C1",
+   "topics": [
+    "health-medicine"
+   ],
+   "genre": "cause_effect",
+   "prompt": "Stress-related illness is increasing in many countries. What are the causes, and what effects does this have on individuals and society?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Explain the causes in one part and the effects in another.",
+    "Link causes to effects logically.",
+    "Use cause-and-effect language precisely (leads to, stems from, as a result).",
+    "Prioritise the most significant causes and effects."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Body 1: work pressure, constant connectivity, financial insecurity",
+    "Body 2: health costs, lost productivity, relationships",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "burnout",
+    "well-being",
+    "productivity",
+    "workload"
+   ],
+   "collocations": [
+    "long working hours",
+    "take sick leave",
+    "mental health"
+   ],
+   "ideas": [
+    "Always-on culture",
+    "Economic costs",
+    "Effects on families"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "extreme-weather",
+   "title": "Extreme weather",
+   "level": "C1",
+   "topics": [
+    "environment"
+   ],
+   "genre": "cause_effect",
+   "prompt": "Extreme weather events are becoming more frequent. What are the causes, and what effects do they have on communities?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Explain the causes in one part and the effects in another.",
+    "Link causes to effects logically.",
+    "Use cause-and-effect language precisely (leads to, stems from, as a result).",
+    "Prioritise the most significant causes and effects."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Body 1: climate change, deforestation, urban development on floodplains",
+    "Body 2: displacement, crop losses, insurance costs",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "drought",
+    "displaced",
+    "climate change",
+    "resilience"
+   ],
+   "collocations": [
+    "natural disaster",
+    "take a toll on",
+    "adapt to"
+   ],
+   "ideas": [
+    "Greenhouse gases",
+    "Poorer communities hit hardest",
+    "Rebuilding costs"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "children-doing-less-sport",
+   "title": "Children doing less sport",
+   "level": "B2+",
+   "topics": [
+    "sports-fitness"
+   ],
+   "genre": "cause_effect",
+   "prompt": "Children today do less physical activity than in the past. What are the causes, and what are the effects?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Explain the causes in one part and the effects in another.",
+    "Link causes to effects logically.",
+    "Use cause-and-effect language precisely (leads to, stems from, as a result).",
+    "Prioritise the most significant causes and effects."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Body 1: screens, safety fears, less PE",
+    "Body 2: obesity, weaker social skills",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "sedentary",
+    "obesity",
+    "physical education"
+   ],
+   "collocations": [
+    "screen time",
+    "play outdoors",
+    "take up a sport"
+   ],
+   "ideas": [
+    "Parents' safety fears",
+    "School timetables",
+    "Long-term health"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "disappearing-traditions",
+   "title": "Disappearing traditions",
+   "level": "C1",
+   "topics": [
+    "history-heritage"
+   ],
+   "genre": "cause_effect",
+   "prompt": "Many traditional customs and crafts are disappearing. What are the causes, and what effects does this have?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Explain the causes in one part and the effects in another.",
+    "Link causes to effects logically.",
+    "Use cause-and-effect language precisely (leads to, stems from, as a result).",
+    "Prioritise the most significant causes and effects."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Body 1: globalisation, urbanisation, economics",
+    "Body 2: loss of identity, knowledge",
+    "but new forms emerge",
+    "Conclusion"
+   ],
+   "vocabulary": [
+    "heritage",
+    "craftsmanship",
+    "cultural identity"
+   ],
+   "collocations": [
+    "pass down",
+    "die out",
+    "preserve traditions"
+   ],
+   "ideas": [
+    "Young people move away",
+    "Mass-produced goods",
+    "Tourism can revive crafts"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "plastic-in-the-oceans",
+   "title": "Plastic in the oceans",
+   "level": "C1",
+   "topics": [
+    "environment"
+   ],
+   "genre": "cause_problem_solution",
+   "prompt": "Large amounts of plastic end up in the world's oceans. Why does this happen, what problems does it cause, and how can it be solved?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Explain why the situation has arisen.",
+    "Describe the problems it creates.",
+    "Propose solutions linked to the causes you identified.",
+    "Keep each paragraph focused on one function."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Causes: single-use packaging, poor waste systems",
+    "Problems: wildlife harm, microplastics in food chain",
+    "Solutions: bans, deposit schemes, waste infrastructure"
+   ],
+   "vocabulary": [
+    "single-use",
+    "microplastics",
+    "deposit scheme",
+    "marine life"
+   ],
+   "collocations": [
+    "dispose of waste",
+    "enter the food chain",
+    "phase out"
+   ],
+   "ideas": [
+    "Rivers carry waste to sea",
+    "Fishing gear",
+    "International cooperation"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "university-dropout",
+   "title": "University dropout",
+   "level": "C1",
+   "topics": [
+    "education"
+   ],
+   "genre": "cause_problem_solution",
+   "prompt": "Many students drop out of university in their first year. Why does this happen, what problems does it cause, and what can be done?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Explain why the situation has arisen.",
+    "Describe the problems it creates.",
+    "Propose solutions linked to the causes you identified.",
+    "Keep each paragraph focused on one function."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Causes: wrong course choice, finances, isolation",
+    "Problems: debt, wasted resources",
+    "Solutions: guidance, financial support, mentoring"
+   ],
+   "vocabulary": [
+    "drop out",
+    "tuition fees",
+    "mentoring",
+    "guidance"
+   ],
+   "collocations": [
+    "make the transition",
+    "financial support",
+    "student debt"
+   ],
+   "ideas": [
+    "Pressure to choose early",
+    "Part-time jobs",
+    "Peer support schemes"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "personal-debt",
+   "title": "Personal debt",
+   "level": "C1",
+   "topics": [
+    "business-finance"
+   ],
+   "genre": "cause_problem_solution",
+   "prompt": "More young adults are getting into serious debt. What are the causes, what problems does this create, and what solutions are there?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Explain why the situation has arisen.",
+    "Describe the problems it creates.",
+    "Propose solutions linked to the causes you identified.",
+    "Keep each paragraph focused on one function."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Causes: easy credit, buy-now-pay-later, rising costs",
+    "Problems: stress, delayed home ownership",
+    "Solutions: financial education, regulation"
+   ],
+   "vocabulary": [
+    "overdraft",
+    "credit",
+    "financial literacy",
+    "in the red"
+   ],
+   "collocations": [
+    "make ends meet",
+    "get into debt",
+    "pay off a loan"
+   ],
+   "ideas": [
+    "Online shopping ease",
+    "Mental health effects",
+    "Teaching budgeting"
+   ]
+  },
+  {
+   "status": "published",
+   "version": 1,
+   "author": "QEVRANT editorial (AI-assisted draft)",
+   "reviewer": null,
+   "publishedAt": "2026-11-16",
+   "slug": "unaffordable-housing",
+   "title": "Unaffordable housing",
+   "level": "C1",
+   "topics": [
+    "cities-urban"
+   ],
+   "genre": "cause_problem_solution",
+   "prompt": "In many cities, young people cannot afford to buy or rent a home. Why is this, what problems does it cause, and how could it be solved?",
+   "minWords": 250,
+   "suggestedMinutes": 40,
+   "guidance": [
+    "Explain why the situation has arisen.",
+    "Describe the problems it creates.",
+    "Propose solutions linked to the causes you identified.",
+    "Keep each paragraph focused on one function."
+   ],
+   "usefulLanguage": [],
+   "plan": [
+    "Causes: limited supply, investment buyers, low interest rates",
+    "Problems: long commutes, delayed families",
+    "Solutions: building, rent controls, social housing"
+   ],
+   "vocabulary": [
+    "affordable housing",
+    "gentrification",
+    "mortgage",
+    "supply"
+   ],
+   "collocations": [
+    "soaring rents",
+    "get on the property ladder",
+    "build homes"
+   ],
+   "ideas": [
+    "Short-term rentals",
+    "Planning restrictions",
+    "Public housing programmes"
+   ]
+  }
+ ]
+}

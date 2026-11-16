@@ -100,6 +100,8 @@ export function ExercisePlayer({ exercise }: { exercise: Exercise }) {
     <div className="card p-5 sm:p-6">
       <div className="mb-5 flex items-center gap-3">
         <span className="text-sm font-semibold text-muted">Question {i + 1} of {exercise.questions.length}</span>
+        {q.format && <span className="chip hidden sm:inline-flex">{q.format}</span>}
+        {q.level && <span className="chip">{q.level}</span>}
         <div className="flex-1"><ProgressBar value={i / exercise.questions.length} label="Exercise progress" /></div>
       </div>
       <p id={`prompt-${q.id}`} className="text-lg font-medium leading-relaxed"><Rich text={q.prompt} /></p>

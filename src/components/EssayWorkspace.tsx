@@ -3,7 +3,8 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { ArrowLeft, Sparkles, Loader2, History } from "lucide-react";
 import type { WritingPrompt } from "@/lib/content/schema";
-import { getSense } from "@/lib/content";
+import { getSense, getEssayGuide, getTheme } from "@/lib/content";
+import { ESSAY_LABEL } from "@/lib/essay";
 import { countWords, WritingFeedback } from "@/lib/ai/schemas";
 import type { WritingSubmission } from "@/lib/store/types";
 import { useLearner } from "./StoreProvider";
@@ -63,7 +64,7 @@ export function EssayWorkspace({ prompt }: { prompt: WritingPrompt }) {
       <Link href="/writing" className="mb-4 inline-flex items-center gap-1 text-sm font-medium text-muted hover:text-ink"><ArrowLeft size={15} aria-hidden="true" /> Academic Writing</Link>
       <div className="grid gap-6 lg:grid-cols-[1fr_300px]">
         <div className="min-w-0">
-          <div className="mb-2 flex items-center gap-2"><LevelBadge level={prompt.level} /><span className="chip">{prompt.minWords}+ words</span><span className="chip">about {prompt.suggestedMinutes} min</span></div>
+          <div className="mb-2 flex flex-wrap items-center gap-2"><LevelBadge level={prompt.level} /><span className="chip">{ESSAY_LABEL[prompt.genre]}</span>{prompt.topics.map((t) => <span key={t} className="chip">{getTheme(t)?.title ?? t}</span>)}<span className="chip">{prompt.minWords}+ words</span><span className="chip">about {prompt.suggestedMinutes} min</span></div>
           <h1 className="text-3xl font-extrabold">{prompt.title}</h1>
           <blockquote className="card mt-4 border-l-4 !border-l-primary p-5 text-[17px] font-medium leading-relaxed">{prompt.prompt}</blockquote>
 
@@ -87,18 +88,35 @@ export function EssayWorkspace({ prompt }: { prompt: WritingPrompt }) {
         </div>
 
         <aside className="space-y-4">
+          {prompt.plan.length > 0 && (
+            <div className="card p-5">
+              <p className="font-bold">Suggested plan</p>
+              <ol className="mt-2 list-decimal space-y-1.5 pl-5 text-[15px]">{prompt.plan.map((g) => <li key={g}>{g}</li>)}</ol>
+            </div>
+          )}
           <div className="card p-5">
             <p className="font-bold">Before you write</p>
             <ul className="mt-2 list-disc space-y-1.5 pl-5 text-[15px] text-muted">{prompt.guidance.map((g) => <li key={g}>{g}</li>)}</ul>
           </div>
-          <div className="card p-5">
-            <p className="font-bold">Useful language</p>
-            <ul className="mt-2 flex flex-wrap gap-2">
-              {prompt.usefulLanguage.map((id) => { const r = getSense(id); return r && (
-                <li key={id}><Link href={`/vocabulary/${r.item.slug}#${id}`} className="chip !text-[13px] hover:border-primary hover:text-primary">{r.item.lemma}</Link></li>
-              ); })}
-            </ul>
-          </div>
+          {(prompt.usefulLanguage.length > 0 || prompt.vocabulary.length > 0) && (
+            <div className="card p-5">
+              <p className="font-bold">Advanced vocabulary</p>
+              <ul className="mt-2 flex flex-wrap gap-2">
+                {prompt.usefulLanguage.map((id) => { const r = getSense(id); return r && (
+                  <li key={id}><Link href={`/vocabulary/${r.item.slug}#${id}`} className="chip !text-[13px] hover:border-primary hover:text-primary">{r.item.lemma}</Link></li>
+                ); })}
+                {prompt.vocabulary.map((v) => <li key={v} className="chip !text-[13px]">{v}</li>)}
+              </ul>
+              {prompt.collocations.length > 0 && <><p className="mt-3 text-sm font-semibold">Collocations</p><p className="mt-1 text-[15px] text-muted">{prompt.collocations.join(" · ")}</p></>}
+            </div>
+          )}
+          {getEssayGuide(prompt.genre) && (
+            <div className="card p-5">
+              <p className="font-bold">Linking for {ESSAY_LABEL[prompt.genre].toLowerCase()} essays</p>
+              <ul className="mt-2 flex flex-wrap gap-1.5">{getEssayGuide(prompt.genre)!.linking.map((l) => <li key={l} className="chip !text-[13px]">{l}</li>)}</ul>
+            </div>
+          )}
+          {prompt.ideas.length > 0 && <IdeasPanel ideas={prompt.ideas} />}
           {history.length > 0 && (
             <div className="card p-5">
               <p className="flex items-center gap-2 font-bold"><History size={16} aria-hidden="true" /> Your earlier attempts</p>
@@ -117,5 +135,16 @@ export function EssayWorkspace({ prompt }: { prompt: WritingPrompt }) {
         {current && parsed?.success && <FeedbackView feedback={parsed.data} source={current.body} kind="writing" />}
       </div>
     </article>
+  );
+}
+
+function IdeasPanel({ ideas }: { ideas: string[] }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="card p-5">
+      <p className="font-bold">Ideas and arguments to explore</p>
+      {open ? <ul className="mt-2 list-disc space-y-1.5 pl-5 text-[15px]">{ideas.map((i) => <li key={i}>{i}</li>)}</ul>
+        : <><p className="mt-1 text-sm text-muted">Try planning on your own first.</p><button onClick={() => setOpen(true)} className="btn btn-ghost mt-2 !min-h-0 !py-1.5 text-sm">Show ideas</button></>}
+    </div>
   );
 }

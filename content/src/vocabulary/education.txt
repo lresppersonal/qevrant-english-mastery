@@ -1,0 +1,16 @@
+# Education and Academia (additional entries; core Education set lives in content/vocabulary/education.json)
+tertiary education | coll+ac | noun phrase | C1 | academic | Institutions | education at university or college level | высшее образование | Access to tertiary education has expanded rapidly. | | higher education |
+enrol | v | verb | B2+ | neutral | Institutions | to officially join a course or school | записаться, поступить (на курс) | She enrolled on an evening course in Spanish. | enrol on/in a course | register; sign up |
+dissertation | n | noun | B2+ | academic | Research | a long piece of writing on a subject, especially for a university degree | дипломная работа, диссертация | He's writing his dissertation on urban poverty. | write/submit a dissertation | thesis |
+syllabus | n | noun | B2+ | neutral | Institutions | the list of topics covered in a course | учебный план (по предмету) | Shakespeare is on the syllabus this year. | on the syllabus | curriculum |
+literacy | n | noun | B2+ | neutral | Skills | the ability to read and write | грамотность | Adult literacy rates have improved. | literacy rates; digital literacy | |
+numeracy | n | noun | C1 | neutral | Skills | the ability to work with numbers | умение считать, математическая грамотность | Employers value good numeracy. | | | work-careers
+cram | v | verb | B2+ | informal | Exams | to study a lot in a short time before an exam | зубрить (перед экзаменом) | I crammed all night for the history exam. | cram for an exam | swot (BrE informal) |
+lecturer | n | noun | B2 | neutral | Institutions | a person who teaches at a university | преподаватель (вуза) | She's a lecturer in economics. | senior lecturer | professor |
+mentor | n | noun / verb | B2+ | neutral | Skills | an experienced person who advises someone with less experience | наставник | Every new teacher is given a mentor. | act as a mentor | adviser; guide | work-careers
+draw on | pv | phrasal verb | C1 | formal | Research | to use information or experience to help you | опираться на, использовать | The report draws on interviews with 300 teachers. | draw on experience/research | use; rely on |
+learn the ropes | idiom | verb phrase | B2+ | informal | Skills | to learn how to do a job or activity | освоиться, научиться азам | It took me a month to learn the ropes. | | | work-careers
+@family educate (v); education (n); educational (adj); educator (n); educated (adj)
+@family know (v); knowledge (n); knowledgeable (adj); acknowledge (v)
+@distinct learn vs teach vs study :: You *learn* something (gain knowledge); someone *teaches* you; you *study* a subject (spend time learning it, often formally). ~~She learned me English~~ is wrong.
+@distinct university vs college vs school :: In British English *school* is for children (to 18); *college* often means further education or a part of a university; *university* awards degrees. In American English *school* and *college* can mean university.

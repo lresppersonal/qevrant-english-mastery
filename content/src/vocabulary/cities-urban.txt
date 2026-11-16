@@ -1,0 +1,19 @@
+# Cities and Urban Life
+urbanisation | n+ac | noun | C1 | academic | Urban growth | the process of more people moving to and living in cities | урбанизация | Rapid urbanisation has put pressure on water supplies. | rapid urbanisation | | society-politics
+sprawl | n | noun / verb | C1 | neutral | Urban growth | the spread of a city into the surrounding countryside, often without planning | бесконтрольное расширение города | Urban sprawl has swallowed nearby farmland. | urban/suburban sprawl | spread; expansion | environment
+suburb | n | noun | B2 | neutral | Areas | an area of houses outside the centre of a city | пригород | They moved to a quiet suburb. | leafy suburb | outskirts |
+inner city | coll | noun phrase | B2+ | neutral | Areas | the central part of a city, often with poor housing and social problems | неблагополучный центральный район | Inner-city schools face particular challenges. | inner-city areas/schools | | society-politics
+gentrification | n | noun | C1 | neutral | Housing | the process of a poor area changing as wealthier people move in | джентрификация | Gentrification has pushed up rents for long-term residents. | | regeneration | economics-globalisation
+affordable housing | coll | noun phrase | B2+ | neutral | Housing | homes that people on average or low incomes can afford | доступное жильё | The city has a shortage of affordable housing. | build affordable housing | social housing | society-politics
+amenities | n | noun (plural) | B2+ | neutral | Services | useful buildings and services such as shops and parks | удобства, инфраструктура | The estate lacks basic amenities. | local amenities; public amenities | facilities |
+green space | coll | noun phrase | B2 | neutral | Planning | an area of grass and trees in a city | зелёная зона | Access to green space improves mental health. | public green space | park | health-medicine
+regeneration | n | noun | C1 | formal | Planning | improving a run-down area economically and physically | возрождение, реконструкция (района) | The docks underwent major regeneration. | urban regeneration; regeneration project | renewal; revival |
+zoning | n | noun | C1 | formal | Planning | rules deciding how areas of land can be used | зонирование | Zoning laws keep factories away from homes. | zoning laws/regulations | land-use planning | crime-law
+densely populated | coll | adjective phrase | B2+ | neutral | Urban growth | with a lot of people living in a small area | густонаселённый | Hong Kong is one of the most densely populated places on Earth. | | crowded |
+bustling | adj | adjective | B2+ | neutral | Atmosphere | full of busy activity | оживлённый, шумный | We wandered through bustling street markets. | bustling city/street/market | lively; busy | travel-tourism
+anonymous | adj | adjective | C1 | neutral | Atmosphere | without individual character; not known by name | безликий; анонимный | Big cities can feel anonymous and lonely. | | impersonal; faceless | psychology-behaviour
+run-down | adj | adjective | B2+ | neutral | Areas | in bad condition because of lack of care or money | обветшалый, запущенный | The station is in a run-down part of town. | run-down area/building | shabby; neglected |
+the concrete jungle | idiom | noun phrase | C1 | informal | Atmosphere | a city seen as harsh and unpleasant, with many buildings and few trees | каменные джунгли | He escaped the concrete jungle every weekend. | | |
+@family urban (adj); urbanise (v); urbanisation (n); suburban (adj); suburbia (n)
+@family populate (v); population (n); populated (adj); populous (adj); depopulation (n)
+@distinct city vs town vs village :: Size and status differ: a *village* is small and rural; a *town* is larger; a *city* is a large, important town (in the UK often one with a cathedral or royal charter).

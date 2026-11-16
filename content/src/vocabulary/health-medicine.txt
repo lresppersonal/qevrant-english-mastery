@@ -1,0 +1,27 @@
+# Health and Medicine
+symptom | n | noun | B2 | neutral | Illness | a sign of illness felt by a patient | симптом | Fever is a common symptom of flu. | early/mild symptoms; display symptoms | sign; indication |
+diagnosis | n+ac | noun | B2+ | formal | Treatment | the identification of an illness | диагноз | Early diagnosis improves survival rates. | make/receive a diagnosis | identification |
+chronic | adj | adjective | B2+ | neutral | Illness | (of illness) lasting a long time or recurring | хронический | Chronic back pain affects millions of workers. | chronic illness/pain/condition | persistent; long-term |
+acute | adj | adjective | C1 | formal | Illness | (of illness) severe and sudden; (of a problem) very serious | острый | She was admitted with acute appendicitis. | acute pain/shortage | severe; critical |
+contagious | adj | adjective | B2+ | neutral | Illness | (of a disease) spread by contact between people | заразный | Measles is highly contagious. | highly contagious | infectious; catching |
+outbreak | n | noun | B2+ | neutral | Public health | a sudden start of a disease or something unpleasant | вспышка (болезни) | Officials are trying to contain the outbreak. | an outbreak of; contain an outbreak | epidemic; eruption |
+vaccine | n | noun | B2 | neutral | Public health | a substance given to protect people from a disease | вакцина | The vaccine was developed in under a year. | develop/administer a vaccine | immunisation; jab | science-technology
+side effect | coll | noun phrase | B2 | neutral | Treatment | an unwanted effect of a medicine | побочный эффект | Drowsiness is a common side effect. | serious/unpleasant side effects | adverse reaction |
+prescribe | v | verb | B2+ | neutral | Treatment | (of a doctor) to say what medicine a patient should take | прописывать, назначать | The GP prescribed antibiotics. | prescribe medication/treatment | order; recommend |
+recover from | v | verb | B2 | neutral | Treatment | to become well again after illness or injury | выздоравливать после | He is recovering from heart surgery. | make a full recovery; recover from an illness | get over; recuperate |
+sedentary | adj | adjective | C1 | formal | Lifestyle | involving a lot of sitting and little exercise | малоподвижный, сидячий | A sedentary lifestyle increases the risk of diabetes. | sedentary lifestyle/job | inactive | sports-fitness
+well-being | n | noun | B2+ | neutral | Lifestyle | the state of being healthy and happy | благополучие, здоровье | Gardening improves mental well-being. | mental/physical well-being | wellness; welfare | psychology-behaviour
+obesity | n | noun | B2+ | neutral | Lifestyle | the condition of being very overweight in a way that harms health | ожирение | Childhood obesity has doubled in thirty years. | childhood obesity; obesity rates | | food-nutrition
+life expectancy | coll | noun phrase | B2+ | neutral | Public health | the number of years a person is expected to live | ожидаемая продолжительность жизни | Life expectancy has risen steadily. | average life expectancy; increase life expectancy | lifespan |
+healthcare | n | noun | B2 | neutral | Public health | the services that look after people's health | здравоохранение | Access to healthcare varies between regions. | healthcare system/provider; free healthcare | medical care | society-politics
+come down with | pv | phrasal verb | B2+ | informal | Illness | to start to have an illness, usually not serious | заболеть, слечь (с чем-л.) | I think I'm coming down with a cold. | come down with flu | catch |
+pass out | pv | phrasal verb | B2 | neutral | Illness | to become unconscious | потерять сознание | She passed out in the heat. | | faint; black out |
+under the weather | idiom | adjective phrase | B2+ | informal | Illness | feeling slightly ill | неважно себя чувствовать | I'm a bit under the weather today. | feel under the weather | unwell; off colour |
+on the mend | idiom | prepositional phrase | C1 | informal | Treatment | getting better after illness | на поправку | Grandad's been ill, but he's on the mend now. | | recovering |
+in good shape | fx | prepositional phrase | B2 | neutral | Lifestyle | healthy and physically fit | в хорошей форме | She's in good shape for her age. | in good/bad shape | fit | sports-fitness
+@family diagnose (v); diagnosis (n); diagnostic (adj); misdiagnose (v)
+@family heal (v); health (n); healthy (adj); unhealthy (adj); healthily (adv); healthcare (n)
+@distinct disease vs illness vs injury :: A *disease* is a specific medical condition, often infectious (*heart disease*); *illness* is the state of being unwell; an *injury* is physical damage from an accident.
+@distinct cure vs treat vs heal :: You *treat* a patient or illness (try to make it better); you *cure* an illness (make it go away completely); wounds *heal*.
+chronically | adv | adverb | C1 | neutral | Illness | for a long time and repeatedly; continuously | хронически | Chronically ill patients need ongoing support. | chronically ill/underfunded | persistently | society-politics
+insidious | adj | adjective | C2 | formal | Illness | spreading gradually and harmfully without being noticed | коварный, незаметно развивающийся | High blood pressure is insidious because it has few symptoms. | insidious effect/disease | stealthy; creeping | psychology-behaviour

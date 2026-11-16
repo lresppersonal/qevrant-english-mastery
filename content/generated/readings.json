@@ -1,0 +1,1034 @@
+[
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "can-machines-create",
+  "title": "Can machines be creative?",
+  "standfirst": "Software can now write poems, compose music and produce images in seconds. Whether that counts as creativity depends on what we think creativity is.",
+  "level": "C1",
+  "topics": [
+   "science-technology"
+  ],
+  "category": "science-technology",
+  "minutes": 6,
+  "paragraphs": [
+   "[A] Not long ago, creativity was often described as the one thing machines would never be able to do. Computers could calculate faster than any human and beat champions at chess, but writing a moving story or painting an original picture seemed to require something uniquely human. Today, generative software can produce essays, songs and illustrations on request, and the old certainty has disappeared.",
+   "[B] These systems work by analysing enormous quantities of existing text, images or sound and learning the statistical patterns within them. When asked to produce something new, they generate output that follows those patterns. The results can be impressive: fluent, stylish and, at times, genuinely surprising. Yet critics argue that recombining what already exists, however skilfully, is not the same as creating.",
+   "[C] Defenders reply that human creativity also builds on what came before. Writers absorb the books they have read; composers borrow forms and harmonies from their predecessors. Very few ideas appear from nowhere. On this view, the difference between human and machine creativity is one of degree rather than kind.",
+   "[D] Psychologists often define creativity as producing something that is both novel and valuable. Machines can clearly produce novelty. Value is harder, because it depends on judgement: someone must decide that a piece of work is meaningful, beautiful or useful. At present, that judgement still comes from people, who choose the prompts, select among many outputs and decide what to keep.",
+   "[E] The rise of these tools has also raised practical concerns. Artists and authors have asked whether their work was used to train systems without their permission, and courts in several countries are considering how copyright law applies. Teachers worry about students submitting machine-written essays, while some employers see opportunities to cut costs in design and marketing.",
+   "[F] Perhaps the most useful question is not whether machines are creative, but how they change human creativity. Like photography in the nineteenth century, which pushed painters away from realism and towards new styles, generative tools may push people towards the kinds of work that depend most on personal experience, intention and taste."
+  ],
+  "exercises": [
+   "can-machines-create-1",
+   "can-machines-create-2",
+   "can-machines-create-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "generative",
+    "definition": "able to produce new content",
+    "ru": "генеративный"
+   },
+   {
+    "term": "novel (adj)",
+    "definition": "new and original",
+    "ru": "новый, оригинальный"
+   },
+   {
+    "term": "predecessor",
+    "definition": "a person who did a job or activity before you",
+    "ru": "предшественник"
+   },
+   {
+    "term": "a difference of degree rather than kind",
+    "definition": "a difference in amount, not in nature",
+    "ru": "количественное, а не качественное различие"
+   },
+   {
+    "term": "prompt (n)",
+    "definition": "an instruction given to a computer system",
+    "ru": "запрос, подсказка (для ИИ)"
+   },
+   {
+    "term": "algorithm",
+    "definition": "a set of rules a computer follows",
+    "ru": "алгоритм",
+    "sense": "algorithm"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "from nowhere",
+    "meaning": "without any origin or cause"
+   },
+   {
+    "phrase": "the old certainty has disappeared",
+    "meaning": "what people were sure of is no longer true"
+   }
+  ],
+  "critical": [
+   {
+    "question": "If a machine produces a painting from your instructions, who is the artist?",
+    "points": "Consider: intention, effort, selection, ownership, the training data."
+   },
+   {
+    "question": "Should students be allowed to use generative tools for essays? Under what conditions?",
+    "points": "Consider: learning goals, honesty, assessment design, future workplaces."
+   }
+  ],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "compulsory-voting",
+  "title": "Should voting be compulsory?",
+  "standfirst": "In a few democracies, citizens can be fined for not voting. Is that a strength of democracy or a contradiction of it?",
+  "level": "C1",
+  "topics": [
+   "society-politics"
+  ],
+  "category": "society-politics",
+  "minutes": 5,
+  "paragraphs": [
+   "[A] In most democracies, voting is a right that citizens are free to use or ignore. In a minority of countries, including Australia, Belgium and several in Latin America, it is also a legal duty. Australia introduced compulsory voting for federal elections in the 1920s, and turnout there regularly exceeds ninety per cent, far higher than in many countries where voting is voluntary.",
+   "[B] Supporters argue that compulsory voting produces governments that represent the whole population rather than the most motivated part of it. Where voting is optional, turnout is often lowest among younger, poorer and less educated citizens, so politicians have an incentive to focus on older, wealthier groups who reliably vote. Requiring everyone to participate, the argument goes, forces parties to appeal to the centre and to address the concerns of people they might otherwise ignore.",
+   "[C] There are practical benefits too. Parties spend less money persuading their supporters to turn up and can concentrate on persuading undecided voters. Some researchers also suggest that compulsory systems reduce the influence of extreme views, because the electorate is broader than the activists who dominate low-turnout elections.",
+   "[D] Opponents see a fundamental contradiction: a democracy that compels people to take part is restricting the very freedom it claims to protect. Choosing not to vote, they argue, can itself be a political statement. Others worry that forcing uninterested citizens to vote adds random or uninformed choices to the result. In practice, most compulsory systems require only that people attend or return a ballot; they may still spoil it or leave it blank.",
+   "[E] The penalties involved are usually small fines, and enforcement varies. What seems to matter most is the norm: once voting is expected of everyone, it becomes a habit, and many citizens in such countries say they would continue to vote even if the law changed. Whether that habit could be created elsewhere without compulsion remains an open question."
+  ],
+  "exercises": [
+   "compulsory-voting-1",
+   "compulsory-voting-2",
+   "compulsory-voting-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "compulsory",
+    "definition": "required by law",
+    "ru": "обязательный",
+    "sense": "compulsory-adj"
+   },
+   {
+    "term": "turnout",
+    "definition": "the number of people who vote",
+    "ru": "явка",
+    "sense": "turnout"
+   },
+   {
+    "term": "electorate",
+    "definition": "all the people allowed to vote",
+    "ru": "электорат",
+    "sense": "electorate"
+   },
+   {
+    "term": "incentive",
+    "definition": "something that encourages a particular action",
+    "ru": "стимул"
+   },
+   {
+    "term": "compel",
+    "definition": "to force someone to do something",
+    "ru": "принуждать"
+   },
+   {
+    "term": "ballot",
+    "definition": "the paper used to vote; a vote",
+    "ru": "бюллетень; голосование"
+   },
+   {
+    "term": "norm",
+    "definition": "an accepted standard of behaviour",
+    "ru": "норма"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "the very freedom it claims to protect",
+    "meaning": "exactly the freedom it says it defends"
+   },
+   {
+    "phrase": "spoil a ballot",
+    "meaning": "deliberately make a vote invalid"
+   },
+   {
+    "phrase": "an open question",
+    "meaning": "something not yet decided"
+   }
+  ],
+  "critical": [
+   {
+    "question": "Would compulsory voting work in your country?",
+    "points": "Consider: trust in politics, enforcement, civic education, how parties might change."
+   },
+   {
+    "question": "Is choosing not to vote a legitimate political act?",
+    "points": "Consider: protest, apathy, responsibility, alternatives such as blank votes."
+   }
+  ],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "fifteen-minute-city",
+  "title": "The fifteen-minute city",
+  "standfirst": "What if everything you needed each day were within a short walk or bike ride? An idea from urban planning has become a political flashpoint.",
+  "level": "C1",
+  "topics": [
+   "cities-urban"
+  ],
+  "category": "cities-urban",
+  "minutes": 6,
+  "paragraphs": [
+   "[A] The concept is easy to state. In a fifteen-minute city, residents can reach most of their everyday needs, including work, schools, shops, healthcare and green space, within a quarter of an hour on foot or by bicycle. The idea, popularised in the late 2010s by the academic Carlos Moreno and adopted by the mayor of Paris, draws on much older traditions of compact, mixed-use neighbourhoods.",
+   "[B] For most of the twentieth century, planners in many countries did the opposite. Homes, offices and shopping areas were separated into different zones and connected by roads. This model suited the car, but it also meant long commutes, heavy traffic and town centres that emptied after office hours. Supporters of the fifteen-minute city argue that reversing this separation would cut emissions, improve health and strengthen local communities.",
+   "[C] In practice, the changes are often modest. Schoolyards may be opened to the public at weekends, streets near schools closed to cars at certain times, cycle lanes added and planning rules adjusted so that small shops and clinics can open in residential areas. None of this prevents anyone from driving; it aims to make driving less necessary.",
+   "[D] Nevertheless, the idea has attracted fierce opposition. Some critics see it as a disguised attempt to restrict personal freedom, especially when it is combined with traffic-control schemes that limit car access to certain streets. Others raise more practical objections: in sprawling suburbs and rural areas, the density needed to support local services simply does not exist, and building it would take decades.",
+   "[E] There are also concerns about fairness. If a neighbourhood becomes more pleasant to live in, property prices may rise, pushing out the lower-income residents the plan was supposed to help. Planners therefore increasingly argue that the fifteen-minute city must be accompanied by affordable housing policies.",
+   "[F] Much of the controversy may come from the name, which sounds like a rule rather than an aspiration. Few supporters claim that every city can be redesigned within fifteen-minute boundaries. The underlying question is more basic: should cities be planned primarily around cars, or around the people who live in them?"
+  ],
+  "exercises": [
+   "fifteen-minute-city-1",
+   "fifteen-minute-city-2",
+   "fifteen-minute-city-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "mixed-use",
+    "definition": "combining homes, shops and offices in the same area",
+    "ru": "смешанного назначения"
+   },
+   {
+    "term": "zone (v) / zoning",
+    "definition": "to divide land into areas for different uses",
+    "ru": "зонирование",
+    "sense": "zoning"
+   },
+   {
+    "term": "density",
+    "definition": "the number of people or buildings in an area",
+    "ru": "плотность"
+   },
+   {
+    "term": "sprawling",
+    "definition": "spreading over a large area in an untidy way",
+    "ru": "разросшийся",
+    "sense": "sprawl"
+   },
+   {
+    "term": "flashpoint",
+    "definition": "an issue that causes strong conflict",
+    "ru": "очаг конфликта, горячая тема"
+   },
+   {
+    "term": "aspiration",
+    "definition": "a hope or ambition",
+    "ru": "стремление"
+   },
+   {
+    "term": "affordable housing",
+    "definition": "homes that ordinary people can afford",
+    "ru": "доступное жильё",
+    "sense": "affordable-housing"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "a political flashpoint",
+    "meaning": "an issue that causes angry political argument"
+   },
+   {
+    "phrase": "draws on",
+    "meaning": "uses as a basis"
+   },
+   {
+    "phrase": "pushing out",
+    "meaning": "forcing people to leave"
+   }
+  ],
+  "critical": [
+   {
+    "question": "Could your city become a fifteen-minute city? What would need to change?",
+    "points": "Consider: public transport, shops, schools, housing density, climate."
+   },
+   {
+    "question": "Why do planning debates sometimes become so emotional?",
+    "points": "Consider: identity, freedom, trust in government, misinformation."
+   }
+  ],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "life-of-a-t-shirt",
+  "title": "The long journey of a cheap T-shirt",
+  "standfirst": "A simple cotton T-shirt may cross several borders before it reaches a shop. Following its journey reveals how the global economy really works.",
+  "level": "B2+",
+  "topics": [
+   "economics-globalisation"
+  ],
+  "category": "economics-globalisation",
+  "minutes": 6,
+  "paragraphs": [
+   "[A] Few products seem as ordinary as a plain cotton T-shirt. Yet the one you are wearing may have travelled further than you have this year. Its cotton might have been grown in one country, spun into yarn in a second, knitted and dyed in a third, sewn in a fourth and finally shipped to a warehouse in a fifth before being sold online.",
+   "[B] This long supply chain exists because each stage is carried out wherever it is cheapest or most efficient. Cotton grows best in warm climates with plenty of water or irrigation. Spinning and weaving are highly mechanised, so they tend to be located where energy is cheap and factories are large. Sewing, by contrast, still depends heavily on human hands, and is therefore concentrated in countries where wages are low.",
+   "[C] Supporters of globalisation argue that this division of labour has made clothing far more affordable and created millions of jobs in developing economies. For many workers, often young women moving from rural areas, a factory job offers a regular income and a degree of independence that farming did not. Several countries have used the garment industry as a first step towards more advanced manufacturing.",
+   "[D] The costs, however, are significant. Wages in the sewing stage are frequently barely enough to live on, and working conditions vary widely. Serious factory accidents have drawn international attention to unsafe buildings and weak inspections. The environmental impact is also considerable: growing cotton can require large amounts of water and pesticides, dyeing can pollute rivers, and transporting goods across oceans adds to carbon emissions.",
+   "[E] Consumers increasingly ask where their clothes come from, and many brands now publish lists of their suppliers or join certification schemes. Critics warn, though, that transparency at the top of the chain does not always reach the subcontractors further down, where problems are hardest to see. Others argue that the most effective change would come from buying fewer, longer-lasting clothes, an idea that sits uncomfortably with the business model of fast fashion."
+  ],
+  "exercises": [
+   "life-of-a-t-shirt-1",
+   "life-of-a-t-shirt-2",
+   "life-of-a-t-shirt-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "supply chain",
+    "definition": "the series of companies involved in making and delivering a product",
+    "ru": "цепочка поставок",
+    "sense": "supply-chain"
+   },
+   {
+    "term": "division of labour",
+    "definition": "splitting work into separate stages done by different people or places",
+    "ru": "разделение труда"
+   },
+   {
+    "term": "mechanised",
+    "definition": "done by machines",
+    "ru": "механизированный"
+   },
+   {
+    "term": "garment",
+    "definition": "a piece of clothing",
+    "ru": "предмет одежды"
+   },
+   {
+    "term": "subcontractor",
+    "definition": "a firm that does part of a job for another company",
+    "ru": "субподрядчик"
+   },
+   {
+    "term": "transparency",
+    "definition": "openness about how something is done",
+    "ru": "прозрачность"
+   },
+   {
+    "term": "fast fashion",
+    "definition": "cheap clothes produced quickly to follow trends",
+    "ru": "быстрая мода",
+    "sense": "fast-fashion"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "barely enough to live on",
+    "meaning": "almost not enough for basic needs"
+   },
+   {
+    "phrase": "a first step towards",
+    "meaning": "the beginning of progress to something"
+   },
+   {
+    "phrase": "sits uncomfortably with",
+    "meaning": "conflicts with"
+   }
+  ],
+  "critical": [
+   {
+    "question": "Is it fair to blame consumers for problems in the clothing industry?",
+    "points": "Consider: price, information, responsibility of brands and governments, choice."
+   },
+   {
+    "question": "Should rich countries ban imports made in unsafe conditions?",
+    "points": "Consider: workers' jobs, enforcement, trade rules, unintended consequences."
+   }
+  ],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "loneliness",
+  "title": "The quiet health risk of loneliness",
+  "standfirst": "Doctors increasingly treat loneliness not just as a sad feeling, but as a public health problem.",
+  "level": "B2+",
+  "topics": [
+   "health-medicine"
+  ],
+  "category": "health-medicine",
+  "minutes": 6,
+  "paragraphs": [
+   "[A] Loneliness is usually discussed as an emotional experience, something painful but private. Over the past two decades, however, researchers have built up evidence that persistent loneliness is also associated with physical health problems, including heart disease, weakened immunity and a higher risk of dementia in older age. Some public health bodies now describe it as a risk factor comparable to well-known lifestyle risks.",
+   "[B] It is important to distinguish loneliness from being alone. Many people live by themselves and feel perfectly content, while others feel isolated in a busy family or office. Loneliness is the gap between the social connection a person wants and the connection they actually have. That is why it can affect people of any age, including students who have just left home and young parents at home with a baby.",
+   "[C] Why should a feeling damage the body? One explanation is that humans evolved in groups, where being cut off from others was genuinely dangerous. Chronic loneliness may keep the body in a state of mild alarm, raising stress hormones and disturbing sleep. Lonely people may also be less likely to exercise, eat well or seek medical help, because no one encourages them to do so.",
+   "[D] Responses have taken several forms. In some countries, doctors can now refer patients to community activities, such as walking groups, choirs or volunteering, a practice sometimes called social prescribing. Cities have experimented with benches where strangers are invited to talk, and with housing schemes that mix students and older residents. A few governments have even appointed a minister with responsibility for loneliness.",
+   "[E] Technology is an ambiguous part of the picture. Video calls and online communities can keep people in touch across distances, and were a lifeline for many during periods of lockdown. Yet heavy use of social media has been linked with feelings of isolation in some studies, perhaps because comparing ourselves with others' carefully edited lives makes our own seem empty.",
+   "[F] There is no single cure, partly because loneliness has so many causes. But recognising it as a health issue, rather than a personal weakness, may make it easier for people to admit that they are struggling, and that may be the first step towards reconnecting."
+  ],
+  "exercises": [
+   "loneliness-1",
+   "loneliness-2",
+   "loneliness-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "persistent",
+    "definition": "continuing for a long time",
+    "ru": "постоянный, хронический"
+   },
+   {
+    "term": "immunity",
+    "definition": "the body's ability to resist disease",
+    "ru": "иммунитет"
+   },
+   {
+    "term": "risk factor",
+    "definition": "something that increases the chance of a disease",
+    "ru": "фактор риска"
+   },
+   {
+    "term": "chronic",
+    "definition": "lasting a long time",
+    "ru": "хронический",
+    "sense": "chronic"
+   },
+   {
+    "term": "social prescribing",
+    "definition": "doctors referring patients to community activities",
+    "ru": "социальное назначение (направление к общественной активности)"
+   },
+   {
+    "term": "lifeline",
+    "definition": "something that helps you in a very difficult situation",
+    "ru": "спасательный круг"
+   },
+   {
+    "term": "well-being",
+    "definition": "the state of being healthy and happy",
+    "ru": "благополучие",
+    "sense": "well-being"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "built up evidence",
+    "meaning": "gradually collected proof"
+   },
+   {
+    "phrase": "cut off from others",
+    "meaning": "isolated"
+   },
+   {
+    "phrase": "a state of mild alarm",
+    "meaning": "slightly stressed all the time"
+   }
+  ],
+  "critical": [
+   {
+    "question": "Is loneliness a responsibility for governments, or for individuals and families?",
+    "points": "Consider: public health costs, privacy, community design, cultural differences."
+   },
+   {
+    "question": "How might university life increase or reduce loneliness for students?",
+    "points": "Consider: moving away from home, clubs, accommodation, online study."
+   }
+  ],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "rewilding",
+  "title": "Letting nature take back control",
+  "standfirst": "Rewilding promises to restore damaged ecosystems by doing less, not more. But who decides what \"wild\" should look like?",
+  "level": "C1",
+  "topics": [
+   "environment"
+  ],
+  "category": "environment",
+  "minutes": 7,
+  "paragraphs": [
+   "[A] For most of the twentieth century, conservation meant management. Reserves were fenced, grass was cut, invasive plants were removed and particular species were protected, often at considerable expense. Rewilding takes a strikingly different approach. Its central idea is that, given enough space and a few key ingredients, natural processes can repair ecosystems more effectively than human planning can.",
+   "[B] The most famous example is the return of grey wolves to Yellowstone National Park in the United States in the mid-1990s, after an absence of about seventy years. Supporters argue that the wolves did far more than reduce the number of elk. Because the elk began to avoid open valleys where they were vulnerable, young trees along riverbanks had a chance to grow. Their roots stabilised the banks, and new habitats appeared for birds and beavers. Scientists call such a chain of effects a trophic cascade, although some researchers now believe the Yellowstone story has been simplified, and that drought, hunting and other factors also played a part.",
+   "[C] In Europe, rewilding has taken a different form, partly because large predators and dense human populations are an uneasy combination. Projects have reintroduced beavers, whose dams slow down rivers and reduce flooding downstream, and grazing animals such as wild cattle and horses, which keep landscapes open in a more varied way than mowing. In some regions, farmland abandoned as rural populations decline has simply been left to recover on its own.",
+   "[D] Critics raise several objections. Farmers worry about livestock losses when predators return, and compensation schemes are not always generous or quick. Others question whether there is any meaningful \"natural\" state to return to, since landscapes have been shaped by people for thousands of years. Choosing a baseline, whether before industrialisation, before farming or before humans arrived, is ultimately a value judgement rather than a scientific fact.",
+   "[E] There are economic arguments on both sides as well. Rewilded areas can attract tourists and create jobs in guiding and hospitality, sometimes in regions where agriculture is no longer profitable. Yet these benefits rarely reach everyone equally, and residents who depended on traditional land use may feel that decisions are being made by distant organisations with little understanding of local life.",
+   "[F] Perhaps the most persuasive case for rewilding is a modest one. It does not claim that nature can solve every environmental problem, nor that human management is always harmful. Instead, it suggests that, in the right places, stepping back may achieve more than intervening. The challenge is to decide, together with the people who live there, where those places are."
+  ],
+  "exercises": [
+   "rewilding-1",
+   "rewilding-2",
+   "rewilding-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "rewilding",
+    "definition": "restoring an area by allowing natural processes to return, often by reintroducing species",
+    "ru": "ревайлдинг, восстановление дикой природы"
+   },
+   {
+    "term": "reintroduce",
+    "definition": "to bring an animal or plant back to an area where it used to live",
+    "ru": "реинтродуцировать, вернуть (вид) в среду"
+   },
+   {
+    "term": "trophic cascade",
+    "definition": "a chain of effects through a food chain started by a change at the top",
+    "ru": "трофический каскад"
+   },
+   {
+    "term": "baseline",
+    "definition": "a starting point used for comparison",
+    "ru": "исходный уровень, точка отсчёта"
+   },
+   {
+    "term": "livestock",
+    "definition": "farm animals such as cattle and sheep",
+    "ru": "скот"
+   },
+   {
+    "term": "habitat",
+    "definition": "the natural home of an animal or plant",
+    "ru": "среда обитания",
+    "sense": "habitat"
+   },
+   {
+    "term": "invasive",
+    "definition": "spreading quickly and harming local species",
+    "ru": "инвазивный",
+    "sense": "invasive"
+   },
+   {
+    "term": "vulnerable",
+    "definition": "easily harmed",
+    "ru": "уязвимый",
+    "sense": "vulnerable"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "an uneasy combination",
+    "meaning": "two things that do not work well together"
+   },
+   {
+    "phrase": "a value judgement",
+    "meaning": "a decision based on opinions about what is good, not facts"
+   },
+   {
+    "phrase": "stepping back",
+    "meaning": "deliberately doing less or not intervening"
+   }
+  ],
+  "critical": [
+   {
+    "question": "Should large predators such as wolves or bears be reintroduced in densely populated countries?",
+    "points": "Consider: safety, farmers' livelihoods, compensation, ecological benefits, public opinion, tourism."
+   },
+   {
+    "question": "Who should have the final say in rewilding decisions: scientists, governments or local residents?",
+    "points": "Consider: expertise vs democracy, long-term vs short-term interests, distant organisations."
+   },
+   {
+    "question": "Is there such a thing as \"natural\" landscape in your country?",
+    "points": "Think about farming history, forests, rivers and how they have changed."
+   }
+  ],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "the-forgetting-curve",
+  "title": "Why we forget, and how to remember",
+  "standfirst": "More than a century ago, a German psychologist tested his own memory with nonsense syllables. His findings still shape how good learners study today.",
+  "level": "B2+",
+  "topics": [
+   "psychology-behaviour"
+  ],
+  "category": "psychology-behaviour",
+  "minutes": 6,
+  "paragraphs": [
+   "[A] In the 1880s, the psychologist Hermann Ebbinghaus set himself an unusual task. He memorised long lists of meaningless syllables, such as \"DAX\" or \"ZUF\", and then tested how many he could still recall after different intervals. Using nonsense was deliberate: real words carry associations that make some easier to remember than others, and he wanted to measure memory in its purest form.",
+   "[B] What he found has become known as the forgetting curve. Memory loss was steepest at the beginning. Within an hour, a large part of a newly learned list had gone; after a day, more had disappeared; but after that, forgetting slowed down considerably. What remained after a week tended to stay. The exact figures varied with the material, yet the shape of the curve, a sharp drop followed by a long, flat tail, has been confirmed by researchers many times since.",
+   "[C] Ebbinghaus also noticed something more encouraging. When he relearned a list he had partly forgotten, it took him less time than the first attempt. The memory had not vanished completely; it had merely become harder to reach. Each time he reviewed the material, the curve that followed was flatter, meaning he forgot more slowly. This is the principle behind what is now called spaced repetition: rather than studying something many times in one session, you return to it at increasing intervals, ideally just before you would otherwise forget it.",
+   "[D] Later research added a second insight. Simply rereading notes feels productive, but it is a relatively weak way to learn. Testing yourself, by trying to recall an answer before checking it, strengthens memory far more. Psychologists call this retrieval practice. The effort of pulling information out of memory seems to be exactly what makes it stick. Ironically, the strategies that feel easiest, such as highlighting or rereading, often create an illusion of mastery, while the ones that feel difficult produce more durable learning.",
+   "[E] None of this means that cramming never works. A student who studies intensively the night before an exam may well pass it. The problem is what happens afterwards. Material crammed into a single session tends to follow the steep part of the forgetting curve, so much of it is lost within days. For anything that needs to last, such as a language, a professional skill or the foundations of a degree, spacing and self-testing are considerably more efficient.",
+   "[F] Digital tools have made these ideas easy to apply. Flashcard apps can calculate when each item is due for review, showing difficult words more often and easy ones less. But the underlying advice requires no technology at all: study a little, leave a gap, test yourself, and come back. Ebbinghaus's lists of nonsense, it turns out, contained a lesson that makes a great deal of sense."
+  ],
+  "exercises": [
+   "the-forgetting-curve-1",
+   "the-forgetting-curve-2",
+   "the-forgetting-curve-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "recall",
+    "definition": "to remember something and bring it back into your mind",
+    "ru": "вспоминать, воспроизводить в памяти"
+   },
+   {
+    "term": "interval",
+    "definition": "a period of time between two events",
+    "ru": "интервал, промежуток"
+   },
+   {
+    "term": "spaced repetition",
+    "definition": "reviewing material at gradually increasing intervals",
+    "ru": "интервальное повторение"
+   },
+   {
+    "term": "retrieval practice",
+    "definition": "learning by actively recalling information rather than rereading it",
+    "ru": "практика извлечения (активное припоминание)"
+   },
+   {
+    "term": "durable",
+    "definition": "lasting a long time",
+    "ru": "прочный, долговременный"
+   },
+   {
+    "term": "cram",
+    "definition": "to study a lot in a short time before an exam",
+    "ru": "зубрить",
+    "sense": "cram"
+   },
+   {
+    "term": "illusion of mastery",
+    "definition": "the false feeling that you know something well",
+    "ru": "иллюзия владения материалом"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "set himself an unusual task",
+    "meaning": "decided to do something unusual"
+   },
+   {
+    "phrase": "in its purest form",
+    "meaning": "without anything added or mixed in"
+   },
+   {
+    "phrase": "make it stick",
+    "meaning": "make it stay in memory"
+   }
+  ],
+  "critical": [
+   {
+    "question": "How could you apply spaced repetition and retrieval practice to learning C1 vocabulary?",
+    "points": "Consider: how many new words per day, when to review, testing yourself in both directions (English→Russian and Russian→English), using words in sentences."
+   },
+   {
+    "question": "Why might students continue to cram even if they know it is less efficient?",
+    "points": "Consider: exam systems that reward short-term results, procrastination, the feeling of effort, deadlines."
+   }
+  ],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "the-four-day-week",
+  "title": "Less work, same pay? The case for a four-day week",
+  "standfirst": "Trials of a shorter working week have produced eye-catching results. Whether they can work everywhere is another question.",
+  "level": "B2+",
+  "topics": [
+   "work-careers"
+  ],
+  "category": "work-careers",
+  "minutes": 6,
+  "paragraphs": [
+   "[A] For most of the last century, the five-day, forty-hour week has been treated as a natural law of working life. Yet it is a relatively recent invention. In many industrial countries, six-day weeks and far longer hours were normal until campaigns by trade unions and changes in technology gradually reduced them. Supporters of a four-day week argue that the next step is overdue.",
+   "[B] In recent years, companies in several countries have taken part in organised trials in which employees worked four days for the same pay, on condition that productivity remained stable. Many participating firms reported that output held steady or even improved, while staff described lower stress, better sleep and more time for family. A large proportion of the companies chose to continue the arrangement after the trial ended.",
+   "[C] Why might working less not mean producing less? One explanation is that much of the working week is not spent productively at all. Long meetings, unnecessary emails and constant interruptions fill hours without adding much value. When time is limited, teams tend to cut these first. Another explanation is that rested workers make fewer mistakes and are less likely to take sick leave, which reduces hidden costs for employers.",
+   "[D] Sceptics point out that the trials have important limitations. Companies volunteered to take part, so they were probably those most likely to succeed. Many were small firms in office-based sectors such as marketing or software, where output is harder to measure and work can be reorganised relatively easily. It is much less obvious how a hospital, a school or a factory running continuous shifts could cut a day without hiring more staff.",
+   "[E] There are also questions about fairness. If office workers gain an extra day off while nurses, drivers and shop assistants do not, existing divisions in the labour market could widen. Some economists suggest that, rather than a fixed four-day week for everyone, the real lesson of the trials is that working time should be more flexible and focused on results rather than hours.",
+   "[F] What seems clear is that the debate has moved from whether shorter hours are possible to how and where they make sense. As automation takes over more routine tasks, the question of how the gains are shared, through higher wages, lower prices or more free time, is likely to become one of the defining economic arguments of the coming decades."
+  ],
+  "exercises": [
+   "the-four-day-week-1",
+   "the-four-day-week-2",
+   "the-four-day-week-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "productivity",
+    "definition": "the amount of work produced in a given time",
+    "ru": "производительность"
+   },
+   {
+    "term": "output",
+    "definition": "the amount produced",
+    "ru": "объём производства, выработка"
+   },
+   {
+    "term": "sceptic",
+    "definition": "a person who doubts claims",
+    "ru": "скептик"
+   },
+   {
+    "term": "shift",
+    "definition": "a period of work in a system where groups work at different times",
+    "ru": "смена (рабочая)"
+   },
+   {
+    "term": "labour market",
+    "definition": "the supply of workers and jobs",
+    "ru": "рынок труда"
+   },
+   {
+    "term": "flexible working",
+    "definition": "arrangements letting employees choose when or where they work",
+    "ru": "гибкий график",
+    "sense": "flexible-working"
+   },
+   {
+    "term": "work-life balance",
+    "definition": "a healthy division of time between work and personal life",
+    "ru": "баланс работы и личной жизни",
+    "sense": "work-life-balance"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "a natural law",
+    "meaning": "something treated as if it could never change"
+   },
+   {
+    "phrase": "overdue",
+    "meaning": "should have happened earlier"
+   },
+   {
+    "phrase": "held steady",
+    "meaning": "stayed at the same level"
+   }
+  ],
+  "critical": [
+   {
+    "question": "Which jobs in your country could realistically move to a four-day week, and which could not?",
+    "points": "Consider: shift work, public services, measurable output, staffing costs."
+   },
+   {
+    "question": "If automation makes work more efficient, should the gains go to higher wages, lower prices or more free time?",
+    "points": "Consider: who benefits, inequality, consumer demand, well-being."
+   }
+  ],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "the-future-of-protein",
+  "title": "What will we eat for protein?",
+  "standfirst": "Feeding a growing population without overheating the planet may require rethinking where our protein comes from.",
+  "level": "B2+",
+  "topics": [
+   "food-nutrition"
+  ],
+  "category": "food-nutrition",
+  "minutes": 5,
+  "paragraphs": [
+   "[A] Meat and dairy are central to many diets, and demand for them tends to rise as countries become wealthier. Yet livestock farming uses a large share of the world's agricultural land and is responsible for a significant proportion of greenhouse gas emissions, especially methane from cattle. As the global population grows, scientists, companies and governments are looking for alternatives.",
+   "[B] The most familiar option is plant-based protein. Beans, lentils, chickpeas and soya have fed people for thousands of years and require far less land and water than beef. In recent years, food companies have used them to create products designed to imitate the taste and texture of meat. Sales grew quickly at first, but in several markets they have since levelled off, partly because of price and partly because some consumers are wary of heavily processed ingredients.",
+   "[C] A more radical approach is cultivated meat, grown from animal cells in large steel tanks rather than taken from slaughtered animals. Its supporters argue that it could provide real meat with a fraction of the land use and without animal suffering. Major challenges remain, however, including the cost of production at scale and the energy required to run the facilities. Only a few countries have so far approved its sale.",
+   "[D] Insects are another candidate. In many parts of the world, crickets, grasshoppers and larvae are already eaten as ordinary food, and they convert feed into protein very efficiently. In countries where insects are not traditionally eaten, the main obstacle is cultural rather than nutritional: many people simply find the idea unpleasant. Ground into flour and added to pasta or snacks, insects may become more acceptable.",
+   "[E] Most experts agree that no single solution will replace conventional meat. A more realistic future may combine several: eating smaller amounts of higher-quality meat, more traditional plant foods, and new products where they prove affordable and safe. As with many environmental questions, the challenge is as much about habits and culture as about technology."
+  ],
+  "exercises": [
+   "the-future-of-protein-1",
+   "the-future-of-protein-2",
+   "the-future-of-protein-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "livestock",
+    "definition": "farm animals",
+    "ru": "скот"
+   },
+   {
+    "term": "methane",
+    "definition": "a greenhouse gas produced by cattle, among other sources",
+    "ru": "метан"
+   },
+   {
+    "term": "plant-based",
+    "definition": "made from plants, not animals",
+    "ru": "растительный"
+   },
+   {
+    "term": "texture",
+    "definition": "the way food feels in your mouth",
+    "ru": "текстура"
+   },
+   {
+    "term": "cultivated meat",
+    "definition": "meat grown from animal cells",
+    "ru": "культивированное мясо"
+   },
+   {
+    "term": "wary of",
+    "definition": "careful about something because it might be harmful",
+    "ru": "настороженно относящийся к"
+   },
+   {
+    "term": "processed food",
+    "definition": "food changed by industrial methods",
+    "ru": "переработанные продукты",
+    "sense": "processed-food"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "levelled off",
+    "meaning": "stopped rising and stayed the same"
+   },
+   {
+    "phrase": "at scale",
+    "meaning": "in large quantities"
+   },
+   {
+    "phrase": "a fraction of",
+    "meaning": "a very small part of"
+   }
+  ],
+  "critical": [
+   {
+    "question": "Would you eat cultivated meat or insect-based food? Why or why not?",
+    "points": "Consider: taste, health, ethics, environment, tradition."
+   },
+   {
+    "question": "Should governments tax meat to reduce emissions?",
+    "points": "Consider: fairness, farmers, health, alternatives, public acceptance."
+   }
+  ],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "who-owns-the-past",
+  "title": "Who owns the past?",
+  "standfirst": "Museums in Europe hold millions of objects taken from other parts of the world. Calls to return them raise difficult questions about history, ownership and identity.",
+  "level": "C1",
+  "topics": [
+   "history-heritage"
+  ],
+  "category": "history-heritage",
+  "minutes": 6,
+  "paragraphs": [
+   "[A] Walk through the galleries of almost any major European museum and you will encounter objects from distant places: sculptures, manuscripts, ceremonial masks, human remains. Some were bought or exchanged fairly. Many others were acquired during periods of colonial rule, military conquest or unequal trade, when the people who made or owned them had little power to refuse.",
+   "[B] For decades, museums defended their collections with two main arguments. The first was legal: objects had often been acquired under the laws of the time, and national legislation sometimes forbids museums from giving items away. The second was what might be called the universal museum argument: by displaying artefacts from many cultures side by side, large museums allow visitors to see human history as a shared story, and they have the resources to conserve fragile objects.",
+   "[C] Critics find neither argument convincing. Laws written by colonial powers, they point out, can hardly settle questions of justice. And the idea of a universal museum sits uneasily with the fact that most of the world's population will never visit the cities where these collections are kept. For communities whose sacred objects or ancestors' remains are on display abroad, the issue is not access to world culture, but respect and the right to tell their own history.",
+   "[D] In recent years, the debate has shifted. A number of governments and institutions have agreed to return specific items, including bronze sculptures, carved figures and human remains, to the countries or communities they came from. Some museums have begun detailed research into the provenance of their collections, tracing how each object arrived and whether it was obtained with consent.",
+   "[E] Return, however, is rarely simple. There may be disagreement about who the rightful owner is: a national government, a royal family, a local community or the descendants of the original makers. Some objects are fragile and require specialist conditions. In other cases, the countries of origin have chosen long-term loans or joint exhibitions rather than permanent return, at least for now.",
+   "[F] What the debate reveals is that museums are not neutral spaces. The decision about what to collect, how to label it and where to keep it reflects choices about whose history matters. Whatever happens to individual objects, that recognition may be the most lasting change of all."
+  ],
+  "exercises": [
+   "who-owns-the-past-1",
+   "who-owns-the-past-2",
+   "who-owns-the-past-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "artefact",
+    "definition": "an object made by people in the past, of historical interest",
+    "ru": "артефакт",
+    "sense": "artefact"
+   },
+   {
+    "term": "colonial",
+    "definition": "connected with a country controlling another",
+    "ru": "колониальный",
+    "sense": "colonial"
+   },
+   {
+    "term": "provenance",
+    "definition": "the history of where an object came from and who owned it",
+    "ru": "происхождение (предмета), провенанс"
+   },
+   {
+    "term": "repatriation",
+    "definition": "returning objects or people to their country of origin",
+    "ru": "репатриация, возвращение"
+   },
+   {
+    "term": "descendant",
+    "definition": "a person related to someone who lived long ago",
+    "ru": "потомок"
+   },
+   {
+    "term": "sacred",
+    "definition": "connected with religion and deserving deep respect",
+    "ru": "священный"
+   },
+   {
+    "term": "legacy",
+    "definition": "something that exists as a result of past events",
+    "ru": "наследие",
+    "sense": "legacy"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "sits uneasily with",
+    "meaning": "does not fit comfortably with"
+   },
+   {
+    "phrase": "can hardly settle",
+    "meaning": "cannot reasonably decide"
+   },
+   {
+    "phrase": "side by side",
+    "meaning": "next to each other"
+   }
+  ],
+  "critical": [
+   {
+    "question": "Should a museum return an object if the law does not require it?",
+    "points": "Consider: legal vs moral obligations, precedent, public opinion, the object's condition."
+   },
+   {
+    "question": "Are there objects from your country held abroad? How do people feel about them?",
+    "points": "Think about national identity, tourism, and access for ordinary citizens."
+   }
+  ],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "why-false-news-spreads",
+  "title": "Why false stories travel faster than the truth",
+  "standfirst": "False claims often spread further online than accurate ones. Understanding why matters more than simply blaming technology.",
+  "level": "C1",
+  "topics": [
+   "communication-media"
+  ],
+  "category": "communication-media",
+  "minutes": 6,
+  "paragraphs": [
+   "[A] A large study of stories shared on a major social network, published in 2018, reached a striking conclusion: false news tended to spread further, faster and more widely than true news. Crucially, the researchers found that this was driven mainly by people rather than automated accounts. Humans, it seemed, were more willing to pass on falsehoods.",
+   "[B] One explanation is novelty. False stories are, almost by definition, more surprising than true ones, because they are not limited by what actually happened. Surprising information attracts attention and gives the person who shares it a kind of social reward: they appear well informed and first with the news. False stories also tend to provoke strong emotions such as fear, anger or disgust, and emotionally charged content is shared more often.",
+   "[C] Our own reasoning plays a part too. People are more likely to believe and share claims that fit what they already think, a tendency known as confirmation bias. When a story confirms our views about a group or a politician, we may not stop to check it. Repetition matters as well: hearing a claim several times makes it feel more familiar, and familiar statements are more easily mistaken for true ones.",
+   "[D] Platforms have tried a range of responses, including labelling disputed posts, reducing the visibility of content flagged by fact-checkers and removing accounts that spread coordinated campaigns. Each approach has drawbacks. Labels may be ignored, or even increase attention; removal raises concerns about censorship and about who decides what is true.",
+   "[E] Some researchers argue that the most promising approach is to change how people share rather than what they see. In experiments, simply asking users to think about whether a headline is accurate before sharing reduced the spread of false content. Others favour \"prebunking\": teaching people in advance about common manipulation techniques, such as fake experts or emotional language, so that they recognise them later.",
+   "[F] None of these solutions is complete. False information has existed as long as communication itself, and technology has mainly changed its speed and scale. The lasting defence may be less a technical fix than a habit of mind: pausing, checking and being willing to admit that a story we like might not be true."
+  ],
+  "exercises": [
+   "why-false-news-spreads-1",
+   "why-false-news-spreads-2",
+   "why-false-news-spreads-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "falsehood",
+    "definition": "a statement that is not true",
+    "ru": "ложь, неправда"
+   },
+   {
+    "term": "novelty",
+    "definition": "the quality of being new and surprising",
+    "ru": "новизна"
+   },
+   {
+    "term": "confirmation bias",
+    "definition": "the tendency to favour information that supports existing beliefs",
+    "ru": "предвзятость подтверждения",
+    "sense": "bias"
+   },
+   {
+    "term": "fact-checker",
+    "definition": "a person who checks whether claims are true",
+    "ru": "фактчекер"
+   },
+   {
+    "term": "coordinated",
+    "definition": "organised to work together",
+    "ru": "скоординированный"
+   },
+   {
+    "term": "prebunking",
+    "definition": "warning people about manipulation techniques in advance",
+    "ru": "«пребанкинг» (заблаговременное опровержение)"
+   },
+   {
+    "term": "misinformation",
+    "definition": "false information, not necessarily spread on purpose",
+    "ru": "дезинформация",
+    "sense": "misinformation"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "almost by definition",
+    "meaning": "because of what it is"
+   },
+   {
+    "phrase": "emotionally charged",
+    "meaning": "causing strong feelings"
+   },
+   {
+    "phrase": "a habit of mind",
+    "meaning": "a usual way of thinking"
+   }
+  ],
+  "critical": [
+   {
+    "question": "Who should decide what counts as false information online?",
+    "points": "Consider: platforms, governments, independent fact-checkers, free speech."
+   },
+   {
+    "question": "Describe a time you shared or nearly shared something that turned out to be false. What made it convincing?",
+    "points": "Think about emotion, source, timing, who sent it."
+   }
+  ],
+  "origin": "original"
+ }
+]

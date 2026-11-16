@@ -160,8 +160,7 @@
   ],
   "links": [
     { "type": "extends", "to": "nominal-relative-clauses", "label": "Nominal relative clauses (what, whatever, whoever)", "level": "C1", "published": true },
-    { "type": "extends", "to": "reduced-relative-clauses", "label": "Reduced relative clauses", "level": "B2+", "published": false },
-    { "type": "extends", "to": "participle-clauses", "label": "Participle clauses", "level": "B2+", "published": false },
+    { "type": "extends", "to": "participle-and-reduced-clauses", "label": "Reduced relative clauses", "level": "B2+", "published": true },
     { "type": "appears_in", "to": "is-failure-the-best-teacher", "label": "Reading: Is failure the best teacher?", "level": "C1", "published": true }
   ],
   "exercises": ["relative-clauses-practice"],

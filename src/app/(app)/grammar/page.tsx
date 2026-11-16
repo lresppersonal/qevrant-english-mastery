@@ -11,7 +11,9 @@ export default function GrammarMap() {
   return (
     <>
       <PageHeader eyebrow="Learn" title="Grammar map"
-        intro={<>18 areas of advanced grammar, each running from B2 to C1/C2. {published} of {total} lessons are published so far; the rest are shown so you can see where the map is going.</>} />
+        intro={<>18 areas of advanced grammar, each running from B2 to C1/C2, consolidated from the reference course books. {published} of {total} subtopics have full theory and practice; the rest are marked as planned.</>}>
+        <Link href="/grammar/practice" className="btn btn-primary">All practice sets</Link>
+      </PageHeader>
       <div className="grid gap-4 md:grid-cols-2">
         {grammarDomains.map((d) => (
           <section key={d.key} id={d.key} className="card scroll-mt-24 p-5">

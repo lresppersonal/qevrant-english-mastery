@@ -4,7 +4,7 @@ import { useSyncExternalStore } from "react";
 export function currentRoute() {
   const h = location.hash;
   if (!h.startsWith("#/")) return "/";
-  return h.slice(1).split("#")[0] || "/";
+  return h.slice(1).split("#")[0].split("?")[0] || "/";
 }
 let last = currentRoute();
 const subs = new Set<() => void>();

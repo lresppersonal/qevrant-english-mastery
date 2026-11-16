@@ -38,7 +38,7 @@ export default function Landing() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
             {BRAND.product} takes you from B2 to C2 with structured grammar, a level-tagged vocabulary graph, original reading,
-            and AI feedback on your speaking and academic writing. IELTS Academic is one pathway through it.
+            and AI feedback on your speaking and academic writing. Academic Writing includes extensive IELTS-style essay practice.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href={isDemoMode ? "/onboarding" : "/sign-up"} className="btn btn-primary !px-6 !py-3 text-base">Start learning</Link>

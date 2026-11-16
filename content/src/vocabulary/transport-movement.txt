@@ -1,0 +1,19 @@
+# Transport and Movement
+commute | v | verb / noun | B2 | neutral | Daily travel | to travel regularly between home and work | ездить на работу (регулярно) | She commutes two hours a day. | daily commute; commute to work | travel | work-careers
+congestion | n | noun | B2+ | neutral | Daily travel | too much traffic, making movement slow | пробки, затор | A congestion charge reduced traffic in the centre. | traffic congestion; congestion charge | gridlock; jam | cities-urban
+rush hour | coll | noun phrase | B2 | neutral | Daily travel | the busy time when most people travel to or from work | час пик | Avoid the tube during rush hour. | morning/evening rush hour | peak time |
+public transport | coll | noun phrase | B2 | neutral | Infrastructure | buses, trains etc. available for everyone to use | общественный транспорт | Cheap public transport reduces car use. | use/take public transport | mass transit | cities-urban
+infrastructure | n+ac | noun | C1 | formal | Infrastructure | the basic systems a country needs, such as roads and power | инфраструктура | The country needs to invest in infrastructure. | transport/digital infrastructure; invest in infrastructure | facilities | economics-globalisation
+pedestrian | n | noun / adjective | B2 | neutral | Infrastructure | a person walking, not in a vehicle | пешеход; пешеходный | The square is now pedestrian-only. | pedestrian zone/crossing | walker | cities-urban
+high-speed rail | coll | noun phrase | B2+ | neutral | Infrastructure | trains that travel much faster than normal trains | высокоскоростная железная дорога | High-speed rail has replaced many short flights. | high-speed rail link/line | |
+emission-free | adj | adjective | C1 | neutral | Vehicles | producing no harmful gases | без выбросов | The city's buses are now emission-free. | emission-free vehicles | zero-emission | environment
+breakdown | n | noun | B2 | neutral | Vehicles | a failure of a vehicle to work | поломка | We had a breakdown on the motorway. | have a breakdown | failure |
+migration | n | noun | B2+ | neutral | Movement of people | movement of people to another place to live | миграция | Rural-to-urban migration has emptied villages. | mass/economic migration | relocation | society-politics
+displaced | adj | adjective | C1 | formal | Movement of people | forced to leave home because of war or disaster | перемещённый, вынужденный покинуть дом | Thousands of displaced families need shelter. | displaced people/persons | uprooted | society-politics
+relocate | v | verb | B2+ | neutral | Movement of people | to move to a new place to live or work | переезжать, перемещать | The firm relocated to Lisbon. | relocate to; relocate staff | move | work-careers
+pull over | pv | phrasal verb | B2 | neutral | Vehicles | to move a vehicle to the side of the road and stop | съехать на обочину, остановиться | The police told the driver to pull over. | | stop |
+get around | pv | phrasal verb | B2 | neutral | Daily travel | to travel from place to place | передвигаться | The easiest way to get around the city is by bike. | get around by bus/on foot | travel | travel-tourism
+in the fast lane | idiom | prepositional phrase | C1 | informal | Movement of people | (of life) exciting, busy and full of pressure | в бешеном ритме | He grew tired of life in the fast lane. | life in the fast lane | |
+@family move (v); movement (n); mobile (adj); mobility (n); immobile (adj)
+@family migrate (v); migration (n); migrant (n); immigrant (n); emigrate (v)
+@distinct emigrate vs immigrate vs migrate :: You *emigrate from* your country and *immigrate to* a new one. *Migrate* is the general word, also used for animals and seasonal moves.

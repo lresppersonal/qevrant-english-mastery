@@ -19,7 +19,8 @@ export function Reader({ text, forms, items }: { text: ReadingText; forms: Recor
   const panelRef = useRef<HTMLDivElement>(null);
   const lastTrigger = useRef<HTMLElement | null>(null);
   const bySlug = useMemo(() => new Map(items.map((i) => [i.slug, i])), [items]);
-  const segmented = useMemo(() => text.paragraphs.map((p) => segment(p, forms)), [text, forms]);
+  const paras = useMemo(() => text.paragraphs.map((p) => { const m = p.match(/^\[([A-Z])\]\s*/); return { label: m?.[1] ?? null, body: m ? p.slice(m[0].length) : p }; }), [text]);
+  const segmented = useMemo(() => paras.map((p) => segment(p.body, forms)), [paras, forms]);
   const savedSenses = new Set(saved.filter((s) => s.itemType === "sense").map((s) => s.itemRef));
 
   useEffect(() => {
@@ -44,7 +45,7 @@ export function Reader({ text, forms, items }: { text: ReadingText; forms: Recor
       phrase = words.join(" ");
     }
     lastTrigger.current = e.currentTarget;
-    setSel({ phrase, slug: s.match?.slug ?? null, context: sentenceAt(text.paragraphs[pIdx], s.start) });
+    setSel({ phrase, slug: s.match?.slug ?? null, context: sentenceAt(paras[pIdx].body, s.start) });
   }
 
   async function finish() {
@@ -68,6 +69,7 @@ export function Reader({ text, forms, items }: { text: ReadingText; forms: Recor
         <div className="mx-auto max-w-[68ch] font-[450] text-[18px] leading-[1.85]">
           {segmented.map((segs, p) => (
             <p key={p} className="mb-5">
+              {paras[p].label && <span className="mr-2 inline-grid h-6 w-6 place-items-center rounded-md bg-surface-2 align-[2px] font-display text-xs font-bold text-muted" aria-label={`Paragraph ${paras[p].label}`}>{paras[p].label}</span>}
               {segs.map((s, i) => {
                 if (!s.word) return <span key={i}>{s.text}</span>;
                 const headIdx = s.partOf ?? i;

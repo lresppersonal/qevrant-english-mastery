@@ -1,0 +1,20 @@
+# Travel and Tourism
+destination | n | noun | B2 | neutral | Planning | the place someone is travelling to | пункт назначения, направление | Croatia has become a popular holiday destination. | tourist/holiday destination | |
+itinerary | n | noun | B2+ | neutral | Planning | a detailed plan of a journey | маршрут, план поездки | Our itinerary includes three days in Kyoto. | plan an itinerary; packed itinerary | schedule; route |
+off the beaten track | idiom | prepositional phrase | C1 | neutral | Experiences | far from places that many people visit | вдали от туристических троп | We stayed in a village well off the beaten track. | | remote; secluded |
+breathtaking | adj | adjective | B2+ | neutral | Experiences | extremely beautiful or impressive | захватывающий дух | The view from the summit is breathtaking. | breathtaking view/scenery | stunning; spectacular | nature-wildlife
+picturesque | adj | adjective | B2+ | neutral | Experiences | (of a place) attractive, like a painting | живописный | We visited a picturesque fishing village. | picturesque village/setting | charming; scenic |
+overcrowded | adj | adjective | B2 | neutral | Tourism impact | containing too many people | переполненный | In August the beaches are overcrowded. | | packed; congested | cities-urban
+overtourism | n | noun | C1 | neutral | Tourism impact | too many tourists visiting a place, causing problems for residents | чрезмерный туризм, овертуризм | Venice has introduced a fee to tackle overtourism. | tackle overtourism | | environment
+ecotourism | n | noun | B2+ | neutral | Tourism impact | tourism that aims to protect nature and benefit local people | экотуризм | Ecotourism funds the national park. | | sustainable tourism | environment
+accommodation | n | noun (uncountable in BrE) | B2 | neutral | Accommodation | a place to stay | жильё, размещение | The price includes flights and accommodation. | book accommodation; budget accommodation | lodging |
+self-catering | adj | adjective | B2+ | neutral | Accommodation | (of a holiday or apartment) where you cook your own meals | с самостоятельным питанием | We rented a self-catering cottage. | self-catering apartment/holiday | |
+jet lag | coll | noun | B2 | neutral | Journeys | tiredness after a long flight across time zones | смена часовых поясов, джетлаг | I always get terrible jet lag flying east. | suffer from jet lag | | health-medicine
+set off | pv | phrasal verb | B2 | neutral | Journeys | to start a journey | отправляться в путь | We set off at dawn. | set off for | depart; head off | transport-movement
+check in | pv | phrasal verb | B2 | neutral | Accommodation | to arrive and register at a hotel or airport | регистрироваться | You can check in from 2 p.m. | check in at/for | register |
+souvenir | n | noun | B2 | neutral | Experiences | something you buy to remember a place | сувенир | We brought back souvenirs for everyone. | souvenir shop | memento; keepsake |
+tourist trap | coll | noun phrase | B2+ | informal | Tourism impact | a crowded, overpriced place that attracts tourists | ловушка для туристов | The main square is a tourist trap. | | |
+itchy feet | idiom | noun phrase | C1 | informal | Experiences | a strong wish to travel | охота к перемене мест | After a year at home, I've got itchy feet. | get/have itchy feet | wanderlust |
+@family tour (n, v); tourist (n); tourism (n); touristy (adj, informal)
+@family travel (v, n); traveller (n); travelling (n); well-travelled (adj)
+@distinct travel vs trip vs journey :: *Travel* (uncountable) is the general activity. A *journey* is going from one place to another (*a long train journey*). A *trip* includes going, staying and returning (*a business trip*). ~~a travel~~ is wrong.

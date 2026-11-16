@@ -1,0 +1,21 @@
+# Architecture, Design and Fashion
+landmark | n | noun | B2 | neutral | Buildings | a famous building or feature that helps you recognise a place | достопримечательность, ориентир | The tower is the city's best-known landmark. | historic landmark | monument | travel-tourism
+skyscraper | n | noun | B2 | neutral | Buildings | a very tall modern building | небоскрёб | Skyscrapers now dominate the skyline. | | tower block; high-rise | cities-urban
+derelict | adj | adjective | C1 | neutral | Buildings | (of a building) empty and in very bad condition | заброшенный, полуразрушенный | The derelict warehouse became an arts centre. | derelict building/site | abandoned; dilapidated | cities-urban
+spacious | adj | adjective | B2 | neutral | Interiors | having a lot of space | просторный | The flat is bright and spacious. | spacious room/apartment | roomy; airy |
+cramped | adj | adjective | B2+ | neutral | Interiors | too small for the people or things in it | тесный | They live in a cramped one-bedroom flat. | cramped conditions/accommodation | poky; confined | cities-urban
+renovate | v | verb | B2+ | neutral | Buildings | to repair an old building so it is in good condition | ремонтировать, реконструировать | They renovated a 1920s farmhouse. | renovate a building/house | refurbish; restore |
+sleek | adj | adjective | C1 | neutral | Design | smooth, shiny and stylish | гладкий, элегантный | The phone has a sleek metal body. | sleek design/lines | streamlined; elegant | science-technology
+functional | adj | adjective | B2+ | neutral | Design | designed to be practical rather than attractive | функциональный | The furniture is functional rather than beautiful. | functional design | practical; utilitarian |
+aesthetic | adj+ac | adjective / noun | C1 | formal | Design | connected with beauty and how things look | эстетический | The building has little aesthetic appeal. | aesthetic appeal/value | artistic; visual | arts-culture
+durable | adj | adjective | B2+ | neutral | Materials | able to last a long time without breaking | прочный, долговечный | Oak is a durable material for floors. | durable materials/goods | hard-wearing; sturdy |
+reinforced concrete | coll | noun phrase | C1 | neutral | Materials | concrete strengthened with metal bars | железобетон | The bridge is built of reinforced concrete. | | | science-technology
+trend | n | noun | B2 | neutral | Fashion | a general change in what is popular | тенденция, тренд | Minimalism is a big trend in interior design. | set/follow a trend; latest trend | fashion; craze |
+fast fashion | coll | noun phrase | B2+ | neutral | Fashion | cheap clothes produced quickly to follow trends | быстрая мода | Fast fashion creates huge amounts of textile waste. | | | environment
+timeless | adj | adjective | B2+ | neutral | Fashion | not affected by changes in fashion | вне времени, неподвластный моде | A good coat has a timeless style. | timeless classic/elegance | classic; enduring |
+in vogue | idiom | prepositional phrase | C1 | formal | Fashion | fashionable at a particular time | в моде | Open-plan offices were very much in vogue. | | fashionable; trendy |
+an eyesore | idiom | noun phrase | B2+ | informal | Buildings | something very ugly, especially a building | бельмо на глазу, уродство | Locals call the car park an eyesore. | | blot on the landscape | cities-urban
+do up | pv | phrasal verb | B2 | informal | Buildings | to repair and decorate an old building or room | ремонтировать, отделывать | They're doing up a flat in the old town. | | renovate |
+@family design (n, v); designer (n); designer (adj, = by a famous designer); redesign (v)
+@family function (n, v); functional (adj); functionality (n); dysfunctional (adj)
+@distinct fashionable vs trendy vs stylish :: *Fashionable* is neutral (popular now). *Trendy* is informal and can sound slightly critical. *Stylish* means attractive in a confident way, whether or not it is in fashion.

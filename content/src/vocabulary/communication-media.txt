@@ -1,0 +1,25 @@
+# Communication and Media
+misinformation | n | noun | C1 | neutral | News and truth | false information spread, often without the intention to deceive | дезинформация, ложная информация | Misinformation about vaccines spread quickly online. | spread misinformation; combat misinformation | falsehood | health-medicine
+disinformation | n | noun | C1 | formal | News and truth | false information spread deliberately to deceive | дезинформация (намеренная) | The campaign used disinformation to influence voters. | disinformation campaign | propaganda | society-politics
+coverage | n | noun | B2+ | neutral | Journalism | the reporting of news on TV, radio or in the press | освещение (в СМИ) | The election received blanket coverage. | media/news coverage; extensive coverage | reporting |
+headline | n | noun | B2 | neutral | Journalism | the title of a newspaper story; the main news | заголовок | The scandal made headlines around the world. | make/hit the headlines | |
+sensationalist | adj | adjective | C1 | neutral | Journalism | presenting stories in a shocking way to attract attention | сенсационный (о подаче) | Sensationalist reporting can cause public panic. | sensationalist headlines/press | lurid; tabloid |
+editorial | n | noun | C1 | neutral | Journalism | a newspaper article giving the editor's opinion | редакционная статья | An editorial criticised the new tax. | | leader; opinion piece |
+censorship | n | noun | B2+ | neutral | Freedom | the control of what may be published or broadcast | цензура | Internet censorship is increasing in some countries. | state censorship; impose censorship | suppression | society-politics
+go viral | coll | verb phrase | B2 | informal | Social media | (of online content) to spread very quickly to many people | стать вирусным | Her video went viral overnight. | | |
+echo chamber | coll | noun phrase | C1 | neutral | Social media | a situation where people only hear opinions like their own | эхо-камера | Social networks can become echo chambers. | | filter bubble | psychology-behaviour
+influencer | n | noun | B2 | neutral | Social media | someone who uses social media to affect followers' opinions or purchases | инфлюенсер | Brands pay influencers to promote products. | social-media influencer | | business-finance
+persuasive | adj | adjective | B2+ | neutral | Persuasion | able to make people believe or do something | убедительный | She made a persuasive case for reform. | persuasive argument/speaker | convincing; compelling |
+articulate | adj | adjective | C1 | formal | Speaking | able to express ideas clearly and well | красноречивый, чётко выражающий мысли | He is an articulate defender of free speech. | articulate speaker | eloquent; fluent | education
+convey | v+ac | verb | C1 | formal | Speaking | to express or communicate ideas or feelings | передавать, выражать | The photo conveys a sense of loneliness. | convey a message/meaning/impression | communicate; express |
+eloquent | adj | adjective | C1 | formal | Speaking | using language well and persuasively | красноречивый | Her eloquent speech moved the audience. | eloquent speech/plea | articulate; expressive |
+get across | pv | phrasal verb | B2+ | neutral | Speaking | to make people understand an idea | донести (мысль) | The ad gets its message across in seconds. | get a message/point across | communicate; convey |
+beat about the bush | idiom | verb phrase | B2+ | informal | Speaking | to avoid saying something directly | ходить вокруг да около | Stop beating about the bush and tell me what happened. | | prevaricate |
+word of mouth | idiom | noun phrase | B2+ | neutral | Persuasion | the passing of information from person to person by talking | молва, сарафанное радио | The restaurant grew through word of mouth. | by word of mouth | | business-finance
+off the record | fx | prepositional phrase | C1 | neutral | Journalism | (of a statement) not to be published or officially reported | не для протокола, неофициально | The minister spoke off the record. | | unofficially | society-politics
+@family communicate (v); communication (n); communicative (adj); communicator (n); uncommunicative (adj)
+@family inform (v); information (n); informative (adj); informant (n); misinform (v)
+@distinct misinformation vs disinformation :: Both are false information. *Disinformation* is spread on purpose to deceive; *misinformation* may be spread by people who believe it.
+@distinct say vs tell vs speak vs talk :: *Tell* needs a person object (*tell me*); *say* doesn't (*say something*). *Speak* is more formal or about languages; *talk* suggests conversation.
+ostensibly | adv | adverb | C2 | formal | News and truth | apparently or according to what is claimed, but perhaps not really | якобы, по видимости | The report was ostensibly independent but funded by the industry. | | supposedly; seemingly | society-politics
+obfuscate | v | verb | C2 | formal | Persuasion | to make something deliberately unclear so it is hard to understand | запутывать, затемнять (смысл) | The statement seemed designed to obfuscate rather than explain. | obfuscate the truth/issue | obscure; confuse | 

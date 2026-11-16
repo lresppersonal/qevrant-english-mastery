@@ -1,0 +1,4418 @@
+[
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "academic-register",
+  "title": "Academic register: nominalisation, hedging and impersonal style",
+  "level": "C1",
+  "domain": "register",
+  "topics": [
+   "education"
+  ],
+  "summary": "Academic English is not just longer words. It packages ideas into noun phrases, qualifies claims carefully, keeps the writer in the background and avoids informal features. This lesson brings together the grammar behind that style.",
+  "minutes": 40,
+  "sections": [
+   {
+    "id": "overview",
+    "kind": "overview",
+    "title": "Definition and function",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Register is the choice of language to suit reader, purpose and medium. Academic register is **precise, objective, cautious and dense**. Four grammatical tools create it: nominalisation, hedging, impersonal structures and formal vocabulary and linking."
+     }
+    ]
+   },
+   {
+    "id": "nominalisation",
+    "kind": "form",
+    "title": "Nominalisation",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Turning verbs and adjectives into nouns lets you treat processes as things and pack more information into a sentence."
+     },
+     {
+      "type": "table",
+      "head": [
+       "Verbal style",
+       "Nominal style"
+      ],
+      "rows": [
+       [
+        "Prices increased quickly, which worried consumers.",
+        "**The rapid increase in prices** worried consumers."
+       ],
+       [
+        "We analysed the data and found that…",
+        "**Analysis of the data** revealed that…"
+       ],
+       [
+        "Because people are using cars less, …",
+        "**The decline in car use** has…"
+       ]
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "warning",
+      "text": "Too much nominalisation becomes unreadable. Keep a clear subject and an active verb where possible."
+     }
+    ]
+   },
+   {
+    "id": "hedging",
+    "kind": "uses",
+    "title": "Hedging: being appropriately cautious",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Tool",
+       "Examples"
+      ],
+      "rows": [
+       [
+        "modal verbs",
+        "*may, might, could, would*"
+       ],
+       [
+        "lexical verbs",
+        "*appear to, seem to, tend to, suggest, indicate*"
+       ],
+       [
+        "adverbs",
+        "*possibly, arguably, apparently, largely, generally*"
+       ],
+       [
+        "adjectives/nouns",
+        "*it is likely/possible that; there is evidence that*"
+       ],
+       [
+        "quantifiers",
+        "*some, many, in most cases, to some extent*"
+       ]
+      ]
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "Social media **causes** depression.",
+        "note": "too strong"
+       },
+       {
+        "en": "Heavy social-media use **appears to be associated with** higher rates of depression **in some groups**.",
+        "note": "hedged"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "impersonal",
+    "kind": "uses",
+    "title": "Impersonal and objective structures",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "Passive: *The samples **were tested**.*",
+       "Anticipatory *it*: ***It is widely accepted that** … **It could be argued that** …*",
+       "*There* + be: ***There is** little evidence to support this view.*",
+       "Abstract subjects: ***This study** examines… **The data** suggest…*"
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "register",
+      "text": "*I* and *we* are increasingly accepted in many disciplines, but IELTS-style essays usually avoid *I think*: prefer *In my view* once, or impersonal forms."
+     }
+    ]
+   },
+   {
+    "id": "informal",
+    "kind": "contrasts",
+    "title": "Avoiding informal features",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Informal",
+       "Academic"
+      ],
+      "rows": [
+       [
+        "a lot of, lots of",
+        "a great deal of, numerous, a large number of"
+       ],
+       [
+        "get, got",
+        "obtain, become, receive"
+       ],
+       [
+        "kids, stuff, things",
+        "children, materials, factors"
+       ],
+       [
+        "don't, can't",
+        "do not, cannot"
+       ],
+       [
+        "So, … / And … / But … (sentence start)",
+        "Therefore, … / In addition, … / However, …"
+       ],
+       [
+        "phrasal verbs: *look into, cut down*",
+        "single verbs: *investigate, reduce*"
+       ],
+       [
+        "rhetorical questions, exclamation marks",
+        "statements"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "errors",
+    "kind": "errors",
+    "title": "Common mistakes",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "~~Nowadays, there are a lot of people who think that technology is very bad for kids.~~",
+        "note": "*Many people now argue that technology may harm children's development.*",
+        "wrong": true
+       },
+       {
+        "en": "~~Scientists have proved that coffee is healthy.~~",
+        "note": "Overclaiming: *Research suggests that moderate coffee consumption may have health benefits.*",
+        "wrong": true
+       },
+       {
+        "en": "~~The government should solve this problem fast.~~",
+        "note": "Vague: *Governments could address the problem by…*",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "advanced",
+    "kind": "uses",
+    "title": "Advanced usage and stylistic nuances",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "**Boosters** for well-supported claims: *clearly, undoubtedly, demonstrate, it is evident that*. Balance boosters and hedges.",
+       "**Evaluative stance markers**: *Surprisingly, Notably, Importantly*.",
+       "**Cohesion through reference**: *this trend, such policies, these findings* (a summary noun after *this/these*)."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "register",
+    "kind": "register",
+    "title": "Register in IELTS-style essays",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Aim for a formal-neutral tone: clear topic sentences, hedged claims, varied linking, no contractions or slang. Over-formality (*Henceforth, it is incumbent upon*) is as unnatural as informality. Clarity always comes first."
+     }
+    ]
+   },
+   {
+    "id": "summary",
+    "kind": "summary",
+    "title": "Summary",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "Nominalise to condense, but keep sentences readable.",
+       "Hedge claims to match the strength of your evidence.",
+       "Use impersonal structures and abstract subjects.",
+       "Replace informal words, contractions and phrasal verbs."
+      ]
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "type": "prerequisite",
+    "to": "articles-and-noun-phrases",
+    "label": "Complex noun phrases",
+    "level": "B2",
+    "published": true
+   },
+   {
+    "type": "prerequisite",
+    "to": "modals-and-modality",
+    "label": "Modality",
+    "level": "B2",
+    "published": true
+   },
+   {
+    "type": "prerequisite",
+    "to": "passive-and-causative",
+    "label": "Impersonal passives",
+    "level": "B2",
+    "published": true
+   }
+  ],
+  "exercises": [
+   "academic-register-practice"
+  ],
+  "sources": [
+   {
+    "book": "Speakout C1–C2",
+    "unit": "7A",
+    "confidence": "verified"
+   },
+   {
+    "book": "Speakout B2",
+    "unit": "3C",
+    "confidence": "verified"
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "articles-and-noun-phrases",
+  "title": "Articles, countability, quantifiers and complex noun phrases",
+  "level": "B2",
+  "domain": "noun-phrases",
+  "topics": [
+   "education"
+  ],
+  "summary": "Articles are one of the hardest areas for speakers of languages without them. This lesson covers a, the and no article, countability, quantifiers, and how advanced writers pack information into noun phrases.",
+  "minutes": 40,
+  "sections": [
+   {
+    "id": "overview",
+    "kind": "overview",
+    "title": "Definition and function",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "A noun phrase is a noun plus everything that describes or limits it: *the **three** **rather old** **wooden** chairs **in the hall***. Determiners (*a, the, some, every, this*) tell the listener whether the thing is known, how much or how many."
+     }
+    ]
+   },
+   {
+    "id": "articles",
+    "kind": "uses",
+    "title": "a/an, the and no article: the core rules",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Use",
+       "When",
+       "Example"
+      ],
+      "rows": [
+       [
+        "a / an",
+        "one of many, first mention, jobs, classifying",
+        "*She's **an** engineer. I saw **a** fox.*"
+       ],
+       [
+        "the",
+        "already known or unique; second mention; superlatives",
+        "***The** fox ran away. **The** sun. **The** best day.*"
+       ],
+       [
+        "no article",
+        "plural or uncountable nouns used in general",
+        "***Dogs** are loyal. **Water** boils at 100°C.*"
+       ]
+      ]
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "I love **music**.",
+        "note": "general → no article"
+       },
+       {
+        "en": "I love **the music** in this film.",
+        "note": "specific → the"
+       },
+       {
+        "en": "~~The life is beautiful.~~",
+        "note": "General abstract noun → *Life is beautiful.*",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "special",
+    "kind": "uses",
+    "title": "Special cases",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "**Generic *the*** for a whole class (formal, technical): ***The** tiger is endangered. **The** computer changed work.*",
+       "Institutions with no article when used for their purpose: *go to **school**, be in **hospital**, go to **prison**, at **university*** (but *visit **the** hospital*).",
+       "Places: no article for most countries, cities, lakes, single mountains; *the* for rivers, seas, mountain ranges, plural or \"state/kingdom/republic\" names: ***the** Volga, **the** Alps, **the** Netherlands, **the** UK*.",
+       "Meals, sports, languages, academic subjects: no article (*have **lunch**, play **chess**, study **law***)."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "countability",
+    "kind": "form",
+    "title": "Countable and uncountable nouns",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Uncountable nouns have no plural and take singular verbs: *advice, information, research, evidence, equipment, furniture, news, progress, knowledge, accommodation (BrE), luggage, homework, traffic*."
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "~~She gave me many advices.~~",
+        "note": "*She gave me a lot of advice / several pieces of advice.*",
+        "wrong": true
+       },
+       {
+        "en": "The news **is** good.",
+        "note": "singular verb"
+       }
+      ]
+     },
+     {
+      "type": "p",
+      "text": "Some nouns are countable and uncountable with different meanings: *a paper* (newspaper/essay) vs *paper*; *an experience* (event) vs *experience* (skill); *a light* vs *light*."
+     }
+    ]
+   },
+   {
+    "id": "quantifiers",
+    "kind": "uses",
+    "title": "Quantifiers",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "With countable plural",
+       "With uncountable",
+       "With both"
+      ],
+      "rows": [
+       [
+        "many, (a) few, several, a number of",
+        "much, (a) little, a great deal of, an amount of",
+        "some, any, a lot of, plenty of, most, all, no"
+       ]
+      ]
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "**Few** people came.",
+        "note": "not many (negative)"
+       },
+       {
+        "en": "**A few** people came.",
+        "note": "some (positive)"
+       },
+       {
+        "en": "**Each / Every** student has a laptop.",
+        "note": "singular noun and verb"
+       },
+       {
+        "en": "**Neither** answer is correct. **None of** the answers is/are correct."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "complex",
+    "kind": "uses",
+    "title": "Complex noun phrases (C1)",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Advanced writing packs information into noun phrases instead of using several clauses:"
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "Prices rose rapidly, and this worried consumers. → ***The rapid rise in prices** worried consumers.*"
+       }
+      ]
+     },
+     {
+      "type": "p",
+      "text": "Tools: noun modifiers (*a **government** report*), compound adjectives (*a **two-hour** delay*, *a **well-known** author*), prepositional phrases (*the impact **of social media on teenagers***), and post-modifying clauses (*a decision **likely to anger voters***)."
+     },
+     {
+      "type": "note",
+      "tone": "warning",
+      "text": "Compound adjectives with numbers have no plural: *a **five-year** plan*, not ~~five-years plan~~."
+     }
+    ]
+   },
+   {
+    "id": "errors",
+    "kind": "errors",
+    "title": "Common mistakes",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "~~I am student.~~",
+        "note": "Jobs and roles need *a/an*: *I am a student.*",
+        "wrong": true
+       },
+       {
+        "en": "~~The most of people agree.~~",
+        "note": "*Most people agree.* / *Most of the people I asked agree.*",
+        "wrong": true
+       },
+       {
+        "en": "~~We need more informations.~~",
+        "note": "*more information*.",
+        "wrong": true
+       },
+       {
+        "en": "~~He is in the hospital since Monday.~~",
+        "note": "BrE: *He has been in hospital since Monday.*",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "register",
+    "kind": "register",
+    "title": "Formal and academic use",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Academic writing relies on long noun phrases and generic reference: *The introduction of tuition fees has led to a decline in applications from low-income students.* Countable/uncountable precision matters: *a growing body of **research**, a number of **studies**, an amount of **evidence**.*"
+     }
+    ]
+   },
+   {
+    "id": "summary",
+    "kind": "summary",
+    "title": "Summary",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "a/an = one of many or first mention; the = known/unique; zero = general plural/uncountable.",
+       "Learn the common uncountable nouns; use *a piece of / an item of* to count them.",
+       "few (negative) vs a few (positive); much/little with uncountable.",
+       "Advanced writing compresses clauses into noun phrases."
+      ]
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "type": "extends",
+    "to": "academic-register",
+    "label": "Academic register (nominalisation)",
+    "level": "C1",
+    "published": true
+   }
+  ],
+  "exercises": [
+   "articles-and-noun-phrases-practice"
+  ],
+  "sources": [
+   {
+    "book": "Speakout B2",
+    "unit": "2B",
+    "confidence": "verified"
+   },
+   {
+    "book": "Speakout C1–C2",
+    "unit": "8A",
+    "confidence": "verified"
+   },
+   {
+    "book": "Destination C1&C2",
+    "unit": "21",
+    "confidence": "verified"
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "comparison",
+  "title": "Comparison, degree and modification",
+  "level": "B2",
+  "domain": "comparison",
+  "topics": [
+   "education"
+  ],
+  "summary": "Precise comparison is central to academic writing and data description. This lesson covers comparatives and superlatives, modifiers of degree, as…as structures and advanced ways of comparing.",
+  "minutes": 30,
+  "sections": [
+   {
+    "id": "overview",
+    "kind": "overview",
+    "title": "Definition and function",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Comparison expresses differences or similarities in degree. Advanced users go beyond *bigger than* to say **how much** bigger and to compare with precision."
+     }
+    ]
+   },
+   {
+    "id": "form",
+    "kind": "form",
+    "title": "Formation",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Adjective",
+       "Comparative",
+       "Superlative"
+      ],
+      "rows": [
+       [
+        "one syllable: *cheap*",
+        "cheaper",
+        "the cheapest"
+       ],
+       [
+        "ending -y: *easy*",
+        "easier",
+        "the easiest"
+       ],
+       [
+        "two+ syllables: *expensive*",
+        "more expensive",
+        "the most expensive"
+       ],
+       [
+        "irregular: *good, bad, far*",
+        "better, worse, further/farther",
+        "the best, the worst, the furthest"
+       ]
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "tip",
+      "text": "Some two-syllable adjectives take both forms: *simpler / more simple*, *narrower*, *quieter*."
+     }
+    ]
+   },
+   {
+    "id": "degree",
+    "kind": "uses",
+    "title": "Modifying comparatives and superlatives",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Big difference",
+       "Small difference",
+       "With superlatives"
+      ],
+      "rows": [
+       [
+        "much, far, a lot, considerably, significantly",
+        "slightly, a little, a bit, marginally",
+        "by far, easily, quite, the second/third …"
+       ]
+      ]
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "Rents are **considerably higher** in the capital."
+       },
+       {
+        "en": "This is **by far the best** option."
+       },
+       {
+        "en": "~~It is very cheaper.~~",
+        "note": "*very* cannot modify comparatives: *much cheaper*.",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "structures",
+    "kind": "uses",
+    "title": "Other comparative structures",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "**as … as / not as (so) … as**: *It's **not as easy as** it looks.*",
+       "**twice / three times as … as**: *Housing costs **twice as much as** it did.*",
+       "**the + comparative, the + comparative**: ***The more** you practise, **the easier** it gets.*",
+       "**comparative + and + comparative**: *It's getting **harder and harder**.*",
+       "**the same as / similar to / different from**: *My view is **similar to** yours.*"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "advanced",
+    "kind": "uses",
+    "title": "Advanced ways of comparing (C1)",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "There's **nowhere near as** much traffic as there used to be.",
+        "note": "a big difference (informal-neutral)"
+       },
+       {
+        "en": "The results were **nothing like as** clear as we hoped."
+       },
+       {
+        "en": "Unemployment is **not nearly as** high as predicted."
+       },
+       {
+        "en": "Prices are **on a par with** those in Paris.",
+        "note": "roughly equal"
+       },
+       {
+        "en": "**Compared with / In comparison with** 2010, crime has fallen."
+       },
+       {
+        "en": "**Whereas / While** the north is industrial, the south relies on tourism.",
+        "note": "contrast clause"
+       },
+       {
+        "en": "Exports rose **by** 5%, **from** 20 **to** 21 billion.",
+        "note": "prepositions for change"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "contrasts",
+    "kind": "contrasts",
+    "title": "Differences between similar constructions",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "further / farther",
+        "note": "both for distance; only *further* = additional (*further information*)"
+       },
+       {
+        "en": "elder / older",
+        "note": "*elder* only before nouns for family members (*my elder brother*); not with *than*"
+       },
+       {
+        "en": "less / fewer",
+        "note": "*less* + uncountable; *fewer* + plural in formal English"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "errors",
+    "kind": "errors",
+    "title": "Common mistakes",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "~~She is more taller than me.~~",
+        "note": "Double comparative: *taller than me*.",
+        "wrong": true
+       },
+       {
+        "en": "~~It's the most good restaurant.~~",
+        "note": "*the best restaurant*.",
+        "wrong": true
+       },
+       {
+        "en": "~~My bag is the same like yours.~~",
+        "note": "*the same as yours*.",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "register",
+    "kind": "register",
+    "title": "Formal and academic use",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Data descriptions combine comparatives with precise modifiers: *Spending rose marginally, whereas investment fell sharply.* Avoid vague intensifiers (*very, really*) in favour of *substantially, slightly, approximately, roughly twice as*."
+     }
+    ]
+   },
+   {
+    "id": "summary",
+    "kind": "summary",
+    "title": "Summary",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "Use *much/far/considerably* or *slightly/marginally* to show the size of a difference.",
+       "*as … as*, *twice as … as*, *the more…the more*.",
+       "C1: *nowhere near as, on a par with, compared with, whereas*."
+      ]
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "type": "extends",
+    "to": "academic-register",
+    "label": "Academic register",
+    "level": "C1",
+    "published": true
+   }
+  ],
+  "exercises": [
+   "comparison-practice"
+  ],
+  "sources": [
+   {
+    "book": "Speakout C1–C2",
+    "unit": "2A",
+    "confidence": "verified"
+   },
+   {
+    "book": "Destination C1&C2",
+    "unit": "15",
+    "confidence": "verified"
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "conditionals-and-unreal-past",
+  "title": "Conditionals, wishes and the unreal past",
+  "level": "C1",
+  "domain": "conditionals",
+  "topics": [
+   "education"
+  ],
+  "summary": "Conditionals link a condition to a result. Advanced use includes mixed conditionals, alternatives to if, implied conditions and the unreal past after wish, if only, it's time and would rather.",
+  "minutes": 40,
+  "sections": [
+   {
+    "id": "overview",
+    "kind": "overview",
+    "title": "Definition and function",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "A conditional sentence has a **condition clause** (often with *if*) and a **result clause**. The tenses show whether the situation is real or imagined, and its time."
+     }
+    ]
+   },
+   {
+    "id": "form",
+    "kind": "form",
+    "title": "Formation: the main patterns",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Type",
+       "Condition",
+       "Result",
+       "Meaning"
+      ],
+      "rows": [
+       [
+        "zero",
+        "present simple",
+        "present simple",
+        "general truths: *If you heat ice, it melts.*"
+       ],
+       [
+        "first",
+        "present simple",
+        "will / may / can + inf",
+        "real future: *If it rains, we'll stay in.*"
+       ],
+       [
+        "second",
+        "past simple",
+        "would / could / might + inf",
+        "unreal present/future: *If I had time, I'd help.*"
+       ],
+       [
+        "third",
+        "past perfect",
+        "would have + V3",
+        "unreal past: *If we'd left earlier, we'd have caught it.*"
+       ]
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "tip",
+      "text": "*If I were* is preferred to *If I was* in formal English: *If I were you, I'd apologise.*"
+     }
+    ]
+   },
+   {
+    "id": "mixed",
+    "kind": "uses",
+    "title": "Mixed conditionals",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Mix times when a past condition has a present result, or a present state explains a past result:"
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "If I **had taken** the job, I **would be living** in Berlin now.",
+        "note": "past condition → present result"
+       },
+       {
+        "en": "If she **weren't** so shy, she **would have spoken** up at the meeting.",
+        "note": "present characteristic → past result"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "alternatives",
+    "kind": "uses",
+    "title": "Alternatives to if",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Conjunction",
+       "Meaning",
+       "Example"
+      ],
+      "rows": [
+       [
+        "unless",
+        "except if",
+        "*We'll go **unless** it rains.*"
+       ],
+       [
+        "provided / providing (that), as long as, on condition that",
+        "only if",
+        "*You can borrow it **as long as** you return it.*"
+       ],
+       [
+        "suppose / supposing, what if, imagine",
+        "hypothetical",
+        "***Supposing** you lost your job, what would you do?*"
+       ],
+       [
+        "otherwise, or (else)",
+        "if not",
+        "*Hurry, **otherwise** we'll be late.*"
+       ],
+       [
+        "but for, without",
+        "if it were not for",
+        "***But for** your help, I would have failed.*"
+       ],
+       [
+        "in case",
+        "as a precaution (not = if)",
+        "*Take an umbrella **in case** it rains.*"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "unreal",
+    "kind": "uses",
+    "title": "The unreal past: wish, if only, it's time, would rather",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Structure",
+       "Refers to",
+       "Example"
+      ],
+      "rows": [
+       [
+        "wish / if only + past simple",
+        "present situation",
+        "*I wish I **knew** the answer.*"
+       ],
+       [
+        "wish / if only + past perfect",
+        "past regret",
+        "*If only I **had listened**.*"
+       ],
+       [
+        "wish + would",
+        "annoying behaviour, wanted change",
+        "*I wish you **would** stop interrupting.*"
+       ],
+       [
+        "it's (high) time + past simple",
+        "something should already happen",
+        "*It's time we **left**.*"
+       ],
+       [
+        "would rather + past simple",
+        "preference about someone else",
+        "*I'd rather you **didn't** smoke.*"
+       ]
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "warning",
+      "text": "You cannot use *wish + would* about yourself: ~~I wish I would be taller~~ → *I wish I were taller*."
+     }
+    ]
+   },
+   {
+    "id": "contrasts",
+    "kind": "contrasts",
+    "title": "Differences between similar constructions",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "If I see him, I'll tell him.",
+        "note": "real possibility"
+       },
+       {
+        "en": "If I saw him, I'd tell him.",
+        "note": "less likely or imaginary"
+       },
+       {
+        "en": "Take a coat **in case** it gets cold.",
+        "note": "precaution, whether or not it gets cold"
+       },
+       {
+        "en": "Take a coat **if** it gets cold.",
+        "note": "only when it is cold"
+       },
+       {
+        "en": "**Should** you need help, call me.",
+        "note": "formal, less likely (inverted first conditional)"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "errors",
+    "kind": "errors",
+    "title": "Common mistakes",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "~~If I would have known, I would have come.~~",
+        "note": "No *would* in the if-clause: *If I had known…*",
+        "wrong": true
+       },
+       {
+        "en": "~~Unless you don't hurry, you'll miss the bus.~~",
+        "note": "*unless* is already negative: *Unless you hurry…*",
+        "wrong": true
+       },
+       {
+        "en": "~~I wish I can speak Japanese.~~",
+        "note": "*I wish I could speak Japanese.*",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "advanced",
+    "kind": "uses",
+    "title": "Advanced usage and stylistic nuances",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "**Inverted conditionals** (formal): *Had I known* = If I had known; *Were it not for* = If it were not for; *Should you require* = If you require.",
+       "**Implied conditions** without a condition clause: *I'd have called, but my battery died.* / *A smaller company would never have survived.*",
+       "**if + will** for willingness or result: *If you'll follow me, I'll show you your room.*",
+       "**if + should** for unlikely events: *If anything should go wrong, call this number.*"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "register",
+    "kind": "register",
+    "title": "Formal and academic use",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Academic writers use conditionals to state assumptions and limitations: *If these trends continue, demand will exceed supply by 2040.* *Were the sample larger, the results might differ.* Inversion and *provided that* sound formal; *as long as* and *what if* are neutral or informal."
+     }
+    ]
+   },
+   {
+    "id": "summary",
+    "kind": "summary",
+    "title": "Summary",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "Zero/first = real; second/third = unreal present/past; mix them for cross-time meaning.",
+       "*unless* = except if; *in case* = precaution; *provided/as long as* = only if.",
+       "Unreal past after *wish, if only, it's time, would rather*.",
+       "Formal inversion: *Had I…, Were it…, Should you…*"
+      ]
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "type": "prerequisite",
+    "to": "narrative-tenses",
+    "label": "Narrative tenses",
+    "level": "B2+",
+    "published": true
+   },
+   {
+    "type": "contrasts_with",
+    "to": "modals-and-modality",
+    "label": "Modals (should have)",
+    "level": "B2",
+    "published": true
+   },
+   {
+    "type": "extends",
+    "to": "inversion-and-emphasis",
+    "label": "Inverted conditionals",
+    "level": "C1",
+    "published": true
+   }
+  ],
+  "exercises": [
+   "conditionals-and-unreal-past-practice"
+  ],
+  "sources": [
+   {
+    "book": "Speakout B2",
+    "unit": "7B",
+    "confidence": "verified"
+   },
+   {
+    "book": "Speakout B2",
+    "unit": "8B",
+    "confidence": "verified"
+   },
+   {
+    "book": "Speakout C1–C2",
+    "unit": "1A",
+    "confidence": "verified"
+   },
+   {
+    "book": "Destination C1&C2",
+    "unit": "11",
+    "confidence": "verified"
+   },
+   {
+    "book": "Destination C1&C2",
+    "unit": "13",
+    "confidence": "verified"
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "future-forms",
+  "title": "Future forms, probability and time clauses",
+  "level": "B2",
+  "domain": "future-time",
+  "topics": [
+   "education"
+  ],
+  "summary": "English has no single future tense. The form you choose shows how certain you are, whether something is planned or arranged, and how you see the action at a future moment.",
+  "minutes": 35,
+  "sections": [
+   {
+    "id": "overview",
+    "kind": "overview",
+    "title": "Definition and function",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Future meaning is expressed with modal verbs (*will, might*), present forms (*I'm meeting*, *the train leaves*) and semi-modals (*be going to, be about to, be due to*). Each adds a different shade of certainty or planning."
+     }
+    ]
+   },
+   {
+    "id": "form",
+    "kind": "form",
+    "title": "Formation and main forms",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Form",
+       "Use",
+       "Example"
+      ],
+      "rows": [
+       [
+        "will + infinitive",
+        "predictions, decisions made now, promises",
+        "*I think it **will** rain.* *I**'ll** help you.*"
+       ],
+       [
+        "be going to",
+        "intentions; predictions from present evidence",
+        "*Look at the sky, it**'s going to** rain.*"
+       ],
+       [
+        "present continuous",
+        "fixed personal arrangements",
+        "*I**'m meeting** Ana at six.*"
+       ],
+       [
+        "present simple",
+        "timetables and schedules",
+        "*The train **leaves** at 9.15.*"
+       ],
+       [
+        "will be + -ing",
+        "an action in progress at a future time; polite enquiries",
+        "*This time tomorrow I**'ll be flying** to Seoul.*"
+       ],
+       [
+        "will have + V3",
+        "completed before a future time",
+        "*By June we**'ll have finished**.*"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "probability",
+    "kind": "uses",
+    "title": "Talking about probability",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Use adverbs and phrases to show how likely something is:"
+     },
+     {
+      "type": "table",
+      "head": [
+       "Certainty",
+       "Expression"
+      ],
+      "rows": [
+       [
+        "very likely",
+        "*will definitely / is bound to / is sure to*"
+       ],
+       [
+        "likely",
+        "*will probably / is likely to / I expect*"
+       ],
+       [
+        "possible",
+        "*may / might / could / there's a chance that*"
+       ],
+       [
+        "unlikely",
+        "*probably won't / is unlikely to / I doubt whether*"
+       ]
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "warning",
+      "text": "Word order: *probably* comes after *will* but before *won't*: *She'll probably come* / *She probably won't come.*"
+     }
+    ]
+   },
+   {
+    "id": "time-clauses",
+    "kind": "uses",
+    "title": "Time clauses",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "After **when, as soon as, before, after, until, once, by the time** referring to the future, use a **present** tense, not *will*:"
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "I'll call you **when** I **get** home."
+       },
+       {
+        "en": "~~I'll call you when I will get home.~~",
+        "wrong": true
+       },
+       {
+        "en": "Don't leave **until** you**'ve signed** the form.",
+        "note": "present perfect stresses completion"
+       }
+      ]
+     },
+     {
+      "type": "p",
+      "text": "The same rule applies to **if, unless, provided (that), as long as**."
+     }
+    ]
+   },
+   {
+    "id": "contrasts",
+    "kind": "contrasts",
+    "title": "Differences between similar constructions",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "I**'ll** see Tom tomorrow.",
+        "note": "prediction or spontaneous plan"
+       },
+       {
+        "en": "I**'m going to** see Tom tomorrow.",
+        "note": "intention"
+       },
+       {
+        "en": "I**'m seeing** Tom tomorrow.",
+        "note": "arrangement (we've agreed a time)"
+       },
+       {
+        "en": "**Will you be using** the car tonight?",
+        "note": "neutral, polite question about plans"
+       },
+       {
+        "en": "**Will you use** the car tonight?",
+        "note": "can sound like a request or demand"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "advanced",
+    "kind": "uses",
+    "title": "Advanced usage: be + to, future in the past",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "**be about to** (very near future), **be on the point of / on the verge of** + -ing.",
+       "**be due to** for scheduled events: *The report is due to be published on Monday.*",
+       "**be to** for formal arrangements and instructions: *The president **is to** visit Paris next week. You **are to** report to reception.*",
+       "**Future in the past**: *I knew she **would** win. We **were going to** move, but…*",
+       "**will** for assumptions about the present: *That**'ll** be the postman.* (See *Uses of will and would*.)"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "errors",
+    "kind": "errors",
+    "title": "Common mistakes",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "~~I will meet my dentist at four tomorrow.~~",
+        "note": "Fixed arrangement → *I'm seeing my dentist at four.*",
+        "wrong": true
+       },
+       {
+        "en": "~~When I will finish university, I'll travel.~~",
+        "note": "Time clause → *When I finish…*",
+        "wrong": true
+       },
+       {
+        "en": "~~She will probably not come.~~",
+        "note": "More natural: *She probably won't come.*",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "register",
+    "kind": "register",
+    "title": "Formal and academic use",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Academic writing prefers impersonal forms of prediction: *It is likely that…*, *X is expected to…*, *X is projected to rise by 3%*. Formal notices use *be to* and *be due to*: *The building is due to reopen in spring.*"
+     }
+    ]
+   },
+   {
+    "id": "summary",
+    "kind": "summary",
+    "title": "Summary",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "will = prediction/decision now; going to = intention/evidence; present continuous = arrangement; present simple = timetable.",
+       "Future continuous = in progress at a future time; future perfect = completed before it.",
+       "No *will* after time and condition conjunctions."
+      ]
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "type": "prerequisite",
+    "to": "perfect-and-continuous-aspect",
+    "label": "Present perfect and aspect",
+    "level": "B2",
+    "published": true
+   }
+  ],
+  "exercises": [
+   "future-forms-practice"
+  ],
+  "sources": [
+   {
+    "book": "Speakout B2",
+    "unit": "2A",
+    "confidence": "verified"
+   },
+   {
+    "book": "Speakout B2",
+    "unit": "4A",
+    "confidence": "verified"
+   },
+   {
+    "book": "Speakout C1–C2",
+    "unit": "8B",
+    "confidence": "verified"
+   },
+   {
+    "book": "Destination C1&C2",
+    "unit": "5",
+    "confidence": "verified"
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "habits-used-to-would",
+  "title": "Habits: used to, would, be used to and will",
+  "level": "B2",
+  "domain": "habitual",
+  "topics": [
+   "education"
+  ],
+  "summary": "Several structures talk about typical behaviour. They differ in time (past or present), in whether they describe states or actions, and in the attitude of the speaker.",
+  "minutes": 25,
+  "sections": [
+   {
+    "id": "overview",
+    "kind": "overview",
+    "title": "Definition and function",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Habitual forms describe things that happened regularly or were true for a long period. **used to** and **would** look back at past habits; **be/get used to** describes familiarity; **will** and **would** can describe typical (sometimes annoying) behaviour."
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "We **used to** live by the sea. Every summer we **would** swim before breakfast."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "form",
+    "kind": "form",
+    "title": "Formation",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Structure",
+       "Form",
+       "Example"
+      ],
+      "rows": [
+       [
+        "used to",
+        "used to + infinitive",
+        "*I **used to** smoke.*"
+       ],
+       [
+        "negative / question",
+        "didn't use to / Did you use to…?",
+        "*Did you **use to** play the piano?*"
+       ],
+       [
+        "would",
+        "would + infinitive",
+        "*He **would** sit by the window for hours.*"
+       ],
+       [
+        "be used to",
+        "be used to + noun / -ing",
+        "*I**'m used to** getting up early.*"
+       ],
+       [
+        "get used to",
+        "get used to + noun / -ing",
+        "*You'll soon **get used to** the noise.*"
+       ]
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "warning",
+      "text": "In questions and negatives, *use to* has no *-d*: ~~Did you used to~~."
+     }
+    ]
+   },
+   {
+    "id": "uses",
+    "kind": "uses",
+    "title": "Main rules: used to or would?",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "**used to** works for both **states and actions**: *I used to have long hair. I used to cycle to school.*",
+       "**would** works only for **repeated actions**, not states: ~~I would have long hair~~.",
+       "**would** normally needs a past time already established; it is common in nostalgic storytelling.",
+       "Use the **past simple** for a single past event or when you say how many times: *I went there twice*, not ~~I used to go there twice~~."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "familiarity",
+    "kind": "uses",
+    "title": "be used to and get used to",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "These are completely different from *used to* + infinitive. They mean *be/become accustomed to* and are followed by a **noun or -ing form**:"
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "She **isn't used to** driving on the left.",
+        "note": "it still feels strange"
+       },
+       {
+        "en": "It took months to **get used to** the climate.",
+        "note": "the process of becoming familiar"
+       },
+       {
+        "en": "~~I'm used to get up early.~~",
+        "note": "Use -ing: *I'm used to getting up early.*",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "annoying",
+    "kind": "uses",
+    "title": "Typical and annoying behaviour: will, would, always + continuous",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "**will / would** (stressed in speech) for characteristic behaviour: *He'**ll** sit there for hours without saying a word.*",
+       "With stress, it shows irritation: *She **WOULD** say that!*",
+       "**always / constantly + continuous** for annoying habits: *You're always leaving the lights on!*"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "errors",
+    "kind": "errors",
+    "title": "Common mistakes",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "~~I am used to live in a big city.~~",
+        "note": "*I'm used to living…* (familiar) or *I used to live…* (past habit).",
+        "wrong": true
+       },
+       {
+        "en": "~~I would have a dog when I was a child.~~",
+        "note": "State → *I used to have a dog.*",
+        "wrong": true
+       },
+       {
+        "en": "~~I use to go to the gym.~~",
+        "note": "For present habits use the present simple: *I usually go…*",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "register",
+    "kind": "register",
+    "title": "Formal and academic use",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "In formal writing, prefer *formerly*, *traditionally*, *in the past* or *tended to*: *Families traditionally ate together*; *Earlier studies tended to overlook gender.* *Would* for past habit is more literary and narrative."
+     }
+    ]
+   },
+   {
+    "id": "summary",
+    "kind": "summary",
+    "title": "Summary",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "used to: past states and habits that are no longer true.",
+       "would: repeated past actions only, in narrative.",
+       "be/get used to + -ing: be/become familiar with.",
+       "will/would/always + continuous: characteristic or annoying behaviour."
+      ]
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "type": "extends",
+    "to": "future-forms",
+    "label": "Future forms (will for assumptions)",
+    "level": "B2",
+    "published": true
+   }
+  ],
+  "exercises": [
+   "habits-used-to-would-practice"
+  ],
+  "sources": [
+   {
+    "book": "Speakout C1–C2",
+    "unit": "8B",
+    "confidence": "verified"
+   },
+   {
+    "book": "Destination C1&C2",
+    "unit": "3",
+    "confidence": "verified"
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "inversion-and-emphasis",
+  "title": "Emphasis: cleft sentences, inversion, fronting and auxiliary do",
+  "level": "C1",
+  "domain": "emphasis",
+  "topics": [
+   "education"
+  ],
+  "summary": "English normally puts new or important information at the end of a sentence. Clefts, inversion, fronting and emphatic do let you control what the reader notices, which is essential for persuasive speaking and writing.",
+  "minutes": 40,
+  "sections": [
+   {
+    "id": "overview",
+    "kind": "overview",
+    "title": "Definition and function",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Emphasis structures change the normal order of information to highlight one part of the message. They are typical of persuasive essays, presentations and careful conversation."
+     }
+    ]
+   },
+   {
+    "id": "clefts",
+    "kind": "form",
+    "title": "Cleft sentences",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Type",
+       "Pattern",
+       "Example"
+      ],
+      "rows": [
+       [
+        "it-cleft",
+        "It + be + focus + that/who…",
+        "***It was the cost that** surprised me.*"
+       ],
+       [
+        "what-cleft",
+        "What + clause + be + focus",
+        "***What surprised me was** the cost.*"
+       ],
+       [
+        "all-cleft",
+        "All + clause + be + focus",
+        "***All I want is** a quiet weekend.*"
+       ],
+       [
+        "reason/place/time",
+        "The reason/place/thing… + be",
+        "***The reason (why) I left was** the pay.*"
+       ]
+      ]
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "**It wasn't until** midnight **that** they finally agreed.",
+        "note": "*It was not until…* = only at that time"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "do",
+    "kind": "uses",
+    "title": "Auxiliary do for emphasis",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Stressed *do/does/did* before the main verb contradicts or confirms strongly:"
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "I **did** send the email, I promise!"
+       },
+       {
+        "en": "She **does** work hard, even if it doesn't look like it."
+       },
+       {
+        "en": "**Do** sit down.",
+        "note": "polite insistence"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "inversion",
+    "kind": "form",
+    "title": "Inversion after negative and limiting adverbials",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "When a negative or restrictive expression comes first, use **question word order** (auxiliary + subject):"
+     },
+     {
+      "type": "table",
+      "head": [
+       "Adverbial",
+       "Example"
+      ],
+      "rows": [
+       [
+        "Never / Rarely / Seldom",
+        "***Rarely have I seen** such commitment.*"
+       ],
+       [
+        "Not only… but also",
+        "***Not only did** she win, **but** she **also** broke the record.*"
+       ],
+       [
+        "No sooner… than / Hardly… when",
+        "***No sooner had** we arrived **than** it started to rain.*"
+       ],
+       [
+        "Only then / Only after / Only when",
+        "***Only when** the results came **did we realise** our mistake.*"
+       ],
+       [
+        "Under no circumstances / On no account",
+        "***Under no circumstances should you** share your password.*"
+       ],
+       [
+        "Little",
+        "***Little did they know** what was coming.*"
+       ],
+       [
+        "So / Such",
+        "***So severe was** the damage **that** the bridge closed.*"
+       ]
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "warning",
+      "text": "With *Only after / Only when / Not until*, invert the **main** clause, not the time clause: *Only when I got home **did I notice** the cut.*"
+     }
+    ]
+   },
+   {
+    "id": "fronting",
+    "kind": "uses",
+    "title": "Fronting and tailing",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "**Fronting** moves an element to the start for contrast or emphasis: ***This** I cannot accept. **Strange** as it may seem, he was right.*",
+       "**Tailing** adds the topic at the end in speech: *It's lovely, **that beach**.* *He's very clever, **your brother**.*",
+       "**Concessive fronting**: *Much as I admire her, I disagree. Try as he might, he couldn't open it.*"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "contrasts",
+    "kind": "contrasts",
+    "title": "Differences between similar constructions",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "I've never seen such chaos.",
+        "note": "neutral"
+       },
+       {
+        "en": "Never have I seen such chaos.",
+        "note": "formal, dramatic"
+       },
+       {
+        "en": "Jack broke the window.",
+        "note": "neutral"
+       },
+       {
+        "en": "It was Jack who broke the window.",
+        "note": "contrastive: Jack, not someone else"
+       },
+       {
+        "en": "What Jack did was break the window.",
+        "note": "focus on the action"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "errors",
+    "kind": "errors",
+    "title": "Common mistakes",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "~~Never I have seen such a mess.~~",
+        "note": "Invert: *Never have I seen…*",
+        "wrong": true
+       },
+       {
+        "en": "~~Not only she sings, but she also dances.~~",
+        "note": "*Not only does she sing…*",
+        "wrong": true
+       },
+       {
+        "en": "~~Only when I got home I noticed the cut.~~",
+        "note": "*…did I notice the cut*.",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "register",
+    "kind": "register",
+    "title": "Formal and academic use",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Inversion is formal and should be used sparingly in essays, typically once or twice for impact, especially in introductions and conclusions: *Not only does tourism create jobs, but it also funds conservation.* Clefts are useful in academic writing to signal contrast: *It is this assumption that the present study challenges.*"
+     }
+    ]
+   },
+   {
+    "id": "summary",
+    "kind": "summary",
+    "title": "Summary",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "It-clefts and what-clefts move focus.",
+       "Emphatic *do* confirms or contradicts.",
+       "Negative/limiting adverbial first → auxiliary + subject.",
+       "Fronting and tailing for contrast and spoken style."
+      ]
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "type": "prerequisite",
+    "to": "nominal-relative-clauses",
+    "label": "Nominal relative clauses (what-clefts)",
+    "level": "C1",
+    "published": true
+   },
+   {
+    "type": "contrasts_with",
+    "to": "conditionals-and-unreal-past",
+    "label": "Inverted conditionals",
+    "level": "C1",
+    "published": true
+   }
+  ],
+  "exercises": [
+   "inversion-and-emphasis-practice"
+  ],
+  "sources": [
+   {
+    "book": "Speakout B2",
+    "unit": "3B",
+    "confidence": "verified"
+   },
+   {
+    "book": "Speakout B2",
+    "unit": "3D",
+    "confidence": "verified"
+   },
+   {
+    "book": "Speakout C1–C2",
+    "unit": "5A",
+    "confidence": "verified"
+   },
+   {
+    "book": "Destination C1&C2",
+    "unit": "19",
+    "confidence": "verified"
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "linking-contrast-concession",
+  "title": "Linking ideas: contrast, concession, cause and result",
+  "level": "B2",
+  "domain": "linking",
+  "topics": [
+   "education"
+  ],
+  "summary": "Linkers show the logical relationship between ideas. Using the right one, with the right grammar after it, is essential for coherent essays and arguments.",
+  "minutes": 35,
+  "sections": [
+   {
+    "id": "overview",
+    "kind": "overview",
+    "title": "Definition and function",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Linking devices connect clauses and sentences: contrast (*however*), concession (*although*), cause (*because of*), result (*therefore*), addition (*moreover*). Each belongs to a grammatical type, which decides what follows it."
+     }
+    ]
+   },
+   {
+    "id": "form",
+    "kind": "form",
+    "title": "Grammatical types of linker",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Type",
+       "Followed by",
+       "Examples"
+      ],
+      "rows": [
+       [
+        "conjunction",
+        "a clause, inside one sentence",
+        "*although, even though, while, whereas, because, so*"
+       ],
+       [
+        "preposition",
+        "a noun phrase or -ing",
+        "*despite, in spite of, because of, due to, owing to*"
+       ],
+       [
+        "sentence adverb",
+        "a new sentence (often after a full stop or semicolon)",
+        "*However, Nevertheless, Therefore, Consequently, Moreover*"
+       ]
+      ]
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "**Although** it was raining, we went out."
+       },
+       {
+        "en": "**Despite** the rain / **Despite** it raining, we went out."
+       },
+       {
+        "en": "It was raining. **However**, we went out."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "contrast",
+    "kind": "uses",
+    "title": "Contrast and concession",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "**while / whereas** contrast two facts: *The north is wet, **whereas** the south is dry.*",
+       "**although / even though / though** concede a point: ***Even though** he was ill, he finished the race.* (*even though* is stronger)",
+       "**despite / in spite of** + noun / -ing / *the fact that*: ***Despite the fact that** prices rose, sales increased.*",
+       "**however / nevertheless / nonetheless / even so** start a new sentence.",
+       "**Adverbials of concession** (C1): *admittedly, granted, all the same, be that as it may*."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "cause",
+    "kind": "uses",
+    "title": "Cause and result",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Cause",
+       "Result"
+      ],
+      "rows": [
+       [
+        "because, since, as (+ clause)",
+        "so, so … that, such … that (+ clause)"
+       ],
+       [
+        "because of, due to, owing to, as a result of (+ noun)",
+        "therefore, consequently, as a result, thus, hence (sentence adverbs)"
+       ]
+      ]
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "The match was cancelled **due to** heavy rain."
+       },
+       {
+        "en": "The rain was heavy. **Consequently**, the match was cancelled."
+       }
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "warning",
+      "text": "*Due to* traditionally follows *be*: *The delay was due to fog.* In formal writing, prefer *owing to / because of* at the start of a sentence."
+     }
+    ]
+   },
+   {
+    "id": "addition",
+    "kind": "uses",
+    "title": "Addition and condition in argument",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "*Moreover, Furthermore, In addition, What is more, Besides* add points; *provided that, as long as, unless* add conditions (see *Conditionals*)."
+     }
+    ]
+   },
+   {
+    "id": "contrasts",
+    "kind": "contrasts",
+    "title": "Differences between similar constructions",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "Although it was late, …",
+        "note": "clause after *although*"
+       },
+       {
+        "en": "~~Although of the late hour, …~~",
+        "note": "*Despite the late hour…*",
+        "wrong": true
+       },
+       {
+        "en": "On the other hand…",
+        "note": "introduces the other side of an argument"
+       },
+       {
+        "en": "On the contrary…",
+        "note": "says the previous idea is false: *It wasn't boring. On the contrary, it was fascinating.*"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "errors",
+    "kind": "errors",
+    "title": "Common mistakes",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "~~Despite of the weather, we went.~~",
+        "note": "*Despite the weather* / *In spite of the weather*.",
+        "wrong": true
+       },
+       {
+        "en": "~~Although he was tired, but he continued.~~",
+        "note": "Use one linker only: *Although he was tired, he continued.*",
+        "wrong": true
+       },
+       {
+        "en": "~~The economy grew, however unemployment rose.~~",
+        "note": "*however* starts a new sentence or follows a semicolon: *…grew; however, unemployment rose.*",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "advanced",
+    "kind": "uses",
+    "title": "Advanced usage and stylistic nuances",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "Fronted concession: ***Much as** I admire the plan, it is unrealistic.* ***Difficult though** it may be, we must act.*",
+       "*Whereas* and *while* can begin the sentence for balanced contrast.",
+       "Overusing *Moreover/Furthermore* at the start of every sentence sounds mechanical; vary with *This also…, A further problem is…*."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "register",
+    "kind": "register",
+    "title": "Formal and academic use",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Formal: *nevertheless, consequently, thus, hence, notwithstanding*. Neutral: *however, therefore, although*. Informal: *but, so, anyway, still*. Good essays use a range, placed naturally, and not at the start of every sentence."
+     }
+    ]
+   },
+   {
+    "id": "summary",
+    "kind": "summary",
+    "title": "Summary",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "Conjunction + clause; preposition + noun/-ing; sentence adverb + new sentence.",
+       "*although/even though* vs *despite/in spite of*.",
+       "*because* + clause vs *because of/due to* + noun.",
+       "*on the other hand* (other side) vs *on the contrary* (rejecting)."
+      ]
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "type": "extends",
+    "to": "academic-register",
+    "label": "Academic register",
+    "level": "C1",
+    "published": true
+   },
+   {
+    "type": "extends",
+    "to": "inversion-and-emphasis",
+    "label": "Concessive fronting",
+    "level": "C1",
+    "published": true
+   }
+  ],
+  "exercises": [
+   "linking-contrast-concession-practice"
+  ],
+  "sources": [
+   {
+    "book": "Speakout B2",
+    "unit": "1D",
+    "confidence": "verified"
+   },
+   {
+    "book": "Speakout B2",
+    "unit": "7D",
+    "confidence": "verified"
+   },
+   {
+    "book": "Speakout B2",
+    "unit": "8B",
+    "confidence": "verified"
+   },
+   {
+    "book": "Speakout C1–C2",
+    "unit": "6B",
+    "confidence": "verified"
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "modals-and-modality",
+  "title": "Modals: obligation, deduction and stance",
+  "level": "B2",
+  "domain": "modality",
+  "topics": [
+   "education"
+  ],
+  "summary": "Modal verbs and modal expressions show how certain, necessary or permitted something is. At C1, modality also means signalling your stance with adjectives, adverbs and nouns.",
+  "minutes": 40,
+  "sections": [
+   {
+    "id": "overview",
+    "kind": "overview",
+    "title": "Definition and function",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Modality expresses the speaker's attitude to a statement. Two main areas:"
+     },
+     {
+      "type": "list",
+      "items": [
+       "**Obligation and permission** (deontic): *must, have to, should, can, be allowed to, needn't*.",
+       "**Probability and deduction** (epistemic): *must, can't, might, could, may, should, will*."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "form",
+    "kind": "form",
+    "title": "Formation",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Modal verbs (*can, could, may, might, must, shall, should, will, would*) take a bare infinitive, have no *-s* and form questions by inversion. Semi-modals (*have to, need to, be able to, ought to, be supposed to*) behave more like normal verbs."
+     },
+     {
+      "type": "table",
+      "head": [
+       "Time",
+       "Structure",
+       "Example"
+      ],
+      "rows": [
+       [
+        "present/future",
+        "modal + infinitive",
+        "*She **must be** tired.*"
+       ],
+       [
+        "present ongoing",
+        "modal + be + -ing",
+        "*They **might be waiting** outside.*"
+       ],
+       [
+        "past",
+        "modal + have + V3",
+        "*He **can't have seen** us.*"
+       ],
+       [
+        "past ongoing",
+        "modal + have been + -ing",
+        "*You **must have been dreaming**.*"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "obligation",
+    "kind": "uses",
+    "title": "Obligation, prohibition and permission",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Meaning",
+       "Forms"
+      ],
+      "rows": [
+       [
+        "strong obligation",
+        "*must* (speaker's authority), *have to* (external rule)"
+       ],
+       [
+        "no obligation",
+        "*don't have to, needn't, don't need to*"
+       ],
+       [
+        "prohibition",
+        "*mustn't, can't, aren't allowed to, be forbidden to*"
+       ],
+       [
+        "advice",
+        "*should, ought to, had better*"
+       ],
+       [
+        "permission",
+        "*can, may (formal), be allowed to, be permitted to*"
+       ]
+      ]
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "You **mustn't** smoke here.",
+        "note": "prohibited"
+       },
+       {
+        "en": "You **don't have to** come.",
+        "note": "not necessary, but you may"
+       },
+       {
+        "en": "We **didn't need to** pay.",
+        "note": "it wasn't necessary (we probably didn't pay)"
+       },
+       {
+        "en": "We **needn't have paid**.",
+        "note": "we paid, but it wasn't necessary"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "deduction",
+    "kind": "uses",
+    "title": "Deduction: present and past",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Certainty",
+       "Present",
+       "Past"
+      ],
+      "rows": [
+       [
+        "sure it is true",
+        "*must be*",
+        "*must have been*"
+       ],
+       [
+        "sure it is not true",
+        "*can't / couldn't be*",
+        "*can't / couldn't have been*"
+       ],
+       [
+        "possible",
+        "*may / might / could be*",
+        "*may / might / could have been*"
+       ]
+      ]
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "She's not answering. She **must be** in a meeting."
+       },
+       {
+        "en": "He **can't have taken** the train; there were no trains that night."
+       }
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "warning",
+      "text": "The negative of deductive *must* is *can't*, not ~~mustn't~~: *That can't be right.*"
+     }
+    ]
+   },
+   {
+    "id": "contrasts",
+    "kind": "contrasts",
+    "title": "Differences between similar constructions",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "You **should have told** me.",
+        "note": "criticism: you didn't tell me"
+       },
+       {
+        "en": "You **could have told** me.",
+        "note": "reproach: it was possible but you didn't"
+       },
+       {
+        "en": "**Could** you swim when you were five?",
+        "note": "general ability"
+       },
+       {
+        "en": "I **managed to / was able to** escape.",
+        "note": "specific achievement in the past (not *could*)"
+       },
+       {
+        "en": "You **had better** leave now.",
+        "note": "strong advice with a warning; refers to now or the future"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "advanced",
+    "kind": "uses",
+    "title": "Advanced usage: modality beyond modal verbs",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "At C1 you can express the same meanings more precisely with other structures:"
+     },
+     {
+      "type": "list",
+      "items": [
+       "adjectives: *It is **highly unlikely** that…*, *It is **essential** that…*, *X is **bound/liable/apt** to…*",
+       "adverbs: *conceivably, presumably, inevitably, arguably*",
+       "nouns: *There is **every likelihood** that…*, *There's **no question of**…*, *in all probability*",
+       "verbs: *It **remains to be seen** whether…*, *The data **suggest** that…*"
+      ]
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "**In all likelihood**, the trial will be postponed."
+       },
+       {
+        "en": "It is **imperative** that every passenger **wear** a seat belt.",
+        "note": "formal subjunctive after *imperative/essential*"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "errors",
+    "kind": "errors",
+    "title": "Common mistakes",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "~~You mustn't to wear a tie.~~",
+        "note": "No *to* after modals: *You don't have to wear a tie* (if you mean no obligation).",
+        "wrong": true
+       },
+       {
+        "en": "~~He must have been at home yesterday, I'm not sure.~~",
+        "note": "*must* = certainty; use *might have been* if unsure.",
+        "wrong": true
+       },
+       {
+        "en": "~~I could finish the marathon last year.~~",
+        "note": "Specific achievement → *I managed to finish*.",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "register",
+    "kind": "register",
+    "title": "Formal and academic use",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Academic writing uses modality to **hedge** claims: *These findings **may** indicate…*, *This **could** be explained by…*, *It **would seem** that…*. Strong modals (*must, certainly*) are reserved for well-supported claims. Formal rules use *be required to, be prohibited from, be permitted to*."
+     }
+    ]
+   },
+   {
+    "id": "summary",
+    "kind": "summary",
+    "title": "Summary",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "Obligation: must/have to; no obligation: don't have to/needn't; prohibition: mustn't.",
+       "Deduction: must (sure), can't (sure not), might/could (possible); past = modal + have + V3.",
+       "*needn't have done* = did it unnecessarily; *didn't need to do* = it wasn't necessary.",
+       "At C1, use adjectives, adverbs and nouns of likelihood to state your stance precisely."
+      ]
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "type": "extends",
+    "to": "academic-register",
+    "label": "Academic register: hedging and nominalisation",
+    "level": "C1",
+    "published": true
+   },
+   {
+    "type": "contrasts_with",
+    "to": "conditionals-and-unreal-past",
+    "label": "Unreal past (should have)",
+    "level": "C1",
+    "published": true
+   }
+  ],
+  "exercises": [
+   "modals-and-modality-practice"
+  ],
+  "sources": [
+   {
+    "book": "Speakout B2",
+    "unit": "6A",
+    "confidence": "verified"
+   },
+   {
+    "book": "Speakout B2",
+    "unit": "7A",
+    "confidence": "verified"
+   },
+   {
+    "book": "Speakout C1–C2",
+    "unit": "3A",
+    "confidence": "verified"
+   },
+   {
+    "book": "Destination C1&C2",
+    "unit": "9",
+    "confidence": "verified"
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "narrative-tenses",
+  "title": "Narrative tenses and the past perfect",
+  "level": "B2+",
+  "domain": "tense-aspect",
+  "topics": [
+   "education"
+  ],
+  "summary": "Telling a story in English means choosing between past simple, past continuous, past perfect and past perfect continuous to show order, background and cause.",
+  "minutes": 30,
+  "sections": [
+   {
+    "id": "overview",
+    "kind": "overview",
+    "title": "Definition and function",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Narrative tenses organise a story in time. The **past simple** moves the story forward; the **past continuous** describes the background; the **past perfect** steps back to an earlier event; the **past perfect continuous** shows an activity that continued up to a past moment."
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "It **was raining** and the streets **were** empty. I **had been walking** for an hour when I **realised** I **had left** my keys at the office."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "form",
+    "kind": "form",
+    "title": "Formation",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Tense",
+       "Form",
+       "Function in a story"
+      ],
+      "rows": [
+       [
+        "Past simple",
+        "V2 (*went, decided*)",
+        "main events in sequence"
+       ],
+       [
+        "Past continuous",
+        "was/were + -ing",
+        "background, interrupted actions"
+       ],
+       [
+        "Past perfect",
+        "had + V3",
+        "events before the main time"
+       ],
+       [
+        "Past perfect continuous",
+        "had been + -ing",
+        "duration up to a past moment, causes"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "uses",
+    "kind": "uses",
+    "title": "Main rules and usage",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "Use the **past perfect** only when you need to make the earlier time clear. If events are told in order, the past simple is enough: *I got up, had a shower and left.*",
+       "Use it after **time conjunctions** when the order matters: *When I arrived, the film started* (I arrived, then it started) vs *When I arrived, the film had started* (it started before).",
+       "With **before, after, as soon as**, the past perfect is optional because the conjunction already shows the order.",
+       "Use the **past perfect continuous** to explain a visible result in the past: *Her eyes were red: she had been crying.*"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "contrasts",
+    "kind": "contrasts",
+    "title": "Differences between similar constructions",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "When she came in, we **had** dinner.",
+        "note": "She came in, then we ate."
+       },
+       {
+        "en": "When she came in, we **were having** dinner.",
+        "note": "We were in the middle of dinner."
+       },
+       {
+        "en": "When she came in, we **had had** dinner.",
+        "note": "We had already finished."
+       },
+       {
+        "en": "I **had read** the book twice.",
+        "note": "completed number of times"
+       },
+       {
+        "en": "I **had been reading** for hours.",
+        "note": "duration of the activity"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "variations",
+    "kind": "uses",
+    "title": "Other ways to talk about the past",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "**used to / would** for past habits (see *Habits: used to and would*).",
+       "**was going to / was about to** for plans that did not happen: *I was going to call you, but I forgot.*",
+       "**The historic present**: storytellers and journalists sometimes use present tenses to make a past story vivid: *So I'm walking home, and this man stops me…* (informal speech, C1)."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "errors",
+    "kind": "errors",
+    "title": "Common mistakes",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "~~After I had finished, I had gone home.~~",
+        "note": "Only the earlier action needs the past perfect: *After I had finished, I went home.*",
+        "wrong": true
+       },
+       {
+        "en": "~~I was knowing the answer.~~",
+        "note": "State verb: *I knew the answer.*",
+        "wrong": true
+       },
+       {
+        "en": "~~Yesterday I had met an old friend.~~",
+        "note": "No earlier past reference point: *Yesterday I met an old friend.*",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "advanced",
+    "kind": "uses",
+    "title": "Advanced usage and stylistic nuances",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "Writers use the past perfect for **flashbacks**, then return to the past simple once the earlier time is established, to avoid a long chain of *had*.",
+       "**Hardly / No sooner** with the past perfect and inversion (formal): *No sooner had we sat down than the alarm went off.* (See *Inversion and emphasis*.)",
+       "**Perfect infinitives** for reported past: *He is said to have left the country.*"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "register",
+    "kind": "register",
+    "title": "Formal and academic use",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "In historical and academic narratives, the past perfect frames background before the main period: *By 1900, the city's population had doubled.* Avoid the historic present in formal essays unless you are summarising a literary plot, where the present simple is standard: *In the novel, the protagonist returns home…*"
+     }
+    ]
+   },
+   {
+    "id": "summary",
+    "kind": "summary",
+    "title": "Summary",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "Past simple moves the story; continuous gives background; perfect steps back.",
+       "Use the past perfect only where order would otherwise be unclear.",
+       "Past perfect continuous explains causes and duration up to a past point."
+      ]
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "type": "prerequisite",
+    "to": "perfect-and-continuous-aspect",
+    "label": "Present perfect and aspect",
+    "level": "B2",
+    "published": true
+   },
+   {
+    "type": "extends",
+    "to": "conditionals-and-unreal-past",
+    "label": "Unreal past and mixed conditionals",
+    "level": "C1",
+    "published": true
+   }
+  ],
+  "exercises": [
+   "narrative-tenses-practice"
+  ],
+  "sources": [
+   {
+    "book": "Speakout B2",
+    "unit": "5A",
+    "confidence": "verified"
+   },
+   {
+    "book": "Speakout C1–C2",
+    "unit": "6A",
+    "confidence": "verified"
+   },
+   {
+    "book": "Destination C1&C2",
+    "unit": "3",
+    "confidence": "verified"
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "participle-and-reduced-clauses",
+  "title": "Participle clauses and reduced relative clauses",
+  "level": "B2+",
+  "domain": "participle-clauses",
+  "topics": [
+   "education"
+  ],
+  "summary": "Participle clauses compress information: they replace a full clause with an -ing, -ed or having + past participle form. They make writing denser and more formal, and they also reduce relative clauses.",
+  "minutes": 35,
+  "sections": [
+   {
+    "id": "overview",
+    "kind": "overview",
+    "title": "Definition and function",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "A participle clause is a clause without a subject and without a full verb. It is built on a **present participle** (*-ing*), a **past participle** (*-ed / V3*) or a **perfect participle** (*having + V3*). It can describe time, reason, result, condition or add information about a noun."
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "**Feeling tired**, she went to bed early.",
+        "note": "= Because she felt tired"
+       },
+       {
+        "en": "The man **sitting by the window** is my tutor.",
+        "note": "= who is sitting"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "form",
+    "kind": "form",
+    "title": "Formation",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Form",
+       "Meaning",
+       "Example"
+      ],
+      "rows": [
+       [
+        "-ing",
+        "active, same time or reason",
+        "***Walking** home, I met Ana.*"
+       ],
+       [
+        "V3",
+        "passive",
+        "***Built** in 1890, the bridge is still in use.*"
+       ],
+       [
+        "having + V3",
+        "active, earlier action",
+        "***Having finished** the report, he left.*"
+       ],
+       [
+        "having been + V3",
+        "passive, earlier action",
+        "***Having been warned**, they took precautions.*"
+       ],
+       [
+        "not + participle",
+        "negative",
+        "***Not knowing** what to do, I called my mother.*"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "adverbial",
+    "kind": "uses",
+    "title": "Adverbial participle clauses: time, reason, result, condition",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "**After graduating**, she moved to Toronto.",
+        "note": "time; conjunction kept for clarity"
+       },
+       {
+        "en": "**Being** the eldest, he had to look after the others.",
+        "note": "reason"
+       },
+       {
+        "en": "The storm destroyed the bridge, **cutting off** the village.",
+        "note": "result"
+       },
+       {
+        "en": "**Used** correctly, the device is completely safe.",
+        "note": "condition (= if it is used)"
+       },
+       {
+        "en": "**While waiting** for the bus, I read the news.",
+        "note": "conjunction + participle"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "reduced",
+    "kind": "uses",
+    "title": "Reduced relative clauses",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "A defining or non-defining relative clause can often be reduced:"
+     },
+     {
+      "type": "table",
+      "head": [
+       "Full relative clause",
+       "Reduced"
+      ],
+      "rows": [
+       [
+        "The woman **who is speaking** is a judge.",
+        "The woman **speaking** is a judge."
+       ],
+       [
+        "Cars **which are made** in Japan…",
+        "Cars **made** in Japan…"
+       ],
+       [
+        "Anyone **who wants** a ticket…",
+        "Anyone **wanting** a ticket…"
+       ],
+       [
+        "The first person **who arrived**…",
+        "The first person **to arrive**… (infinitive after *first, last, only*, superlatives)"
+       ]
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "warning",
+      "text": "Use *-ing* for active meaning even with past events: *The man **driving** the car was injured* (who was driving). Do not reduce with the perfect: ~~The people having attended~~ → *The people who had attended*."
+     }
+    ]
+   },
+   {
+    "id": "contrasts",
+    "kind": "contrasts",
+    "title": "Differences between similar constructions",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "The people **interviewing** the candidates…",
+        "note": "they interview (active)"
+       },
+       {
+        "en": "The people **interviewed** for the study…",
+        "note": "they were interviewed (passive)"
+       },
+       {
+        "en": "**Opening** the door, she saw the parcel.",
+        "note": "same time"
+       },
+       {
+        "en": "**Having opened** the door, she went back to the kitchen.",
+        "note": "one action completed first"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "errors",
+    "kind": "errors",
+    "title": "Common mistakes",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "~~Walking down the street, the rain started.~~",
+        "note": "Dangling participle: the subject of the main clause must be the one doing the participle. *Walking down the street, I got caught in the rain.*",
+        "wrong": true
+       },
+       {
+        "en": "~~Having lived in Paris, she lives there for ten years.~~",
+        "note": "Wrong logic: *Having lived in Paris for ten years, she speaks fluent French.*",
+        "wrong": true
+       },
+       {
+        "en": "~~The books writing by him are popular.~~",
+        "note": "Passive meaning → *written*.",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "advanced",
+    "kind": "uses",
+    "title": "Advanced usage and stylistic nuances",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "Participle clauses with their own subject (absolute constructions, formal/literary): ***The work finished**, we went home.* ***Weather permitting**, the match will go ahead.*",
+       "Fixed participle expressions: *generally speaking, judging by, considering, given (that), assuming (that), provided*.",
+       "*With* + noun + participle: ***With prices rising**, families are cutting back.*"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "register",
+    "kind": "register",
+    "title": "Formal and academic use",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Participle clauses are common in academic, journalistic and descriptive writing: *Drawing on survey data, this study examines… / Compared with 2010, unemployment has fallen.* In conversation, full clauses are more natural."
+     }
+    ]
+   },
+   {
+    "id": "summary",
+    "kind": "summary",
+    "title": "Summary",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "-ing = active; V3 = passive; having + V3 = earlier action.",
+       "They replace adverbial clauses (time, reason, condition, result) and relative clauses.",
+       "The implied subject must match the main clause subject.",
+       "*first/last/only* + to-infinitive in reduced relatives."
+      ]
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "type": "prerequisite",
+    "to": "relative-clauses",
+    "label": "Relative clauses",
+    "level": "B2",
+    "published": true
+   },
+   {
+    "type": "extends",
+    "to": "academic-register",
+    "label": "Academic register",
+    "level": "C1",
+    "published": true
+   }
+  ],
+  "exercises": [
+   "participle-and-reduced-clauses-practice"
+  ],
+  "sources": [
+   {
+    "book": "Speakout B2",
+    "unit": "8A",
+    "confidence": "verified"
+   },
+   {
+    "book": "Speakout C1–C2",
+    "unit": "5B",
+    "confidence": "verified"
+   },
+   {
+    "book": "Destination C1&C2",
+    "unit": "17",
+    "confidence": "verified"
+   },
+   {
+    "book": "Destination C1&C2",
+    "unit": "19",
+    "confidence": "verified"
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "passive-and-causative",
+  "title": "The passive, impersonal passives and the causative",
+  "level": "B2",
+  "domain": "passive",
+  "topics": [
+   "education"
+  ],
+  "summary": "The passive lets you choose what a sentence is about and leave out who did the action. Advanced forms include impersonal reporting passives, passive infinitives and -ing forms, get-passives and causatives.",
+  "minutes": 35,
+  "sections": [
+   {
+    "id": "overview",
+    "kind": "overview",
+    "title": "Definition and function",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "In an active sentence the subject does the action; in a passive sentence the subject **receives** it. Use the passive when the agent is unknown, obvious, unimportant, or when you want to keep the focus on a topic already mentioned."
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "The bridge **was built** in 1890.",
+        "note": "who built it is not important here"
+       },
+       {
+        "en": "Penicillin was discovered in 1928. It **was later developed** into a mass-produced drug.",
+        "note": "keeps the topic as subject"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "form",
+    "kind": "form",
+    "title": "Formation",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "*be* (in the correct tense) + past participle."
+     },
+     {
+      "type": "table",
+      "head": [
+       "Tense",
+       "Passive"
+      ],
+      "rows": [
+       [
+        "present simple / continuous",
+        "is made / is being made"
+       ],
+       [
+        "past simple / continuous",
+        "was made / was being made"
+       ],
+       [
+        "present perfect",
+        "has been made"
+       ],
+       [
+        "past perfect",
+        "had been made"
+       ],
+       [
+        "future / modal",
+        "will be made / must be made / should have been made"
+       ],
+       [
+        "infinitive / -ing",
+        "to be made / to have been made / being made / having been made"
+       ]
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "tip",
+      "text": "Add the agent with *by* only when it is new or important: *The novel was written **by a 19-year-old**.*"
+     }
+    ]
+   },
+   {
+    "id": "reporting",
+    "kind": "uses",
+    "title": "Impersonal passives with reporting verbs",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "With verbs such as *say, believe, think, report, expect, know, consider, allege*, there are two patterns:"
+     },
+     {
+      "type": "table",
+      "head": [
+       "Pattern",
+       "Example"
+      ],
+      "rows": [
+       [
+        "It + passive + that-clause",
+        "***It is believed that*** the painting is a fake."
+       ],
+       [
+        "Subject + passive + to-infinitive",
+        "*The painting **is believed to be** a fake.*"
+       ],
+       [
+        "… about the past",
+        "*The thieves **are thought to have escaped** by boat.*"
+       ],
+       [
+        "… in progress",
+        "*The minister **is said to be considering** resigning.*"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "variations",
+    "kind": "uses",
+    "title": "Passive infinitives, -ing forms and get-passives",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "Nobody likes **being criticised** in public.",
+        "note": "passive -ing"
+       },
+       {
+        "en": "The forms need **to be signed** by Friday.",
+        "note": "passive infinitive"
+       },
+       {
+        "en": "She expects **to have been promoted** by then.",
+        "note": "perfect passive infinitive"
+       },
+       {
+        "en": "He **got fired** for being late.",
+        "note": "get-passive: informal; often sudden or unwelcome events"
+       }
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "tip",
+      "text": "*need + -ing* has passive meaning in British English: *The car needs washing* = needs to be washed."
+     }
+    ]
+   },
+   {
+    "id": "causative",
+    "kind": "uses",
+    "title": "The causative: have and get something done",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Use **have/get + object + past participle** when you arrange for someone else to do something, or when something unpleasant happens to you:"
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "I'm **having my hair cut** tomorrow.",
+        "note": "I pay someone to cut it"
+       },
+       {
+        "en": "She **got her bag stolen** on the train.",
+        "note": "unpleasant experience"
+       }
+      ]
+     },
+     {
+      "type": "p",
+      "text": "Related active patterns: **have someone do** (*I had the mechanic check the brakes*), **get someone to do** (*I got my brother to help me*)."
+     }
+    ]
+   },
+   {
+    "id": "contrasts",
+    "kind": "contrasts",
+    "title": "Differences between similar constructions",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "I cut my hair.",
+        "note": "I did it myself"
+       },
+       {
+        "en": "I had my hair cut.",
+        "note": "someone did it for me"
+       },
+       {
+        "en": "The report was written last week.",
+        "note": "neutral passive"
+       },
+       {
+        "en": "The report got written in the end.",
+        "note": "informal; suggests difficulty"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "errors",
+    "kind": "errors",
+    "title": "Common mistakes",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "~~The meeting was happened on Monday.~~",
+        "note": "Intransitive verbs (*happen, arrive, die, occur*) have no passive.",
+        "wrong": true
+       },
+       {
+        "en": "~~It is said that he to be rich.~~",
+        "note": "Mix of two patterns: *It is said that he is rich* / *He is said to be rich*.",
+        "wrong": true
+       },
+       {
+        "en": "~~I must repair my car tomorrow at the garage.~~",
+        "note": "If someone else does it: *I must have/get my car repaired.*",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "register",
+    "kind": "register",
+    "title": "Formal and academic use",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Academic and scientific writing uses the passive to focus on processes and results: *Samples were collected from 40 sites and analysed.* Impersonal passives distance the writer from claims: *It has been argued that…*, *X is widely regarded as…*. Don't overuse it: a mix of active and passive reads more clearly."
+     }
+    ]
+   },
+   {
+    "id": "summary",
+    "kind": "summary",
+    "title": "Summary",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "Passive = be + past participle; agent with *by* only if useful.",
+       "*It is said that… / X is said to…*; past: *is said to have done*.",
+       "Passive infinitive and -ing forms after verbs and prepositions.",
+       "Causative *have/get something done*; *get* is more informal."
+      ]
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "type": "extends",
+    "to": "academic-register",
+    "label": "Academic register",
+    "level": "C1",
+    "published": true
+   },
+   {
+    "type": "extends",
+    "to": "reported-speech",
+    "label": "Reporting verbs",
+    "level": "C1",
+    "published": true
+   }
+  ],
+  "exercises": [
+   "passive-and-causative-practice"
+  ],
+  "sources": [
+   {
+    "book": "Speakout B2",
+    "unit": "4B",
+    "confidence": "verified"
+   },
+   {
+    "book": "Speakout C1–C2",
+    "unit": "3B",
+    "confidence": "verified"
+   },
+   {
+    "book": "Destination C1&C2",
+    "unit": "7",
+    "confidence": "verified"
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "perfect-and-continuous-aspect",
+  "title": "Present perfect and aspect: simple, continuous and perfect forms",
+  "level": "B2",
+  "domain": "tense-aspect",
+  "topics": [
+   "education"
+  ],
+  "summary": "Tense tells you when; aspect tells you how the speaker sees an action: complete, in progress, or connected to a later moment. Mastering aspect is what makes advanced English sound precise.",
+  "minutes": 35,
+  "sections": [
+   {
+    "id": "overview",
+    "kind": "overview",
+    "title": "Definition and function",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "English verbs combine **tense** (present or past) with **aspect**. Aspect shows how the speaker views the action:"
+     },
+     {
+      "type": "list",
+      "items": [
+       "**Simple**: the action is seen as a complete whole or a fact.",
+       "**Continuous** (*be* + *-ing*): the action is seen as in progress, temporary or unfinished.",
+       "**Perfect** (*have* + past participle): the action is seen from a later point and connected to it."
+      ]
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "I **read** the report.",
+        "note": "Simple: a complete fact."
+       },
+       {
+        "en": "I **was reading** the report when you called.",
+        "note": "Continuous: in progress at that moment."
+       },
+       {
+        "en": "I**'ve read** the report, so I can comment.",
+        "note": "Perfect: past action relevant now."
+       },
+       {
+        "en": "I**'ve been reading** reports all morning.",
+        "note": "Perfect continuous: activity up to now, focus on duration."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "form",
+    "kind": "form",
+    "title": "Formation",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Form",
+       "Structure",
+       "Example"
+      ],
+      "rows": [
+       [
+        "Present perfect simple",
+        "have/has + past participle",
+        "She **has written** three books."
+       ],
+       [
+        "Present perfect continuous",
+        "have/has been + -ing",
+        "She **has been writing** since 8 a.m."
+       ],
+       [
+        "Past perfect simple",
+        "had + past participle",
+        "They **had left** before we arrived."
+       ],
+       [
+        "Past perfect continuous",
+        "had been + -ing",
+        "I **had been waiting** for an hour."
+       ],
+       [
+        "Future perfect",
+        "will have + past participle",
+        "We **will have finished** by May."
+       ],
+       [
+        "Passive perfect",
+        "have/has been + past participle",
+        "The results **have been published**."
+       ]
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "warning",
+      "text": "Questions and negatives use the first auxiliary: *Have you been waiting long?* / *She hasn't been feeling well.*"
+     }
+    ]
+   },
+   {
+    "id": "uses",
+    "kind": "uses",
+    "title": "Main rules: present perfect simple vs past simple",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Use the **present perfect** when the past action is connected to now and no finished time is given:"
+     },
+     {
+      "type": "list",
+      "items": [
+       "experience in an unfinished period: *I've visited Kazan twice.*",
+       "a recent change with a present result: *The price has gone up.*",
+       "states up to now with *for/since*: *We've known each other since school.*"
+      ]
+     },
+     {
+      "type": "p",
+      "text": "Use the **past simple** with a finished time or when the story is clearly in the past:"
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "I **lived** in Berlin in 2019.",
+        "note": "finished time"
+       },
+       {
+        "en": "~~I have lived in Berlin in 2019.~~",
+        "note": "A finished time expression needs the past simple.",
+        "wrong": true
+       },
+       {
+        "en": "**Have you seen** the new exhibition? ~ Yes, I **went** last week.",
+        "note": "The conversation starts in the present perfect, then moves to past simple for details."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "continuous",
+    "kind": "uses",
+    "title": "Simple or continuous? Results versus activity",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "The **simple** form focuses on the result or quantity; the **continuous** form focuses on the activity, its duration, or the fact that it may be unfinished."
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "I**'ve painted** the kitchen.",
+        "note": "Finished: the result is a painted kitchen."
+       },
+       {
+        "en": "I**'ve been painting** the kitchen.",
+        "note": "Activity: maybe unfinished; explains paint on my clothes."
+       },
+       {
+        "en": "She**'s written** 2,000 words today.",
+        "note": "Quantity → simple."
+       },
+       {
+        "en": "~~She's been writing 2,000 words today.~~",
+        "note": "Don't use continuous with a completed number.",
+        "wrong": true
+       }
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "tip",
+      "text": "**State verbs** (*know, believe, own, belong, seem, consist*) are normally not used in the continuous: *I've known her for years*, not ~~I've been knowing~~."
+     }
+    ]
+   },
+   {
+    "id": "variations",
+    "kind": "uses",
+    "title": "Forms and variations",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "**Repeated actions**: *He's been calling me all week* (irritation, repetition).",
+       "**Temporary situations**: *I'm living with my parents at the moment* versus *I live in Riga* (permanent).",
+       "**Dynamic uses of state verbs** change meaning: *I'm thinking about it* (considering) / *I think so* (opinion); *She's having lunch* (eating) / *She has a car* (owns).",
+       "**This is the first time…** requires the present perfect: *This is the first time I've flown business class.*"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "contrasts",
+    "kind": "contrasts",
+    "title": "Differences between similar constructions",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Sentence",
+       "Meaning"
+      ],
+      "rows": [
+       [
+        "*How long have you been learning English?*",
+        "asks about duration up to now"
+       ],
+       [
+        "*How long did you learn English?*",
+        "the learning has finished"
+       ],
+       [
+        "*I've been to Paris.*",
+        "I went and came back (experience)"
+       ],
+       [
+        "*She's gone to Paris.*",
+        "she is there now or on her way"
+       ],
+       [
+        "*I've worked here for two years.*",
+        "I still work here (simple, state-like)"
+       ],
+       [
+        "*I've been working here for two years.*",
+        "almost the same; continuous stresses the ongoing activity"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "errors",
+    "kind": "errors",
+    "title": "Common mistakes",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "~~I am living here since 2018.~~",
+        "note": "Russian uses the present tense here; English needs the present perfect: *I've lived / I've been living here since 2018.*",
+        "wrong": true
+       },
+       {
+        "en": "~~When have you arrived?~~",
+        "note": "Questions with *when* point to a finished time: *When did you arrive?*",
+        "wrong": true
+       },
+       {
+        "en": "~~I've been knowing him for years.~~",
+        "note": "State verb: *I've known him for years.*",
+        "wrong": true
+       },
+       {
+        "en": "~~Since three years I work here.~~",
+        "note": "*since* + point in time, *for* + period: *I've worked here for three years.*",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "advanced",
+    "kind": "uses",
+    "title": "Advanced usage and stylistic nuances",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "At C1, aspect becomes a **choice that shapes meaning and tone**:"
+     },
+     {
+      "type": "list",
+      "items": [
+       "The continuous can sound **less direct and more polite**: *I was wondering if you could help* (softer than *I wondered*).",
+       "The continuous can show **annoyance**: *You're always interrupting me.*",
+       "The present perfect is used in news to **introduce** a story, then the past simple gives details: *A major earthquake has struck the region. It hit at 3 a.m.*",
+       "The perfect aspect in non-finite forms: *Having finished the report, she left*; *She seems to have forgotten.*"
+      ]
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "I**'ve been meaning** to call you.",
+        "note": "continuous perfect for an intention that hasn't happened yet"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "register",
+    "kind": "register",
+    "title": "Formal and academic use",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Academic writing uses the present perfect to **summarise research up to now** and the past simple for **a specific study**:"
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "Several studies **have examined** the link between sleep and memory. Walker (2017) **found** that…",
+        "note": "survey of literature → specific finding"
+       }
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "register",
+      "text": "In academic prose, the present perfect continuous is rarer; prefer *Research has increasingly focused on…* to ~~Researchers have been looking at…~~."
+     }
+    ]
+   },
+   {
+    "id": "summary",
+    "kind": "summary",
+    "title": "Summary",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "Simple = complete whole or fact; continuous = in progress or temporary; perfect = connected to a later point.",
+       "Present perfect for unfinished periods and present relevance; past simple for finished times.",
+       "Simple for results and quantities; continuous for activity and duration.",
+       "State verbs avoid the continuous unless the meaning changes."
+      ]
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "type": "extends",
+    "to": "narrative-tenses",
+    "label": "Narrative tenses and the past perfect",
+    "level": "B2+",
+    "published": true
+   },
+   {
+    "type": "extends",
+    "to": "future-forms",
+    "label": "Future continuous and future perfect",
+    "level": "B2",
+    "published": true
+   }
+  ],
+  "exercises": [
+   "perfect-and-continuous-aspect-practice"
+  ],
+  "sources": [
+   {
+    "book": "Speakout B2",
+    "unit": "1A",
+    "confidence": "verified"
+   },
+   {
+    "book": "Speakout C1–C2",
+    "unit": "4B",
+    "confidence": "verified"
+   },
+   {
+    "book": "Destination C1&C2",
+    "unit": "1",
+    "confidence": "verified"
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "reported-speech",
+  "title": "Reported speech and reporting verbs",
+  "level": "B2+",
+  "domain": "reported-speech",
+  "topics": [
+   "education"
+  ],
+  "summary": "Reporting what others say involves tense and pronoun changes, but at C1 the real skill is choosing a reporting verb that shows what the speaker did (warned, admitted, claimed) and what you think of it.",
+  "minutes": 35,
+  "sections": [
+   {
+    "id": "overview",
+    "kind": "overview",
+    "title": "Definition and function",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Direct speech quotes exact words; reported (indirect) speech gives the content in your own sentence. Reporting changes **tenses, pronouns, time and place words**, and **word order** in questions."
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "“I'm moving to Oslo,” she said. → She said (that) she **was** moving to Oslo."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "form",
+    "kind": "form",
+    "title": "Backshift and other changes",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Direct",
+       "Reported"
+      ],
+      "rows": [
+       [
+        "present simple / continuous",
+        "past simple / continuous"
+       ],
+       [
+        "past simple / present perfect",
+        "past perfect"
+       ],
+       [
+        "will / can / may",
+        "would / could / might"
+       ],
+       [
+        "must",
+        "must / had to"
+       ],
+       [
+        "now, today, tomorrow",
+        "then, that day, the next day"
+       ],
+       [
+        "here, this",
+        "there, that"
+       ]
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "tip",
+      "text": "Backshift is optional when the situation is still true: *She said she **lives** in Oslo* (she still does)."
+     }
+    ]
+   },
+   {
+    "id": "questions",
+    "kind": "form",
+    "title": "Reported questions, orders and requests",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "Yes/no questions: *if / whether* + statement word order: *He asked **if I was** ready.*",
+       "Wh- questions: wh-word + statement order: *She asked **where I lived***, not ~~where did I live~~.",
+       "Orders and requests: *tell / ask* + object + (not) to-infinitive: *She told us **not to touch** anything.*"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "verbs",
+    "kind": "uses",
+    "title": "Reporting verbs and their patterns",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Pattern",
+       "Verbs"
+      ],
+      "rows": [
+       [
+        "verb + to-inf",
+        "agree, offer, promise, refuse, threaten, claim"
+       ],
+       [
+        "verb + object + to-inf",
+        "advise, encourage, invite, persuade, remind, urge, warn"
+       ],
+       [
+        "verb + -ing",
+        "admit, deny, recommend, suggest"
+       ],
+       [
+        "verb + preposition + -ing",
+        "apologise for, insist on, object to; accuse sb of, blame sb for, congratulate sb on"
+       ],
+       [
+        "verb + that-clause",
+        "acknowledge, argue, claim, explain, point out, maintain"
+       ]
+      ]
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "“It was me who broke it.” → He **admitted breaking** it."
+       },
+       {
+        "en": "“You should see a doctor.” → She **advised me to see** a doctor."
+       },
+       {
+        "en": "“You lied!” → He **accused her of lying**."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "stance",
+    "kind": "uses",
+    "title": "Choosing verbs that show stance (C1)",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Reporting verbs carry the writer's attitude:"
+     },
+     {
+      "type": "table",
+      "head": [
+       "Neutral",
+       "Writer accepts the claim",
+       "Writer is doubtful"
+      ],
+      "rows": [
+       [
+        "state, report, note, say",
+        "show, demonstrate, establish, point out",
+        "claim, allege, assert, maintain"
+       ]
+      ]
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "The study **claims** that sugar causes hyperactivity.",
+        "note": "writer is sceptical"
+       },
+       {
+        "en": "The study **demonstrates** that sleep aids memory.",
+        "note": "writer accepts it"
+       }
+      ]
+     },
+     {
+      "type": "p",
+      "text": "Summarising verbs: *outline, summarise, conclude, sum up, highlight, emphasise, dismiss, question*."
+     }
+    ]
+   },
+   {
+    "id": "contrasts",
+    "kind": "contrasts",
+    "title": "Differences between similar constructions",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "He **said** (that) he was tired.",
+        "note": "no object after *say*"
+       },
+       {
+        "en": "He **told me** (that) he was tired.",
+        "note": "*tell* needs a person object"
+       },
+       {
+        "en": "She **suggested going** by train. / She **suggested that we go** by train.",
+        "note": "never *suggested us to go*"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "errors",
+    "kind": "errors",
+    "title": "Common mistakes",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "~~She asked me where did I work.~~",
+        "note": "Statement order: *where I worked*.",
+        "wrong": true
+       },
+       {
+        "en": "~~He said me that he was busy.~~",
+        "note": "*He told me / He said (to me)*.",
+        "wrong": true
+       },
+       {
+        "en": "~~They accused him for stealing.~~",
+        "note": "*accused him of stealing*.",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "register",
+    "kind": "register",
+    "title": "Formal and academic use",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Academic writing reports sources with present-tense reporting verbs: *Smith (2019) **argues** that… / As Lee **points out**,…* Choose verbs carefully: *claim* and *assert* can distance you from a source; *show* commits you to it."
+     }
+    ]
+   },
+   {
+    "id": "summary",
+    "kind": "summary",
+    "title": "Summary",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "Backshift tenses, change pronouns and time words; optional if still true.",
+       "Reported questions use statement word order.",
+       "Learn the pattern of each reporting verb.",
+       "Reporting verbs signal stance: *demonstrate* vs *claim*."
+      ]
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "type": "prerequisite",
+    "to": "verb-patterns",
+    "label": "Verb patterns",
+    "level": "B2",
+    "published": true
+   },
+   {
+    "type": "extends",
+    "to": "academic-register",
+    "label": "Academic register",
+    "level": "C1",
+    "published": true
+   }
+  ],
+  "exercises": [
+   "reported-speech-practice"
+  ],
+  "sources": [
+   {
+    "book": "Speakout B2",
+    "unit": "6B",
+    "confidence": "verified"
+   },
+   {
+    "book": "Speakout C1–C2",
+    "unit": "2B",
+    "confidence": "verified"
+   },
+   {
+    "book": "Destination C1&C2",
+    "unit": "25",
+    "confidence": "verified"
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "verb-patterns",
+  "title": "Verb patterns: -ing forms, infinitives and meaning changes",
+  "level": "B2",
+  "domain": "verb-patterns",
+  "topics": [
+   "education"
+  ],
+  "summary": "The verb you choose decides what follows it: an -ing form, a to-infinitive, a bare infinitive, an object or a that-clause. Some verbs change meaning depending on the pattern.",
+  "minutes": 35,
+  "sections": [
+   {
+    "id": "overview",
+    "kind": "overview",
+    "title": "Definition and function",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "A verb pattern is the structure that follows a verb. Patterns are largely fixed, so they must be learned with the verb: *avoid **doing***, *decide **to do***, *make someone **do***."
+     }
+    ]
+   },
+   {
+    "id": "form",
+    "kind": "form",
+    "title": "The main patterns",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Pattern",
+       "Common verbs",
+       "Example"
+      ],
+      "rows": [
+       [
+        "verb + -ing",
+        "avoid, enjoy, mind, consider, deny, risk, suggest, can't help, admit, postpone",
+        "*She **avoided answering**.*"
+       ],
+       [
+        "verb + to-inf",
+        "decide, hope, refuse, manage, afford, agree, promise, seem, tend, fail",
+        "*They **refused to pay**.*"
+       ],
+       [
+        "verb + object + to-inf",
+        "ask, tell, want, allow, encourage, persuade, expect, force",
+        "*I **persuaded him to stay**.*"
+       ],
+       [
+        "verb + object + bare inf",
+        "make, let, help (also with to)",
+        "*They **made us wait**.*"
+       ],
+       [
+        "verb + that-clause",
+        "suggest, insist, recommend, admit, claim",
+        "*She **suggested that we leave**.*"
+       ],
+       [
+        "preposition + -ing",
+        "interested in, insist on, look forward to, object to",
+        "*I **look forward to hearing** from you.*"
+       ]
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "warning",
+      "text": "After a preposition, always use -ing. *to* is a preposition in *look forward to, object to, be used to, when it comes to*: ~~look forward to hear~~."
+     }
+    ]
+   },
+   {
+    "id": "meaning",
+    "kind": "contrasts",
+    "title": "Verbs that change meaning",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Verb",
+       "+ -ing",
+       "+ to-infinitive"
+      ],
+      "rows": [
+       [
+        "remember / forget",
+        "memory of an earlier action: *I remember **locking** the door.*",
+        "not forgetting a duty: *Remember **to lock** the door.*"
+       ],
+       [
+        "stop",
+        "end an activity: *He stopped **smoking**.*",
+        "stop in order to: *He stopped **to smoke**.*"
+       ],
+       [
+        "try",
+        "experiment: *Try **restarting** it.*",
+        "make an effort: *I tried **to open** it but couldn't.*"
+       ],
+       [
+        "regret",
+        "sorry about the past: *I regret **saying** that.*",
+        "formal bad news: *We regret **to inform** you…*"
+       ],
+       [
+        "mean",
+        "involve: *A new job means **moving**.*",
+        "intend: *I didn't mean **to upset** you.*"
+       ],
+       [
+        "go on",
+        "continue the same: *She went on **talking**.*",
+        "move to a new thing: *She went on **to become** a judge.*"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "perception",
+    "kind": "uses",
+    "title": "Verbs of perception",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "*see, hear, watch, notice, feel* + object + **bare infinitive** (complete action) or **-ing** (action in progress):"
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "I **saw** him **cross** the road.",
+        "note": "I saw the whole action"
+       },
+       {
+        "en": "I **saw** him **crossing** the road.",
+        "note": "in the middle of the action"
+       }
+      ]
+     },
+     {
+      "type": "p",
+      "text": "In the passive, *make* and perception verbs take *to*: *He was **made to** apologise.* *She was **seen to** leave.*"
+     }
+    ]
+   },
+   {
+    "id": "advanced",
+    "kind": "uses",
+    "title": "Advanced usage and stylistic nuances",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "Perfect and passive forms: *He denies **having taken** the money.* *She hates **being interrupted**.* *I'd like **to have been** there.*",
+       "Possessive + -ing (formal): *I object to **his** smoking indoors* (informal: *him smoking*).",
+       "*It* as preparatory object: *I find **it** difficult **to concentrate**. I'd appreciate **it** if you could reply.*",
+       "*suggest / recommend / insist* + **that** + (should) + base form (formal): *She insisted that he **be** present.*"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "errors",
+    "kind": "errors",
+    "title": "Common mistakes",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "~~He suggested me to apply.~~",
+        "note": "*He suggested (that) I apply / suggested applying.*",
+        "wrong": true
+       },
+       {
+        "en": "~~I'm looking forward to meet you.~~",
+        "note": "*to meeting you*.",
+        "wrong": true
+       },
+       {
+        "en": "~~They let us to leave early.~~",
+        "note": "*let* + bare infinitive: *let us leave*.",
+        "wrong": true
+       },
+       {
+        "en": "~~I avoid to eat sugar.~~",
+        "note": "*avoid eating*.",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "register",
+    "kind": "register",
+    "title": "Formal and academic use",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Formal writing prefers nominal or that-clause patterns: *The committee recommended **that the policy be reviewed***. Verbs such as *tend to, appear to, fail to* are frequent in academic hedging: *Earlier studies **tended to overlook** this group.*"
+     }
+    ]
+   },
+   {
+    "id": "summary",
+    "kind": "summary",
+    "title": "Summary",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "Learn each verb with its pattern; prepositions take -ing.",
+       "*remember, forget, stop, try, regret, mean, go on* change meaning.",
+       "*make/let* + bare infinitive (active), *be made to* (passive).",
+       "Perception verbs: bare infinitive (whole action) vs -ing (in progress)."
+      ]
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "type": "extends",
+    "to": "reported-speech",
+    "label": "Reporting verbs and their patterns",
+    "level": "C1",
+    "published": true
+   }
+  ],
+  "exercises": [
+   "verb-patterns-practice"
+  ],
+  "sources": [
+   {
+    "book": "Speakout B2",
+    "unit": "1B",
+    "confidence": "verified"
+   },
+   {
+    "book": "Speakout B2",
+    "unit": "5B",
+    "confidence": "verified"
+   },
+   {
+    "book": "Speakout C1–C2",
+    "unit": "4A",
+    "confidence": "verified"
+   },
+   {
+    "book": "Destination C1&C2",
+    "unit": "23",
+    "confidence": "verified"
+   }
+  ]
+ }
+]

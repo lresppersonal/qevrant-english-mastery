@@ -1,0 +1,26 @@
+# Relationships and Personality
+easy-going | adj | adjective | B2 | neutral | Character | relaxed and not easily upset | покладистый, лёгкий в общении | My flatmate is very easy-going about housework. | | laid-back; relaxed |
+conscientious | adj | adjective | C1 | formal | Character | careful to do things well and thoroughly | добросовестный | She's a conscientious student who never misses a deadline. | conscientious worker | diligent; dutiful | work-careers
+stubborn | adj | adjective | B2 | neutral | Character | refusing to change your opinion or behaviour | упрямый | He's too stubborn to admit he's wrong. | | obstinate; headstrong |
+assertive | adj | adjective | B2+ | neutral | Character | confident and direct in expressing opinions | напористый, уверенный в себе | You need to be more assertive in meetings. | assertive behaviour | confident; forthright | work-careers
+self-centred | adj | adjective | B2+ | neutral | Character | interested only in yourself | эгоцентричный | His self-centred attitude annoyed the team. | | selfish; egotistical |
+compassionate | adj | adjective | C1 | neutral | Character | feeling sympathy for others' suffering and wanting to help | сострадательный | Nurses need to be compassionate and patient. | | caring; sympathetic | health-medicine
+gullible | adj | adjective | C1 | neutral | Character | too willing to believe what people tell you | доверчивый, легковерный | Gullible people are easy targets for online scams. | | naive; credulous | crime-law
+bond | n | noun / verb | B2+ | neutral | Relationships | a close connection between people | связь, узы | There's a strong bond between the sisters. | form/strengthen a bond; bond with | tie; connection |
+rapport | n | noun | C1 | formal | Relationships | a friendly relationship in which people understand each other well | взаимопонимание | Good teachers build rapport with their classes. | build/establish a rapport with | understanding; affinity | education
+acquaintance | n | noun | B2+ | neutral | Relationships | a person you know but not well | знакомый | He's an acquaintance from university. | casual acquaintance; make someone's acquaintance | |
+estranged | adj | adjective | C1 | formal | Relationships | no longer in contact with a family member | отчуждённый, отдалившийся | She is estranged from her father. | estranged from; estranged wife/husband | alienated |
+sibling | n | noun | B2 | neutral | Family | a brother or sister | брат или сестра | Sibling rivalry is common in large families. | sibling rivalry | |
+nuclear family | coll | noun phrase | B2+ | neutral | Family | a family of two parents and their children | нуклеарная семья | The nuclear family is less common than it was. | | | society-politics
+get on with | pv | phrasal verb | B2 | neutral | Relationships | to have a friendly relationship with someone | ладить с | I get on well with my neighbours. | get on well/badly with | get along with |
+fall out with | pv | phrasal verb | B2 | neutral | Relationships | to argue with someone and stop being friendly | поссориться с | They fell out over money. | fall out with someone over something | quarrel with |
+look up to | pv | phrasal verb | B2 | neutral | Relationships | to admire and respect someone | уважать, равняться на | She always looked up to her older brother. | | admire; respect |
+put up with | pv | phrasal verb | B2 | neutral | Relationships | to accept something unpleasant without complaining | мириться с, терпеть | I can't put up with the noise any longer. | | tolerate; endure |
+see eye to eye | idiom | verb phrase | B2+ | informal | Relationships | to agree with someone | сходиться во взглядах | We don't always see eye to eye on politics. | see eye to eye with someone on | agree |
+a shoulder to cry on | idiom | noun phrase | C1 | informal | Relationships | someone who listens sympathetically to your problems | жилетка (чтобы поплакаться) | She was always a shoulder to cry on. | | |
+two-faced | adj | adjective | C1 | informal | Character | saying different things to different people; insincere | двуличный | I can't trust him; he's so two-faced. | | hypocritical; deceitful |
+@family rely (v); reliable (adj); reliability (n); unreliable (adj); reliance (n)
+@family friend (n); friendly (adj); friendship (n); befriend (v); unfriendly (adj)
+@distinct sympathetic vs nice :: In English *sympathetic* means showing understanding of someone's problems, NOT attractive or pleasant. Russian *симпатичный* is *nice*, *likeable* or *attractive*.
+@distinct alone vs lonely :: *Alone* means without other people (neutral). *Lonely* means unhappy because you are alone or have no friends.
+recalcitrant | adj | adjective | C2 | formal | Character | refusing to obey or cooperate | непокорный, строптивый | Teachers struggled with a few recalcitrant pupils. | | defiant; uncooperative | education

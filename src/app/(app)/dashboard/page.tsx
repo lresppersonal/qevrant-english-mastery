@@ -40,7 +40,7 @@ export default function Dashboard() {
       <section className="card mb-6 flex flex-col items-start gap-4 p-6 sm:flex-row sm:items-center" aria-label="Continue learning">
         <div className="min-w-0 flex-1">
           <p className="eyebrow">{data.last ? "Continue where you left off" : "Start here"}</p>
-          <p className="mt-1 font-display text-xl font-bold">{data.last?.label ?? "Education, learning and research"}</p>
+          <p className="mt-1 font-display text-xl font-bold">{data.last?.label ?? "Education and Academia"}</p>
         </div>
         <Link href={data.last?.href ?? "/topics/education"} className="btn btn-primary">{data.last ? "Continue" : "Open topic"} <ArrowRight size={16} aria-hidden="true" /></Link>
       </section>

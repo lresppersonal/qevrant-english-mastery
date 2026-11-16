@@ -1,5 +1,5 @@
 import {
-  LayoutDashboard, BookOpenText, Library, Languages, Newspaper, Headphones, Mic, PenLine, GraduationCap,
+  LayoutDashboard, BookOpenText, Library, Languages, Newspaper, Headphones, Mic, PenLine, Dumbbell,
   RotateCcw, BarChart3, Settings, Layers, type LucideIcon,
 } from "lucide-react";
 
@@ -13,6 +13,7 @@ export const NAV: NavGroup[] = [
     items: [
       { href: "/topics", label: "Topics", icon: Layers },
       { href: "/grammar", label: "Grammar", icon: BookOpenText },
+      { href: "/grammar/practice", label: "Grammar practice", icon: Dumbbell },
       { href: "/vocabulary", label: "Vocabulary", icon: Languages },
       { href: "/reading", label: "Reading", icon: Newspaper },
       { href: "/listening", label: "Listening", icon: Headphones, soon: true },
@@ -20,7 +21,6 @@ export const NAV: NavGroup[] = [
       { href: "/writing", label: "Academic Writing", icon: PenLine },
     ],
   },
-  { label: "Pathways", items: [{ href: "/ielts", label: "IELTS Academic", icon: GraduationCap, soon: true }] },
   {
     label: "My study",
     items: [

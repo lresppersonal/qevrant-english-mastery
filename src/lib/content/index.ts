@@ -1,10 +1,15 @@
 import { z } from "zod";
 import {
-  Topic, GrammarDomain, GrammarLesson, VocabItem, Exercise, ReadingText, SpeakingPrompt, WritingPrompt,
+  Theme, GrammarDomain, GrammarLesson, VocabItem, Exercise, ReadingText, SpeakingPrompt, WritingPrompt, EssayTypeGuide,
   type Sense, type Level,
 } from "./schema";
 
-import topicsJson from "@content/topics.json";
+import themesJson from "@content/themes.json";
+import genVocab from "@content/generated/vocabulary.json";
+import genLessons from "@content/generated/lessons.json";
+import genExercises from "@content/generated/exercises.json";
+import genReadings from "@content/generated/readings.json";
+import genWriting from "@content/generated/writing.json";
 import domainsJson from "@content/grammar/domains.json";
 import relLesson from "@content/grammar/lessons/relative-clauses.json";
 import nomLesson from "@content/grammar/lessons/nominal-relative-clauses.json";
@@ -39,20 +44,32 @@ function vocabFile(raw: { defaults: Record<string, unknown>; items: Record<strin
   );
 }
 
-export const topics = z.array(Topic).parse(topicsJson);
+const withId = <T extends { slug: string; id?: string }>(ns: string, x: T) => ({ ...x, id: x.id || stableUuid(ns, x.slug) });
+
+export const themes = z.array(Theme).parse(themesJson);
+/** kept for older imports: topics are themes */
+export const topics = themes;
 export const grammarDomains = z.array(GrammarDomain).parse(domainsJson);
-export const grammarLessons = [relLesson, nomLesson].map((l) => GrammarLesson.parse(l));
-export const vocabItems = vocabFile(eduVocab as never);
-export const exercises = [ex1, ex2, ex3, ex4].map((e) => Exercise.parse(e));
-export const readingTexts = [reading1].map((r) => ReadingText.parse(r));
+export const grammarLessons = [relLesson, nomLesson, ...(genLessons as { slug: string }[])].map((l) => GrammarLesson.parse(withId("lesson", l)));
+export const vocabItems = [
+  ...vocabFile(eduVocab as never),
+  ...(genVocab.items as { slug: string }[]).map((v) => VocabItem.parse(withId("vocab", v))),
+];
+export const wordFamilies = genVocab.families as { theme: string; members: { form: string; pos: string }[] }[];
+export const distinctions = genVocab.distinctions as { theme: string; title: string; text: string }[];
+export const exercises = [ex1, ex2, ex3, ex4, ...(genExercises as { slug: string }[])].map((e) => Exercise.parse(withId("exercise", e)));
+export const readingTexts = [reading1, ...(genReadings as { slug: string }[])].map((r) => ReadingText.parse(withId("reading", r)));
 export const speakingPrompts = z.array(SpeakingPrompt).parse(speakingEdu);
-export const writingPrompts = z.array(WritingPrompt).parse(writingEdu);
+export const writingPrompts = z.array(WritingPrompt).parse([...writingEdu, ...genWriting.prompts]);
+export const essayGuides = z.array(EssayTypeGuide).parse(genWriting.guides);
 
 // ---------- lookups ----------
 export const getLesson = (slug: string) => grammarLessons.find((l) => l.slug === slug);
 export const getExercise = (slug: string) => exercises.find((e) => e.slug === slug);
 export const getReading = (slug: string) => readingTexts.find((r) => r.slug === slug);
-export const getTopic = (slug: string) => topics.find((t) => t.slug === slug);
+export const getTopic = (slug: string) => themes.find((t) => t.slug === slug);
+export const getTheme = getTopic;
+export const getEssayGuide = (type: string) => essayGuides.find((g) => g.type === type);
 export const getVocabItem = (slug: string) => vocabItems.find((v) => v.slug === slug);
 export const getSpeakingPrompt = (slug: string) => speakingPrompts.find((p) => p.slug === slug);
 export const getWritingPrompt = (slug: string) => writingPrompts.find((p) => p.slug === slug);
@@ -70,6 +87,28 @@ export function buildFormIndex() {
   return map;
 }
 
+import { LEX_CLASSES, type LexClass } from "@/lib/lexclass";
+export { LEX_CLASSES };
+export type { LexClass };
+
+/** Lexical class of an item: explicit for compiled entries, derived for older hand-written ones. */
+export function lexClassOf(item: VocabItem): LexClass {
+  if (item.lexClass) return item.lexClass;
+  if (item.kind === "phrasal_verb") return "phrasal_verb";
+  if (item.kind === "idiom") return "idiom";
+  if (item.kind === "collocation") return "collocation";
+  if (item.kind === "phrase") return "fixed_expression";
+  const pos = item.pos.toLowerCase();
+  if (pos.startsWith("adj")) return "adjective";
+  if (pos.startsWith("adv")) return "adverb";
+  if (pos.startsWith("verb")) return "verb";
+  return "noun";
+}
+
+/** Items tagged with a theme (primary or secondary). */
+export const itemsInTheme = (theme: string) => vocabItems.filter((v) => v.senses.some((s) => s.topics.includes(theme)));
+export const primaryTheme = (item: VocabItem) => item.senses[0].topics[0];
+
 export const LEVEL_ORDER: Level[] = ["B2", "B2+", "C1", "C2"];
 export const levelRank = (l: Level) => LEVEL_ORDER.indexOf(l);
 
@@ -79,7 +118,7 @@ export function validateGraph(): string[] {
   const lessonSlugs = new Set(grammarLessons.map((l) => l.slug));
   const exerciseSlugs = new Set(exercises.map((e) => e.slug));
   const readingSlugs = new Set(readingTexts.map((r) => r.slug));
-  const topicSlugs = new Set(topics.map((t) => t.slug));
+  const topicSlugs = new Set(themes.map((t) => t.slug));
   const ids = new Set<string>();
 
   const checkTopics = (where: string, list: string[]) =>
@@ -129,6 +168,17 @@ export function validateGraph(): string[] {
       if (q.targetSense && !getSense(q.targetSense)) problems.push(`${e.slug}/${q.id}: unknown sense ${q.targetSense}`);
     }
   }
+  const dup = (what: string, xs: string[]) => { const seen = new Set<string>(); for (const x of xs) { if (seen.has(x)) problems.push(`duplicate ${what} slug ${x}`); seen.add(x); } };
+  dup("lesson", grammarLessons.map((l) => l.slug));
+  dup("exercise", exercises.map((e) => e.slug));
+  dup("reading", readingTexts.map((r) => r.slug));
+  dup("writing", writingPrompts.map((p) => p.slug));
+  for (const r of readingTexts) {
+    if (r.category && !topicSlugs.has(r.category)) problems.push(`reading ${r.slug}: unknown category ${r.category}`);
+    r.keyVocabulary.forEach((k) => k.sense && !getSense(k.sense) && problems.push(`reading ${r.slug}: unknown sense ${k.sense}`));
+  }
+  for (const p of writingPrompts) checkTopics(`writing ${p.slug}`, p.topics);
+  for (const g of essayGuides) if (!writingPrompts.some((p) => p.genre === g.type)) problems.push(`essay type ${g.type} has no questions`);
   for (const r of readingTexts) r.exercises.forEach((x) => !exerciseSlugs.has(x) && problems.push(`reading ${r.slug}: missing exercise ${x}`));
   for (const p of [...speakingPrompts, ...writingPrompts])
     p.usefulLanguage.forEach((s) => !getSense(s) && problems.push(`prompt ${p.slug}: unknown sense ${s}`));

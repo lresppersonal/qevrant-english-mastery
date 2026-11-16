@@ -1,0 +1,26 @@
+# Crime and Law
+offender | n | noun | B2+ | neutral | Crime | a person who has committed a crime | правонарушитель | Young offenders are offered education in prison. | young/repeat/first-time offender | criminal; lawbreaker |
+commit | v | verb | B2 | neutral | Crime | to do something illegal or wrong | совершать (преступление) | Most crimes are committed by a small number of people. | commit a crime/an offence/fraud | perpetrate |
+fraud | n | noun | B2+ | neutral | Crime | the crime of deceiving people to get money or goods | мошенничество | He was jailed for credit-card fraud. | commit fraud; tax/online fraud | deception; scam | business-finance
+burglary | n | noun | B2 | neutral | Crime | the crime of entering a building to steal | кража со взломом | Burglaries rise in the winter months. | commit a burglary; burglary rate | break-in |
+vandalism | n | noun | B2 | neutral | Crime | deliberate damage to property | вандализм | The bus shelter was closed after repeated vandalism. | acts of vandalism | defacement | cities-urban
+arrest | v | verb / noun | B2 | neutral | Justice process | (of police) to take someone away because they are believed to have committed a crime | арестовывать | Two men were arrested at the airport. | arrest someone for; under arrest | detain; apprehend |
+charge | v | verb / noun | B2+ | neutral | Justice process | to accuse someone officially of a crime | предъявлять обвинение | She was charged with dangerous driving. | charge someone with; face charges | accuse; indict |
+trial | n | noun | B2 | neutral | Court | the process of examining a case in a court of law | судебный процесс | The trial lasted six weeks. | stand trial; go on trial; a fair trial | hearing; case |
+verdict | n | noun | B2+ | neutral | Court | the official decision of a court about whether someone is guilty | вердикт, приговор присяжных | The jury reached a unanimous verdict. | reach/deliver a verdict; guilty verdict | judgement; ruling |
+acquit | v | verb | C1 | formal | Court | to decide officially that someone is not guilty | оправдывать | He was acquitted of all charges. | be acquitted of | clear; exonerate |
+sentence | n | noun / verb | B2 | neutral | Punishment | the punishment a judge gives | приговор; приговаривать | She received a three-year sentence. | life/prison sentence; serve a sentence | penalty |
+deterrent | n | noun | C1 | formal | Punishment | something that makes people decide not to do something | сдерживающее средство | Some argue that long sentences are not an effective deterrent. | act as/serve as a deterrent; nuclear deterrent | disincentive; discouragement | society-politics
+rehabilitation | n+ac | noun | C1 | formal | Punishment | helping someone return to normal life after prison | реабилитация | Rehabilitation programmes reduce reoffending. | rehabilitation programme; offender rehabilitation | reintegration |
+reoffend | v | verb | C1 | formal | Punishment | to commit another crime after being punished | совершить повторное преступление | Half of released prisoners reoffend within a year. | likely to reoffend; reoffending rates | relapse |
+legal | adj | adjective | B2 | neutral | Law | allowed by law, or connected with the law | законный, правовой | Is it legal to cycle on the pavement? | legal action/advice/system | lawful; legitimate |
+loophole | n | noun | C1 | neutral | Law | a gap in a law that allows people to avoid obeying it | лазейка (в законе) | Wealthy individuals exploit tax loopholes. | close a loophole; legal/tax loophole | gap; technicality | business-finance
+get away with | pv | phrasal verb | B2+ | informal | Crime | to escape punishment for something wrong | избежать наказания | He thought he could get away with lying. | get away with murder | escape |
+turn yourself in | pv | phrasal verb | C1 | neutral | Justice process | to go to the police and admit you committed a crime | явиться с повинной | The driver later turned himself in. | | surrender |
+caught red-handed | idiom | adjective phrase | C1 | informal | Crime | caught while doing something wrong | пойман с поличным | The thieves were caught red-handed. | | caught in the act |
+above the law | fx | prepositional phrase | C1 | neutral | Law | not having to obey the law that applies to others | выше закона | Nobody, not even the president, is above the law. | | | society-politics
+@family law (n); lawful (adj); unlawful (adj); lawyer (n); lawless (adj)
+@family offend (v); offence (n); offender (n); offensive (adj); reoffend (v)
+@distinct steal vs rob :: You *steal* a thing (*steal a phone*); you *rob* a person or place (*rob a bank*, *rob someone of something*).
+@distinct sentence vs verdict :: The *verdict* decides guilt (guilty / not guilty); the *sentence* is the punishment the judge gives afterwards.
+allegedly | adv | adverb | C1 | formal | Justice process | used when something is claimed but not proved | предположительно, якобы | The suspect allegedly stole data from his former employer. | | reportedly; supposedly | communication-media

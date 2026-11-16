@@ -1,0 +1,25 @@
+# Arts and Culture
+critically acclaimed | coll | adjective phrase | C1 | neutral | Reviews | praised by critics | получивший признание критиков | Her debut novel was critically acclaimed. | | highly praised |
+masterpiece | n | noun | B2 | neutral | Reviews | an excellent work of art, or the best work of an artist | шедевр | Many consider it the director's masterpiece. | literary masterpiece | masterwork; classic |
+overrated | adj | adjective | B2+ | informal | Reviews | thought to be better than it really is | переоценённый | I found the film overrated and far too long. | highly overrated | overpraised |
+thought-provoking | adj | adjective | B2+ | neutral | Reviews | making you think seriously | заставляющий задуматься | It's a thought-provoking play about grief. | thought-provoking film/book/question | stimulating |
+gripping | adj | adjective | B2 | neutral | Reviews | so exciting that it holds your attention completely | захватывающий | The last chapter is absolutely gripping. | gripping story/thriller | compelling; riveting |
+plot | n | noun | B2 | neutral | Literature and film | the series of events in a story | сюжет | The plot is complicated but rewarding. | twist in the plot; plot twist | storyline |
+protagonist | n | noun | C1 | formal | Literature and film | the main character in a story | главный герой | The protagonist is a retired detective. | | lead character; hero |
+genre | n | noun | B2+ | neutral | Literature and film | a style or type of art, music or writing | жанр | Science fiction is her favourite genre. | literary/film genre | category; type |
+exhibition | n | noun | B2 | neutral | Visual arts | a public show of art or objects | выставка | The exhibition attracted record visitors. | stage/hold an exhibition; touring exhibition | show; display |
+abstract | adj | adjective | B2+ | neutral | Visual arts | (of art) using shapes and colours rather than showing real things | абстрактный | She paints large abstract canvases. | abstract art/painting | non-figurative |
+contemporary | adj | adjective | B2+ | neutral | Visual arts | belonging to the present time | современный | The gallery specialises in contemporary art. | contemporary art/music/dance | modern; current |
+cultural identity | coll | noun phrase | C1 | academic | Identity | the sense of belonging to a group with shared culture | культурная идентичность | Language is central to cultural identity. | preserve cultural identity | heritage | history-heritage
+mainstream | adj | adjective / noun | B2+ | neutral | Identity | considered normal and accepted by most people | массовый, общепринятый | The band went from underground to mainstream. | mainstream culture/media; enter the mainstream | conventional; popular | communication-media
+patron | n | noun | C1 | formal | Funding | a person who gives money to support artists | меценат, покровитель | Wealthy patrons funded Renaissance painters. | patron of the arts | sponsor; benefactor | history-heritage
+subsidise | v | verb | C1 | formal | Funding | to pay part of the cost of something | субсидировать | Should the state subsidise theatres? | heavily subsidised | fund; finance | society-politics
+bring to life | idiom | verb phrase | B2+ | neutral | Literature and film | to make something seem real or exciting | оживлять | The actors bring the characters to life. | | animate |
+steal the show | idiom | verb phrase | C1 | informal | Performance | to get the most attention or praise in a performance | затмить всех | The youngest dancer stole the show. | | |
+leave a lot to be desired | fx | verb phrase | C1 | neutral | Reviews | to be much worse than expected | оставлять желать лучшего | The acting left a lot to be desired. | | be disappointing |
+@family art (n); artist (n); artistic (adj); artistry (n); artwork (n)
+@family create (v); creation (n); creative (adj); creativity (n); creator (n)
+@distinct historic vs historical :: *Historic* means important in history (*a historic victory*); *historical* means connected with the past (*historical documents*, *a historical novel*).
+@distinct critic vs criticism vs review :: A *critic* is a person; *criticism* is negative comment (or the activity of analysing art); a *review* is an article judging a book, film etc.
+quintessential | adj | adjective | C2 | formal | Identity | being the most typical example of something | типичнейший, квинтэссенция | It is the quintessential English village. | | archetypal; classic | travel-tourism
+aesthetically | adv | adverb | C1 | formal | Visual arts | in a way that relates to beauty or appearance | эстетически | The design is practical and aesthetically pleasing. | aesthetically pleasing | visually; artistically | architecture-design

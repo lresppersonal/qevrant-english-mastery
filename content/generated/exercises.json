@@ -1,0 +1,5457 @@
+[
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "academic-register-practice",
+  "title": "Academic register: nominalisation, hedging and impersonal style: practice",
+  "skill": "grammar",
+  "format": "mixed",
+  "level": "C1",
+  "topics": [],
+  "target": {
+   "type": "lesson",
+   "ref": "academic-register"
+  },
+  "instructions": "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.",
+  "questions": [
+   {
+    "kind": "text",
+    "id": "q1",
+    "format": "Sentence transformation",
+    "level": "C1",
+    "prompt": "Complete with 3–4 words. ‘Unemployment rose sharply, which led to protests.’ → ‘___ in unemployment led to protests.’",
+    "explanation": "Nominalisation: adjective + noun replaces the clause.",
+    "errorTag": "academic-register:nominalisation",
+    "theoryAnchor": {
+     "lesson": "academic-register",
+     "section": "nominalisation"
+    },
+    "accepted": [
+     "The sharp rise",
+     "A sharp rise",
+     "The sharp increase",
+     "A sharp increase"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "Which sentence is most appropriately hedged?",
+    "explanation": "*suggest* + *may* + *some* qualify the claim to match the evidence.",
+    "errorTag": "academic-register:hedging",
+    "theoryAnchor": {
+     "lesson": "academic-register",
+     "section": "hedging"
+    },
+    "options": [
+     "The findings suggest that exercise may improve concentration in some students.",
+     "The findings prove that exercise improves concentration.",
+     "Exercise definitely improves concentration in every student.",
+     "Exercise is very good for concentration."
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "Choose the academic alternative to ‘look into the problem’.",
+    "explanation": "Formal single verbs replace phrasal verbs.",
+    "errorTag": "academic-register:informal",
+    "theoryAnchor": {
+     "lesson": "academic-register",
+     "section": "informal"
+    },
+    "options": [
+     "investigate the problem",
+     "check out the problem",
+     "get into the problem",
+     "go over to the problem"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "___ that urban growth will continue for several decades.",
+    "explanation": "Anticipatory *it* + passive is impersonal and formal.",
+    "errorTag": "academic-register:impersonal",
+    "theoryAnchor": {
+     "lesson": "academic-register",
+     "section": "impersonal"
+    },
+    "options": [
+     "It is widely expected",
+     "Everybody thinks",
+     "I am totally sure",
+     "People are saying"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q5",
+    "format": "Error correction",
+    "level": "C1",
+    "prompt": "Which part is too informal for an essay? *Governments should cut down on spending, but they can't ignore the needs of kids.*",
+    "explanation": "Replace with *reduce*, *cannot*, *children*.",
+    "errorTag": "academic-register:errors",
+    "theoryAnchor": {
+     "lesson": "academic-register",
+     "section": "errors"
+    },
+    "options": [
+     "cut down on / can't / kids",
+     "Governments should",
+     "spending",
+     "the needs of"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q6",
+    "format": "Gap fill",
+    "level": "C1",
+    "prompt": "Several studies have reported higher stress levels among night workers. ___ findings highlight the need for better scheduling.",
+    "explanation": "Summary reference: *These / Such findings*.",
+    "errorTag": "academic-register:advanced",
+    "theoryAnchor": {
+     "lesson": "academic-register",
+     "section": "advanced"
+    },
+    "accepted": [
+     "These",
+     "Such"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q7",
+    "format": "Rewriting",
+    "level": "C1",
+    "prompt": "Hedge the claim with *appear*: ‘Online learning reduces dropout rates.’ → ‘Online learning ___ dropout rates.’",
+    "explanation": "*appear to* + infinitive softens the claim.",
+    "errorTag": "academic-register:hedging",
+    "theoryAnchor": {
+     "lesson": "academic-register",
+     "section": "hedging"
+    },
+    "accepted": [
+     "appears to reduce",
+     "would appear to reduce"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q8",
+    "format": "Multiple choice",
+    "level": "C2",
+    "prompt": "Which version is clearest and most academic?",
+    "explanation": "Balanced nominalisation with an active verb; option C overuses nouns.",
+    "errorTag": "academic-register:nominalisation",
+    "theoryAnchor": {
+     "lesson": "academic-register",
+     "section": "nominalisation"
+    },
+    "options": [
+     "The introduction of congestion charges reduced traffic by 20%.",
+     "When they introduced congestion charges, traffic went down by 20%.",
+     "The reduction of traffic by 20% was the result of the introduction of the charging of congestion.",
+     "Congestion charges got introduced and traffic was reduced 20%."
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q9",
+    "format": "In context",
+    "level": "C2",
+    "prompt": "Replace the informal phrase: ‘There are ___ (lots of) factors involved.’",
+    "explanation": "Academic quantifiers replace *lots of*.",
+    "errorTag": "academic-register:register",
+    "theoryAnchor": {
+     "lesson": "academic-register",
+     "section": "register"
+    },
+    "accepted": [
+     "numerous",
+     "many",
+     "a number of",
+     "several",
+     "a range of"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q10",
+    "format": "In context",
+    "level": "C2",
+    "prompt": "‘___ is little evidence to support the claim that bilingual children fall behind.’",
+    "explanation": "*There is little evidence…* is an impersonal evaluative pattern.",
+    "errorTag": "academic-register:impersonal",
+    "theoryAnchor": {
+     "lesson": "academic-register",
+     "section": "impersonal"
+    },
+    "accepted": [
+     "There"
+    ]
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "articles-and-noun-phrases-practice",
+  "title": "Articles, countability, quantifiers and complex noun phrases: practice",
+  "skill": "grammar",
+  "format": "mixed",
+  "level": "B2",
+  "topics": [],
+  "target": {
+   "type": "lesson",
+   "ref": "articles-and-noun-phrases"
+  },
+  "instructions": "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "___ is the most popular sport in Brazil.",
+    "explanation": "General reference to a sport → no article.",
+    "errorTag": "articles-and-noun-phrases:articles",
+    "theoryAnchor": {
+     "lesson": "articles-and-noun-phrases",
+     "section": "articles"
+    },
+    "options": [
+     "Football",
+     "The football",
+     "A football",
+     "The Football"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "I read ___ interesting article yesterday. ___ article was about sleep.",
+    "explanation": "First mention *an*, second mention *the*.",
+    "errorTag": "articles-and-noun-phrases:articles",
+    "theoryAnchor": {
+     "lesson": "articles-and-noun-phrases",
+     "section": "articles"
+    },
+    "options": [
+     "an / The",
+     "the / An",
+     "a / The",
+     "an / An"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "format": "Error correction",
+    "level": "B2",
+    "prompt": "Which part is incorrect? *The teacher gave us some useful advices before the exam.*",
+    "explanation": "*advice* is uncountable: *some useful advice*.",
+    "errorTag": "articles-and-noun-phrases:errors",
+    "theoryAnchor": {
+     "lesson": "articles-and-noun-phrases",
+     "section": "errors"
+    },
+    "options": [
+     "useful advices",
+     "The teacher",
+     "gave us",
+     "before the exam"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "There were ___ people at the concert, so it felt rather empty.",
+    "explanation": "*few* = not many (negative meaning); *people* is countable.",
+    "errorTag": "articles-and-noun-phrases:quantifiers",
+    "theoryAnchor": {
+     "lesson": "articles-and-noun-phrases",
+     "section": "quantifiers"
+    },
+    "options": [
+     "few",
+     "a few",
+     "little",
+     "a little"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q5",
+    "format": "Gap fill",
+    "level": "B2+",
+    "prompt": "My grandmother has been in ___ for a week. (as a patient) (write the article or – for none)",
+    "explanation": "Institution used for its purpose → no article (*in hospital*, BrE).",
+    "errorTag": "articles-and-noun-phrases:special",
+    "theoryAnchor": {
+     "lesson": "articles-and-noun-phrases",
+     "section": "special"
+    },
+    "accepted": [
+     "–",
+     "-",
+     "no article",
+     "none",
+     "nothing"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q6",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "Which is correct?",
+    "explanation": "Plural country names and rivers take *the*; lakes usually do not.",
+    "errorTag": "articles-and-noun-phrases:special",
+    "theoryAnchor": {
+     "lesson": "articles-and-noun-phrases",
+     "section": "special"
+    },
+    "options": [
+     "the Netherlands, the Danube, Lake Baikal",
+     "Netherlands, Danube, the Lake Baikal",
+     "the Netherlands, Danube, the Lake Baikal",
+     "Netherlands, the Danube, Lake Baikal"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q7",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "Choose the correct sentence.",
+    "explanation": "*evidence* is uncountable; *a body of evidence* is a natural academic phrase.",
+    "errorTag": "articles-and-noun-phrases:countability",
+    "theoryAnchor": {
+     "lesson": "articles-and-noun-phrases",
+     "section": "countability"
+    },
+    "options": [
+     "There is a growing body of evidence that diet affects mood.",
+     "There are a growing number of evidences that diet affects mood.",
+     "There is a growing number of evidence that diet affects mood.",
+     "There are many evidences that diet affects mood."
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q8",
+    "format": "Sentence transformation",
+    "level": "C1",
+    "prompt": "Complete with 4–5 words. ‘House prices rose sharply, which surprised analysts.’ → ‘___ surprised analysts.’",
+    "explanation": "Nominalisation turns a clause into a noun phrase.",
+    "errorTag": "articles-and-noun-phrases:complex",
+    "theoryAnchor": {
+     "lesson": "articles-and-noun-phrases",
+     "section": "complex"
+    },
+    "accepted": [
+     "The sharp rise in house prices"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q9",
+    "format": "Gap fill",
+    "level": "C1",
+    "prompt": "The flight was delayed for two hours. → It was a ___ delay.",
+    "explanation": "Compound adjective with a number: singular noun, hyphenated.",
+    "errorTag": "articles-and-noun-phrases:complex",
+    "theoryAnchor": {
+     "lesson": "articles-and-noun-phrases",
+     "section": "complex"
+    },
+    "accepted": [
+     "two-hour"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q10",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "___ cheetah is the fastest land animal.",
+    "explanation": "Generic *the* + singular noun for a whole species (formal, encyclopaedic).",
+    "errorTag": "articles-and-noun-phrases:special",
+    "theoryAnchor": {
+     "lesson": "articles-and-noun-phrases",
+     "section": "special"
+    },
+    "options": [
+     "The",
+     "A",
+     "–",
+     "Some"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q11",
+    "format": "In context",
+    "level": "C2",
+    "prompt": "‘A significant ___ of research has examined the long-term effects of remote learning.’",
+    "explanation": "Uncountable *research* takes *a body of / an amount of*, not *a number of*.",
+    "errorTag": "articles-and-noun-phrases:register",
+    "theoryAnchor": {
+     "lesson": "articles-and-noun-phrases",
+     "section": "register"
+    },
+    "accepted": [
+     "body",
+     "amount"
+    ]
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "comparison-practice",
+  "title": "Comparison, degree and modification: practice",
+  "skill": "grammar",
+  "format": "mixed",
+  "level": "B2",
+  "topics": [],
+  "target": {
+   "type": "lesson",
+   "ref": "comparison"
+  },
+  "instructions": "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "The train is ___ faster than the bus; it takes half the time.",
+    "explanation": "*much/far* modify comparatives; *very* does not.",
+    "errorTag": "comparison:degree",
+    "theoryAnchor": {
+     "lesson": "comparison",
+     "section": "degree"
+    },
+    "options": [
+     "much",
+     "very",
+     "too",
+     "more"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "format": "Gap fill",
+    "level": "B2",
+    "prompt": "This is the ___ (bad) film I've ever seen.",
+    "explanation": "Irregular superlative.",
+    "errorTag": "comparison:form",
+    "theoryAnchor": {
+     "lesson": "comparison",
+     "section": "form"
+    },
+    "accepted": [
+     "worst"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "format": "Error correction",
+    "level": "B2",
+    "prompt": "Which part is incorrect? *My new flat is more bigger than my old one and closer to work.*",
+    "explanation": "Double comparative → *bigger*.",
+    "errorTag": "comparison:errors",
+    "theoryAnchor": {
+     "lesson": "comparison",
+     "section": "errors"
+    },
+    "options": [
+     "more bigger",
+     "my old one",
+     "closer",
+     "to work"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q4",
+    "format": "Sentence transformation",
+    "level": "B2+",
+    "prompt": "Complete with 3 words. ‘The more you read, the better your vocabulary becomes.’ → ‘___ read, the better your vocabulary becomes.’ (keep the same structure)",
+    "explanation": "*the + comparative, the + comparative*.",
+    "errorTag": "comparison:structures",
+    "theoryAnchor": {
+     "lesson": "comparison",
+     "section": "structures"
+    },
+    "accepted": [
+     "The more you"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q5",
+    "format": "Sentence transformation",
+    "level": "B2+",
+    "prompt": "Complete with 4 words. ‘Petrol costs double what it cost in 2015.’ → ‘Petrol costs ___ it did in 2015.’",
+    "explanation": "*twice as much as* for multiples.",
+    "errorTag": "comparison:structures",
+    "theoryAnchor": {
+     "lesson": "comparison",
+     "section": "structures"
+    },
+    "accepted": [
+     "twice as much as"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q6",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "Tokyo is ___ the largest city in the world by population.",
+    "explanation": "*by far* modifies superlatives.",
+    "errorTag": "comparison:degree",
+    "theoryAnchor": {
+     "lesson": "comparison",
+     "section": "degree"
+    },
+    "options": [
+     "by far",
+     "much",
+     "very",
+     "far more"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q7",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "The new policy was ___ as effective as the government claimed. (big difference)",
+    "explanation": "*nowhere near as … as* = much less … than.",
+    "errorTag": "comparison:advanced",
+    "theoryAnchor": {
+     "lesson": "comparison",
+     "section": "advanced"
+    },
+    "options": [
+     "nowhere near",
+     "not near",
+     "nothing near",
+     "nowhere like"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q8",
+    "format": "In context",
+    "level": "C1",
+    "prompt": "‘Salaries in the region are now on a ___ with those in the capital.’",
+    "explanation": "*on a par with* = at the same level as.",
+    "errorTag": "comparison:advanced",
+    "theoryAnchor": {
+     "lesson": "comparison",
+     "section": "advanced"
+    },
+    "accepted": [
+     "par"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q9",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "Choose the best sentence for describing a chart.",
+    "explanation": "Precise adverbs (*slightly, sharply*) and *whereas* for contrast.",
+    "errorTag": "comparison:register",
+    "theoryAnchor": {
+     "lesson": "comparison",
+     "section": "register"
+    },
+    "options": [
+     "Sales rose slightly in March, whereas profits fell sharply.",
+     "Sales rose a bit in March, but profits went really down.",
+     "Sales very rose in March, while profits fell very.",
+     "Sales rose slightly in March, whereas profits fell sharp."
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q10",
+    "format": "Multiple choice",
+    "level": "C2",
+    "prompt": "Please contact us if you require ___ information.",
+    "explanation": "*further* = additional; *farther* is only for distance.",
+    "errorTag": "comparison:contrasts",
+    "theoryAnchor": {
+     "lesson": "comparison",
+     "section": "contrasts"
+    },
+    "options": [
+     "further",
+     "farther",
+     "more far",
+     "furthest"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "conditionals-and-unreal-past-practice",
+  "title": "Conditionals, wishes and the unreal past: practice",
+  "skill": "grammar",
+  "format": "mixed",
+  "level": "C1",
+  "topics": [],
+  "target": {
+   "type": "lesson",
+   "ref": "conditionals-and-unreal-past"
+  },
+  "instructions": "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "If you ___ water to 100°C, it boils.",
+    "explanation": "General truth → zero conditional (present + present).",
+    "errorTag": "conditionals-and-unreal-past:form",
+    "theoryAnchor": {
+     "lesson": "conditionals-and-unreal-past",
+     "section": "form"
+    },
+    "options": [
+     "heat",
+     "will heat",
+     "heated",
+     "would heat"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "format": "Gap fill",
+    "level": "B2+",
+    "prompt": "If we ___ (leave) ten minutes earlier, we would have caught the train.",
+    "explanation": "Unreal past → past perfect in the if-clause.",
+    "errorTag": "conditionals-and-unreal-past:form",
+    "theoryAnchor": {
+     "lesson": "conditionals-and-unreal-past",
+     "section": "form"
+    },
+    "accepted": [
+     "had left",
+     "'d left"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "If I had studied medicine, I ___ a doctor now.",
+    "explanation": "Past condition, present result → mixed conditional.",
+    "errorTag": "conditionals-and-unreal-past:mixed",
+    "theoryAnchor": {
+     "lesson": "conditionals-and-unreal-past",
+     "section": "mixed"
+    },
+    "options": [
+     "would be",
+     "would have been",
+     "will be",
+     "had been"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "You can borrow my car ___ you fill it up afterwards.",
+    "explanation": "*as long as* = only if (a condition).",
+    "errorTag": "conditionals-and-unreal-past:alternatives",
+    "theoryAnchor": {
+     "lesson": "conditionals-and-unreal-past",
+     "section": "alternatives"
+    },
+    "options": [
+     "as long as",
+     "unless",
+     "in case",
+     "otherwise"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q5",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "Take some cash ___ the card machine isn't working.",
+    "explanation": "A precaution, not a condition → *in case*.",
+    "errorTag": "conditionals-and-unreal-past:contrasts",
+    "theoryAnchor": {
+     "lesson": "conditionals-and-unreal-past",
+     "section": "contrasts"
+    },
+    "options": [
+     "in case",
+     "if",
+     "unless",
+     "provided"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q6",
+    "format": "Gap fill",
+    "level": "B2+",
+    "prompt": "I wish I ___ (not / say) that to her yesterday.",
+    "explanation": "Past regret → wish + past perfect.",
+    "errorTag": "conditionals-and-unreal-past:unreal",
+    "theoryAnchor": {
+     "lesson": "conditionals-and-unreal-past",
+     "section": "unreal"
+    },
+    "accepted": [
+     "hadn't said",
+     "had not said"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q7",
+    "format": "Gap fill",
+    "level": "C1",
+    "prompt": "It's high time the government ___ (do) something about housing.",
+    "explanation": "*It's (high) time* + past simple for something that should already happen.",
+    "errorTag": "conditionals-and-unreal-past:unreal",
+    "theoryAnchor": {
+     "lesson": "conditionals-and-unreal-past",
+     "section": "unreal"
+    },
+    "accepted": [
+     "did"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q8",
+    "format": "Error correction",
+    "level": "B2+",
+    "prompt": "Which part is incorrect? *Unless you don't book now, there won't be any seats left.*",
+    "explanation": "*Unless* already means *if not*: *Unless you book now…*",
+    "errorTag": "conditionals-and-unreal-past:errors",
+    "theoryAnchor": {
+     "lesson": "conditionals-and-unreal-past",
+     "section": "errors"
+    },
+    "options": [
+     "Unless you don't book",
+     "now",
+     "there won't be",
+     "any seats left"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q9",
+    "format": "Sentence transformation",
+    "level": "C1",
+    "prompt": "Complete with 3 words (formal inversion). ‘If I had known about the strike, I would have driven.’ → ‘___ about the strike, I would have driven.’",
+    "explanation": "Inverted third conditional: *Had* + subject + past participle.",
+    "errorTag": "conditionals-and-unreal-past:advanced",
+    "theoryAnchor": {
+     "lesson": "conditionals-and-unreal-past",
+     "section": "advanced"
+    },
+    "accepted": [
+     "Had I known"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q10",
+    "format": "Sentence transformation",
+    "level": "C1",
+    "prompt": "Complete with 4 words. ‘Your support was the only reason we succeeded.’ → ‘___ your support, we would not have succeeded.’",
+    "explanation": "*If it hadn't been for / But for* + noun = without.",
+    "errorTag": "conditionals-and-unreal-past:advanced",
+    "theoryAnchor": {
+     "lesson": "conditionals-and-unreal-past",
+     "section": "advanced"
+    },
+    "accepted": [
+     "If it hadn't been for",
+     "If it had not been for",
+     "Had it not been for",
+     "But for"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q11",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "I'd rather you ___ my phone without asking.",
+    "explanation": "*would rather* + another subject + past simple.",
+    "errorTag": "conditionals-and-unreal-past:unreal",
+    "theoryAnchor": {
+     "lesson": "conditionals-and-unreal-past",
+     "section": "unreal"
+    },
+    "options": [
+     "didn't use",
+     "don't use",
+     "not use",
+     "wouldn't use"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q12",
+    "format": "In context",
+    "level": "C2",
+    "prompt": "‘___ any further information be required, please do not hesitate to contact us.’",
+    "explanation": "Inverted first conditional in formal letters: *Should* + subject + infinitive.",
+    "errorTag": "conditionals-and-unreal-past:advanced",
+    "theoryAnchor": {
+     "lesson": "conditionals-and-unreal-past",
+     "section": "advanced"
+    },
+    "accepted": [
+     "Should"
+    ]
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "future-forms-practice",
+  "title": "Future forms, probability and time clauses: practice",
+  "skill": "grammar",
+  "format": "mixed",
+  "level": "B2",
+  "topics": [],
+  "target": {
+   "type": "lesson",
+   "ref": "future-forms"
+  },
+  "instructions": "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "Look out! That glass ___ fall off the table.",
+    "explanation": "Present evidence for a prediction → *be going to*.",
+    "errorTag": "future-forms:form",
+    "theoryAnchor": {
+     "lesson": "future-forms",
+     "section": "form"
+    },
+    "options": [
+     "is going to",
+     "will",
+     "falls",
+     "is falling to"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "I can't come on Friday. I ___ my grandparents; we booked the tickets weeks ago.",
+    "explanation": "Fixed personal arrangement → present continuous.",
+    "errorTag": "future-forms:contrasts",
+    "theoryAnchor": {
+     "lesson": "future-forms",
+     "section": "contrasts"
+    },
+    "options": [
+     "'m visiting",
+     "will visit",
+     "visit",
+     "would visit"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q3",
+    "format": "Gap fill",
+    "level": "B2",
+    "prompt": "I'll text you as soon as the results ___ (come) out.",
+    "explanation": "Time clause about the future → present simple.",
+    "errorTag": "future-forms:time-clauses",
+    "theoryAnchor": {
+     "lesson": "future-forms",
+     "section": "time-clauses"
+    },
+    "accepted": [
+     "come"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q4",
+    "format": "Gap fill",
+    "level": "B2+",
+    "prompt": "By the time you read this letter, I ___ (leave) the country.",
+    "explanation": "Completed before a future point → future perfect.",
+    "errorTag": "future-forms:form",
+    "theoryAnchor": {
+     "lesson": "future-forms",
+     "section": "form"
+    },
+    "accepted": [
+     "will have left",
+     "'ll have left"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q5",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "Don't phone at eight. We ___ dinner then.",
+    "explanation": "In progress at a future moment → future continuous.",
+    "errorTag": "future-forms:form",
+    "theoryAnchor": {
+     "lesson": "future-forms",
+     "section": "form"
+    },
+    "options": [
+     "'ll be having",
+     "'ll have had",
+     "have",
+     "are having had"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q6",
+    "format": "Error correction",
+    "level": "B2",
+    "prompt": "Which part is incorrect? *Once the contract will be signed, we will start the project.*",
+    "explanation": "Time clause → *Once the contract is signed / has been signed*.",
+    "errorTag": "future-forms:errors",
+    "theoryAnchor": {
+     "lesson": "future-forms",
+     "section": "errors"
+    },
+    "options": [
+     "will be signed",
+     "Once the contract",
+     "we will start",
+     "the project"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q7",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "Which sentence expresses the LOWEST probability?",
+    "explanation": "*I doubt whether* = unlikely; *bound to* = almost certain.",
+    "errorTag": "future-forms:probability",
+    "theoryAnchor": {
+     "lesson": "future-forms",
+     "section": "probability"
+    },
+    "options": [
+     "I doubt whether prices will fall this year.",
+     "Prices are likely to fall this year.",
+     "Prices may fall this year.",
+     "Prices are bound to fall this year."
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q8",
+    "format": "Sentence transformation",
+    "level": "C1",
+    "prompt": "Complete with 3 words. ‘The minister will visit the region next week (official plan).’ → ‘The minister ___ the region next week.’",
+    "explanation": "*be to* + infinitive for formal, official arrangements.",
+    "errorTag": "future-forms:advanced",
+    "theoryAnchor": {
+     "lesson": "future-forms",
+     "section": "advanced"
+    },
+    "accepted": [
+     "is to visit"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q9",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "The meeting ___ start at ten, but the chairman's flight has been delayed.",
+    "explanation": "Future in the past for a scheduled event that may not happen → *was due to*.",
+    "errorTag": "future-forms:advanced",
+    "theoryAnchor": {
+     "lesson": "future-forms",
+     "section": "advanced"
+    },
+    "options": [
+     "was due to",
+     "is due",
+     "will be due",
+     "was about"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q10",
+    "format": "In context",
+    "level": "C1",
+    "prompt": "Complete in an academic style: ‘Global demand for lithium ___ (expect) to triple by 2030.’",
+    "explanation": "Impersonal passive for forecasts: *is expected to*.",
+    "errorTag": "future-forms:register",
+    "theoryAnchor": {
+     "lesson": "future-forms",
+     "section": "register"
+    },
+    "accepted": [
+     "is expected"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q11",
+    "format": "In context",
+    "level": "C2",
+    "prompt": "‘The company is on the ___ of collapse; analysts give it weeks.’",
+    "explanation": "*on the verge / brink / point of* + noun or -ing = about to happen.",
+    "errorTag": "future-forms:advanced",
+    "theoryAnchor": {
+     "lesson": "future-forms",
+     "section": "advanced"
+    },
+    "accepted": [
+     "verge",
+     "brink",
+     "point"
+    ]
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "habits-used-to-would-practice",
+  "title": "Habits: used to, would, be used to and will: practice",
+  "skill": "grammar",
+  "format": "mixed",
+  "level": "B2",
+  "topics": [],
+  "target": {
+   "type": "lesson",
+   "ref": "habits-used-to-would"
+  },
+  "instructions": "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "When I was a teenager, I ___ a motorbike.",
+    "explanation": "*have* (= own) is a state, so *would* is not possible.",
+    "errorTag": "habits-used-to-would:uses",
+    "theoryAnchor": {
+     "lesson": "habits-used-to-would",
+     "section": "uses"
+    },
+    "options": [
+     "used to have",
+     "would have",
+     "was used to have",
+     "am used to having"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "I've lived in Manchester for years, so I ___ the rain.",
+    "explanation": "Familiarity → *be used to* + noun.",
+    "errorTag": "habits-used-to-would:familiarity",
+    "theoryAnchor": {
+     "lesson": "habits-used-to-would",
+     "section": "familiarity"
+    },
+    "options": [
+     "'m used to",
+     "used to",
+     "use to",
+     "would"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q3",
+    "format": "Gap fill",
+    "level": "B2",
+    "prompt": "It took me ages to get used to ___ (drive) on the left.",
+    "explanation": "*get used to* + -ing.",
+    "errorTag": "habits-used-to-would:familiarity",
+    "theoryAnchor": {
+     "lesson": "habits-used-to-would",
+     "section": "familiarity"
+    },
+    "accepted": [
+     "driving"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "format": "Error correction",
+    "level": "B2",
+    "prompt": "Which part is incorrect? *Did you used to walk to school when you were little?*",
+    "explanation": "In questions: *Did you use to…?*",
+    "errorTag": "habits-used-to-would:errors",
+    "theoryAnchor": {
+     "lesson": "habits-used-to-would",
+     "section": "errors"
+    },
+    "options": [
+     "Did you used to",
+     "walk to school",
+     "when you were",
+     "little"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q5",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "Every evening my grandfather ___ the newspaper aloud to us.",
+    "explanation": "Repeated past action in a nostalgic narrative → *would*.",
+    "errorTag": "habits-used-to-would:uses",
+    "theoryAnchor": {
+     "lesson": "habits-used-to-would",
+     "section": "uses"
+    },
+    "options": [
+     "would read",
+     "was used to read",
+     "has read",
+     "would have read"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q6",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "I ___ to Prague four times as a student.",
+    "explanation": "A specific number of times → past simple, not a habit form.",
+    "errorTag": "habits-used-to-would:uses",
+    "theoryAnchor": {
+     "lesson": "habits-used-to-would",
+     "section": "uses"
+    },
+    "options": [
+     "went",
+     "used to go",
+     "would go",
+     "was going"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q7",
+    "format": "Sentence transformation",
+    "level": "B2+",
+    "prompt": "Complete with 3–4 words. ‘Working at night still feels strange to me.’ → ‘I'm ___ at night yet.’",
+    "explanation": "Not yet familiar → *not used to* + -ing.",
+    "errorTag": "habits-used-to-would:familiarity",
+    "theoryAnchor": {
+     "lesson": "habits-used-to-would",
+     "section": "familiarity"
+    },
+    "accepted": [
+     "not used to working"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q8",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "‘You ___ leaving your wet towels on the floor!’ (irritated)",
+    "explanation": "*always* + present continuous expresses irritation at a repeated habit.",
+    "errorTag": "habits-used-to-would:annoying",
+    "theoryAnchor": {
+     "lesson": "habits-used-to-would",
+     "section": "annoying"
+    },
+    "options": [
+     "'re always",
+     "always",
+     "would always be",
+     "used to always"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q9",
+    "format": "In context",
+    "level": "C1",
+    "prompt": "‘She failed again? Well, she ___ refuse to take advice.’ (typical, annoying behaviour)",
+    "explanation": "Stressed *will/would* for characteristic, often irritating behaviour.",
+    "errorTag": "habits-used-to-would:annoying",
+    "theoryAnchor": {
+     "lesson": "habits-used-to-would",
+     "section": "annoying"
+    },
+    "accepted": [
+     "will",
+     "would"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q10",
+    "format": "Rewriting",
+    "level": "C1",
+    "prompt": "Rewrite more formally: ‘In the past, families used to eat together.’ → ‘Families ___ ate together.’",
+    "explanation": "Formal writing prefers adverbs such as *traditionally* or *formerly*.",
+    "errorTag": "habits-used-to-would:register",
+    "theoryAnchor": {
+     "lesson": "habits-used-to-would",
+     "section": "register"
+    },
+    "accepted": [
+     "traditionally",
+     "formerly"
+    ]
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "inversion-and-emphasis-practice",
+  "title": "Emphasis: cleft sentences, inversion, fronting and auxiliary do: practice",
+  "skill": "grammar",
+  "format": "mixed",
+  "level": "C1",
+  "topics": [],
+  "target": {
+   "type": "lesson",
+   "ref": "inversion-and-emphasis"
+  },
+  "instructions": "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "___ I need is a long holiday.",
+    "explanation": "What-cleft: *What I need is…*",
+    "errorTag": "inversion-and-emphasis:clefts",
+    "theoryAnchor": {
+     "lesson": "inversion-and-emphasis",
+     "section": "clefts"
+    },
+    "options": [
+     "What",
+     "That",
+     "Which",
+     "It"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "format": "Gap fill",
+    "level": "B2+",
+    "prompt": "It ___ my sister who told me the news, not my mother.",
+    "explanation": "It-cleft: *It was* + focus + *who*.",
+    "errorTag": "inversion-and-emphasis:clefts",
+    "theoryAnchor": {
+     "lesson": "inversion-and-emphasis",
+     "section": "clefts"
+    },
+    "accepted": [
+     "was"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "“You didn't lock the door!” “I ___ lock it! I remember doing it.”",
+    "explanation": "Emphatic *did* contradicts.",
+    "errorTag": "inversion-and-emphasis:do",
+    "theoryAnchor": {
+     "lesson": "inversion-and-emphasis",
+     "section": "do"
+    },
+    "options": [
+     "did",
+     "do",
+     "have",
+     "was"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "Rarely ___ such a talented young pianist.",
+    "explanation": "Negative adverbial first → auxiliary + subject.",
+    "errorTag": "inversion-and-emphasis:inversion",
+    "theoryAnchor": {
+     "lesson": "inversion-and-emphasis",
+     "section": "inversion"
+    },
+    "options": [
+     "have I heard",
+     "I have heard",
+     "I heard",
+     "heard I"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q5",
+    "format": "Sentence transformation",
+    "level": "C1",
+    "prompt": "Complete with 3–4 words. ‘She won the race and she also broke the record.’ → ‘Not only ___ the race, but she also broke the record.’",
+    "explanation": "*Not only* + inversion with *did*.",
+    "errorTag": "inversion-and-emphasis:inversion",
+    "theoryAnchor": {
+     "lesson": "inversion-and-emphasis",
+     "section": "inversion"
+    },
+    "accepted": [
+     "did she win"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q6",
+    "format": "Error correction",
+    "level": "C1",
+    "prompt": "Which part is incorrect? *Only when the results were published the scientists realised their error.*",
+    "explanation": "Invert the main clause: *did the scientists realise*.",
+    "errorTag": "inversion-and-emphasis:errors",
+    "theoryAnchor": {
+     "lesson": "inversion-and-emphasis",
+     "section": "errors"
+    },
+    "options": [
+     "the scientists realised",
+     "Only when",
+     "the results were published",
+     "their error"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q7",
+    "format": "Sentence transformation",
+    "level": "C1",
+    "prompt": "Complete with 4 words. ‘You must not open this door in any situation.’ → ‘Under no ___ open this door.’",
+    "explanation": "*Under no circumstances* + inversion.",
+    "errorTag": "inversion-and-emphasis:inversion",
+    "theoryAnchor": {
+     "lesson": "inversion-and-emphasis",
+     "section": "inversion"
+    },
+    "accepted": [
+     "circumstances should you",
+     "circumstances must you"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q8",
+    "format": "Sentence transformation",
+    "level": "C1",
+    "prompt": "Complete with 4 words. ‘We only realised how serious it was at midnight.’ → ‘It ___ midnight that we realised how serious it was.’",
+    "explanation": "*It was not until…that* emphasises the time.",
+    "errorTag": "inversion-and-emphasis:clefts",
+    "theoryAnchor": {
+     "lesson": "inversion-and-emphasis",
+     "section": "clefts"
+    },
+    "accepted": [
+     "was not until",
+     "wasn't until"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q9",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "___, I can't agree with the decision.",
+    "explanation": "Concessive fronting: *Much as* + clause = although I respect her a lot.",
+    "errorTag": "inversion-and-emphasis:fronting",
+    "theoryAnchor": {
+     "lesson": "inversion-and-emphasis",
+     "section": "fronting"
+    },
+    "options": [
+     "Much as I respect her",
+     "As much I respect her",
+     "Much I respect her as",
+     "However much I am respecting her"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q10",
+    "format": "In context",
+    "level": "C2",
+    "prompt": "‘So ___ the demand that tickets sold out in minutes.’",
+    "explanation": "*So* + adjective + inversion (*was the demand*) for emphasis.",
+    "errorTag": "inversion-and-emphasis:inversion",
+    "theoryAnchor": {
+     "lesson": "inversion-and-emphasis",
+     "section": "inversion"
+    },
+    "accepted": [
+     "great",
+     "high",
+     "intense"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q11",
+    "format": "In context",
+    "level": "C2",
+    "prompt": "Write the missing word for an academic sentence: ‘It is ___ assumption that this study sets out to challenge.’",
+    "explanation": "It-cleft focusing on a specific idea already introduced.",
+    "errorTag": "inversion-and-emphasis:register",
+    "theoryAnchor": {
+     "lesson": "inversion-and-emphasis",
+     "section": "register"
+    },
+    "accepted": [
+     "this"
+    ]
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "linking-contrast-concession-practice",
+  "title": "Linking ideas: contrast, concession, cause and result: practice",
+  "skill": "grammar",
+  "format": "mixed",
+  "level": "B2",
+  "topics": [],
+  "target": {
+   "type": "lesson",
+   "ref": "linking-contrast-concession"
+  },
+  "instructions": "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "___ the heavy traffic, we arrived on time.",
+    "explanation": "*Despite* + noun phrase.",
+    "errorTag": "linking-contrast-concession:form",
+    "theoryAnchor": {
+     "lesson": "linking-contrast-concession",
+     "section": "form"
+    },
+    "options": [
+     "Despite",
+     "Although",
+     "However",
+     "Even though"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "format": "Gap fill",
+    "level": "B2",
+    "prompt": "___ he had trained for months, he didn't finish the marathon.",
+    "explanation": "Conjunction + clause for concession.",
+    "errorTag": "linking-contrast-concession:form",
+    "theoryAnchor": {
+     "lesson": "linking-contrast-concession",
+     "section": "form"
+    },
+    "accepted": [
+     "Although",
+     "Even though",
+     "Though"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "format": "Error correction",
+    "level": "B2",
+    "prompt": "Which part is incorrect? *In spite of it was raining, the festival went ahead as planned.*",
+    "explanation": "*In spite of* + noun/-ing: *In spite of the rain / In spite of it raining*.",
+    "errorTag": "linking-contrast-concession:errors",
+    "theoryAnchor": {
+     "lesson": "linking-contrast-concession",
+     "section": "errors"
+    },
+    "options": [
+     "In spite of it was raining",
+     "the festival",
+     "went ahead",
+     "as planned"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "The flight was delayed ___ a technical problem.",
+    "explanation": "*because of* + noun.",
+    "errorTag": "linking-contrast-concession:cause",
+    "theoryAnchor": {
+     "lesson": "linking-contrast-concession",
+     "section": "cause"
+    },
+    "options": [
+     "because of",
+     "because",
+     "so",
+     "therefore"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q5",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "My brother loves crowds, ___ I prefer quiet places.",
+    "explanation": "*whereas* contrasts two facts in one sentence.",
+    "errorTag": "linking-contrast-concession:contrast",
+    "theoryAnchor": {
+     "lesson": "linking-contrast-concession",
+     "section": "contrast"
+    },
+    "options": [
+     "whereas",
+     "despite",
+     "nevertheless",
+     "on the contrary"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q6",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "“Was the lecture boring?” “No. ___, it was the best I've attended.”",
+    "explanation": "*On the contrary* rejects the previous idea.",
+    "errorTag": "linking-contrast-concession:contrasts",
+    "theoryAnchor": {
+     "lesson": "linking-contrast-concession",
+     "section": "contrasts"
+    },
+    "options": [
+     "On the contrary",
+     "On the other hand",
+     "However",
+     "In contrast"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q7",
+    "format": "Sentence transformation",
+    "level": "B2+",
+    "prompt": "Complete with 3–4 words. ‘Because the evidence was weak, the case was dropped.’ → ‘The case was dropped ___ the weak evidence.’",
+    "explanation": "Preposition + noun phrase for cause.",
+    "errorTag": "linking-contrast-concession:cause",
+    "theoryAnchor": {
+     "lesson": "linking-contrast-concession",
+     "section": "cause"
+    },
+    "accepted": [
+     "because of",
+     "due to",
+     "owing to",
+     "as a result of"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q8",
+    "format": "Rewriting",
+    "level": "C1",
+    "prompt": "Join with *Despite the fact*: ‘Prices rose. Demand increased.’ → ‘___ that prices rose, demand increased.’",
+    "explanation": "*Despite the fact that* + clause.",
+    "errorTag": "linking-contrast-concession:contrast",
+    "theoryAnchor": {
+     "lesson": "linking-contrast-concession",
+     "section": "contrast"
+    },
+    "accepted": [
+     "Despite the fact"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q9",
+    "format": "Sentence transformation",
+    "level": "C1",
+    "prompt": "Complete with 3 words. ‘Although it may be difficult, we must act now.’ → ‘Difficult ___ be, we must act now.’",
+    "explanation": "Fronted concession: adjective + *though/as* + subject + verb.",
+    "errorTag": "linking-contrast-concession:advanced",
+    "theoryAnchor": {
+     "lesson": "linking-contrast-concession",
+     "section": "advanced"
+    },
+    "accepted": [
+     "though it may",
+     "as it may"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q10",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "Which linker is most appropriate in a formal report? ‘Costs rose sharply. ___, the project was suspended.’",
+    "explanation": "Formal result adverb.",
+    "errorTag": "linking-contrast-concession:register",
+    "theoryAnchor": {
+     "lesson": "linking-contrast-concession",
+     "section": "register"
+    },
+    "options": [
+     "Consequently",
+     "So",
+     "Anyway",
+     "Still"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q11",
+    "format": "In context",
+    "level": "C2",
+    "prompt": "‘The plan has some merit. Be that as it ___, it is far too expensive.’",
+    "explanation": "*Be that as it may* = even so (formal concession).",
+    "errorTag": "linking-contrast-concession:contrast",
+    "theoryAnchor": {
+     "lesson": "linking-contrast-concession",
+     "section": "contrast"
+    },
+    "accepted": [
+     "may"
+    ]
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "modals-and-modality-practice",
+  "title": "Modals: obligation, deduction and stance: practice",
+  "skill": "grammar",
+  "format": "mixed",
+  "level": "B2",
+  "topics": [],
+  "target": {
+   "type": "lesson",
+   "ref": "modals-and-modality"
+  },
+  "instructions": "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "In many countries you ___ carry an ID card; it's the law.",
+    "explanation": "An external rule → *have to*.",
+    "errorTag": "modals-and-modality:obligation",
+    "theoryAnchor": {
+     "lesson": "modals-and-modality",
+     "section": "obligation"
+    },
+    "options": [
+     "have to",
+     "mustn't",
+     "needn't",
+     "don't have to"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "You ___ bring food; lunch is included.",
+    "explanation": "No obligation, not prohibition.",
+    "errorTag": "modals-and-modality:obligation",
+    "theoryAnchor": {
+     "lesson": "modals-and-modality",
+     "section": "obligation"
+    },
+    "options": [
+     "don't have to",
+     "mustn't",
+     "can't",
+     "shouldn't to"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q3",
+    "format": "Gap fill",
+    "level": "B2",
+    "prompt": "The lights are off. They ___ (be) out.",
+    "explanation": "Logical certainty in the present → *must be*.",
+    "errorTag": "modals-and-modality:deduction",
+    "theoryAnchor": {
+     "lesson": "modals-and-modality",
+     "section": "deduction"
+    },
+    "accepted": [
+     "must be"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q4",
+    "format": "Gap fill",
+    "level": "B2+",
+    "prompt": "She ___ (see) the email; she replied within minutes. (certain)",
+    "explanation": "Certainty about the past → *must have* + V3.",
+    "errorTag": "modals-and-modality:deduction",
+    "theoryAnchor": {
+     "lesson": "modals-and-modality",
+     "section": "deduction"
+    },
+    "accepted": [
+     "must have seen"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q5",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "He ___ written this report: it's full of errors, and he's very careful.",
+    "explanation": "Sure something is NOT true in the past → *can't have*.",
+    "errorTag": "modals-and-modality:deduction",
+    "theoryAnchor": {
+     "lesson": "modals-and-modality",
+     "section": "deduction"
+    },
+    "options": [
+     "can't have",
+     "mustn't have",
+     "couldn't",
+     "needn't have"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q6",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "We bought a new heater, but we ___. The weather turned warm the next day.",
+    "explanation": "We did it, but it was unnecessary → *needn't have (bought)*.",
+    "errorTag": "modals-and-modality:obligation",
+    "theoryAnchor": {
+     "lesson": "modals-and-modality",
+     "section": "obligation"
+    },
+    "options": [
+     "needn't have",
+     "didn't need to",
+     "mustn't have",
+     "hadn't to"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q7",
+    "format": "Error correction",
+    "level": "B2+",
+    "prompt": "Which part is incorrect? *Despite the storm, we could reach the summit before dark.*",
+    "explanation": "Specific achievement in the past → *managed to reach / were able to reach*.",
+    "errorTag": "modals-and-modality:errors",
+    "theoryAnchor": {
+     "lesson": "modals-and-modality",
+     "section": "errors"
+    },
+    "options": [
+     "could reach",
+     "Despite the storm",
+     "the summit",
+     "before dark"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q8",
+    "format": "Sentence transformation",
+    "level": "C1",
+    "prompt": "Complete with 3 words. ‘It is very probable that the trial will be postponed.’ → ‘In ___, the trial will be postponed.’",
+    "explanation": "*In all likelihood/probability* = very probably.",
+    "errorTag": "modals-and-modality:advanced",
+    "theoryAnchor": {
+     "lesson": "modals-and-modality",
+     "section": "advanced"
+    },
+    "accepted": [
+     "all likelihood",
+     "all probability"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q9",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "It is essential that every applicant ___ two references.",
+    "explanation": "Formal subjunctive after *essential/imperative/vital that*: base form.",
+    "errorTag": "modals-and-modality:advanced",
+    "theoryAnchor": {
+     "lesson": "modals-and-modality",
+     "section": "advanced"
+    },
+    "options": [
+     "provide",
+     "provides",
+     "will provide",
+     "must provides"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q10",
+    "format": "In context",
+    "level": "C1",
+    "prompt": "Hedge this claim for an essay: ‘These results ___ suggest that diet affects mood.’ (tentative)",
+    "explanation": "Hedging with a weak modal or *would seem to* makes academic claims appropriately cautious.",
+    "errorTag": "modals-and-modality:register",
+    "theoryAnchor": {
+     "lesson": "modals-and-modality",
+     "section": "register"
+    },
+    "accepted": [
+     "may",
+     "might",
+     "could",
+     "would seem to"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q11",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "‘You ___ have told me you were vegetarian! I'd have cooked something else.’",
+    "explanation": "*could have* + V3 as a reproach: it was possible, but you didn't.",
+    "errorTag": "modals-and-modality:contrasts",
+    "theoryAnchor": {
+     "lesson": "modals-and-modality",
+     "section": "contrasts"
+    },
+    "options": [
+     "could",
+     "must",
+     "can't",
+     "had better"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q12",
+    "format": "In context",
+    "level": "C2",
+    "prompt": "‘Whether the reforms will work ___ to be seen.’",
+    "explanation": "*It remains to be seen whether…* = it is not yet known.",
+    "errorTag": "modals-and-modality:advanced",
+    "theoryAnchor": {
+     "lesson": "modals-and-modality",
+     "section": "advanced"
+    },
+    "accepted": [
+     "remains"
+    ]
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "narrative-tenses-practice",
+  "title": "Narrative tenses and the past perfect: practice",
+  "skill": "grammar",
+  "format": "mixed",
+  "level": "B2+",
+  "topics": [],
+  "target": {
+   "type": "lesson",
+   "ref": "narrative-tenses"
+  },
+  "instructions": "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "By the time the ambulance arrived, the man ___.",
+    "explanation": "*By the time* + past → the earlier event takes the past perfect.",
+    "errorTag": "narrative-tenses:uses",
+    "theoryAnchor": {
+     "lesson": "narrative-tenses",
+     "section": "uses"
+    },
+    "options": [
+     "had stopped breathing",
+     "stopped breathing",
+     "was stopping breathing",
+     "has stopped breathing"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "format": "Gap fill",
+    "level": "B2",
+    "prompt": "I ___ (walk) home when it started to pour with rain.",
+    "explanation": "An action in progress interrupted by another → past continuous.",
+    "errorTag": "narrative-tenses:contrasts",
+    "theoryAnchor": {
+     "lesson": "narrative-tenses",
+     "section": "contrasts"
+    },
+    "accepted": [
+     "was walking"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q3",
+    "format": "Gap fill",
+    "level": "B2+",
+    "prompt": "She looked exhausted because she ___ (work) all night.",
+    "explanation": "Cause of a visible past result, with duration → past perfect continuous.",
+    "errorTag": "narrative-tenses:uses",
+    "theoryAnchor": {
+     "lesson": "narrative-tenses",
+     "section": "uses"
+    },
+    "accepted": [
+     "had been working",
+     "'d been working"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "When we got to the cinema, the film ___, so we missed the beginning.",
+    "explanation": "The film started before we arrived → past perfect.",
+    "errorTag": "narrative-tenses:contrasts",
+    "theoryAnchor": {
+     "lesson": "narrative-tenses",
+     "section": "contrasts"
+    },
+    "options": [
+     "had already started",
+     "already started",
+     "was starting",
+     "has already started"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q5",
+    "format": "Error correction",
+    "level": "B2+",
+    "prompt": "Which part is incorrect? *After the guests had left, we had cleaned the whole flat.*",
+    "explanation": "Only the earlier event needs the past perfect: *we cleaned*.",
+    "errorTag": "narrative-tenses:errors",
+    "theoryAnchor": {
+     "lesson": "narrative-tenses",
+     "section": "errors"
+    },
+    "options": [
+     "we had cleaned",
+     "After the guests",
+     "had left",
+     "the whole flat"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q6",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "I ___ call you last night, but my phone died.",
+    "explanation": "A plan that did not happen → *was going to*.",
+    "errorTag": "narrative-tenses:variations",
+    "theoryAnchor": {
+     "lesson": "narrative-tenses",
+     "section": "variations"
+    },
+    "options": [
+     "was going to",
+     "would",
+     "had been going",
+     "used to"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q7",
+    "format": "Sentence transformation",
+    "level": "C1",
+    "prompt": "Complete with 4 words. ‘As soon as we sat down, the alarm went off.’ → ‘No sooner ___ than the alarm went off.’",
+    "explanation": "*No sooner* at the start triggers inversion with the past perfect.",
+    "errorTag": "narrative-tenses:advanced",
+    "theoryAnchor": {
+     "lesson": "narrative-tenses",
+     "section": "advanced"
+    },
+    "accepted": [
+     "had we sat down"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q8",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "Choose the best sentence for a history essay.",
+    "explanation": "*By* + past time → past perfect for completion before that point.",
+    "errorTag": "narrative-tenses:register",
+    "theoryAnchor": {
+     "lesson": "narrative-tenses",
+     "section": "register"
+    },
+    "options": [
+     "By the end of the decade, the industry had collapsed.",
+     "By the end of the decade, the industry collapses.",
+     "By the end of the decade, the industry has collapsed.",
+     "By the end of the decade, the industry was collapsing already."
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q9",
+    "format": "Rewriting",
+    "level": "C1",
+    "prompt": "Rewrite with a perfect infinitive: ‘People say that he left the country.’ → ‘He is said ___ the country.’",
+    "explanation": "A past event after a present reporting verb → *to have* + past participle.",
+    "errorTag": "narrative-tenses:advanced",
+    "theoryAnchor": {
+     "lesson": "narrative-tenses",
+     "section": "advanced"
+    },
+    "accepted": [
+     "to have left"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q10",
+    "format": "In context",
+    "level": "C2",
+    "prompt": "‘Hardly ___ the door when the phone rang.’ (I / close)",
+    "explanation": "*Hardly … when* takes inversion and the past perfect.",
+    "errorTag": "narrative-tenses:advanced",
+    "theoryAnchor": {
+     "lesson": "narrative-tenses",
+     "section": "advanced"
+    },
+    "accepted": [
+     "had I closed"
+    ]
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "participle-and-reduced-clauses-practice",
+  "title": "Participle clauses and reduced relative clauses: practice",
+  "skill": "grammar",
+  "format": "mixed",
+  "level": "B2+",
+  "topics": [],
+  "target": {
+   "type": "lesson",
+   "ref": "participle-and-reduced-clauses"
+  },
+  "instructions": "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "___ the instructions, I couldn't assemble the desk.",
+    "explanation": "Negative perfect participle for an earlier action that explains the result.",
+    "errorTag": "participle-and-reduced-clauses:form",
+    "theoryAnchor": {
+     "lesson": "participle-and-reduced-clauses",
+     "section": "form"
+    },
+    "options": [
+     "Not having read",
+     "Having not read to",
+     "Not reading to",
+     "Not read"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "The students ___ the exam early were allowed to leave.",
+    "explanation": "Active meaning → present participle (= who finished).",
+    "errorTag": "participle-and-reduced-clauses:reduced",
+    "theoryAnchor": {
+     "lesson": "participle-and-reduced-clauses",
+     "section": "reduced"
+    },
+    "options": [
+     "finishing",
+     "finished",
+     "were finishing",
+     "who finishing"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q3",
+    "format": "Gap fill",
+    "level": "B2+",
+    "prompt": "Most of the goods ___ (produce) in the factory are exported.",
+    "explanation": "Passive meaning → past participle (= which are produced).",
+    "errorTag": "participle-and-reduced-clauses:reduced",
+    "theoryAnchor": {
+     "lesson": "participle-and-reduced-clauses",
+     "section": "reduced"
+    },
+    "accepted": [
+     "produced"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "She was the first woman ___ the prize.",
+    "explanation": "After *the first/last/only* → to-infinitive.",
+    "errorTag": "participle-and-reduced-clauses:reduced",
+    "theoryAnchor": {
+     "lesson": "participle-and-reduced-clauses",
+     "section": "reduced"
+    },
+    "options": [
+     "to win",
+     "winning",
+     "won",
+     "having won"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q5",
+    "format": "Error correction",
+    "level": "B2+",
+    "prompt": "Which part is incorrect? *Turning the corner, the museum came into view and we stopped.*",
+    "explanation": "Dangling participle: the museum didn't turn the corner. *Turning the corner, we saw the museum.*",
+    "errorTag": "participle-and-reduced-clauses:errors",
+    "theoryAnchor": {
+     "lesson": "participle-and-reduced-clauses",
+     "section": "errors"
+    },
+    "options": [
+     "Turning the corner, the museum came into view",
+     "and we",
+     "stopped",
+     "came into view"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q6",
+    "format": "Sentence transformation",
+    "level": "C1",
+    "prompt": "Complete with 3 words. ‘Because he had been warned about the traffic, he left early.’ → ‘___ about the traffic, he left early.’",
+    "explanation": "Passive perfect participle for an earlier action done to the subject.",
+    "errorTag": "participle-and-reduced-clauses:form",
+    "theoryAnchor": {
+     "lesson": "participle-and-reduced-clauses",
+     "section": "form"
+    },
+    "accepted": [
+     "Having been warned"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q7",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "___ correctly, this medicine has very few side effects.",
+    "explanation": "Condition with passive meaning (= if it is taken).",
+    "errorTag": "participle-and-reduced-clauses:adverbial",
+    "theoryAnchor": {
+     "lesson": "participle-and-reduced-clauses",
+     "section": "adverbial"
+    },
+    "options": [
+     "Taken",
+     "Taking",
+     "Having taken",
+     "To take"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q8",
+    "format": "Rewriting",
+    "level": "C1",
+    "prompt": "Rewrite with *with*: ‘Because unemployment is rising, the government is under pressure.’ → ‘___ rising, the government is under pressure.’",
+    "explanation": "*With* + noun + participle gives background or reason.",
+    "errorTag": "participle-and-reduced-clauses:advanced",
+    "theoryAnchor": {
+     "lesson": "participle-and-reduced-clauses",
+     "section": "advanced"
+    },
+    "accepted": [
+     "With unemployment"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q9",
+    "format": "In context",
+    "level": "C1",
+    "prompt": "Academic style: ‘___ (draw) on interviews with 50 nurses, the study explores burnout.’",
+    "explanation": "Active participle clause at the start of an academic sentence.",
+    "errorTag": "participle-and-reduced-clauses:register",
+    "theoryAnchor": {
+     "lesson": "participle-and-reduced-clauses",
+     "section": "register"
+    },
+    "accepted": [
+     "Drawing"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q10",
+    "format": "In context",
+    "level": "C2",
+    "prompt": "‘Weather ___, the ceremony will take place outdoors.’",
+    "explanation": "Absolute participle clause: *weather permitting* = if the weather allows.",
+    "errorTag": "participle-and-reduced-clauses:advanced",
+    "theoryAnchor": {
+     "lesson": "participle-and-reduced-clauses",
+     "section": "advanced"
+    },
+    "accepted": [
+     "permitting"
+    ]
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "passive-and-causative-practice",
+  "title": "The passive, impersonal passives and the causative: practice",
+  "skill": "grammar",
+  "format": "mixed",
+  "level": "B2",
+  "topics": [],
+  "target": {
+   "type": "lesson",
+   "ref": "passive-and-causative"
+  },
+  "instructions": "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "The new hospital ___ next year.",
+    "explanation": "Future passive: *will be* + past participle.",
+    "errorTag": "passive-and-causative:form",
+    "theoryAnchor": {
+     "lesson": "passive-and-causative",
+     "section": "form"
+    },
+    "options": [
+     "will be opened",
+     "will open by",
+     "is opening by",
+     "will have opened"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "format": "Gap fill",
+    "level": "B2",
+    "prompt": "Our flat ___ (redecorate) at the moment, so we're staying with friends.",
+    "explanation": "Present continuous passive: *is being* + V3.",
+    "errorTag": "passive-and-causative:form",
+    "theoryAnchor": {
+     "lesson": "passive-and-causative",
+     "section": "form"
+    },
+    "accepted": [
+     "is being redecorated"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "format": "Error correction",
+    "level": "B2",
+    "prompt": "Which part is incorrect? *The accident was happened at around midnight on the ring road.*",
+    "explanation": "*happen* is intransitive and has no passive: *The accident happened…*",
+    "errorTag": "passive-and-causative:errors",
+    "theoryAnchor": {
+     "lesson": "passive-and-causative",
+     "section": "errors"
+    },
+    "options": [
+     "was happened",
+     "at around midnight",
+     "on the ring road",
+     "The accident"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q4",
+    "format": "Sentence transformation",
+    "level": "B2+",
+    "prompt": "Complete with 3 words. ‘People believe that the ship sank in a storm.’ → ‘The ship is ___ in a storm.’",
+    "explanation": "Subject + passive reporting verb + perfect infinitive for a past event.",
+    "errorTag": "passive-and-causative:reporting",
+    "theoryAnchor": {
+     "lesson": "passive-and-causative",
+     "section": "reporting"
+    },
+    "accepted": [
+     "believed to have sunk"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q5",
+    "format": "Sentence transformation",
+    "level": "C1",
+    "prompt": "Complete with 3–4 words. ‘Reports say the president is considering a new cabinet.’ → ‘The president is ___ a new cabinet.’",
+    "explanation": "Ongoing action → *to be* + -ing.",
+    "errorTag": "passive-and-causative:reporting",
+    "theoryAnchor": {
+     "lesson": "passive-and-causative",
+     "section": "reporting"
+    },
+    "accepted": [
+     "reported to be considering",
+     "said to be considering"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q6",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "I didn't fix the roof myself. I ___.",
+    "explanation": "Causative: *have* + object + past participle.",
+    "errorTag": "passive-and-causative:causative",
+    "theoryAnchor": {
+     "lesson": "passive-and-causative",
+     "section": "causative"
+    },
+    "options": [
+     "had it fixed",
+     "fixed it",
+     "had fixed it",
+     "got to fix it"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q7",
+    "format": "Gap fill",
+    "level": "B2+",
+    "prompt": "Most people hate ___ (keep) waiting.",
+    "explanation": "After *hate* → -ing; passive -ing = *being* + V3.",
+    "errorTag": "passive-and-causative:variations",
+    "theoryAnchor": {
+     "lesson": "passive-and-causative",
+     "section": "variations"
+    },
+    "accepted": [
+     "being kept"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q8",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "The documents need ___ before the deadline.",
+    "explanation": "Passive infinitive after *need* (or *need signing* in BrE).",
+    "errorTag": "passive-and-causative:variations",
+    "theoryAnchor": {
+     "lesson": "passive-and-causative",
+     "section": "variations"
+    },
+    "options": [
+     "to be signed",
+     "signing by you",
+     "be signed",
+     "to sign"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q9",
+    "format": "In context",
+    "level": "C1",
+    "prompt": "‘My uncle ___ his wallet stolen while he was on holiday.’ (unpleasant experience)",
+    "explanation": "*have/get something done* can describe something bad that happened to you.",
+    "errorTag": "passive-and-causative:causative",
+    "theoryAnchor": {
+     "lesson": "passive-and-causative",
+     "section": "causative"
+    },
+    "accepted": [
+     "had",
+     "got"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q10",
+    "format": "Rewriting",
+    "level": "C1",
+    "prompt": "Make this sentence impersonal for an essay: ‘Many experts argue that tourism harms local culture.’ → ‘It ___ that tourism harms local culture.’",
+    "explanation": "Impersonal passive with *It* distances the writer from the claim.",
+    "errorTag": "passive-and-causative:register",
+    "theoryAnchor": {
+     "lesson": "passive-and-causative",
+     "section": "register"
+    },
+    "accepted": [
+     "is argued",
+     "is widely argued",
+     "has been argued"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q11",
+    "format": "Multiple choice",
+    "level": "C2",
+    "prompt": "Which sentence is most appropriate in a methods section?",
+    "explanation": "Formal passive without the agent focuses on the procedure; *got* is too informal.",
+    "errorTag": "passive-and-causative:register",
+    "theoryAnchor": {
+     "lesson": "passive-and-causative",
+     "section": "register"
+    },
+    "options": [
+     "Participants were randomly assigned to two groups.",
+     "We randomly put people into two groups.",
+     "People got randomly assigned to two groups.",
+     "Two groups were randomly assigned participants by us."
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "perfect-and-continuous-aspect-practice",
+  "title": "Present perfect and aspect: simple, continuous and perfect forms: practice",
+  "skill": "grammar",
+  "format": "mixed",
+  "level": "B2",
+  "topics": [],
+  "target": {
+   "type": "lesson",
+   "ref": "perfect-and-continuous-aspect"
+  },
+  "instructions": "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "I ___ to Japan three times, but never in winter.",
+    "explanation": "Experience in an unfinished period (my life) → present perfect *have been*. *Have gone* would mean I am still there.",
+    "errorTag": "perfect-and-continuous-aspect:uses",
+    "theoryAnchor": {
+     "lesson": "perfect-and-continuous-aspect",
+     "section": "uses"
+    },
+    "options": [
+     "have been",
+     "went",
+     "have gone",
+     "was going"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "format": "Gap fill",
+    "level": "B2",
+    "prompt": "I ___ (live) in Kazan since I was a child.",
+    "explanation": "*since* + point in time and the situation continues → present perfect (simple or continuous).",
+    "errorTag": "perfect-and-continuous-aspect:uses",
+    "theoryAnchor": {
+     "lesson": "perfect-and-continuous-aspect",
+     "section": "uses"
+    },
+    "accepted": [
+     "have lived",
+     "'ve lived",
+     "have been living",
+     "'ve been living"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "Your hands are covered in paint! What ___?",
+    "explanation": "The paint is visible evidence of a recent activity → present perfect continuous.",
+    "errorTag": "perfect-and-continuous-aspect:continuous",
+    "theoryAnchor": {
+     "lesson": "perfect-and-continuous-aspect",
+     "section": "continuous"
+    },
+    "options": [
+     "have you been doing",
+     "have you done",
+     "did you do",
+     "do you do"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "format": "Error correction",
+    "level": "B2",
+    "prompt": "Which part is incorrect? *When have you arrived in Vienna? I didn't see you at the meeting.*",
+    "explanation": "*When* asks about a finished time → *When did you arrive?*",
+    "errorTag": "perfect-and-continuous-aspect:errors",
+    "theoryAnchor": {
+     "lesson": "perfect-and-continuous-aspect",
+     "section": "errors"
+    },
+    "options": [
+     "When have you arrived",
+     "in Vienna",
+     "I didn't see you",
+     "at the meeting"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q5",
+    "format": "Gap fill",
+    "level": "B2+",
+    "prompt": "She's a fast writer: she ___ (write) four chapters this month.",
+    "explanation": "A completed number → present perfect simple, not continuous.",
+    "errorTag": "perfect-and-continuous-aspect:continuous",
+    "theoryAnchor": {
+     "lesson": "perfect-and-continuous-aspect",
+     "section": "continuous"
+    },
+    "accepted": [
+     "has written",
+     "'s written"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q6",
+    "format": "Sentence transformation",
+    "level": "B2+",
+    "prompt": "Complete with 3–4 words so the meaning stays the same. ‘I started working here three years ago.’ → ‘I ___ for three years.’",
+    "explanation": "*started … ago* → present perfect with *for* + period.",
+    "errorTag": "perfect-and-continuous-aspect:contrasts",
+    "theoryAnchor": {
+     "lesson": "perfect-and-continuous-aspect",
+     "section": "contrasts"
+    },
+    "accepted": [
+     "have worked here",
+     "'ve worked here",
+     "have been working here",
+     "'ve been working here"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q7",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "This is the first time I ___ a speech in English.",
+    "explanation": "*This is the first time…* is followed by the present perfect.",
+    "errorTag": "perfect-and-continuous-aspect:variations",
+    "theoryAnchor": {
+     "lesson": "perfect-and-continuous-aspect",
+     "section": "variations"
+    },
+    "options": [
+     "have given",
+     "give",
+     "gave",
+     "am giving"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q8",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "Which sentence sounds most tentative and polite in an email to a professor?",
+    "explanation": "The past continuous *I was wondering* distances the request and softens it.",
+    "errorTag": "perfect-and-continuous-aspect:advanced",
+    "theoryAnchor": {
+     "lesson": "perfect-and-continuous-aspect",
+     "section": "advanced"
+    },
+    "options": [
+     "I was wondering whether you might have time to read my draft.",
+     "I wonder whether you have time to read my draft.",
+     "I wondered whether you had time to read my draft.",
+     "Do you have time to read my draft?"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q9",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "Choose the best opening for a literature review.",
+    "explanation": "Summarising research up to the present → present perfect.",
+    "errorTag": "perfect-and-continuous-aspect:register",
+    "theoryAnchor": {
+     "lesson": "perfect-and-continuous-aspect",
+     "section": "register"
+    },
+    "options": [
+     "A number of studies have investigated the effects of screen time on sleep.",
+     "A number of studies investigated the effects of screen time on sleep last year.",
+     "A number of studies are investigating the effects of screen time on sleep since 2010.",
+     "A number of studies investigate the effects of screen time on sleep until now."
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q10",
+    "format": "Rewriting",
+    "level": "C1",
+    "prompt": "Rewrite using a perfect participle (begin with *Having*). ‘After she had checked the data, she submitted the paper.’ → ‘___ the data, she submitted the paper.’",
+    "explanation": "A perfect participle clause shows that one action was completed before the next.",
+    "errorTag": "perfect-and-continuous-aspect:advanced",
+    "theoryAnchor": {
+     "lesson": "perfect-and-continuous-aspect",
+     "section": "advanced"
+    },
+    "accepted": [
+     "Having checked"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q11",
+    "format": "In context",
+    "level": "C2",
+    "prompt": "‘I ___ to ring you for weeks, but something always gets in the way.’ (an intention not yet carried out)",
+    "explanation": "*mean* in the perfect continuous expresses a long-standing intention not yet fulfilled.",
+    "errorTag": "perfect-and-continuous-aspect:advanced",
+    "theoryAnchor": {
+     "lesson": "perfect-and-continuous-aspect",
+     "section": "advanced"
+    },
+    "accepted": [
+     "have been meaning",
+     "'ve been meaning"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q12",
+    "format": "Error correction",
+    "level": "C1",
+    "prompt": "Which part is incorrect? *Researchers have been knowing for decades that the drug has side effects.*",
+    "explanation": "*know* is a state verb → *have known*.",
+    "errorTag": "perfect-and-continuous-aspect:errors",
+    "theoryAnchor": {
+     "lesson": "perfect-and-continuous-aspect",
+     "section": "errors"
+    },
+    "options": [
+     "have been knowing",
+     "for decades",
+     "that the drug",
+     "has side effects"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "reported-speech-practice",
+  "title": "Reported speech and reporting verbs: practice",
+  "skill": "grammar",
+  "format": "mixed",
+  "level": "B2+",
+  "topics": [],
+  "target": {
+   "type": "lesson",
+   "ref": "reported-speech"
+  },
+  "instructions": "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.",
+  "questions": [
+   {
+    "kind": "text",
+    "id": "q1",
+    "format": "Gap fill",
+    "level": "B2",
+    "prompt": "“I'm working from home today.” → She said she ___ from home that day.",
+    "explanation": "Present continuous → past continuous.",
+    "errorTag": "reported-speech:form",
+    "theoryAnchor": {
+     "lesson": "reported-speech",
+     "section": "form"
+    },
+    "accepted": [
+     "was working"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "“Where do you live?” → He asked me ___.",
+    "explanation": "Reported question: statement word order, backshift.",
+    "errorTag": "reported-speech:questions",
+    "theoryAnchor": {
+     "lesson": "reported-speech",
+     "section": "questions"
+    },
+    "options": [
+     "where I lived",
+     "where did I live",
+     "where I did live",
+     "where do I live"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "“Don't open the window.” → She told us ___ the window.",
+    "explanation": "Reported order: *tell* + object + *not to* + infinitive.",
+    "errorTag": "reported-speech:questions",
+    "theoryAnchor": {
+     "lesson": "reported-speech",
+     "section": "questions"
+    },
+    "options": [
+     "not to open",
+     "don't open",
+     "to not opening",
+     "not open"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "“I'm sorry I was late.” → He ___ late.",
+    "explanation": "*apologise for* + -ing.",
+    "errorTag": "reported-speech:verbs",
+    "theoryAnchor": {
+     "lesson": "reported-speech",
+     "section": "verbs"
+    },
+    "options": [
+     "apologised for being",
+     "apologised to be",
+     "apologised that being",
+     "apologised being"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q5",
+    "format": "Sentence transformation",
+    "level": "B2+",
+    "prompt": "Complete with 3 words. ‘“You really should apply,” she told me.’ → ‘She ___ apply.’",
+    "explanation": "verb + object + to-infinitive.",
+    "errorTag": "reported-speech:verbs",
+    "theoryAnchor": {
+     "lesson": "reported-speech",
+     "section": "verbs"
+    },
+    "accepted": [
+     "encouraged me to",
+     "urged me to",
+     "advised me to"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q6",
+    "format": "Error correction",
+    "level": "B2+",
+    "prompt": "Which part is incorrect? *The manager accused two employees for leaking the report to the press.*",
+    "explanation": "*accuse somebody of doing*.",
+    "errorTag": "reported-speech:errors",
+    "theoryAnchor": {
+     "lesson": "reported-speech",
+     "section": "errors"
+    },
+    "options": [
+     "for leaking",
+     "The manager accused",
+     "two employees",
+     "to the press"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q7",
+    "format": "Sentence transformation",
+    "level": "C1",
+    "prompt": "Complete with 2–3 words. ‘“It wasn't me who took the money,” he said.’ → ‘He ___ the money.’",
+    "explanation": "*deny* + -ing (or perfect -ing).",
+    "errorTag": "reported-speech:verbs",
+    "theoryAnchor": {
+     "lesson": "reported-speech",
+     "section": "verbs"
+    },
+    "accepted": [
+     "denied taking",
+     "denied having taken"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q8",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "The writer doubts the report's conclusions. Which verb fits best? ‘The report ___ that the policy has reduced crime.’",
+    "explanation": "*claim* signals the writer is not convinced.",
+    "errorTag": "reported-speech:stance",
+    "theoryAnchor": {
+     "lesson": "reported-speech",
+     "section": "stance"
+    },
+    "options": [
+     "claims",
+     "demonstrates",
+     "establishes",
+     "shows"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q9",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "Choose the most appropriate sentence for an essay.",
+    "explanation": "Present-tense reporting verb for citing a source; *told/suggested us* are ungrammatical.",
+    "errorTag": "reported-speech:register",
+    "theoryAnchor": {
+     "lesson": "reported-speech",
+     "section": "register"
+    },
+    "options": [
+     "As Lopez (2020) points out, remote work blurs professional boundaries.",
+     "Lopez said in 2020 that remote work was blurring professional boundaries, she said.",
+     "Lopez told that remote work blurs professional boundaries.",
+     "Lopez suggested us that remote work blurs professional boundaries."
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q10",
+    "format": "In context",
+    "level": "C2",
+    "prompt": "‘Critics ___ the proposal as unrealistic and too expensive.’ (rejected it without serious consideration)",
+    "explanation": "*dismiss something as* = reject it as not worth considering.",
+    "errorTag": "reported-speech:stance",
+    "theoryAnchor": {
+     "lesson": "reported-speech",
+     "section": "stance"
+    },
+    "accepted": [
+     "dismissed"
+    ]
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "verb-patterns-practice",
+  "title": "Verb patterns: -ing forms, infinitives and meaning changes: practice",
+  "skill": "grammar",
+  "format": "mixed",
+  "level": "B2",
+  "topics": [],
+  "target": {
+   "type": "lesson",
+   "ref": "verb-patterns"
+  },
+  "instructions": "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "Would you mind ___ the window? It's freezing.",
+    "explanation": "*mind* + -ing.",
+    "errorTag": "verb-patterns:form",
+    "theoryAnchor": {
+     "lesson": "verb-patterns",
+     "section": "form"
+    },
+    "options": [
+     "closing",
+     "to close",
+     "close",
+     "that you close"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "format": "Gap fill",
+    "level": "B2",
+    "prompt": "We can't afford ___ (buy) a new car this year.",
+    "explanation": "*afford* + to-infinitive.",
+    "errorTag": "verb-patterns:form",
+    "theoryAnchor": {
+     "lesson": "verb-patterns",
+     "section": "form"
+    },
+    "accepted": [
+     "to buy"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "My parents never let me ___ out after ten.",
+    "explanation": "*let* + object + bare infinitive.",
+    "errorTag": "verb-patterns:form",
+    "theoryAnchor": {
+     "lesson": "verb-patterns",
+     "section": "form"
+    },
+    "options": [
+     "go",
+     "to go",
+     "going",
+     "went"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "format": "Error correction",
+    "level": "B2",
+    "prompt": "Which part is incorrect? *The doctor suggested me to take more exercise and sleep longer.*",
+    "explanation": "*suggest* is not used with object + to-inf: *suggested that I take / suggested taking*.",
+    "errorTag": "verb-patterns:errors",
+    "theoryAnchor": {
+     "lesson": "verb-patterns",
+     "section": "errors"
+    },
+    "options": [
+     "suggested me to take",
+     "The doctor",
+     "more exercise",
+     "sleep longer"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q5",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "I clearly remember ___ the oven off, so don't worry.",
+    "explanation": "Memory of an earlier action → *remember* + -ing.",
+    "errorTag": "verb-patterns:meaning",
+    "theoryAnchor": {
+     "lesson": "verb-patterns",
+     "section": "meaning"
+    },
+    "options": [
+     "turning",
+     "to turn",
+     "turn",
+     "to have turn"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q6",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "The car broke down, so we stopped ___ for help.",
+    "explanation": "*stop to do* = stop in order to do something.",
+    "errorTag": "verb-patterns:meaning",
+    "theoryAnchor": {
+     "lesson": "verb-patterns",
+     "section": "meaning"
+    },
+    "options": [
+     "to ask",
+     "asking",
+     "ask",
+     "for asking"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q7",
+    "format": "Gap fill",
+    "level": "B2+",
+    "prompt": "If the printer doesn't work, try ___ (switch) it off and on again.",
+    "explanation": "*try* + -ing = experiment to see what happens.",
+    "errorTag": "verb-patterns:meaning",
+    "theoryAnchor": {
+     "lesson": "verb-patterns",
+     "section": "meaning"
+    },
+    "accepted": [
+     "switching"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q8",
+    "format": "Sentence transformation",
+    "level": "C1",
+    "prompt": "Complete with 3 words (passive). ‘They made the passengers wait for three hours.’ → ‘The passengers ___ for three hours.’",
+    "explanation": "In the passive, *make* takes *to*.",
+    "errorTag": "verb-patterns:perception",
+    "theoryAnchor": {
+     "lesson": "verb-patterns",
+     "section": "perception"
+    },
+    "accepted": [
+     "were made to wait"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q9",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "The minister denied ___ any money from the company.",
+    "explanation": "*deny* + -ing; perfect -ing for an earlier action.",
+    "errorTag": "verb-patterns:advanced",
+    "theoryAnchor": {
+     "lesson": "verb-patterns",
+     "section": "advanced"
+    },
+    "options": [
+     "having received",
+     "to have received",
+     "to receive",
+     "have received"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q10",
+    "format": "In context",
+    "level": "C1",
+    "prompt": "‘I would appreciate ___ if you could send the report by Friday.’",
+    "explanation": "Preparatory object *it* before an if-clause.",
+    "errorTag": "verb-patterns:advanced",
+    "theoryAnchor": {
+     "lesson": "verb-patterns",
+     "section": "advanced"
+    },
+    "accepted": [
+     "it"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q11",
+    "format": "Multiple choice",
+    "level": "C2",
+    "prompt": "After years as a journalist, she went on ___ one of the country's leading novelists.",
+    "explanation": "*go on to do* = move on to a new achievement.",
+    "errorTag": "verb-patterns:meaning",
+    "theoryAnchor": {
+     "lesson": "verb-patterns",
+     "section": "meaning"
+    },
+    "options": [
+     "to become",
+     "becoming",
+     "become",
+     "to becoming"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "can-machines-create-1",
+  "title": "True / False / Not given",
+  "skill": "reading",
+  "format": "tfng",
+  "level": "C1",
+  "topics": [
+   "science-technology"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "can-machines-create"
+  },
+  "passageRef": "can-machines-create",
+  "instructions": "Do the statements agree with the information in the text?",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "Generative systems learn patterns from large amounts of existing material.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph B.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "The writer believes machine-made work is always less original than human work.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 2,
+    "explanation": "The writer presents both views without this claim.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "Psychologists define creativity as producing something new and valuable.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph D.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "prompt": "Courts have already agreed on how copyright applies to these systems.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph E: courts are still \"considering\" it.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "can-machines-create-2",
+  "title": "Multiple choice",
+  "skill": "reading",
+  "format": "multiple_choice",
+  "level": "C1",
+  "topics": [
+   "science-technology"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "can-machines-create"
+  },
+  "passageRef": "can-machines-create",
+  "instructions": "Choose the correct answer.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "What point do defenders of machine creativity make in paragraph C?",
+    "explanation": "Writers and composers build on what came before.",
+    "options": [
+     "Human creativity also depends on earlier work.",
+     "Machines are more original than humans.",
+     "Composers do not borrow ideas.",
+     "Creativity is impossible to define."
+    ],
+    "answer": 0,
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "Why does the writer mention photography?",
+    "explanation": "Paragraph F: photography pushed painters towards new styles.",
+    "options": [
+     "to show that technology always destroys art",
+     "to suggest that new tools can change the direction of human creativity",
+     "to argue that paintings are more valuable than photos",
+     "to explain how generative software works"
+    ],
+    "answer": 1,
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "can-machines-create-3",
+  "title": "Short-answer questions",
+  "skill": "reading",
+  "format": "short_answer",
+  "level": "C1",
+  "topics": [
+   "science-technology"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "can-machines-create"
+  },
+  "passageRef": "can-machines-create",
+  "instructions": "Answer with NO MORE THAN THREE WORDS from the text.",
+  "questions": [
+   {
+    "kind": "text",
+    "id": "q1",
+    "prompt": "According to paragraph D, what is harder for machines to produce than novelty?",
+    "accepted": [
+     "value"
+    ],
+    "explanation": "Paragraph D.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "prompt": "Who currently selects among many outputs?",
+    "accepted": [
+     "people"
+    ],
+    "explanation": "Paragraph D: \"that judgement still comes from people\".",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "compulsory-voting-1",
+  "title": "Multiple choice",
+  "skill": "reading",
+  "format": "multiple_choice",
+  "level": "C1",
+  "topics": [
+   "society-politics"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "compulsory-voting"
+  },
+  "passageRef": "compulsory-voting",
+  "instructions": "Choose the correct answer.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "Why, according to supporters, do politicians in voluntary systems focus on older and wealthier groups?",
+    "explanation": "Paragraph B.",
+    "options": [
+     "These groups vote more reliably.",
+     "These groups pay more tax.",
+     "Young people are not allowed to vote.",
+     "These groups are larger."
+    ],
+    "answer": 0,
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "What does the writer say about voters in compulsory systems?",
+    "explanation": "Paragraph D: they may still spoil it or leave it blank.",
+    "options": [
+     "They must choose a candidate.",
+     "They can return a blank or spoiled ballot.",
+     "They pay large fines if they refuse.",
+     "They usually vote for extreme parties."
+    ],
+    "answer": 1,
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "compulsory-voting-2",
+  "title": "True / False / Not given",
+  "skill": "reading",
+  "format": "tfng",
+  "level": "C1",
+  "topics": [
+   "society-politics"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "compulsory-voting"
+  },
+  "passageRef": "compulsory-voting",
+  "instructions": "Do the statements agree with the information in the text?",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "Australia introduced compulsory voting in the 1920s.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph A.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "Compulsory voting always leads to more extreme governments.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph C suggests it may reduce extreme views.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "Many citizens in compulsory systems say they would keep voting if the law changed.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph E.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "prompt": "Belgium imposes prison sentences for not voting.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 2,
+    "explanation": "Only small fines are mentioned in general.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "compulsory-voting-3",
+  "title": "Sentence completion",
+  "skill": "reading",
+  "format": "sentence_completion",
+  "level": "C1",
+  "topics": [
+   "society-politics"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "compulsory-voting"
+  },
+  "passageRef": "compulsory-voting",
+  "instructions": "Complete with ONE word from the text.",
+  "questions": [
+   {
+    "kind": "text",
+    "id": "q1",
+    "prompt": "Opponents say not voting can itself be a political ___.",
+    "accepted": [
+     "statement"
+    ],
+    "explanation": "Paragraph D.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "prompt": "Once voting is expected, it becomes a ___.",
+    "accepted": [
+     "habit"
+    ],
+    "explanation": "Paragraph E.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "fifteen-minute-city-1",
+  "title": "Multiple choice",
+  "skill": "reading",
+  "format": "multiple_choice",
+  "level": "C1",
+  "topics": [
+   "cities-urban"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "fifteen-minute-city"
+  },
+  "passageRef": "fifteen-minute-city",
+  "instructions": "Choose the correct answer.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "According to paragraph B, twentieth-century planning",
+    "explanation": "Homes, offices and shops were \"separated into different zones\".",
+    "options": [
+     "separated different activities into different areas.",
+     "encouraged walking and cycling.",
+     "created lively town centres in the evening.",
+     "reduced the need for roads."
+    ],
+    "answer": 0,
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "What does paragraph C suggest about the changes?",
+    "explanation": "\"In practice, the changes are often modest.\"",
+    "options": [
+     "They ban cars from city centres.",
+     "They are mostly small adjustments rather than major restrictions.",
+     "They require people to work from home.",
+     "They are very expensive."
+    ],
+    "answer": 1,
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "Why might the plan harm lower-income residents?",
+    "explanation": "Paragraph E.",
+    "options": [
+     "They cannot afford bicycles.",
+     "They live in rural areas.",
+     "Rising property prices could force them to move.",
+     "They prefer to drive."
+    ],
+    "answer": 2,
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "fifteen-minute-city-2",
+  "title": "Matching information",
+  "skill": "reading",
+  "format": "matching_information",
+  "level": "C1",
+  "topics": [
+   "cities-urban"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "fifteen-minute-city"
+  },
+  "passageRef": "fifteen-minute-city",
+  "instructions": "Which paragraph contains the following information?",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "a reason why the idea is difficult in low-density areas",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E",
+     "Paragraph F"
+    ],
+    "answer": 3,
+    "explanation": "Suburbs and rural areas lack the necessary density.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "the origin of the concept",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E",
+     "Paragraph F"
+    ],
+    "answer": 0,
+    "explanation": "Popularised by Carlos Moreno and adopted in Paris.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "a suggestion that the name itself causes problems",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E",
+     "Paragraph F"
+    ],
+    "answer": 5,
+    "explanation": "\"Much of the controversy may come from the name\".",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "fifteen-minute-city-3",
+  "title": "Summary completion",
+  "skill": "reading",
+  "format": "summary_completion",
+  "level": "C1",
+  "topics": [
+   "cities-urban"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "fifteen-minute-city"
+  },
+  "passageRef": "fifteen-minute-city",
+  "instructions": "Complete the summary with ONE word from the text.",
+  "questions": [
+   {
+    "kind": "text",
+    "id": "q1",
+    "prompt": "Critics fear the idea is a disguised way to restrict personal ___.",
+    "accepted": [
+     "freedom"
+    ],
+    "explanation": "Paragraph D.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "prompt": "Planners argue it needs affordable ___ policies.",
+    "accepted": [
+     "housing"
+    ],
+    "explanation": "Paragraph E.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "life-of-a-t-shirt-1",
+  "title": "Matching information",
+  "skill": "reading",
+  "format": "matching_information",
+  "level": "B2+",
+  "topics": [
+   "economics-globalisation"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "life-of-a-t-shirt"
+  },
+  "passageRef": "life-of-a-t-shirt",
+  "instructions": "Which paragraph contains the following information?",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "why the sewing stage is located in low-wage countries",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph B: sewing depends heavily on human hands.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "a suggestion that consumers should buy less",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E"
+    ],
+    "answer": 4,
+    "explanation": "\"buying fewer, longer-lasting clothes\".",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "benefits for workers moving from the countryside",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E"
+    ],
+    "answer": 2,
+    "explanation": "Young women from rural areas gain income and independence.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "prompt": "environmental damage from colouring cloth",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E"
+    ],
+    "answer": 3,
+    "explanation": "Dyeing can pollute rivers.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "life-of-a-t-shirt-2",
+  "title": "Multiple choice",
+  "skill": "reading",
+  "format": "multiple_choice",
+  "level": "B2+",
+  "topics": [
+   "economics-globalisation"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "life-of-a-t-shirt"
+  },
+  "passageRef": "life-of-a-t-shirt",
+  "instructions": "Choose the correct answer.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "Why is spinning located where energy is cheap?",
+    "explanation": "Paragraph B: spinning and weaving are highly mechanised.",
+    "options": [
+     "because it requires many workers",
+     "because it is highly mechanised",
+     "because cotton grows there",
+     "because shipping is cheaper"
+    ],
+    "answer": 1,
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "What do critics say about brands publishing supplier lists?",
+    "explanation": "Paragraph E: transparency \"does not always reach the subcontractors further down\".",
+    "options": [
+     "It has solved most problems.",
+     "It is illegal in some countries.",
+     "It may not reveal problems among subcontractors.",
+     "It raises prices for consumers."
+    ],
+    "answer": 2,
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "life-of-a-t-shirt-3",
+  "title": "Summary completion",
+  "skill": "reading",
+  "format": "summary_completion",
+  "level": "B2+",
+  "topics": [
+   "economics-globalisation"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "life-of-a-t-shirt"
+  },
+  "passageRef": "life-of-a-t-shirt",
+  "instructions": "Complete the summary with ONE word from the text.",
+  "questions": [
+   {
+    "kind": "text",
+    "id": "q1",
+    "prompt": "Each stage is carried out where it is cheapest or most ___.",
+    "accepted": [
+     "efficient"
+    ],
+    "explanation": "Paragraph B.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "prompt": "Growing cotton can need a lot of water and ___.",
+    "accepted": [
+     "pesticides"
+    ],
+    "explanation": "Paragraph D.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q3",
+    "prompt": "Transport across oceans increases carbon ___.",
+    "accepted": [
+     "emissions"
+    ],
+    "explanation": "Paragraph D.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "loneliness-1",
+  "title": "Matching headings",
+  "skill": "reading",
+  "format": "matching_headings",
+  "level": "B2+",
+  "topics": [
+   "health-medicine"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "loneliness"
+  },
+  "passageRef": "loneliness",
+  "instructions": "Choose the correct heading for paragraphs B–E.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "Paragraph B",
+    "options": [
+     "i. Possible biological and behavioural causes",
+     "ii. Feeling lonely is not the same as living alone",
+     "iii. Practical steps taken by communities",
+     "iv. A tool that can both help and harm",
+     "v. A cure that works for everyone",
+     "vi. Loneliness among animals"
+    ],
+    "answer": 1,
+    "explanation": "Loneliness is the gap between wanted and actual connection.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "Paragraph C",
+    "options": [
+     "i. Possible biological and behavioural causes",
+     "ii. Feeling lonely is not the same as living alone",
+     "iii. Practical steps taken by communities",
+     "iv. A tool that can both help and harm",
+     "v. A cure that works for everyone",
+     "vi. Loneliness among animals"
+    ],
+    "answer": 0,
+    "explanation": "Stress hormones, sleep and lifestyle explain the damage.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "Paragraph D",
+    "options": [
+     "i. Possible biological and behavioural causes",
+     "ii. Feeling lonely is not the same as living alone",
+     "iii. Practical steps taken by communities",
+     "iv. A tool that can both help and harm",
+     "v. A cure that works for everyone",
+     "vi. Loneliness among animals"
+    ],
+    "answer": 2,
+    "explanation": "Social prescribing, benches and housing schemes.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "prompt": "Paragraph E",
+    "options": [
+     "i. Possible biological and behavioural causes",
+     "ii. Feeling lonely is not the same as living alone",
+     "iii. Practical steps taken by communities",
+     "iv. A tool that can both help and harm",
+     "v. A cure that works for everyone",
+     "vi. Loneliness among animals"
+    ],
+    "answer": 3,
+    "explanation": "Technology is \"ambiguous\".",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "loneliness-2",
+  "title": "Sentence completion",
+  "skill": "reading",
+  "format": "sentence_completion",
+  "level": "B2+",
+  "topics": [
+   "health-medicine"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "loneliness"
+  },
+  "passageRef": "loneliness",
+  "instructions": "Complete with NO MORE THAN TWO WORDS from the text.",
+  "questions": [
+   {
+    "kind": "text",
+    "id": "q1",
+    "prompt": "Loneliness may raise levels of ___.",
+    "accepted": [
+     "stress hormones"
+    ],
+    "explanation": "Paragraph C.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "prompt": "Referring patients to community activities is sometimes called ___.",
+    "accepted": [
+     "social prescribing"
+    ],
+    "explanation": "Paragraph D.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q3",
+    "prompt": "Video calls were a ___ for many people during lockdowns.",
+    "accepted": [
+     "lifeline"
+    ],
+    "explanation": "Paragraph E.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "loneliness-3",
+  "title": "True / False / Not given",
+  "skill": "reading",
+  "format": "tfng",
+  "level": "B2+",
+  "topics": [
+   "health-medicine"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "loneliness"
+  },
+  "passageRef": "loneliness",
+  "instructions": "Do the statements agree with the information in the text?",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "People who live alone are always lonely.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph B: many live alone and feel content.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "Social prescribing is available in every country.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph D: \"In some countries\".",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "The writer suggests seeing loneliness as a health issue could reduce stigma.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph F: rather than a personal weakness.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "rewilding-1",
+  "title": "Multiple choice",
+  "skill": "reading",
+  "format": "multiple_choice",
+  "level": "C1",
+  "topics": [
+   "environment"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "rewilding"
+  },
+  "passageRef": "rewilding",
+  "instructions": "Choose the correct answer.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "According to paragraph A, traditional conservation was mainly based on",
+    "explanation": "Paragraph A: conservation \"meant management\": fencing, cutting grass, removing plants.",
+    "options": [
+     "leaving land completely untouched.",
+     "active human management of reserves.",
+     "reintroducing large predators.",
+     "tourism and economic development."
+    ],
+    "answer": 1,
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "What does the writer say about the Yellowstone example?",
+    "explanation": "Paragraph B: \"some researchers now believe the Yellowstone story has been simplified\".",
+    "options": [
+     "It proves that wolves alone restored the ecosystem.",
+     "It shows that predators should be returned everywhere.",
+     "It is well known but may be over-simplified.",
+     "It has been rejected by most scientists."
+    ],
+    "answer": 2,
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "Why is choosing a baseline described as a value judgement?",
+    "explanation": "Paragraph D: choosing between periods is \"a value judgement rather than a scientific fact\".",
+    "options": [
+     "Because scientists cannot measure past landscapes.",
+     "Because deciding which past state to restore depends on opinions, not facts.",
+     "Because farmers and scientists disagree about wolves.",
+     "Because the law requires it."
+    ],
+    "answer": 1,
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "rewilding-2",
+  "title": "Matching information",
+  "skill": "reading",
+  "format": "matching_information",
+  "level": "C1",
+  "topics": [
+   "environment"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "rewilding"
+  },
+  "passageRef": "rewilding",
+  "instructions": "Which paragraph contains the following information?",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "a reason why European projects differ from American ones",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E",
+     "Paragraph F"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph C: large predators and dense populations are an uneasy combination.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "the unequal distribution of financial benefits",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E",
+     "Paragraph F"
+    ],
+    "answer": 4,
+    "explanation": "Paragraph E: benefits rarely reach everyone equally.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "the writer's own cautious conclusion",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E",
+     "Paragraph F"
+    ],
+    "answer": 5,
+    "explanation": "Paragraph F presents \"a modest\" case.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "prompt": "how one species can reduce flooding",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E",
+     "Paragraph F"
+    ],
+    "answer": 2,
+    "explanation": "Beavers' dams slow rivers and reduce flooding downstream.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "rewilding-3",
+  "title": "Summary completion",
+  "skill": "reading",
+  "format": "summary_completion",
+  "level": "C1",
+  "topics": [
+   "environment"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "rewilding"
+  },
+  "passageRef": "rewilding",
+  "instructions": "Complete the summary. Use ONE word from the text for each gap.",
+  "questions": [
+   {
+    "kind": "text",
+    "id": "q1",
+    "prompt": "When wolves returned, elk avoided open valleys because they were ___ there.",
+    "accepted": [
+     "vulnerable"
+    ],
+    "explanation": "Paragraph B.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "prompt": "Trees then grew along riverbanks, and their ___ stabilised the banks.",
+    "accepted": [
+     "roots"
+    ],
+    "explanation": "Paragraph B.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q3",
+    "prompt": "Farmers are concerned about losing ___ to predators.",
+    "accepted": [
+     "livestock"
+    ],
+    "explanation": "Paragraph D.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "the-forgetting-curve-1",
+  "title": "Matching headings",
+  "skill": "reading",
+  "format": "matching_headings",
+  "level": "B2+",
+  "topics": [
+   "psychology-behaviour"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "the-forgetting-curve"
+  },
+  "passageRef": "the-forgetting-curve",
+  "instructions": "Choose the correct heading for paragraphs B, C, D and E.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "Paragraph B",
+    "options": [
+     "i. A slower decline after a fast start",
+     "ii. Why easy methods can mislead",
+     "iii. A short-term strategy with long-term costs",
+     "iv. Lost, but not completely",
+     "v. The danger of using real words",
+     "vi. Technology that replaces study"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph B describes the steep drop followed by a long flat tail.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "Paragraph C",
+    "options": [
+     "i. A slower decline after a fast start",
+     "ii. Why easy methods can mislead",
+     "iii. A short-term strategy with long-term costs",
+     "iv. Lost, but not completely",
+     "v. The danger of using real words",
+     "vi. Technology that replaces study"
+    ],
+    "answer": 3,
+    "explanation": "Relearning was faster because the memory \"had not vanished completely\".",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "Paragraph D",
+    "options": [
+     "i. A slower decline after a fast start",
+     "ii. Why easy methods can mislead",
+     "iii. A short-term strategy with long-term costs",
+     "iv. Lost, but not completely",
+     "v. The danger of using real words",
+     "vi. Technology that replaces study"
+    ],
+    "answer": 1,
+    "explanation": "Rereading and highlighting create an \"illusion of mastery\".",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "prompt": "Paragraph E",
+    "options": [
+     "i. A slower decline after a fast start",
+     "ii. Why easy methods can mislead",
+     "iii. A short-term strategy with long-term costs",
+     "iv. Lost, but not completely",
+     "v. The danger of using real words",
+     "vi. Technology that replaces study"
+    ],
+    "answer": 2,
+    "explanation": "Cramming may pass an exam, but most is lost within days.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "the-forgetting-curve-2",
+  "title": "True / False / Not given",
+  "skill": "reading",
+  "format": "tfng",
+  "level": "B2+",
+  "topics": [
+   "psychology-behaviour"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "the-forgetting-curve"
+  },
+  "passageRef": "the-forgetting-curve",
+  "instructions": "Do the statements agree with the information in the text?",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "Ebbinghaus used nonsense syllables because real words are remembered unequally.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph A: real words carry associations that make some easier to remember.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "Later researchers found a completely different shape for the forgetting curve.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph B: the shape has been confirmed many times.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "Ebbinghaus tested other people as well as himself.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 2,
+    "explanation": "The text only describes him testing his own memory.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "prompt": "Highlighting is described as a highly effective study method.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph D: it often creates an illusion of mastery.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "the-forgetting-curve-3",
+  "title": "Sentence completion",
+  "skill": "reading",
+  "format": "sentence_completion",
+  "level": "B2+",
+  "topics": [
+   "psychology-behaviour"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "the-forgetting-curve"
+  },
+  "passageRef": "the-forgetting-curve",
+  "instructions": "Complete the sentences. Use NO MORE THAN TWO WORDS from the text.",
+  "questions": [
+   {
+    "kind": "text",
+    "id": "q1",
+    "prompt": "Reviewing material at increasing intervals is known as ___.",
+    "accepted": [
+     "spaced repetition"
+    ],
+    "explanation": "Paragraph C.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "prompt": "Trying to recall information before checking it is called ___.",
+    "accepted": [
+     "retrieval practice"
+    ],
+    "explanation": "Paragraph D.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q3",
+    "prompt": "Flashcard apps show ___ words more often than easy ones.",
+    "accepted": [
+     "difficult"
+    ],
+    "explanation": "Paragraph F.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "the-four-day-week-1",
+  "title": "True / False / Not given",
+  "skill": "reading",
+  "format": "tfng",
+  "level": "B2+",
+  "topics": [
+   "work-careers"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "the-four-day-week"
+  },
+  "passageRef": "the-four-day-week",
+  "instructions": "Do the statements agree with the information in the text?",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "The five-day week has existed since the beginning of industrialisation.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph A: it is \"a relatively recent invention\"; six-day weeks were normal earlier.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "In the trials, employees received lower pay for working fewer days.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph B: \"four days for the same pay\".",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "Most participating companies were from the manufacturing sector.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph D: many were small office-based firms.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "prompt": "Some trial companies reported more customer complaints.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 2,
+    "explanation": "Customer complaints are not mentioned.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "the-four-day-week-2",
+  "title": "Multiple choice",
+  "skill": "reading",
+  "format": "multiple_choice",
+  "level": "B2+",
+  "topics": [
+   "work-careers"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "the-four-day-week"
+  },
+  "passageRef": "the-four-day-week",
+  "instructions": "Choose the correct answer.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "According to paragraph C, one reason productivity may not fall is that",
+    "explanation": "Paragraph C: meetings and interruptions are cut first when time is limited.",
+    "options": [
+     "time-wasting activities are reduced when hours are limited.",
+     "employees work longer hours on the remaining days.",
+     "companies hire extra staff.",
+     "automation replaces office workers."
+    ],
+    "answer": 0,
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "What is the main limitation of the trials mentioned in paragraph D?",
+    "explanation": "Volunteering firms were \"probably those most likely to succeed\" and mostly office-based.",
+    "options": [
+     "They lasted only a few weeks.",
+     "The companies that took part were not typical of the whole economy.",
+     "Employees did not want to continue.",
+     "The results were not published."
+    ],
+    "answer": 1,
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "the-four-day-week-3",
+  "title": "Short-answer questions",
+  "skill": "reading",
+  "format": "short_answer",
+  "level": "B2+",
+  "topics": [
+   "work-careers"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "the-four-day-week"
+  },
+  "passageRef": "the-four-day-week",
+  "instructions": "Answer the questions. Use NO MORE THAN THREE WORDS from the text.",
+  "questions": [
+   {
+    "kind": "text",
+    "id": "q1",
+    "prompt": "Whose campaigns helped reduce working hours in the past?",
+    "accepted": [
+     "trade unions",
+     "campaigns by trade unions"
+    ],
+    "explanation": "Paragraph A mentions campaigns by trade unions and changes in technology.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "prompt": "What could widen if only office workers benefit?",
+    "accepted": [
+     "existing divisions",
+     "divisions"
+    ],
+    "explanation": "Paragraph E: existing divisions in the labour market could widen.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q3",
+    "prompt": "According to some economists, working time should focus on what instead of hours?",
+    "accepted": [
+     "results"
+    ],
+    "explanation": "Paragraph E.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "the-future-of-protein-1",
+  "title": "Matching information",
+  "skill": "reading",
+  "format": "matching_information",
+  "level": "B2+",
+  "topics": [
+   "food-nutrition"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "the-future-of-protein"
+  },
+  "passageRef": "the-future-of-protein",
+  "instructions": "Which paragraph contains the following information?",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "a reason why sales of meat substitutes stopped growing",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E"
+    ],
+    "answer": 1,
+    "explanation": "Price and concern about processing.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "an obstacle that is cultural rather than scientific",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E"
+    ],
+    "answer": 3,
+    "explanation": "Insects: \"the main obstacle is cultural\".",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "the energy needed for a new production method",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E"
+    ],
+    "answer": 2,
+    "explanation": "Cultivated meat facilities require energy.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "prompt": "a prediction that several solutions will be combined",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E"
+    ],
+    "answer": 4,
+    "explanation": "\"A more realistic future may combine several\".",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "the-future-of-protein-2",
+  "title": "True / False / Not given",
+  "skill": "reading",
+  "format": "tfng",
+  "level": "B2+",
+  "topics": [
+   "food-nutrition"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "the-future-of-protein"
+  },
+  "passageRef": "the-future-of-protein",
+  "instructions": "Do the statements agree with the information in the text?",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "Demand for meat usually falls as countries become richer.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph A: it tends to rise.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "Cultivated meat is approved for sale in most countries.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph C: only a few countries.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "Insects are efficient at turning feed into protein.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph D.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "the-future-of-protein-3",
+  "title": "Summary completion",
+  "skill": "reading",
+  "format": "summary_completion",
+  "level": "B2+",
+  "topics": [
+   "food-nutrition"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "the-future-of-protein"
+  },
+  "passageRef": "the-future-of-protein",
+  "instructions": "Complete with ONE word from the text.",
+  "questions": [
+   {
+    "kind": "text",
+    "id": "q1",
+    "prompt": "Cattle produce ___, a greenhouse gas.",
+    "accepted": [
+     "methane"
+    ],
+    "explanation": "Paragraph A.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "prompt": "Insects may be easier to accept when ground into ___.",
+    "accepted": [
+     "flour"
+    ],
+    "explanation": "Paragraph D.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "who-owns-the-past-1",
+  "title": "Matching headings",
+  "skill": "reading",
+  "format": "matching_headings",
+  "level": "C1",
+  "topics": [
+   "history-heritage"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "who-owns-the-past"
+  },
+  "passageRef": "who-owns-the-past",
+  "instructions": "Choose the correct heading for paragraphs B–E.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "Paragraph B",
+    "options": [
+     "i. Why returning objects can be complicated",
+     "ii. A change of policy in recent years",
+     "iii. Traditional reasons for keeping collections",
+     "iv. Objections to the museums' position",
+     "v. The cost of running a museum",
+     "vi. A new national law"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph B gives the legal and universal-museum arguments.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "Paragraph C",
+    "options": [
+     "i. Why returning objects can be complicated",
+     "ii. A change of policy in recent years",
+     "iii. Traditional reasons for keeping collections",
+     "iv. Objections to the museums' position",
+     "v. The cost of running a museum",
+     "vi. A new national law"
+    ],
+    "answer": 3,
+    "explanation": "Critics find neither argument convincing.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "Paragraph D",
+    "options": [
+     "i. Why returning objects can be complicated",
+     "ii. A change of policy in recent years",
+     "iii. Traditional reasons for keeping collections",
+     "iv. Objections to the museums' position",
+     "v. The cost of running a museum",
+     "vi. A new national law"
+    ],
+    "answer": 1,
+    "explanation": "\"In recent years, the debate has shifted.\"",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "prompt": "Paragraph E",
+    "options": [
+     "i. Why returning objects can be complicated",
+     "ii. A change of policy in recent years",
+     "iii. Traditional reasons for keeping collections",
+     "iv. Objections to the museums' position",
+     "v. The cost of running a museum",
+     "vi. A new national law"
+    ],
+    "answer": 0,
+    "explanation": "\"Return, however, is rarely simple.\"",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "who-owns-the-past-2",
+  "title": "True / False / Not given",
+  "skill": "reading",
+  "format": "tfng",
+  "level": "C1",
+  "topics": [
+   "history-heritage"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "who-owns-the-past"
+  },
+  "passageRef": "who-owns-the-past",
+  "instructions": "Do the statements agree with the information in the text?",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "All objects in European museums were taken by force.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph A: some were bought or exchanged fairly.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "Some national laws prevent museums from giving objects away.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph B.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "Most returned objects are now kept in national museums in their country of origin.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 2,
+    "explanation": "The text does not say where returned objects are kept.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "prompt": "Some countries have chosen loans instead of permanent return.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph E.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "who-owns-the-past-3",
+  "title": "Sentence completion",
+  "skill": "reading",
+  "format": "sentence_completion",
+  "level": "C1",
+  "topics": [
+   "history-heritage"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "who-owns-the-past"
+  },
+  "passageRef": "who-owns-the-past",
+  "instructions": "Complete the sentences with NO MORE THAN TWO WORDS from the text.",
+  "questions": [
+   {
+    "kind": "text",
+    "id": "q1",
+    "prompt": "Research into an object's ___ traces how it arrived in a collection.",
+    "accepted": [
+     "provenance"
+    ],
+    "explanation": "Paragraph D.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "prompt": "The writer concludes that museums are not ___ spaces.",
+    "accepted": [
+     "neutral"
+    ],
+    "explanation": "Paragraph F.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "why-false-news-spreads-1",
+  "title": "True / False / Not given",
+  "skill": "reading",
+  "format": "tfng",
+  "level": "C1",
+  "topics": [
+   "communication-media"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "why-false-news-spreads"
+  },
+  "passageRef": "why-false-news-spreads",
+  "instructions": "Do the statements agree with the information in the text?",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "The 2018 study found automated accounts were the main cause of false news spreading.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph A: it was driven mainly by people.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "Repeating a claim can make people more likely to believe it.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph C.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "Labels on disputed posts always reduce attention to them.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph D: they may even increase attention.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "prompt": "Prebunking has been adopted by all major platforms.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 2,
+    "explanation": "Not stated.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "why-false-news-spreads-2",
+  "title": "Matching headings",
+  "skill": "reading",
+  "format": "matching_headings",
+  "level": "C1",
+  "topics": [
+   "communication-media"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "why-false-news-spreads"
+  },
+  "passageRef": "why-false-news-spreads",
+  "instructions": "Choose the correct heading for paragraphs B–E.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "Paragraph B",
+    "options": [
+     "i. Platform responses and their weaknesses",
+     "ii. The appeal of surprise and emotion",
+     "iii. Changing behaviour before sharing",
+     "iv. How our beliefs filter information",
+     "v. Why newspapers are more reliable",
+     "vi. A ban on social networks"
+    ],
+    "answer": 1,
+    "explanation": "Novelty and strong emotions.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "Paragraph C",
+    "options": [
+     "i. Platform responses and their weaknesses",
+     "ii. The appeal of surprise and emotion",
+     "iii. Changing behaviour before sharing",
+     "iv. How our beliefs filter information",
+     "v. Why newspapers are more reliable",
+     "vi. A ban on social networks"
+    ],
+    "answer": 3,
+    "explanation": "Confirmation bias and repetition.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "Paragraph D",
+    "options": [
+     "i. Platform responses and their weaknesses",
+     "ii. The appeal of surprise and emotion",
+     "iii. Changing behaviour before sharing",
+     "iv. How our beliefs filter information",
+     "v. Why newspapers are more reliable",
+     "vi. A ban on social networks"
+    ],
+    "answer": 0,
+    "explanation": "Labels, visibility, removal, each with drawbacks.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "prompt": "Paragraph E",
+    "options": [
+     "i. Platform responses and their weaknesses",
+     "ii. The appeal of surprise and emotion",
+     "iii. Changing behaviour before sharing",
+     "iv. How our beliefs filter information",
+     "v. Why newspapers are more reliable",
+     "vi. A ban on social networks"
+    ],
+    "answer": 2,
+    "explanation": "Asking users to think before sharing; prebunking.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "why-false-news-spreads-3",
+  "title": "Short-answer questions",
+  "skill": "reading",
+  "format": "short_answer",
+  "level": "C1",
+  "topics": [
+   "communication-media"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "why-false-news-spreads"
+  },
+  "passageRef": "why-false-news-spreads",
+  "instructions": "Answer with NO MORE THAN TWO WORDS from the text.",
+  "questions": [
+   {
+    "kind": "text",
+    "id": "q1",
+    "prompt": "What tendency makes people believe claims that fit their views?",
+    "accepted": [
+     "confirmation bias"
+    ],
+    "explanation": "Paragraph C.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "prompt": "According to the writer, technology has mainly changed false information's speed and what?",
+    "accepted": [
+     "scale"
+    ],
+    "explanation": "Paragraph F.",
+    "theoryAnchor": null
+   }
+  ]
+ }
+]

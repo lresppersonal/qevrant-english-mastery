@@ -27,18 +27,20 @@ import Speaking from "@/app/(app)/speaking/page";
 import SpeakingTask from "@/app/(app)/speaking/[slug]/page";
 import Writing from "@/app/(app)/writing/page";
 import WritingTask from "@/app/(app)/writing/[slug]/page";
-import Ielts from "@/app/(app)/ielts/page";
 import Review from "@/app/(app)/review/page";
 import Library from "@/app/(app)/library/page";
 import Progress from "@/app/(app)/progress/page";
 import Settings from "@/app/(app)/settings/page";
 import Onboarding from "@/app/(app)/onboarding/page";
 import Practice from "@/app/(app)/practice/[slug]/page";
+import GrammarPracticeHub from "@/app/(app)/grammar/practice/page";
+import LessonPracticePage from "@/app/(app)/grammar/[slug]/practice/page";
+import ThemeVocabPage from "@/app/(app)/vocabulary/topics/[slug]/page";
 
 type Page = (p: { params: Promise<{ slug: string }> }) => ReactNode | Promise<ReactNode>;
 const APP: Record<string, Page> = {
   dashboard: Dashboard as Page, learn: Learn as Page, topics: Topics as Page, grammar: Grammar as Page, vocabulary: Vocabulary as Page,
-  reading: Reading as Page, listening: Listening as Page, speaking: Speaking as Page, writing: Writing as Page, ielts: Ielts as Page,
+  reading: Reading as Page, listening: Listening as Page, speaking: Speaking as Page, writing: Writing as Page,
   review: Review as Page, library: Library as Page, progress: Progress as Page, settings: Settings as Page, onboarding: Onboarding as Page,
 };
 const DETAIL: Record<string, Page> = {
@@ -62,10 +64,13 @@ function Resolve({ page, slug }: { page: Page; slug: string }) {
 
 function App() {
   const route = useRoute();
-  const [, a, b] = route.split("/");
+  const [, a, b, c] = route.split("/");
   if (route === "/") return <Landing />;
   if (a === "privacy") return <Privacy />;
   if (a === "sign-in" || a === "sign-up") return <AuthLayout>{a === "sign-in" ? <SignIn /> : <SignUp />}</AuthLayout>;
+  if (a === "grammar" && b === "practice" && !c) return <AppShell><GrammarPracticeHub /></AppShell>;
+  if (a === "grammar" && b && c === "practice") return <AppShell><Resolve key={route} page={LessonPracticePage as Page} slug={b} /></AppShell>;
+  if (a === "vocabulary" && b === "topics" && c) return <AppShell><Resolve key={route} page={ThemeVocabPage as Page} slug={c} /></AppShell>;
   if (b) {
     const page = DETAIL[a];
     return <AppShell>{page ? <Resolve key={route} page={page} slug={b} /> : <NotFound />}</AppShell>;

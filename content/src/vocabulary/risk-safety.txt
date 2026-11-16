@@ -1,0 +1,18 @@
+# Risk, Chance and Safety
+hazard | n | noun | B2+ | neutral | Danger | something that could be dangerous | опасность, угроза | Loose cables are a fire hazard. | health/fire/safety hazard; pose a hazard | danger; risk | health-medicine
+precaution | n | noun | B2+ | neutral | Safety | an action taken to prevent something bad | мера предосторожности | Take precautions against sunburn. | take precautions; safety precautions; as a precaution | safeguard |
+vulnerable | adj | adjective | B2+ | neutral | Danger | easily harmed or attacked | уязвимый | Older people are more vulnerable to heatstroke. | vulnerable groups; vulnerable to | at risk; defenceless | society-politics
+reckless | adj | adjective | B2+ | neutral | Risk-taking | not caring about danger or consequences | безрассудный | He was fined for reckless driving. | reckless driving/behaviour | careless; rash | transport-movement
+calculated risk | coll | noun phrase | C1 | neutral | Risk-taking | a risk taken after thinking carefully about the possible results | обдуманный риск | Launching in winter was a calculated risk. | take a calculated risk | | business-finance
+likelihood | n+ac | noun | C1 | formal | Chance | how probable something is | вероятность | There's little likelihood of rain today. | in all likelihood; the likelihood of | probability; chance | science-technology
+coincidence | n | noun | B2 | neutral | Chance | two things happening at the same time by chance, in a surprising way | совпадение | What a coincidence to meet you here! | by coincidence; pure coincidence | chance; fluke |
+fluke | n | noun | C1 | informal | Chance | something that happens by luck, not skill | случайность, чистое везение | Their win was a fluke. | | stroke of luck | sports-fitness
+odds | n | noun (plural) | C1 | neutral | Chance | the probability that something will happen | шансы | The odds of winning the lottery are tiny. | against all odds; the odds are | chances; probability |
+narrow escape | coll | noun phrase | B2+ | neutral | Accidents | a situation in which you only just avoid danger | спасение чудом | The climbers had a narrow escape. | have a narrow escape | close call; near miss |
+casualty | n | noun | C1 | formal | Accidents | a person injured or killed in an accident or war | пострадавший, жертва | There were no casualties in the fire. | heavy casualties; casualty figures | victim | health-medicine
+play it safe | idiom | verb phrase | B2+ | informal | Risk-taking | to avoid risks | перестраховаться, не рисковать | I'll play it safe and leave early. | | be cautious |
+stick your neck out | idiom | verb phrase | C1 | informal | Risk-taking | to take a risk by saying or doing something others may criticise | рисковать (высказав мнение) | She stuck her neck out to defend the plan. | | take a risk | work-careers
+on the safe side | fx | prepositional phrase | B2+ | neutral | Safety | being careful to avoid risk | на всякий случай, для надёжности | Take an umbrella, just to be on the safe side. | just to be on the safe side | as a precaution |
+@family risk (n, v); risky (adj); riskiness (n); at-risk (adj)
+@family danger (n); dangerous (adj); endanger (v); endangered (adj)
+@distinct chance vs opportunity vs possibility :: *Possibility* is something that might happen. *Chance* is likelihood (*a good chance of rain*) or luck. An *opportunity* is a favourable moment to do something (*a job opportunity*).

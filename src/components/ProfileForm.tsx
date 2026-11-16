@@ -6,7 +6,7 @@ import type { Goal } from "@/lib/store/types";
 import { LEVELS, type Level } from "@/lib/content/schema";
 
 const GOALS: { id: Goal; label: string; hint: string }[] = [
-  { id: "ielts", label: "IELTS Academic", hint: "Prepare for the test" },
+  { id: "ielts", label: "Exam preparation", hint: "For example IELTS Academic" },
   { id: "university", label: "University study", hint: "Study or research in English" },
   { id: "professional", label: "Professional English", hint: "Communicate at work" },
   { id: "general", label: "General mastery", hint: "Become a confident C1/C2 user" },

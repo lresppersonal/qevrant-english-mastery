@@ -11,7 +11,9 @@
     "e2e": "playwright test",
     "content:check": "tsx scripts/validate-content.ts",
     "contrast": "tsx scripts/check-contrast.ts",
-    "build:demo": "vite build --config spa/vite.config.mts"
+    "build:demo": "vite build --config spa/vite.config.mts",
+    "content:build": "tsx scripts/build-content.ts",
+    "prebuild": "npm run content:build && npm run content:check"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.9.0",

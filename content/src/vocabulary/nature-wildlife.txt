@@ -1,0 +1,25 @@
+# Nature and Wildlife
+habitat | n | noun | B2 | neutral | Ecosystems | the natural home of an animal or plant | среда обитания | Rising seas are destroying the birds' nesting habitat. | natural habitat; habitat loss/destruction | environment; home | environment
+endangered | adj | adjective | B2 | neutral | Conservation | at risk of no longer existing | находящийся под угрозой исчезновения | The snow leopard is an endangered species. | endangered species/animals; critically endangered | threatened; at risk |
+extinct | adj | adjective | B2 | neutral | Conservation | no longer existing | вымерший | Dodos became extinct in the seventeenth century. | become/go extinct; extinct species | died out; vanished | history-heritage
+die out | pv | phrasal verb | B2 | neutral | Conservation | to stop existing completely | вымирать, исчезать | Many local languages are dying out too. |  | become extinct; disappear | arts-culture
+predator | n | noun | B2 | neutral | Animals | an animal that kills and eats other animals | хищник | Foxes are the main predators of rabbits here. | natural predator; top predator | hunter |
+prey | n | noun | B2+ | neutral | Animals | an animal hunted and eaten by another | добыча, жертва | Owls hunt their prey at night. | fall prey to; prey on | quarry |
+species | n | noun (singular and plural) | B2 | neutral | Animals | a group of animals or plants of the same kind that can breed together | вид | Over two hundred species of bird visit the lake. | endangered/rare species; native species | kind; type | science-technology
+native | adj | adjective | B2 | neutral | Ecosystems | growing or living naturally in a place, not brought from elsewhere | местный, коренной | Native plants need less water than imported ones. | native species; native to | indigenous |
+invasive | adj | adjective | C1 | neutral | Ecosystems | (of a plant or animal) spreading quickly and harming local species | инвазивный | Invasive weeds are choking the river. | invasive species | alien; non-native | environment
+ecosystem | n | noun | B2 | neutral | Ecosystems | all the living things in an area and the way they affect each other | экосистема | Removing wolves changed the whole ecosystem of the valley. | fragile ecosystem; marine ecosystem | environment | environment
+conservation | n | noun | B2 | neutral | Conservation | the protection of plants, animals and natural areas | охрана природы, сохранение | Tourism pays for the park's conservation work. | wildlife conservation; conservation area/project | preservation; protection | environment
+poaching | n | noun | B2+ | neutral | Conservation | illegally catching or killing animals | браконьерство | Poaching has halved the elephant population. | illegal poaching; crack down on poaching |  | crime-law
+captivity | n | noun | B2+ | neutral | Animals | the state of being kept in a cage or enclosed area | неволя | Some animals rarely breed in captivity. | in captivity; bred in captivity | confinement |
+migrate | v | verb | B2 | neutral | Animals | (of birds or animals) to travel to a different place for part of the year | мигрировать | Swallows migrate south in autumn. | migrate south/north; migrating birds | move | transport-movement
+thrive | v | verb | C1 | neutral | Ecosystems | to grow or develop very well | процветать, хорошо расти | Bamboo thrives in wet, warm conditions. | thrive in; thrive on | flourish; prosper |
+rugged | adj | adjective | C1 | neutral | Landscape | (of land) rough, rocky and uneven | суровый, скалистый | The rugged coastline attracts experienced walkers. | rugged terrain/landscape/coastline | rough; craggy | travel-tourism
+barren | adj | adjective | C1 | neutral | Landscape | (of land) with very few or no plants | бесплодный, пустынный | After the fire, the hills were barren for years. | barren landscape/land | bare; desolate |
+lush | adj | adjective | C1 | neutral | Landscape | (of plants) growing thickly and healthily | пышный, буйный (о растительности) | Lush green valleys surround the village. | lush vegetation/forest/garden | verdant; abundant | travel-tourism
+natural disaster | coll | noun phrase | B2 | neutral | Forces of nature | a sudden event caused by nature that causes great damage | стихийное бедствие | Earthquakes are the deadliest natural disaster in the region. | strike/hit (of a disaster) | catastrophe | risk-safety
+erupt | v | verb | B2+ | neutral | Forces of nature | (of a volcano) to throw out smoke, fire and lava suddenly | извергаться | The volcano last erupted in 1991. | erupt violently | explode |
+@family conserve (v); conservation (n); conservationist (n); conservative (adj, different meaning)
+@family habitat (n); inhabit (v); inhabitant (n); uninhabited (adj); habitable (adj)
+@distinct uninhabited vs inhabited vs inhabitable :: *Inhabited* means people live there; *uninhabited* means nobody lives there; *uninhabitable* means people cannot live there. Note: *inhabitable* means the same as *habitable* (people can live there), not the opposite.
+@distinct wildlife vs nature :: *Nature* is the whole natural world; *wildlife* refers specifically to animals (and sometimes plants) living wild.

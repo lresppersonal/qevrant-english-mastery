@@ -39,7 +39,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  const active = (href: string) => path === href || path.startsWith(href + "/");
+  const allHrefs = [...NAV.flatMap((g) => g.items.map((i) => i.href)), ...NAV_FOOTER.map((i) => i.href)];
+  const current = path.startsWith("/grammar/") && path.endsWith("/practice") ? "/grammar/practice"
+    : allHrefs.filter((h) => path === h || path.startsWith(h + "/")).sort((a, b) => b.length - a.length)[0];
+  const active = (href: string) => href === current;
 
   return (
     <div className="min-h-dvh md:grid md:grid-cols-[264px_1fr]">

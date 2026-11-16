@@ -23,6 +23,9 @@ export function SenseBlock({ item, sense, context, sourceRef, headingLevel = 3 }
       {sense.collocations.length > 0 && (
         <p className="text-[15px]"><span className="font-semibold text-muted">Collocations: </span>{sense.collocations.join(" · ")}</p>
       )}
+      {sense.synonyms.length > 0 && (
+        <p className="text-[15px]"><span className="font-semibold text-muted">Synonyms: </span>{sense.synonyms.join(", ")}</p>
+      )}
     </div>
   );
 }

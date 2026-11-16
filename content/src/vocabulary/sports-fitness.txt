@@ -1,0 +1,23 @@
+# Sports and Fitness
+stamina | n | noun | B2+ | neutral | Fitness | the physical or mental strength to continue doing something for a long time | выносливость | Marathon runners need enormous stamina. | build up stamina; physical stamina | endurance | health-medicine
+work out | pv | phrasal verb | B2 | neutral | Fitness | to exercise to improve strength or fitness | тренироваться | I work out at the gym three times a week. | work out regularly | exercise; train |
+warm up | pv | phrasal verb | B2 | neutral | Fitness | to prepare your body for exercise with gentle movement | разминаться | Always warm up before a run. | warm up properly | stretch |
+injury | n | noun | B2 | neutral | Injury | physical harm to the body | травма | A knee injury kept him out for a season. | sustain/suffer an injury; serious injury | wound | health-medicine
+sprain | v | verb / noun | B2+ | neutral | Injury | to injure a joint by twisting it | растянуть (связки) | She sprained her ankle on the stairs. | sprain an ankle/wrist | twist | health-medicine
+spectator | n | noun | B2 | neutral | Events | a person who watches an event, especially sport | зритель | Fifty thousand spectators filled the stadium. | | onlooker; fan | hobbies-leisure
+opponent | n | noun | B2 | neutral | Competition | a person or team you compete against | соперник, противник | She beat her opponent in straight sets. | face/defeat an opponent | rival; competitor |
+tournament | n | noun | B2 | neutral | Competition | a competition with many players or teams and several rounds | турнир | The tournament attracts the world's best players. | knockout tournament; win a tournament | championship; contest |
+referee | n | noun | B2 | neutral | Competition | the official who makes sure players obey the rules | судья, рефери | The referee sent off two players. | | umpire; official |
+draw | n | noun / verb | B2 | neutral | Competition | a result in which both sides have the same score | ничья | The match ended in a 1–1 draw. | end in a draw; goalless draw | tie |
+performance-enhancing | adj | adjective | C1 | neutral | Ethics | (of drugs) used illegally to improve sporting performance | повышающий результаты (о допинге) | He was banned for using performance-enhancing drugs. | performance-enhancing drugs/substances | doping | crime-law
+sportsmanship | n | noun | C1 | neutral | Ethics | fair and generous behaviour in sport | спортивное поведение, честная игра | The fans applauded her sportsmanship. | good sportsmanship | fair play | relationships-personality
+amateur | adj | adjective / noun | B2 | neutral | Participation | doing an activity for pleasure, not money | любительский; любитель | He plays in an amateur football league. | amateur athlete/league | non-professional; recreational | hobbies-leisure
+grassroots sport | coll | noun phrase | C1 | neutral | Participation | sport at a local, community level rather than professional | массовый спорт | The money will fund grassroots sport in schools. | invest in grassroots sport | community sport |
+take up | pv | phrasal verb | B2 | neutral | Participation | to start doing a new activity | заняться (чем-л.) | She took up rowing at fifty. | take up a sport/hobby | start | hobbies-leisure
+a level playing field | idiom | noun phrase | C1 | neutral | Ethics | a situation that is fair for everyone involved | равные условия | Salary caps are meant to create a level playing field. | create a level playing field | fairness | business-finance
+go the distance | idiom | verb phrase | C1 | informal | Competition | to continue until the end of something difficult | дойти до конца, выдержать | Few people expected him to go the distance. | | persevere |
+@family compete (v); competition (n); competitor (n); competitive (adj); competitiveness (n)
+@family athlete (n); athletic (adj); athletics (n); athleticism (n)
+@distinct play vs do vs go :: Use *play* with ball games and competitive games (*play tennis*), *go* with activities ending in -ing (*go swimming*), and *do* with other activities, especially individual ones (*do yoga*, *do judo*).
+@distinct beat vs win :: You *win* a game, match or prize; you *beat* an opponent. ~~We won them~~ is wrong.
+vigorously | adv | adverb | C1 | neutral | Fitness | with a lot of energy and effort | энергично, интенсивно | Exercise vigorously for at least twenty minutes. | exercise/defend vigorously | energetically; intensely | health-medicine

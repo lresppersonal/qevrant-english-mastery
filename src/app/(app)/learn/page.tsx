@@ -5,7 +5,7 @@ import { PageHeader } from "@/components/ui";
 export const metadata = { title: "Learn" };
 
 export default function Learn() {
-  const groups = NAV.filter((g) => g.label === "Learn" || g.label === "Pathways");
+  const groups = NAV.filter((g) => g.label === "Learn");
   return (
     <>
       <PageHeader title="Learn" intro="Choose a module, or start from a topic to see everything about it in one place." />

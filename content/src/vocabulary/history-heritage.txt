@@ -1,0 +1,20 @@
+# History and Heritage
+heritage | n | noun | B2+ | neutral | Heritage | buildings, traditions and culture passed down from the past | наследие | The old town is part of our national heritage. | cultural/national heritage; heritage site | legacy; inheritance | arts-culture
+legacy | n | noun | C1 | neutral | Heritage | something that exists as a result of past events or people | наследие, наследство | The empire left a legacy of roads and laws. | leave a legacy; lasting legacy | heritage; consequence |
+preserve | v | verb | B2+ | neutral | Heritage | to keep something in its original state | сохранять | Volunteers help preserve the medieval walls. | preserve a building/tradition | conserve; protect |
+restoration | n | noun | B2+ | neutral | Heritage | the work of repairing something old to its original condition | реставрация | The cathedral's restoration took fifteen years. | restoration work/project | renovation; repair | architecture-design
+artefact | n | noun | C1 | academic | Archaeology | an object made by people long ago, of historical interest | артефакт | Archaeologists found artefacts dating back 3,000 years. | ancient artefacts | relic; object |
+excavation | n | noun | C1 | academic | Archaeology | the digging up of buried objects to find out about the past | раскопки | The excavation revealed a Roman villa. | archaeological excavation | dig | science-technology
+ancestor | n | noun | B2 | neutral | The past | a family member who lived long ago | предок | My ancestors were farmers. | distant ancestors | forebear | relationships-personality
+era | n | noun | B2+ | neutral | The past | a period of time with particular characteristics | эпоха, эра | The digital era has changed how we communicate. | the Victorian era; end of an era | age; epoch |
+medieval | adj | adjective | B2 | neutral | The past | belonging to the Middle Ages (about 500–1500) | средневековый | The town still has its medieval walls. | medieval castle/town | | architecture-design
+colonial | adj | adjective | C1 | neutral | The past | connected with a country controlling another country | колониальный | The city's colonial past is visible in its architecture. | colonial rule/power/era | imperial | society-politics
+chronicle | v | verb / noun | C1 | formal | Recording history | to record events in the order they happened | описывать (в хронологическом порядке) | The diary chronicles life during the war. | | record; document |
+commemorate | v | verb | C1 | formal | Recording history | to remember an important event or person officially | отмечать, увековечивать память | A statue commemorates the miners who died. | commemorate the anniversary/victims | honour; memorialise |
+date back to | pv | phrasal verb | B2+ | neutral | The past | to have existed since a particular time | восходить к, датироваться | The tradition dates back to the 12th century. | | go back to; originate in |
+pass down | pv | phrasal verb | B2+ | neutral | Heritage | to give knowledge or objects to younger generations | передавать (из поколения в поколение) | The recipe was passed down from my grandmother. | pass down through generations | hand down | food-nutrition
+history repeats itself | fx | sentence | B2+ | neutral | The past | the same kinds of events happen again | история повторяется | Economists warn that history repeats itself. | | |
+turning point | coll | noun phrase | B2+ | neutral | The past | a time when an important change happens | поворотный момент | The battle was a turning point in the war. | mark a turning point | watershed |
+@family history (n); historian (n); historic (adj); historical (adj); historically (adv); prehistoric (adj)
+@family preserve (v); preservation (n); preservative (n); preserved (adj)
+@distinct antique vs ancient vs old-fashioned :: *Ancient* means extremely old, often thousands of years (*ancient Rome*). An *antique* is a valuable old object (furniture, jewellery). *Old-fashioned* means no longer modern or popular.

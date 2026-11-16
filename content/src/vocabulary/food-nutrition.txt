@@ -1,0 +1,21 @@
+# Food and Nutrition
+balanced diet | coll | noun phrase | B2 | neutral | Diet | a diet with the right amounts of different kinds of food | сбалансированное питание | A balanced diet includes plenty of vegetables. | eat/follow a balanced diet | healthy diet | health-medicine
+nutritious | adj | adjective | B2+ | neutral | Diet | (of food) containing substances the body needs | питательный | Lentils are cheap and nutritious. | nutritious meal/food | nourishing; wholesome | health-medicine
+processed food | coll | noun phrase | B2+ | neutral | Food industry | food changed by industrial methods, often with added salt, sugar or fat | полуфабрикаты, переработанные продукты | Processed food makes up half of many people's diet. | highly processed food | convenience food | health-medicine
+additive | n | noun | C1 | neutral | Food industry | a substance added to food to preserve it or improve taste or colour | пищевая добавка | The label lists several additives. | food additives; artificial additives | preservative |
+craving | n | noun | B2+ | neutral | Eating habits | a strong desire for a particular food | сильное желание, тяга | Pregnant women often have unusual cravings. | have a craving for | longing; yearning | psychology-behaviour
+binge | v | verb / noun | C1 | informal | Eating habits | to eat or drink too much in a short time | объедаться; переедание | She tends to binge on sweets when stressed. | binge on; binge eating/drinking | overindulge | health-medicine
+locally sourced | coll | adjective phrase | C1 | neutral | Food industry | produced near the place where it is sold or eaten | местного производства | The menu uses locally sourced ingredients. | locally sourced produce/ingredients | local | environment
+staple | n | noun / adjective | C1 | neutral | Diet | a basic food that is eaten regularly | основной продукт питания | Rice is the staple food of half the world. | staple diet/food | basic |
+bland | adj | adjective | B2+ | neutral | Taste | without much flavour | пресный, безвкусный | Hospital food is often bland. | bland food/taste | tasteless; insipid |
+savoury | adj | adjective | B2+ | neutral | Taste | salty or spicy rather than sweet | несладкий, солёный, пикантный | I prefer savoury snacks to sweet ones. | savoury dish/snack | salty |
+food security | coll+ac | noun phrase | C1 | academic | Food industry | reliable access to enough affordable, nutritious food | продовольственная безопасность | Climate change threatens food security. | ensure food security | | economics-globalisation
+food waste | coll | noun phrase | B2 | neutral | Food industry | food thrown away instead of being eaten | пищевые отходы | Supermarkets are trying to reduce food waste. | reduce food waste | | environment
+cut out | pv | phrasal verb | B2 | neutral | Diet | to stop eating or doing something | исключить (из рациона) | My doctor told me to cut out sugar. | cut out sugar/meat | eliminate; give up |
+whip up | pv | phrasal verb | C1 | informal | Cooking | to prepare a meal quickly | быстро приготовить, сварганить | She whipped up a pasta dish in ten minutes. | whip up a meal/snack | rustle up |
+a sweet tooth | idiom | noun phrase | B2+ | informal | Eating habits | a love of sweet food | сладкоежка (любовь к сладкому) | I've got a terrible sweet tooth. | have a sweet tooth | |
+food for thought | idiom | noun phrase | B2+ | neutral | Eating habits | something that makes you think seriously | пища для размышлений | The lecture gave us food for thought. | | | education
+@family nourish (v); nourishment (n); nutrition (n); nutritious (adj); malnutrition (n); malnourished (adj)
+@family taste (n, v); tasty (adj); tasteless (adj); tasteful (adj, = showing good style)
+@distinct tasty vs tasteful :: *Tasty* means having a good flavour. *Tasteful* means attractive and showing good judgement in style (*a tasteful interior*), not food.
+@distinct cook vs cooker vs chef :: A *cook* or *chef* is a person (*chef* = professional). A *cooker* is a machine for cooking. ~~My mother is a good cooker~~ is wrong.

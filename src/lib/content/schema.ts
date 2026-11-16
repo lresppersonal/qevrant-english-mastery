@@ -25,15 +25,15 @@ export const SourceRef = z.object({
   confidence: z.enum(["verified", "uncertain", "editorial"]),
 });
 
-// ---------- Topics ----------
-export const Topic = z.object({
+// ---------- Themes (the primary organising structure; CEFR is metadata) ----------
+export const Theme = z.object({
   slug,
   title: z.string(),
-  family: z.string(),
+  group: z.string(),
   summary: z.string(),
-  available: z.boolean(),
+  sources: z.array(z.string()),
 });
-export type Topic = z.infer<typeof Topic>;
+export type Theme = z.infer<typeof Theme>;
 
 // ---------- Rich text blocks ----------
 export const Block = z.discriminatedUnion("type", [
@@ -86,8 +86,10 @@ export const Sense = z.object({
   definition: z.string(),
   examples: z.array(z.string()).min(1),
   collocations: z.array(z.string()),
+  synonyms: z.array(z.string()).default([]),
   /** one entry per learner language; ru required for MVP (A7) */
   translations: z.object({ ru: z.string() }).catchall(z.string()),
+  /** theme slugs; the first is the primary theme, the rest are tags */
   topics: z.array(slug).min(1),
 });
 export type Sense = z.infer<typeof Sense>;
@@ -97,6 +99,9 @@ export const VocabItem = Meta.extend({
   slug,
   lemma: z.string(),
   kind: z.enum(["word", "collocation", "phrasal_verb", "idiom", "phrase"]),
+  /** lexical classification used inside a theme */
+  lexClass: z.enum(["noun", "verb", "adjective", "adverb", "collocation", "phrasal_verb", "idiom", "fixed_expression"]).optional(),
+  subtopic: z.string().optional(),
   pos: z.string(),
   ipa: z.string().optional(),
   family: z.array(z.object({ form: z.string(), pos: z.string() })).default([]),
@@ -104,6 +109,8 @@ export const VocabItem = Meta.extend({
   forms: z.array(z.string()).default([]),
   senses: z.array(Sense).min(1),
   sources: z.array(SourceRef),
+  /** which reference books contain this headword (checked automatically); empty = editorial addition */
+  attestedIn: z.array(z.string()).default([]),
 });
 export type VocabItem = z.infer<typeof VocabItem>;
 
@@ -113,6 +120,8 @@ export const Question = z.discriminatedUnion("kind", [
   z.object({
     kind: z.literal("choice"),
     id: slug,
+    format: z.string().optional(),
+    level: Level.optional(),
     prompt: z.string(),
     options: z.array(z.string()).min(2),
     answer: z.number().int().nonnegative(),
@@ -124,6 +133,8 @@ export const Question = z.discriminatedUnion("kind", [
   z.object({
     kind: z.literal("text"),
     id: slug,
+    format: z.string().optional(),
+    level: Level.optional(),
     prompt: z.string(),
     accepted: z.array(z.string()).min(1),
     explanation: z.string(),
@@ -139,13 +150,14 @@ export const Exercise = Meta.extend({
   slug,
   title: z.string(),
   skill: z.enum(["grammar", "vocabulary", "reading"]),
-  format: z.enum(["gap_fill", "multiple_choice", "matching", "tfng", "transformation"]),
+  format: z.enum(["gap_fill", "multiple_choice", "matching", "tfng", "transformation", "mixed",
+    "matching_headings", "matching_information", "sentence_completion", "summary_completion", "short_answer"]),
   level: Level,
   topics: z.array(slug),
   target: z.object({ type: z.enum(["lesson", "vocab_set", "text"]), ref: slug }),
   instructions: z.string(),
   passageRef: slug.optional(),
-  questions: z.array(Question).min(3),
+  questions: z.array(Question).min(2),
 });
 export type Exercise = z.infer<typeof Exercise>;
 
@@ -160,6 +172,12 @@ export const ReadingText = Meta.extend({
   minutes: z.number().int(),
   paragraphs: z.array(z.string()).min(3),
   exercises: z.array(slug),
+  /** theme slug used to file the text in the library */
+  category: slug.optional(),
+  keyVocabulary: z.array(z.object({ term: z.string(), definition: z.string(), ru: z.string(), sense: z.string().optional() })).default([]),
+  expressions: z.array(z.object({ phrase: z.string(), meaning: z.string() })).default([]),
+  critical: z.array(z.object({ question: z.string(), points: z.string() })).default([]),
+  origin: z.enum(["original"]).default("original"),
 });
 export type ReadingText = z.infer<typeof ReadingText>;
 
@@ -178,16 +196,37 @@ export const SpeakingPrompt = Meta.extend({
 });
 export type SpeakingPrompt = z.infer<typeof SpeakingPrompt>;
 
+export const ESSAY_TYPES = ["opinion", "discussion", "advantages_disadvantages", "problem_solution", "two_part", "positive_negative", "cause_effect", "cause_problem_solution"] as const;
+export const EssayType = z.enum(ESSAY_TYPES);
+export type EssayType = z.infer<typeof EssayType>;
+
 export const WritingPrompt = Meta.extend({
   slug,
   title: z.string(),
   level: Level,
-  topics: z.array(slug),
-  genre: z.enum(["opinion", "discussion", "problem_solution", "advantages_disadvantages", "two_part", "data_report"]),
+  /** theme slugs; the first is the main topic */
+  topics: z.array(slug).min(1),
+  genre: EssayType,
   prompt: z.string(),
   minWords: z.number().int(),
   suggestedMinutes: z.number().int(),
   guidance: z.array(z.string()),
-  usefulLanguage: z.array(z.string()),
+  /** sense ids from the vocabulary database */
+  usefulLanguage: z.array(z.string()).default([]),
+  /** suggested paragraph plan for this question */
+  plan: z.array(z.string()).default([]),
+  vocabulary: z.array(z.string()).default([]),
+  collocations: z.array(z.string()).default([]),
+  ideas: z.array(z.string()).default([]),
 });
+
+/** Shared guidance for each essay type. */
+export const EssayTypeGuide = z.object({
+  type: EssayType,
+  title: z.string(),
+  recognise: z.string(),
+  structure: z.array(z.string()),
+  linking: z.array(z.string()),
+});
+export type EssayTypeGuide = z.infer<typeof EssayTypeGuide>;
 export type WritingPrompt = z.infer<typeof WritingPrompt>;

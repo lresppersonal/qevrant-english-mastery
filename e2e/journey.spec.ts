@@ -24,26 +24,28 @@ test("new learner: onboard, study, answer, review the rule, save from text, revi
   // Onboarding
   await page.goto("/onboarding");
   await page.getByLabel("What should we call you?").fill("Aigerim");
-  await page.locator("#main").getByText("IELTS Academic", { exact: true }).click();
+  await page.locator("#main").getByText("Exam preparation", { exact: true }).click();
   await page.getByRole("radio", { name: /^C1/ }).check();
   await page.getByRole("button", { name: "Save and go to dashboard" }).click();
   await expect(page.getByRole("heading", { name: "Good to see you, Aigerim." })).toBeVisible();
   await expect(page.getByTestId("streak")).toContainText("0 days");
 
-  // Grammar: theory, then practice with a wrong answer and deep link back to the rule
+  // Grammar: theory and practice are separate pages; wrong answers link back to the exact rule
   await page.goto("/grammar/relative-clauses");
   await expect(page.getByRole("heading", { name: "What relative clauses do" })).toBeVisible();
-  await page.getByRole("tab", { name: "practice" }).click();
+  await page.getByRole("link", { name: /Practise this topic/ }).click();
+  await expect(page).toHaveURL(/\/grammar\/relative-clauses\/practice$/);
   await page.getByRole("radio", { name: /that/ }).first().click();
   await page.getByRole("button", { name: "Check" }).click();
   await expect(page.getByText("Not quite")).toBeVisible();
   await page.getByRole("link", { name: "Review the rule" }).click();
-  await expect(page).toHaveURL(/#form$/);
+  await expect(page).toHaveURL(/\/grammar\/relative-clauses#form$/);
   await expect(page.getByRole("heading", { name: "Form: choosing the relative word" })).toBeInViewport();
 
   // Finish the exercise (remaining answers correct)
-  await page.getByRole("tab", { name: "practice" }).click();
-  await expect(page.getByText("Not quite")).toBeVisible(); // exercise state survived the trip to Theory
+  await page.goto("/grammar/relative-clauses/practice");
+  await page.getByRole("radio", { name: /that/ }).first().click();
+  await page.getByRole("button", { name: "Check" }).click();
   await page.getByRole("button", { name: /Next/ }).click();
   const answers: Array<[string, string]> = [["choice", "The candidates who had relevant experience were interviewed."], ["text", "which"], ["text", "whose"], ["text", "whom"], ["choice", "where"], ["choice", "under which"], ["choice", "The essay I wrote was too long."], ["choice", "who"]];
   for (const [kind, a] of answers) {
@@ -118,9 +120,10 @@ test("speaking analysis API returns feedback and delivery metrics", async ({ req
 });
 
 test("every navigation item reaches a real page, with no serious accessibility violations in either theme", async ({ page }) => {
-  const paths = ["/", "/dashboard", "/topics", "/topics/education", "/grammar", "/grammar/nominal-relative-clauses", "/vocabulary", "/vocabulary/scholarship",
-    "/reading", "/reading/is-failure-the-best-teacher", "/listening", "/speaking", "/speaking/grades-and-learning", "/writing", "/writing/who-should-pay-for-university",
-    "/ielts", "/review", "/library", "/progress", "/settings", "/learn", "/sign-in"];
+  test.setTimeout(240_000);
+  const paths = ["/", "/dashboard", "/topics", "/topics/environment", "/grammar", "/grammar/conditionals-and-unreal-past", "/grammar/practice", "/grammar/modals-and-modality/practice",
+    "/vocabulary", "/vocabulary/topics/environment", "/vocabulary/scholarship", "/reading", "/reading/rewilding", "/listening", "/speaking", "/speaking/grades-and-learning",
+    "/writing", "/writing/gig-economy", "/review", "/library", "/progress", "/settings", "/learn", "/sign-in"];
   const problems: string[] = [];
   for (const theme of ["light", "dark"]) {
     await page.goto("/");
@@ -157,4 +160,51 @@ test.describe("mobile 375px", () => {
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);
     expect(overflow).toBe(false);
   });
+});
+
+test("vocabulary is organised by theme with lexical classes and CEFR filters", async ({ page }) => {
+  await page.goto("/vocabulary");
+  await page.getByRole("link", { name: /Environment and Climate/ }).click();
+  await expect(page).toHaveURL(/\/vocabulary\/topics\/environment$/);
+  await expect(page.getByTestId("theme-entries")).toContainText("detrimental");
+  await page.getByRole("tab", { name: /Phrasal verbs/ }).click();
+  await expect(page.getByTestId("theme-entries")).toContainText("phase out");
+  await expect(page.getByTestId("theme-entries")).not.toContainText("detrimental");
+  await page.getByRole("tab", { name: /^All/ }).click();
+  await page.getByRole("button", { name: "C1" }).click();
+  await expect(page.getByTestId("theme-entries")).toContainText("detrimental");
+  await expect(page.getByTestId("theme-entries")).not.toContainText("sustainable");
+  await page.getByRole("tab", { name: /Word formation/ }).click();
+  await expect(page.getByText("sustainability", { exact: true }).first()).toBeVisible();
+  await page.getByRole("tab", { name: /Synonyms/ }).click();
+  await expect(page.getByText("climate vs weather")).toBeVisible();
+});
+
+test("reading library filters and multi-task texts; essay bank by type", async ({ page }) => {
+  await page.goto("/reading");
+  await page.getByLabel("Topic").selectOption("environment");
+  await expect(page.getByTestId("reading-list")).toContainText("Letting nature take back control");
+  await page.getByRole("link", { name: /Letting nature take back control/ }).click();
+  await expect(page.getByText("Key vocabulary")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Matching information" })).toBeVisible();
+  await page.getByRole("button", { name: "Show points to consider" }).first().click();
+  await expect(page.getByText(/farmers' livelihoods/)).toBeVisible();
+
+  await page.goto("/writing");
+  await page.getByRole("tab", { name: /Cause, problem and solution/ }).click();
+  await expect(page.getByRole("heading", { name: /how to approach them/ })).toBeVisible();
+  await expect(page.getByTestId("essay-list")).toContainText("Plastic in the oceans");
+  await page.getByRole("link", { name: /Plastic in the oceans/ }).click();
+  await expect(page.getByText("Suggested plan")).toBeVisible();
+  await page.getByRole("button", { name: "Show ideas" }).click();
+  await expect(page.getByText(/International cooperation/)).toBeVisible();
+});
+
+test("the IELTS pathway is removed but Academic Writing remains", async ({ page }) => {
+  await page.goto("/dashboard");
+  const nav = page.getByRole("navigation", { name: "Main" }).first();
+  await expect(nav.getByText("IELTS Academic")).toHaveCount(0);
+  await expect(nav.getByRole("link", { name: "Academic Writing" })).toBeVisible();
+  await expect(nav.getByRole("link", { name: /Listening/ })).toBeVisible();
+  expect((await page.goto("/ielts"))?.status()).toBe(404);
 });
