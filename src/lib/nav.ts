@@ -1,4 +1,4 @@
-import {
+import { BookA,
   LayoutDashboard, BookOpenText, Library, Languages, Newspaper, Headphones, Mic, PenLine, Dumbbell,
   RotateCcw, BarChart3, Settings, Layers, type LucideIcon,
 } from "lucide-react";
@@ -15,6 +15,7 @@ export const NAV: NavGroup[] = [
       { href: "/grammar", label: "Grammar", icon: BookOpenText },
       { href: "/grammar/practice", label: "Grammar practice", icon: Dumbbell },
       { href: "/vocabulary", label: "Vocabulary", icon: Languages },
+      { href: "/dictionary", label: "Dictionary", icon: BookA },
       { href: "/reading", label: "Reading", icon: Newspaper },
       { href: "/listening", label: "Listening", icon: Headphones },
       { href: "/speaking", label: "Speaking", icon: Mic },

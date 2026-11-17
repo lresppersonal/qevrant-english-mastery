@@ -15,6 +15,11 @@ On the other hand, repeated failure without support can undermine confidence. Le
 
 In conclusion, failure is a powerful teacher, but only when it is followed by feedback and a second attempt.`;
 
+// Cookie choice made, so the first-visit banner doesn't cover the page in these tests (it has its own test).
+test.beforeEach(async ({ context }) => {
+  await context.addCookies([{ name: "em_consent", value: encodeURIComponent(JSON.stringify({ v: 1, preferences: true, analytics: false, at: "2026-11-17T00:00:00Z" })), url: "http://localhost:3100" }]);
+});
+
 async function axe(page: Page) {
   const r = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"]).analyze();
   return r.violations.filter((v) => v.impact === "serious" || v.impact === "critical").map((v) => `${v.id}: ${v.nodes.length} node(s) — ${v.nodes[0]?.target}`);
@@ -192,7 +197,7 @@ test("speaking API rejects unknown topics and over-long recordings", async ({ re
 test("every navigation item reaches a real page, with no serious accessibility violations in either theme", async ({ page }) => {
   test.setTimeout(240_000);
   const paths = ["/", "/dashboard", "/topics", "/topics/environment", "/grammar", "/grammar/conditionals-and-unreal-past", "/grammar/practice", "/grammar/modals-and-modality/practice",
-    "/vocabulary", "/vocabulary/topics/environment", "/vocabulary/scholarship", "/reading", "/reading/rewilding", "/listening", "/speaking", "/speaking/grades-and-learning",
+    "/vocabulary", "/vocabulary/topics/environment", "/vocabulary/scholarship", "/reading", "/reading/rewilding", "/dictionary", "/listening", "/speaking", "/speaking/grades-and-learning",
     "/writing", "/writing/gig-economy", "/review", "/library", "/progress", "/settings", "/learn", "/sign-in"];
   const problems: string[] = [];
   for (const theme of ["light", "dark"]) {

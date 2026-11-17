@@ -83,7 +83,12 @@ export interface WritingSubmission {
   secondsSpent: number | null;
   feedback: unknown;
   createdAt: string;
+  /** pending = saved, assessment running; failed = saved, assessment can be retried */
+  status?: "pending" | "assessed" | "failed";
+  error?: string | null;
 }
+
+export interface EssayDraft { promptSlug: string; body: string; updatedAt: string }
 
 export interface SpeakingAttempt {
   id: string;
@@ -150,6 +155,11 @@ export interface LearnerStore {
   addWritingLocal?(s: Omit<WritingSubmission, "id" | "createdAt">): Promise<WritingSubmission>;
   addSpeakingLocal?(s: Omit<SpeakingAttempt, "id" | "createdAt">): Promise<SpeakingAttempt>;
   deleteWriting(id: string): Promise<void>;
+  /** Demo mode only: update a locally stored submission (e.g. after a retried assessment). */
+  updateWritingLocal?(id: string, patch: Partial<Omit<WritingSubmission, "id">>): Promise<void>;
+  getDraft(promptSlug: string): Promise<EssayDraft | null>;
+  saveDraft(promptSlug: string, body: string): Promise<void>;
+  listDrafts(): Promise<EssayDraft[]>;
   deleteSpeaking(id: string): Promise<void>;
 
   exportAll(): Promise<Record<string, unknown>>;

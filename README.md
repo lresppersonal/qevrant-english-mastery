@@ -16,6 +16,13 @@ Content is written in compact formats in `content/src/` and compiled with `npm r
 
 **New to this? Start with [docs/LAUNCH-GUIDE.md](docs/LAUNCH-GUIDE.md)**: a step-by-step, non-technical guide to putting the app online, creating your account and keeping your data.
 
+## What's new (2026-11-17, second update)
+- Dictionary: every Reading word answers (built-in grammar/general lexicon of about 1,250 words + vocabulary), with hybrid lookup for any other word (Free Dictionary API + Claude), base forms, meaning in context and UK/US pronunciation. New **Dictionary** page.
+- Academic Writing: drafts autosave (device + account), essays are saved before assessment, failed assessments keep the essay and can be retried, duplicate submissions are prevented, timeouts and errors are explained. Fixed: the "Couldn't reach the server" message (see docs/LAUNCH-GUIDE.md §8).
+- Speaking: shared microphone handling with specific messages; Settings ▸ Privacy and permissions (permission status, browser prompt, 4-second test recording, unblock steps).
+- Cookie consent banner and settings (essential / preferences / analytics), privacy page updated.
+- Migration 4 (`essay_drafts`, `dictionary_cache`, submission status and request id).
+
 ## What's new (2026-11-17)
 - Speaking studio: random topics (161 prompts, 16 categories, B2–C2), 1- and 2-minute modes with automatic prep/speaking timers, pause/resume/restart, microphone error handling.
 - AI feedback: estimated IELTS-style band ranges per criterion (educational estimates), detailed corrections, collocations, repetition, argument/paragraph advice, corrected essay; speaking topic relevance and "fine in speech" notes.

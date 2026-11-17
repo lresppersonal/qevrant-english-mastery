@@ -1,0 +1,291 @@
+# Core lexicon: everyday grammar words and common expressions (original content).
+# word | part of speech | Russian | definition | example | usage note | related forms (;)
+## Determiners and quantifiers
+a | indefinite article | неопределённый артикль (не переводится); один, какой-то | used before a singular countable noun that is mentioned for the first time or is not specific | She works at a university in Kazan. | Use "an" before a vowel sound: an hour, an idea, but a university. | an
+the | definite article | определённый артикль (не переводится); этот, тот самый | used before a noun when both speaker and listener know which one is meant | The report you sent was very useful. | No article with general plural or uncountable nouns: Education matters (not "The education matters"). |
+this | determiner, pronoun | этот, эта, это | the person or thing near you, or the one just mentioned | This approach has two main advantages. | Plural: these. Often used to refer back to a whole idea in academic writing. | these
+that | determiner, pronoun, conjunction | тот; что, который | the person or thing further away or already mentioned; also introduces a clause | Many people believe that cities are safer now. | "That" can often be omitted after verbs like say, think, believe. | those
+these | determiner, pronoun | эти | plural of this | These findings suggest a clear link. | | this
+those | determiner, pronoun | те | plural of that | Those who failed were offered a second attempt. | "those who" = the people who. | that
+some | determiner, pronoun | некоторые, несколько, немного | an amount or number that is not stated exactly | Some students prefer to study at night. | Usually in positive sentences; in questions when offering: Would you like some tea? | any
+any | determiner, pronoun | любой; какой-нибудь; нисколько | used in questions and negatives for an unspecified amount; also "it does not matter which" | Are there any questions? / Any student can apply. | | some; anybody; anything
+no | determiner | никакой, ни одного | not any | There is no evidence for this claim. | Stronger than "not any". | none
+none | pronoun | ни один, никто, ничего | not one or not any of a group | None of the candidates was suitable. | Can take singular or plural verb: None of them is/are ready. | no
+every | determiner | каждый, всякий | all the members of a group, seen one by one | Every student receives feedback. | Followed by a singular noun and verb. | each; everyone; everything
+each | determiner, pronoun | каждый (в отдельности) | every one of two or more things, considered separately | Each paragraph should have one main idea. | Each can refer to two items; every needs three or more. | every
+all | determiner, pronoun | все, весь | the whole number or amount of something | All the data were collected in 2025. | All + plural noun (general) or all the + noun (specific). |
+both | determiner, pronoun | оба, обе | the two people or things together | Both options have drawbacks. | both … and: Both teachers and students agreed. | either; neither
+either | determiner, pronoun, adverb | любой из двух; тоже (в отрицании) | one or the other of two; also "also" in negative sentences | You can choose either topic. / I don't like it either. | either … or for two alternatives. | neither; both
+neither | determiner, pronoun | ни один из двух | not one and not the other of two | Neither solution is perfect. | neither … nor: Neither the students nor the staff were informed. | either
+many | determiner, pronoun | много, многие | a large number of (used with plural countable nouns) | Many people believe that technology makes life easier. | Use many with countable nouns (many books) and much with uncountable nouns (much time). In positive sentences "a lot of" is more informal. Comparative: more, superlative: most. | more; most; much; a lot of
+much | determiner, pronoun, adverb | много; гораздо, намного | a large amount of (used with uncountable nouns); also "a lot" before comparatives | We don't have much time. / This is much better. | Mainly in questions and negatives; formal in positive sentences: Much research has been done. | more; most; many
+more | determiner, adverb | больше, более | a larger number or amount; used to form comparatives | More research is needed. / more expensive | Comparative of many and much. | many; much; most
+most | determiner, adverb | большинство; самый | the largest number or amount; used to form superlatives | Most experts agree. / the most important factor | "most people" (general) vs "most of the people" (specific group). | many; much; more
+few | determiner, pronoun | мало, немногие | not many (negative meaning) | Few students finished on time. | "a few" = some (positive): A few students finished early. | a few; fewer; little
+a few | determiner | несколько, немного | a small number of (positive meaning) | I have a few ideas. | Compare: few = hardly any. | few
+little | determiner, adjective | мало (неисчисл.); маленький | not much (with uncountable nouns); also small in size | There is little evidence of progress. | "a little" = some: a little time. | a little; less; least
+a little | determiner, adverb | немного | a small amount of; slightly | Add a little salt. / I'm a little tired. | | little
+less | determiner, adverb | меньше | a smaller amount (with uncountable nouns) | We should use less plastic. | Traditionally "fewer" with countable nouns: fewer cars, less traffic. | little; least; fewer
+fewer | determiner | меньше (с исчисляемыми) | a smaller number of | Fewer people smoke than before. | | few; less
+least | determiner, adverb | наименьший; меньше всего | the smallest amount; used to form negative superlatives | the least expensive option | at least = not less than: at least 250 words. | less; little
+several | determiner, pronoun | несколько | more than two but not many | Several studies have reached the same conclusion. | | a few
+enough | determiner, adverb | достаточно | as much or as many as needed | There isn't enough time. / Is it big enough? | Before nouns (enough money) but after adjectives (old enough). |
+another | determiner, pronoun | ещё один; другой | one more; a different one | Can I have another try? | another + singular noun; other + plural. | other
+other | determiner, adjective, pronoun | другой | different; additional; the rest | Other countries have tried this. | the other(s) = the remaining ones. | another; others
+such | determiner | такой | of this kind; to such a degree | Such measures are expensive. / It was such a good idea. | such + (a) + adjective + noun; so + adjective alone. | such as
+own | determiner, adjective | собственный | belonging to a particular person | She runs her own business. | Always after a possessive: my own, their own. |
+whole | adjective, noun | весь, целый | all of something | The whole class passed. | the whole + singular noun; all + plural. |
+various | adjective | различный, разный | several different | for various reasons | | variety
+certain | determiner, adjective | некоторый; определённый; уверенный | particular but not named; also sure | Certain groups are more at risk. / I'm certain. | | certainly
+plenty of | quantifier | много, полно | a large amount, more than enough | We have plenty of time. | Neutral/informal; positive sentences. |
+a lot of | quantifier | много | a large number or amount | A lot of people use public transport. | Informal; in essays prefer many, much, a large number of. | lots of
+## Pronouns
+it | pronoun | он, она, оно (о предмете); это | the thing already mentioned; also an "empty" subject | It is often argued that exams are unfair. | Common in academic phrases: It is clear that…, It seems that… | its
+its | possessive determiner | его, её (о предмете), свой | belonging to it | The company changed its policy. | Don't confuse with it's (= it is). | it
+they | pronoun | они; (он или она) | the people or things mentioned; also a single person whose gender is unknown | If a student is late, they miss the test. | Singular "they" is standard in modern English. | them; their; theirs; themselves
+their | possessive determiner | их, свой | belonging to them | Students should check their work. | Don't confuse with there and they're. | they
+one | pronoun, number | один; (обобщённо) человек | people in general (formal); also replaces a noun | One should always read the instructions. / I need a new one. | Generic "one" is very formal; "you" is more natural. | ones
+someone | pronoun | кто-то, кто-нибудь | a person who is not named | Someone left a bag here. | = somebody | anyone; everyone; no one
+anyone | pronoun | кто-нибудь; любой | any person | Has anyone seen my keys? / Anyone can learn this. | = anybody | someone
+everyone | pronoun | все, каждый | every person | Everyone has the right to education. | Singular verb: Everyone is… | everybody
+no one | pronoun | никто | not a single person | No one knows the answer. | Also written no-one; = nobody. |
+something | pronoun | что-то, что-нибудь | a thing that is not named | Something must be done. | | anything; everything; nothing
+anything | pronoun | что-нибудь; всё что угодно | any thing | Is there anything I can do? | | something
+everything | pronoun | всё | all things | Everything depends on funding. | Singular verb. |
+nothing | pronoun | ничего | not anything | Nothing has changed. | Not used with another negative: I know nothing / I don't know anything. |
+who | pronoun | кто; который | which person; also introduces a clause about a person | the researcher who led the study | | whom; whose; whoever
+whom | pronoun | кого, кому; которого | formal object form of who | the colleague to whom I reported | Mostly after prepositions in formal writing. | who
+whose | determiner, pronoun | чей; который (принадлежность) | belonging to which person or thing | a student whose essay won | Also used for things: a city whose population is growing. | who
+which | determiner, pronoun | который; какой | what one(s) from a group; introduces a clause about a thing | The method which they used was new. | Non-defining clauses need commas and "which", not "that". |
+what | pronoun, determiner | что; какой; то, что | which thing; the thing that | What matters most is practice. | "What" clauses add emphasis. | whatever
+whatever | pronoun, determiner | что бы ни; любой | anything at all; no matter what | Whatever you decide, I'll support you. | | what
+however | adverb | однако; как бы ни | used to add a contrasting point; also "in whatever way" | However, the results were mixed. / However hard I try… | As a linker it needs a comma and starts a new sentence or clause; it is not a conjunction (not "…, however it…"). |
+I | pronoun | я | the speaker or writer | I agree with this view. | Always a capital letter. Object form: me; possessive: my, mine. | me; my; mine; myself
+you | pronoun | ты, вы | the person or people being spoken to; also people in general | You need practice to improve. | Generic "you" is common in speech; in formal writing "people" or "one" may be better. | your; yours; yourself; yourselves
+he | pronoun | он | a male person already mentioned | He studied law. | Object form: him; possessive: his. | him; his; himself
+she | pronoun | она | a female person already mentioned | She runs a small company. | Object form: her; possessive: her, hers. | her; hers; herself
+we | pronoun | мы | the speaker together with others | We need clearer rules. | Object form: us; possessive: our, ours. | us; our; ours; ourselves
+myself | reflexive pronoun | себя, сам | used when the subject and object are the same person, or for emphasis | I taught myself to code. | Other forms: yourself, himself, herself, itself, ourselves, themselves. | yourself; himself; herself; itself; ourselves; themselves
+there | adverb, pronoun | там; (there is/are) есть, имеется | in that place; used to say that something exists | There are many reasons for this. | Don't confuse with their (possessive) and they're (they are). |
+here | adverb | здесь, сюда | in or to this place | Sign here. | |
+not | adverb | не | used to make a word, phrase or sentence negative | It is not cheap. | Contracted to n't: isn't, don't. |
+now | adverb | сейчас, теперь | at the present time | Prices are higher now. | | now that
+up | adverb, preposition | вверх, наверх | towards a higher place or level | Prices went up. | Very common in phrasal verbs: set up, give up, take up. |
+down | adverb, preposition | вниз | towards a lower place or level | Unemployment has come down. | Common in phrasal verbs: cut down, break down. |
+out | adverb | наружу, вне | away from the inside; not at home | She went out. | Common in phrasal verbs: find out, carry out, run out. | out of
+away | adverb | прочь, в сторону; на расстоянии | to or at another place; at a distance | two miles away | | 
+back | adverb, noun | назад, обратно; спина | to a previous place or state; the rear part of the body | Come back soon. | |
+nobody | pronoun | никто | no person | Nobody noticed. | = no one. |
+nowhere | adverb | нигде, никуда | not in or to any place | There is nowhere to park. | |
+elsewhere | adverb | в другом месте | in or to another place | Prices are lower elsewhere. | |
+wherever | conjunction | где бы ни, куда бы ни | in or to any place | Sit wherever you like. | |
+afterwards | adverb | потом, впоследствии | later, after an event | We had lunch afterwards. | AmE also afterward. |
+## Prepositions
+about | preposition, adverb | о, об; около, примерно | on the subject of; approximately | a book about climate / about 50 people | | around
+above | preposition, adverb | над; выше | higher than | above average | | below
+across | preposition | через; по всей | from one side to the other; in many parts of | across the country | | through
+after | preposition, conjunction | после | later than | after the lecture | after + -ing: after reading the text. | before
+against | preposition | против; о (опереться) | in opposition to; touching | arguments against the plan | | for
+along | preposition | вдоль, по | following the length of | along the river | | 
+among | preposition | среди, между (многими) | in a group of three or more | popular among young people | between for two; among for groups. | between
+around | preposition, adverb | вокруг; около | surrounding; approximately | around the world / around 10% | | about
+as | preposition, conjunction | как; в качестве; так как; когда | in the role of; because; while | She works as a nurse. / As it was late, we left. | "as" (role) vs "like" (similarity): as a teacher (I am one), like a teacher (similar to). | like
+at | preposition | в, на, у (точка) | used for a point in place or time | at the station / at 5 p.m. | at night, at the weekend (BrE), at the end of. |
+before | preposition, conjunction | до, перед | earlier than | before the exam | before + -ing: before submitting. | after
+behind | preposition | позади, за | at the back of | behind the building | | 
+below | preposition | ниже, под | lower than | below the national average | | above
+beneath | preposition | под, ниже | under (formal) | beneath the surface | | under
+beside | preposition | рядом с | next to | beside the window | Not the same as besides. | besides
+besides | preposition, adverb | кроме, помимо; к тому же | in addition to; also | Besides cost, there are safety issues. | | beside
+between | preposition | между | in the space or time separating two things; a relationship of two | the link between diet and health | | among
+beyond | preposition | за пределами, сверх | further than; outside the limits of | beyond our control | |
+by | preposition | у, около; к (сроку); посредством; (кем-то) | near; not later than; by means of; done by | by Friday / by bus / written by students | by + -ing for method: by working harder. |
+despite | preposition | несмотря на | without being affected by | Despite the rain, the event went ahead. | No "of": despite the rain (not "despite of"). Followed by a noun or -ing; for a clause use "despite the fact that". | in spite of; although
+during | preposition | во время, в течение | throughout or at some point in a period | during the summer | during + noun; while + clause. | while
+except | preposition | кроме, за исключением | not including | everyone except me | | apart from
+for | preposition | для; за; в течение | intended to be given to; because of; for a period | a gift for you / for two years | for + period, since + starting point. | since
+from | preposition | от, из, с | showing a starting point or origin | from 2010 to 2020 | |
+in | preposition | в, внутри; через (время) | inside; during a period; after a period | in London / in 2020 / in two weeks | |
+inside | preposition, adverb | внутри | in the inner part of | inside the building | | outside
+into | preposition | в (движение внутрь) | moving to the inside of; changing to | translate into Russian | | in
+like | preposition, verb | как, подобно; нравиться | similar to; for example | cities like Paris | Informal for "such as". As a verb: I like it. | as; unlike
+near | preposition, adjective | рядом, около | a short distance from | near the city centre | | nearly
+of | preposition | (родительный падеж); из | belonging to; part of; containing | the cost of living / a cup of tea | |
+off | preposition, adverb | с, от; выключенный | away from; not on | Get off the bus. / The lights are off. | |
+on | preposition | на; о; в (дни) | touching a surface; about; used with days | on the table / on Monday / a book on ethics | |
+out of | preposition | из; вне | moving from inside; from a group | out of the room / 9 out of 10 | |
+over | preposition, adverb | над; более; в течение | above; more than; during | over 50% / over the past decade | |
+past | preposition, adjective | мимо; после | going beyond; after | half past six / walk past the shop | |
+per | preposition | на, за, в (каждый) | for each | 50 km per hour | Formal; "a" is more common in speech: twice a day. |
+regarding | preposition | относительно, касательно | about, concerning (formal) | questions regarding the deadline | | concerning
+since | preposition, conjunction | с (момента); так как | from a point in the past until now; because | since 2015 / Since it was late, we left. | Needs the present perfect when it means "from then until now". | for
+than | preposition, conjunction | чем | used in comparisons | older than me / more than expected | |
+through | preposition | через, сквозь; благодаря | from one side to the other; by means of | through the tunnel / learn through practice | |
+throughout | preposition | на протяжении всего; по всему | during the whole of; in every part of | throughout the year / throughout Europe | Stronger than "during" or "in": it emphasises the whole period or area. | through; during
+to | preposition, infinitive marker | к, в, до; (частица инфинитива) | towards; as far as; used before verbs | go to school / want to learn | |
+towards | preposition | к, по направлению к; по отношению к | in the direction of; in relation to | attitudes towards immigration | BrE towards, AmE toward. | toward
+under | preposition | под; меньше | below; less than | under 18 / under pressure | | over
+unlike | preposition | в отличие от | different from | Unlike his brother, he enjoys maths. | | like
+until | preposition, conjunction | до (тех пор, пока) | up to a point in time | until Friday | Present tense for the future: until she arrives. | till; by
+upon | preposition | на; по (formal) | on (formal); immediately after | upon arrival | | on
+via | preposition | через | travelling through; by means of | via email | |
+with | preposition | с; при помощи | together with; using | with a friend / write with a pen | |
+within | preposition | в пределах, внутри; в течение | inside a limit of time, distance or an area | within two weeks / within the EU | "within a week" = before a week has passed. | without
+without | preposition | без | not having; not doing | without help / without saying a word | without + -ing. | with
+according to | preposition | согласно, по словам | as stated by | According to the report, prices rose. | Not used with your own opinion (not "according to me"). |
+because of | preposition | из-за | as a result of | because of the weather | because of + noun; because + clause. | because; due to
+due to | preposition | из-за, вследствие | caused by | The delay was due to fog. | Formal; often after the verb be. | because of; owing to
+owing to | preposition | из-за, благодаря | because of (formal) | owing to high demand | | due to
+in spite of | preposition | несмотря на | despite | In spite of the cost, they bought it. | = despite. | despite
+instead of | preposition | вместо | in place of | Use stairs instead of the lift. | instead of + -ing. | instead
+apart from | preposition | кроме, помимо | except for; in addition to | Apart from one error, it's perfect. | | except
+as well as | preposition, conjunction | а также, так же как | and also; in addition to | She speaks French as well as English. | | 
+in terms of | preposition | с точки зрения, в плане | regarding a particular aspect | in terms of cost | Useful in essays to focus on one aspect. |
+in addition to | preposition | в дополнение к, помимо | as well as | In addition to lectures, there are seminars. | | additionally
+rather than | preposition, conjunction | вместо того чтобы, а не | instead of | I'd walk rather than drive. | | instead of
+such as | preposition | такой как, например | for example | renewable sources such as wind and solar | Don't add "etc." after a such as list. |
+thanks to | preposition | благодаря | because of (usually positive) | thanks to new technology | | due to
+prior to | preposition | до, прежде чем | before (formal) | prior to the meeting | Formal; prefer "before" in everyday English. | before
+## Conjunctions and linkers
+and | conjunction | и | joins words, phrases or clauses | reading and writing | |
+but | conjunction | но | introduces a contrast | It's cheap but slow. | | however
+or | conjunction | или | introduces an alternative | tea or coffee | |
+nor | conjunction | ни; и не | and not | Neither he nor I knew. | After nor, invert: Nor did they reply. | neither
+so | conjunction, adverb | поэтому; так, настолько | therefore; to such a degree | It was late, so we left. / so good | so + adjective; such + noun. | so that
+yet | conjunction, adverb | однако; ещё (не) | but, nevertheless; up to now | simple yet effective / not finished yet | |
+because | conjunction | потому что | for the reason that | We stayed because it was raining. | because + clause; because of + noun. | because of
+although | conjunction | хотя | despite the fact that; used to introduce a contrast | Although the plan is expensive, it will save money in the long term. | Followed by a clause (subject + verb). Do not use "but" in the same sentence: not "Although…, but…". | though; even though; despite
+though | conjunction, adverb | хотя; однако | although; however (at the end) | Though it was hard, we finished. / It was hard, though. | More informal than although. | although
+even though | conjunction | хотя, даже несмотря на то что | despite the fact that (stronger than although) | Even though he was tired, he kept working. | | although
+even if | conjunction | даже если | whether or not | I'll go even if it rains. | Hypothetical; compare even though (fact). |
+while | conjunction | пока, в то время как; хотя | during the time that; whereas | while I was reading / While some agree, others do not. | | whilst; whereas
+whilst | conjunction | в то время как | while (formal, British) | | Common in British formal writing. | while
+whereas | conjunction | тогда как | used to compare two contrasting facts | Some cities grew, whereas others shrank. | Formal; good for comparisons. | while
+unless | conjunction | если не | except if | You can't enter unless you have a ticket. | Positive verb after unless: unless it rains (not "unless it doesn't rain"). Present tense for the future. | if
+if | conjunction | если; ли | on condition that; whether | If it rains, we'll stay. / I don't know if he's coming. | | whether; unless
+whether | conjunction | ли | used for alternatives or doubt | I'm not sure whether to go. | Use whether (not if) after prepositions and before to-infinitives. | if
+as long as | conjunction | при условии что, пока | only if; during the time that | You can stay as long as you're quiet. | | provided that
+provided that | conjunction | при условии что | on condition that | Provided that funding is available, the project will start. | Formal. | as long as
+once | conjunction, adverb | как только; однажды; один раз | as soon as; one time | Once you finish, call me. | |
+so that | conjunction | чтобы | in order that (purpose) | Speak clearly so that everyone can hear. | Often with can/could/will. | in order to
+in order to | conjunction | для того чтобы | with the purpose of | She saved money in order to travel. | Negative: in order not to. | so that
+in case | conjunction | на случай если | as a precaution | Take an umbrella in case it rains. | Not the same as "if". |
+when | conjunction, adverb | когда | at the time that | When I arrived, they had left. | Present tense for the future: when she arrives. |
+where | conjunction, adverb | где, куда | at or to the place that | the town where I grew up | |
+why | adverb | почему | for what reason | the reason why prices rose | |
+how | adverb | как | in what way; to what degree | how it works / how important | |
+as if | conjunction | как будто | in a way that suggests | He acted as if nothing had happened. | Often with past forms for unreal situations. | as though
+now that | conjunction | теперь, когда | because now | Now that I've finished, I can relax. | |
+given that | conjunction | учитывая, что | considering that | Given that time is short, we must act. | Useful in essays. |
+therefore | adverb | поэтому, следовательно | for that reason | The data are incomplete; therefore, no conclusion can be drawn. | Formal linker; not a conjunction. | thus; hence
+thus | adverb | таким образом, следовательно | as a result; in this way | Costs fell, thus making the product cheaper. | Formal. | therefore; hence
+hence | adverb | отсюда, следовательно | for this reason (formal) | The material is light, hence its popularity. | Often followed by a noun phrase. | therefore
+moreover | adverb | более того, кроме того | in addition (formal) | The plan is cheap. Moreover, it is quick. | | furthermore; in addition
+furthermore | adverb | кроме того, более того | in addition (formal) | Furthermore, the study ignored older users. | | moreover
+nevertheless | adverb | тем не менее | despite what was just said | It was risky. Nevertheless, they continued. | | nonetheless; however
+nonetheless | adverb | тем не менее | nevertheless | The results were small but nonetheless important. | | nevertheless
+meanwhile | adverb | тем временем; между тем | at the same time; in contrast | Prices rose. Meanwhile, wages stayed the same. | |
+otherwise | adverb | иначе, в противном случае | if not; in other ways | Hurry, otherwise you'll miss it. | |
+consequently | adverb | следовательно, в результате | as a result | Demand fell; consequently, prices dropped. | | therefore; as a result
+instead | adverb | вместо этого | as an alternative | He didn't call. Instead, he wrote. | | instead of
+also | adverb | также, тоже | in addition | She also teaches online. | Usually before the main verb, after be. | too; as well
+too | adverb | слишком; тоже | more than needed; also | too expensive / Me too. | "too" (also) usually at the end of a clause. | also
+indeed | adverb | действительно; более того | used to confirm or emphasise | It was, indeed, a success. | |
+namely | adverb | а именно | that is to say | two factors, namely cost and time | |
+similarly | adverb | аналогично, подобным образом | in a similar way | Similarly, younger users prefer apps. | | likewise
+overall | adverb, adjective | в целом; общий | in general; total | Overall, the policy worked. | Common to start a conclusion or a data summary. |
+whereby | adverb | посредством которого | by which (formal) | a system whereby users pay monthly | |
+## Adverbs of degree, frequency and stance
+very | adverb | очень | to a high degree | very important | Not with strong adjectives: not "very essential"; use absolutely/truly. In essays, try a more precise word (crucial, essential). |
+quite | adverb | довольно; вполне | fairly; completely (with strong adjectives) | quite good / quite right | Meaning depends on the adjective. |
+rather | adverb | довольно; скорее | to a certain degree; more exactly | rather difficult / I'd rather stay. | | rather than
+fairly | adverb | довольно, достаточно | to a moderate degree | fairly simple | |
+almost | adverb | почти | nearly but not completely | almost finished | | nearly
+nearly | adverb | почти | almost | nearly 40% | | almost
+hardly | adverb | едва, почти не | almost not | I could hardly hear. | Negative meaning; no "not". | barely; scarcely
+barely | adverb | едва, еле | only just; almost not | barely enough money | | hardly
+already | adverb | уже | before now or earlier than expected | I've already finished. | | yet; still
+still | adverb | всё ещё; тем не менее | continuing until now; nevertheless | She still lives there. | | already; yet
+just | adverb | только что; просто; только | a very short time ago; simply; only | I've just arrived. / just a minute | |
+only | adverb, adjective | только; единственный | no more than; the single one | only two people / the only option | |
+even | adverb | даже | used to emphasise something surprising | Even experts disagree. | | even though; even if
+ever | adverb | когда-либо | at any time | Have you ever been to Japan? | | never
+never | adverb | никогда | not at any time | I've never tried it. | No other negative. | ever
+always | adverb | всегда | at all times | She always arrives early. | |
+often | adverb | часто | many times | We often meet on Fridays. | |
+sometimes | adverb | иногда | on some occasions | Sometimes I work from home. | |
+usually | adverb | обычно | in most cases | I usually walk. | |
+rarely | adverb | редко | not often | It rarely snows here. | At the start, invert: Rarely do we see… | seldom
+seldom | adverb | редко | rarely (formal) | They seldom agree. | | rarely
+again | adverb | снова, опять | one more time | Try again. | |
+soon | adverb | скоро | in a short time | We'll know soon. | |
+recently | adverb | недавно | not long ago | Prices have recently risen. | Often with the present perfect. | lately
+later | adverb | позже | at a time after now or after another time | See you later. | |
+then | adverb | тогда; затем | at that time; next | First read, then answer. | |
+perhaps | adverb | возможно, может быть | possibly | Perhaps they're right. | | maybe
+maybe | adverb | может быть | perhaps (informal) | Maybe tomorrow. | | perhaps
+probably | adverb | вероятно | almost certainly | It will probably rain. | |
+actually | adverb | на самом деле | in fact; used to correct or add surprise | Actually, it's cheaper. | Not "now" (false friend with "актуально"). |
+really | adverb | действительно; очень | truly; very | really useful | Informal as an intensifier. |
+especially | adverb | особенно | more than usually; particularly | especially in winter | | particularly
+particularly | adverb | особенно, в частности | especially | particularly important | | especially
+mainly | adverb | главным образом | mostly | mainly young people | | mostly; largely
+mostly | adverb | в основном | mainly | mostly positive | | mainly
+largely | adverb | в значительной степени | to a great extent | largely responsible | | mainly
+simply | adverb | просто | just; in an easy way | It's simply too expensive. | |
+approximately | adverb | приблизительно | roughly | approximately 20% | Formal; prefer about/around in speech. | roughly; about
+relatively | adverb | относительно, сравнительно | compared with others | relatively cheap | |
+respectively | adverb | соответственно | in the order mentioned | A and B scored 60% and 70% respectively. | |
+somewhat | adverb | несколько, отчасти | to some degree (formal) | somewhat surprising | |
+eventually | adverb | в конце концов | in the end, after a long time | They eventually agreed. | Not "возможно" (false friend). | finally
+finally | adverb | наконец; в заключение | after a long time; introducing the last point | Finally, I would like to… | | eventually; lastly
+ago | adverb | назад | before now | two years ago | Past simple only. | since; for
+else | adverb | ещё, другой | other; in addition | Anything else? / someone else | |
+together | adverb | вместе | with each other | work together | |
+## Auxiliary and modal verbs
+be | verb | быть, являться | exist; used to describe; auxiliary for continuous and passive | She is a teacher. / It was built in 1900. | am, is, are; was, were; been; being. | am; is; are; was; were; been; being
+have | verb | иметь; (вспомогательный) | possess; auxiliary for perfect tenses | I have two sisters. / They have finished. | has, had, having. | has; had; having
+do | verb | делать; (вспомогательный) | perform; auxiliary for questions and negatives | Do you agree? / do research | does, did, done, doing. | does; did; done; doing
+can | modal verb | мочь, уметь | be able to; be allowed to | She can speak three languages. | Past/conditional: could. | could; be able to
+could | modal verb | мог бы; мог | past of can; possibility; polite request | It could be true. / Could you help? | | can
+may | modal verb | может, возможно; можно | possibility; permission (formal) | This may cause problems. | Common hedging verb in academic writing. | might
+might | modal verb | мог бы, может быть | weaker possibility | It might rain later. | | may
+must | modal verb | должен; наверняка | necessity; logical certainty | You must register. / She must be tired. | Negative mustn't = prohibition; don't have to = no necessity. | have to
+shall | modal verb | (для будущего, предложения) | future (formal); offers and suggestions | Shall we start? | Mostly in questions with I/we. |
+should | modal verb | следует, должен бы | advice; expectation | Governments should invest more. | |
+will | modal verb | (будущее время); буду | future; willingness | Prices will rise. | | would
+would | modal verb | бы; (будущее в прошедшем) | conditional; past of will; polite | I would choose the first option. | | will
+ought to | modal verb | следует, должен | should (slightly formal) | You ought to apologise. | |
+need | verb, modal verb | нуждаться; нужно | require | You need to rest. / Need I say more? | |
+used to | verb | раньше (бывало) | past habit or state that is no longer true | I used to live in Moscow. | Different from "be used to + -ing" (= accustomed). |
+had better | modal phrase | лучше бы (следует) | advice with a warning | You'd better leave now. | Followed by the base verb. |
+## Common verbs
+get | verb | получать; становиться; добираться | obtain; become; arrive | get a job / get better / get home | got, got (AmE gotten), getting. Very common in speech; in essays use obtain, become, reach. | got; gotten; getting
+make | verb | делать, производить; заставлять | create; cause | make a decision / make progress | made. make vs do: make a mistake, do homework. | made; making
+take | verb | брать; занимать (время) | carry; need (time); accept | take notes / It takes an hour. | took, taken. | took; taken; taking
+give | verb | давать | hand something to someone | give advice | gave, given. | gave; given; giving
+go | verb | идти, ехать | move or travel | go to work | went, gone. | went; gone; going; goes
+come | verb | приходить | move towards | Come here. | came, come. | came; coming
+say | verb | говорить, сказать | speak words | She said (that) she was tired. | said. say something; tell someone. | said; says
+tell | verb | сказать, рассказать | give information to someone | Tell me the truth. | told. | told
+know | verb | знать | have information | I know the answer. | knew, known. | knew; known
+think | verb | думать, считать | have an opinion; consider | I think so. | thought. | thought
+see | verb | видеть; понимать | notice with your eyes; understand | I see what you mean. | saw, seen. | saw; seen
+seem | verb | казаться | appear to be | It seems unlikely. | It seems that… is a useful hedge. | appear
+become | verb | становиться | begin to be | It became popular. | became, become. | became
+keep | verb | держать; продолжать | continue having or doing | keep calm / keep trying | kept. | kept
+let | verb | позволять | allow | Let me explain. | let, let. | lets
+mean | verb | значить; иметь в виду | have a meaning; intend | What does it mean? | meant. | meant; meaning
+find | verb | находить | discover | find a solution | found. | found
+show | verb | показывать | make visible; prove | The data show a rise. | showed, shown. | showed; shown
+feel | verb | чувствовать | experience | I feel tired. | felt. | felt
+leave | verb | уходить; оставлять | go away; let remain | leave early | left. | left
+run | verb | бежать; управлять; работать (о машине) | move quickly on foot; manage; operate | run a marathon / run a company | ran, run, running. | ran; running; runs; runner
+bring | verb | приносить | carry towards | bring change | brought. | brought
+put | verb | класть, ставить | place | put it here | put, put. | putting
+set | verb | устанавливать | put; establish | set goals | set, set. | setting
+lead | verb | вести; приводить к | guide; cause | lead to problems | led. | led; leader
+hold | verb | держать; проводить | have in your hands; organise | hold a meeting | held. | held
+spend | verb | тратить; проводить (время) | use money or time | spend time abroad | spent. | spent
+build | verb | строить | construct | build houses | built. | built
+understand | verb | понимать | know the meaning | I understand. | understood. | understood

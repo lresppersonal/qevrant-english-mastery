@@ -43,13 +43,40 @@ const speaking = {
   nextSteps: ["Practise a 2-minute story with a clear ending"],
 };
 
+// Dictionary entries written "by the AI" (for words the mock dictionary also knows, plus one it doesn't).
+const dictionary = (word) => ({
+  lemma: word === "pondered" ? "ponder" : word.toLowerCase(),
+  formNote: word === "pondered" ? "past form of ponder" : null,
+  grammar: word === "pondered" ? "verb, past tense" : "adjective",
+  contextIndex: word === "pondered" ? 1 : 0,
+  contextNote: word === "pondered" ? "Here it means she thought about the question carefully for a long time." : "Here it means found everywhere.",
+  senses: word === "pondered"
+    ? [{ pos: "verb", definition: "to wonder about something without reaching an answer", ru: "задаваться вопросом", example: "I often ponder why people choose this job.", cefr: "C1" }, { pos: "verb", definition: "to think carefully about something for a long time", ru: "обдумывать, размышлять", example: "She pondered the offer for a week.", cefr: "C1" }]
+    : [{ pos: "adjective", definition: "seeming to be everywhere at the same time", ru: "вездесущий, повсеместный", example: "Smartphones are now ubiquitous.", cefr: "C1" }],
+  register: "formal", ipaUk: "/ai-uk/", ipaUs: "/ai-us/",
+  collocations: ["become ubiquitous"], synonyms: ["widespread"], antonyms: ["scarce"], forms: ["ubiquity (noun)"], usageNotes: ["Mostly written English."],
+});
+
+let failNext = 0;
 http.createServer((req, res) => {
   let body = "";
   req.on("data", (c) => (body += c));
   req.on("end", () => {
+    if (req.url.startsWith("/__fail")) { failNext = Number(new URL(req.url, "http://x").searchParams.get("n") ?? 1); res.end(`failing next ${failNext}`); return; }
     if (req.method !== "POST" || !req.url.startsWith("/v1/messages")) { res.writeHead(404).end(); return; }
+    if (failNext > 0) {
+      failNext--;
+      // like a real outage, the error takes a moment to arrive
+      setTimeout(() => {
+        res.writeHead(529, { "content-type": "application/json" });
+        res.end(JSON.stringify({ type: "error", error: { type: "overloaded_error", message: "Overloaded" } }));
+      }, 1200);
+      return;
+    }
     const isSpeaking = body.includes("SPOKEN answer");
-    const payload = isSpeaking ? speaking : writing;
+    let payload = isSpeaking ? speaking : writing;
+    if (body.includes("lexicographer")) payload = dictionary((body.match(/Word clicked: \\"([^\\]+)\\"/) ?? [])[1] ?? "ubiquitous");
+    if (body.includes("Choose which listed sense")) payload = { contextIndex: 1, contextNote: "Here it means the land along the side of a river.", ru: "берег" };
     res.writeHead(200, { "content-type": "application/json" });
     res.end(JSON.stringify({
       id: "msg_mock", type: "message", role: "assistant", model: "mock",

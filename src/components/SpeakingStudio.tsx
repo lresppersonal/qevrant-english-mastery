@@ -4,6 +4,9 @@ import clsx from "clsx";
 import { Dices, Mic, Pause, Play, RotateCcw, Square, Sparkles, Loader2, History, Shuffle, Trash2 } from "lucide-react";
 import { SPEAKING_CATEGORIES, SPEAKING_LEVELS, SPEAKING_MODES, bankPrompt, categoryTitle, matchingPrompts, pickPrompt, type BankPrompt, type SpeakingLevel, type SpeakingMode } from "@/lib/speaking-bank";
 import { Countdown, fmtClock } from "@/lib/countdown";
+import { micProblem, micSupport, queryMicPermission, requestMic, stopStream, type MicProblem, type MicState } from "@/lib/microphone";
+import Link from "next/link";
+import { allowed } from "@/lib/consent";
 import { SpeakingFeedbackView } from "@/lib/ai/schemas";
 import type { SpeakingAttempt } from "@/lib/store/types";
 import { useLearner } from "./StoreProvider";
@@ -21,19 +24,10 @@ const getSR = (): (new () => SR) | null => {
 };
 
 const RECENT_KEY = "em-speaking-recent";
-const readRecent = (): string[] => { try { return JSON.parse(localStorage.getItem(RECENT_KEY) ?? "[]"); } catch { return []; } };
-const writeRecent = (ids: string[]) => { try { localStorage.setItem(RECENT_KEY, JSON.stringify(ids.slice(-60))); } catch { /* storage unavailable */ } };
-
-/** Human-readable microphone errors. */
-function micError(e: unknown): string {
-  const name = (e as { name?: string })?.name ?? "";
-  if (typeof window !== "undefined" && !window.isSecureContext) return "The microphone only works on a secure (https) page. Open the platform through its https address.";
-  if (!navigator.mediaDevices?.getUserMedia) return "This browser can't record audio. Please use a recent version of Chrome, Edge, Safari or Firefox.";
-  if (name === "NotAllowedError" || name === "SecurityError") return "Microphone access was blocked. Click the lock or microphone icon in the address bar, allow the microphone for this site, then press Start again.";
-  if (name === "NotFoundError" || name === "OverconstrainedError") return "No microphone was found. Connect a microphone or headset and try again.";
-  if (name === "NotReadableError" || name === "AbortError") return "Your microphone is being used by another app (for example a video call). Close it and try again.";
-  return "We couldn't start the microphone. Check your device settings and try again.";
-}
+// Recently shown topics: kept in memory for this visit; also on this device if "Preferences" storage is allowed.
+let sessionRecent: string[] = [];
+const readRecent = (): string[] => { if (!allowed("preferences")) return sessionRecent; try { return JSON.parse(localStorage.getItem(RECENT_KEY) ?? "[]"); } catch { return sessionRecent; } };
+const writeRecent = (ids: string[]) => { sessionRecent = ids.slice(-60); if (allowed("preferences")) { try { localStorage.setItem(RECENT_KEY, JSON.stringify(sessionRecent)); } catch { /* storage unavailable */ } } };
 
 const chip = (on: boolean) => clsx("min-h-10 shrink-0 rounded-full border px-3.5 py-1.5 text-sm font-semibold", on ? "border-primary bg-primary text-primary-fg" : "border-line bg-surface text-muted hover:text-ink");
 
@@ -54,6 +48,8 @@ export function SpeakingStudio() {
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
   const [audioPath, setAudioPath] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [mic, setMic] = useState<MicProblem | null>(null);
+  const [micState, setMicState] = useState<MicState>("unknown");
   const [current, setCurrent] = useState<SpeakingAttempt | null>(null);
   const [history, setHistory] = useState<SpeakingAttempt[]>([]);
 
@@ -70,6 +66,8 @@ export function SpeakingStudio() {
   const serverSTT = ai?.transcription === "server";
   const canTranscribe = serverSTT || (typeof window !== "undefined" && !!getSR());
   const poolSize = matchingPrompts(level, category).length;
+
+  useEffect(() => { queryMicPermission().then(setMicState); }, []);
 
   // Restore saved preferences and history.
   useEffect(() => {
@@ -88,7 +86,7 @@ export function SpeakingStudio() {
   }, [store, level, category, mode]);
 
   const stopTicker = () => { if (tick.current) { clearInterval(tick.current); tick.current = null; } };
-  const releaseMic = () => { stream.current?.getTracks().forEach((t) => t.stop()); stream.current = null; };
+  const releaseMic = () => { stopStream(stream.current); stream.current = null; };
   const stopSR = () => { const r = sr.current; sr.current = null; if (r) { r.onend = null; try { r.stop(); } catch { /* already stopped */ } } };
   useEffect(() => () => { stopTicker(); stopSR(); releaseMic(); }, []);
 
@@ -118,9 +116,12 @@ export function SpeakingStudio() {
     if (audioUrl) URL.revokeObjectURL(audioUrl);
     setAudioUrl(null);
     // Ask for the microphone first, so a permission prompt never eats preparation time.
+    setMic(null);
+    if (!micSupport().recorder) { setMic(micProblem(new Error("no recorder"))); return; }
     try {
-      if (!stream.current) stream.current = await navigator.mediaDevices.getUserMedia({ audio: true });
-    } catch (e) { setError(micError(e)); setPhase("setup"); return; }
+      if (!stream.current) stream.current = await requestMic();
+      setMicState("granted");
+    } catch (e) { const p = micProblem(e); setMic(p); if (p.code === "denied") setMicState("denied"); setPhase("setup"); return; }
     setPhase("prep");
     runCountdown(m.prepSeconds, beginSpeaking);
   }
@@ -150,7 +151,9 @@ export function SpeakingStudio() {
     if (!s) { setError("The microphone was disconnected. Press Start again."); setPhase("setup"); return; }
     chunks.current = []; finalText.current = ""; discard.current = false;
     let mr: MediaRecorder;
-    try { mr = new MediaRecorder(s); } catch (e) { setError(micError(e)); setPhase("setup"); return; }
+    try { mr = new MediaRecorder(s); } catch (e) { setMic(micProblem(e)); setPhase("setup"); return; }
+    mr.onerror = () => { setMic({ code: "aborted", message: "Recording stopped unexpectedly (the microphone may have been disconnected).", help: ["Check the microphone and press Restart."] }); };
+    s.getAudioTracks()[0]?.addEventListener("ended", () => { if (rec.current?.state === "recording") { setMic({ code: "aborted", message: "The microphone was disconnected during recording.", help: ["Reconnect it and press Restart. What you recorded so far is kept."] }); finishSpeaking(); } });
     mr.ondataavailable = (ev) => { if (ev.data.size) chunks.current.push(ev.data); };
     mr.onstop = () => { if (!discard.current) void afterStop(new Blob(chunks.current, { type: mr.mimeType || "audio/webm" })); };
     rec.current = mr;
@@ -294,7 +297,11 @@ export function SpeakingStudio() {
           {(phase === "setup" || phase === "done") && (
             <>
               <button type="button" onClick={start} disabled={!canTranscribe && !ai} className="btn btn-primary !px-6 !py-3 text-base"><Mic size={18} aria-hidden="true" /> {phase === "done" ? "Answer this topic again" : "Start"}</button>
-              <p className="mt-3 text-sm text-muted">Your browser will ask for microphone access the first time. Preparation ({m.prepSeconds} s) begins once it's allowed.</p>
+              <p className="mt-3 text-sm text-muted" data-testid="mic-hint">
+                {micState === "granted" ? `Microphone allowed. Preparation (${m.prepSeconds} s) starts when you press Start.`
+                  : micState === "denied" ? "Microphone access is currently blocked for this site — see the steps below."
+                  : `When you press Start, your browser will ask for microphone access (only the first time). Preparation (${m.prepSeconds} s) begins once it's allowed.`}
+              </p>
               {ai && !canTranscribe && <p className="mt-2 text-sm text-muted">This browser can't convert speech to text. You can still record and type what you said, or use Chrome, Edge or Safari.</p>}
             </>
           )}
@@ -335,6 +342,13 @@ export function SpeakingStudio() {
               </div>
               {ai && !ai.enabled && <p className="mt-2 text-sm text-muted">{ai.reason}</p>}
               {words < 25 && <p className="mt-2 text-sm text-muted">We need at least 25 words to give useful feedback.</p>}
+            </div>
+          )}
+          {mic && (
+            <div role="alert" className="mx-auto mt-4 max-w-xl rounded-xl border border-danger/40 px-4 py-3 text-left" data-testid="mic-problem" data-code={mic.code}>
+              <p className="font-semibold text-danger">{mic.message}</p>
+              <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm">{mic.help.map((h) => <li key={h}>{h}</li>)}</ol>
+              <p className="mt-2 text-sm">You can also check access in <Link href="/settings#privacy" className="font-semibold text-primary underline">Settings ▸ Privacy and permissions</Link>.</p>
             </div>
           )}
           {error && <p role="alert" className="mt-3 text-sm text-danger">{error}</p>}

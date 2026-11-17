@@ -40,16 +40,18 @@ export async function authorise() {
 }
 
 let client: Anthropic | null = null;
-const anthropic = () => (client ??= new Anthropic());
+/** Generous timeout (long essays produce long feedback); the SDK retries 429/5xx/network errors itself. */
+const anthropic = () => (client ??= new Anthropic({ timeout: Number(process.env.AI_TIMEOUT_MS || 240_000), maxRetries: Number(process.env.AI_MAX_RETRIES ?? 2) }));
 
-export async function analyse<T extends z.ZodType>(schema: T, system: string, user: string): Promise<z.infer<T>> {
+export async function analyse<T extends z.ZodType>(schema: T, system: string, user: string, maxTokens = 12000): Promise<z.infer<T>> {
   const msg = await anthropic().messages.parse({
     model: AI_MODEL,
-    max_tokens: 6000,
+    max_tokens: maxTokens,
     system,
     messages: [{ role: "user", content: user }],
     output_config: { format: zodOutputFormat(schema as never) },
   });
+  if (msg.stop_reason === "max_tokens") throw new HttpError(502, "The AI feedback was cut off because it was too long. Please try again.");
   if (!msg.parsed_output) throw new HttpError(502, "The AI response couldn't be read. Please try again.");
   return msg.parsed_output as z.infer<T>;
 }
@@ -70,13 +72,22 @@ export function sanitiseRefs<F extends { issues: { quote: string; grammarRef: st
   };
 }
 
-export function errorResponse(e: unknown) {
-  if (e instanceof HttpError) return Response.json({ error: e.message }, { status: e.status });
+/** Turns any failure into a status + a message a learner can act on (details go to the server log). */
+export function describeError(e: unknown): { status: number; error: string; retry: boolean } {
+  if (e instanceof HttpError) return { status: e.status, error: e.message, retry: e.status >= 500 };
+  if (e instanceof Anthropic.APIConnectionTimeoutError) { console.error("Anthropic timeout"); return { status: 504, error: "The AI service took too long to answer.", retry: true }; }
+  if (e instanceof Anthropic.APIConnectionError) { console.error("Anthropic connection error", e.message); return { status: 503, error: "The server couldn't connect to the AI service.", retry: true }; }
   if (e instanceof Anthropic.APIError) {
     console.error("Anthropic API error", e.status, e.message);
-    const status = e.status === 429 || e.status === 529 ? 503 : 502;
-    return Response.json({ error: "The AI service is busy or unavailable. Please try again in a minute." }, { status });
+    if (e.status === 401 || e.status === 403) return { status: 500, error: "The AI service rejected this server's API key. The site owner needs to check ANTHROPIC_API_KEY.", retry: false };
+    if (e.status === 400) return { status: 502, error: "The AI service couldn't process this request. Please try again; if it keeps happening, the site owner should check the AI model setting (ANTHROPIC_MODEL).", retry: true };
+    if (e.status === 429 || e.status === 529 || (e.status ?? 0) >= 500) return { status: 503, error: "The AI service is busy or temporarily unavailable.", retry: true };
+    return { status: 502, error: "The AI service returned an error.", retry: true };
   }
   console.error(e);
-  return Response.json({ error: "Something went wrong while analysing your work." }, { status: 500 });
+  return { status: 500, error: "Something went wrong while analysing your work.", retry: true };
+}
+export function errorResponse(e: unknown) {
+  const d = describeError(e);
+  return Response.json({ error: d.error, retry: d.retry }, { status: d.status });
 }

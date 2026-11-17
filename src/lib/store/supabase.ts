@@ -130,13 +130,24 @@ export function createSupabaseStore(): LearnerStore {
 
     async listWriting() {
       const rows = check(await sb.from("writing_submissions").select("*").order("created_at", { ascending: false })) as Record<string, unknown>[];
-      return rows.map((r) => ({ id: r.id as string, promptSlug: r.prompt_slug as string, body: r.body as string, wordCount: r.word_count as number, secondsSpent: r.seconds_spent as number | null, feedback: r.feedback, createdAt: r.created_at as string }));
+      return rows.map((r) => ({ id: r.id as string, promptSlug: r.prompt_slug as string, body: r.body as string, wordCount: r.word_count as number, secondsSpent: r.seconds_spent as number | null, feedback: r.feedback, createdAt: r.created_at as string, status: (r.status as "pending" | "assessed" | "failed") ?? "assessed", error: (r.error as string) ?? null }));
     },
     async listSpeaking() {
       const rows = check(await sb.from("speaking_attempts").select("*").order("created_at", { ascending: false })) as Record<string, unknown>[];
       return rows.map((r) => ({ id: r.id as string, promptSlug: r.prompt_slug as string, transcript: r.transcript as string, durationSeconds: r.duration_seconds as number, metrics: r.metrics as Record<string, number>, feedback: r.feedback, createdAt: r.created_at as string }));
     },
 
+    async getDraft(slug) {
+      const r = check(await sb.from("essay_drafts").select("*").eq("prompt_slug", slug).maybeSingle()) as Record<string, unknown> | null;
+      return r ? { promptSlug: slug, body: r.body as string, updatedAt: r.updated_at as string } : null;
+    },
+    async saveDraft(slug, body) {
+      check(await sb.from("essay_drafts").upsert({ user_id: await userId(), prompt_slug: slug, body, updated_at: new Date().toISOString() }));
+    },
+    async listDrafts() {
+      const rows = check(await sb.from("essay_drafts").select("*").order("updated_at", { ascending: false })) as Record<string, unknown>[];
+      return rows.filter((r) => (r.body as string).trim()).map((r) => ({ promptSlug: r.prompt_slug as string, body: r.body as string, updatedAt: r.updated_at as string }));
+    },
     async deleteWriting(id) { check(await sb.from("writing_submissions").delete().eq("id", id)); },
     async deleteSpeaking(id) {
       const row = check(await sb.from("speaking_attempts").select("audio_path").eq("id", id).maybeSingle()) as { audio_path: string | null } | null;
@@ -145,7 +156,7 @@ export function createSupabaseStore(): LearnerStore {
     },
 
     async exportAll() {
-      const tables = ["profiles", "activity_events", "attempts", "responses", "saved_items", "review_cards", "review_logs", "last_positions", "writing_submissions", "speaking_attempts", "listening_logs", "weekly_reports"];
+      const tables = ["profiles", "activity_events", "attempts", "responses", "saved_items", "review_cards", "review_logs", "last_positions", "writing_submissions", "speaking_attempts", "listening_logs", "weekly_reports", "essay_drafts"];
       const out: Record<string, unknown> = { exportedAt: new Date().toISOString() };
       for (const t of tables) out[t] = check(await sb.from(t).select("*"));
       return out;

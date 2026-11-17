@@ -1,0 +1,971 @@
+# General lexicon: everyday and academic words found in the reading passages and beyond (original content).
+# word | part of speech | Russian | definition
+ability | noun | способность, умение | the skill or power to do something
+able | adjective | способный; (be able to) мочь | having the skill, power or chance to do something
+abroad | adverb | за границей, за границу | in or to a foreign country
+absorb | verb | поглощать, впитывать; усваивать | to take in liquid, energy or information
+academic | adjective, noun | академический, учебный; учёный | connected with education and study; a university teacher or researcher
+acceptable | adjective | приемлемый | good enough to be allowed or approved
+access | noun, verb | доступ; получать доступ | the right or chance to use or reach something
+accident | noun | несчастный случай, авария; случайность | an unpleasant event that happens unexpectedly
+accompany | verb | сопровождать | to go somewhere with someone; to happen together with
+account | noun, verb | счёт; отчёт; (account for) объяснять, составлять | a record of money; a description of events; to explain or form a part of
+accurate | adjective | точный | correct and exact in every detail
+achieve | verb | достигать | to succeed in reaching a goal by effort
+activity | noun | деятельность, занятие | something people do, especially for a purpose or for fun
+add | verb | добавлять; складывать | to put something with something else; to say something more
+address | noun, verb | адрес; обращаться к, решать (проблему) | where someone lives; to deal with a problem
+adjust | verb | регулировать, приспосабливаться | to change something slightly to make it work better
+admit | verb | признавать; принимать (в учреждение) | to agree that something is true, often unwillingly; to allow to enter
+adult | noun, adjective | взрослый | a fully grown person
+advance | noun, verb | продвижение, прогресс; продвигаться | progress or development; to move forward
+advanced | adjective | продвинутый, передовой | at a high level; modern and developed
+advice | noun | совет | an opinion about what someone should do (uncountable: a piece of advice)
+affect | verb | влиять, затрагивать | to produce a change in someone or something
+afford | verb | позволить себе (по деньгам, времени) | to have enough money or time for something
+affordable | adjective | доступный (по цене) | cheap enough for most people
+age | noun, verb | возраст; эпоха; стареть | how old someone is; a period of history; to become older
+agree | verb | соглашаться | to have the same opinion; to accept a suggestion
+agricultural | adjective | сельскохозяйственный | connected with farming
+agriculture | noun | сельское хозяйство | farming: growing crops and keeping animals
+aim | noun, verb | цель; стремиться, нацеливаться | a purpose; to intend to achieve something
+alarm | noun, verb | тревога; будильник; тревожить | a warning sound or device; a feeling of fear
+allow | verb | позволять, разрешать | to let someone do something; to make possible
+alone | adjective, adverb | один, одинокий; только | without other people
+amount | noun, verb | количество, сумма; (amount to) составлять | how much there is of something
+analyse | verb | анализировать | to examine something in detail to understand it (AmE analyze)
+anger | noun | гнев, злость | a strong feeling of being annoyed
+animal | noun | животное | a living creature that is not a plant or a human
+answer | noun, verb | ответ; отвечать | a reply; a solution
+app | noun | приложение | a computer program, especially for a phone
+apply | verb | подавать заявление; применять | to ask formally for something; to use or put into practice
+appoint | verb | назначать | to choose someone officially for a job
+approve | verb | одобрять, утверждать | to think something is good; to accept officially
+area | noun | область, район; площадь | a part of a place or subject; the size of a surface
+argue | verb | спорить; утверждать | to disagree in words; to give reasons for an opinion
+argument | noun | спор; аргумент, довод | a disagreement; a reason supporting an idea
+arrangement | noun | договорённость; расположение | a plan or agreement; the way things are organised
+arrive | verb | прибывать, приезжать | to reach a place
+artist | noun | художник, артист | a person who creates art
+ask | verb | спрашивать, просить | to put a question; to request
+assistant | noun | помощник, ассистент | a person who helps someone in their work
+associate | verb, noun | связывать, ассоциировать; партнёр | to connect in the mind; a work partner
+association | noun | ассоциация, объединение; связь | an organisation; a connection between things
+attempt | noun, verb | попытка; пытаться | an effort to do something difficult
+attend | verb | посещать, присутствовать | to go to an event or a place regularly
+attention | noun | внимание | the act of noticing or concentrating on something
+attract | verb | привлекать | to make people interested or come closer
+author | noun | автор | a writer of a book or article
+automate | verb | автоматизировать | to make a process work by machines
+avoid | verb | избегать | to stay away from or prevent something
+baby | noun | младенец, ребёнок | a very young child
+bad | adjective | плохой | not good; harmful
+ballot | noun | голосование; бюллетень | a secret vote; the paper used to vote
+bank | noun | банк; берег (реки) | a financial institution; the land beside a river
+baseline | noun | исходный уровень, точка отсчёта | a starting point used for comparison
+basic | adjective | основной, базовый | simple and essential
+bean | noun | боб, фасоль | a seed of certain plants eaten as food
+beautiful | adjective | красивый, прекрасный | very attractive
+beaver | noun | бобр | a large rodent that builds dams across rivers
+beef | noun | говядина | meat from a cow
+begin | verb | начинать(ся) | to start
+beginning | noun | начало | the first part of something
+belief | noun | убеждение, вера | an idea that someone accepts as true
+believe | verb | верить, считать | to think that something is true
+bench | noun | скамейка | a long seat for several people
+bicycle | noun | велосипед | a two-wheeled vehicle you ride by pushing pedals
+bird | noun | птица | an animal with feathers and wings
+blank | adjective | пустой, чистый | with nothing written or recorded on it
+body | noun | тело; орган, организация | the physical structure of a person or animal; an official group
+book | noun, verb | книга; бронировать | a written work; to reserve
+borrow | verb | брать взаймы | to take something to use and return later
+boundary | noun | граница | a line marking the edge of an area or limit
+brand | noun | бренд, марка | a product name of a particular company
+broad | adjective | широкий; общий | wide; general rather than detailed
+bronze | noun | бронза | a brown metal made of copper and tin
+building | noun | здание; строительство | a structure with walls and a roof
+business | noun | бизнес, дело; компания | buying and selling; a company
+busy | adjective | занятой; оживлённый | having a lot to do; full of activity
+buy | verb | покупать | to get something by paying for it
+calculate | verb | вычислять, рассчитывать | to work out a number or amount
+candidate | noun | кандидат | a person competing for a job or in an election
+car | noun | машина, автомобиль | a road vehicle with an engine for a few people
+carbon | noun | углерод | a chemical element; (carbon emissions) CO2 released into the air
+careful | adjective | осторожный, тщательный | paying attention to avoid mistakes or danger
+carry | verb | нести; (carry out) проводить | to hold and take somewhere; (carry out) to do a task
+carve | verb | вырезать (по дереву, камню) | to cut wood or stone into a shape
+cascade | noun, verb | каскад; ниспадать | a series of events, each causing the next; falling water
+case | noun | случай; дело; футляр | a particular situation or example; a legal matter; a container
+cattle | noun | крупный рогатый скот | cows and bulls kept on a farm (plural)
+cause | noun, verb | причина; вызывать | what makes something happen; to make it happen
+celebrate | verb | праздновать | to mark a special occasion with an enjoyable activity
+cell | noun | клетка; ячейка; камера | the smallest unit of a living thing; a small room
+cent | noun | цент | a hundredth of a dollar or euro
+central | adjective | центральный, главный | in the middle; most important
+centre | noun | центр | the middle point or main place (AmE center)
+century | noun | век, столетие | a period of 100 years
+ceremonial | adjective | церемониальный | used in or connected with a formal ceremony
+certainty | noun | уверенность, определённость | the state of being sure
+certification | noun | сертификация | official proof that something meets a standard
+challenge | noun, verb | вызов, трудная задача; оспаривать | a difficult task; to question whether something is right
+champion | noun, verb | чемпион; отстаивать | a winner; to support a cause publicly
+chance | noun | шанс, возможность; случай | a possibility; luck
+change | noun, verb | изменение; сдача; менять | a difference; money returned; to make or become different
+character | noun | характер; персонаж; символ | personality; a person in a story; a letter or sign
+cheap | adjective | дешёвый | low in price
+check | verb, noun | проверять; проверка | to examine to make sure something is correct
+checker | noun | проверяющий (fact-checker — специалист по проверке фактов) | a person or tool that checks something
+chess | noun | шахматы | a board game for two players
+chickpea | noun | нут | a round pale seed eaten as a vegetable
+child | noun | ребёнок | a young human being (plural: children)
+choice | noun | выбор | the act or possibility of choosing
+choir | noun | хор | a group of people who sing together
+choose | verb | выбирать | to decide which one you want
+citizen | noun | гражданин | a legal member of a country
+city | noun | город | a large town
+claim | noun, verb | утверждение; претензия; утверждать | a statement that something is true; to say so without proof
+classroom | noun | класс (комната) | a room where lessons take place
+clever | adjective | умный, сообразительный | intelligent; quick to learn
+cliche | noun | клише, штамп | a phrase or idea used so often it has lost its effect
+climate | noun | климат | the usual weather of an area over a long time
+clinic | noun | клиника, поликлиника | a place where people receive medical advice or treatment
+close | verb, adjective | закрывать; близкий | to shut; near
+clothes | noun | одежда | things you wear (plural)
+clothing | noun | одежда | clothes in general (uncountable)
+collapse | noun, verb | обрушение, крах; рушиться | a sudden fall or failure
+collect | verb | собирать, коллекционировать | to bring together; to gather as a hobby
+collection | noun | коллекция; сбор | a group of objects collected; the act of collecting
+combination | noun | сочетание, комбинация | a mixture of things
+combine | verb | сочетать, объединять | to join or mix together
+comment | noun, verb | комментарий; комментировать | a remark expressing an opinion
+common | adjective | распространённый; общий | happening often; shared
+communication | noun | общение, связь | the exchange of information
+community | noun | сообщество | the people living in an area or sharing interests
+compact | adjective | компактный | small and using little space
+company | noun | компания; общество | a business; being with other people
+comparable | adjective | сопоставимый | similar enough to be compared
+compare | verb | сравнивать | to look at how things are similar or different
+compel | verb | вынуждать, заставлять | to force someone to do something
+complete | adjective, verb | полный, законченный; завершать | whole; to finish
+composer | noun | композитор | a person who writes music
+compulsion | noun | принуждение; навязчивое желание | being forced; a strong urge
+computer | noun | компьютер | an electronic machine for processing information
+concept | noun | понятие, концепция | an abstract idea
+concern | noun, verb | беспокойство; касаться; беспокоить | worry; to be about; to worry
+conclusion | noun | вывод, заключение | a judgement reached after thinking; the end part
+condition | noun | условие; состояние | something needed for something else; the state of something
+confirm | verb | подтверждать | to show that something is true or definite
+connect | verb | соединять, связывать | to join or link
+connection | noun | связь, соединение | a link or relationship
+conquest | noun | завоевание | taking control of a place by force
+consent | noun, verb | согласие; соглашаться | permission or agreement
+conserve | verb | сохранять, беречь | to protect from loss or waste
+considerable | adjective | значительный | large in size or amount
+constant | adjective | постоянный | happening all the time; not changing
+consumer | noun | потребитель | a person who buys goods or services
+contain | verb | содержать | to have inside or include
+content | noun, adjective | содержание, контент; довольный | what is inside; satisfied
+continue | verb | продолжать(ся) | to keep happening or doing
+continuous | adjective | непрерывный | without a break
+contradiction | noun | противоречие | a conflict between two statements or facts
+contrast | noun, verb | контраст; противопоставлять | a clear difference; to compare to show differences
+control | noun, verb | контроль, управление; контролировать | power over something; to direct or limit
+controversy | noun | спор, полемика | public disagreement
+convert | verb | превращать, преобразовывать | to change from one form to another
+convincing | adjective | убедительный | making you believe something is true
+coordinate | verb | координировать | to organise people or things to work together
+copyright | noun | авторское право | the legal right to control copies of a work
+cost | noun, verb | стоимость; стоить | the price; to have a price
+cotton | noun | хлопок | a soft natural fibre from a plant
+country | noun | страна; сельская местность | a nation; land away from towns
+court | noun | суд; корт | a place where legal cases are judged; an area for sport
+cover | verb, noun | покрывать; освещать (в СМИ); обложка | to put over; to report on; a protective layer
+create | verb | создавать | to make something new
+creative | adjective | творческий, креативный | good at producing new ideas
+creativity | noun | творчество, креативность | the ability to produce new ideas
+cricket | noun | крикет; сверчок | a bat-and-ball game; an insect
+critic | noun | критик | a person who judges or criticises
+critical | adjective | критический; крайне важный | expressing disapproval; very important
+crucial | adjective | решающий, крайне важный | extremely important
+cultivated | adjective | культивируемый; образованный | grown by people; educated and refined
+cultural | adjective | культурный | connected with culture
+culture | noun | культура | the customs, arts and beliefs of a group
+cure | noun, verb | лекарство, излечение; вылечивать | something that makes an illness go away
+curiosity | noun | любопытство | a wish to know or learn
+curve | noun | кривая, изгиб | a smoothly bending line
+cut | verb, noun | резать; сокращать; сокращение | to divide with a sharp tool; to reduce
+cycle | noun, verb | цикл; ездить на велосипеде | a repeated series of events; to ride a bicycle
+dairy | noun, adjective | молочные продукты; молочный | milk and food made from milk
+dam | noun | плотина | a wall built across a river to hold back water
+damage | noun, verb | ущерб, повреждение; повреждать | physical harm; to harm
+dangerous | adjective | опасный | able to cause harm
+day | noun | день, сутки | a period of 24 hours; the time of light
+deal | noun, verb | сделка; (deal with) иметь дело, справляться | an agreement; to handle a problem
+debate | noun, verb | дебаты, обсуждение; обсуждать | a formal discussion of different views
+decade | noun | десятилетие | a period of ten years
+decide | verb | решать | to make a choice
+decision | noun | решение | a choice that you make
+deep | adjective | глубокий | going far down; serious and strong
+defence | noun | защита, оборона | protection against attack or criticism (AmE defense)
+defender | noun | защитник | a person who protects or supports
+define | verb | определять, давать определение | to explain the meaning; to describe exactly
+definition | noun | определение | a statement of the meaning of a word
+demand | noun, verb | спрос; требование; требовать | the desire of people to buy; a firm request
+dementia | noun | деменция | a serious illness affecting memory and thinking
+democracy | noun | демократия | government by people who are elected
+density | noun | плотность | how crowded or heavy something is for its size
+depend | verb | зависеть | (depend on) to be decided by; to need
+descendant | noun | потомок | a person related to someone who lived long ago
+describe | verb | описывать | to say what something is like
+design | noun, verb | дизайн, проект; проектировать | a plan or drawing; to plan how something will look or work
+detailed | adjective | подробный | including many details
+develop | verb | развивать(ся); разрабатывать | to grow or change; to create over time
+diet | noun | рацион, диета | the food a person usually eats
+difference | noun | разница, отличие | the way things are not the same
+different | adjective | другой, различный | not the same
+difficult | adjective | трудный | not easy
+digital | adjective | цифровой | using computer technology
+disagreement | noun | несогласие, разногласие | a situation where people have different opinions
+disappear | verb | исчезать | to stop being visible or to stop existing
+discuss | verb | обсуждать | to talk about a subject (no "about": discuss the plan)
+disease | noun | болезнь | an illness
+disguise | noun, verb | маскировка; маскировать | to change appearance to hide the truth
+display | noun, verb | показ, витрина; показывать | to show
+distance | noun | расстояние | the space between two places
+distant | adjective | далёкий | far away
+disturb | verb | беспокоить, мешать | to interrupt or worry someone
+doctor | noun | врач; доктор (наук) | a person trained in medicine
+downstream | adverb | вниз по течению | in the direction a river flows
+drawback | noun | недостаток | a disadvantage
+drive | verb, noun | водить; двигать; стремление | to control a vehicle; to make something happen; energy to achieve
+driver | noun | водитель; движущий фактор | a person who drives; a factor that causes change
+due | adjective | ожидаемый; должный | expected at a certain time; (due to) because of
+duty | noun | обязанность; пошлина | something you must do; a tax
+dye | noun, verb | краска; красить (ткань) | a substance used to change colour
+early | adjective, adverb | ранний; рано | near the beginning; before the usual time
+easy | adjective | лёгкий, простой | not difficult
+eat | verb | есть, кушать | to take food into the mouth
+economic | adjective | экономический | connected with the economy
+economist | noun | экономист | an expert in economics
+economy | noun | экономика; экономия | the system of trade and money; careful use of resources
+edit | verb | редактировать | to correct and change a text or film
+educate | verb | обучать, давать образование | to teach
+education | noun | образование | the process of teaching and learning
+effect | noun | эффект, влияние, последствие | a result or change caused by something
+effective | adjective | эффективный | producing the intended result
+efficient | adjective | эффективный, производительный | working well without wasting time or resources
+effort | noun | усилие | physical or mental energy used to do something
+election | noun | выборы | a vote to choose people for official positions
+elk | noun | лось (BrE), вапити (AmE) | a large deer
+email | noun, verb | электронное письмо; писать письмо | a message sent by computer
+emotion | noun | эмоция, чувство | a strong feeling
+emotional | adjective | эмоциональный | connected with feelings
+employee | noun | работник, сотрудник | a person paid to work for someone
+employer | noun | работодатель | a person or company that employs people
+empty | adjective | пустой | containing nothing
+encounter | noun, verb | встреча; сталкиваться | to meet or experience, often unexpectedly
+encourage | verb | поощрять, побуждать | to give support or confidence
+end | noun, verb | конец; заканчивать(ся) | the final part; to finish
+energy | noun | энергия | power to work or be active
+enforcement | noun | обеспечение соблюдения (закона) | making people obey a rule or law
+enormous | adjective | огромный | extremely large
+enthusiasm | noun | энтузиазм | strong excitement and interest
+environmental | adjective | экологический | connected with the natural world
+equal | adjective | равный | the same in size, value or rights
+error | noun | ошибка | a mistake
+essay | noun | эссе, сочинение | a short piece of writing on one subject
+european | adjective, noun | европейский; европеец | from or connected with Europe
+everyday | adjective | повседневный | ordinary; happening every day
+evidence | noun | доказательства, данные | facts showing that something is true (uncountable)
+exact | adjective | точный | completely correct
+exam | noun | экзамен | a formal test
+example | noun | пример | something that shows what others are like
+exceed | verb | превышать | to be more than a limit
+exchange | noun, verb | обмен; обменивать | giving one thing and receiving another
+exercise | noun, verb | упражнение; физкультура; осуществлять | physical activity; a task for practice; to use a right
+exist | verb | существовать | to be real or present
+existing | adjective | существующий | already present now
+expected | adjective | ожидаемый | thought likely to happen
+expense | noun | расход, затраты | money spent on something
+experience | noun, verb | опыт; переживать, испытывать | knowledge from doing things; an event that affects you
+experiment | noun, verb | эксперимент; экспериментировать | a scientific test
+expert | noun | эксперт | a person with special knowledge
+explain | verb | объяснять | to make something clear
+explanation | noun | объяснение | a statement that makes something clear
+extra | adjective | дополнительный | more than usual
+extreme | adjective | крайний, экстремальный | very great or severe
+facility | noun | объект, сооружение; возможность | a building or service for a purpose
+fact | noun | факт | something known to be true
+factor | noun | фактор | one of the things that influence a result
+factory | noun | фабрика, завод | a building where goods are made
+fairness | noun | справедливость | treating people equally
+fake | adjective, noun | поддельный, фальшивый; подделка | not genuine
+fall | verb, noun | падать; снижаться; падение; осень (AmE) | to drop; to decrease
+false | adjective | ложный, неверный | not true
+falsehood | noun | ложь, неправда | a lie; the state of being untrue
+familiar | adjective | знакомый | well known to you
+family | noun | семья | parents and children; relatives
+famous | adjective | знаменитый | known by many people
+far | adverb, adjective | далеко; дальний | at a great distance
+farm | noun, verb | ферма; заниматься сельским хозяйством | land for crops or animals
+farmer | noun | фермер | a person who runs a farm
+farmland | noun | сельхозугодья | land used for farming
+fashion | noun | мода | a popular style of clothes or behaviour
+fast | adjective, adverb | быстрый; быстро | quick; quickly
+fear | noun, verb | страх; бояться | an unpleasant feeling of danger
+federal | adjective | федеральный | connected with the central government of a federation
+feed | verb | кормить | to give food to
+feedback | noun | обратная связь, отзыв | comments on how well someone did
+feeling | noun | чувство, ощущение | an emotion; a physical sensation
+fence | noun | забор, ограда | a barrier around an area
+figure | noun, verb | цифра; фигура; (figure out) понять | a number; a shape or person; to understand
+fill | verb | наполнять, заполнять | to make full
+final | adjective | последний, окончательный | at the end
+fit | verb, adjective | подходить; здоровый, в форме | to be the right size; healthy and strong
+fix | verb | чинить; закреплять | to repair; to attach firmly
+fixed | adjective | фиксированный, установленный | not changing
+flag | noun, verb | флаг; отмечать, помечать | a symbol on cloth; to mark for attention
+flashcard | noun | карточка для запоминания | a card with information to help you learn
+flat | noun, adjective | квартира; плоский | an apartment (BrE); level and smooth
+flatter | verb | льстить | to praise insincerely
+flexible | adjective | гибкий | able to change or bend easily
+flour | noun | мука | powder made from grain, used for bread
+fluent | adjective | беглый, свободно говорящий | able to speak or write easily
+focus | noun, verb | фокус, сосредоточение; сосредоточиваться | the main point of attention; to concentrate
+follow | verb | следовать; следить | to come after; to obey; to understand
+food | noun | еда, пища | what people and animals eat
+foot | noun | нога (ступня); фут | the part of the leg you stand on; a unit of length (plural: feet)
+forbid | verb | запрещать | to order someone not to do something
+force | noun, verb | сила; вынуждать | power; to make someone do something
+forget | verb | забывать | to fail to remember
+form | noun, verb | форма; бланк; формировать | a type or shape; a document to fill in; to make
+formative | adjective | формирующий | having influence on development (formative assessment: tests used for learning)
+foundation | noun | основа, фундамент; фонд | a base; an organisation that gives money
+fraction | noun | доля, дробь | a small part; a number like ½
+fragile | adjective | хрупкий | easily broken
+free | adjective | бесплатный; свободный | costing nothing; not controlled
+freedom | noun | свобода | the right to act as you want
+frequent | adjective | частый | happening often
+friendly | adjective | дружелюбный | kind and pleasant
+fundamental | adjective | основополагающий, фундаментальный | basic and very important
+further | adjective, adverb | дальнейший, дополнительный; далее | more; to a greater distance or degree
+future | noun, adjective | будущее; будущий | the time to come
+gain | noun, verb | выгода, прирост; получать | an increase; to obtain
+gallery | noun | галерея | a building for showing art
+gap | noun | разрыв, пробел | a space or difference between two things
+garment | noun | предмет одежды | a piece of clothing (formal)
+gas | noun | газ | a substance like air; (AmE) petrol
+generate | verb | производить, порождать | to produce or create
+generative | adjective | генеративный | able to produce new content (generative AI)
+generous | adjective | щедрый | happy to give more than expected
+genuine | adjective | подлинный, искренний | real; sincere
+global | adjective | глобальный, мировой | affecting the whole world
+good | adjective | хороший | of high quality; pleasant (better, best)
+government | noun | правительство | the group that controls a country
+grade | noun, verb | оценка; класс; оценивать | a mark for work; a level
+gradual | adjective | постепенный | happening slowly over time
+grass | noun | трава | a common green plant covering the ground
+grasshopper | noun | кузнечик | a jumping insect
+graze | verb | пастись | (of animals) to eat grass
+great | adjective | великий; огромный; отличный | very large; important; very good
+green | adjective | зелёный; экологичный | the colour of grass; good for the environment
+greenhouse | noun | теплица | a glass building for growing plants (greenhouse gas: a gas that traps heat)
+grey | adjective | серый | between black and white (AmE gray)
+group | noun | группа | a number of people or things together
+grow | verb | расти; выращивать | to increase; to cultivate plants
+guide | noun, verb | гид, руководство; направлять | a person or book that shows the way
+habit | noun | привычка | something you do regularly
+hand | noun | рука (кисть) | the part of the arm at the end
+happen | verb | происходить, случаться | to take place
+hard | adjective, adverb | трудный; твёрдый; усердно | difficult; solid; with effort
+harmful | adjective | вредный | causing damage
+harmony | noun | гармония, согласие | agreement and peaceful relations
+health | noun | здоровье | the condition of the body and mind
+hear | verb | слышать | to receive sounds
+heart | noun | сердце; суть | the organ that pumps blood; the centre
+heavy | adjective | тяжёлый | weighing a lot; serious
+help | noun, verb | помощь; помогать | to make something easier for someone
+hidden | adjective | скрытый | not easy to see or find
+high | adjective | высокий | far above the ground; large in amount
+history | noun | история | the study of past events
+home | noun | дом, родина | the place where you live
+hormone | noun | гормон | a chemical in the body that controls functions
+horse | noun | лошадь | a large animal people ride
+hospital | noun | больница | a place where sick people are treated
+hour | noun | час | 60 minutes
+house | noun | дом | a building for people to live in
+housing | noun | жильё | houses and flats for people to live in
+human | adjective, noun | человеческий; человек | relating to people; a person
+hunt | verb | охотиться | to chase animals to kill them; to search
+idea | noun | идея, мысль | a thought or plan
+ignore | verb | игнорировать | to pay no attention to
+illusion | noun | иллюзия | a false idea or image
+illustration | noun | иллюстрация; пример | a picture; an example that explains
+image | noun | изображение, образ | a picture; the way something is seen
+imitate | verb | подражать, имитировать | to copy
+immunity | noun | иммунитет | protection from disease; legal protection
+impact | noun | влияние, воздействие | a strong effect (impact on something)
+important | adjective | важный | of great value or effect
+impossible | adjective | невозможный | not able to happen
+impressive | adjective | впечатляющий | causing admiration
+improve | verb | улучшать(ся) | to make or become better
+incentive | noun | стимул | something that encourages action
+include | verb | включать | to have as part of a whole
+income | noun | доход | money received regularly
+increase | noun, verb | рост, увеличение; увеличивать(ся) | a rise; to become larger (an increase in)
+independence | noun | независимость | freedom from control
+individual | noun, adjective | личность, человек; индивидуальный | a single person; separate
+industrial | adjective | промышленный | connected with industry
+industrialisation | noun | индустриализация | the development of industries in a country
+industry | noun | промышленность, отрасль | the production of goods; a type of business
+information | noun | информация | facts or details (uncountable)
+informed | adjective | осведомлённый, обоснованный | having or based on knowledge
+ingredient | noun | ингредиент, составляющая | one of the things in a mixture or recipe
+insect | noun | насекомое | a small creature with six legs
+insight | noun | понимание, озарение | a clear, deep understanding
+inspection | noun | проверка, осмотр | a careful official check
+institution | noun | учреждение, институт | a large organisation; an established custom
+intellectual | adjective | интеллектуальный | connected with thinking
+intensive | adjective | интенсивный | involving a lot of effort in a short time
+intention | noun | намерение | a plan or purpose
+international | adjective | международный | between countries
+interruption | noun | перерыв, прерывание | a pause or break in an activity
+interval | noun | интервал, промежуток | a period of time between events
+intervene | verb | вмешиваться | to become involved to change a situation
+introduce | verb | вводить; представлять | to bring in something new; to present a person
+invention | noun | изобретение | something newly created
+invite | verb | приглашать | to ask someone to come
+involve | verb | включать, вовлекать | to include as a necessary part; to make someone take part
+ironic | adjective | ироничный | strange because the opposite of what you expect happens
+irrigation | noun | орошение | supplying water to land for crops
+isolated | adjective | изолированный, отдалённый | far from others; alone
+isolation | noun | изоляция | the state of being separate or alone
+issue | noun, verb | вопрос, проблема; выпускать | an important topic or problem; to give out officially
+item | noun | предмет, пункт | a single thing in a list or group
+job | noun | работа, должность | paid work
+join | verb | присоединяться, соединять | to become a member; to connect
+joint | adjective, noun | совместный; сустав | shared; a place where bones meet
+judgement | noun | суждение, оценка; решение суда | an opinion after thinking; a court decision (AmE judgment)
+justice | noun | справедливость, правосудие | fairness; the legal system
+key | adjective, noun | ключевой; ключ | most important; a tool for a lock
+kind | noun, adjective | вид, тип; добрый | a type; caring and friendly
+knit | verb | вязать | to make clothes from wool with needles
+knock | verb | стучать | to hit a surface to make a noise
+label | noun, verb | этикетка, ярлык; маркировать | a piece of paper with information; to name or describe
+land | noun, verb | земля, суша; приземляться | the ground; to arrive by air
+landscape | noun | пейзаж, ландшафт | everything you see across an area of land
+lane | noun | полоса (движения); переулок | a part of a road for one line of traffic; a narrow road
+language | noun | язык | a system of communication by words
+large | adjective | большой | big
+larva | noun | личинка | the young form of an insect (plural: larvae)
+last | adjective, verb | последний; прошлый; длиться | final; most recent; to continue for a time
+lasting | adjective | длительный, прочный | continuing for a long time
+late | adjective, adverb | поздний; поздно | after the expected time
+latin | noun | латынь | the language of ancient Rome
+law | noun | закон, право | a rule made by a government; the system of rules
+learn | verb | учить, узнавать | to get knowledge or a skill
+learner | noun | учащийся | a person who is learning
+learning | noun | обучение, учёба | the process of getting knowledge
+lentil | noun | чечевица | a small round seed cooked as food
+lesson | noun | урок | a period of teaching; something learned from experience
+level | noun | уровень | the amount, height or standard of something
+life | noun | жизнь | being alive; the period between birth and death
+lifeline | noun | спасательный круг (перен.) | something that someone depends on to survive
+lifestyle | noun | образ жизни | the way a person lives
+limit | noun, verb | предел, ограничение; ограничивать | the greatest amount allowed
+limitation | noun | ограничение, недостаток | a rule or weakness that limits something
+limited | adjective | ограниченный | small in amount
+list | noun, verb | список; перечислять | a series of items written one below another
+live | verb, adjective | жить; живой, прямой (эфир) | to be alive; to have your home; happening now
+livestock | noun | скот | farm animals
+loan | noun | заём, кредит | money that is borrowed
+local | adjective | местный | in or from the area near you
+locate | verb | находить, располагать | to find the exact position; to put in a place
+lockdown | noun | карантин, режим изоляции | an official order to stay at home
+loneliness | noun | одиночество | sadness because you are alone
+lonely | adjective | одинокий | sad because you have no company
+long | adjective, adverb | длинный, долгий; долго | of great length or time
+look | verb, noun | смотреть; выглядеть; взгляд | to direct your eyes; to seem
+lose | verb | терять; проигрывать | to stop having; to fail to win
+loss | noun | потеря, убыток | the fact of losing something
+low | adjective | низкий | not high
+machine | noun | машина, механизм | a device with moving parts that does work
+main | adjective | главный, основной | most important
+major | adjective | крупный, главный | very important or large
+maker | noun | производитель, создатель | a person or company that makes something
+management | noun | управление; руководство | controlling a business; the people in charge
+manipulation | noun | манипуляция | controlling someone or something unfairly
+manufacturing | noun | производство | making goods in factories
+manuscript | noun | рукопись | a handwritten or original text
+market | noun | рынок | a place or system for buying and selling
+mastery | noun | мастерство, владение | great skill or knowledge
+material | noun | материал | a substance; information for a task
+matter | noun, verb | вопрос, дело; вещество; иметь значение | a subject; to be important
+mayor | noun | мэр | the head of a town or city government
+meaningful | adjective | значимый, осмысленный | important and useful
+meaningless | adjective | бессмысленный | without meaning or purpose
+measure | noun, verb | мера; измерять | an action to deal with a problem; to find the size
+meat | noun | мясо | animal flesh eaten as food
+mechanise | verb | механизировать | to use machines for work done by people (AmE mechanize)
+medical | adjective | медицинский | connected with medicine
+medium | noun, adjective | средство; средний | a way of communicating (plural: media); middle size
+meet | verb | встречать(ся); удовлетворять | to come together; to satisfy (meet needs)
+meeting | noun | встреча, собрание | an organised gathering for discussion
+memorise | verb | запоминать, заучивать | to learn by heart (AmE memorize)
+memory | noun | память; воспоминание | the ability to remember; something remembered
+mere | adjective | всего лишь, простой | only; nothing more than
+methane | noun | метан | a gas that contributes to global warming
+method | noun | метод | a way of doing something
+mid | adjective | середина | middle (mid-century, mid-May)
+mild | adjective | мягкий, лёгкий | not strong or severe
+military | adjective, noun | военный; армия | connected with the armed forces
+million | number | миллион | 1,000,000
+minimum | noun, adjective | минимум; минимальный | the smallest amount
+minister | noun | министр; священник | a senior government member; a priest
+minority | noun | меньшинство | a smaller part of a group
+minute | noun | минута | 60 seconds
+miss | verb | пропускать; скучать | to fail to catch or attend; to feel sad without
+mistake | noun | ошибка | something done wrongly
+mistaken | adjective | ошибочный | wrong
+mix | verb, noun | смешивать; смесь | to combine
+model | noun | модель; образец | a representation; an example to copy
+modest | adjective | скромный, умеренный | not large; not boastful
+money | noun | деньги | coins and notes used to buy things
+motivated | adjective | мотивированный | eager to do something
+move | verb, noun | двигать(ся); переезжать; шаг | to change position; to change home; an action
+museum | noun | музей | a building for objects of historical or artistic value
+name | noun, verb | имя, название; называть | what someone or something is called
+national | adjective | национальный | of a whole country
+natural | adjective | природный, естественный | from nature; normal
+nature | noun | природа; суть | the physical world; basic character
+necessary | adjective | необходимый | needed
+neighbourhood | noun | район, окрестности | the area around your home (AmE neighborhood)
+neutral | adjective | нейтральный | not supporting either side
+new | adjective | новый | recently made or discovered
+news | noun | новости | information about recent events (uncountable, singular verb)
+next | adjective | следующий | coming immediately after
+night | noun | ночь | the time when it is dark
+norm | noun | норма | a usual or expected standard
+normal | adjective | нормальный, обычный | usual
+note | noun, verb | заметка; записка; отмечать | a short written record; to notice
+notice | verb, noun | замечать; объявление | to see; a written announcement
+novel | noun, adjective | роман; новый, оригинальный | a long story; new and unusual
+novelty | noun | новизна, новинка | the quality of being new
+number | noun | число, номер | a figure; an amount
+nurse | noun | медсестра, медбрат | a person who cares for sick people
+nutritional | adjective | пищевой, питательный | connected with nutrition
+object | noun, verb | предмет; цель; возражать | a thing; a purpose; (object to) to disagree
+objection | noun | возражение | a reason for disagreeing
+obstacle | noun | препятствие | something that blocks progress
+obtain | verb | получать | to get (formal)
+obvious | adjective | очевидный | easy to see or understand
+occasional | adjective | редкий, нерегулярный | happening sometimes
+ocean | noun | океан | a very large area of sea
+offer | verb, noun | предлагать; предложение | to say you will give something
+office | noun | офис | a place where people work at desks
+old | adjective | старый | having lived or existed for a long time
+online | adjective, adverb | онлайн, в интернете | connected to the internet
+open | adjective, verb | открытый; открывать | not closed; to make open
+opportunity | noun | возможность | a chance to do something
+opposite | adjective, noun | противоположный | completely different
+option | noun | вариант, выбор | a possible choice
+optional | adjective | необязательный | that you can choose
+ordinary | adjective | обычный | normal, not special
+organisation | noun | организация | a group with a purpose; the act of organising (AmE organization)
+organise | verb | организовывать | to plan or arrange (AmE organize)
+origin | noun | происхождение | where something comes from
+original | adjective, noun | первоначальный, оригинальный; оригинал | first; new and unusual
+output | noun | производительность, выпуск | the amount produced
+painful | adjective | болезненный | causing pain
+paint | verb, noun | красить, рисовать; краска | to cover with colour; to make a picture
+painter | noun | художник; маляр | a person who paints
+parent | noun | родитель | a mother or father
+park | noun, verb | парк; парковать | a public garden; to leave a vehicle
+part | noun | часть; роль | a piece of a whole
+participate | verb | участвовать | to take part
+particular | adjective | особый, конкретный | specific; special
+party | noun | партия; вечеринка | a political group; a social event
+pass | verb | проходить; сдавать (экзамен); передавать | to go past; to succeed in a test; to give
+pasta | noun | макароны, паста | Italian food made from flour and water
+patient | noun, adjective | пациент; терпеливый | a person receiving medical care; able to wait calmly
+pattern | noun | закономерность; узор | a regular way something happens; a design
+pause | noun, verb | пауза; делать паузу | a short stop
+pay | verb, noun | платить; зарплата | to give money for something
+penalty | noun | наказание, штраф | a punishment
+perfect | adjective | идеальный | without faults
+permanent | adjective | постоянный | lasting for ever or a long time
+permission | noun | разрешение | being allowed to do something
+persistent | adjective | настойчивый, стойкий | continuing for a long time; not giving up
+person | noun | человек, лицо | a human being (plural: people)
+personal | adjective | личный | belonging to a particular person
+persuade | verb | убеждать | to make someone agree by giving reasons
+pesticide | noun | пестицид | a chemical that kills insects harmful to crops
+photography | noun | фотография (искусство) | taking photographs
+physical | adjective | физический | connected with the body or real objects
+picture | noun | картина, изображение | a painting, drawing or photograph
+piece | noun | кусок, часть; произведение | a part of something; a work of art or writing
+place | noun, verb | место; размещать | a position or area; to put
+plain | adjective | простой, ясный | simple; easy to understand
+plan | noun, verb | план; планировать | a set of decisions about what to do
+planner | noun | планировщик; ежедневник | a person who plans; a diary for planning
+planning | noun | планирование | making plans
+plant | noun, verb | растение; завод; сажать | a living thing that grows in soil; a factory; to put in the ground
+platform | noun | платформа | a raised surface; an online service
+play | verb, noun | играть; пьеса | to take part in a game; a drama
+pleasant | adjective | приятный | enjoyable
+plenty | pronoun | множество, изобилие | a large amount (plenty of)
+point | noun, verb | точка; суть; указывать | an idea in an argument; a moment; to show with a finger
+political | adjective | политический | connected with politics
+politician | noun | политик | a person in politics
+pollute | verb | загрязнять | to make air, water or land dirty
+poor | adjective | бедный; плохой | having little money; of low quality
+popularise | verb | популяризировать | to make popular (AmE popularize)
+population | noun | население; популяция | all the people living in an area
+possible | adjective | возможный | able to happen
+post | noun, verb | пост, публикация; должность; публиковать | a message online; a job; to publish
+practical | adjective | практический, практичный | connected with real use; sensible
+practice | noun | практика; тренировка | doing something regularly to improve; the usual way of doing things
+practise | verb | практиковаться, тренироваться | to do something regularly to improve (AmE practice)
+prebunk | verb | предварительно разоблачать | to warn people about false information before they see it
+predecessor | noun | предшественник | the person or thing that came before
+prepare | verb | готовить(ся) | to make ready
+present | adjective, noun, verb | присутствующий; настоящий; подарок; представлять | existing now; a gift; to show or give
+prevent | verb | предотвращать | to stop something happening
+price | noun | цена | the amount of money needed to buy something
+primary | adjective | основной; начальный | main; first in order (primary school)
+principle | noun | принцип | a basic rule or belief
+private | adjective | частный, личный | belonging to a person, not the state
+problem | noun | проблема | something difficult to deal with
+process | noun, verb | процесс; обрабатывать | a series of actions; to deal with
+produce | verb, noun | производить; продукция (сельхоз) | to make; food grown on farms
+product | noun | продукт, товар | something made to be sold
+production | noun | производство | the process of making goods
+productive | adjective | продуктивный | producing a lot
+productivity | noun | производительность | the rate of producing work
+professional | adjective, noun | профессиональный; профессионал | connected with a skilled job
+profitable | adjective | прибыльный | making money
+progress | noun, verb | прогресс; продвигаться | improvement; to move forward
+project | noun | проект | a planned piece of work
+promising | adjective | многообещающий | likely to be successful
+prompt | verb, adjective, noun | побуждать; быстрый; подсказка | to cause; quick; a message that asks you to act
+property | noun | собственность, имущество; свойство | things owned; a quality
+proportion | noun | доля, пропорция | a part compared with the whole
+protect | verb | защищать | to keep safe
+protein | noun | белок | a substance in food needed for growth
+prove | verb | доказывать; оказываться | to show that something is true; to turn out to be
+provenance | noun | происхождение | the place of origin of something
+provide | verb | предоставлять, обеспечивать | to give or supply
+provoke | verb | провоцировать, вызывать | to cause a reaction
+psychologist | noun | психолог | an expert in the mind and behaviour
+public | adjective, noun | общественный, публичный; публика | for everyone; people in general
+publish | verb | публиковать | to make available to the public
+pull | verb | тянуть | to move towards you
+punish | verb | наказывать | to make someone suffer for doing wrong
+pure | adjective | чистый | not mixed with anything
+push | verb | толкать; продвигать | to move away from you; to encourage strongly
+quality | noun | качество | how good something is
+quantity | noun | количество | an amount
+quarter | noun | четверть; квартал | one of four equal parts; a district
+question | noun, verb | вопрос; сомневаться | a sentence asking for information; to doubt
+quick | adjective | быстрый | fast
+raise | verb | поднимать; повышать; растить; собирать (деньги) | to lift; to increase; to bring up children
+reach | verb | достигать, дотягиваться | to arrive at; to extend your hand to
+read | verb | читать | to look at and understand written words
+real | adjective | настоящий, реальный | actually existing; genuine
+realism | noun | реализм | accepting things as they really are
+realistic | adjective | реалистичный | sensible and practical
+reason | noun | причина; разум | why something happens; the ability to think logically
+reasoning | noun | рассуждение | the process of thinking logically
+recall | verb | вспоминать; отзывать | to remember; to ask for something back
+recent | adjective | недавний | happening a short time ago
+recognise | verb | узнавать; признавать | to know again; to accept as true (AmE recognize)
+recognition | noun | узнавание; признание | knowing again; public praise
+recombine | verb | рекомбинировать | to combine again in a new way
+reconnect | verb | восстанавливать связь | to connect again
+recover | verb | выздоравливать, восстанавливаться | to get better; to get back
+redesign | verb | перепроектировать | to design again
+reduce | verb | уменьшать, сокращать | to make smaller
+refer | verb | ссылаться, упоминать | (refer to) to mention; to direct someone to
+reflect | verb | отражать; размышлять | to show; to think carefully
+refuse | verb | отказываться | to say no
+region | noun | регион, область | an area of a country or the world
+regular | adjective | регулярный, обычный | happening at fixed times; normal
+reintroduce | verb | вновь вводить, возвращать (вид в природу) | to bring back
+reject | verb | отвергать | to refuse to accept
+relearn | verb | заново учить | to learn again
+reliable | adjective | надёжный | able to be trusted
+remain | verb | оставаться | to stay; to continue to exist
+remember | verb | помнить, вспоминать | to keep in your memory
+removal | noun | удаление | taking away
+remove | verb | удалять, убирать | to take away
+reorganise | verb | реорганизовывать | to organise in a new way
+repair | verb, noun | ремонтировать; ремонт | to fix
+repeat | verb | повторять | to do or say again
+repetition | noun | повторение | doing or saying again
+replace | verb | заменять | to put something new instead
+reply | noun, verb | ответ; отвечать | an answer
+report | noun, verb | отчёт, доклад; сообщать | a written account; to give information
+represent | verb | представлять, изображать | to act for; to be a sign of
+request | noun, verb | просьба; просить | a polite demand
+require | verb | требовать | to need
+reread | verb | перечитывать | to read again
+researcher | noun | исследователь | a person who does research
+reserve | noun, verb | заповедник; резерв; бронировать | a protected area; a supply kept for later; to book
+resident | noun | житель | a person who lives in a place
+respect | noun, verb | уважение; уважать | admiration; to admire
+response | noun | ответ, реакция | a reaction or reply
+responsible | adjective | ответственный | having a duty; being the cause
+rest | noun, verb | отдых; остальное; отдыхать | relaxation; what is left
+restrict | verb | ограничивать | to limit
+result | noun, verb | результат; (result in) приводить к | an outcome; to cause
+retrieval | noun | извлечение (из памяти) | getting information back
+return | verb, noun | возвращать(ся); возврат | to come or give back
+reveal | verb | раскрывать | to make known
+reverse | verb, adjective | обращать вспять; обратный | to change to the opposite
+review | noun, verb | обзор, отзыв; пересматривать | an assessment; to look at again
+reward | noun, verb | награда; вознаграждать | something given for good behaviour or work
+rewild | verb | ревайлдинг: возвращать землю дикой природе | to return land to its natural state
+rewrite | verb | переписывать | to write again in a different way
+right | adjective, noun | правильный; правый; право | correct; on the right side; a legal claim
+rightful | adjective | законный | legally or morally correct
+risk | noun, verb | риск; рисковать | the possibility of something bad
+river | noun | река | a natural flow of water
+riverbank | noun | берег реки | the land beside a river
+road | noun | дорога | a way for vehicles
+room | noun | комната; место | a part of a building; space
+rote | noun | зубрёжка (by rote — наизусть, механически) | learning by repetition without understanding
+routine | noun | распорядок, рутина | a usual order of doing things
+royal | adjective | королевский | connected with a king or queen
+rule | noun, verb | правило; управлять | an instruction; to govern
+rural | adjective | сельский | in the countryside
+sacred | adjective | священный | holy
+safe | adjective | безопасный | not in danger
+sale | noun | продажа; распродажа | selling; a time of reduced prices
+same | adjective | тот же самый | not different
+scale | noun | масштаб; шкала | size; a range of levels
+sceptic | noun | скептик | a person who doubts claims (AmE skeptic)
+scheme | noun | схема, программа | an official plan
+school | noun | школа | a place where children learn
+schoolyard | noun | школьный двор | the outdoor area of a school
+science | noun | наука | the study of the natural world
+scientific | adjective | научный | connected with science
+scientist | noun | учёный | a person who works in science
+sculpture | noun | скульптура | a work of art made from stone, metal etc.
+second | adjective, noun | второй; секунда | after the first; 1/60 of a minute
+sector | noun | сектор, отрасль | a part of the economy
+select | verb | выбирать | to choose carefully
+self | noun | себя, личность | a person's own nature
+sell | verb | продавать | to give in exchange for money
+sense | noun, verb | чувство; смысл; ощущать | a feeling; meaning; to feel
+separate | adjective, verb | отдельный; разделять | not joined; to divide
+separation | noun | разделение | the act of separating
+serious | adjective | серьёзный | important; not joking
+service | noun | услуга, служба | work done for others; a system that provides something
+session | noun | сеанс, занятие | a period of activity
+settle | verb | поселиться; улаживать | to start living somewhere; to resolve
+sew | verb | шить | to join cloth with a needle and thread
+shape | noun, verb | форма; формировать | the outline of something; to influence
+share | verb, noun | делиться; доля; акция | to have or use with others; a part
+sharp | adjective | острый; резкий | able to cut; sudden and large
+ship | noun, verb | корабль; отправлять | a large boat; to send goods
+shop | noun, verb | магазин; делать покупки | a place selling goods
+short | adjective | короткий | not long
+side | noun | сторона | a part or surface; a position in an argument
+significant | adjective | значительный, важный | large or important
+simple | adjective | простой | easy; not complicated
+simplify | verb | упрощать | to make simpler
+single | adjective | единственный; одинокий | only one; not married
+sit | verb | сидеть | to rest on a seat
+skill | noun | навык | the ability to do something well
+skilful | adjective | умелый | having skill (AmE skillful)
+sleep | noun, verb | сон; спать | rest with closed eyes
+slaughter | noun, verb | забой (скота); бойня | the killing of animals for food
+slow | adjective | медленный | not fast
+small | adjective | маленький | not large
+snack | noun | перекус | a small amount of food between meals
+social | adjective | социальный, общественный | connected with society or meeting people
+software | noun | программное обеспечение | computer programs
+solution | noun | решение | a way to solve a problem
+solve | verb | решать | to find an answer
+song | noun | песня | a short piece of music with words
+soya | noun | соя | a bean used in food (AmE soy)
+space | noun | пространство; космос | an empty area; the universe beyond Earth
+specialist | noun | специалист | an expert in one area
+specific | adjective | конкретный | particular; exact
+speech | noun | речь | the ability to speak; a formal talk
+speed | noun | скорость | how fast something moves
+spin | verb | вращать(ся); прясть | to turn round quickly; to make thread
+spoil | verb | портить | to damage; to make worse
+spoon | noun | ложка | a tool for eating liquid food
+spread | verb, noun | распространять(ся); распространение | to move over a large area
+stabilise | verb | стабилизировать | to make steady (AmE stabilize)
+stable | adjective | стабильный | not likely to change
+staff | noun | персонал | the people who work for an organisation
+stage | noun | этап; сцена | a step in a process; a platform for performing
+start | verb, noun | начинать; начало | to begin
+statement | noun | заявление, утверждение | something said or written officially
+statistical | adjective | статистический | connected with statistics
+stay | verb | оставаться | to remain
+steel | noun | сталь | a strong metal
+steep | adjective | крутой; резкий | rising sharply
+step | noun | шаг | a movement of the foot; a stage in a process
+stop | verb | останавливать(ся); прекращать | to end; to not move
+story | noun | история, рассказ | a description of events
+stranger | noun | незнакомец | a person you do not know
+strategy | noun | стратегия | a plan to achieve a goal
+street | noun | улица | a road in a town
+strengthen | verb | укреплять | to make stronger
+stress | noun | стресс; ударение | worry and pressure; emphasis
+striking | adjective | поразительный | very noticeable
+strong | adjective | сильный | powerful
+student | noun | студент, ученик | a person who studies
+study | noun, verb | исследование; учёба; изучать | a piece of research; to learn
+style | noun | стиль | a way of doing or designing something
+stylish | adjective | стильный | fashionable
+subcontractor | noun | субподрядчик | a company paid by another company to do part of a job
+submit | verb | подавать, сдавать | to give formally for consideration
+succeed | verb | преуспевать | to achieve what you planned
+successful | adjective | успешный | achieving success
+suffering | noun | страдание | pain or distress
+suggest | verb | предлагать; указывать | to propose; to indicate
+suit | verb, noun | подходить; костюм | to be right for; formal clothes
+supplier | noun | поставщик | a company that provides goods
+supply | noun, verb | поставка, запас; поставлять | an amount available; to provide
+support | noun, verb | поддержка; поддерживать | help; to help or agree with
+supporter | noun | сторонник | a person who supports
+suppose | verb | полагать, предполагать | to think something is probably true
+sure | adjective | уверенный | certain
+surprise | noun, verb | сюрприз, удивление; удивлять | something unexpected
+surprising | adjective | удивительный | unexpected
+survivable | adjective | такой, который можно пережить | possible to survive
+syllable | noun | слог | a unit of sound in a word
+system | noun | система | a set of connected parts or rules
+t-shirt | noun | футболка | a simple cotton top with short sleeves
+tail | noun | хвост | the part at the back of an animal
+talk | verb, noun | говорить; разговор, доклад | to speak; a lecture
+tank | noun | бак, резервуар; танк | a container for liquid; a military vehicle
+task | noun | задача, задание | a piece of work
+taste | noun, verb | вкус; пробовать | flavour; to try food
+teach | verb | преподавать, учить | to give lessons
+teacher | noun | учитель | a person who teaches
+team | noun | команда | a group working together
+technical | adjective | технический | connected with technology or practical knowledge
+technique | noun | техника, приём | a method
+technology | noun | технология | scientific knowledge used in practice
+tend | verb | иметь тенденцию; ухаживать | (tend to) to usually do; to look after
+tendency | noun | тенденция, склонность | a usual way of behaving
+term | noun | термин; семестр; срок | a word with a specific meaning; a period
+test | noun, verb | тест; проверять | an examination; to check
+text | noun | текст | written words
+third | adjective, noun | третий; треть | after the second; one of three parts
+thousand | number | тысяча | 1,000
+time | noun | время; раз | minutes, hours, days; an occasion
+today | adverb, noun | сегодня; в наши дни | this day; nowadays
+tool | noun | инструмент | a device for doing a job
+top | noun, adjective | верх; лучший | the highest part; best
+tourist | noun | турист | a person travelling for pleasure
+town | noun | город (небольшой) | a place smaller than a city
+trade | noun, verb | торговля; ремесло; торговать | buying and selling; a skilled job
+tradition | noun | традиция | a custom passed down
+traditional | adjective | традиционный | following tradition
+traffic | noun | движение, трафик | vehicles on roads
+train | verb, noun | обучать, тренировать; поезд | to teach a skill; a railway vehicle
+transparency | noun | прозрачность | openness and honesty
+transport | noun, verb | транспорт; перевозить | vehicles; to carry
+travel | verb, noun | путешествовать; путешествие | to go from one place to another
+tree | noun | дерево | a tall plant with a trunk
+triumph | noun | триумф | a great success
+trophic | adjective | трофический (связанный с питанием) | connected with feeding (trophic cascade: effects through a food chain)
+true | adjective | правдивый, верный | correct; real
+try | verb | пытаться; пробовать | to attempt; to test
+turn | verb, noun | поворачивать; очередь | to change direction; an opportunity in order
+ultimate | adjective | конечный, окончательный | final; greatest
+uncomfortable | adjective | неудобный, неловкий | not comfortable
+undecided | adjective | нерешивший, неопределившийся | not having decided
+uneasy | adjective | беспокойный, неловкий | worried
+unequal | adjective | неравный | not equal
+uninformed | adjective | неосведомлённый | lacking knowledge
+uninterested | adjective | незаинтересованный | not interested (not the same as disinterested)
+union | noun | союз; профсоюз | a group joined together; a workers' organisation
+unique | adjective | уникальный | the only one of its kind
+united | adjective | объединённый | joined together
+universal | adjective | всеобщий, универсальный | for everyone
+university | noun | университет | an institution for higher education
+unnecessary | adjective | ненужный | not needed
+unpleasant | adjective | неприятный | not enjoyable
+unsafe | adjective | небезопасный | dangerous
+unusual | adjective | необычный | not common
+use | verb, noun | использовать; использование | to employ for a purpose
+useful | adjective | полезный | helpful
+user | noun | пользователь | a person who uses something
+valley | noun | долина | low land between hills
+valuable | adjective | ценный | worth a lot
+value | noun, verb | ценность; ценить | worth; to consider important
+varied | adjective | разнообразный | of different types
+vary | verb | различаться, меняться | to be different; to change
+video | noun | видео | a recording of moving pictures
+view | noun, verb | мнение; вид; рассматривать | an opinion; what you can see; to consider
+visibility | noun | видимость | how easily something can be seen
+visit | verb, noun | посещать; визит | to go to see
+visitor | noun | посетитель | a person who visits
+voluntary | adjective | добровольный | done by choice
+volunteer | noun, verb | доброволец; вызываться | a person who works without pay
+vote | noun, verb | голос; голосовать | a choice in an election
+voter | noun | избиратель | a person who votes
+wage | noun | заработная плата | money paid for work, usually weekly
+walk | verb, noun | ходить пешком; прогулка | to move on foot
+want | verb | хотеть | to wish for
+warehouse | noun | склад | a large building for storing goods
+warm | adjective | тёплый | slightly hot
+warn | verb | предупреждать | to tell about danger
+wary | adjective | настороженный | cautious
+water | noun | вода | a clear liquid
+way | noun | путь; способ | a road; a method
+weak | adjective | слабый | not strong
+weaken | verb | ослаблять | to make weaker
+weakness | noun | слабость | a lack of strength; a fault
+wealthy | adjective | богатый | rich
+wear | verb | носить (одежду) | to have clothes on your body
+weaving | noun | ткачество | making cloth by crossing threads
+week | noun | неделя | seven days
+weekend | noun | выходные | Saturday and Sunday
+well | adverb, noun | хорошо; колодец | in a good way; a hole for water
+wide | adjective | широкий | broad
+widen | verb | расширять | to make wider
+wild | adjective | дикий | living in nature
+willingness | noun | готовность | being happy to do something
+wolf | noun | волк | a wild animal like a large dog (plural: wolves)
+woman | noun | женщина | an adult female (plural: women)
+word | noun | слово | a unit of language
+work | verb, noun | работать; работа; произведение | to do a job; employment; a piece of art
+worker | noun | работник | a person who works
+worksheet | noun | рабочий лист | a sheet of exercises
+world | noun | мир | the earth and its people
+worry | verb, noun | беспокоиться; беспокойство | to feel anxious
+write | verb | писать | to put words on paper or screen
+writer | noun | писатель | a person who writes
+wrong | adjective | неправильный | not correct
+yarn | noun | пряжа | thread used for knitting or weaving
+year | noun | год | twelve months
+young | adjective | молодой | not old
+zone | noun | зона | an area with a special purpose
+one | number | один | the number 1
+two | number | два | the number 2
+three | number | три | the number 3
+four | number | четыре | the number 4
+five | number | пять | the number 5
+six | number | шесть | the number 6
+fifteen | number | пятнадцать | the number 15
+forty | number | сорок | the number 40
+seventy | number | семьдесят | the number 70
+ninety | number | девяносто | the number 90
+first | ordinal number, adverb | первый; сначала | coming before all others; at the beginning
+fourth | ordinal number | четвёртый; четверть (AmE) | number 4 in a series
+fifth | ordinal number | пятый | number 5 in a series
+nineteenth | ordinal number | девятнадцатый | number 19 in a series (the nineteenth century = the 1800s)
+twentieth | ordinal number | двадцатый | number 20 in a series (the twentieth century = the 1900s)
+hire | verb | нанимать; брать напрокат | to employ someone; to pay to use something for a time
+mow | verb | косить | to cut grass
+nonsense | noun | чепуха, вздор | words or ideas that are silly or not true
+stick | verb, noun | приклеивать(ся); придерживаться; палка | to attach; (stick to) to continue with; a thin piece of wood
+increasing | adjective | возрастающий, растущий | becoming larger or more frequent

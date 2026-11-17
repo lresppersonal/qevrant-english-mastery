@@ -85,3 +85,13 @@ Every new entry has English, Russian, an original definition, an original exampl
 
 ### Speaking
 161 original prompts in 16 categories × 4 levels; 1-minute (15 s + 60 s) and 2-minute (60 s + 120 s) modes.
+
+---
+
+## Update 2026-11-17 (b) — dictionary, writing reliability, microphone, cookies
+
+### Dictionary
+- **Built-in lexicon:** `content/src/dictionary/core.txt` holds 282 grammar words and expressions (determiners, pronouns, prepositions, conjunctions and linkers, adverbs, modal and auxiliary verbs, common verbs), with Russian, definition, example, usage note and forms. `general.txt` holds 968 everyday and academic words, with Russian and definition. All of it is original content.
+- **Coverage:** every one of the 1,654 different words in the 12 Reading passages now resolves locally (directly or through its base form), except personal and place names.
+- **Hybrid lookup:** built-in → cache → Free Dictionary API (Wiktionary: IPA, recordings, parts of speech, synonyms) → Claude (original definitions, Russian, CEFR, register, collocations, forms, usage notes, meaning in the sentence). Base forms come from compromise (in context) plus a rule-based lemmatiser with irregular verbs, nouns and adjectives.
+- **Licensing:** Wiktionary text is CC BY-SA 3.0. It is shown with attribution only when no AI-written definition exists, and is never committed to the repository. Recordings are played from Wikimedia servers with attribution.

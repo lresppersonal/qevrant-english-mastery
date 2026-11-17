@@ -375,6 +375,43 @@ const speakingBank: { id: string; category: string; level: string; prompt: strin
   }
 }
 
+// ---------- Core lexicon (grammar words, common verbs, expressions) ----------
+const coreLexicon: { word: string; pos: string; ru: string; definition: string; example: string; note: string; forms: string[]; group: string }[] = [];
+{
+  const f = path.join(SRC, "dictionary", "core.txt");
+  if (fs.existsSync(f)) {
+    let group = "";
+    const seen = new Set<string>();
+    fs.readFileSync(f, "utf8").split("\n").forEach((line, n) => {
+      const l = line.trim();
+      if (!l || l.startsWith("# ")) return;
+      if (l.startsWith("## ")) { group = l.slice(3).trim(); return; }
+      const p = l.split("|").map((x) => x.trim());
+      if (p.length < 7 || !p[0] || !p[1] || !p[2] || !p[3]) return fail(`dictionary/core.txt:${n + 1}`, "expected 7 fields: word | pos | ru | definition | example | note | forms");
+      const key = p[0].toLowerCase();
+      if (seen.has(key)) return fail(`dictionary/core.txt:${n + 1}`, `duplicate "${p[0]}"`);
+      seen.add(key);
+      coreLexicon.push({ word: p[0], pos: p[1], ru: p[2], definition: p[3], example: p[4], note: p[5], forms: p[6].split(";").map((x) => x.trim()).filter(Boolean), group });
+    });
+  }
+  const g = path.join(SRC, "dictionary", "general.txt");
+  if (fs.existsSync(g)) {
+    const coreWords = new Set(coreLexicon.map((c) => c.word.toLowerCase()));
+    const seen = new Set<string>();
+    fs.readFileSync(g, "utf8").split("\n").forEach((line, n) => {
+      const l = line.trim();
+      if (!l || l.startsWith("#")) return;
+      const p = l.split("|").map((x) => x.trim());
+      if (p.length !== 4 || p.some((x) => !x)) return fail(`dictionary/general.txt:${n + 1}`, "expected: word | pos | ru | definition");
+      const key = p[0].toLowerCase();
+      if (seen.has(key)) return fail(`dictionary/general.txt:${n + 1}`, `duplicate "${p[0]}"`);
+      seen.add(key);
+      if (coreWords.has(key)) return;
+      coreLexicon.push({ word: p[0], pos: p[1], ru: p[2], definition: p[3], example: "", note: "", forms: [], group: "General vocabulary" });
+    });
+  }
+}
+
 if (errors.length) {
   console.error(`✗ ${errors.length} content error(s):\n` + errors.map((e) => `  ${e}`).join("\n"));
   process.exit(1);
@@ -386,9 +423,11 @@ write("exercises.json", exercises);
 write("readings.json", readings);
 write("writing.json", { guides, prompts });
 write("speaking-bank.json", { categories: speakingCategories, prompts: speakingBank });
+write("core-lexicon.json", coreLexicon);
 const attested = vocab.filter((v) => (v.attestedIn as string[]).length).length;
 console.log(`✓ vocabulary ${vocab.length} entries (${attested} attested in reference books${Object.keys(sourceText).length ? "" : ", kept from previous run"}), ${families.length} word families, ${distinctions.length} distinctions`);
 console.log(`✓ grammar ${lessons.length} lessons, ${exercises.filter((e) => e.skill === "grammar").reduce((n, e) => n + (e.questions as unknown[]).length, 0)} practice questions`);
 console.log(`✓ reading ${readings.length} texts, ${exercises.filter((e) => e.skill === "reading").reduce((n, e) => n + (e.questions as unknown[]).length, 0)} questions`);
 console.log(`✓ writing ${guides.length} essay types, ${prompts.length} questions`);
+console.log(`✓ core lexicon ${coreLexicon.filter((c) => c.group !== "General vocabulary").length} grammar words and expressions + ${coreLexicon.filter((c) => c.group === "General vocabulary").length} general words`);
 console.log(`✓ speaking bank ${speakingBank.length} prompts in ${speakingCategories.length} categories`);

@@ -23,8 +23,14 @@ export function grammarCatalogue() {
   return { text: lines.join("\n"), ids };
 }
 
-export function vocabularyList() {
-  const senses = allSenses();
+/** The vocabulary list sent to the AI: by default only senses tagged with the task's themes (keeps prompts small and fast). */
+export function vocabularyList(themes?: string[], max = 160) {
+  let senses = allSenses();
+  if (themes?.length) {
+    const inTheme = senses.filter(({ sense }) => sense.topics.some((t) => themes.includes(t)));
+    const academic = senses.filter(({ sense }) => sense.academic && !inTheme.includes(senses.find((x) => x.sense.id === sense.id)!));
+    senses = [...inTheme, ...academic].slice(0, max);
+  }
   return {
     text: senses.map(({ item, sense }) => `${sense.id} — ${item.lemma} (${sense.level}): ${sense.definition}`).join("\n"),
     ids: new Set(senses.map(({ sense }) => sense.id)),
@@ -52,9 +58,9 @@ Feedback rules:
 - nextSteps: 2–4 actions the learner can do this week.
 `.trim();
 
-export function writingSystem() {
+export function writingSystem(themes?: string[]) {
   const g = grammarCatalogue();
-  const v = vocabularyList();
+  const v = vocabularyList(themes);
   return `${SHARED_RULES}
 
 Assess an ACADEMIC essay (IELTS Writing Task 2 style) on four criteria, in this order, using these exact criterion keys:
@@ -73,9 +79,9 @@ VOCABULARY LIST
 ${v.text}`;
 }
 
-export function speakingSystem() {
+export function speakingSystem(themes?: string[]) {
   const g = grammarCatalogue();
-  const v = vocabularyList();
+  const v = vocabularyList(themes);
   return `${SHARED_RULES}
 
 You are assessing a SPOKEN answer (IELTS Speaking Part 2 style long turn) from an automatic transcript.

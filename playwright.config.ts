@@ -20,11 +20,12 @@ export default defineConfig({
   ],
   webServer: [
     { command: "node e2e/mock-anthropic.mjs", port: 4010, reuseExistingServer: true },
+    { command: "node e2e/mock-dictionary.mjs", port: 4011, reuseExistingServer: true },
     {
       command: "npx next start -p 3100",
       port: 3100,
       reuseExistingServer: true,
-      env: { ANTHROPIC_API_KEY: "test-key", ANTHROPIC_BASE_URL: "http://localhost:4010", AI_DEMO_ALLOW: "true", NEXT_TELEMETRY_DISABLED: "1" },
+      env: { ANTHROPIC_API_KEY: "test-key", ANTHROPIC_BASE_URL: "http://localhost:4010", AI_DEMO_ALLOW: "true", AI_MAX_RETRIES: "0", DICTIONARY_API_BASE: "http://localhost:4011/api/v2/entries/en", NEXT_TELEMETRY_DISABLED: "1" },
     },
   ],
 });

@@ -36,3 +36,25 @@ do $$ begin
 end $$;
 reset role;
 select count(*) as a_listening, (select preferences->'speaking'->>'mode' from public.profiles where id='11111111-1111-1111-1111-111111111111') as a_mode from public.listening_logs;
+-- Migration 4: drafts, writing status, dictionary cache
+set role authenticated;
+set request.jwt.claim.sub = '11111111-1111-1111-1111-111111111111';
+insert into public.essay_drafts (user_id, prompt_slug, body) values ('11111111-1111-1111-1111-111111111111','gig-economy','draft text');
+insert into public.writing_submissions (id, user_id, prompt_slug, body, word_count, status, client_request_id) values ('44444444-4444-4444-4444-444444444444','11111111-1111-1111-1111-111111111111','gig-economy','essay',1,'pending','55555555-5555-5555-5555-555555555555');
+update public.writing_submissions set status = 'failed', error = 'AI busy' where id = '44444444-4444-4444-4444-444444444444';
+do $$ begin
+  begin insert into public.writing_submissions (user_id, prompt_slug, body, word_count, client_request_id) values ('11111111-1111-1111-1111-111111111111','gig-economy','dup',1,'55555555-5555-5555-5555-555555555555'); raise exception 'FAIL: duplicate request id accepted';
+  exception when unique_violation then raise notice 'OK: duplicate submission rejected'; end;
+  begin insert into public.dictionary_cache (key, entry) values ('poison','{}'); raise exception 'FAIL: learner wrote dictionary cache';
+  exception when insufficient_privilege then raise notice 'OK: learners cannot write the dictionary cache'; end;
+end $$;
+set request.jwt.claim.sub = '22222222-2222-2222-2222-222222222222';
+select count(*) as b_sees_a_drafts from public.essay_drafts;
+update public.writing_submissions set status = 'assessed' where id = '44444444-4444-4444-4444-444444444444';
+reset role;
+select status as a_status_after_b_update from public.writing_submissions where id = '44444444-4444-4444-4444-444444444444';
+insert into public.dictionary_cache (key, entry) values ('many', '{"lemma":"many"}');
+grant select on public.dictionary_cache to anon; -- Supabase grants this by default
+set role anon;
+select count(*) as anon_reads_cache from public.dictionary_cache;
+reset role;

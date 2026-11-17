@@ -8,6 +8,7 @@ import { ProfileForm } from "@/components/ProfileForm";
 import { ThemeToggle } from "@/components/AppShell";
 import { PageHeader } from "@/components/ui";
 import { InstallAppPanel } from "@/components/PwaSupport";
+import { MicrophonePermission, CookieSettings } from "@/components/PrivacyPermissions";
 
 export default function Settings() {
   const { store, profile, refresh, toast } = useLearner();
@@ -53,6 +54,14 @@ export default function Settings() {
       <section className="card mb-6 space-y-3 p-6" aria-labelledby="h-install">
         <h2 id="h-install" className="text-lg font-bold">App on your phone</h2>
         <InstallAppPanel />
+      </section>
+
+      <section id="privacy" className="card mb-6 scroll-mt-24 space-y-6 p-6" aria-labelledby="h-privacy">
+        <h2 id="h-privacy" className="text-lg font-bold">Privacy and permissions</h2>
+        <p className="text-sm text-muted">English Mastery asks only for what it needs: the microphone for Speaking (when you start a recording) and essential storage to keep you signed in and save your work. Cookie choices and microphone access are separate: changing one never changes the other.</p>
+        <MicrophonePermission />
+        <hr className="border-line" />
+        <div><h3 className="mb-2 font-bold">Cookies and storage</h3><CookieSettings /></div>
       </section>
 
       <section className="card mb-6 space-y-4 p-6" aria-labelledby="h-pref">

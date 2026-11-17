@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
 import { BRAND } from "@/lib/brand";
+import { CookieSettings } from "@/components/PrivacyPermissions";
 
 export const metadata = { title: "Privacy" };
 
@@ -19,6 +20,15 @@ export default function Privacy() {
         <p>Essays and speaking transcripts are sent to an AI provider (Anthropic) only to generate your practice feedback. If server transcription is enabled, speaking audio is sent to a speech-to-text provider (OpenAI) only to create the transcript. Speaking audio is not stored unless you switch on “Keep my speaking recordings” in Settings. AI band figures are educational estimates, not official IELTS or Cambridge results.</p>
         <h2 className="text-xl font-bold">Your controls</h2>
         <p>In Settings you can export all your data, delete all essays, delete all speaking recordings and transcripts, delete single sessions, change your password, sign out, or delete your account. Deleting your account removes your personal data, including stored recordings, from our database and storage.</p>
+        <h2 id="cookies" className="scroll-mt-6 text-xl font-bold">Cookies and similar storage</h2>
+        <p>Essential cookies and storage are needed for sign-in, security and saving your work, so they don't require consent. Optional storage is off until you allow it. We don't use advertising or tracking cookies, and no analytics are active. You can change your choice at any time here or in Settings.</p>
+        <CookieSettings />
+        <h2 className="text-xl font-bold">Microphone</h2>
+        <p>The microphone is used only in Speaking, after you press Start or test it in Settings. Your browser asks for permission; you can withdraw it in your browser's site settings at any time.</p>
+        <h2 className="text-xl font-bold">Dictionary lookups</h2>
+        <p>When you look up a word that isn't in our built-in dictionary, the word (and, if AI is enabled, its sentence) is sent to the Free Dictionary API and our AI provider to create the entry. No personal details are sent with it. Pronunciation recordings are played from Wikimedia servers.</p>
+        <h2 className="text-xl font-bold">Your rights</h2>
+        <p>Under the GDPR you can access, export, correct and delete your data (Settings ▸ Your data), object to processing and complain to your data-protection authority. Contact the platform owner for any request.</p>
         <h2 className="text-xl font-bold">External listening links</h2>
         <p>The Listening library links to other organisations' websites. When you open them, their own privacy policies apply.</p>
       </div>

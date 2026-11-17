@@ -7,6 +7,7 @@ import { getSense } from "@/lib/content";
 import { SpeakingFeedbackView } from "@/lib/ai/schemas";
 import type { SpeakingAttempt } from "@/lib/store/types";
 import { useLearner } from "./StoreProvider";
+import { micProblem, requestMic } from "@/lib/microphone";
 import { useAiStatus } from "./useAiStatus";
 import { FeedbackView } from "./FeedbackView";
 import { LevelBadge } from "./ui";
@@ -74,7 +75,7 @@ export function SpeakingWorkspace({ prompt }: { prompt: SpeakingPrompt }) {
 
   async function startRecording() {
     try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const stream = await requestMic();
       chunks.current = [];
       finalText.current = "";
       const mr = new MediaRecorder(stream);
@@ -107,9 +108,10 @@ export function SpeakingWorkspace({ prompt }: { prompt: SpeakingPrompt }) {
       startedAt.current = Date.now();
       setPhase("recording");
       countdown(prompt.speakSeconds, stop);
-    } catch {
+    } catch (e) {
       setPhase("idle");
-      setError("We couldn't access your microphone. Check your browser's permission settings and try again.");
+      const p = micProblem(e);
+      setError(`${p.message} ${p.help.join(" ")}`);
     }
   }
 

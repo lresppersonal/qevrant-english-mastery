@@ -1,7 +1,7 @@
 "use client";
 import type {
   LearnerStore, Profile, ActivityEvent, Attempt, ResponseRow, SavedItem, ReviewCardRow,
-  WritingSubmission, SpeakingAttempt, LastPosition, ListeningLog, WeeklyReportRow,
+  WritingSubmission, SpeakingAttempt, LastPosition, ListeningLog, WeeklyReportRow, EssayDraft,
 } from "./types";
 
 /**
@@ -23,6 +23,7 @@ interface DemoDb {
   speaking: SpeakingAttempt[];
   listening: ListeningLog[];
   reports: WeeklyReportRow[];
+  drafts?: Record<string, EssayDraft>;
 }
 
 const fresh = (): DemoDb => ({
@@ -105,6 +106,10 @@ export function createDemoStore(): LearnerStore {
     async addWritingLocal(s) { return mutate((db) => { const row = { ...s, id: uid(), createdAt: now() }; db.writing.push(row); return row; }); },
     async addSpeakingLocal(s) { return mutate((db) => { const row = { ...s, id: uid(), createdAt: now() }; db.speaking.push(row); return row; }); },
 
+    async updateWritingLocal(id, patch) { mutate((db) => { const w = db.writing.find((x) => x.id === id); if (w) Object.assign(w, patch); }); },
+    async getDraft(slug) { return load().drafts?.[slug] ?? null; },
+    async saveDraft(slug, body) { mutate((db) => { db.drafts = { ...(db.drafts ?? {}), [slug]: { promptSlug: slug, body, updatedAt: now() } }; }); },
+    async listDrafts() { return Object.values(load().drafts ?? {}).filter((d) => d.body.trim()); },
     async deleteWriting(id) { mutate((db) => { db.writing = db.writing.filter((x) => x.id !== id); }); },
     async deleteSpeaking(id) { mutate((db) => { db.speaking = db.speaking.filter((x) => x.id !== id); }); },
 

@@ -23,6 +23,7 @@ import VocabEntry from "@/app/(app)/vocabulary/[slug]/page";
 import Reading from "@/app/(app)/reading/page";
 import ReadingPage from "@/app/(app)/reading/[slug]/page";
 import Listening from "@/app/(app)/listening/page";
+import DictionaryPage from "@/app/(app)/dictionary/page";
 import Speaking from "@/app/(app)/speaking/page";
 import SpeakingTask from "@/app/(app)/speaking/[slug]/page";
 import Writing from "@/app/(app)/writing/page";
@@ -40,7 +41,7 @@ import ThemeVocabPage from "@/app/(app)/vocabulary/topics/[slug]/page";
 type Page = (p: { params: Promise<{ slug: string }> }) => ReactNode | Promise<ReactNode>;
 const APP: Record<string, Page> = {
   dashboard: Dashboard as Page, learn: Learn as Page, topics: Topics as Page, grammar: Grammar as Page, vocabulary: Vocabulary as Page,
-  reading: Reading as Page, listening: Listening as Page, speaking: Speaking as Page, writing: Writing as Page,
+  reading: Reading as Page, dictionary: DictionaryPage as Page, listening: Listening as Page, speaking: Speaking as Page, writing: Writing as Page,
   review: Review as Page, library: Library as Page, progress: Progress as Page, settings: Settings as Page, onboarding: Onboarding as Page,
 };
 const DETAIL: Record<string, Page> = {

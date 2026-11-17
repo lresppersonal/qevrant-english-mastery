@@ -5,8 +5,7 @@ import clsx from "clsx";
 import { X, CheckCircle2 } from "lucide-react";
 import type { ReadingText, VocabItem } from "@/lib/content/schema";
 import { segment, sentenceAt } from "@/lib/tokenize";
-import { ItemHeader, SenseBlock } from "./SenseCard";
-import { SaveButton } from "./SaveButton";
+import { DictionaryCard } from "./Dictionary";
 import { useLearner } from "./StoreProvider";
 
 type Selection = { phrase: string; slug: string | null; context: string };
@@ -53,12 +52,11 @@ export function Reader({ text, forms, items }: { text: ReadingText; forms: Recor
     setDone(true);
   }
 
-  const item = sel?.slug ? bySlug.get(sel.slug) : undefined;
 
   return (
     <>
       <div className="mb-4 flex flex-wrap items-center gap-3 text-sm text-muted">
-        <span>Tap any word for its meaning and Russian translation.</span>
+        <span>Tap any word for its meaning, Russian translation and UK/US pronunciation.</span>
         <label className="inline-flex items-center gap-2 font-medium text-ink">
           <input type="checkbox" checked={highlight} onChange={(e) => setHighlight(e.target.checked)} className="h-4 w-4 accent-[var(--primary)]" />
           Underline topic vocabulary
@@ -99,20 +97,7 @@ export function Reader({ text, forms, items }: { text: ReadingText; forms: Recor
         <div ref={panelRef} tabIndex={-1} role="dialog" aria-modal="false" aria-label={`Meaning of ${sel.phrase}`}
           className="sheet-pos card fixed inset-x-3 z-40 max-h-[60vh] overflow-y-auto p-5 outline-none md:inset-x-auto md:right-6 md:w-[400px]">
           <button onClick={close} className="btn btn-ghost absolute right-3 top-3 h-9 w-9 !min-h-0 !p-0" aria-label="Close"><X size={16} /></button>
-          {item ? (
-            <div className="space-y-4 pr-8">
-              <ItemHeader item={item} />
-              {item.senses.map((s) => <SenseBlock key={s.id} item={item} sense={s} context={sel.context} sourceRef={`reading:${text.slug}`} />)}
-              <Link href={`/vocabulary/${item.slug}`} className="text-sm font-semibold text-primary underline-offset-4 hover:underline">Full entry</Link>
-            </div>
-          ) : (
-            <div className="space-y-3 pr-8">
-              <p className="font-display text-2xl font-extrabold">{sel.phrase}</p>
-              <p className="text-muted">This word isn't in the English Mastery dictionary yet. You can still save it with its sentence, to look up and review later.</p>
-              <blockquote className="rounded-lg border-l-4 border-line bg-surface-2 px-3 py-2 text-[15px] italic">{sel.context}</blockquote>
-              <SaveButton itemType="custom" itemRef={sel.phrase.toLowerCase()} label={sel.phrase} context={sel.context} sourceRef={`reading:${text.slug}`} />
-            </div>
-          )}
+          <div className="pr-8"><DictionaryCard key={`${sel.phrase}|${sel.context}`} word={sel.phrase} sentence={sel.context} items={items} sourceRef={`reading:${text.slug}`} gloss={text.keyVocabulary.find((k) => k.term.toLowerCase() === sel.phrase.toLowerCase())} /></div>
         </div>
       )}
     </>

@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
+import { allowed } from "@/lib/consent";
 import { ArrowRight, ArrowLeft, Clock, GitBranch, Lock, ListTree, Rows3 } from "lucide-react";
 import type { Exercise, GrammarLesson } from "@/lib/content/schema";
 import { Blocks, LevelBadge } from "./ui";
@@ -43,7 +44,7 @@ export function LessonView({ lesson, exercises }: { lesson: GrammarLesson; exerc
   const part = parts[idx];
 
   useEffect(() => { try { setShowAll(localStorage.getItem("em-lesson-view") === "all"); } catch { /* storage unavailable */ } }, []);
-  const toggleAll = () => { const v = !showAll; setShowAll(v); try { localStorage.setItem("em-lesson-view", v ? "all" : "parts"); } catch { /* ignore */ } };
+  const toggleAll = () => { const v = !showAll; setShowAll(v); if (allowed("preferences")) { try { localStorage.setItem("em-lesson-view", v ? "all" : "parts"); } catch { /* ignore */ } } };
 
   const go = (key: string, focusId?: string) => {
     setActive(key);

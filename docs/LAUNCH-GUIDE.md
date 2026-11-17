@@ -46,11 +46,15 @@ Create these free accounts first (use the same email for all of them if you like
 2. In the unzipped folder, open `supabase/migrations/20261116000001_learner_state.sql` in a text editor (Notepad or TextEdit). Copy all of it, paste it into Supabase and click **Run**. You should see "Success. No rows returned".
 3. Repeat with `20261116000002_speaking_audio_storage.sql`.
 4. Repeat with `20261117000003_listening_reports_preferences.sql`.
+5. Repeat with `20261117000004_writing_reliability_dictionary.sql` (essay saving, drafts and the dictionary cache).
+
+*Already set up an earlier version?* Run only the files you haven't run yet, in order.
 
 These create the tables plus the security rules ("row-level security"): every learner can see and change only their own data.
 
 **C. Copy your two keys**
-- **Project Settings → API**: copy the **Project URL** (`https://xxxx.supabase.co`) and the **anon public** key. You'll paste these into Vercel. The anon key is meant to be public. **Never** use the `service_role` key in this app.
+- **Project Settings → API**: copy the **Project URL** (`https://xxxx.supabase.co`) and the **anon public** key. You'll paste these into Vercel. The anon key is meant to be public.
+- Optional: the **service_role** key lets the server save dictionary entries to a shared cache, so words looked up once appear instantly for everyone. It is a powerful secret: put it **only** in the Vercel variable `SUPABASE_SERVICE_ROLE_KEY`, never in a variable starting with `NEXT_PUBLIC_`, and never share it.
 
 **D. Email sign-in settings**
 - **Authentication → Sign In / Providers → Email**: keep it enabled with **Confirm email** on.
@@ -90,6 +94,11 @@ Users always sign in on Google's own page. The app never sees or stores Google p
 | `NEXT_PUBLIC_AUTH_GOOGLE` | `true` only after step 3E, otherwise `false` | Optional |
 | `OPENAI_API_KEY` | From platform.openai.com → API keys | Optional (better speaking transcription) |
 | `OPENAI_TRANSCRIBE_MODEL` | `gpt-4o-transcribe`, or `whisper-1` if you also want long-pause counts | Optional |
+| `DICTIONARY_AI_MODEL` | `claude-haiku-5-5` (fast model for dictionary entries) | Recommended |
+| `SUPABASE_SERVICE_ROLE_KEY` | Supabase service_role key (server only) | Optional (shared dictionary cache) |
+| `GOOGLE_TTS_API_KEY` | Google Cloud API key with Text-to-Speech enabled | Optional (UK/US voices when no recording exists) |
+
+   **Time limit for AI feedback:** essay feedback can take up to a minute or two. The app asks Vercel for up to 300 seconds. That needs **Fluid compute**, which is on by default for new projects: check **Project → Settings → Functions**. Without it, the free plan stops requests after 60 seconds and long essays may fail (the essay stays saved and you can press Retry).
 
    **Do not** set `AI_DEMO_ALLOW` on Vercel.
 3. Click **Deploy** and wait 3–5 minutes. Vercel gives you an address such as `https://english-mastery.vercel.app`.
@@ -105,11 +114,13 @@ Users always sign in on Google's own page. The app never sees or stores Google p
 4. **Laptop:** in Chrome or Edge, click the **Install** icon at the right of the address bar. English Mastery then opens in its own window from the Start menu or Dock.
 5. **iPhone/iPad:** open the address in **Safari** → **Share** → **Add to Home Screen**.
 6. **Android:** open it in **Chrome** → **⋮** → **Install app** (or **Add to Home screen**).
-7. **First Speaking session:** allow the microphone when the browser asks. If you blocked it, tap the lock icon in the address bar → Microphone → Allow.
+7. **Microphone:** go to **Settings → Privacy and permissions → Allow microphone**, then press **Test microphone** to check that recording works. You can also simply press Start in Speaking. Your browser shows its own prompt; the app can't change a browser block. If you blocked it, the page shows the exact steps for your browser.
+8. **Cookie choice:** on your first visit, choose **Essential only** or **Allow preferences**. You can change this at any time in Settings or on the Privacy page.
 
 ## 6. How your progress and data are saved
 
 - **Everything saves automatically** to your Supabase database as you study. This includes answers, exercise results, saved words and revision schedule, grammar progress, reading and listening history, speaking transcripts, AI feedback, essays, weekly reports and preferences. Sign in on any device and it's all there.
+- **Essays:** your draft saves on the device as you type and to your account a moment later. Submitting saves the essay **before** AI assessment. If the AI fails, it stays under **Your submissions** with a **Retry** button, and **Continue where you left off** on the Writing page lists unfinished essays.
 - **Weekly reports** are saved each time you open **Progress**, so you can compare weeks in the report's week selector.
 - **Speaking audio** is not stored unless you switch on **Settings → Keep my speaking recordings**. Transcripts and feedback are always kept.
 - **Back up regularly:** **Settings → Export all my data (JSON)**. The free Supabase plan has no point-in-time restore, so download an export now and then, for example monthly.
@@ -142,6 +153,10 @@ Use this when you want to change the code, or to try the app without hosting it.
 | "AI feedback isn't configured" | Add `ANTHROPIC_API_KEY` in Vercel, check the Anthropic account has credit, then Redeploy |
 | "AI service busy" | Wait a minute and retry. If it keeps happening, check your Anthropic usage limits |
 | Microphone blocked or not found | Allow the microphone for the site, close other apps using it (video calls), and use https or localhost |
+| "Couldn't reach the server" / AI unavailable in the preview | The single-file preview has no server, so AI, the online dictionary and accounts only work on your deployed address. Built-in dictionary entries still work there |
+| Dictionary says the online dictionary didn't respond | Press **Try again**. Words in the built-in dictionary always work. Russian translations for other words need `ANTHROPIC_API_KEY` |
+| Pronunciation shows "no UK audio available" | No recording exists for that accent and your device has no voice for it. Add `GOOGLE_TTS_API_KEY` for neural voices, or install an English (UK) voice in your system settings |
+| Essay feedback failed | Your essay is saved: press **Retry assessment** (or **Retry** in Your submissions). If it says the AI service rejected the API key, check `ANTHROPIC_API_KEY` in Vercel |
 | No transcript appears | Use Chrome, Edge or Safari, or add `OPENAI_API_KEY` for server transcription. You can always type the transcript before submitting |
 | Site slow or "paused" after weeks unused | Open the Supabase dashboard; free projects are woken from there |
 
@@ -155,4 +170,39 @@ Use this when you want to change the code, or to try the app without hosting it.
 | AI essay and speaking feedback with estimated band ranges | **Needs `ANTHROPIC_API_KEY`**. Estimates are educational, not official IELTS or Cambridge scores |
 | Server speech-to-text, long-pause counting | **Optional:** `OPENAI_API_KEY` (pauses with `whisper-1`) |
 | Pronunciation scoring | **Not included.** Feedback states that pronunciation is not assessed |
+| Dictionary: built-in entries (vocabulary + 1,250 everyday and grammar words; every Reading passage covered) | **Fully working**, also offline and in the preview |
+| Dictionary: any other English word (Wiktionary + AI), base forms, meaning in context | **Working online.** Russian, CEFR level and the meaning in context need `ANTHROPIC_API_KEY` |
+| UK/US pronunciation | Recordings where Wiktionary has them, otherwise your device's voices. `GOOGLE_TTS_API_KEY` adds neural voices |
+| Essay drafts, save-before-assess, retry, no duplicate submissions | **Fully working** (drafts sync across devices after migration 4) |
+| Microphone permission check, test recording, specific error messages | **Fully working** on https or localhost |
+| Cookie consent | **Fully working**. No analytics exist, so the analytics switch is informational |
 | Remaining 2,420 audited headwords | **Draft with `npm run vocab:draft`** (needs an AI key), review, then `npm run vocab:promote` |
+
+## 9. How to test everything yourself
+
+Use your deployed address, signed in.
+
+**Dictionary**
+1. Open **Reading ▸ Loneliness**, tap **many**. You should see the Russian (много), the grammar ("determiner"), the sentence it came from, and UK/US buttons.
+2. Tap a highlighted topic word (e.g. **habitat** in *Rewilding*) and check the **Full entry** link.
+3. In **Dictionary**, look up **running** with the sentence "She was running late." It should say "-ing form of run".
+4. Look up a word that isn't built in (e.g. **serendipitous**). With the AI key you get Russian and "Meaning here"; without it, the English definitions from Wiktionary.
+5. Press **UK** and **US** to hear both pronunciations.
+6. **Fallback:** turn on aeroplane mode and look up a new word. You should get a clear message and **Try again**; built-in words still work.
+
+**Academic Writing**
+1. Open any essay task and type at least 80 words. You should see "Saved on this device · saved to your account".
+2. Refresh the page: the text is still there. Open the same task on your phone: the draft is there too.
+3. Press **Get AI feedback**: the band range, corrections and advice appear, and the essay is listed under **Your submissions** as "Assessed".
+4. To simulate a failure, turn off your internet just after pressing the button. You get an error saying the essay is saved, and **Retry assessment** works once you're back online.
+
+**Speaking**
+1. In **Settings ▸ Privacy and permissions**, press **Allow microphone**, then **Test microphone**. Play back the 4-second recording.
+2. To check denial: block the microphone for the site in your browser (lock icon ▸ Microphone ▸ Block), then press Start in the Speaking studio. You should see "Microphone access was blocked" and steps for your browser. Unblock it again afterwards.
+3. Generate a topic → Start → speak → Finish. Listen to your recording, then **Submit for AI feedback**.
+
+**Privacy**
+1. Open the site in a private window: the cookie banner appears. Choose **Essential only**. Reload: it doesn't come back.
+2. Visiting Speaking or Settings never shows a microphone prompt until you press a microphone button.
+
+For developers: `npm test` (unit tests) and `npx playwright test` (28 browser tests with simulated dictionary and AI outages).

@@ -5,6 +5,7 @@ import "./globals.css";
 import { BRAND } from "@/lib/brand";
 import { StoreProvider } from "@/components/StoreProvider";
 import { ServiceWorkerRegistration, ThemeColorSync } from "@/components/PwaSupport";
+import { CookieBanner } from "@/components/CookieBanner";
 
 export const metadata: Metadata = {
   title: { default: BRAND.full, template: `%s · ${BRAND.product}` },
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="min-h-dvh bg-bg text-ink">
         <StoreProvider>{children}</StoreProvider>
+        <CookieBanner />
         <ServiceWorkerRegistration />
         <ThemeColorSync />
       </body>
