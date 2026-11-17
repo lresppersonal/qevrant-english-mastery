@@ -60,10 +60,12 @@ export function ResetPasswordForm() {
 
   return (
     <form onSubmit={submit} className="space-y-4" noValidate>
-      <label className="block text-sm font-medium">New password
-        <input className="input mt-1" type="password" autoComplete="new-password" value={pw} onChange={(e) => setPw(e.target.value)} />
-        <span className="mt-1 block text-xs text-muted">At least 8 characters, including a letter and a number.</span>
-      </label>
+      <div>
+        <label className="block text-sm font-medium">New password
+          <input className="input mt-1" type="password" autoComplete="new-password" value={pw} onChange={(e) => setPw(e.target.value)} aria-describedby="pw-rule" />
+        </label>
+        <span id="pw-rule" className="mt-1 block text-xs text-muted">At least 8 characters, including a letter and a number.</span>
+      </div>
       <label className="block text-sm font-medium">Repeat new password
         <input className="input mt-1" type="password" autoComplete="new-password" value={pw2} onChange={(e) => setPw2(e.target.value)} />
       </label>

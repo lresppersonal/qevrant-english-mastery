@@ -61,6 +61,7 @@ These create the tables plus the security rules ("row-level security"): every le
 - **Authentication → URL Configuration**:
   - **Site URL:** your Vercel address (you get it in step 4; come back and fill it in), e.g. `https://english-mastery.vercel.app`
   - **Redirect URLs**, add both: `https://english-mastery.vercel.app/auth/callback` and `http://localhost:3000/auth/callback`
+- Sign-up requires the email to be confirmed: the learner gets a link, and signing in before confirming shows "Please confirm your email first". The same redirect URL is used for password-reset links.
 - The built-in email sender is limited to a few emails per hour. That's fine for personal use; before going public, add your own SMTP under **Authentication → Emails**.
 
 **E. Google sign-in (optional)**
@@ -98,6 +99,7 @@ Users always sign in on Google's own page. The app never sees or stores Google p
 | `EXPLAIN_DAILY_LIMIT` | `150` (AI mistake explanations per learner per day; optional) | Optional |
 | `SUPABASE_SERVICE_ROLE_KEY` | Supabase service_role key (server only) | Optional (shared dictionary cache) |
 | `GOOGLE_TTS_API_KEY` | Google Cloud API key with Text-to-Speech enabled | Optional (UK/US voices when no recording exists) |
+| `VOCAB_SENTENCE_DAILY_LIMIT` | `100` (AI checks of your own sentences in vocabulary practice, per learner per day) | Optional |
 
    **Time limit for AI feedback:** essay feedback can take up to a minute or two. The app asks Vercel for up to 300 seconds. That needs **Fluid compute**, which is on by default for new projects: check **Project → Settings → Functions**. Without it, the free plan stops requests after 60 seconds and long essays may fail (the essay stays saved and you can press Retry).
 
@@ -205,5 +207,10 @@ Use your deployed address, signed in.
 **Privacy**
 1. Open the site in a private window: the cookie banner appears. Choose **Essential only**. Reload: it doesn't come back.
 2. Visiting Speaking or Settings never shows a microphone prompt until you press a microphone button.
+
+**Accounts and vocabulary practice**
+1. Sign up with a new email: the button stays disabled until both passwords are filled in, and a mismatch is reported. Open the confirmation email and click the link; you land on onboarding.
+2. Save a word from Reading, rate a flashcard in **Vocabulary ▸ a topic ▸ Flashcards**, then sign out and sign in on your phone: the word, the card's progress and your streak are all there.
+3. Tap the QEVRANT logo while signed out: you are taken to sign-in, and afterwards to the dashboard.
 
 For developers: `npm test` (unit tests) and `npx playwright test` (28 browser tests with simulated dictionary and AI outages).

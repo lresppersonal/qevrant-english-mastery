@@ -4,6 +4,7 @@ import { ArrowLeft } from "lucide-react";
 import { themes, getTheme, itemsInTheme, lexClassOf, wordFamilies, distinctions, readingTexts, writingPrompts } from "@/lib/content";
 import { PageHeader } from "@/components/ui";
 import { ThemeVocabulary, type ThemeEntry } from "@/components/ThemeVocabulary";
+import { TopicModeTabs } from "@/components/TopicModeTabs";
 
 export function generateStaticParams() {
   return themes.map((t) => ({ slug: t.slug }));
@@ -30,6 +31,7 @@ export default async function ThemePage({ params }: { params: Promise<{ slug: st
       <PageHeader eyebrow={`Vocabulary · ${theme.group}`} title={theme.title} intro={theme.summary}>
         <Link href={`/topics/${theme.slug}`} className="btn btn-ghost">Theme hub{texts + essays ? ` · ${texts} ${texts === 1 ? "text" : "texts"}, ${essays} ${essays === 1 ? "essay" : "essays"}` : ""}</Link>
       </PageHeader>
+      <TopicModeTabs theme={theme.slug} active="list" />
       <ThemeVocabulary entries={entries} families={wordFamilies.filter((f) => f.theme === theme.slug)} distinctions={distinctions.filter((d) => d.theme === theme.slug)} />
     </>
   );

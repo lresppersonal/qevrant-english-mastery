@@ -23,7 +23,7 @@ const STAGE_STYLE: Record<string, string> = {
 };
 
 export default function Dashboard() {
-  const { profile, saved, streak: live } = useLearner();
+  const { profile, saved, streak: live, store } = useLearner();
   const { data, error } = useLearnerData();
 
   const plan = useMemo(() => {
@@ -56,8 +56,12 @@ export default function Dashboard() {
           <p className="eyebrow mb-2">Your learning today</p>
           <h1 className="text-3xl font-extrabold md:text-4xl">{greeting}{name ? `, ${name}` : ""}.</h1>
         </div>
-        <div className="flex items-center gap-2 text-sm text-muted" title={plan.level.basis}>
-          Working level <LevelBadge level={plan.level.level} />
+        <div className="flex flex-col items-end gap-1.5 text-sm text-muted">
+          <span className="flex items-center gap-2" title={plan.level.basis}>Working level <LevelBadge level={plan.level.level} /></span>
+          <span className="flex flex-wrap items-center justify-end gap-x-2" data-testid="account-summary">
+            {store.mode === "supabase" ? <>Signed in as <span className="font-semibold text-ink">{profile?.email}</span></> : <>Demo mode · progress saved in this browser</>}
+            <span aria-hidden="true">·</span><Link href="/settings" className="font-semibold text-primary underline-offset-4 hover:underline">Account</Link>
+          </span>
         </div>
       </header>
 

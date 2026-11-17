@@ -23,7 +23,7 @@ export const viewport: Viewport = {
 };
 
 /** Light is the default; dark only if the learner chose it. Applied before first paint, so there is no flash. */
-const themeScript = `(function(){try{var t=localStorage.getItem('qevrant.theme');if(t!=='dark'){t='light'}document.documentElement.dataset.theme=t}catch(e){}})()`;
+const themeScript = `(function(){try{var t=localStorage.getItem('qevrant.theme');if(t!=='dark'){t='light'}document.documentElement.dataset.theme=t;if(localStorage.getItem('qevrant.sidebar')==='collapsed'){document.documentElement.dataset.sidebar='collapsed'}}catch(e){}})()`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

@@ -30,8 +30,9 @@ test.describe("dictionary", () => {
     const card = page.getByRole("dialog");
     // a common grammar word that used to say "not in the dictionary yet"
     await page.locator("span[role=button]", { hasText: /^many$/i }).first().click();
+    await expect(card.getByTestId("pop-ru")).toContainText("много");
+    await card.getByRole("button", { name: "More details" }).click();
     const entry = card.getByTestId("dictionary-entry");
-    await expect(entry).toContainText("много");
     await expect(entry).toContainText(/In this sentence\s*Many people/);
     await expect(entry).toContainText(/Grammar: determiner/);
     await expect(card).not.toContainText("isn't in the English Mastery dictionary");
@@ -42,11 +43,13 @@ test.describe("dictionary", () => {
     // a word stored in the vocabulary database
     await page.locator("span[role=button]", { hasText: /^habitats?$/i }).first().click();
     await expect(card.getByTestId("dictionary-entry")).toContainText(/habitat/i);
+    await card.getByRole("button", { name: "More details" }).click();
     await expect(card.getByRole("link", { name: "Full entry" })).toBeVisible();
     await card.getByRole("button", { name: "Close" }).click();
 
     // the text's own key-vocabulary gloss is shown with the dictionary entry
     await page.locator("span[role=button]", { hasText: /^rewilding$/i }).first().click();
+    await card.getByRole("button", { name: "More details" }).click();
     await expect(card.getByTestId("text-gloss")).toContainText("ревайлдинг");
     await card.getByRole("button", { name: "Close" }).click();
 

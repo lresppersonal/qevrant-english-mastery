@@ -167,6 +167,32 @@ a:hover > .logo .logo-tail { animation: draw-tail .6s var(--ease-out); }
 @keyframes rise-in { from { opacity: 0; transform: translateY(18px) scale(.96); } to { opacity: 1; transform: none; } }
 .anim-rise { animation: rise-in .45s var(--ease-spring) both; }
 .streak-card-lit { background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 9%, var(--surface)), var(--surface) 60%); }
+/* App shell: collapsible desktop sidebar (state on <html data-sidebar>, set before first paint) */
+@media (min-width: 768px) {
+  .app-grid { display: grid; grid-template-columns: 264px minmax(0, 1fr); transition: grid-template-columns .22s var(--ease-out); }
+  html[data-sidebar="collapsed"] .app-grid { grid-template-columns: 76px minmax(0, 1fr); }
+}
+html[data-sidebar="collapsed"] .side-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+html[data-sidebar="collapsed"] .side-only-expanded { display: none; }
+html:not([data-sidebar="collapsed"]) .side-only-collapsed { display: none; }
+html[data-sidebar="collapsed"] .side-item { justify-content: center; padding-left: 0; padding-right: 0; }
+html[data-sidebar="collapsed"] .side-group-label { height: 1px; margin: .5rem .75rem; padding: 0; overflow: hidden; color: transparent; background: var(--border); }
+.side-tip { position: fixed; z-index: 60; pointer-events: none; transform: translateY(-50%); white-space: nowrap; border-radius: .5rem; background: var(--text); color: var(--bg); padding: .3rem .6rem; font-size: .8rem; font-weight: 600; box-shadow: var(--shadow-lift); animation: tip-in .12s var(--ease-out) both; }
+@keyframes tip-in { from { opacity: 0; } to { opacity: 1; } }
+/* Landing hero: animated QEVRANT symbol */
+.hero-mark .hero-ring { transform-box: view-box; transform-origin: 32px 31px; animation: hero-ring 16s cubic-bezier(.65, 0, .35, 1) infinite; }
+.hero-mark .hero-tail { transform-box: view-box; transform-origin: 34.04px 33.04px; animation: hero-tail 16s cubic-bezier(.65, 0, .35, 1) infinite; }
+@keyframes hero-ring { 0%, 34% { transform: rotate(0deg); } 84%, 100% { transform: rotate(360deg); } }
+@keyframes hero-tail { 0%, 30% { transform: scale(1); } 42%, 76% { transform: scale(.9); } 86% { transform: scale(1.035); } 92%, 100% { transform: scale(1); } }
+@media (prefers-reduced-motion: reduce) { .hero-mark .hero-ring, .hero-mark .hero-tail { animation: none !important; } }
+/* Reading: floating word card */
+.word-pop { box-shadow: var(--shadow-lift); animation: pop-in .16s var(--ease-out) both; }
+.word-pop[data-side="bottom"] { animation-name: pop-in-below; }
+.word-pop-arrow { position: absolute; width: 12px; height: 12px; background: var(--surface); border: 1px solid var(--border); transform: translateX(-50%) rotate(45deg); }
+.word-pop[data-side="top"] .word-pop-arrow { bottom: -7px; border-top: 0; border-left: 0; }
+.word-pop[data-side="bottom"] .word-pop-arrow { top: -7px; border-bottom: 0; border-right: 0; }
+@keyframes pop-in { from { opacity: 0; transform: translateY(4px) scale(.98); } to { opacity: 1; transform: none; } }
+@keyframes pop-in-below { from { opacity: 0; transform: translateY(-4px) scale(.98); } to { opacity: 1; transform: none; } }
 /* Flashcards */
 .flip { perspective: 1200px; }
 .flip-inner { position: relative; display: grid; transition: transform .55s var(--ease-out); transform-style: preserve-3d; }

@@ -10,13 +10,17 @@ const GOOGLE_ENABLED = process.env.NEXT_PUBLIC_AUTH_GOOGLE === "true";
 export function AuthForm({ mode }: { mode: "sign-in" | "sign-up" }) {
   const router = useRouter();
   const params = useSearchParams();
-  const next = params.get("next") ?? (mode === "sign-up" ? "/onboarding" : "/dashboard");
+  // Only internal paths: "//host" or "https://…" would turn sign-in into an open redirect.
+  const rawNext = params.get("next");
+  const next = rawNext && rawNext.startsWith("/") && !rawNext.startsWith("//") && !rawNext.startsWith("/\\") ? rawNext : (mode === "sign-up" ? "/onboarding" : "/dashboard");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   const [busy, setBusy] = useState(false);
   const errParam = params.get("error");
   const [error, setError] = useState<string | null>(errParam === "oauth" ? "Google sign-in was cancelled or failed. Please try again." : errParam ? "That link has expired or was already used. Please sign in again." : null);
+  const expired = params.get("expired") === "1";
+  const [confirm, setConfirm] = useState("");
   const [info, setInfo] = useState<string | null>(null);
 
   if (isDemoMode) {
@@ -48,6 +52,7 @@ export function AuthForm({ mode }: { mode: "sign-in" | "sign-up" }) {
     e.preventDefault();
     if (pwProblem) { setError(pwProblem); return; }
     if (!/^\S+@\S+\.\S+$/.test(email)) { setError("Enter a valid email address."); return; }
+    if (mode === "sign-up" && password !== confirm) { setError("The two passwords don't match."); return; }
     setBusy(true);
     setError(null);
     const sb = supabaseBrowser();
@@ -58,7 +63,9 @@ export function AuthForm({ mode }: { mode: "sign-in" | "sign-up" }) {
           options: { data: { display_name: name || null }, emailRedirectTo: `${location.origin}/auth/callback?next=/onboarding` },
         });
         if (error) throw error;
-        if (!data.session) { setInfo("Check your inbox to confirm your email, then come back to sign in."); return; }
+        // With email confirmation on, Supabase answers an existing address with a user that has no identities.
+        if (data.user && data.user.identities?.length === 0) { setError("An account with this email already exists. Sign in instead, or reset your password."); return; }
+        if (!data.session) { setInfo("Check your inbox and click the confirmation link. After that you can sign in with your email and password."); return; }
       } else {
         const { error } = await sb.auth.signInWithPassword({ email, password });
         if (error) throw error;
@@ -67,7 +74,11 @@ export function AuthForm({ mode }: { mode: "sign-in" | "sign-up" }) {
       router.refresh();
     } catch (err) {
       const msg = (err as Error).message;
-      setError(/Invalid login credentials/i.test(msg) ? "Email or password is incorrect." : /fetch/i.test(msg) ? "Network error. Check your connection and try again." : msg);
+      setError(/Invalid login credentials/i.test(msg) ? "Email or password is incorrect."
+        : /Email not confirmed/i.test(msg) ? "Please confirm your email first: open the link we sent you, then sign in."
+        : /already registered/i.test(msg) ? "An account with this email already exists. Sign in instead, or reset your password."
+        : /rate limit/i.test(msg) ? "Too many attempts. Please wait a minute and try again."
+        : /fetch/i.test(msg) ? "Network error. Check your connection and try again." : msg);
     } finally {
       setBusy(false);
     }
@@ -93,14 +104,25 @@ export function AuthForm({ mode }: { mode: "sign-in" | "sign-up" }) {
       <label className="block text-sm font-medium">Email
         <input className="input mt-1" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" />
       </label>
-      <label className="block text-sm font-medium">Password
-        <input className="input mt-1" type="password" required minLength={8} value={password} onChange={(e) => setPassword(e.target.value)} autoComplete={mode === "sign-up" ? "new-password" : "current-password"} />
-        {mode === "sign-up" && <span className={pwProblem ? "mt-1 block text-xs text-danger" : "mt-1 block text-xs text-muted"}>At least 8 characters, including a letter and a number.</span>}
-      </label>
+      <div>
+        <label className="block text-sm font-medium">Password
+          <input className="input mt-1" type="password" required minLength={8} value={password} onChange={(e) => setPassword(e.target.value)} autoComplete={mode === "sign-up" ? "new-password" : "current-password"} aria-describedby={mode === "sign-up" ? "pw-rule" : undefined} />
+        </label>
+        {mode === "sign-up" && <span id="pw-rule" className={pwProblem ? "mt-1 block text-xs text-danger" : "mt-1 block text-xs text-muted"}>At least 8 characters, including a letter and a number.</span>}
+      </div>
+      {mode === "sign-up" && (
+        <div>
+          <label className="block text-sm font-medium">Confirm password
+            <input className="input mt-1" type="password" required value={confirm} onChange={(e) => setConfirm(e.target.value)} autoComplete="new-password" aria-invalid={!!confirm && confirm !== password} aria-describedby="pw-match" />
+          </label>
+          {confirm && confirm !== password && <span id="pw-match" className="mt-1 block text-xs text-danger">The passwords don't match yet.</span>}
+        </div>
+      )}
       {mode === "sign-in" && <p className="-mt-2 text-right text-sm"><Link href="/forgot-password" className="font-medium text-primary underline-offset-4 hover:underline">Forgot your password?</Link></p>}
+      {expired && !error && <p role="status" className="rounded-lg bg-surface-2 px-3 py-2 text-sm">Your session has ended. Please sign in again; your progress is saved in your account.</p>}
       {error && <p role="alert" className="text-sm text-danger">{error}</p>}
       {info && <p role="status" className="text-sm text-success">{info}</p>}
-      <button className="btn btn-primary w-full" disabled={busy || !email || password.length < 8}>
+      <button className="btn btn-primary w-full" disabled={busy || !email || password.length < 8 || (mode === "sign-up" && !confirm)}>
         {busy ? "Please wait…" : mode === "sign-up" ? "Create account" : "Sign in"}
       </button>
       <p className="text-center text-sm text-muted">

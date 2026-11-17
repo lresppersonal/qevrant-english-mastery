@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Cookie } from "lucide-react";
 import { getConsent, setConsent, CONSENT_EVENT } from "@/lib/consent";
 
@@ -13,9 +13,23 @@ export function CookieBanner() {
     window.addEventListener(CONSENT_EVENT, check);
     return () => window.removeEventListener(CONSENT_EVENT, check);
   }, []);
+  // Reserve room under the page while the banner is open so nothing (e.g. a form's submit button) stays hidden behind it.
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!show || !el) return;
+    const body = document.body;
+    const prev = body.style.paddingBottom;
+    const fit = () => { body.style.paddingBottom = `${Math.ceil(window.innerHeight - el.getBoundingClientRect().top) + 12}px`; };
+    fit();
+    const ro = new ResizeObserver(fit);
+    ro.observe(el);
+    window.addEventListener("resize", fit);
+    return () => { ro.disconnect(); window.removeEventListener("resize", fit); body.style.paddingBottom = prev; };
+  }, [show]);
   if (!show) return null;
   return (
-    <div role="region" aria-label="Cookie choices" data-testid="cookie-banner"
+    <div ref={ref} role="region" aria-label="Cookie choices" data-testid="cookie-banner"
       className="fixed inset-x-3 bottom-[calc(env(safe-area-inset-bottom)+5rem)] z-50 mx-auto max-w-2xl rounded-2xl border border-line bg-surface p-4 shadow-xl md:bottom-4">
       <p className="flex items-center gap-2 font-bold"><Cookie size={18} aria-hidden="true" /> Cookies and storage</p>
       <p className="mt-1 text-[15px] text-muted">

@@ -42,6 +42,11 @@ import VisualTaskPage from "@/app/(app)/writing/visual/task/page";
 import GrammarPracticeHub from "@/app/(app)/grammar/practice/page";
 import LessonPracticePage from "@/app/(app)/grammar/[slug]/practice/page";
 import ThemeVocabPage from "@/app/(app)/vocabulary/topics/[slug]/page";
+import TopicPracticePage from "@/app/(app)/vocabulary/topics/[slug]/practice/page";
+import TopicContextPage from "@/app/(app)/vocabulary/topics/[slug]/context/page";
+import SynonymsHub from "@/app/(app)/vocabulary/synonyms/page";
+import SynonymGroupPage from "@/app/(app)/vocabulary/synonyms/[id]/page";
+import SynonymPractice from "@/app/(app)/vocabulary/synonyms/practice/page";
 
 type Page = (p: { params: Promise<{ slug: string }> }) => ReactNode | Promise<ReactNode>;
 const APP: Record<string, Page> = {
@@ -53,6 +58,8 @@ const DETAIL: Record<string, Page> = {
   topics: TopicPage as Page, grammar: Lesson as Page, vocabulary: VocabEntry as Page, reading: ReadingPage as Page,
   speaking: SpeakingTask as Page, writing: WritingTask as Page, practice: Practice as Page,
 };
+
+const SynonymGroupById: Page = ({ params }) => (SynonymGroupPage as unknown as (p: { params: Promise<{ id: string }> }) => ReactNode)({ params: params.then((p) => ({ id: p.slug })) });
 
 /** Server pages are async functions returning client components: resolve them here. */
 function Resolve({ page, slug }: { page: Page; slug: string }) {
@@ -81,6 +88,12 @@ function App() {
   if (a === "plan") return <AppShell><PlanPage /></AppShell>;
   if (a === "grammar" && b === "practice" && !c) return <AppShell><GrammarPracticeHub /></AppShell>;
   if (a === "grammar" && b && c === "practice") return <AppShell><Resolve key={route} page={LessonPracticePage as Page} slug={b} /></AppShell>;
+  const [, , , , d] = route.split("/");
+  if (a === "vocabulary" && b === "topics" && c && d === "practice") return <AppShell><Resolve key={route} page={TopicPracticePage as Page} slug={c} /></AppShell>;
+  if (a === "vocabulary" && b === "topics" && c && d === "context") return <AppShell><Resolve key={route} page={TopicContextPage as Page} slug={c} /></AppShell>;
+  if (a === "vocabulary" && b === "synonyms" && c === "practice") return <AppShell><SynonymPractice key={route} /></AppShell>;
+  if (a === "vocabulary" && b === "synonyms" && c) return <AppShell><Resolve key={route} page={SynonymGroupById} slug={c} /></AppShell>;
+  if (a === "vocabulary" && b === "synonyms") return <AppShell><Resolve key={route} page={SynonymsHub as unknown as Page} slug="" /></AppShell>;
   if (a === "vocabulary" && b === "topics" && c) return <AppShell><Resolve key={route} page={ThemeVocabPage as Page} slug={c} /></AppShell>;
   if (b) {
     const page = DETAIL[a];

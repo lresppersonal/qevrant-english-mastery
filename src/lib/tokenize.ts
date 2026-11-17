@@ -48,3 +48,35 @@ export function sentenceAt(paragraph: string, offset: number) {
   }
   return paragraph;
 }
+
+const CONTRACTIONS: Record<string, [string, string]> = {
+  "won't": ["will", "will not"], "can't": ["can", "cannot"], "shan't": ["shall", "shall not"], "ain't": ["be", "am not / is not"],
+  "i'm": ["I", "I am"], "let's": ["let", "let us"],
+};
+const SUFFIX: [RegExp, (stem: string) => [string, string]][] = [
+  [/^(.+)n't$/i, (s) => [s, `${s} not`]],
+  [/^(.+)'re$/i, (s) => [s, `${s} are`]],
+  [/^(.+)'ve$/i, (s) => [s, `${s} have`]],
+  [/^(.+)'ll$/i, (s) => [s, `${s} will`]],
+  [/^(.+)'d$/i, (s) => [s, `${s} would / had`]],
+];
+
+/**
+ * The form to look up for a tapped token, plus a note when it differs: possessives ("company's",
+ * "students'") look up the noun; contractions ("don't", "they're") look up the main word and say
+ * what the contraction stands for. Hyphenated words and ordinary words are unchanged.
+ */
+export function lookupForm(token: string): { lookup: string; note: string | null } {
+  const t = token.replace(/’/g, "'");
+  const lower = t.toLowerCase();
+  if (CONTRACTIONS[lower]) { const [w, full] = CONTRACTIONS[lower]; return { lookup: w, note: `“${token}” is short for “${full}”.` }; }
+  for (const [re, f] of SUFFIX) { const m = t.match(re); if (m && m[1].length > 0) { const [w, full] = f(m[1]); return { lookup: w, note: `“${token}” is short for “${full}”.` }; } }
+  // it's / he's / she's / that's / what's: "is" or "has"; nouns + 's: possessive (or "is")
+  const s = t.match(/^(.+)'s$/i);
+  if (s) {
+    const pron = ["it", "he", "she", "that", "what", "there", "here", "who", "where", "how"].includes(s[1].toLowerCase());
+    return { lookup: s[1], note: pron ? `“${token}” is short for “${s[1]} is” or “${s[1]} has”.` : `“${token}” is the possessive form of “${s[1]}”.` };
+  }
+  if (/s'$/i.test(t)) return { lookup: t.slice(0, -1), note: `“${token}” is a plural possessive.` };
+  return { lookup: t, note: null };
+}

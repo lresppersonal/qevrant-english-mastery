@@ -310,7 +310,7 @@ test.describe("mobile 375px", () => {
 
 test("vocabulary is organised by theme with lexical classes and CEFR filters", async ({ page }) => {
   await page.goto("/vocabulary");
-  await page.getByRole("link", { name: /Environment and Climate/ }).click();
+  await page.getByRole("link", { name: "Environment and Climate", exact: true }).click();
   await expect(page).toHaveURL(/\/vocabulary\/topics\/environment$/);
   await expect(page.getByTestId("theme-entries")).toContainText("detrimental");
   await page.getByRole("tab", { name: /Phrasal verbs/ }).click();

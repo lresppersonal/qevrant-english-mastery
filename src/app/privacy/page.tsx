@@ -8,7 +8,7 @@ export const metadata = { title: "Privacy" };
 export default function Privacy() {
   return (
     <main className="mx-auto max-w-2xl px-5 py-10">
-      <Link href="/" aria-label="Home"><Logo /></Link>
+      <Link href="/dashboard" aria-label="QEVRANT: open your dashboard"><Logo /></Link>
       <h1 className="mt-10 text-3xl font-extrabold">Privacy notice (draft)</h1>
       <p className="mt-2 text-sm text-muted">Draft for legal review before launch.</p>
       <div className="mt-6 space-y-4 leading-relaxed">

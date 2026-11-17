@@ -1,15 +1,19 @@
 "use client";
+import { getSynGroup } from "@/lib/synonyms";
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import clsx from "clsx";
 import { useLearnerData } from "@/components/useLearnerData";
 import { useLearner } from "@/components/StoreProvider";
 import { computeStreak, daysThisWeek, mastery, studyDays, dayKey } from "@/lib/progress";
-import { grammarLessons, getExercise, readingTexts } from "@/lib/content";
+import { grammarLessons, getExercise, readingTexts, getTheme } from "@/lib/content";
 import { CRITERIA, SECTION_ORDER, mondayOf, sectionProgress, skillIndicators, type Indicator, weeklyActivity, weeklyReport, type AnalyticsInput, type ContentInfo, type WeeklyReport } from "@/lib/analytics";
 import { LevelBadge, PageHeader, ProgressBar, StatCard } from "@/components/ui";
 
 const smartTitle = (slug: string) => {
+  if (slug.startsWith("vocab-context-")) return `Vocabulary in context: ${getTheme(slug.slice(14))?.title ?? slug.slice(14)}`;
+  if (slug === "synonyms-mixed") return "Synonyms: mixed practice";
+  if (slug.startsWith("synonyms-")) return `Synonyms: ${getSynGroup(slug.slice(9))?.headword ?? slug.slice(9)}`;
   if (!slug.startsWith("smart-")) return slug;
   const lesson = slug.startsWith("smart-lesson-") ? grammarLessons.find((l) => l.slug === slug.slice(13))?.title : null;
   return lesson ? `Targeted practice: ${lesson}` : { "smart-mistakes": "Mistake review", "smart-weak": "Weak areas", "smart-mixed": "Mixed review" }[slug] ?? "Adaptive practice";
@@ -18,7 +22,7 @@ const BAND = { not_started: "Not started", practising: "Practising", secure: "Se
 const INFO: ContentInfo = {
   lessons: grammarLessons.map((l) => ({ slug: l.slug, title: l.title, sections: l.sections.map((s) => ({ id: s.id, title: s.title })) })),
   readingSlugs: readingTexts.map((r) => r.slug),
-  exerciseSkill: (slug) => (slug.startsWith("smart-") ? "grammar" : getExercise(slug)?.skill),
+  exerciseSkill: (slug) => (slug.startsWith("smart-") ? "grammar" : slug.startsWith("vocab-context-") || slug.startsWith("synonyms-") ? "vocabulary" : getExercise(slug)?.skill),
 };
 const SERIES = [
   { key: "grammar", label: "Grammar answers", cls: "bg-primary" },

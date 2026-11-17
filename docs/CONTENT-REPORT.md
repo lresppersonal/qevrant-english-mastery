@@ -163,3 +163,10 @@ The data are invented for practice, and each task says so.
 
 **Intensive Study Plan.** Six weeks of 6 themed study days plus a review-and-assessment day.
 - The programme refers to existing lessons, themes, readings, listening resources, essays, visual tasks and speaking categories. A test checks that every reference exists.
+
+
+## Update 2026-11-17 (d) — Academic & Advanced Synonyms, context practice
+
+- `content/synonyms/part1.json` and `part2.json`: 16 synonym groups (important, show, improve, problem, change, increase, help, cause, say, think, examine, effect, difficult, get, many, clear). Each group has 5 members with register, typical collocations, a distinction note and an example, plus 4 exercises (64 in all). The types are replace, most precise, inappropriate, near-synonym, register and collocation, with a note on every option. **All of this is original writing**: no lists, definitions or exercises were copied from the reference textbooks. Like the rest of the content, it is marked for human editorial review.
+- Context practice (gap fill, multiple choice, correct form, meaning in context) is **generated from our own vocabulary entries** (examples, collocations, definitions) by `src/lib/vocab-context.ts`. Wrong options come from other topics with the same part of speech and a similar level, so they can't also be correct. No new licensed material is used.
+- Synonyms in the reading word card come from our own vocabulary entries or from the open Free Dictionary API (Wiktionary, CC BY-SA). No additional licensing is needed.

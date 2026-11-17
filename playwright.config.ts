@@ -4,6 +4,7 @@ const chrome = process.env.PW_CHROME_PATH; // e.g. /usr/bin/google-chrome when P
 
 export default defineConfig({
   testDir: "e2e",
+  testIgnore: /accounts\.spec\.ts/, // runs against a real Supabase: playwright.supabase.config.ts
   timeout: 60_000,
   fullyParallel: false,
   workers: 1,

@@ -16,6 +16,43 @@ Content is written in compact formats in `content/src/` and compiled with `npm r
 
 **New to this? Start with [docs/LAUNCH-GUIDE.md](docs/LAUNCH-GUIDE.md)**: a step-by-step, non-technical guide to putting the app online, creating your account and keeping your data.
 
+## What's new (2026-11-17, sixth update: platform improvements)
+- **Reading word card**: tapping a word no longer scrolls the page. A small card opens next to the word with:
+  - the headword (contractions and possessives are resolved, e.g. *won't* → *will*, *researchers'* → *researcher*);
+  - Russian, a short English definition and up to three synonyms;
+  - real UK/US audio (Wiktionary recordings → Google TTS if configured → device voices);
+  - **Save** and **More details**.
+
+  The card closes on an outside click, Escape or another word, and offers **Try again** if a lookup fails.
+- **Logo → dashboard**: the QEVRANT logo opens your dashboard everywhere, or sign-in if you are signed out. The dashboard shows which account you are using.
+- **Accounts**:
+  - sign-up asks you to confirm your password, validates both fields and requires email verification;
+  - clear messages for an unconfirmed email, an existing account, rate limits and network errors;
+  - an expired session sends you to sign-in with an explanation, then back to the page you were on;
+  - signing in or out reloads or clears learner data straight away (fixes stale data after switching accounts).
+
+  Tested against a real Supabase instance: sign-up, confirmation, password reset, persistence across devices, and RLS.
+- **Vocabulary topics** have three modes: **Vocabulary list**, **Flashcards** and **In context**.
+  - Flashcards:
+    - the answer is revealed on demand (Russian, definition, example, collocations, CEFR, part of speech);
+    - Again / Difficult / Good / Easy ratings feed the existing FSRS schedule shared with Review and the Library;
+    - due cards come first, new cards are ordered by difficulty, and cards from other topics are interleaved;
+    - a progress panel shows reviewed, remembered, need more practice and new remaining.
+  - In context:
+    - formats: gap fill, multiple choice, correct form, meaning in context, and your own sentence;
+    - feedback gives the explanation, why the answer fits, why the other options don't, and another example;
+    - your own sentence gets real AI feedback (`/api/ai/vocab-sentence`) or a self-check when AI is unavailable.
+- **Academic & Advanced Synonyms** (`/vocabulary/synonyms`):
+  - 16 groups (e.g. *important, show, improve, problem*), each with the distinctions explained;
+  - 64 exercises of six types: replace, most precise, inappropriate, near-synonym, register and collocation;
+  - an explanation for every option.
+- **Sidebar**:
+  - collapses to icons, with tooltips and a highlighted active item;
+  - the state is remembered if you allow preference storage;
+  - mobile keeps the compact bottom navigation.
+- **Landing hero**: the QEVRANT logo, animated, on the right-hand side: the ring rotates slowly and the golden tail moves subtly. Nothing else changed, and the animation is off with reduced motion.
+- The cookie banner no longer hides form buttons: the page reserves space under it.
+
 ## What's new (2026-11-17, fifth update: content expansion and Intensive Study Plan)
 - **Grammar**: 36 lessons (14 new, B2–C2) in a ten-part structure, with about 400 explained practice questions.
 - **Vocabulary**: 1,172 headwords. Every theme was enriched with collocations, idioms, phrasal verbs, academic expressions, word families and distinctions.
@@ -128,7 +165,9 @@ npm run e2e               # Playwright: full learner journey, AI feedback, a11y 
 
 E2E uses a stand-in AI server (`e2e/mock-anthropic.mjs`), so no API key is needed. If Playwright browsers aren't installed, set `PW_CHROME_PATH=/usr/bin/google-chrome`.
 
-Database security can be tested on plain Postgres: load `supabase/tests/auth_stub.sql`, the migrations, then `supabase/tests/rls_test.sql` (checks that one learner can't read or change another's rows).
+Accounts against a real backend (Docker required): `npx supabase start`, build with `NEXT_DIST_DIR=.next-sb NEXT_PUBLIC_SUPABASE_URL=http://127.0.0.1:54321 NEXT_PUBLIC_SUPABASE_ANON_KEY=<anon key from npx supabase status> npx next build`, then `SB_ANON_KEY=<anon key> npx playwright test -c playwright.supabase.config.ts`. This covers sign-up with email confirmation (read from the local Mailpit inbox), persistence across a second device, password reset, expired sessions and RLS between two accounts.
+
+Database security can also be tested on plain Postgres: load `supabase/tests/auth_stub.sql`, the migrations, then `supabase/tests/rls_test.sql` (checks that one learner can't read or change another's rows).
 
 ## Architecture notes
 

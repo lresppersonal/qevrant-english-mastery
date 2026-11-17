@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
+import { HeroMark } from "@/components/HeroMark";
 import { ThemeToggle } from "@/components/AppShell";
 import { BRAND } from "@/lib/brand";
 import { isDemoMode } from "@/lib/supabase/config";
@@ -16,7 +17,7 @@ export default function Landing() {
   return (
     <div className="min-h-dvh">
       <header className="safe-top mx-auto flex max-w-6xl items-center justify-between px-5 pb-5">
-        <Logo />
+        <Link href="/dashboard" aria-label="QEVRANT: open your dashboard" className="rounded-lg"><Logo /></Link>
         <div className="flex items-center gap-2">
           <ThemeToggle />
           {isDemoMode ? (
@@ -31,7 +32,8 @@ export default function Landing() {
       </header>
 
       <main>
-        <section className="mx-auto max-w-6xl px-5 pb-16 pt-12 md:pt-20">
+        <section className="mx-auto grid max-w-6xl items-center gap-x-10 px-5 pb-16 pt-12 md:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)] md:pt-20">
+          <div>
           <p className="eyebrow mb-4">For upper-intermediate and advanced learners</p>
           <h1 className="max-w-3xl text-4xl font-extrabold leading-[1.08] md:text-6xl">
             Advanced English, <span className="text-accent-text">as one connected system.</span>
@@ -46,6 +48,8 @@ export default function Landing() {
               {isDemoMode ? "Explore the Education topic" : "I already have an account"}
             </Link>
           </div>
+          </div>
+          <div className="mx-auto mt-12 aspect-square w-40 sm:w-48 md:mt-0 md:w-[min(100%,26rem)]"><HeroMark /></div>
         </section>
 
         <section className="border-y border-line bg-surface">

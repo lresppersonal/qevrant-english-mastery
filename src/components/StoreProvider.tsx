@@ -1,6 +1,7 @@
 "use client";
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from "react";
 import { isDemoMode } from "@/lib/supabase/config";
+import { supabaseBrowser } from "@/lib/supabase/browser";
 import { createDemoStore } from "@/lib/store/demo";
 import { createSupabaseStore } from "@/lib/store/supabase";
 import type { ActivityEvent, LearnerStore, Profile, SavedItem, SavedType } from "@/lib/store/types";
@@ -29,12 +30,33 @@ const StoreCtx = createContext<Ctx | null>(null);
 
 export function StoreProvider({ children }: { children: React.ReactNode }) {
   const raw = useMemo(() => (isDemoMode ? createDemoStore() : createSupabaseStore()), []);
+  const intentionalSignOut = useRef(false);
+  const authHandlers = useRef({ signedIn: () => {}, signedOut: () => {} });
+  // A session that ends without the learner signing out here (expired refresh token, signed out in
+  // another tab) sends private pages to sign-in, with a note and a way back to the same page.
+  useEffect(() => {
+    if (isDemoMode) return;
+    const sb = supabaseBrowser();
+    if (!sb) return;
+    const { data } = sb.auth.onAuthStateChange((event) => {
+      // A different (or no) learner: reload their data, and never keep the previous learner's data in memory.
+      if (event === "SIGNED_IN" || event === "USER_UPDATED") { setTimeout(() => authHandlers.current.signedIn(), 0); return; }
+      if (event !== "SIGNED_OUT") return;
+      authHandlers.current.signedOut();
+      if (intentionalSignOut.current) { intentionalSignOut.current = false; return; }
+      const path = location.pathname;
+      if (["/", "/sign-in", "/sign-up", "/forgot-password", "/reset-password", "/privacy"].includes(path) || path.startsWith("/auth")) return;
+      location.assign(`/sign-in?expired=1&next=${encodeURIComponent(path + location.search)}`);
+    });
+    return () => data.subscription.unsubscribe();
+  }, []);
   const [events, setEvents] = useState<ActivityEvent[] | null>(null);
   const loadEvents = useCallback(() => raw.listEvents().then((list) => setEvents([...list])).catch(() => {}), [raw]);
   // Every logged activity refreshes the streak, wherever in the app it happens.
   const store = useMemo(() => new Proxy(raw, {
     get(target, prop, receiver) {
       const v = Reflect.get(target, prop, receiver);
+      if (prop === "signOut") return async () => { intentionalSignOut.current = true; return (v as LearnerStore["signOut"]).apply(target); };
       if (prop === "logEvent") return async (...args: Parameters<LearnerStore["logEvent"]>) => { const r = await (v as LearnerStore["logEvent"]).apply(target, args); void loadEvents(); return r; };
       return typeof v === "function" ? v.bind(target) : v;
     },
@@ -58,6 +80,10 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
   }, [store]);
 
   useEffect(() => { void refresh(); }, [refresh]);
+  authHandlers.current = {
+    signedIn: () => { void refresh(); void loadEvents(); },
+    signedOut: () => { setProfile(null); setSaved([]); setEvents(null); },
+  };
   useEffect(() => { if (ready && profile) void loadEvents(); }, [ready, profile, loadEvents]);
 
   const goal = dailyGoalOf(profile);
