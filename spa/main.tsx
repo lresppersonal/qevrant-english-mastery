@@ -34,6 +34,8 @@ import Progress from "@/app/(app)/progress/page";
 import Settings from "@/app/(app)/settings/page";
 import Onboarding from "@/app/(app)/onboarding/page";
 import Practice from "@/app/(app)/practice/[slug]/page";
+import SmartPractice from "@/app/(app)/practice/smart/page";
+import WritingPortfolio from "@/app/(app)/writing/portfolio/page";
 import GrammarPracticeHub from "@/app/(app)/grammar/practice/page";
 import LessonPracticePage from "@/app/(app)/grammar/[slug]/practice/page";
 import ThemeVocabPage from "@/app/(app)/vocabulary/topics/[slug]/page";
@@ -69,6 +71,8 @@ function App() {
   if (route === "/") return <Landing />;
   if (a === "privacy") return <Privacy />;
   if (a === "sign-in" || a === "sign-up") return <AuthLayout>{a === "sign-in" ? <SignIn /> : <SignUp />}</AuthLayout>;
+  if (a === "practice" && b === "smart") return <AppShell><SmartPractice key={route} /></AppShell>;
+  if (a === "writing" && b === "portfolio") return <AppShell><WritingPortfolio /></AppShell>;
   if (a === "grammar" && b === "practice" && !c) return <AppShell><GrammarPracticeHub /></AppShell>;
   if (a === "grammar" && b && c === "practice") return <AppShell><Resolve key={route} page={LessonPracticePage as Page} slug={b} /></AppShell>;
   if (a === "vocabulary" && b === "topics" && c) return <AppShell><Resolve key={route} page={ThemeVocabPage as Page} slug={c} /></AppShell>;

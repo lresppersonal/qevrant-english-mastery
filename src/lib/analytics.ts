@@ -214,3 +214,53 @@ export function weeklyActivity(input: AnalyticsInput, info: ContentInfo, weeks =
     };
   });
 }
+
+/* ------------------------------------------------------------------------------------------------
+ * Skill indicators: the last 30 days compared with the 30 days before, each with its rule written out.
+ * Null means not enough evidence in that window (shown as "—", never as zero).
+ * ---------------------------------------------------------------------------------------------- */
+export interface Indicator { key: string; label: string; unit: "%" | "band" | "per100" | "count" | "days"; current: number | null; previous: number | null; lowerIsBetter?: boolean; rule: string; evidence: string }
+
+export function skillIndicators(input: AnalyticsInput, info: ContentInfo, now = Date.now()): Indicator[] {
+  const D = 864e5;
+  const win = (k: 0 | 1) => (iso: string) => { const t = Date.parse(iso); return t > now - (k + 1) * 30 * D && t <= now - k * 30 * D; };
+  const skill = skillOfResponses(input, info);
+  const rate = (rs: ResponseRow[], min: number) => (rs.length >= min ? pct(rs.filter((r) => r.correct).length, rs.length) : null);
+  const both = <T,>(f: (inW: (iso: string) => boolean) => T) => [f(win(0)), f(win(1))] as const;
+
+  const grammar = both((w) => input.responses.filter((r) => w(r.createdAt) && skill(r) === "grammar"));
+  const reading = both((w) => input.responses.filter((r) => w(r.createdAt) && skill(r) === "reading"));
+  // Retention: reviews of cards already seen before (first sightings excluded) rated Good or Easy.
+  const firstSeen = new Map<string, string>();
+  for (const r of [...input.reviewLogs].sort((a, b) => a.reviewedAt.localeCompare(b.reviewedAt))) if (!firstSeen.has(r.savedItemId)) firstSeen.set(r.savedItemId, r.reviewedAt);
+  const retention = both((w) => input.reviewLogs.filter((r) => w(r.reviewedAt) && firstSeen.get(r.savedItemId) !== r.reviewedAt));
+  const listening = both((w) => input.listening.filter((l) => w(l.createdAt)));
+  const writing = both((w) => input.writing.filter((x) => w(x.createdAt) && bandOf(x.feedback) !== undefined));
+  const speaking = both((w) => input.speaking.filter((x) => w(x.createdAt) && bandOf(x.feedback) !== undefined));
+  const produced = both((w) => [...input.writing.filter((x) => w(x.createdAt) && x.feedback).map((x) => ({ fb: x.feedback, words: x.wordCount })), ...input.speaking.filter((x) => w(x.createdAt) && x.feedback).map((x) => ({ fb: x.feedback, words: x.metrics?.words ?? 0 }))]);
+  const issuesOf = (fb: unknown) => ((fb as { issues?: { category?: string; severity?: string }[]; collocations?: unknown[] } | null) ?? {});
+  const collocRate = (xs: { fb: unknown; words: number }[]) => {
+    const words = xs.reduce((n, x) => n + (x.words || 0), 0);
+    if (words < 150) return null;
+    const n = xs.reduce((k, x) => { const f = issuesOf(x.fb); return k + (f.issues ?? []).filter((i) => i.category === "collocation" && i.severity !== "style").length + (f.collocations?.length ?? 0); }, 0);
+    return Math.round((n / words) * 1000) / 10;
+  };
+  const avgBand = (xs: { feedback: unknown }[]) => (xs.length ? Math.round((xs.reduce((n, x) => n + (bandOf(x.feedback) ?? 0), 0) / xs.length) * 2) / 2 : null);
+  // Recurring grammar mistakes: questions answered wrongly two or more times in the window.
+  const slugOf = new Map(input.attempts.map((a) => [a.id, a.exerciseSlug]));
+  const qkey = (r: ResponseRow) => (r.questionId.includes("/") ? r.questionId : `${slugOf.get(r.attemptId) ?? "?"}/${r.questionId}`);
+  const recurring = both((w) => { const m = new Map<string, number>(); for (const r of input.responses) if (w(r.createdAt) && !r.correct) m.set(qkey(r), (m.get(qkey(r)) ?? 0) + 1); return [...m.values()].filter((v) => v >= 2).length; });
+  const days = both((w) => studyDays(input.events.filter((e) => w(e.createdAt))).size);
+
+  return [
+    { key: "grammar", label: "Grammar accuracy", unit: "%", current: rate(grammar[0], 10), previous: rate(grammar[1], 10), rule: "Grammar practice answers correct.", evidence: `${grammar[0].length} answers in the last 30 days (needs 10)` },
+    { key: "collocation", label: "Collocation problems", unit: "per100", lowerIsBetter: true, current: collocRate(produced[0]), previous: collocRate(produced[1]), rule: "Unnatural word combinations flagged by AI feedback, per 100 words you wrote or spoke.", evidence: `${produced[0].reduce((n, x) => n + (x.words || 0), 0)} words of assessed writing and speaking (needs 150)` },
+    { key: "retention", label: "Vocabulary retention", unit: "%", current: rate(retention[0].map((r) => ({ correct: r.rating >= 3 }) as ResponseRow), 5), previous: rate(retention[1].map((r) => ({ correct: r.rating >= 3 }) as ResponseRow), 5), rule: "Repeat reviews (not first sightings) rated Good or Easy: how much you still remember when a word comes back.", evidence: `${retention[0].length} repeat reviews (needs 5)` },
+    { key: "reading", label: "Reading accuracy", unit: "%", current: rate(reading[0], 5), previous: rate(reading[1], 5), rule: "Reading questions answered correctly.", evidence: `${reading[0].length} answers (needs 5)` },
+    { key: "listening", label: "Listening comprehension", unit: "%", current: listening[0].length ? pct(listening[0].reduce((n, l) => n + l.comprehension, 0), listening[0].length * 5) : null, previous: listening[1].length ? pct(listening[1].reduce((n, l) => n + l.comprehension, 0), listening[1].length * 5) : null, rule: "Your average self-rated comprehension (1–5) as a percentage.", evidence: `${listening[0].length} sessions, ${listening[0].reduce((n, l) => n + l.minutes, 0)} min` },
+    { key: "speaking", label: "Speaking (est. band)", unit: "band", current: avgBand(speaking[0]), previous: avgBand(speaking[1]), rule: "Average AI-estimated band (educational estimate, not an official score).", evidence: `${speaking[0].length} assessed answers` },
+    { key: "writing", label: "Writing (est. band)", unit: "band", current: avgBand(writing[0]), previous: avgBand(writing[1]), rule: "Average AI-estimated band (educational estimate, not an official score).", evidence: `${writing[0].length} assessed essays` },
+    { key: "recurring", label: "Recurring mistakes", unit: "count", lowerIsBetter: true, current: grammar[0].length + reading[0].length ? recurring[0] : null, previous: grammar[1].length + reading[1].length ? recurring[1] : null, rule: "Questions you answered wrongly two or more times.", evidence: "From your practice answers" },
+    { key: "consistency", label: "Study days", unit: "days", current: days[0], previous: days[1], rule: "Days with any learning activity in the 30-day window.", evidence: "Out of 30 days" },
+  ];
+}

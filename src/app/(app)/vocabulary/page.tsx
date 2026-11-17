@@ -20,7 +20,7 @@ export default function Vocabulary() {
               const byLevel = LEVEL_ORDER.map((l) => [l, items.filter((i) => i.senses.some((s) => s.level === l && s.topics.includes(t.slug))).length] as const);
               return (
                 <li key={t.slug}>
-                  <Link href={`/vocabulary/topics/${t.slug}`} className="card flex h-full flex-col p-4 hover:border-primary">
+                  <Link href={`/vocabulary/topics/${t.slug}`} className="card card-link flex h-full flex-col p-4 ">
                     <span className="flex items-start gap-2"><span className="flex-1 font-display text-[17px] font-bold">{t.title}</span><ArrowRight size={16} className="mt-1 text-muted" aria-hidden="true" /></span>
                     <span className="mt-1 text-sm text-muted">{t.summary}</span>
                     <span className="mt-3 text-sm font-semibold">{items.length} entries</span>

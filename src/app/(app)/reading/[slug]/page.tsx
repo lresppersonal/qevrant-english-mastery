@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Clock } from "lucide-react";
-import { readingTexts, getReading, getExercise, buildFormIndex, vocabItems, getTheme, getSense } from "@/lib/content";
+import { readingTexts, getReading, getExercise, buildFormIndex, vocabItems, getTheme, getSense, rulesFor } from "@/lib/content";
 import { LevelBadge } from "@/components/ui";
 import { Reader } from "@/components/Reader";
 import { ExercisePlayer } from "@/components/ExercisePlayer";
@@ -68,7 +68,7 @@ export default async function ReadingPage({ params }: { params: Promise<{ slug: 
           <p className="eyebrow">Task {i + 1} of {exercises.length}</p>
           <h2 id={`ex-${ex.slug}`} className="text-xl font-bold">{ex.title}</h2>
           <p className="mb-4 mt-1 text-muted">{ex.instructions}</p>
-          <ExercisePlayer exercise={ex} />
+          <ExercisePlayer exercise={ex} rules={rulesFor([ex])} />
         </section>
       ))}
 

@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
+import { LearningCycle, type CycleInfo } from "./LearningCycle";
 import { allowed } from "@/lib/consent";
 import { ArrowRight, ArrowLeft, Clock, GitBranch, Lock, ListTree, Rows3 } from "lucide-react";
 import type { Exercise, GrammarLesson } from "@/lib/content/schema";
@@ -32,7 +33,7 @@ export function buildParts(lesson: GrammarLesson, hasPractice: boolean): Part[] 
     .filter((p) => p.sections.length > 0 || (p.key === "H" && hasPractice));
 }
 
-export function LessonView({ lesson, exercises }: { lesson: GrammarLesson; exercises: Exercise[] }) {
+export function LessonView({ lesson, exercises, cycle, rules }: { lesson: GrammarLesson; exercises: Exercise[]; cycle?: CycleInfo | null; rules?: Record<string, string> }) {
   const { store, ready } = useLearner();
   const seen = useRef(new Set<string>());
   const questionCount = exercises.reduce((n, e) => n + e.questions.length, 0);
@@ -136,7 +137,7 @@ export function LessonView({ lesson, exercises }: { lesson: GrammarLesson; exerc
         <section className="card p-5 sm:p-7" aria-labelledby="h-practice">
           <h3 id="h-practice" className="mb-1 text-xl font-bold">Practice</h3>
           <p className="mb-4 text-muted">{exercises[0].instructions}</p>
-          <ExercisePlayer exercise={exercises[0]} />
+          <ExercisePlayer exercise={exercises[0]} rules={rules} />
           <Link href={`/grammar/${lesson.slug}/practice`} className="btn btn-ghost mt-4">Open practice on its own page <ArrowRight size={16} aria-hidden="true" /></Link>
         </section>
       )}
@@ -155,6 +156,7 @@ export function LessonView({ lesson, exercises }: { lesson: GrammarLesson; exerc
         </div>
         <h1 className="text-3xl font-extrabold leading-tight md:text-4xl">{lesson.title}</h1>
         <p className="mt-3 max-w-2xl text-[17px] leading-relaxed text-muted">{lesson.summary}</p>
+        {cycle && <div className="mt-5"><p className="eyebrow mb-2">Your learning cycle for this topic</p><LearningCycle info={cycle} /></div>}
         {questionCount > 0 && (
           <Link href={`/grammar/${lesson.slug}/practice`} className="btn btn-primary mt-5">Practise this topic ({questionCount} questions) <ArrowRight size={16} aria-hidden="true" /></Link>
         )}
@@ -191,7 +193,7 @@ export function LessonView({ lesson, exercises }: { lesson: GrammarLesson; exerc
 }
 
 /** Practice page: separate from theory, but every explanation links back to the exact rule. */
-export function LessonPractice({ lesson, exercises }: { lesson: GrammarLesson; exercises: Exercise[] }) {
+export function LessonPractice({ lesson, exercises, rules }: { lesson: GrammarLesson; exercises: Exercise[]; rules?: Record<string, string> }) {
   const { store, ready } = useLearner();
   useEffect(() => {
     if (ready) store.setLastPosition({ href: `/grammar/${lesson.slug}/practice`, label: `Practice: ${lesson.title}` }).catch(() => {});
@@ -210,7 +212,7 @@ export function LessonPractice({ lesson, exercises }: { lesson: GrammarLesson; e
         <section key={ex.slug} className="mb-8">
           <h2 className="text-xl font-bold">{ex.title}</h2>
           <p className="mb-4 mt-1 text-muted">{ex.instructions}</p>
-          <ExercisePlayer exercise={ex} />
+          <ExercisePlayer exercise={ex} rules={rules} />
         </section>
       ))}
     </article>

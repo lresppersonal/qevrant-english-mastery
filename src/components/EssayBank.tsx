@@ -60,7 +60,7 @@ export function EssayBank({ cards, guides }: { cards: EssayCard[]; guides: Essay
         <ul className="grid gap-4 md:grid-cols-2" data-testid="essay-list">
           {shown.map((p) => (
             <li key={p.slug}>
-              <Link href={`/writing/${p.slug}`} className="card flex h-full flex-col p-5 hover:border-primary">
+              <Link href={`/writing/${p.slug}`} className="card card-link flex h-full flex-col p-5 ">
                 <div className="flex flex-wrap items-center gap-2"><LevelBadge level={p.level} /><span className="chip">{ESSAY_LABEL[p.genre]}</span>{p.themes.slice(0, 2).map((t) => <span key={t.slug} className="chip">{t.title}</span>)}</div>
                 <h2 className="mt-3 text-lg font-bold">{p.title}</h2>
                 <p className="mt-1.5 flex-1 text-[15px] text-muted">{p.prompt}</p>

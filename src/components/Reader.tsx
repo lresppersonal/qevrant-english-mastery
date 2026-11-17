@@ -94,8 +94,8 @@ export function Reader({ text, forms, items }: { text: ReadingText; forms: Recor
       </div>
 
       {sel && (
-        <div ref={panelRef} tabIndex={-1} role="dialog" aria-modal="false" aria-label={`Meaning of ${sel.phrase}`}
-          className="sheet-pos card fixed inset-x-3 z-40 max-h-[60vh] overflow-y-auto p-5 outline-none md:inset-x-auto md:right-6 md:w-[400px]">
+        <div ref={panelRef} tabIndex={-1} role="dialog" aria-modal="false" aria-label={`Meaning of ${sel.phrase}`} data-state="open"
+          className="sheet-pos card dialog-content fixed inset-x-3 z-40 max-h-[60vh] overflow-y-auto p-5 outline-none md:inset-x-auto md:right-6 md:w-[400px]">
           <button onClick={close} className="btn btn-ghost absolute right-3 top-3 h-9 w-9 !min-h-0 !p-0" aria-label="Close"><X size={16} /></button>
           <div className="pr-8"><DictionaryCard key={`${sel.phrase}|${sel.context}`} word={sel.phrase} sentence={sel.context} items={items} sourceRef={`reading:${text.slug}`} gloss={text.keyVocabulary.find((k) => k.term.toLowerCase() === sel.phrase.toLowerCase())} /></div>
         </div>

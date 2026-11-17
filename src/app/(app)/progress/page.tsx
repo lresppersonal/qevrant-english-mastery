@@ -6,14 +6,19 @@ import { useLearnerData } from "@/components/useLearnerData";
 import { useLearner } from "@/components/StoreProvider";
 import { computeStreak, daysThisWeek, mastery, studyDays, dayKey } from "@/lib/progress";
 import { grammarLessons, getExercise, readingTexts } from "@/lib/content";
-import { CRITERIA, SECTION_ORDER, mondayOf, sectionProgress, weeklyActivity, weeklyReport, type AnalyticsInput, type ContentInfo, type WeeklyReport } from "@/lib/analytics";
+import { CRITERIA, SECTION_ORDER, mondayOf, sectionProgress, skillIndicators, type Indicator, weeklyActivity, weeklyReport, type AnalyticsInput, type ContentInfo, type WeeklyReport } from "@/lib/analytics";
 import { LevelBadge, PageHeader, ProgressBar, StatCard } from "@/components/ui";
 
+const smartTitle = (slug: string) => {
+  if (!slug.startsWith("smart-")) return slug;
+  const lesson = slug.startsWith("smart-lesson-") ? grammarLessons.find((l) => l.slug === slug.slice(13))?.title : null;
+  return lesson ? `Targeted practice: ${lesson}` : { "smart-mistakes": "Mistake review", "smart-weak": "Weak areas", "smart-mixed": "Mixed review" }[slug] ?? "Adaptive practice";
+};
 const BAND = { not_started: "Not started", practising: "Practising", secure: "Secure", mastered: "Mastered" } as const;
 const INFO: ContentInfo = {
   lessons: grammarLessons.map((l) => ({ slug: l.slug, title: l.title, sections: l.sections.map((s) => ({ id: s.id, title: s.title })) })),
   readingSlugs: readingTexts.map((r) => r.slug),
-  exerciseSkill: (slug) => getExercise(slug)?.skill,
+  exerciseSkill: (slug) => (slug.startsWith("smart-") ? "grammar" : getExercise(slug)?.skill),
 };
 const SERIES = [
   { key: "grammar", label: "Grammar answers", cls: "bg-primary" },
@@ -21,6 +26,26 @@ const SERIES = [
   { key: "vocabulary", label: "Vocabulary reviews", cls: "bg-[color-mix(in_srgb,var(--primary)_45%,var(--surface))]" },
   { key: "listening", label: "Listening minutes", cls: "bg-[color-mix(in_srgb,var(--accent)_45%,var(--surface))]" },
 ] as const;
+
+function fmtInd(v: number | null, unit: Indicator["unit"]) {
+  if (v === null) return "—";
+  return unit === "%" ? `${v}%` : unit === "per100" ? `${v} / 100 w` : unit === "days" ? `${v} d` : `${v}`;
+}
+function IndicatorRow({ i }: { i: Indicator }) {
+  const d = i.current !== null && i.previous !== null ? Math.round((i.current - i.previous) * 10) / 10 : null;
+  const good = d !== null && d !== 0 && (i.lowerIsBetter ? d < 0 : d > 0);
+  return (
+    <tr className="border-t border-line">
+      <th scope="row" className="px-4 py-2.5 text-left font-medium">{i.label}<span className="block text-xs font-normal text-muted">{i.rule}</span></th>
+      <td className="px-4 py-2.5 font-semibold tabular-nums">{fmtInd(i.current, i.unit)}</td>
+      <td className="px-4 py-2.5 tabular-nums text-muted">{fmtInd(i.previous, i.unit)}</td>
+      <td className={clsx("px-4 py-2.5 text-sm font-semibold tabular-nums", d === null || d === 0 ? "text-muted" : good ? "text-success" : "text-danger")}>
+        {d === null ? "—" : d === 0 ? "same" : `${d > 0 ? "▲" : "▼"} ${Math.abs(d)}${i.unit === "%" ? " pts" : ""}`}
+      </td>
+      <td className="hidden px-4 py-2.5 text-xs text-muted md:table-cell">{i.evidence}</td>
+    </tr>
+  );
+}
 
 function ScoreRing({ value }: { value: number | null }) {
   const v = value ?? 0;
@@ -98,6 +123,7 @@ export default function ProgressPage() {
   } : null, [data, profile, saved]);
 
   const current = useMemo(() => input && weeklyReport(input, INFO, new Date()), [input]);
+  const indicators = useMemo(() => input && skillIndicators(input, INFO), [input]);
   const previous = useMemo(() => { if (!input) return null; const d = mondayOf(new Date()); d.setDate(d.getDate() - 7); return weeklyReport(input, INFO, d); }, [input]);
   const [history, setHistory] = useState<{ weekStart: string; overall: number | null; report: WeeklyReport }[]>([]);
 
@@ -155,6 +181,19 @@ export default function ProgressPage() {
           ))}
         </ul>
       </section>
+
+      {indicators && (
+        <section className="card mt-6 p-5 sm:p-6" aria-labelledby="h-ind" data-testid="skill-indicators">
+          <h2 id="h-ind" className="text-lg font-bold">Skill indicators</h2>
+          <p className="mt-1 text-sm text-muted">The last 30 days compared with the 30 days before. “—” means there isn&apos;t enough evidence yet, not a score of zero.</p>
+          <div className="mt-4 overflow-x-auto rounded-xl border border-line">
+            <table className="w-full text-[15px]">
+              <thead className="bg-surface-2 text-left text-sm"><tr><th scope="col" className="px-4 py-2">Indicator</th><th scope="col" className="whitespace-nowrap px-4 py-2">Last 30 days</th><th scope="col" className="px-4 py-2">Before</th><th scope="col" className="whitespace-nowrap px-4 py-2">Change</th><th scope="col" className="hidden px-4 py-2 md:table-cell">Evidence</th></tr></thead>
+              <tbody>{indicators.map((i) => <IndicatorRow key={i.key} i={i} />)}</tbody>
+            </table>
+          </div>
+        </section>
+      )}
 
       <section className="card mt-6 p-5 sm:p-6" aria-labelledby="h-report">
         <div className="mb-4 flex flex-wrap items-center gap-3">
@@ -243,7 +282,7 @@ export default function ProgressPage() {
             <thead><tr className="text-muted"><th className="py-2 font-semibold">Exercise</th><th className="py-2 font-semibold">Score</th><th className="py-2 font-semibold">Date</th></tr></thead>
             <tbody>
               {[...data.attempts].reverse().slice(0, 30).map((a) => (
-                <tr key={a.id} className="border-t border-line"><td className="py-2">{getExercise(a.exerciseSlug)?.title ?? a.exerciseSlug}</td><td className="py-2">{a.score} / {a.total}</td><td className="py-2">{new Date(a.completedAt).toLocaleDateString()}</td></tr>
+                <tr key={a.id} className="border-t border-line"><td className="py-2">{getExercise(a.exerciseSlug)?.title ?? smartTitle(a.exerciseSlug)}</td><td className="py-2">{a.score} / {a.total}</td><td className="py-2">{new Date(a.completedAt).toLocaleDateString()}</td></tr>
               ))}
             </tbody>
           </table>

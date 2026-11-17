@@ -1,6 +1,9 @@
 import type { Metadata, Viewport } from "next";
-import "@fontsource-variable/manrope";
-import "@fontsource-variable/inter";
+import "@fontsource/archivo-narrow/400.css";
+import "@fontsource/archivo-narrow/500.css";
+import "@fontsource/archivo-narrow/600.css";
+import "@fontsource/archivo-narrow/700.css";
+import "@fontsource/archivo-narrow/400-italic.css";
 import "./globals.css";
 import { BRAND } from "@/lib/brand";
 import { StoreProvider } from "@/components/StoreProvider";
@@ -19,11 +22,11 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
-  themeColor: [{ media: "(prefers-color-scheme: light)", color: "#F5F7FB" }, { media: "(prefers-color-scheme: dark)", color: "#08101F" }],
+  themeColor: "#F7F8FB",
 };
 
-/** Applies the saved or system theme before first paint, so there is no flash. */
-const themeScript = `(function(){try{var t=localStorage.getItem('qevrant.theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.dataset.theme=t}catch(e){}})()`;
+/** Light is the default; dark only if the learner chose it. Applied before first paint, so there is no flash. */
+const themeScript = `(function(){try{var t=localStorage.getItem('qevrant.theme');if(t!=='dark'){t='light'}document.documentElement.dataset.theme=t}catch(e){}})()`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

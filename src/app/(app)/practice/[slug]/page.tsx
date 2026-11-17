@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
-import { exercises, getExercise } from "@/lib/content";
+import { exercises, getExercise, rulesFor } from "@/lib/content";
 import { ExercisePlayer } from "@/components/ExercisePlayer";
 import { LevelBadge } from "@/components/ui";
 
@@ -21,7 +21,7 @@ export default async function PracticePage({ params }: { params: Promise<{ slug:
       <div className="mb-2"><LevelBadge level={ex.level} /></div>
       <h1 className="text-3xl font-extrabold">{ex.title}</h1>
       <p className="mb-6 mt-2 text-muted">{ex.instructions}</p>
-      <ExercisePlayer exercise={ex} />
+      <ExercisePlayer exercise={ex} rules={rulesFor([ex])} />
     </div>
   );
 }

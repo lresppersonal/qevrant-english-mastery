@@ -32,7 +32,7 @@ export function ReadingLibrary({ cards }: { cards: ReadingCard[] }) {
         <ul className="grid gap-4 md:grid-cols-2" data-testid="reading-list">
           {shown.map((r) => (
             <li key={r.slug}>
-              <Link href={`/reading/${r.slug}`} className="card flex h-full flex-col p-6 hover:border-primary">
+              <Link href={`/reading/${r.slug}`} className="card card-link flex h-full flex-col p-6 ">
                 <div className="flex flex-wrap items-center gap-2"><LevelBadge level={r.level} /><span className="chip"><Clock size={12} aria-hidden="true" />{r.minutes} min</span><span className="chip">{r.categoryTitle}</span></div>
                 <h2 className="mt-4 text-xl font-bold">{r.title}</h2>
                 <p className="mt-2 flex-1 text-muted">{r.standfirst}</p>

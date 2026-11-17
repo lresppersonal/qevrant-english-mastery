@@ -1,4 +1,4 @@
-# English Mastery by QEVRANT
+# English Mastery by QEVRANT — Advanced English Development System
 
 A structured B2–C2 English learning platform: vocabulary organised by 23 themes (CEFR as metadata), 17 grammar lessons with separate theory and practice pages, a 12-text reading library with IELTS-style tasks, an essay bank of 44 questions across 8 essay types, speaking practice, and AI practice feedback on essays and speaking. See `docs/CONTENT-REPORT.md` for content statistics and provenance.
 
@@ -15,6 +15,18 @@ Content is written in compact formats in `content/src/` and compiled with `npm r
 **Stack:** Next.js 15 · React 19 · TypeScript · Tailwind 4 · Radix UI · Supabase (Postgres + Auth + Storage, EU region) · Vercel · Claude API for AI practice feedback · FSRS for spaced revision.
 
 **New to this? Start with [docs/LAUNCH-GUIDE.md](docs/LAUNCH-GUIDE.md)**: a step-by-step, non-technical guide to putting the app online, creating your account and keeping your data.
+
+## What's new (2026-11-17, third update: Advanced English Development System)
+- **Personalised dashboard ("Today")**: a daily plan of up to 4 tasks with reasons and time estimates, revision counts, weakest areas, the next lesson in your path, working-level estimate, "continue where you left off". All computed from the learner's own data (`src/lib/learning.ts`); no AI guesses.
+- **Learning cycle** (Understand → Recognise → Practise → Produce → Feedback → Revise) shown on every grammar lesson and the dashboard, with real completion status per stage.
+- **Grammar feedback in five parts** for every wrong answer: your answer, correct answer, why it works, the rule to remember (taken from the lesson's own theory) and an optional AI "Why doesn't my answer fit?" explanation (`/api/ai/explain`, server-side question lookup, daily limit `EXPLAIN_DAILY_LIMIT`, hidden when AI is not configured). "Practise this rule" follow-up links.
+- **Adaptive practice** (`/practice/smart`): My mistakes (questions stay until answered correctly), Weak areas, Mixed review, per-topic targeted sets.
+- **Writing portfolio** (`/writing/portfolio`): drafts, all essays and versions, feedback review, version comparison (bands, criteria, problem types, word-level diff), recurring mistakes with trend, band trend chart.
+- **Speaking development** on the Speaking page: band trend, delivery first-vs-latest, recurring problems, same-question comparisons. Guided tasks labelled by IELTS Part 1/2/3 style.
+- **Vocabulary review** as flip cards with familiarity labels (new / learning / familiar / well known, from FSRS state).
+- **Skill indicators** on Progress: grammar accuracy, collocation problems per 100 words, vocabulary retention, reading, listening, speaking, writing, recurring mistakes and study days, last 30 days vs the 30 before.
+- **Design system**: lighter academic palette, Arial Narrow (Archivo Narrow fallback), page transitions, hover elevation, press feedback, animated progress, answer pop/shake, flashcard flip, skeletons, dialog transitions, toasts, completion effect. All motion respects "reduce motion".
+- Fixed: question ids are only unique inside an exercise; the engine now uses qualified keys (`exercise-slug/q1`), so mistakes in different exercises are never mixed up.
 
 ## What's new (2026-11-17, second update)
 - Dictionary: every Reading word answers (built-in grammar/general lexicon of about 1,250 words + vocabulary), with hybrid lookup for any other word (Free Dictionary API + Claude), base forms, meaning in context and UK/US pronunciation. New **Dictionary** page.

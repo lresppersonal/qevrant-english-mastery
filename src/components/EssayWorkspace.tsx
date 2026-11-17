@@ -226,6 +226,7 @@ export function EssayWorkspace({ prompt }: { prompt: WritingPrompt }) {
           {history.length > 0 && (
             <div className="card p-5">
               <p className="flex items-center gap-2 font-bold"><History size={16} aria-hidden="true" /> Your submissions</p>
+              <Link href="/writing/portfolio" className="mt-1 inline-block text-sm font-semibold text-primary underline-offset-4 hover:underline">Compare versions in your portfolio</Link>
               <ul className="mt-2 space-y-1" data-testid="submissions">
                 {history.map((h) => (
                   <li key={h.id} className="flex items-center gap-1">

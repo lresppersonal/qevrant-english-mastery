@@ -60,7 +60,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                 {g.items.map((it) => (
                   <li key={it.href}>
                     <Link href={it.href} aria-current={active(it.href) ? "page" : undefined}
-                      className={clsx("flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors",
+                      className={clsx("nav-item flex items-center gap-3 rounded-lg px-3 py-2 text-[15px] font-medium",
                         active(it.href) ? "bg-primary-soft text-primary" : "text-muted hover:bg-surface-2 hover:text-ink")}>
                       <it.icon size={18} aria-hidden="true" />
                       <span className="flex-1">{it.label}</span>
@@ -75,7 +75,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <div className="border-t border-line px-3 py-3">
           {NAV_FOOTER.map((it) => (
             <Link key={it.href} href={it.href} aria-current={active(it.href) ? "page" : undefined}
-              className={clsx("flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium",
+              className={clsx("nav-item flex items-center gap-3 rounded-lg px-3 py-2 text-[15px] font-medium",
                 active(it.href) ? "bg-primary-soft text-primary" : "text-muted hover:bg-surface-2 hover:text-ink")}>
               <it.icon size={18} aria-hidden="true" />{it.label}
             </Link>
@@ -88,7 +88,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <header className="safe-top sticky top-0 z-30 flex items-center gap-3 border-b border-line bg-bg/85 px-4 pb-3 backdrop-blur md:px-8">
           <Link href="/dashboard" className="md:hidden" aria-label="Dashboard"><Logo compact /></Link>
           <button onClick={() => setSearchOpen(true)}
-            className="flex h-10 flex-1 items-center gap-2 rounded-xl border border-line bg-surface px-3 text-left text-sm text-muted hover:border-primary md:max-w-md">
+            className="flex h-10 flex-1 items-center gap-2 rounded-xl border border-line bg-surface px-3 text-left text-sm text-muted shadow-[var(--shadow)] transition-[border-color,box-shadow] hover:border-primary/50 hover:shadow-[var(--shadow-lift)] md:max-w-md">
             <Search size={16} aria-hidden="true" />
             <span className="flex-1 truncate"><span className="sm:hidden">Search…</span><span className="hidden sm:inline">Search words, grammar, texts…</span></span>
             <kbd className="hidden rounded border border-line px-1.5 text-[11px] sm:inline">Ctrl K</kbd>
@@ -102,7 +102,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             Demo mode: no database is connected, so your progress is saved in this browser only.
           </div>
         )}
-        <main id="main" className="main-mobile mx-auto w-full max-w-5xl flex-1 px-4 pt-6 md:px-8 md:pb-16 md:pt-8">{children}</main>
+        <main id="main" className="main-mobile mx-auto w-full max-w-5xl flex-1 px-4 pt-6 md:px-8 md:pb-16 md:pt-8"><div key={path} className="page-enter">{children}</div></main>
       </div>
 
       {/* Mobile bottom nav */}
@@ -113,8 +113,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             return (
               <li key={it.href}>
                 <Link href={it.href} aria-current={on ? "page" : undefined}
-                  className={clsx("flex min-h-[52px] flex-col items-center justify-center gap-0.5 py-2 text-[11px] font-semibold", on ? "text-primary" : "text-muted")}>
-                  <it.icon size={20} aria-hidden="true" />{it.label}
+                  className={clsx("flex min-h-[52px] flex-col items-center justify-center gap-0.5 py-2 text-[12px] font-semibold transition-colors", on ? "text-primary" : "text-muted")}>
+                  <span className={clsx("grid h-7 w-12 place-items-center rounded-full transition-[background,transform] duration-200", on ? "scale-100 bg-primary-soft" : "scale-90")}><it.icon size={20} aria-hidden="true" /></span>{it.label}
                 </Link>
               </li>
             );

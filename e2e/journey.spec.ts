@@ -32,7 +32,7 @@ test("new learner: onboard, study, answer, review the rule, save from text, revi
   await page.locator("#main").getByText("Exam preparation", { exact: true }).click();
   await page.getByRole("radio", { name: /^C1/ }).check();
   await page.getByRole("button", { name: "Save and go to dashboard" }).click();
-  await expect(page.getByRole("heading", { name: "Good to see you, Aigerim." })).toBeVisible();
+  await expect(page.getByRole("heading", { name: /^Good (morning|afternoon|evening), Aigerim\.$/ })).toBeVisible();
   await expect(page.getByTestId("streak")).toContainText("0 days");
 
   // Grammar: theory and practice are separate pages; wrong answers link back to the exact rule
@@ -43,6 +43,15 @@ test("new learner: onboard, study, answer, review the rule, save from text, revi
   await page.getByRole("radio", { name: /that/ }).first().click();
   await page.getByRole("button", { name: "Check" }).click();
   await expect(page.getByText("Not quite")).toBeVisible();
+  // Five-part feedback: your answer, correct answer, why it works, rule to remember, and an on-demand AI explanation
+  const fbk = page.getByTestId("answer-feedback");
+  await expect(fbk.getByText("Your answer", { exact: true })).toBeVisible();
+  await expect(fbk.getByText("Correct answer", { exact: true })).toBeVisible();
+  await expect(fbk.getByText("Why it works", { exact: true })).toBeVisible();
+  await expect(fbk.getByTestId("rule-summary")).not.toBeEmpty();
+  await fbk.getByRole("button", { name: "Why doesn't my answer fit?" }).click();
+  await expect(fbk.getByTestId("ai-explanation")).toContainText("Mock explanation");
+  await expect(fbk.getByRole("link", { name: "Practise this rule" })).toHaveAttribute("href", "/practice/smart?lesson=relative-clauses");
   await page.getByRole("link", { name: "Review the rule" }).click();
   await expect(page).toHaveURL(/\/grammar\/relative-clauses#form$/);
   await expect(page.getByRole("heading", { name: "Form: choosing the relative word" })).toBeInViewport();
@@ -62,6 +71,15 @@ test("new learner: onboard, study, answer, review the rule, save from text, revi
   }
   await expect(page.getByTestId("exercise-summary")).toContainText("8 / 9");
   await expect(page.getByTestId("exercise-summary")).toContainText("Saved to your progress.");
+
+  // Adaptive practice: the missed question comes back in "My mistakes"
+  await page.getByTestId("exercise-summary").getByRole("link", { name: "Practise my mistakes" }).click();
+  await expect(page).toHaveURL(/\/practice\/smart\?mode=mistakes$/);
+  await expect(page.getByRole("link", { name: /My mistakes \(1\)/ })).toBeVisible();
+  await expect(page.getByText("Question 1 of 1")).toBeVisible();
+  await page.goto("/practice/smart?lesson=relative-clauses");
+  await expect(page.getByRole("heading", { name: /Practise: / })).toBeVisible();
+  await expect(page.getByText(/Question 1 of \d+/)).toBeVisible();
 
   // Reading: tap a word, see Russian, save it with its sentence
   await page.goto("/reading/is-failure-the-best-teacher");
@@ -95,6 +113,7 @@ test("new learner: onboard, study, answer, review the rule, save from text, revi
 
   // Progress page shows the attempt
   await page.goto("/progress");
+  await expect(page.getByTestId("skill-indicators")).toContainText("Vocabulary retention");
   await expect(page.getByTestId("weekly-report")).toContainText("Grammar accuracy");
   await expect(page.getByTestId("weekly-report")).toContainText("Insufficiently assessed");
   await page.getByText("Exercise history").click();
@@ -116,6 +135,27 @@ test("academic essay gets AI practice feedback linked to grammar lessons", async
   await expect(page).toHaveURL(/\/grammar\/relative-clauses#form$/);
   await page.goto("/dashboard");
   await expect(page.getByText("Learning from failure")).toBeVisible();
+});
+
+test("writing portfolio: versions, comparison and recurring mistakes", async ({ page }) => {
+  await page.goto("/writing/learning-from-failure");
+  await page.getByLabel("Your essay").fill(ESSAY);
+  await page.getByRole("button", { name: "Get AI feedback" }).click();
+  await expect(page.getByTestId("ai-feedback")).toBeVisible();
+  await page.getByRole("textbox", { name: "Your essay" }).fill(ESSAY + " Moreover, schools should reward effort as well as results.");
+  await page.getByRole("button", { name: "Get AI feedback" }).click();
+  await expect(page.getByTestId("submissions").getByRole("listitem")).toHaveCount(2);
+  await page.getByRole("link", { name: "Compare versions in your portfolio" }).click();
+  await expect(page).toHaveURL(/\/writing\/portfolio$/);
+  const pf = page.getByTestId("writing-portfolio");
+  await expect(pf.getByRole("button", { name: /Version 2/ })).toBeVisible();
+  await expect(page.getByTestId("recurring-mistakes")).toContainText("2 essays");
+  await pf.getByRole("button", { name: "Compare versions" }).click();
+  const cmp = page.getByTestId("version-compare");
+  await expect(cmp).toContainText("Estimated band");
+  await expect(cmp.locator("ins")).toContainText("reward effort");
+  await pf.getByRole("button", { name: /Version 1/ }).click();
+  await expect(page.getByTestId("ai-feedback")).toBeVisible();
 });
 
 test("speaking analysis API returns feedback and delivery metrics", async ({ request }) => {
@@ -195,8 +235,10 @@ test("speaking API rejects unknown topics and over-long recordings", async ({ re
 });
 
 test("every navigation item reaches a real page, with no serious accessibility violations in either theme", async ({ page }) => {
-  test.setTimeout(240_000);
-  const paths = ["/", "/dashboard", "/topics", "/topics/environment", "/grammar", "/grammar/conditionals-and-unreal-past", "/grammar/practice", "/grammar/modals-and-modality/practice",
+  test.setTimeout(300_000);
+  // Entrance animations fade content in; audit the settled page (reduced motion skips the fade).
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  const paths = ["/", "/dashboard", "/practice/smart?mode=mixed", "/writing/portfolio", "/topics", "/topics/environment", "/grammar", "/grammar/conditionals-and-unreal-past", "/grammar/practice", "/grammar/modals-and-modality/practice",
     "/vocabulary", "/vocabulary/topics/environment", "/vocabulary/scholarship", "/reading", "/reading/rewilding", "/dictionary", "/listening", "/speaking", "/speaking/grades-and-learning",
     "/writing", "/writing/gig-economy", "/review", "/library", "/progress", "/settings", "/learn", "/sign-in"];
   const problems: string[] = [];

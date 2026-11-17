@@ -185,3 +185,41 @@ export function validateGraph(): string[] {
 
   return problems;
 }
+
+/** The rule to remember for a lesson section: its first rule box, or else its first paragraph. */
+/**
+ * Short "rule to remember" for a lesson section, taken from the lesson's own theory (never invented):
+ * the section's rule box if it has one, otherwise its first paragraph, note, list items, table rows or example.
+ */
+export function ruleSummary(lesson: string, section?: string): string | null {
+  const l = getLesson(lesson);
+  if (!l) return null;
+  const sections = section ? l.sections.filter((s) => s.id === section) : l.sections;
+  // Cut at whole sentences so inline markup (*italic*, ~~wrong~~) is never left half-open.
+  const clip = (t: string, n = 260) => {
+    if (t.length <= n) return t;
+    const sentences = t.split(/(?<=[.!?])\s+/);
+    let out = sentences[0];
+    for (const x of sentences.slice(1)) { if ((out + " " + x).length > n) break; out += " " + x; }
+    return out.length <= n * 1.4 ? out : `${out.replace(/[*~]/g, "").slice(0, n - 1).replace(/\s+\S*$/, "")}…`;
+  };
+  for (const s of sections) {
+    const all = s.blocks.flatMap((b) => (b.type === "details" ? b.blocks : [b]));
+    const pick = <T extends (typeof all)[number]["type"]>(t: T) => all.find((b) => b.type === t) as Extract<(typeof all)[number], { type: T }> | undefined;
+    const rule = pick("rule"); if (rule) return rule.text;
+    const p = pick("p"); if (p) return clip(p.text);
+    const note = pick("note"); if (note) return clip(note.text);
+    const list = pick("list"); if (list) return clip(list.items.slice(0, 2).join(" · "));
+    const table = pick("table"); if (table && table.rows.length) return clip(table.rows.slice(0, 2).map((r) => r.join(" → ")).join(" · "));
+    const ex = pick("examples"); if (ex && ex.items.length) { const it = ex.items[0] as { en: string; note?: string }; return clip(it.note ? `${it.en} → ${it.note}` : it.en); }
+  }
+  return null;
+}
+export function rulesFor(exs: { questions: { theoryAnchor?: { lesson: string; section: string } | null }[] }[]) {
+  const out: Record<string, string> = {};
+  for (const e of exs) for (const q of e.questions) if (q.theoryAnchor) {
+    const k = `${q.theoryAnchor.lesson}#${q.theoryAnchor.section}`;
+    if (!(k in out)) { const r = ruleSummary(q.theoryAnchor.lesson, q.theoryAnchor.section); if (r) out[k] = r; }
+  }
+  return out;
+}

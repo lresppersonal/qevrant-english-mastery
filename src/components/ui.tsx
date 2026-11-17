@@ -16,7 +16,7 @@ export function LevelBadge({ level, className }: { level: string; className?: st
 
 export function PageHeader({ eyebrow, title, intro, children }: { eyebrow?: string; title: string; intro?: React.ReactNode; children?: React.ReactNode }) {
   return (
-    <header className="mb-8">
+    <header className="mb-8 enter">
       {eyebrow && <p className="eyebrow mb-2">{eyebrow}</p>}
       <div className="flex flex-wrap items-start justify-between gap-4">
         <h1 className="text-3xl font-extrabold leading-tight md:text-4xl">{title}</h1>
@@ -132,9 +132,9 @@ export function Blocks({ blocks }: { blocks: Block[] }) {
   );
 }
 
-export function StatCard({ label, value, hint }: { label: string; value: React.ReactNode; hint?: React.ReactNode }) {
+export function StatCard({ label, value, hint, index = 0 }: { label: string; value: React.ReactNode; hint?: React.ReactNode; index?: number }) {
   return (
-    <div className="card p-5">
+    <div className="card enter p-5" style={{ ["--i" as string]: index }}>
       <p className="text-sm font-medium text-muted">{label}</p>
       <p className="mt-1 font-display text-3xl font-extrabold">{value}</p>
       {hint && <p className="mt-1 text-xs text-muted">{hint}</p>}

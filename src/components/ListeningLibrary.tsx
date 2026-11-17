@@ -142,8 +142,8 @@ function LogDialog({ resource, onClose, onSaved }: { resource: ListeningResource
   return (
     <Dialog.Root open={!!resource} onOpenChange={(o) => !o && onClose()}>
       <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0 z-50 bg-black/40" />
-        <Dialog.Content className="fixed inset-x-3 top-[8vh] z-50 mx-auto max-w-lg rounded-2xl border border-line bg-surface p-5 shadow-xl sm:p-6">
+        <Dialog.Overlay className="dialog-overlay fixed inset-0 z-50 bg-black/40 backdrop-blur-[2px]" />
+        <Dialog.Content className="dialog-content fixed inset-x-3 top-[8vh] z-50 mx-auto max-w-lg rounded-2xl border border-line bg-surface p-5 shadow-xl sm:p-6">
           <div className="flex items-start justify-between gap-3">
             <Dialog.Title className="flex items-center gap-2 text-lg font-bold"><Headphones size={18} aria-hidden="true" /> Log: {resource?.title}</Dialog.Title>
             <Dialog.Close className="btn btn-ghost !min-h-9 !px-2" aria-label="Close"><X size={18} aria-hidden="true" /></Dialog.Close>

@@ -94,7 +94,8 @@ Users always sign in on Google's own page. The app never sees or stores Google p
 | `NEXT_PUBLIC_AUTH_GOOGLE` | `true` only after step 3E, otherwise `false` | Optional |
 | `OPENAI_API_KEY` | From platform.openai.com → API keys | Optional (better speaking transcription) |
 | `OPENAI_TRANSCRIBE_MODEL` | `gpt-4o-transcribe`, or `whisper-1` if you also want long-pause counts | Optional |
-| `DICTIONARY_AI_MODEL` | `claude-haiku-5-5` (fast model for dictionary entries) | Recommended |
+| `DICTIONARY_AI_MODEL` | `claude-haiku-5-5` (fast model for dictionary entries and grammar mistake explanations) | Recommended |
+| `EXPLAIN_DAILY_LIMIT` | `150` (AI mistake explanations per learner per day; optional) | Optional |
 | `SUPABASE_SERVICE_ROLE_KEY` | Supabase service_role key (server only) | Optional (shared dictionary cache) |
 | `GOOGLE_TTS_API_KEY` | Google Cloud API key with Text-to-Speech enabled | Optional (UK/US voices when no recording exists) |
 

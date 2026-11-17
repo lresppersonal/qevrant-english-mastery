@@ -2,7 +2,7 @@ import Link from "next/link";
 import { grammarLessons, grammarDomains, getExercise, LEVEL_ORDER } from "@/lib/content";
 import { PageHeader, LevelBadge } from "@/components/ui";
 import { MasteryChip } from "@/components/MasteryChip";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Repeat, TrendingDown, Shuffle } from "lucide-react";
 
 export const metadata = { title: "Grammar practice" };
 
@@ -18,6 +18,23 @@ export default function GrammarPracticeHub() {
     <>
       <PageHeader eyebrow="Learn" title="Grammar practice"
         intro={<>{total} original exercises across {rows.length} topics, in multiple-choice, gap-fill, transformation, error-correction, rewriting and in-context formats, graded from B2 to C2. Every answer explains the rule and links back to the theory.</>} />
+      <section aria-labelledby="smart-h" className="mb-6">
+        <h2 id="smart-h" className="mb-3 text-lg font-bold">Adaptive practice</h2>
+        <div className="grid gap-3 sm:grid-cols-3">
+          {[
+            { href: "/practice/smart?mode=mistakes", icon: Repeat, t: "My mistakes", d: "Questions you got wrong come back until you answer them correctly." },
+            { href: "/practice/smart?mode=weak", icon: TrendingDown, t: "Weak areas", d: "Weighted towards the topics where your accuracy is lowest." },
+            { href: "/practice/smart?mode=mixed", icon: Shuffle, t: "Mixed review", d: "Interleaved questions across topics, including ones you haven't seen for a while." },
+          ].map(({ href, icon: Icon, t, d }, i) => (
+            <Link key={href} href={href} className="card card-link enter p-4" style={{ "--i": i } as React.CSSProperties}>
+              <Icon size={18} className="text-primary" aria-hidden="true" />
+              <p className="mt-2 font-semibold">{t}</p>
+              <p className="mt-0.5 text-sm text-muted">{d}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+      <h2 className="mb-3 text-lg font-bold">By topic</h2>
       <ul className="card divide-y divide-line">
         {rows.map(({ l, count, levels, domain }) => (
           <li key={l.slug}>

@@ -18,8 +18,8 @@ export function SearchDialog({ open, onOpenChange }: { open: boolean; onOpenChan
   return (
     <Dialog.Root open={open} onOpenChange={onOpenChange}>
       <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0 z-50 bg-black/40" />
-        <Dialog.Content className="card fixed left-1/2 top-[12vh] z-50 w-[min(640px,calc(100vw-2rem))] -translate-x-1/2 overflow-hidden p-0" aria-describedby={undefined}>
+        <Dialog.Overlay className="dialog-overlay fixed inset-0 z-50 bg-black/40 backdrop-blur-[2px]" />
+        <Dialog.Content className="dialog-content card fixed left-1/2 top-[12vh] z-50 w-[min(640px,calc(100vw-2rem))] -translate-x-1/2 overflow-hidden p-0" aria-describedby={undefined}>
           <Dialog.Title className="sr-only">Search</Dialog.Title>
           <div className="flex items-center gap-2 border-b border-line px-4">
             <Search size={18} className="text-muted" aria-hidden="true" />

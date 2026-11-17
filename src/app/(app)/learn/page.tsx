@@ -15,7 +15,7 @@ export default function Learn() {
           <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3">
             {g.items.map((it) => (
               <li key={it.href}>
-                <Link href={it.href} className="card flex h-full flex-col gap-3 p-4 hover:border-primary">
+                <Link href={it.href} className="card card-link flex h-full flex-col gap-3 p-4 ">
                   <it.icon size={22} className="text-primary" aria-hidden="true" />
                   <span className="font-semibold">{it.label}</span>
                   {it.soon && <span className="chip w-fit">Coming soon</span>}

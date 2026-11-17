@@ -5,15 +5,15 @@
  */
 export const tokens = {
   light: {
-    bg: "#F5F7FB",
+    bg: "#F7F8FB",
     surface: "#FFFFFF",
-    surface2: "#EDF1F7",
-    border: "#D5DCE8",
+    surface2: "#F0F2F7",
+    border: "#D9DFE9",
     text: "#0E1A33", // Midnight Blue
-    muted: "#4A5876",
+    muted: "#4A5671",
     primary: "#1B3668", // Navy
     primaryFg: "#FFFFFF",
-    primarySoft: "#E3EAF6",
+    primarySoft: "#E8EEF8",
     accent: "#D99A2B", // Warm Amber (fills only)
     accentFg: "#1A1204",
     accentText: "#8A5A00", // amber used as text on light surfaces

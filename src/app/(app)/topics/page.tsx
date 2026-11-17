@@ -20,7 +20,7 @@ export default function Topics() {
               const w = writingPrompts.filter((x) => x.topics.includes(t.slug)).length;
               return (
                 <li key={t.slug}>
-                  <Link href={`/topics/${t.slug}`} className="card flex h-full flex-col p-5 hover:border-primary">
+                  <Link href={`/topics/${t.slug}`} className="card card-link flex h-full flex-col p-5 ">
                     <span className="text-lg font-bold">{t.title}</span>
                     <span className="mt-1 flex-1 text-muted">{t.summary}</span>
                     <span className="mt-3 text-sm text-muted">{v} words · {r} {r === 1 ? "text" : "texts"} · {w} {w === 1 ? "essay" : "essays"}</span>

@@ -77,6 +77,7 @@ http.createServer((req, res) => {
     let payload = isSpeaking ? speaking : writing;
     if (body.includes("lexicographer")) payload = dictionary((body.match(/Word clicked: \\"([^\\]+)\\"/) ?? [])[1] ?? "ubiquitous");
     if (body.includes("Choose which listed sense")) payload = { contextIndex: 1, contextNote: "Here it means the land along the side of a river.", ru: "берег" };
+    if (body.includes("advanced English grammar for adult learners")) payload = { whyWrong: "Mock explanation: your option does not fit the grammar of this sentence.", whyCorrect: "The key follows the rule.", rule: "Follow the rule.", example: "This is a mock example sentence." };
     res.writeHead(200, { "content-type": "application/json" });
     res.end(JSON.stringify({
       id: "msg_mock", type: "message", role: "assistant", model: "mock",
