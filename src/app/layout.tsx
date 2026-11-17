@@ -1,9 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import "@fontsource/archivo-narrow/400.css";
-import "@fontsource/archivo-narrow/500.css";
-import "@fontsource/archivo-narrow/600.css";
-import "@fontsource/archivo-narrow/700.css";
-import "@fontsource/archivo-narrow/400-italic.css";
+import "@fontsource-variable/manrope";
+import "@fontsource-variable/inter";
 import "./globals.css";
 import { BRAND } from "@/lib/brand";
 import { StoreProvider } from "@/components/StoreProvider";
@@ -14,7 +11,7 @@ export const metadata: Metadata = {
   title: { default: BRAND.full, template: `%s · ${BRAND.product}` },
   description: "A structured B2–C2 English learning system: grammar, vocabulary, reading, speaking and academic writing.",
   applicationName: BRAND.product,
-  icons: { icon: [{ url: "/icon.svg", type: "image/svg+xml" }, { url: "/icons/icon-192.png", sizes: "192x192" }], apple: "/apple-touch-icon.png" },
+  icons: { icon: [{ url: "/icon.svg", type: "image/svg+xml" }, { url: "/favicon.ico", sizes: "48x48" }, { url: "/icons/icon-192.png", sizes: "192x192" }], apple: "/apple-touch-icon.png" },
   appleWebApp: { capable: true, title: BRAND.product, statusBarStyle: "black-translucent" },
   formatDetection: { telephone: false },
 };

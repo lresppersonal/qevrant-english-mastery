@@ -3,7 +3,9 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Download, LogOut, Trash2, BarChart3, KeyRound } from "lucide-react";
-import { useLearner } from "@/components/StoreProvider";
+import { useLearner, dailyGoalOf } from "@/components/StoreProvider";
+import { DAILY_GOAL_OPTIONS } from "@/lib/streak";
+import { Flame } from "@/components/StreakFlame";
 import { ProfileForm } from "@/components/ProfileForm";
 import { ThemeToggle } from "@/components/AppShell";
 import { PageHeader } from "@/components/ui";
@@ -30,6 +32,12 @@ export default function Settings() {
     toast(v ? "Recordings will be kept with your speaking attempts" : "Recordings will not be stored");
   }
 
+  async function setDailyGoal(g: number) {
+    await store.updateProfile({ preferences: { ...(profile?.preferences ?? {}), dailyGoal: g } });
+    await refresh();
+    toast(`Daily goal: ${g} ${g === 1 ? "activity" : "activities"} a day`);
+  }
+
   async function deleteAll(kind: "speaking" | "writing") {
     const what = kind === "speaking" ? "all speaking sessions (recordings, transcripts and feedback)" : "all essays and their feedback";
     if (!window.confirm(`Delete ${what}? This can't be undone.`)) return;
@@ -49,6 +57,17 @@ export default function Settings() {
         <h2 id="h-plan" className="mb-1 text-lg font-bold">Study plan</h2>
         {profile?.email && <p className="mb-5 text-sm text-muted">Signed in as {profile.email}</p>}
         <ProfileForm submitLabel="Save changes" />
+        <div className="mt-6 border-t border-line pt-5" data-testid="daily-goal">
+          <p id="dg-h" className="flex items-center gap-2 font-semibold"><Flame tier="flame" lit size={18} /> Daily goal</p>
+          <p className="mb-3 mt-1 text-sm text-muted">How many learning activities a day: a lesson, an exercise, a reading text, a review session, an essay, a speaking answer or a listening session each count once. Any one activity keeps your streak alive.</p>
+          <div className="flex flex-wrap gap-2" role="radiogroup" aria-labelledby="dg-h">
+            {DAILY_GOAL_OPTIONS.map((g) => {
+              const on = dailyGoalOf(profile) === g;
+              return <button key={g} type="button" role="radio" aria-checked={on} onClick={() => setDailyGoal(g)}
+                className={on ? "btn btn-primary !min-h-9 !px-3.5" : "btn btn-ghost !min-h-9 !px-3.5"}>{g} {g === 1 ? "activity" : "activities"}</button>;
+            })}
+          </div>
+        </div>
       </section>
 
       <section className="card mb-6 space-y-3 p-6" aria-labelledby="h-install">

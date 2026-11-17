@@ -16,6 +16,13 @@ Content is written in compact formats in `content/src/` and compiled with `npm r
 
 **New to this? Start with [docs/LAUNCH-GUIDE.md](docs/LAUNCH-GUIDE.md)**: a step-by-step, non-technical guide to putting the app online, creating your account and keeping your data.
 
+## What's new (2026-11-17, fourth update: visual identity)
+- **Original typography restored**: Inter (text) and Manrope (headings), with the original sizes, weights, letter-spacing and font features, exactly as in every version before the third update. The temporary Arial Narrow / Archivo Narrow setting has been removed.
+- **QEVRANT logo**: a geometric Q whose tail is drawn as the leg of an R (navy ring, amber stroke). Files in `public/brand/` (full logo and symbol for light and dark backgrounds, 1024 px app icon); favicon (`icon.svg`, `favicon.ico`), PWA and maskable icons, Apple touch icon. Regenerate with `python3 scripts/brand/build-brand.py`.
+- **Streak flame**: an original drawn flame (not an emoji or character) in the header and on the dashboard; it sways gently when today is done, ignites when the first activity of the day extends the streak (once per day), and changes colour at milestones (7, 30 and 100 days). Daily goal (1–8 activities, Settings) with a ring around the flame, last-7-days strip, best streak and milestone track. Computed from saved activity, so it persists across sessions and devices (`src/lib/streak.ts`, unit-tested).
+- **Dashboard**: streak and daily goal next to Today's plan, recently studied topics, activities today.
+- Smaller: exercise questions slide in; lesson sections taller than the screen now count as read.
+
 ## What's new (2026-11-17, third update: Advanced English Development System)
 - **Personalised dashboard ("Today")**: a daily plan of up to 4 tasks with reasons and time estimates, revision counts, weakest areas, the next lesson in your path, working-level estimate, "continue where you left off". All computed from the learner's own data (`src/lib/learning.ts`); no AI guesses.
 - **Learning cycle** (Understand → Recognise → Practise → Produce → Feedback → Revise) shown on every grammar lesson and the dashboard, with real completion status per stage.
@@ -25,7 +32,7 @@ Content is written in compact formats in `content/src/` and compiled with `npm r
 - **Speaking development** on the Speaking page: band trend, delivery first-vs-latest, recurring problems, same-question comparisons. Guided tasks labelled by IELTS Part 1/2/3 style.
 - **Vocabulary review** as flip cards with familiarity labels (new / learning / familiar / well known, from FSRS state).
 - **Skill indicators** on Progress: grammar accuracy, collocation problems per 100 words, vocabulary retention, reading, listening, speaking, writing, recurring mistakes and study days, last 30 days vs the 30 before.
-- **Design system**: lighter academic palette, Arial Narrow (Archivo Narrow fallback), page transitions, hover elevation, press feedback, animated progress, answer pop/shake, flashcard flip, skeletons, dialog transitions, toasts, completion effect. All motion respects "reduce motion".
+- **Design system**: lighter academic palette, page transitions, hover elevation, press feedback, animated progress, answer pop/shake, flashcard flip, skeletons, dialog transitions, toasts, completion effect. All motion respects "reduce motion".
 - Fixed: question ids are only unique inside an exercise; the engine now uses qualified keys (`exercise-slug/q1`), so mistakes in different exercises are never mixed up.
 
 ## What's new (2026-11-17, second update)

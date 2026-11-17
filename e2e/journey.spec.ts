@@ -100,7 +100,8 @@ test("new learner: onboard, study, answer, review the rule, save from text, revi
   await expect(page.getByTestId("saved-count")).toContainText("1");
   await expect(page.getByTestId("due-count")).toContainText("1");
   await expect(page.getByTestId("streak")).toContainText("1 day");
-  await expect(page.getByText("Is failure the best teacher?")).toBeVisible(); // continue learning
+  await expect(page.getByTestId("continue-card")).toContainText("Is failure the best teacher?"); // continue learning
+  await expect(page.getByTestId("recently-studied")).toContainText("Is failure the best teacher?");
 
   // Review session updates the schedule
   await page.goto("/review");
@@ -118,6 +119,25 @@ test("new learner: onboard, study, answer, review the rule, save from text, revi
   await expect(page.getByTestId("weekly-report")).toContainText("Insufficiently assessed");
   await page.getByText("Exercise history").click();
   await expect(page.getByText("Relative clauses in context")).toBeVisible();
+});
+
+test("streak flame: first activity lights it, celebration once, daily goal, persists after reload", async ({ page }) => {
+  await page.goto("/dashboard");
+  await expect(page.getByTestId("streak")).toContainText("0 days");
+  await expect(page.getByTestId("streak-chip")).toHaveAttribute("aria-label", /Study streak: 0 days/);
+  await page.goto("/grammar/relative-clauses");
+  await page.mouse.wheel(0, 600);
+  await expect(page.getByTestId("streak-celebration")).toContainText("Your streak has started");
+  await expect(page.getByTestId("streak-chip")).toHaveAttribute("aria-label", /Study streak: 1 day\. Today's goal: 1 of 3/);
+  await page.goto("/settings");
+  await page.getByTestId("daily-goal").getByRole("radio", { name: "1 activity" }).click();
+  await page.goto("/dashboard");
+  await expect(page.getByTestId("streak")).toContainText("1 day");
+  await expect(page.getByTestId("daily-goal-progress")).toHaveText("1 / 1 activities");
+  await expect(page.getByTestId("streak")).toContainText("Today's goal complete");
+  await expect(page.getByTestId("streak-celebration")).toHaveCount(0); // no repeat celebration on reload
+  await page.reload();
+  await expect(page.getByTestId("streak")).toContainText("1 day");
 });
 
 test("academic essay gets AI practice feedback linked to grammar lessons", async ({ page }) => {

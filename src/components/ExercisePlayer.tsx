@@ -152,6 +152,7 @@ export function ExercisePlayer({ exercise, rules }: { exercise: Exercise; rules?
         {q.level && <span className="chip">{q.level}</span>}
         <div className="flex-1"><ProgressBar value={i / exercise.questions.length} label="Exercise progress" /></div>
       </div>
+      <div key={q.id} className="reveal">
       <p id={`prompt-${q.id}`} className="text-lg font-medium leading-relaxed"><Rich text={q.prompt} /></p>
 
       <div className="mt-5">
@@ -182,6 +183,8 @@ export function ExercisePlayer({ exercise, rules }: { exercise: Exercise; rules?
               onChange={(e) => setAnswer(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") check(); }} placeholder="Type your answer" />
           </label>
         )}
+      </div>
+
       </div>
 
       {checked && (

@@ -82,12 +82,14 @@ export function LessonView({ lesson, exercises, cycle, rules }: { lesson: Gramma
     const obs = new IntersectionObserver((entries) => {
       for (const e of entries) {
         const id = e.target.id;
-        if (e.isIntersecting && !seen.current.has(id)) {
+        // Read = 40 % of a section visible, or (for sections taller than the screen) it fills half the screen.
+        const read = e.isIntersecting && (e.intersectionRatio >= 0.4 || e.intersectionRect.height >= window.innerHeight * 0.45);
+        if (read && !seen.current.has(id)) {
           seen.current.add(id);
           store.logEvent({ type: "lesson_section_viewed", contentType: "grammar_lesson", contentRef: `${lesson.slug}#${id}` }).catch(() => {});
         }
       }
-    }, { threshold: 0.4 });
+    }, { threshold: [0, 0.15, 0.25, 0.4] });
     lesson.sections.forEach((s) => { const el = document.getElementById(s.id); if (el) obs.observe(el); });
     return () => obs.disconnect();
   }, [ready, lesson, store, active, showAll]);

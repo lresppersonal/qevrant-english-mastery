@@ -4,7 +4,7 @@
  * - Other same-origin GETs (page data, fonts, icons): stale-while-revalidate.
  * - Never cached: /api (AI feedback), /auth, and any other origin (e.g. Supabase).
  */
-const VERSION = "em-v3";
+const VERSION = "em-v4";
 const PAGES = `${VERSION}-pages`;
 const ASSETS = `${VERSION}-assets`;
 const PRECACHE = ["/offline.html", "/dashboard", "/vocabulary", "/grammar", "/reading", "/writing", "/review", "/library", "/icons/icon-192.png"];

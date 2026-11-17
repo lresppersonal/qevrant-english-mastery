@@ -5,6 +5,7 @@ import { Search, Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 import { Logo } from "./Logo";
+import { StreakChip } from "./StreakFlame";
 import { SearchDialog } from "./SearchDialog";
 import { NAV, NAV_FOOTER, MOBILE_NAV, mobileSection } from "@/lib/nav";
 import { isDemoMode } from "@/lib/supabase/config";
@@ -30,7 +31,7 @@ export function ThemeToggle() {
 export function AppShell({ children }: { children: React.ReactNode }) {
   const path = usePathname();
   const [searchOpen, setSearchOpen] = useState(false);
-  const { profile } = useLearner();
+  const { profile, streak } = useLearner();
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -60,7 +61,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                 {g.items.map((it) => (
                   <li key={it.href}>
                     <Link href={it.href} aria-current={active(it.href) ? "page" : undefined}
-                      className={clsx("nav-item flex items-center gap-3 rounded-lg px-3 py-2 text-[15px] font-medium",
+                      className={clsx("nav-item flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium",
                         active(it.href) ? "bg-primary-soft text-primary" : "text-muted hover:bg-surface-2 hover:text-ink")}>
                       <it.icon size={18} aria-hidden="true" />
                       <span className="flex-1">{it.label}</span>
@@ -75,7 +76,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <div className="border-t border-line px-3 py-3">
           {NAV_FOOTER.map((it) => (
             <Link key={it.href} href={it.href} aria-current={active(it.href) ? "page" : undefined}
-              className={clsx("nav-item flex items-center gap-3 rounded-lg px-3 py-2 text-[15px] font-medium",
+              className={clsx("nav-item flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium",
                 active(it.href) ? "bg-primary-soft text-primary" : "text-muted hover:bg-surface-2 hover:text-ink")}>
               <it.icon size={18} aria-hidden="true" />{it.label}
             </Link>
@@ -93,6 +94,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             <span className="flex-1 truncate"><span className="sm:hidden">Search…</span><span className="hidden sm:inline">Search words, grammar, texts…</span></span>
             <kbd className="hidden rounded border border-line px-1.5 text-[11px] sm:inline">Ctrl K</kbd>
           </button>
+          <StreakChip s={streak} />
           <ThemeToggle />
         </header>
 
@@ -113,7 +115,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             return (
               <li key={it.href}>
                 <Link href={it.href} aria-current={on ? "page" : undefined}
-                  className={clsx("flex min-h-[52px] flex-col items-center justify-center gap-0.5 py-2 text-[12px] font-semibold transition-colors", on ? "text-primary" : "text-muted")}>
+                  className={clsx("flex min-h-[52px] flex-col items-center justify-center gap-0.5 py-2 text-[11px] font-semibold transition-colors", on ? "text-primary" : "text-muted")}>
                   <span className={clsx("grid h-7 w-12 place-items-center rounded-full transition-[background,transform] duration-200", on ? "scale-100 bg-primary-soft" : "scale-90")}><it.icon size={20} aria-hidden="true" /></span>{it.label}
                 </Link>
               </li>
