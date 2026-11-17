@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import clsx from "clsx";
 import { Rating, type Grade } from "ts-fsrs";
 import { RotateCcw, Shuffle, CheckCircle2 } from "lucide-react";
@@ -25,7 +25,12 @@ export function TopicFlashcards({ theme }: { theme: string }) {
   const [cards, setCards] = useState<ReviewCardRow[]>([]);
   const [queue, setQueue] = useState<PracticeCard[]>([]);
   const [pos, setPos] = useState(0);
+  // `revealed` = which side faces the learner; `seenAnswer` = the back has been shown at least once for this card (enables rating)
   const [revealed, setRevealed] = useState(false);
+  const [seenAnswer, setSeenAnswer] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
+  const showRef = useRef<HTMLButtonElement>(null);
+  const backRef = useRef<HTMLDivElement>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [session, setSession] = useState({ reviewed: 0, remembered: 0, practice: 0 });
@@ -39,7 +44,7 @@ export function TopicFlashcards({ theme }: { theme: string }) {
 
   const start = useCallback(async (exclude: string[] = []) => {
     const { s, c } = await load();
-    setQueue(buildPracticeQueue(theme, s, c, { exclude })); setPos(0); setRevealed(false);
+    setQueue(buildPracticeQueue(theme, s, c, { exclude })); setPos(0); setRevealed(false); setSeenAnswer(false);
   }, [load, theme]);
 
   useEffect(() => { if (ready) start().catch((e) => setError((e as Error).message)); }, [ready, start]);
@@ -78,25 +83,59 @@ export function TopicFlashcards({ theme }: { theme: string }) {
         if (grade === Rating.Again && soon) updated.splice(Math.min(updated.length, pos + 1 + RELEARN_GAP), 0, { ...current, savedId, card: next, kind: "due" });
         return updated;
       });
-      setPos((p) => p + 1); setRevealed(false);
+      // Keep keyboard focus in the practice area without scrolling: the rating buttons are about to be hidden
+      const focusWasHere = !!document.activeElement?.closest?.("[data-practice-area]");
+      setPos((p) => p + 1); setRevealed(false); setSeenAnswer(false);
+      if (focusWasHere) requestAnimationFrame(() => showRef.current?.focus({ preventScroll: true }));
     } catch (e) { setError((e as Error).message); } finally { setBusy(false); }
   }, [current, busy, store, theme, cards, pos, refresh]);
 
-  // Keyboard: space/enter reveals, 1–4 rate
+  /** Turn the card over (either way). Never scrolls: focus only follows if it was already on the card, and with preventScroll. */
+  const flip = useCallback(() => {
+    if (!current) return;
+    const focusInCard = !!cardRef.current?.contains(document.activeElement);
+    setRevealed((r) => {
+      const next = !r;
+      if (next) setSeenAnswer(true);
+      if (focusInCard) requestAnimationFrame(() => (next ? backRef.current : showRef.current)?.focus({ preventScroll: true }));
+      return next;
+    });
+  }, [current]);
+
+  // A click or tap anywhere on the card turns it, except when the learner is selecting text on it
+  const onCardClick = useCallback(() => {
+    if (window.getSelection()?.toString()) return;
+    flip();
+  }, [flip]);
+
+  // Keyboard: space/enter turns the card (both ways), 1–4 rate once the answer has been seen.
+  // Space is always handled here so it can never fall through to the browser's "scroll down a page".
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if ((e.target as HTMLElement)?.closest?.("input,textarea,select")) return;
-      if (!revealed && (e.key === " " || e.key === "Enter") && current) { e.preventDefault(); setRevealed(true); }
-      else if (revealed) { const r = RATINGS.find((x) => x.key === e.key); if (r) { e.preventDefault(); void answer(r.grade); } }
+      if (e.altKey || e.ctrlKey || e.metaKey) return;
+      const t = e.target as HTMLElement | null;
+      if (t?.closest?.("input,textarea,select,[contenteditable='true'],[role='dialog']")) return;
+      if (!current) return;
+      if (e.key === " " || e.key === "Enter") {
+        // Buttons and links activate natively (Show answer turns the card through its own click)
+        if (t?.closest?.("button,a") && !cardRef.current?.contains(t)) return;
+        if (t?.closest?.("button") === showRef.current && e.key === "Enter") return;
+        e.preventDefault();
+        if (e.repeat) return;
+        flip();
+      } else if (seenAnswer) {
+        const r = RATINGS.find((x) => x.key === e.key);
+        if (r) { e.preventDefault(); void answer(r.grade); }
+      }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [revealed, current, answer]);
+  }, [seenAnswer, current, answer, flip]);
 
   if (!saved || !stats) return <div className="skeleton h-80 rounded-2xl" aria-label="Loading" />;
 
   const progress = (
-    <div className="card mb-5 p-4" data-testid="practice-progress">
+    <div className="card mt-6 p-4" data-testid="practice-progress">
       <div className="grid grid-cols-2 gap-3 text-center sm:grid-cols-4">
         <div><p className="font-display text-2xl font-extrabold tabular-nums">{session.reviewed}</p><p className="text-xs text-muted">{session.reviewed} reviewed</p></div>
         <div><p className="font-display text-2xl font-extrabold tabular-nums text-success">{stats.remembered}</p><p className="text-xs text-muted">remembered</p></div>
@@ -110,8 +149,7 @@ export function TopicFlashcards({ theme }: { theme: string }) {
 
   if (!current) {
     return (
-      <>
-        {progress}
+      <div className="mx-auto max-w-xl">
         <div className="card p-6 text-center" data-testid="practice-done">
           <CheckCircle2 size={28} className="mx-auto text-success" aria-hidden="true" />
           <p className="mt-2 font-display text-xl font-bold">{session.reviewed ? "Session complete" : "Nothing due in this topic right now"}</p>
@@ -122,62 +160,59 @@ export function TopicFlashcards({ theme }: { theme: string }) {
             <Link href="/review" className="btn btn-ghost"><RotateCcw size={16} aria-hidden="true" /> All due reviews</Link>
           </div>
         </div>
-      </>
+        {progress}
+      </div>
     );
   }
 
   const { item, sense } = current.ref;
   return (
-    <>
-      {progress}
-      <div className="mx-auto max-w-xl">
-        <div className="mb-3 flex items-center gap-3 text-sm text-muted">
-          <span className="tabular-nums">{pos + 1} / {queue.length}</span>
-          <div className="flex-1"><ProgressBar value={pos / queue.length} label="Session progress" /></div>
-        </div>
-        <div className="flip" data-flipped={revealed}>
-          <div className="flip-inner">
-            <div className="flip-face card flex min-h-[260px] flex-col p-6 sm:p-8" aria-hidden={revealed}>
-              <div className="flex flex-wrap items-center gap-2">
-                <span className={clsx("chip", current.kind === "new" && "!border-primary !text-primary")}>{current.kind === "new" ? "new" : current.kind === "interleaved" ? `from ${getTheme(sense.topics[0])?.title ?? "another topic"}` : "review"}</span>
-                <span className="chip">{KIND_LABEL[item.kind] ?? item.kind}</span>
-              </div>
-              <p className="mt-6 font-display text-3xl font-extrabold" data-testid="flashcard-front">{item.lemma}</p>
-              <p className="mt-3 text-sm text-muted">Say or think of the meaning, a translation and an example before you turn the card.</p>
-              <div className="flex-1" />
-              {!revealed && <button className="btn btn-primary mt-6 w-full" onClick={() => setRevealed(true)} autoFocus>Show answer</button>}
+    <div className="mx-auto max-w-xl" data-practice-area>
+      <div ref={cardRef} className="flip flashcard-tap" data-flipped={revealed} data-testid="flashcard" onClick={onCardClick}>
+        <div className="flip-inner">
+          <div className="flip-face card flex min-h-[260px] flex-col p-6 sm:p-8" aria-hidden={revealed} inert={revealed} data-testid="flashcard-face-front">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className={clsx("chip", current.kind === "new" && "!border-primary !text-primary")}>{current.kind === "new" ? "new" : current.kind === "interleaved" ? `from ${getTheme(sense.topics[0])?.title ?? "another topic"}` : "review"}</span>
+              <span className="chip">{KIND_LABEL[item.kind] ?? item.kind}</span>
             </div>
-            <div className="flip-face flip-back card p-6 sm:p-8" aria-hidden={!revealed} aria-live="polite">
-              {revealed && (
-                <div className="space-y-2.5" data-testid="flashcard-back">
-                  <p className="flex flex-wrap items-baseline gap-2"><span className="font-display text-2xl font-extrabold">{item.lemma}</span><LevelBadge level={sense.level} /><em className="text-sm text-muted">{item.pos}</em>{sense.register !== "neutral" && <span className="chip">{sense.register}</span>}</p>
-                  <p lang="ru" className="text-lg font-semibold text-primary">{sense.translations.ru}</p>
-                  <p>{sense.definition}</p>
-                  <p className="rounded-lg bg-surface-2 px-3 py-2 italic">{sense.examples[0]}</p>
-                  {sense.collocations.length > 0 && <p className="text-sm"><span className="font-semibold">Collocations: </span>{sense.collocations.slice(0, 4).join(" · ")}</p>}
-                </div>
-              )}
+            <p className="mt-6 font-display text-3xl font-extrabold" data-testid="flashcard-front">{item.lemma}</p>
+            <p className="mt-3 text-sm text-muted">Say or think of the meaning, a translation and an example before you turn the card.</p>
+            <div className="flex-1" />
+            <button ref={showRef} type="button" className="btn btn-primary mt-6 w-full" onClick={(e) => { e.stopPropagation(); flip(); }}>Show answer</button>
+          </div>
+          {/* The back is always rendered, so the card keeps the same size on both sides and turning it never shifts the page */}
+          <div ref={backRef} tabIndex={-1} className="flip-face flip-back card p-6 outline-none sm:p-8" aria-hidden={!revealed} inert={!revealed} data-testid="flashcard-face-back">
+            <div className="space-y-2.5" data-testid="flashcard-back">
+              <p className="flex flex-wrap items-baseline gap-2"><span className="font-display text-2xl font-extrabold">{item.lemma}</span><LevelBadge level={sense.level} /><em className="text-sm text-muted">{item.pos}</em>{sense.register !== "neutral" && <span className="chip">{sense.register}</span>}</p>
+              <p lang="ru" className="text-lg font-semibold text-primary">{sense.translations.ru}</p>
+              <p>{sense.definition}</p>
+              <p className="rounded-lg bg-surface-2 px-3 py-2 italic">{sense.examples[0]}</p>
+              {sense.collocations.length > 0 && <p className="text-sm"><span className="font-semibold">Collocations: </span>{sense.collocations.slice(0, 4).join(" · ")}</p>}
             </div>
           </div>
         </div>
-        {revealed && (
-          <div className="enter mt-4">
-            <p className="text-sm font-semibold text-muted">How well did you recall it?</p>
-            <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-4">
-              {RATINGS.map((r) => {
-                const due = intervals?.find((x) => x.grade === r.grade)?.due;
-                return (
-                  <button key={r.label} disabled={busy} onClick={() => answer(r.grade)} className="btn btn-ghost flex-col !gap-0 !py-2" aria-keyshortcuts={r.key}>
-                    <span>{r.label}</span>{due && <span className="text-xs font-normal text-muted">{humanInterval(new Date(due))}</span>}
-                  </button>
-                );
-              })}
-            </div>
-            <p className="mt-2 text-xs text-muted">Keys: space to turn, 1–4 to rate. Your answer schedules the next review.</p>
-          </div>
-        )}
-        {error && <p role="alert" className="mt-3 text-sm text-danger">{error}</p>}
       </div>
-    </>
+      {/* Space for the ratings is always reserved, so showing them does not move anything */}
+      <div className={clsx("mt-4 transition-opacity duration-300", seenAnswer ? "opacity-100" : "invisible opacity-0")} aria-hidden={!seenAnswer} inert={!seenAnswer} data-testid="flashcard-ratings">
+        <p className="text-sm font-semibold text-muted">How well did you recall it?</p>
+        <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-4">
+          {RATINGS.map((r) => {
+            const due = intervals?.find((x) => x.grade === r.grade)?.due;
+            return (
+              <button key={r.label} type="button" disabled={busy} onClick={() => answer(r.grade)} className="btn btn-ghost flex-col !gap-0 !py-2" aria-keyshortcuts={r.key}>
+                <span>{r.label}</span>{due && <span className="text-xs font-normal text-muted">{humanInterval(new Date(due))}</span>}
+              </button>
+            );
+          })}
+        </div>
+        <p className="mt-2 text-xs text-muted">Click the card or press space to turn it; 1–4 to rate. Your answer schedules the next review.</p>
+      </div>
+      {error && <p role="alert" className="mt-3 text-sm text-danger">{error}</p>}
+      <div className="mt-6 flex items-center gap-3 text-sm text-muted">
+        <span className="tabular-nums">{pos + 1} / {queue.length}</span>
+        <div className="flex-1"><ProgressBar value={pos / queue.length} label="Session progress" /></div>
+      </div>
+      {progress}
+    </div>
   );
 }

@@ -21,7 +21,8 @@ test("flashcards: active recall, four ratings, spaced scheduling stored and shar
   await expect(progress).toContainText("0 reviewed");
   // Answer hidden until revealed
   await expect(page.getByTestId("flashcard-front")).toBeVisible();
-  await expect(page.getByTestId("flashcard-back")).toHaveCount(0);
+  await expect(page.getByTestId("flashcard-face-back")).toHaveAttribute("aria-hidden", "true");
+  await expect(page.getByTestId("flashcard-ratings")).toHaveAttribute("aria-hidden", "true");
   const first = await page.getByTestId("flashcard-front").innerText();
   await page.keyboard.press("Space");
   const back = page.getByTestId("flashcard-back");

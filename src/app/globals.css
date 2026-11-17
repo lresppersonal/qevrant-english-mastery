@@ -199,6 +199,9 @@ html[data-sidebar="collapsed"] .side-group-label { height: 1px; margin: .5rem .7
 .flip[data-flipped="true"] .flip-inner { transform: rotateY(180deg); }
 .flip-face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
 .flip-back { transform: rotateY(180deg); }
+/* Flashcards that turn on a click or tap anywhere on their surface */
+.flashcard-tap { cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+.flashcard-tap .flip-face { overflow-anchor: none; }
 
 /* ---------- Phones: iPhone notch/home bar, Android gesture bar, touch targets ---------- */
 .safe-top { padding-top: max(0.75rem, env(safe-area-inset-top)); }

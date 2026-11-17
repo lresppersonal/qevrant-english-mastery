@@ -16,6 +16,15 @@ Content is written in compact formats in `content/src/` and compiled with `npm r
 
 **New to this? Start with [docs/LAUNCH-GUIDE.md](docs/LAUNCH-GUIDE.md)**: a step-by-step, non-technical guide to putting the app online, creating your account and keeping your data.
 
+## What's new (2026-11-18, flashcard fix)
+- **No more page jumps in flashcard practice.** There were two causes:
+  - the Show answer button grabbed focus on every new card, so the browser scrolled to it;
+  - the back of the card and the rating buttons were only built on reveal, so the layout grew and then shrank.
+
+  Now both sides are always rendered and the card keeps the same size. Space is reserved for the ratings, focus only moves with `preventScroll`, and Space can no longer fall through to scrolling the page.
+- **Click or tap anywhere on the card to turn it, and again to turn it back** (Quizlet-style). **Show answer** and the space bar do exactly the same. Selecting text on the card doesn't turn it.
+- The card now comes first; the session counter and the progress panel sit below it.
+
 ## What's new (2026-11-17, sixth update: platform improvements)
 - **Reading word card**: tapping a word no longer scrolls the page. A small card opens next to the word with:
   - the headword (contractions and possessives are resolved, e.g. *won't* → *will*, *researchers'* → *researcher*);
