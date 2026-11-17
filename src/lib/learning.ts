@@ -220,7 +220,7 @@ export function todaysPlan(s: LearnerSnapshot, now = Date.now()): { tasks: PlanT
 // ---------- smart practice sets ----------
 export type SmartMode = "mistakes" | "weak" | "mixed" | "lesson";
 /** Builds a practice set from real questions: mistakes first, then weak lessons, then spaced mixed review. */
-export function buildSmartSet(s: Pick<LearnerSnapshot, "responses" | "attempts">, mode: SmartMode, opts: { lesson?: string; size?: number; seed?: number } = {}): { exercise: Exercise; reason: string } | null {
+export function buildSmartSet(s: Pick<LearnerSnapshot, "responses" | "attempts">, mode: SmartMode, opts: { lesson?: string; lessons?: string[]; slug?: string; title?: string; size?: number; seed?: number } = {}): { exercise: Exercise; reason: string } | null {
   const pool = questionPool();
   const size = opts.size ?? 10;
   let seed = opts.seed ?? Date.now();
@@ -230,7 +230,15 @@ export function buildSmartSet(s: Pick<LearnerSnapshot, "responses" | "attempts">
   const key = responseKeyer(s.attempts);
   let picked: PoolItem[] = []; let reason = "";
 
-  if (mode === "lesson" && opts.lesson) {
+  if (mode === "lesson" && opts.lessons?.length) {
+    // Interleaved set across several lessons: earlier mistakes first, then round-robin across topics.
+    const byLesson = opts.lessons.map((l) => shuffle([...pool.values()].filter((p) => p.lesson === l)));
+    const wrong = mistakes.filter((p) => p.lesson && opts.lessons!.includes(p.lesson)).slice(0, Math.ceil(size / 4));
+    const rr: PoolItem[] = [];
+    for (let i = 0; rr.length < size * 2 && byLesson.some((b) => b[i]); i++) for (const b of byLesson) if (b[i]) rr.push(b[i]);
+    picked = [...wrong, ...rr.filter((p) => !wrong.includes(p))].slice(0, size);
+    reason = "Interleaved questions from several topics, answered without looking at the theory first. Earlier mistakes come first.";
+  } else if (mode === "lesson" && opts.lesson) {
     const forLesson = [...pool.values()].filter((p) => p.lesson === opts.lesson);
     const wrongHere = mistakes.filter((p) => p.lesson === opts.lesson);
     picked = [...wrongHere, ...shuffle(forLesson.filter((p) => !wrongHere.includes(p)))].slice(0, size);
@@ -256,8 +264,8 @@ export function buildSmartSet(s: Pick<LearnerSnapshot, "responses" | "attempts">
   const exercise: Exercise = {
     ...picked[0].exercise,
     id: "00000000-0000-4000-8000-000000000000",
-    slug: `smart-${mode}${opts.lesson ? `-${opts.lesson}` : ""}`,
-    title: mode === "mistakes" ? "Mistake review" : mode === "lesson" ? `Targeted practice: ${grammarLessons.find((l) => l.slug === opts.lesson)?.title ?? ""}` : mode === "weak" ? "Strengthen weak areas" : "Mixed review",
+    slug: opts.slug ?? `smart-${mode}${opts.lesson ? `-${opts.lesson}` : ""}`,
+    title: opts.title ?? (mode === "mistakes" ? "Mistake review" : mode === "lesson" ? `Targeted practice: ${grammarLessons.find((l) => l.slug === opts.lesson)?.title ?? ""}` : mode === "weak" ? "Strengthen weak areas" : "Mixed review"),
     format: "mixed", target: { type: "lesson", ref: opts.lesson ?? picked[0].lesson ?? picked[0].exercise.target.ref },
     instructions: reason,
     questions: picked.map((p) => ({ ...p.question, id: p.key })),

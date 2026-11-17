@@ -64,6 +64,20 @@ export const WritingFeedback = z.object({
 });
 export type WritingFeedback = z.infer<typeof WritingFeedback>;
 
+/** Visual Data Description: the same feedback plus a fact-check against the task data and an overview check. */
+const DataCheck = z.object({
+  quote: z.string().describe("Exact words from the learner's text that misreport the data"),
+  problem: z.string().describe("What is inaccurate, compared with the figure"),
+  correction: z.string().describe("An accurate version of the statement, using the actual figures"),
+});
+export const VisualFeedback = WritingFeedback.extend({
+  dataAccuracy: z.array(DataCheck).describe("Every factual error about the figures: wrong numbers, wrong trends, wrong order of stages, wrong locations. Empty if all accurate."),
+  overview: z.object({ present: z.boolean(), comment: z.string().describe("Does the response give a clear overview of the main features? How to improve it.") }),
+  keyFeaturesCovered: z.array(z.string()).describe("Key features from the KEY FEATURES list that the response reported accurately"),
+  keyFeaturesMissed: z.array(z.string()).describe("Important key features the response omitted or misreported"),
+});
+export type VisualFeedback = z.infer<typeof VisualFeedback>;
+
 export const SpeakingFeedback = z.object({
   summary: z.string(),
   overallAssessment: z.string(),
@@ -95,13 +109,16 @@ export function bandEstimate(criteria: { band?: number }[]): BandEstimate | null
 
 /** Client-side parsing: tolerant of feedback saved before these fields existed. */
 const viewOverrides = { summary: z.string(), indicativeLevel: z.string(), criteria: z.array(Criterion.partial({ band: true })), issues: z.array(Issue.partial({ severity: true })) };
-export const WritingFeedbackView = WritingFeedback.partial().extend({ ...viewOverrides, estimate: BandEstimate.nullable().optional() });
+export const WritingFeedbackView = WritingFeedback.partial().extend({ ...viewOverrides, estimate: BandEstimate.nullable().optional(),
+  dataAccuracy: z.array(DataCheck).optional(), overview: z.object({ present: z.boolean(), comment: z.string() }).optional(),
+  keyFeaturesCovered: z.array(z.string()).optional(), keyFeaturesMissed: z.array(z.string()).optional() });
 export const SpeakingFeedbackView = SpeakingFeedback.partial().extend({ ...viewOverrides, estimate: BandEstimate.nullable().optional(), pronunciation: z.object({ assessed: z.boolean(), note: z.string() }).optional() });
 export type WritingFeedbackView = z.infer<typeof WritingFeedbackView>;
 export type SpeakingFeedbackView = z.infer<typeof SpeakingFeedbackView>;
 
 export const CRITERIA_LABEL: Record<string, string> = {
   task_response: "Task response",
+  task_achievement: "Accuracy, key features and overview",
   coherence_cohesion: "Coherence and cohesion",
   lexical_resource: "Vocabulary range and accuracy",
   grammatical_range_accuracy: "Grammatical range and accuracy",

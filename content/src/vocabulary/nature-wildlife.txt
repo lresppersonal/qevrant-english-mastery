@@ -45,3 +45,18 @@ slide | n | noun | B2+ | neutral | Changes | a fall in value or quality; a smoot
 sound | adj | adjective | C1 | neutral | Quality | in good condition; based on good judgement | здравый, прочный | The advice was scientifically sound. | sound advice; safe and sound; sound judgement | reliable; solid |
 subsidy | n | noun | C1 | formal | Finance | money paid by a government to reduce costs | субсидия | Farm subsidies affect wildlife habitats. | farm subsidy; government subsidy | grant; support | economics-globalisation
 sweep | v | verb | B2+ | neutral | Movement | to clean with a brush; to move quickly over an area | подметать; проноситься | A storm swept across the coast. | sweep across; sweep the floor; sweeping changes | brush; spread |
+
+# --- 2026-11-17 expansion
+food chain | coll | noun phrase | B2 | neutral | Ecosystems | a series of living things in which each is eaten by the next | пищевая цепь | Plastic particles move up the food chain. | at the top of the food chain | food web |
+keystone species | coll+ac | noun phrase | C2 | academic | Ecosystems | a species on which many others in an ecosystem depend | ключевой вид | Beavers are a keystone species in river ecosystems. | | | environment
+apex predator | coll+ac | noun phrase | C1 | academic | Ecosystems | an animal at the top of a food chain with no natural predators | высший хищник | Wolves are apex predators that regulate deer numbers. | | top predator |
+dwindle | v | verb | C1 | formal | Threats to wildlife | to become gradually smaller in number | сокращаться, убывать | The bee population has dwindled in recent decades. | dwindling numbers/resources | decline; diminish |
+encroach on | pv | phrasal verb | C1 | formal | Threats to wildlife | to gradually take over land or rights that belong to others | посягать на, вторгаться | Farms are encroaching on the rainforest. | encroach on habitats/territory | intrude on | environment
+habitat loss | coll+ac | noun phrase | C1 | academic | Threats to wildlife | the destruction of the natural environment in which a species lives | утрата среды обитания | Habitat loss is the main driver of extinction. | | |
+wildlife corridor | coll | noun phrase | C1 | neutral | Conservation | a strip of natural land connecting habitats so animals can move between them | экологический коридор | Hedgerows act as wildlife corridors. | create wildlife corridors | green corridor | cities-urban
+reintroduce | v | verb | C1 | neutral | Conservation | to bring a species back to an area where it used to live | реинтродуцировать, вновь заселять | Lynx may be reintroduced to parts of Scotland. | reintroduce a species | restore |
+pristine | adj | adjective | C1 | formal | Landscapes | completely clean and untouched by humans | первозданный, нетронутый | The reserve protects pristine wetlands. | pristine condition/wilderness | unspoiled; untouched | travel-tourism
+teeming with | coll | adjective phrase | C1 | neutral | Landscapes | full of living things moving around | кишащий, изобилующий | The reef is teeming with fish. | teeming with life/wildlife | swarming with |
+in the wild | fx | prepositional phrase | B2 | neutral | Conservation | in natural conditions, not in captivity | в дикой природе | Fewer than 400 remain in the wild. | live/survive in the wild | |
+@family diverse (adj); diversity (n); biodiversity (n); diversify (v); diversification (n)
+@distinct endangered vs extinct vs threatened :: *Threatened* is the broad category of species at risk. *Endangered* means at very high risk of disappearing. *Extinct* means no individuals are left alive.

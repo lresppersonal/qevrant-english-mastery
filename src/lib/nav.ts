@@ -1,13 +1,13 @@
 import { BookA,
   LayoutDashboard, BookOpenText, Library, Languages, Newspaper, Headphones, Mic, PenLine, Dumbbell,
-  RotateCcw, BarChart3, Settings, Layers, type LucideIcon,
+  RotateCcw, BarChart3, Settings, Layers, CalendarCheck, type LucideIcon,
 } from "lucide-react";
 
 export interface NavItem { href: string; label: string; icon: LucideIcon; soon?: boolean }
 export interface NavGroup { label: string; items: NavItem[] }
 
 export const NAV: NavGroup[] = [
-  { label: "Home", items: [{ href: "/dashboard", label: "Dashboard", icon: LayoutDashboard }] },
+  { label: "Home", items: [{ href: "/dashboard", label: "Dashboard", icon: LayoutDashboard }, { href: "/plan", label: "Intensive plan", icon: CalendarCheck }] },
   {
     label: "Learn",
     items: [

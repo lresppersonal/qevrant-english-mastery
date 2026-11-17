@@ -298,6 +298,50 @@
    ]
   },
   {
+   "id": "education-71184866",
+   "category": "education",
+   "level": "C1",
+   "prompt": "Does standardised testing help or harm education?",
+   "points": [
+    "what tests measure",
+    "teaching to the test",
+    "better forms of assessment"
+   ]
+  },
+  {
+   "id": "education-34a3a831",
+   "category": "education",
+   "level": "C1",
+   "prompt": "How should universities respond to students using AI tools for assignments?",
+   "points": [
+    "academic integrity",
+    "useful and harmful uses",
+    "possible policies"
+   ]
+  },
+  {
+   "id": "education-a790d400",
+   "category": "education",
+   "level": "B2+",
+   "prompt": "Describe a time you had to get to grips with something difficult very quickly.",
+   "points": [
+    "the subject or skill",
+    "how you learned it",
+    "what helped most"
+   ]
+  },
+  {
+   "id": "education-e57a45f3",
+   "category": "education",
+   "level": "C2",
+   "prompt": "Is lifelong learning a genuine opportunity or a new pressure on workers?",
+   "points": [
+    "the case for lifelong learning",
+    "who pays and who benefits",
+    "your view"
+   ]
+  },
+  {
    "id": "education-9d4d8e91",
    "category": "education",
    "level": "B2",
@@ -416,6 +460,50 @@
     "arguments for",
     "practical problems",
     "your view"
+   ]
+  },
+  {
+   "id": "environment-5b1da8c0",
+   "category": "environment",
+   "level": "C1",
+   "prompt": "Who should bear the cost of reaching net zero: governments, companies or individuals?",
+   "points": [
+    "fairness",
+    "who bears the brunt",
+    "practical examples"
+   ]
+  },
+  {
+   "id": "environment-b835b72e",
+   "category": "environment",
+   "level": "C1",
+   "prompt": "Is greenwashing a serious problem, or are companies genuinely changing?",
+   "points": [
+    "examples of misleading claims",
+    "how to tell the difference",
+    "regulation"
+   ]
+  },
+  {
+   "id": "environment-9027bcd7",
+   "category": "environment",
+   "level": "C2",
+   "prompt": "Can shared natural resources be managed without either state control or privatisation?",
+   "points": [
+    "local institutions",
+    "examples",
+    "limits of community management"
+   ]
+  },
+  {
+   "id": "environment-8cc62325",
+   "category": "environment",
+   "level": "B2+",
+   "prompt": "Describe something you have stopped buying or using for environmental reasons.",
+   "points": [
+    "what it was",
+    "why you changed",
+    "how difficult it was"
    ]
   },
   {
@@ -540,6 +628,51 @@
    ]
   },
   {
+   "id": "technology-6b1d3fdb",
+   "category": "technology",
+   "level": "C1",
+   "prompt": "Who should decide how automated systems make difficult choices?",
+   "points": [
+    "engineers",
+    "governments",
+    "the public",
+    "accountability"
+   ]
+  },
+  {
+   "id": "technology-38af04b4",
+   "category": "technology",
+   "level": "C1",
+   "prompt": "Has the attention economy changed the way you read and think?",
+   "points": [
+    "personal habits",
+    "design features",
+    "ways to regain control"
+   ]
+  },
+  {
+   "id": "technology-83b5f361",
+   "category": "technology",
+   "level": "C2",
+   "prompt": "Is the digital divide becoming more or less serious?",
+   "points": [
+    "access and skills",
+    "consequences for education and work",
+    "what could narrow it"
+   ]
+  },
+  {
+   "id": "technology-65241f61",
+   "category": "technology",
+   "level": "B2+",
+   "prompt": "Describe a new technology that had teething problems before it became useful.",
+   "points": [
+    "what it was",
+    "the problems",
+    "how they were solved"
+   ]
+  },
+  {
    "id": "technology-ed907ae0",
    "category": "technology",
    "level": "B2",
@@ -658,6 +791,50 @@
     "the idea",
     "advantages",
     "risks"
+   ]
+  },
+  {
+   "id": "business-50e4f42d",
+   "category": "business",
+   "level": "C1",
+   "prompt": "What makes some start-ups succeed while most fail?",
+   "points": [
+    "luck versus strategy",
+    "survivorship bias in success stories",
+    "what founders should learn"
+   ]
+  },
+  {
+   "id": "business-5f7f510c",
+   "category": "business",
+   "level": "C1",
+   "prompt": "Should governments protect domestic industries from foreign competition?",
+   "points": [
+    "arguments for protectionism",
+    "the knock-on effects",
+    "your view"
+   ]
+  },
+  {
+   "id": "business-1128ed39",
+   "category": "business",
+   "level": "C2",
+   "prompt": "Is economic growth still the right goal for wealthy countries?",
+   "points": [
+    "what GDP misses",
+    "trade-offs with wellbeing and the environment",
+    "alternatives"
+   ]
+  },
+  {
+   "id": "business-bbfc1f2f",
+   "category": "business",
+   "level": "B2+",
+   "prompt": "How has the cost of living changed for young people in your country?",
+   "points": [
+    "prices and wages",
+    "how people make ends meet",
+    "possible solutions"
    ]
   },
   {
@@ -889,6 +1066,50 @@
     "what changed",
     "why",
     "whether it was positive"
+   ]
+  },
+  {
+   "id": "psychology-6c2683a9",
+   "category": "psychology",
+   "level": "C1",
+   "prompt": "Why do people often choose instant gratification over long-term goals, and how can they resist it?",
+   "points": [
+    "examples from daily life",
+    "what makes waiting hard",
+    "strategies that actually work"
+   ]
+  },
+  {
+   "id": "psychology-b09cf5fb",
+   "category": "psychology",
+   "level": "C1",
+   "prompt": "How much of our behaviour is shaped by the people around us?",
+   "points": [
+    "peer pressure and conformity",
+    "positive influence",
+    "your own experience"
+   ]
+  },
+  {
+   "id": "psychology-c5ab970b",
+   "category": "psychology",
+   "level": "C2",
+   "prompt": "Is resilience something we are born with or something we can develop?",
+   "points": [
+    "nature versus nurture",
+    "the role of setbacks",
+    "how schools or workplaces could build it"
+   ]
+  },
+  {
+   "id": "psychology-51a5ccef",
+   "category": "psychology",
+   "level": "B2+",
+   "prompt": "Describe a decision you made too quickly. What would you do differently now?",
+   "points": [
+    "the situation",
+    "why you jumped to conclusions",
+    "what you learned"
    ]
   },
   {

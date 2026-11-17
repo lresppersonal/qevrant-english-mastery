@@ -36,3 +36,18 @@ trace | n | noun | C1 | neutral | Evidence | a small sign that something existed
 undertake | v+ac | verb | C1 | formal | Projects | to begin or take responsibility for a task | предпринимать, браться | The council undertook a major regeneration project. | undertake research; undertake a task | carry out; take on |
 utter | adj | adjective | C1 | neutral | Emphasis | complete (for emphasis) | полный, совершенный | The new road is an utter disaster. | utter chaos; utter nonsense; utterly | total; absolute |
 widespread | adj | adjective | B2+ | neutral | Extent | existing in many places or among many people | широко распространённый | There is widespread support for more parks. | widespread concern; widespread use | common; extensive |
+
+# --- 2026-11-17 expansion
+urban renewal | coll+ac | noun phrase | C1 | academic | Planning | improvement of run-down areas through rebuilding and investment | реконструкция городской среды | Urban renewal projects can displace long-term residents. | | regeneration |
+mixed-use | adj | adjective | C1 | neutral | Planning | (of an area or building) combining homes, shops and offices | многофункциональный, смешанного назначения | Mixed-use neighbourhoods are livelier at all hours. | mixed-use development/zone | | architecture-design
+walkable | adj | adjective | C1 | neutral | Planning | designed so that people can easily walk to places | удобный для пешеходов | Walkable cities tend to have healthier residents. | walkable neighbourhood | pedestrian-friendly | health-medicine
+overcrowding | n | noun | B2+ | neutral | Urban problems | too many people living in a space | перенаселённость, скученность | Overcrowding is common in rented flats in the capital. | severe overcrowding | congestion |
+housing shortage | coll | noun phrase | B2+ | neutral | Urban problems | a lack of enough homes for the people who need them | нехватка жилья | The housing shortage has pushed rents up. | tackle the housing shortage | |
+displace | v+ac | verb | C1 | formal | Urban problems | to force people to leave their homes or area | вытеснять, перемещать | Rising rents displaced many families from the centre. | displace residents/communities | uproot | transport-movement
+urban heat island | coll+ac | noun phrase | C2 | academic | Urban problems | a city area that is much warmer than surrounding rural areas | городской остров тепла | Trees can reduce the urban heat island effect. | the urban heat island effect | | environment
+civic | adj | adjective | C1 | formal | Community | relating to a city or its citizens and public life | гражданский, городской | Civic pride rose after the festival. | civic pride/duty/centre | municipal | society-politics
+a sense of community | coll | noun phrase | B2 | neutral | Community | the feeling of belonging to a group of neighbours | чувство общности | The market creates a strong sense of community. | foster/build a sense of community | belonging |
+spring up | pv | phrasal verb | B2+ | neutral | Planning | to appear or develop suddenly | возникать, вырастать (как грибы) | New cafés have sprung up all over the area. | | mushroom |
+off the grid | idiom | prepositional phrase | C1 | informal | Community | not connected to public utilities; living independently | автономно, вне инфраструктуры | They live off the grid in a converted barn. | live off the grid | |
+@family reside (v); resident (n); residence (n); residential (adj)
+@distinct urban vs urbane :: *Urban* relates to towns and cities (*urban areas*). *Urbane* describes a person who is elegant, polite and sophisticated.

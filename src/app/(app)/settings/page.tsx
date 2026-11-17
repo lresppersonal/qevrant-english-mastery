@@ -58,8 +58,8 @@ export default function Settings() {
         {profile?.email && <p className="mb-5 text-sm text-muted">Signed in as {profile.email}</p>}
         <ProfileForm submitLabel="Save changes" />
         <div className="mt-6 border-t border-line pt-5" data-testid="daily-goal">
-          <p id="dg-h" className="flex items-center gap-2 font-semibold"><Flame tier="flame" lit size={18} /> Daily goal</p>
-          <p className="mb-3 mt-1 text-sm text-muted">How many learning activities a day: a lesson, an exercise, a reading text, a review session, an essay, a speaking answer or a listening session each count once. Any one activity keeps your streak alive.</p>
+          <p id="dg-h" className="flex items-center gap-2 font-semibold"><Flame tier="warm" lit size={18} /> Daily goal</p>
+          <p className="mb-3 mt-1 text-sm text-muted">How many completed learning activities a day: a finished exercise, a reading text marked as read, a review session, an essay, a speaking answer, a listening session, or a lesson studied (at least three sections read) each count once. Opening a page does not count. Any one completed activity keeps your streak alive.</p>
           <div className="flex flex-wrap gap-2" role="radiogroup" aria-labelledby="dg-h">
             {DAILY_GOAL_OPTIONS.map((g) => {
               const on = dailyGoalOf(profile) === g;

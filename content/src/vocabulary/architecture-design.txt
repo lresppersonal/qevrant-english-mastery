@@ -24,3 +24,18 @@ favour | n | noun | B2 | neutral | Preferences | approval or support; a kind act
 ideal | adj | adjective | B2 | neutral | Evaluation | perfect for a purpose | идеальный | The building is ideal for a gallery. | ideal location; in an ideal world | perfect |
 split | v | verb | B2 | neutral | Dividing | to divide into parts | разделять | The flat is split over two floors. | split into; split the cost; split up | divide |
 transparent | adj | adjective | C1 | neutral | Materials and honesty | able to be seen through; open and honest | прозрачный | The new library has a transparent glass facade. | transparent process; completely transparent | clear; open |
+
+# --- 2026-11-17 expansion
+brutalist | adj | adjective | C1 | neutral | Styles | (of buildings) in a style using large blocks of exposed concrete | бруталистский | Opinions on the brutalist library are sharply divided. | brutalist building/architecture | | history-heritage
+vernacular | adj+ac | adjective | C2 | academic | Styles | (of architecture) built in a local traditional style with local materials | народный, местный (о зодчестве) | The museum celebrates vernacular farmhouses of the Alps. | vernacular architecture/building | traditional; local | history-heritage
+blend in with | pv | phrasal verb | B2+ | neutral | Planning and buildings | to look similar to the surroundings so that it is not noticeable | гармонировать, сливаться с | The extension was designed to blend in with the old house. | blend in with the surroundings | harmonise |
+form follows function | fx | sentence | C1 | academic | Design principles | the principle that a design should be based mainly on its purpose | форма следует функции | Modernist architects believed that form follows function. | | |
+ergonomic | adj | adjective | C1 | neutral | Design principles | designed for comfort and efficiency in use | эргономичный | Ergonomic chairs reduce back pain. | ergonomic design/keyboard | user-friendly | work-careers
+footprint | n | noun | C1 | neutral | Planning and buildings | the area of land a building covers | площадь застройки | The tower has a small footprint but many floors. | building footprint | |
+load-bearing | adj | adjective | C1 | neutral | Planning and buildings | (of a wall) supporting the weight of the structure above | несущий | You can't remove a load-bearing wall. | load-bearing wall/structure | structural |
+retrofit | v | verb | C1 | neutral | Planning and buildings | to add new technology or features to an old building | модернизировать, переоборудовать | Old homes can be retrofitted with insulation and heat pumps. | retrofit homes/buildings | upgrade | environment
+minimalist | adj | adjective | B2+ | neutral | Styles | using very few elements, simple and uncluttered | минималистичный | The flat has a calm, minimalist interior. | minimalist design/style | pared-back; understated |
+ornate | adj | adjective | C1 | neutral | Styles | decorated with complicated patterns | богато украшенный, вычурный | The palace has an ornate ceiling. | ornate ceiling/decoration | elaborate; decorative | history-heritage
+listed building | coll | noun phrase | C1 | neutral | Planning and buildings | (UK) a building protected by law because of its historical or architectural importance | здание-памятник (под охраной) | You need permission to alter a listed building. | | heritage building | history-heritage
+@family construct (v); construction (n); constructive (adj); reconstruct (v); deconstruct (v)
+@distinct practical vs practicable :: *Practical* means useful and sensible (*a practical layout*). *Practicable* means able to be done (*the plan is not practicable on this site*).

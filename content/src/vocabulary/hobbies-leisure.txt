@@ -31,3 +31,16 @@ rage | n | noun | C1 | neutral | Emotions | very strong anger; (all the rage) ve
 roam | v | verb | C1 | neutral | Movement | to travel around with no particular purpose | бродить, странствовать | We roamed the hills all weekend. | free to roam; roam the streets | wander; ramble | travel-tourism
 scrutiny | n | noun | C1 | formal | Examination | careful and detailed examination | тщательная проверка | Celebrities' lives are under constant scrutiny. | under scrutiny; close scrutiny; public scrutiny | inspection; examination | communication-media
 uphold | v | verb | C1 | formal | Values | to support or maintain a law or tradition | поддерживать, отстаивать | The club upholds old traditions. | uphold the law; uphold a decision | maintain; defend | crime-law
+
+# --- 2026-11-17 expansion
+recharge your batteries | idiom | verb phrase | B2+ | informal | Relaxation | to rest and regain energy | восстановить силы | A weekend in the mountains helped me recharge my batteries. | | unwind; recuperate | health-medicine
+screen time | coll | noun phrase | B2 | neutral | Digital leisure | the time spent using a phone, computer or television | экранное время | Parents worry about children's screen time. | limit/reduce screen time | | communication-media
+doomscroll | v | verb | C1 | informal | Digital leisure | to keep reading bad news online even though it makes you feel worse | «думскроллить», бесконечно листать плохие новости | I stayed up doomscrolling until 2 a.m. | | | psychology-behaviour
+pick up a hobby | coll | verb phrase | B2 | neutral | Hobbies | to start doing a new hobby | заняться (новым) хобби | Many people picked up a hobby during lockdown. | | take up |
+dabble in | pv | phrasal verb | C1 | neutral | Hobbies | to take part in an activity casually, not seriously | баловаться, заниматься для себя | He dabbles in photography. | dabble in painting/politics | try out |
+fully fledged | adj | adjective | C1 | neutral | Hobbies | completely developed or qualified | полноценный, полноправный | Her hobby turned into a fully fledged business. | fully fledged member/business | full-blown | business-finance
+in your element | idiom | prepositional phrase | C1 | informal | Hobbies | doing what you enjoy and are good at | в своей стихии | Put her on a stage and she's in her element. | | |
+flow state | coll+ac | noun phrase | C1 | academic | Relaxation | complete absorption in an activity, in which you lose track of time | состояние потока | Musicians describe reaching a flow state when performing. | reach/enter a flow state | absorption | psychology-behaviour
+a busman's holiday | idiom | noun phrase | C2 | informal | Relaxation | free time spent doing something similar to your job | отпуск, похожий на работу | Visiting schools on holiday is a busman's holiday for a teacher. | | |
+@family recreate (v); recreation (n); recreational (adj)
+@distinct leisure vs pleasure :: *Leisure* is free time when you are not working (*leisure activities*). *Pleasure* is the feeling of enjoyment (*reading for pleasure*).

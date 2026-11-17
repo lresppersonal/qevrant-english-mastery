@@ -29,3 +29,17 @@ settle down | pv | phrasal verb | B2+ | neutral | Life stages | to start living 
 squeeze | v | verb | B2+ | neutral | Preparation | to press firmly | выжимать | Squeeze half a lemon over the fish. | squeeze a lemon; squeeze in; financial squeeze | press; crush |
 texture | n | noun | B2+ | neutral | Description | the way food or a surface feels | текстура, консистенция | I don't like the texture of raw oysters. | smooth texture; creamy texture | consistency; feel |
 urge | n | noun | C1 | neutral | Desire | a strong wish or need | сильное желание, порыв | I had a sudden urge to eat chocolate. | resist the urge; a sudden urge | craving; impulse | psychology-behaviour
+
+# --- 2026-11-17 expansion
+plant-based | adj | adjective | B2+ | neutral | Diets | consisting mainly or only of food from plants | растительный (о рационе) | Plant-based diets are growing in popularity. | plant-based diet/food | vegan; vegetarian | environment
+ultra-processed | adj | adjective | C1 | neutral | Diets | (of food) industrially made with many additives and little whole food | ультраобработанный | Ultra-processed foods make up half of many diets. | ultra-processed food | | health-medicine
+nutrient-dense | adj | adjective | C1 | neutral | Nutrition | containing many vitamins and minerals relative to calories | богатый питательными веществами | Lentils are cheap and nutrient-dense. | nutrient-dense foods | nutritious |
+moderation | n | noun | B2+ | neutral | Nutrition | avoiding too much of something | умеренность | Sugar is fine in moderation. | in moderation | restraint |
+portion size | coll | noun phrase | B2 | neutral | Nutrition | the amount of food served to one person | размер порции | Portion sizes have grown over the decades. | reduce portion sizes | serving |
+food miles | coll | noun phrase | C1 | neutral | Food systems | the distance food travels from where it is produced to where it is eaten | «пищевые мили» | Buying local reduces food miles. | | | environment
+supply and demand | fx | noun phrase | B2+ | neutral | Food systems | the relationship between how much is available and how much people want | спрос и предложение | Food prices depend on supply and demand. | the law of supply and demand | | economics-globalisation
+eat into | pv | phrasal verb | C1 | neutral | Food systems | to use up part of something such as money or time | съедать (средства, время) | Rising food costs eat into household budgets. | eat into savings/profits | erode | business-finance
+whet your appetite | idiom | verb phrase | C1 | neutral | Cooking and eating | to make you want more of something | разжечь аппетит / интерес | The trailer whetted my appetite for the series. | | arouse interest | arts-culture
+take something with a pinch of salt | idiom | verb phrase | B2+ | neutral | Cooking and eating | to not completely believe something | относиться скептически | Take diet advice online with a pinch of salt. | | be sceptical | communication-media
+@family nutrition (n); nutritional (adj); nutritionist (n); malnutrition (n); malnourished (adj)
+@distinct diet vs nutrition :: *Diet* is the food a person usually eats (and also a plan to lose weight). *Nutrition* is the science or process of getting the substances the body needs.

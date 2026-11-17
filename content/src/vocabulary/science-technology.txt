@@ -41,3 +41,21 @@ influence | n | noun | B2 | neutral | Effects | the power to affect something | 
 plausible | adj | adjective | C1 | formal | Theories | likely to be true | правдоподобный | It's a plausible explanation. | plausible explanation; highly plausible | credible; believable |
 random | adj | adjective | B2 | neutral | Research | happening without a plan or pattern | случайный | Participants were chosen at random. | at random; random sample; random check | arbitrary |
 resource | n+ac | noun | B2 | neutral | Supplies | something useful, such as money, materials or skills | ресурс | Water is a precious resource. | natural resources; limited resources; allocate resources | supply; asset | environment
+
+# --- 2026-11-17 expansion
+disruptive | adj | adjective | C1 | neutral | Innovation | (of a technology) changing an industry by replacing older methods | прорывной, подрывной (о технологии) | Streaming was a disruptive technology for the music industry. | disruptive technology/innovation | game-changing | business-finance
+game-changer | n | noun | B2+ | informal | Innovation | something that completely changes a situation | то, что меняет правила игры | Cheap solar panels have been a game-changer. | a real game-changer | breakthrough |
+paradigm shift | coll+ac | noun phrase | C2 | academic | Research | a fundamental change in the basic assumptions of a field | смена парадигмы | The germ theory of disease was a paradigm shift in medicine. | represent/bring about a paradigm shift | revolution | history-heritage
+empirical evidence | coll+ac | noun phrase | C1 | academic | Research | evidence based on observation or experiment rather than theory | эмпирические данные | There is little empirical evidence for the claim. | provide/lack empirical evidence | |
+margin of error | coll+ac | noun phrase | C1 | academic | Research | the amount by which a result may be inaccurate | погрешность | The poll has a margin of error of three percentage points. | within the margin of error | |
+proof of concept | coll | noun phrase | C1 | neutral | Innovation | a test showing that an idea can work in practice | подтверждение концепции | The prototype is only a proof of concept. | | pilot |
+iterate | v | verb | C1 | neutral | Innovation | to repeat a process, improving it each time | повторять с улучшениями, итерировать | The team iterated on the design for months. | iterate on a design | refine |
+roll out | pv | phrasal verb | B2+ | neutral | Innovation | to introduce a new product or service to many people | внедрять, запускать | The update will be rolled out next month. | roll out a service/vaccine/update | launch; introduce | health-medicine
+encrypt | v | verb | C1 | neutral | Digital life | to change information into a code to protect it | шифровать | Messages are encrypted end to end. | encrypt data/messages | encode |
+open-source | adj | adjective | C1 | neutral | Digital life | (of software) with code that anyone can use and change | с открытым исходным кодом | Many universities use open-source software. | open-source software/project | |
+digital divide | coll+ac | noun phrase | C1 | academic | Digital life | the gap between people who have access to modern technology and those who do not | цифровое неравенство | The pandemic widened the digital divide in education. | bridge/widen the digital divide | | society-politics
+ethical implications | coll+ac | noun phrase | C1 | academic | Research | possible moral consequences of an action or technology | этические последствия | The ethical implications of gene editing are widely debated. | raise/consider ethical implications | | society-politics
+teething problems | idiom | noun phrase | B2+ | informal | Innovation | small problems at the start of a new project or product | трудности начального этапа | The new system had a few teething problems. | iron out teething problems | initial glitches | business-finance
+@family analyse (v); analysis (n); analyst (n); analytical (adj); analytically (adv)
+@family digit (n); digital (adj); digitise (v); digitisation (n); digitally (adv)
+@distinct accurate vs precise :: *Accurate* means close to the true value. *Precise* means exact and consistent, with fine detail. A measurement can be precise (many decimal places) but inaccurate.

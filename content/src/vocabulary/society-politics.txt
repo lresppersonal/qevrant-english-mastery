@@ -59,3 +59,20 @@ reinforce | v+ac | verb | C1 | formal | Effects | to make an idea or feeling str
 struggle | n | noun | B2 | neutral | Effort | a long effort to achieve something difficult | борьба | the long struggle for equal rights | struggle for; power struggle; an uphill struggle | fight; battle |
 sue | v | verb | C1 | neutral | Law | to take legal action against someone to get money | подавать в суд | He sued the newspaper for libel. | sue for damages; sue someone for | take to court | crime-law
 underdog | n | noun | C1 | informal | Competition | the person or team expected to lose | аутсайдер | Voters often sympathise with the underdog. | root for the underdog | outsider | sports-fitness
+
+# --- 2026-11-17 expansion
+polarisation | n+ac | noun | C1 | academic | Politics | the division of a society into groups with strongly opposed views | поляризация | Social media is often blamed for political polarisation. | political/growing polarisation | division | communication-media
+consensus | n+ac | noun | B2+ | formal | Politics | general agreement among a group | консенсус, согласие | There is broad consensus that the system needs reform. | reach/build a consensus; broad consensus | agreement |
+accountability | n+ac | noun | C1 | formal | Governance | the fact of being responsible for decisions and willing to explain them | подотчётность, ответственность | Voters demand greater accountability from ministers. | public/democratic accountability; hold to account | responsibility | crime-law
+sovereignty | n+ac | noun | C1 | formal | International relations | the authority of a state to govern itself | суверенитет | The treaty raised questions about national sovereignty. | national/state sovereignty | independence; autonomy |
+diplomacy | n | noun | B2+ | formal | International relations | managing relations between countries; also, tact | дипломатия | Quiet diplomacy ended the dispute. | international/quiet diplomacy | negotiation; tact |
+sanctions | n | noun | C1 | formal | International relations | official measures taken against a country to force it to change its behaviour | санкции | The UN imposed sanctions on the regime. | impose/lift sanctions | penalties |
+geopolitical | adj+ac | adjective | C2 | academic | International relations | relating to the influence of geography on politics and international relations | геополитический | Energy supplies have become a geopolitical issue. | geopolitical tensions/risk | | economics-globalisation
+populism | n+ac | noun | C1 | academic | Politics | politics that claims to represent ordinary people against an elite | популизм | The rise of populism has reshaped elections in Europe. | right-wing/left-wing populism | |
+civil society | coll+ac | noun phrase | C1 | academic | Governance | organisations and groups outside government and business | гражданское общество | Civil society groups monitored the elections. | civil society organisations | |
+swing voter | coll | noun phrase | C1 | neutral | Politics | a voter who does not always support the same party | колеблющийся избиратель | Campaigns focus on swing voters in marginal seats. | | floating voter |
+pay lip service to | idiom | verb phrase | C1 | neutral | Politics | to say you support something without actually doing anything to help it | поддерживать на словах | The government pays lip service to equality. | | |
+the thin end of the wedge | idiom | noun phrase | C1 | informal | Politics | a small change that may lead to more serious changes | начало опасной тенденции | Critics see the surveillance law as the thin end of the wedge. | | slippery slope |
+checks and balances | fx | noun phrase | C1 | academic | Governance | a system in which different parts of government limit each other's power | система сдержек и противовесов | The constitution provides checks and balances on the president. | | | crime-law
+@family democracy (n); democratic (adj); democratically (adv); democratise (v); undemocratic (adj)
+@distinct elect vs vote :: Citizens *vote* (for a candidate); the population *elects* a candidate (the result). *We voted for her and she was elected.*

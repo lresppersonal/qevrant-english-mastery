@@ -305,7 +305,7 @@ for (const { f, text } of read(path.join(SRC, "reading"))) {
     }
     exercises.push({ ...META, id: "", slug, title: TASK_TITLE[kind] ?? kind, skill: "reading", format: TASK_FORMAT[kind] ?? "multiple_choice", level: meta.level, topics: [meta.category], target: { type: "text", ref: meta.slug }, passageRef: meta.slug, instructions, questions });
   }
-  readings.push({ ...META, id: "", slug: meta.slug, title: meta.title, standfirst: meta.standfirst, level: meta.level, topics: [meta.category], category: meta.category, minutes: Number(meta.minutes || 6), paragraphs, exercises: exSlugs, keyVocabulary, expressions, critical, origin: "original" });
+  readings.push({ ...META, id: "", slug: meta.slug, title: meta.title, standfirst: meta.standfirst, level: meta.level, topics: [meta.category], category: meta.category, minutes: Number(meta.minutes || 6), paragraphs, exercises: exSlugs, keyVocabulary, expressions, critical, furtherReading: list(meta.further).map((x) => { const [title, url, publisher] = x.split("::").map((y) => y.trim()); if (!/^https:\/\//.test(url ?? "")) fail(where, `further reading needs an https URL: ${x}`); return { title, url, publisher: publisher ?? "" }; }), origin: "original" });
 }
 
 // ================= WRITING =================

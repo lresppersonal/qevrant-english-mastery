@@ -29,3 +29,17 @@ stain | v | verb | B2+ | neutral | Cleaning | to leave a mark that is hard to re
 thread | n | noun | B2+ | neutral | Sewing and discussions | a thin string for sewing; a series of online messages | нитка; ветка (обсуждения) | I need a needle and thread. | needle and thread; a discussion thread; hang by a thread | yarn | communication-media
 trigger | v | verb | C1 | neutral | Causes | to make something start | вызывать, запускать | Dust can trigger an allergic reaction. | trigger an alarm; trigger a reaction | cause; set off |
 will | n | noun | B2+ | neutral | Life events | a legal document saying who gets your property when you die; determination | завещание; воля | She left the house to her son in her will. | make a will; free will; against your will | testament; determination |
+
+# --- 2026-11-17 expansion
+household chores | coll | noun phrase | B2 | neutral | Home | regular jobs done at home such as cleaning and washing | домашние дела | They share the household chores equally. | do/share household chores | housework |
+run errands | coll | verb phrase | B2 | neutral | Daily routines | to make short trips to do small jobs such as shopping | выполнять мелкие поручения | I spent the morning running errands. | | |
+get round to | pv | phrasal verb | B2+ | informal | Daily routines | to finally do something you have intended to do | дойти руки до | I never got round to fixing the shelf. | get round to doing something | |
+juggle | v | verb | C1 | neutral | Daily routines | to try to deal with several jobs or activities at the same time | совмещать, жонглировать (делами) | Many parents juggle work and childcare. | juggle commitments/responsibilities | balance | work-careers
+make do with | pv | phrasal verb | B2+ | neutral | Money at home | to manage with something less good than you want | обходиться (тем, что есть) | We'll have to make do with the old laptop. | | manage with |
+cost of living | coll | noun phrase | B2 | neutral | Money at home | the amount of money needed for basic expenses | стоимость жизни | The cost of living has risen sharply. | cost-of-living crisis; rising cost of living | | economics-globalisation
+creature of habit | idiom | noun phrase | B2+ | neutral | Daily routines | a person who always does things in the same way | человек привычки | I'm a creature of habit — same café every morning. | | |
+at a loose end | idiom | prepositional phrase | C1 | informal | Daily routines | having nothing to do | без дела, нечем заняться | Call me if you're at a loose end this weekend. | | |
+the daily grind | idiom | noun phrase | B2+ | informal | Daily routines | the boring, repetitive routine of everyday work | рутина, будничная суета | A holiday is a break from the daily grind. | escape the daily grind | routine | work-careers
+declutter | v | verb | B2+ | neutral | Home | to remove things you do not need from a place | расхламлять | We decluttered the flat before moving. | declutter your home | tidy |
+@family convenient (adj); convenience (n); inconvenient (adj); inconvenience (n/v); conveniently (adv)
+@distinct housework vs homework :: *Housework* is cleaning and other jobs in the house. *Homework* is school or university work done at home. Both are uncountable.

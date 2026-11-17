@@ -29,3 +29,23 @@ imbalance | n | noun | C1 | formal | Trade | a situation where things are not eq
 primitive | adj | adjective | C1 | neutral | Development | very simple; belonging to an early stage | примитивный | The banking system was still primitive. | primitive tools; primitive conditions | basic; crude | history-heritage
 scarce | adj | adjective | C1 | neutral | Resources | not available in large amounts | дефицитный | Water is becoming scarce in the region. | scarce resources; make yourself scarce | rare; in short supply | environment
 solid | adj | adjective | B2 | neutral | Quality | firm; reliable | твёрдый, надёжный | The economy has solid foundations. | solid evidence; solid growth | firm; sound |
+
+# --- 2026-11-17 expansion
+stagnate | v+ac | verb | C1 | formal | The economy | to stop growing or developing | стагнировать, находиться в застое | Wages have stagnated for a decade. | stagnating economy/wages | stall; flatline |
+downturn | n | noun | B2+ | neutral | The economy | a period when economic activity falls | спад, снижение | Small firms are hit hardest in an economic downturn. | economic/sharp downturn; a downturn in | slump; recession |
+fiscal policy | coll+ac | noun phrase | C1 | academic | Policy | government decisions about taxation and public spending | фискальная (бюджетно-налоговая) политика | Fiscal policy was loosened to support demand. | tighten/loosen fiscal policy | | society-politics
+interest rate | coll | noun phrase | B2 | neutral | Policy | the percentage charged for borrowing money | процентная ставка | The central bank raised interest rates to curb inflation. | raise/cut/hold interest rates | | business-finance
+curb | v | verb | C1 | formal | Policy | to control or limit something, especially something harmful | обуздывать, сдерживать | New rules aim to curb speculation. | curb inflation/spending/emissions | restrain; rein in | environment
+purchasing power | coll+ac | noun phrase | C1 | academic | The economy | the amount of goods and services that money can buy | покупательная способность | Inflation erodes the purchasing power of savings. | erode/boost purchasing power | |
+erode | v+ac | verb | C1 | formal | The economy | to gradually reduce or destroy something | подрывать, постепенно уменьшать | Rising rents are eroding living standards. | erode confidence/trust/savings | undermine; wear away | environment
+trade-off | n+ac | noun | C1 | neutral | Policy | a balance between two desirable but incompatible things | компромисс, вынужденный выбор | There is a trade-off between speed and accuracy. | a trade-off between X and Y; make a trade-off | compromise | science-technology
+ripple effect | coll | noun phrase | C1 | neutral | Globalisation | a spreading effect caused by one event | цепная реакция, волновой эффект | The factory closure had a ripple effect on local shops. | have a ripple effect on | knock-on effect; domino effect | society-politics
+knock-on effect | coll | noun phrase | C1 | neutral | Globalisation | an indirect result of an action or event | побочный (цепной) эффект | Delays in China have a knock-on effect on European manufacturers. | have a knock-on effect on | ripple effect; repercussion |
+bottleneck | n | noun | C1 | neutral | Globalisation | a point where a process is slowed because of limited capacity | узкое место | Port congestion created bottlenecks in the supply chain. | supply bottleneck; ease a bottleneck | obstacle; constraint | transport-movement
+protectionism | n+ac | noun | C1 | academic | Globalisation | the policy of protecting domestic industries by taxing or limiting imports | протекционизм | A wave of protectionism followed the crisis. | rising/economic protectionism | | society-politics
+feel the pinch | idiom | verb phrase | B2+ | informal | The economy | to have less money than before and find life harder | ощущать нехватку денег | Families are feeling the pinch as energy bills rise. | | struggle financially | everyday-life
+@family stagnate (v); stagnation (n); stagnant (adj)
+@family regulate (v); regulation (n); regulator (n); regulatory (adj); deregulation (n)
+@distinct fiscal vs monetary policy :: *Fiscal* policy is the government's taxing and spending. *Monetary* policy is the central bank's control of interest rates and money supply.
+austerity | n+ac | noun | C1 | formal | Policy | strict government spending cuts intended to reduce debt | режим жёсткой экономии | Years of austerity left public services underfunded. | austerity measures; a period of austerity | belt-tightening | society-politics
+@distinct boom vs bubble :: A *boom* is a period of rapid economic growth. A *bubble* is a rise in prices driven by speculation that is likely to collapse.

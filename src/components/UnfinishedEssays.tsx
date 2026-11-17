@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { PenLine } from "lucide-react";
 import type { EssayDraft, WritingSubmission } from "@/lib/store/types";
 import { countWords } from "@/lib/ai/schemas";
+import { writingTitle, writingHref } from "@/lib/writing-task";
 import { useLearner } from "./StoreProvider";
 
 /** Drafts in progress and essays waiting for (another) assessment attempt. */
@@ -23,11 +24,11 @@ export function UnfinishedEssays({ titles }: { titles: Record<string, string> })
       <ul className="mt-3 divide-y divide-line">
         {drafts.map((d) => {
           const title = titles[d.promptSlug];
-          return <li key={d.promptSlug} className="py-2"><Link href={`/writing/${d.promptSlug}`} className="font-medium text-primary hover:underline">{title ?? d.promptSlug}</Link> <span className="text-sm text-muted">· draft, {countWords(d.body)} words · {new Date(d.updatedAt).toLocaleString()}</span></li>;
+          return <li key={d.promptSlug} className="py-2"><Link href={writingHref(d.promptSlug)} className="font-medium text-primary hover:underline">{title ?? writingTitle(d.promptSlug)}</Link> <span className="text-sm text-muted">· draft, {countWords(d.body)} words · {new Date(d.updatedAt).toLocaleString()}</span></li>;
         })}
         {failed.map((w) => {
           const title = titles[w.promptSlug];
-          return <li key={w.id} className="py-2"><Link href={`/writing/${w.promptSlug}`} className="font-medium text-primary hover:underline">{title ?? w.promptSlug}</Link> <span className="text-sm text-danger">· saved, waiting for assessment — open it and press Retry</span></li>;
+          return <li key={w.id} className="py-2"><Link href={writingHref(w.promptSlug)} className="font-medium text-primary hover:underline">{title ?? writingTitle(w.promptSlug)}</Link> <span className="text-sm text-danger">· saved, waiting for assessment — open it and press Retry</span></li>;
         })}
       </ul>
     </section>

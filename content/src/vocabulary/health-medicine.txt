@@ -50,3 +50,19 @@ transplant | n | noun | B2+ | neutral | Treatment | an operation to put an organ
 vast | adj | adjective | B2+ | neutral | Size | extremely large | огромный | The vast majority of patients recover. | the vast majority; vast amount; vast range | huge; immense |
 ward | n | noun | B2+ | neutral | Hospital | a room in a hospital with beds | палата, отделение | He was moved to the children's ward. | maternity ward; hospital ward | unit |
 whack | v | verb | C1 | informal | Accidents | to hit hard | ударить, треснуть | I whacked my head on the cupboard. | whack your head | hit; bang |
+
+# --- 2026-11-17 expansion
+preventive | adj | adjective | C1 | formal | Healthcare | intended to stop illness before it happens | профилактический | Preventive care saves money in the long term. | preventive medicine/measures | preventative; prophylactic |
+underlying condition | coll | noun phrase | C1 | neutral | Illness | an existing illness that makes a person more vulnerable | сопутствующее (основное) заболевание | Patients with underlying conditions were prioritised. | have an underlying condition | pre-existing condition |
+mental health | coll | noun phrase | B2 | neutral | Wellbeing | a person's psychological and emotional wellbeing | психическое здоровье | Exercise benefits both physical and mental health. | improve/affect mental health; mental health services | | psychology-behaviour
+burden of disease | coll+ac | noun phrase | C2 | academic | Healthcare | the overall impact of a health problem on a population, including cost and lost life | бремя болезней | Diabetes accounts for a growing burden of disease. | | | society-politics
+clinical trial | coll+ac | noun phrase | C1 | academic | Treatment | a scientific test of a new drug or treatment on people | клиническое исследование | The vaccine is in the final stage of clinical trials. | conduct/run a clinical trial | | science-technology
+placebo | n | noun | C1 | neutral | Treatment | a substance with no active effect, used as a control in tests | плацебо | Some patients improved even on a placebo. | placebo effect | |
+alleviate | v+ac | verb | C1 | formal | Treatment | to make pain or a problem less severe | облегчать, смягчать | The drug alleviates symptoms but doesn't cure the disease. | alleviate pain/symptoms/poverty | ease; relieve |
+relapse | n | noun | C1 | neutral | Illness | a return of an illness after improvement | рецидив | She had a relapse after stopping the treatment. | suffer a relapse | recurrence |
+burn the candle at both ends | idiom | verb phrase | C1 | informal | Wellbeing | to work very hard and go to bed late, so that you become exhausted | работать на износ | Burning the candle at both ends led to his illness. | | overwork | work-careers
+fighting fit | idiom | adjective phrase | B2+ | informal | Wellbeing | very healthy and fit | в отличной форме | After the operation he's fighting fit again. | | in fine fettle |
+a clean bill of health | idiom | noun phrase | C1 | neutral | Healthcare | an official statement that someone is healthy | заключение о полном здоровье | The doctor gave her a clean bill of health. | give/get a clean bill of health | |
+holistic | adj+ac | adjective | C1 | formal | Healthcare | treating the whole person rather than only the symptoms | целостный, холистический | A holistic approach considers diet, sleep and stress. | holistic approach/care | comprehensive | education
+@family immune (adj); immunity (n); immunise (v); immunisation (n); immunology (n)
+@distinct prevent vs avoid :: You *prevent* something by stopping it from happening (*prevent infection*). You *avoid* something by keeping away from it (*avoid crowded places*).

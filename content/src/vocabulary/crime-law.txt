@@ -53,3 +53,19 @@ stretch | v | verb | B2+ | neutral | Limits | to make longer or wider; to extend
 target | v | verb | B2+ | neutral | Crime | to aim an attack or action at someone | нацеливаться | Fraudsters target elderly people. | target someone; be targeted by | aim at; single out |
 treat | v | verb | B2 | neutral | Behaviour | to behave towards someone in a particular way | обращаться, относиться | Suspects must be treated fairly. | treat fairly; treat with respect; treat someone like | handle; deal with |
 vanish | v | verb | B2+ | neutral | Disappearance | to disappear suddenly | исчезать | The suspect vanished without a trace. | vanish without trace; vanish into thin air | disappear |
+
+# --- 2026-11-17 expansion
+miscarriage of justice | coll | noun phrase | C1 | formal | Justice system | a situation in which a court makes a wrong decision, especially punishing an innocent person | судебная ошибка | The case was a serious miscarriage of justice. | | wrongful conviction |
+rule of law | coll+ac | noun phrase | C1 | academic | Justice system | the principle that everyone, including the government, is subject to the law | верховенство права | Independent courts protect the rule of law. | uphold/undermine the rule of law | | society-politics
+due process | coll+ac | noun phrase | C1 | formal | Justice system | fair legal procedures that protect people's rights | надлежащая правовая процедура | Detention without trial violates due process. | the right to due process | |
+burden of proof | coll | noun phrase | C1 | formal | Justice system | the duty to prove that a claim is true | бремя доказывания | The burden of proof lies with the prosecution. | the burden of proof lies with / shifts to | onus |
+beyond reasonable doubt | fx | prepositional phrase | C1 | formal | Justice system | (of guilt) proven so clearly that no sensible person would doubt it | вне разумных сомнений | Guilt must be proven beyond reasonable doubt. | prove beyond reasonable doubt | |
+white-collar crime | coll | noun phrase | C1 | neutral | Crimes | non-violent crime committed by professionals, such as fraud | беловоротничковая преступность | White-collar crime is rarely punished severely. | | | business-finance
+cybercrime | n | noun | B2+ | neutral | Crimes | crime committed using computers or the internet | киберпреступность | Cybercrime costs businesses billions each year. | combat cybercrime | | science-technology
+recidivism | n+ac | noun | C2 | academic | Punishment | the tendency of convicted criminals to commit crimes again | рецидивизм | Education in prison reduces recidivism. | reduce recidivism rates | reoffending |
+custodial sentence | coll | noun phrase | C1 | formal | Punishment | a punishment of time in prison | наказание в виде лишения свободы | He received a three-year custodial sentence. | | prison sentence |
+community service | coll | noun phrase | B2 | neutral | Punishment | unpaid work for the community given as a punishment | общественные работы | She was ordered to do 200 hours of community service. | | |
+a slap on the wrist | idiom | noun phrase | C1 | informal | Punishment | a very mild punishment | символическое наказание | Critics said the fine was a slap on the wrist. | get off with a slap on the wrist | |
+plead guilty | coll | verb phrase | B2+ | formal | Justice system | to formally admit in court that you committed a crime | признать себя виновным | He pleaded guilty to fraud. | plead guilty/not guilty to | admit | 
+@family prosecute (v); prosecution (n); prosecutor (n); prosecutable (adj)
+@distinct robbery vs theft vs burglary :: *Theft* is the general crime of taking property. *Robbery* involves force or threat against a person. *Burglary* is entering a building illegally to steal.

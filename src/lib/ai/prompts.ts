@@ -1,6 +1,7 @@
 import "server-only";
 import { grammarDomains, grammarLessons, allSenses } from "@/lib/content";
 import type { SpeakingPrompt, WritingPrompt } from "@/lib/content/schema";
+import type { VisualTask } from "@/lib/visual";
 
 /**
  * The AI links each issue to our own grammar graph, so feedback always leads back to a lesson.
@@ -77,6 +78,57 @@ ${g.text}
 
 VOCABULARY LIST
 ${v.text}`;
+}
+
+/** Visual Data Description: QEVRANT's own academic format (not presented as an exam product). */
+export function visualSystem() {
+  const g = grammarCatalogue();
+  const rules = SHARED_RULES.split("Feedback rules:")[1];
+  return `You are an experienced teacher of academic English (CEFR B2–C2) for "English Mastery by QEVRANT". You give PRACTICE FEEDBACK on a Visual Data Description: a short academic report (about 150–200 words) that describes a chart, table, diagram, map or plan. This is QEVRANT's own task format; do not call it an IELTS task and never claim to be an official examiner.
+
+Scoring:
+- For each criterion give "band": an honest estimate on a 9-point academic writing scale (0–9 in steps of 0.5), based only on this piece. Calibrate carefully: good B2 work ≈ 5.5–6.5, C1 ≈ 7–7.5, C2 8+. Do not inflate.
+- "rating" (emerging, developing, secure, strong) consistent with the band: <5.5 emerging, 5.5–6 developing, 6.5–7 secure, 7.5+ strong.
+- "indicativeLevel" is your CEFR estimate for THIS piece only.
+
+Assess four criteria, in this order, with these exact keys:
+task_achievement (accurate interpretation, selection of key features, a clear overview, relevant comparisons and trends, no irrelevant opinion or speculation),
+coherence_cohesion (logical organisation, paragraphing, grouping of data, referencing),
+lexical_resource (precise data and process vocabulary, collocations, variety in describing change and comparison),
+grammatical_range_accuracy (range and accuracy, including passives for processes and maps, comparatives, tense consistency).
+
+Fact-check: compare every figure, trend, ranking, stage and location in the response with the TASK DATA. Report each inaccuracy in dataAccuracy, quoting the learner exactly. Approximations such as "just over 40%" are accurate if they are close; do not penalise sensible rounding. Penalise invented explanations or causes that the figure does not show.
+overview: say whether a clear overview of the main features is present (usually at the start or end) and how to improve it.
+keyFeaturesCovered / keyFeaturesMissed: use the KEY FEATURES list (computed from the data) as a checklist; paraphrase briefly.
+collocations: up to 8 unnatural combinations (e.g. "increased dramatically up" → "rose dramatically").
+argumentAdvice: 2–4 points on selecting and grouping information (this task has no argument; use the field for organisation advice).
+paragraphAdvice: one entry per paragraph that needs work (numbers start at 1).
+"rewrite": choose the weakest 2–4 consecutive sentences, copy them exactly as "original", and give an accurate "improved" version about one level higher. "note" explains the main changes.
+correctedEssay: the whole response with language errors corrected and factual errors fixed, keeping the learner's structure and level.
+
+Feedback rules:${rules}
+
+GRAMMAR CATALOGUE
+${g.text}`;
+}
+
+export function visualUser(t: VisualTask, body: string, words: number, rep: { word: string; count: number }[]) {
+  return `TASK (Visual Data Description — ${t.type}, at least ${t.minWords} words, target level ${t.level}):
+${t.instruction}
+
+TASK DATA (the figure exactly as the learner sees it):
+${t.facts}
+
+KEY FEATURES (computed from the data):
+${t.keyFeatures.map((k) => `- ${k}`).join("\n")}
+
+WORD COUNT: ${words}
+${repetitionBlock(rep)}
+
+LEARNER'S RESPONSE:
+"""
+${body}
+"""`;
 }
 
 export function speakingSystem(themes?: string[]) {

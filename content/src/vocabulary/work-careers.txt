@@ -49,3 +49,19 @@ rip-off | n | noun | B2+ | informal | Prices | something that costs far too much
 sceptical | adj | adjective | C1 | neutral | Attitudes | doubting that something is true or useful | скептический | Staff were sceptical about the new system. | sceptical about; deeply sceptical | doubtful; dubious |
 sick | adj | adjective | B2 | neutral | Absence | ill; (sick of) tired of | больной; уставший (от) | He's off sick today. | off sick; sick leave; sick and tired of | ill; fed up |
 stock | n | noun | B2+ | neutral | Shops and finance | goods in a shop; shares in a company | запас; акции | That model is out of stock. | in stock; out of stock; take stock; stock market | supply; shares | business-finance
+
+# --- 2026-11-17 expansion
+transferable skills | coll | noun phrase | B2+ | neutral | Skills | abilities useful in many different jobs | универсальные (переносимые) навыки | Teamwork and writing are transferable skills. | develop transferable skills | soft skills | education
+upskill | v | verb | C1 | neutral | Skills | to learn new skills, especially for work | повышать квалификацию | Firms are upskilling staff to work with AI. | upskill employees/the workforce | retrain |
+gig economy | coll | noun phrase | C1 | neutral | Employment | a labour market of short-term, freelance or app-based work | гиг-экономика, экономика разовых заработков | Delivery riders are part of the gig economy. | work in the gig economy | freelance economy | economics-globalisation
+job security | coll | noun phrase | B2 | neutral | Employment | the likelihood that you will keep your job | гарантия занятости, стабильность работы | Contract staff have little job security. | lack/offer job security | |
+glass ceiling | idiom | noun phrase | C1 | neutral | Career progress | an invisible barrier that stops some groups reaching senior positions | «стеклянный потолок» | She was the first woman to break the glass ceiling in the firm. | break/shatter the glass ceiling | | society-politics
+pull your weight | idiom | verb phrase | B2+ | informal | Workplace | to do your fair share of work | вносить свою лепту, честно работать | One member of the team isn't pulling his weight. | | |
+micromanage | v | verb | C1 | neutral | Workplace | to control every small detail of other people's work | контролировать каждую мелочь | Good managers delegate instead of micromanaging. | | |
+headhunt | v | verb | C1 | neutral | Career progress | to find and offer a job to someone working for another organisation | переманивать (специалиста) | She was headhunted by a rival bank. | be headhunted | recruit |
+step down | pv | phrasal verb | B2+ | neutral | Career progress | to leave an important job or position | уходить в отставку, покидать пост | The CEO stepped down after the scandal. | step down as chair | resign |
+career break | coll | noun phrase | B2+ | neutral | Career progress | a period away from work, for example to travel or care for children | перерыв в карьере | Many parents take a career break. | take a career break | sabbatical |
+productivity | n+ac | noun | B2+ | formal | Workplace | the rate at which work is done or goods are produced | производительность | Remote work raised productivity for some teams. | boost/increase productivity | efficiency | economics-globalisation
+hit the ground running | idiom | verb phrase | C1 | informal | Skills | to start a new job or activity quickly and successfully | сразу энергично взяться за дело | We need someone who can hit the ground running. | | get off to a flying start |
+@family produce (v); product (n); production (n); productive (adj); productivity (n)
+@distinct salary vs wage vs income :: A *salary* is paid monthly or yearly for professional jobs. A *wage* is paid hourly or weekly. *Income* is all the money you receive, including from investments.

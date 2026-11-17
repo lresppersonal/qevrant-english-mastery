@@ -1,7 +1,8 @@
 import { z } from "zod";
 import { getWritingPrompt } from "@/lib/content";
-import { WritingFeedback, countWords, bandEstimate, repetitionStats } from "@/lib/ai/schemas";
-import { writingSystem, writingUser } from "@/lib/ai/prompts";
+import { WritingFeedback, VisualFeedback, countWords, bandEstimate, repetitionStats } from "@/lib/ai/schemas";
+import { writingSystem, writingUser, visualSystem, visualUser } from "@/lib/ai/prompts";
+import { visualFromSlug } from "@/lib/visual";
 import { authorise, analyse, sanitiseRefs, describeError, HttpError, AI_MODEL } from "@/lib/ai/server";
 
 // Long essays produce long, detailed feedback: allow up to 5 minutes (Vercel's limit with Fluid compute).
@@ -30,8 +31,11 @@ export async function POST(req: Request) {
     const parsed = Body.safeParse(await req.json().catch(() => null));
     if (!parsed.success) throw new HttpError(400, "Invalid request.");
     const { promptSlug, secondsSpent, requestId, submissionId } = parsed.data;
+    // Essays come from the essay bank; "visual:<id>" tasks are regenerated from their id, so the data
+    // the AI checks against is exactly the figure the learner saw.
     const prompt = getWritingPrompt(promptSlug);
-    if (!prompt) throw new HttpError(404, "Unknown writing task.");
+    const visual = prompt ? null : visualFromSlug(promptSlug);
+    if (!prompt && !visual) throw new HttpError(404, "Unknown writing task.");
 
     const { sb, userId } = await authorise();
     sbRef = sb;
@@ -78,7 +82,9 @@ export async function POST(req: Request) {
     }
 
     // 2. Assess it.
-    const raw = await analyse(WritingFeedback, writingSystem(prompt.topics), writingUser(prompt, body, words, repetitionStats(body)));
+    const raw = visual
+      ? await analyse(VisualFeedback, visualSystem(), visualUser(visual, body, words, repetitionStats(body)))
+      : await analyse(WritingFeedback, writingSystem(prompt!.topics), writingUser(prompt!, body, words, repetitionStats(body)));
     const clean = sanitiseRefs(raw, body);
     const feedback = { ...clean, estimate: bandEstimate(clean.criteria) };
 

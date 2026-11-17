@@ -12,11 +12,29 @@ export function dayKey(iso: string | Date, timeZone?: string) {
   return new Intl.DateTimeFormat("en-CA", { timeZone, year: "numeric", month: "2-digit", day: "2-digit" }).format(d);
 }
 
-/** Events that count as "studying" for streaks (saving/unsaving alone does not). */
-const STUDY_EVENTS = new Set(["lesson_section_viewed", "exercise_completed", "review_completed", "reading_completed", "writing_submitted", "speaking_submitted", "listening_logged"]);
+/**
+ * A study day needs COMPLETED learning, not just opening the app: a finished exercise, review session,
+ * reading text, essay, speaking answer or listening log — or a lesson actually studied (at least
+ * three of its sections read that day, or all of them for shorter lessons).
+ */
+const COMPLETION_EVENTS = new Set(["exercise_completed", "review_completed", "reading_completed", "writing_submitted", "speaking_submitted", "listening_logged"]);
+export const LESSON_SECTIONS_FOR_STUDY = 3;
 
 export function studyDays(events: ActivityEvent[], tz?: string) {
-  return new Set(events.filter((e) => STUDY_EVENTS.has(e.type)).map((e) => dayKey(e.createdAt, tz)));
+  const days = new Set<string>();
+  const sections = new Map<string, Set<string>>(); // day|lesson -> sections
+  for (const e of events) {
+    if (COMPLETION_EVENTS.has(e.type)) days.add(dayKey(e.createdAt, tz));
+    else if (e.type === "lesson_section_viewed" && e.contentRef) {
+      const [lesson, section] = e.contentRef.split("#");
+      const k = `${dayKey(e.createdAt, tz)}|${lesson}`;
+      const set = sections.get(k) ?? new Set<string>();
+      set.add(section ?? "");
+      sections.set(k, set);
+    }
+  }
+  for (const [k, set] of sections) if (set.size >= LESSON_SECTIONS_FOR_STUDY) days.add(k.split("|")[0]);
+  return days;
 }
 
 /** Consecutive study days ending today (or yesterday, if today has no activity yet). */

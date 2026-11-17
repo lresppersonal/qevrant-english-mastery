@@ -95,3 +95,71 @@ Every new entry has English, Russian, an original definition, an original exampl
 - **Coverage:** every one of the 1,654 different words in the 12 Reading passages now resolves locally (directly or through its base form), except personal and place names.
 - **Hybrid lookup:** built-in → cache → Free Dictionary API (Wiktionary: IPA, recordings, parts of speech, synonyms) → Claude (original definitions, Russian, CEFR, register, collocations, forms, usage notes, meaning in the sentence). Base forms come from compromise (in context) plus a rule-based lemmatiser with irregular verbs, nouns and adjectives.
 - **Licensing:** Wiktionary text is CC BY-SA 3.0. It is shown with attribution only when no AI-written definition exists, and is never committed to the repository. Recordings are played from Wikimedia servers with attribution.
+
+## Update 2026-11-17 (c) — content expansion, visual writing, Intensive Study Plan
+
+All new learner-facing text is original. No articles or textbook passages were reproduced.
+
+**Grammar: 22 → 36 lessons, about 400 practice questions.** Fourteen new lessons, each with the ten-part structure (overview, theory, formation, uses, explained examples, comparisons, register, common mistakes, advanced applications, summary) and 12 graded questions with explanations:
+- stative and dynamic verbs (B2)
+- adjectives, adverbs and intensifiers (B2)
+- multi-word verbs (B2+)
+- noun clauses (B2+)
+- purpose and result clauses (B2+)
+- anticipatory *it* and *there* (C1)
+- cohesion and reference (C1)
+- the future in the past (C1)
+- negation and focusing (C1)
+- the subjunctive and hypothetical forms (C1)
+- verbless and absolute clauses (C2)
+- subject–verb agreement (C1)
+- perfect and passive non-finite forms (C1)
+- stance adverbials and discourse markers (C1)
+
+The grammar domain map (`content/grammar/domains.json`) lists every lesson.
+
+**Vocabulary: 939 → 1,172 headwords.**
+- Between 9 and 15 entries were added to each of the 24 themes, about 280 in total.
+- About 30 word families and 30 synonym distinctions were also added.
+- The focus is on C1–C2 collocations, idioms, phrasal verbs and academic expressions.
+- Existing entries were kept. The theme files remain the single, unified database.
+
+**Reading: 12 → 21 texts** (6 B2+, 11 C1, 4 C2).
+
+| Text | Level | Subject area |
+|---|---|---|
+| The planes that came back | B2+ | business |
+| Second lives for old buildings | B2+ | architecture and heritage |
+| The marshmallow test revisited | C1 | psychology |
+| Measuring what matters | C1 | economics |
+| The price of attention | C1 | media and digital society |
+| The rise of living alone | C1 | sociology |
+| When results won't repeat | C1 | science and academia |
+| Governing the commons | C2 | environment |
+| The moral machine | C2 | ethics and technology |
+| The power to attract | C2 | international relations |
+
+Each new text has:
+- glossed vocabulary and expressions;
+- multiple-choice and True/False/Not Given tasks;
+- three critical-thinking questions on the argument, the implications and the writer's position;
+- "further reading" links to the original sources (OECD, Tate, Psychological Science, Nature, NobelPrize.org, MIT Media Lab, Foreign Policy, Our World in Data). Every link was checked on 2026-11-17.
+
+Factual claims are limited to well-established facts, for example: the Moral Machine's 40 million decisions published in Nature in 2018; Ostrom's 2009 Nobel; Tate Modern opening in 2000; Nature's 2016 survey of 1,576 researchers.
+
+**Visual Data Description (Academic Writing).** This is QEVRANT's own task format and is not labelled as IELTS. There are four groups:
+1. **Charts and graphs:** line graphs, bar charts, pie charts and tables. Generated from 20 templates, each with thousands of seeds.
+2. **Diagrams and processes:** processes, natural cycles, objects and mechanisms. Original library illustrations.
+3. **Maps and spatial change:** maps, site plans and floor plans. Original library illustrations.
+4. **Combined visuals:** line + bar, pie + table, bar + table, and time series + pie.
+
+How consistency is guaranteed:
+- A task id always regenerates identical data.
+- The figure, the key-feature checklist and the data sent to the AI all come from the same object.
+- The server regenerates the task from its id and never trusts figures sent by the browser.
+- 725 generated tasks are checked automatically: percentages add up to 100, values are plausible and every plotted number is in the AI's fact sheet.
+
+The data are invented for practice, and each task says so.
+
+**Intensive Study Plan.** Six weeks of 6 themed study days plus a review-and-assessment day.
+- The programme refers to existing lessons, themes, readings, listening resources, essays, visual tasks and speaking categories. A test checks that every reference exists.

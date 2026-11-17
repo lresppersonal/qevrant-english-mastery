@@ -16,6 +16,29 @@ Content is written in compact formats in `content/src/` and compiled with `npm r
 
 **New to this? Start with [docs/LAUNCH-GUIDE.md](docs/LAUNCH-GUIDE.md)**: a step-by-step, non-technical guide to putting the app online, creating your account and keeping your data.
 
+## What's new (2026-11-17, fifth update: content expansion and Intensive Study Plan)
+- **Grammar**: 36 lessons (14 new, B2–C2) in a ten-part structure, with about 400 explained practice questions.
+- **Vocabulary**: 1,172 headwords. Every theme was enriched with collocations, idioms, phrasal verbs, academic expressions, word families and distinctions.
+- **Reading**: 21 texts, including 10 new analytical texts (B2+–C2) with critical-thinking questions and checked further-reading links.
+- **Visual Data Description** (`/writing/visual`):
+  - four groups of tasks with genuine charts, diagrams, maps and floor plans, drawn as SVG;
+  - an unlimited generated task library with internally consistent data;
+  - a vocabulary bank, sentence frames and a key-feature checklist;
+  - AI feedback that checks facts against the figure. The server regenerates the task from its id.
+  - Not labelled as IELTS.
+- **Intensive Study Plan** (`/plan`):
+  - 6 weeks / 42 days, self-paced. Every day integrates grammar, vocabulary, reading, listening, writing, speaking and revision on one theme.
+  - Completion comes only from real activity.
+  - Earlier weak topics come back.
+  - Weekly assessments.
+  - Two intensities: Focused (about 1 h 40 min a day on average) and Full (about 2 h).
+  - Enrolment is stored in `profiles.preferences` (no migration).
+- **Speaking ↔ vocabulary**: every topic has a "Language for this topic" kit drawn from the vocabulary themes. Topics are suggested from the themes you recently saved words from. The speaking interface itself is unchanged.
+- **Streak flame**:
+  - It is more minimalist and progresses gradually through seven colour stages (1, 3, 7, 14, 30 and 100+ days).
+  - Only completed learning counts: an exercise, review, text, essay, speaking answer or listening log, or a lesson with at least three sections studied.
+- The demo now handles query-string navigation correctly, for example switching between visual tasks or smart-practice modes.
+
 ## What's new (2026-11-17, fourth update: visual identity)
 - **Original typography restored**: Inter (text) and Manrope (headings), with the original sizes, weights, letter-spacing and font features, exactly as in every version before the third update. The temporary Arial Narrow / Archivo Narrow setting has been removed.
 - **QEVRANT logo**: a geometric Q whose tail is drawn as the leg of an R (navy ring, amber stroke). Files in `public/brand/` (full logo and symbol for light and dark backgrounds, 1024 px app icon); favicon (`icon.svg`, `favicon.ico`), PWA and maskable icons, Apple touch icon. Regenerate with `python3 scripts/brand/build-brand.py`.

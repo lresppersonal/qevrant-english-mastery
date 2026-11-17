@@ -35,3 +35,19 @@ slash | v | verb | C1 | informal | Cuts | to reduce greatly | резко сок�
 snap | v | verb | B2+ | informal | Reactions | to speak suddenly in an angry way; to break suddenly | огрызнуться; сломаться | He snapped at the reporter. | snap at; snap decision | bark; break |
 steady | adj | adjective | B2 | neutral | Change | developing gradually and regularly | устойчивый, постоянный | There has been a steady fall in newspaper sales. | steady growth; steady job; slow and steady | gradual; constant |
 trivial | adj | adjective | C1 | neutral | Importance | not important or serious | пустяковый, тривиальный | They argued about trivial details. | trivial matter; trivial pursuit | minor; insignificant |
+
+# --- 2026-11-17 expansion
+media literacy | coll+ac | noun phrase | C1 | academic | News and information | the ability to analyse and evaluate media messages critically | медиаграмотность | Schools are adding media literacy to the curriculum. | teach/promote media literacy | | education
+clickbait | n | noun | B2+ | informal | Digital media | online content designed to attract clicks with misleading headlines | кликбейт | The article was pure clickbait. | | |
+fact-check | v | verb | B2+ | neutral | News and information | to check that the facts in a text are accurate | проверять факты | Reporters fact-checked every claim in the speech. | fact-check a claim/statement | verify |
+spin | n | noun | C1 | informal | News and information | a deliberately favourable interpretation of facts | искажённая подача, «спин» | The minister put a positive spin on the figures. | put a positive spin on; spin doctor | slant |
+filter bubble | coll | noun phrase | C1 | neutral | Digital media | a situation in which algorithms show you only information that matches your views | информационный пузырь | Personalised feeds can trap users in a filter bubble. | | echo chamber |
+attention economy | coll+ac | noun phrase | C2 | academic | Digital media | a system in which human attention is treated as a scarce resource that companies compete for | экономика внимания | Apps in the attention economy are designed to keep us scrolling. | | | economics-globalisation
+paywall | n | noun | B2+ | neutral | News and information | a system that prevents access to online content unless you pay | платный доступ | Most quality newspapers now have a paywall. | behind a paywall | |
+mixed messages | coll | noun phrase | B2+ | neutral | Communication | contradictory signals that confuse people | противоречивые сигналы | The government sent mixed messages about the lockdown. | send/give mixed messages | |
+read between the lines | idiom | verb phrase | B2+ | neutral | Communication | to understand a meaning that is not stated directly | читать между строк | Reading between the lines, the company is in trouble. | | infer |
+get the wrong end of the stick | idiom | verb phrase | C1 | informal | Communication | to misunderstand something completely | понять всё неправильно | I think you've got the wrong end of the stick. | | misunderstand |
+put across | pv | phrasal verb | B2+ | neutral | Communication | to communicate ideas clearly | доносить (мысль), излагать | She puts her ideas across very persuasively. | put across a point/message | convey; get across |
+newsworthy | adj | adjective | C1 | neutral | News and information | interesting or important enough to be reported | заслуживающий внимания прессы | The story wasn't considered newsworthy. | | |
+@family persuade (v); persuasion (n); persuasive (adj); persuasively (adv); dissuade (v)
+@distinct imply vs infer :: The speaker *implies* (suggests without saying directly); the listener *infers* (draws a conclusion). *She implied that I was late; I inferred that she was annoyed.*

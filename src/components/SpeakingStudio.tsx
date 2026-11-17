@@ -6,6 +6,8 @@ import { SPEAKING_CATEGORIES, SPEAKING_LEVELS, SPEAKING_MODES, bankPrompt, categ
 import { Countdown, fmtClock } from "@/lib/countdown";
 import { micProblem, micSupport, queryMicPermission, requestMic, stopStream, type MicProblem, type MicState } from "@/lib/microphone";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
+import { TopicLanguage } from "./TopicLanguage";
 import { allowed } from "@/lib/consent";
 import { SpeakingFeedbackView } from "@/lib/ai/schemas";
 import type { SpeakingAttempt } from "@/lib/store/types";
@@ -68,6 +70,11 @@ export function SpeakingStudio() {
   const poolSize = matchingPrompts(level, category).length;
 
   useEffect(() => { queryMicPermission().then(setMicState); }, []);
+  const linked = useSearchParams().get("topic");
+  useEffect(() => {
+    const p = linked ? bankPrompt(linked) : null;
+    if (p) { setTopic(p); setPhase("setup"); setCurrent(null); }
+  }, [linked]);
 
   // Restore saved preferences and history.
   useEffect(() => {
@@ -289,6 +296,7 @@ export function SpeakingStudio() {
           <p className="mt-3 text-xl font-semibold leading-snug">{viewTopic.prompt}</p>
           <p className="mt-3 text-sm font-semibold text-muted">You should say / cover:</p>
           <ul className="mt-1 list-disc space-y-1 pl-5">{viewTopic.points.map((p) => <li key={p}>{p}</li>)}</ul>
+          <TopicLanguage prompt={viewTopic} />
         </div>
       )}
 

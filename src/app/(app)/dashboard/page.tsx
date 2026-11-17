@@ -6,8 +6,9 @@ import { ArrowRight, RotateCcw, Bookmark, PenLine, Mic, Target, CheckCircle2, Cl
 import { useLearner, dailyGoalOf } from "@/components/StoreProvider";
 import { useLearnerData } from "@/components/useLearnerData";
 import { daysThisWeek } from "@/lib/progress";
-import { getWritingPrompt, getSpeakingPrompt, getLesson, getReading, getExercise } from "@/lib/content";
+import { getSpeakingPrompt, getLesson, getReading, getExercise } from "@/lib/content";
 import { streakState } from "@/lib/streak";
+import { writingTitle, writingHref } from "@/lib/writing-task";
 import { FlameGoal, TIER_LABEL } from "@/components/StreakFlame";
 
 import { todaysPlan, cycleInfo, type LearnerSnapshot } from "@/lib/learning";
@@ -42,7 +43,7 @@ export default function Dashboard() {
   const name = profile.displayName?.split(" ")[0];
   const minutes = plan.tasks.filter((t) => !t.done).reduce((n, t) => n + t.minutes, 0);
   const recentFeedback = [
-    ...data.writing.filter((w) => w.status !== "failed").map((w) => ({ kind: "writing" as const, at: w.createdAt, title: getWritingPrompt(w.promptSlug)?.title ?? w.promptSlug, href: `/writing/${w.promptSlug}` })),
+    ...data.writing.filter((w) => w.status !== "failed").map((w) => ({ kind: "writing" as const, at: w.createdAt, title: writingTitle(w.promptSlug), href: writingHref(w.promptSlug) })),
     ...data.speaking.map((s) => ({ kind: "speaking" as const, at: s.createdAt, title: getSpeakingPrompt(s.promptSlug)?.title ?? "Speaking studio", href: s.promptSlug.startsWith("bank:") ? "/speaking" : `/speaking/${s.promptSlug}` })),
   ].sort((a, b) => b.at.localeCompare(a.at)).slice(0, 3);
   const hour = new Date().getHours();
@@ -100,7 +101,7 @@ export default function Dashboard() {
           {st.week.map((d) => (
             <li key={d.day} className="flex flex-col items-center gap-1" aria-label={`${d.day}: ${d.studied ? "studied" : "no activity"}`}>
               <span className={clsx("grid h-7 w-7 place-items-center rounded-full border text-[11px] font-bold transition-colors",
-                d.studied ? "border-transparent bg-[linear-gradient(180deg,#F6BF4A,#E37B22)] text-white" : "border-line text-muted", d.isToday && "ring-2 ring-[var(--ring)] ring-offset-2 ring-offset-[var(--surface)]")}>
+                d.studied ? "border-transparent bg-[linear-gradient(180deg,#F2C76E,#E0A33A)] text-[#2B1700]" : "border-line text-muted", d.isToday && "ring-2 ring-[var(--ring)] ring-offset-2 ring-offset-[var(--surface)]")}>
                 {d.studied ? <CheckCircle2 size={14} aria-hidden="true" /> : ""}
               </span>
               <span className={clsx("text-[11px]", d.isToday ? "font-bold text-ink" : "text-muted")} aria-hidden="true">{d.label}</span>
@@ -120,7 +121,7 @@ export default function Dashboard() {
         <p className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-line pt-3 text-xs text-muted">
           <span className="inline-flex items-center gap-1"><Trophy size={13} aria-hidden="true" /> Best: {st.best} {st.best === 1 ? "day" : "days"}</span>
           {st.next && <span>Next milestone: {st.next} days</span>}
-          {st.milestone && <span className="chip !text-[11px]">{TIER_LABEL[st.tier]}</span>}
+          {st.streak > 0 && <span className="chip !text-[11px]">{TIER_LABEL[st.tier]}</span>}
         </p>
       </section>
 

@@ -24,6 +24,11 @@
   --ring: color-mix(in srgb, var(--primary) 18%, transparent);
   --logo-ring: #1B3668; --logo-tail: #E0A33A; --logo-tile: #0E1A33; --logo-on-tile: #EEF2FA;
   --flame-off-a: #E3E7EF; --flame-off-b: #C9D0DD; --flame-off-core: #F4F6FA;
+  /* Data visualisation: validated categorical palette (fixed order) and map/plan fills */
+  --series-1: #2a78d6; --series-2: #eb6834; --series-3: #1baf7a; --series-4: #eda100; --series-5: #e87ba4; --series-6: #008300; --series-7: #6250d6; --series-8: #e34948;
+  --map-land: #F2F0E8; --map-water: #A9CDEB; --map-water-text: #0E3A66; --map-road: #9AA3B2; --map-rail: #5B6475; --map-path: #B07A3B; --map-building: #D8C8B4; --map-housing: #E9B9A3;
+  --map-park: #BFE3B4; --map-trees: #9ACB8E; --map-tree-dot: #5E9E52; --map-field: #EFE3B0; --map-parking: #D3D7DE; --map-beach: #F6E3A8; --map-label-halo: #ffffffcc;
+  --plan-a: #E8EEF8; --plan-b: #E6F4EC; --plan-c: #FBF0DC; --plan-d: #F3E8F6; --plan-e: #EEF0F3; --plan-f: #FCE9E3;
   color-scheme: light;
 }
 [data-theme="dark"] {
@@ -47,6 +52,10 @@
   --ring: color-mix(in srgb, var(--primary) 30%, transparent);
   --logo-ring: #EEF2FA; --logo-tail: #E8B04F; --logo-tile: #1B3668; --logo-on-tile: #EEF2FA;
   --flame-off-a: #2C3A55; --flame-off-b: #233049; --flame-off-core: #3A4966;
+  --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --series-4: #c98500; --series-5: #d55181; --series-6: #0ca30c; --series-7: #9085e9; --series-8: #e66767;
+  --map-land: #1F2738; --map-water: #24476B; --map-water-text: #CFE2F7; --map-road: #6B7486; --map-rail: #A9B2C3; --map-path: #C9965A; --map-building: #5C5245; --map-housing: #7A4F44;
+  --map-park: #2F5A3A; --map-trees: #2C5234; --map-tree-dot: #4F8A58; --map-field: #5A5232; --map-parking: #3B4253; --map-beach: #6E6236; --map-label-halo: #0b1220cc;
+  --plan-a: #22324F; --plan-b: #1F3A30; --plan-c: #3D3424; --plan-d: #352842; --plan-e: #283041; --plan-f: #3F2A27;
   color-scheme: dark;
 }
 
@@ -145,18 +154,16 @@ details[open] > :not(summary) { animation: fade-up .25s var(--ease-out) both; }
 .logo .logo-tail { stroke-dasharray: 23; stroke-dashoffset: 0; transition: stroke-dashoffset .5s var(--ease-out); }
 a:hover > .logo .logo-tail { animation: draw-tail .6s var(--ease-out); }
 @keyframes draw-tail { from { stroke-dashoffset: 23; } to { stroke-dashoffset: 0; } }
-/* Streak flame: gentle sway when lit, ignition when the streak is extended */
+/* Streak flame: still by default; a slow, faint breathing of the inner light; halo only on long streaks */
 .flame .flame-outer, .flame .flame-core { transform-box: fill-box; transform-origin: 50% 100%; }
-.flame.is-lit .flame-outer { animation: flame-sway 3.2s ease-in-out infinite; }
-.flame.is-lit .flame-core { animation: flame-flicker 1.9s ease-in-out infinite; }
-.flame.is-lit .flame-glow { animation: flame-glow 3.2s ease-in-out infinite; }
-.flame.is-igniting svg { animation: flame-ignite .9s var(--ease-spring) both; }
-.flame.is-igniting .flame-glow { animation: flame-burst 1.1s var(--ease-out) both; }
-@keyframes flame-sway { 0%, 100% { transform: scale(1, 1) skewX(0deg); } 30% { transform: scale(.985, 1.035) skewX(-1.5deg); } 65% { transform: scale(1.01, .98) skewX(1.2deg); } }
-@keyframes flame-flicker { 0%, 100% { transform: scale(1, 1); opacity: 1; } 40% { transform: scale(.94, 1.08); opacity: .92; } 70% { transform: scale(1.04, .95); } }
-@keyframes flame-glow { 0%, 100% { transform: scale(1.25); opacity: .85; } 50% { transform: scale(1.4); opacity: 1; } }
-@keyframes flame-ignite { 0% { transform: scale(.35) translateY(20%); opacity: 0; filter: saturate(.3); } 55% { transform: scale(1.18); opacity: 1; } 100% { transform: scale(1); filter: none; } }
-@keyframes flame-burst { 0% { transform: scale(.4); opacity: 0; } 35% { transform: scale(2.1); opacity: 1; } 100% { transform: scale(1.3); opacity: .85; } }
+.flame.is-lit .flame-core { animation: flame-breathe 4.5s ease-in-out infinite; }
+.flame.has-glow .flame-glow { animation: flame-glow 4.5s ease-in-out infinite; }
+.flame.is-igniting svg { animation: flame-ignite .8s var(--ease-spring) both; }
+.flame.is-igniting .flame-glow { animation: flame-burst 1s var(--ease-out) both; }
+@keyframes flame-breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(.94, 1.05); } }
+@keyframes flame-glow { 0%, 100% { transform: scale(1.2); opacity: .7; } 50% { transform: scale(1.32); opacity: 1; } }
+@keyframes flame-ignite { 0% { transform: scale(.5) translateY(14%); opacity: 0; } 60% { transform: scale(1.08); opacity: 1; } 100% { transform: scale(1); } }
+@keyframes flame-burst { 0% { transform: scale(.5); opacity: 0; } 40% { transform: scale(1.7); opacity: .9; } 100% { transform: scale(1.25); opacity: .6; } }
 @keyframes rise-in { from { opacity: 0; transform: translateY(18px) scale(.96); } to { opacity: 1; transform: none; } }
 .anim-rise { animation: rise-in .45s var(--ease-spring) both; }
 .streak-card-lit { background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 9%, var(--surface)), var(--surface) 60%); }

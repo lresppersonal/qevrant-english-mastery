@@ -16,21 +16,26 @@ const LINK_LABEL = { prerequisite: "Builds on", extends: "Leads to", contrasts_w
 
 type Part = { key: string; title: string; hint: string; sections: GrammarLesson["sections"] };
 
-/** Textbook layout: every lesson is shown as parts A–H. Parts with no content are skipped. */
+/**
+ * Textbook layout in ten parts (A–J): overview → theory → formation → uses → examples → comparisons →
+ * register → mistakes → advanced applications → review and practice. Parts with no content are skipped.
+ */
 const PARTS: { key: string; title: string; hint: string; kinds: string[] }[] = [
   { key: "A", title: "Overview", hint: "What it is and why it matters", kinds: ["overview"] },
-  { key: "B", title: "Formation", hint: "Affirmative, negative, questions, short answers", kinds: ["form"] },
-  { key: "C", title: "Main uses", hint: "The core rules with examples", kinds: ["uses"] },
-  { key: "D", title: "Time expressions", hint: "Signal words and typical markers", kinds: ["time"] },
-  { key: "E", title: "Comparison", hint: "Contrasts with similar forms", kinds: ["contrasts"] },
-  { key: "F", title: "Common mistakes", hint: "Errors learners make and how to fix them", kinds: ["errors"] },
-  { key: "G", title: "Advanced usage", hint: "Nuance, style and formal register", kinds: ["advanced", "register", "pronunciation"] },
-  { key: "H", title: "Review & practice", hint: "Rule summary and exercises", kinds: ["summary"] },
+  { key: "B", title: "How it works", hint: "The logic behind the structure", kinds: ["theory"] },
+  { key: "C", title: "Formation", hint: "Patterns, forms and word order", kinds: ["form"] },
+  { key: "D", title: "Main uses", hint: "When and why to use it, with time expressions", kinds: ["uses", "time"] },
+  { key: "E", title: "Examples in context", hint: "Natural, academic and everyday examples explained", kinds: ["examples"] },
+  { key: "F", title: "Comparison", hint: "Structures learners confuse", kinds: ["contrasts"] },
+  { key: "G", title: "Register and style", hint: "Formality, emphasis and stylistic effect", kinds: ["register", "pronunciation"] },
+  { key: "H", title: "Common mistakes", hint: "Errors advanced learners make and how to fix them", kinds: ["errors"] },
+  { key: "I", title: "Advanced applications", hint: "Nuance at C1–C2", kinds: ["advanced"] },
+  { key: "J", title: "Review & practice", hint: "Rule summary and exercises with explained answers", kinds: ["summary"] },
 ];
 
 export function buildParts(lesson: GrammarLesson, hasPractice: boolean): Part[] {
   return PARTS.map((p) => ({ key: p.key, title: p.title, hint: p.hint, sections: lesson.sections.filter((s) => p.kinds.includes(s.kind)) }))
-    .filter((p) => p.sections.length > 0 || (p.key === "H" && hasPractice));
+    .filter((p) => p.sections.length > 0 || (p.key === "J" && hasPractice));
 }
 
 export function LessonView({ lesson, exercises, cycle, rules }: { lesson: GrammarLesson; exercises: Exercise[]; cycle?: CycleInfo | null; rules?: Record<string, string> }) {
@@ -135,7 +140,7 @@ export function LessonView({ lesson, exercises, cycle, rules }: { lesson: Gramma
           </ul>
         </section>
       )}
-      {p.key === "H" && exercises.length > 0 && (
+      {p.key === "J" && exercises.length > 0 && (
         <section className="card p-5 sm:p-7" aria-labelledby="h-practice">
           <h3 id="h-practice" className="mb-1 text-xl font-bold">Practice</h3>
           <p className="mb-4 text-muted">{exercises[0].instructions}</p>

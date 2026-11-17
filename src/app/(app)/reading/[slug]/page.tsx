@@ -73,6 +73,17 @@ export default async function ReadingPage({ params }: { params: Promise<{ slug: 
       ))}
 
       {text.critical.length > 0 && <CriticalThinking items={text.critical} />}
+      {text.furtherReading.length > 0 && (
+        <section className="card mt-6 p-5" aria-labelledby="h-further" data-testid="further-reading">
+          <h2 id="h-further" className="text-lg font-bold">Sources and further reading</h2>
+          <p className="mt-1 text-sm text-muted">This passage is original QEVRANT writing. The facts it reports come from the sources below; open them to read the original work.</p>
+          <ul className="mt-3 space-y-2">
+            {text.furtherReading.map((f) => (
+              <li key={f.url}><a href={f.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary underline-offset-4 hover:underline">{f.title}</a> <span className="text-sm text-muted">· {f.publisher}</span></li>
+            ))}
+          </ul>
+        </section>
+      )}
     </article>
   );
 }

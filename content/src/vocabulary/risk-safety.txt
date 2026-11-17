@@ -22,3 +22,17 @@ deteriorate | v | verb | C1 | formal | Change | to become worse | ухудшат
 file | v | verb | C1 | formal | Procedures | to officially record a complaint or claim | подавать (жалобу, иск) | She filed a complaint against the company. | file a claim; file a lawsuit; file for bankruptcy | submit; lodge | crime-law
 stumble | v | verb | B2+ | neutral | Accidents and discovery | to almost fall; (stumble on) to find by chance | спотыкаться; наткнуться | I stumbled on the stairs in the dark. | stumble across; stumble upon | trip; come across |
 welcome | adj | adjective | B2 | neutral | Reactions | pleasing and wanted | желанный | The new safety rules are a welcome change. | a welcome change; you're welcome; make welcome | pleasing |
+
+# --- 2026-11-17 expansion
+risk assessment | coll+ac | noun phrase | C1 | formal | Managing risk | a careful check of possible dangers in an activity and how to reduce them | оценка рисков | A risk assessment must be done before the trip. | carry out a risk assessment | | work-careers
+risk-averse | adj | adjective | C1 | neutral | Attitudes to risk | unwilling to take risks | не склонный к риску | Older investors tend to be more risk-averse. | | cautious | business-finance
+foolhardy | adj | adjective | C1 | formal | Attitudes to risk | taking stupid and unnecessary risks | безрассудный | Climbing without a rope was foolhardy. | foolhardy decision/attempt | reckless; rash |
+safeguard | v | verb | C1 | formal | Managing risk | to protect something from harm | защищать, охранять | New laws safeguard children's data online. | safeguard rights/interests | protect | crime-law
+fail-safe | adj | adjective | C1 | neutral | Managing risk | designed to prevent harm if something goes wrong | отказоустойчивый, надёжный | The reactor has several fail-safe systems. | fail-safe mechanism/system | foolproof | science-technology
+contingency plan | coll | noun phrase | C1 | formal | Managing risk | a plan for dealing with a possible future problem | план на случай непредвиденных обстоятельств | Every school needs a contingency plan for floods. | draw up a contingency plan | backup plan | business-finance
+mitigate risk | coll+ac | verb phrase | C1 | academic | Managing risk | to make a risk less likely or less serious | снижать риск | Diversification mitigates investment risk. | | reduce risk |
+err on the side of caution | idiom | verb phrase | C1 | neutral | Attitudes to risk | to be more careful than necessary to avoid risk | перестраховаться | I'd err on the side of caution and cancel the hike. | | play it safe |
+a recipe for disaster | idiom | noun phrase | B2+ | neutral | Attitudes to risk | something likely to lead to a bad result | верный путь к катастрофе | Mixing alcohol and driving is a recipe for disaster. | | |
+skate on thin ice | idiom | verb phrase | C1 | informal | Attitudes to risk | to do something risky that could cause trouble | рисковать, ходить по краю | You're skating on thin ice with your manager. | be skating on thin ice | |
+@family secure (adj/v); security (n); insecure (adj); insecurity (n); securely (adv)
+@distinct risk vs hazard :: A *hazard* is something that can cause harm (a wet floor). *Risk* is the likelihood that harm will actually happen. Safety work reduces risk by controlling hazards.

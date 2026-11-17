@@ -73,3 +73,17 @@ unbearably | adv | adverb | C1 | neutral | Conditions | to a degree that is too 
 up-and-coming | adj | adjective | C1 | informal | Places | becoming popular or successful | перспективный, набирающий популярность | Many artists live in this up-and-coming district. | up-and-coming area; up-and-coming artist | emerging; promising | cities-urban
 venue | n | noun | B2+ | neutral | Events | the place where an event happens | место проведения | The castle is a popular wedding venue. | music venue; change of venue; perfect venue | location; site | arts-culture
 vintage | adj | adjective | C1 | neutral | Style | old and of high quality; typical of a past period | винтажный | She found a vintage leather jacket at the market. | vintage car; vintage clothing; vintage wine | classic; retro | hobbies-leisure
+
+# --- 2026-11-17 expansion
+wanderlust | n | noun | C1 | neutral | Travel experiences | a strong desire to travel | страсть к путешествиям | Her wanderlust took her to forty countries. | | itchy feet |
+immerse yourself in | coll | verb phrase | C1 | neutral | Travel experiences | to become completely involved in a culture or activity | погрузиться в | Living with a family helps you immerse yourself in the language. | immerse yourself in the culture/language | |
+authentic | adj | adjective | B2+ | neutral | Travel experiences | real and typical of a place, not made for tourists | подлинный, аутентичный | Travellers increasingly seek authentic experiences. | authentic experience/cuisine | genuine | food-nutrition
+the travel bug | idiom | noun phrase | B2+ | informal | Travel experiences | a strong desire to travel, especially after a first trip | страсть к путешествиям | She caught the travel bug during her gap year. | catch the travel bug | wanderlust |
+bucket list | coll | noun phrase | B2 | informal | Travel experiences | a list of things you want to do before you die | список желаний (то, что нужно успеть) | Seeing the northern lights is on my bucket list. | top/on my bucket list | |
+footfall | n | noun | C1 | neutral | The tourism industry | the number of people visiting a place | посещаемость, проходимость | Footfall in the old town doubled in summer. | increase/drive footfall | visitor numbers | business-finance
+seasonal | adj | adjective | B2+ | neutral | The tourism industry | happening or needed only at certain times of the year | сезонный | Many tourism jobs are seasonal. | seasonal work/demand | | work-careers
+tourist tax | coll | noun phrase | B2+ | neutral | The tourism industry | a charge visitors pay, usually per night of accommodation | туристический налог | Venice introduced a tourist tax for day visitors. | introduce/charge a tourist tax | |
+carrying capacity | coll+ac | noun phrase | C2 | academic | The tourism industry | the maximum number of visitors a place can support without damage | допустимая рекреационная нагрузка | The island has exceeded its carrying capacity. | exceed carrying capacity | | environment
+soak up the atmosphere | idiom | verb phrase | B2+ | neutral | Travel experiences | to enjoy and experience the feeling of a place | проникнуться атмосферой | We sat in the square to soak up the atmosphere. | | |
+@family accommodate (v); accommodation (n); accommodating (adj)
+@distinct tourist vs traveller vs visitor :: *Visitor* is neutral. *Tourist* suggests sightseeing and holiday travel. *Traveller* often suggests longer, more independent journeys, and some people use it to sound less touristy.

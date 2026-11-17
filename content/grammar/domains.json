@@ -24,6 +24,11 @@
         "title": "Narrative tenses and the historic present",
         "level": "C1",
         "lesson": "narrative-tenses"
+      },
+      {
+        "title": "Stative and dynamic uses of verbs",
+        "level": "B2",
+        "lesson": "stative-and-dynamic-verbs"
       }
     ]
   },
@@ -52,6 +57,11 @@
         "title": "Will and would for certainty and assumption",
         "level": "C1",
         "lesson": "future-forms"
+      },
+      {
+        "title": "The future in the past",
+        "level": "C1",
+        "lesson": "future-in-the-past"
       }
     ]
   },
@@ -116,6 +126,11 @@
         "title": "Mixed and implied conditionals",
         "level": "C1",
         "lesson": "conditionals-and-unreal-past"
+      },
+      {
+        "title": "The subjunctive, as if, suppose and but for",
+        "level": "C1",
+        "lesson": "subjunctive-and-hypothetical-forms"
       }
     ]
   },
@@ -157,6 +172,16 @@
         "title": "Omitting words: ellipsis and substitution",
         "level": "C1",
         "lesson": "ellipsis-and-substitution"
+      },
+      {
+        "title": "Purpose and result clauses",
+        "level": "B2+",
+        "lesson": "purpose-and-result-clauses"
+      },
+      {
+        "title": "Noun clauses: that, wh- and whether",
+        "level": "B2+",
+        "lesson": "noun-clauses"
       }
     ]
   },
@@ -198,6 +223,11 @@
         "title": "Perfect and passive participle clauses in formal writing",
         "level": "C1",
         "lesson": "participle-and-reduced-clauses"
+      },
+      {
+        "title": "Verbless and absolute clauses",
+        "level": "C2",
+        "lesson": "verbless-and-absolute-clauses"
       }
     ]
   },
@@ -221,6 +251,11 @@
         "title": "Complex noun phrases",
         "level": "C1",
         "lesson": "articles-and-noun-phrases"
+      },
+      {
+        "title": "Subject–verb agreement: collective nouns, quantifiers and long subjects",
+        "level": "C1",
+        "lesson": "subject-verb-agreement"
       }
     ]
   },
@@ -239,6 +274,16 @@
         "title": "Meaning-changing verb patterns",
         "level": "C1",
         "lesson": "verb-patterns"
+      },
+      {
+        "title": "Multi-word verbs: grammar and register",
+        "level": "B2+",
+        "lesson": "multi-word-verbs"
+      },
+      {
+        "title": "Perfect and passive infinitives and -ing forms",
+        "level": "C1",
+        "lesson": "perfect-and-passive-non-finite-forms"
       }
     ]
   },
@@ -275,6 +320,11 @@
         "title": "Advanced ways of comparing",
         "level": "C1",
         "lesson": "comparison"
+      },
+      {
+        "title": "Gradability, intensifiers, adverb position and adjective order",
+        "level": "B2",
+        "lesson": "adjectives-adverbs-and-intensifiers"
       }
     ]
   },
@@ -293,6 +343,11 @@
         "title": "Inversion after negative and limiting adverbials",
         "level": "C1",
         "lesson": "inversion-and-emphasis"
+      },
+      {
+        "title": "Negation, scope and focusing adverbs",
+        "level": "C1",
+        "lesson": "negation-and-focusing"
       }
     ]
   },
@@ -311,6 +366,11 @@
         "title": "Inversion, clefting, fronting and tailing",
         "level": "C1",
         "lesson": "inversion-and-emphasis"
+      },
+      {
+        "title": "Anticipatory it and existential there",
+        "level": "C1",
+        "lesson": "anticipatory-it-and-there"
       }
     ]
   },
@@ -329,6 +389,16 @@
         "title": "Attitude and viewpoint adverbials",
         "level": "C1",
         "lesson": "linking-contrast-concession"
+      },
+      {
+        "title": "Cohesion and reference: summary nouns, such, the former",
+        "level": "C1",
+        "lesson": "cohesion-and-reference"
+      },
+      {
+        "title": "Stance adverbials and discourse markers",
+        "level": "C1",
+        "lesson": "stance-adverbials-and-discourse-markers"
       }
     ]
   },

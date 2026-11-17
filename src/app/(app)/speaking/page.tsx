@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { Suspense } from "react";
+import { SpeakingSuggestions } from "@/components/SpeakingSuggestions";
 import { speakingPrompts } from "@/lib/content";
 import { PageHeader, LevelBadge } from "@/components/ui";
 import { Mic, Sparkles } from "lucide-react";
@@ -13,7 +15,8 @@ export default function SpeakingIndex() {
     <>
       <PageHeader eyebrow="Learn" title="Speaking"
         intro="Generate a random topic, prepare, speak against the clock and get AI practice feedback on fluency, vocabulary and grammar, with an estimated IELTS-style band." />
-      <SpeakingStudio />
+      <Suspense fallback={<div className="skeleton h-64 rounded-2xl" />}><SpeakingStudio /></Suspense>
+      <SpeakingSuggestions />
       <SpeakingDevelopment />
       <h2 className="mb-3 text-xl font-bold">Guided tasks</h2>
       <ul className="grid gap-4 md:grid-cols-3">

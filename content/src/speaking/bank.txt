@@ -23,6 +23,10 @@ C2 | Is the pressure to publish harming the quality of academic research? | what
 C2 | To what extent should universities prepare students for jobs rather than for thinking? | competing purposes; examples; your reasoned view
 B2+ | Describe a skill you learned outside formal education. | how you learned it; why; how you use it
 ## education | Education
+C1 | Does standardised testing help or harm education? | what tests measure; teaching to the test; better forms of assessment
+C1 | How should universities respond to students using AI tools for assignments? | academic integrity; useful and harmful uses; possible policies
+B2+ | Describe a time you had to get to grips with something difficult very quickly. | the subject or skill; how you learned it; what helped most
+C2 | Is lifelong learning a genuine opportunity or a new pressure on workers? | the case for lifelong learning; who pays and who benefits; your view
 B2 | Talk about a teacher who influenced you. | who they were; what they did; the effect on you
 B2 | Should children have homework every day? | benefits; problems; a sensible amount
 B2+ | Is it better to study alone or with others? | advantages of each; your experience; recommendation
@@ -35,6 +39,10 @@ C2 | What is education for? Discuss competing answers to this question. | econom
 B2 | Describe your favourite way to learn new vocabulary. | the method; why it works for you; tips for others
 B2+ | Should learning a second language be compulsory from primary school? | arguments for; practical problems; your view
 ## environment | Environment
+C1 | Who should bear the cost of reaching net zero: governments, companies or individuals? | fairness; who bears the brunt; practical examples
+C1 | Is greenwashing a serious problem, or are companies genuinely changing? | examples of misleading claims; how to tell the difference; regulation
+C2 | Can shared natural resources be managed without either state control or privatisation? | local institutions; examples; limits of community management
+B2+ | Describe something you have stopped buying or using for environmental reasons. | what it was; why you changed; how difficult it was
 B2 | Describe something you do to reduce your impact on the environment. | the action; how easy it is; whether others should do it
 B2 | Talk about a natural place you would like to protect. | where it is; why it is special; what threatens it
 B2+ | Should plastic packaging be banned? | problems with plastic; alternatives; possible downsides
@@ -47,6 +55,10 @@ C2 | "Climate change is a problem of politics, not technology." Discuss. | techn
 B2 | Describe the weather and climate where you live and how it is changing. | typical weather; changes noticed; effects on daily life
 B2+ | Should people eat less meat for environmental reasons? | the evidence; cultural and personal factors; your view
 ## technology | Technology
+C1 | Who should decide how automated systems make difficult choices? | engineers; governments; the public; accountability
+C1 | Has the attention economy changed the way you read and think? | personal habits; design features; ways to regain control
+C2 | Is the digital divide becoming more or less serious? | access and skills; consequences for education and work; what could narrow it
+B2+ | Describe a new technology that had teething problems before it became useful. | what it was; the problems; how they were solved
 B2 | Describe a piece of technology you couldn't live without. | what it is; how you use it; what life would be like without it
 B2 | Talk about how you use your phone during a typical day. | main uses; time spent; whether you would like to change it
 B2+ | Should children under twelve have smartphones? | benefits; risks; rules you would suggest
@@ -59,6 +71,10 @@ C2 | Can we trust algorithms to make important decisions about people? | where t
 B2+ | Describe a time when technology let you down. | what happened; how you solved it; lessons learned
 C1 | Should personal data be treated as property that people can sell? | the idea; advantages; risks
 ## business | Business & Economics
+C1 | What makes some start-ups succeed while most fail? | luck versus strategy; survivorship bias in success stories; what founders should learn
+C1 | Should governments protect domestic industries from foreign competition? | arguments for protectionism; the knock-on effects; your view
+C2 | Is economic growth still the right goal for wealthy countries? | what GDP misses; trade-offs with wellbeing and the environment; alternatives
+B2+ | How has the cost of living changed for young people in your country? | prices and wages; how people make ends meet; possible solutions
 B2 | Describe a small business you like in your area. | what it sells; why you like it; challenges it faces
 B2 | Would you prefer to work for a large company or a small one? | advantages of each; your personality; your choice
 B2+ | Is it a good idea to start a business straight after university? | opportunities; risks; advice you would give
@@ -82,6 +98,10 @@ C2 | Is a shared national identity still possible in diverse societies? | what h
 C2 | "Culture should be free." Discuss with reference to music, film and books. | access arguments; creators' rights; sustainable models
 B2+ | Describe a change in your community in recent years. | what changed; why; whether it was positive
 ## psychology | Psychology & Behaviour
+C1 | Why do people often choose instant gratification over long-term goals, and how can they resist it? | examples from daily life; what makes waiting hard; strategies that actually work
+C1 | How much of our behaviour is shaped by the people around us? | peer pressure and conformity; positive influence; your own experience
+C2 | Is resilience something we are born with or something we can develop? | nature versus nurture; the role of setbacks; how schools or workplaces could build it
+B2+ | Describe a decision you made too quickly. What would you do differently now? | the situation; why you jumped to conclusions; what you learned
 B2 | Describe a time when you felt very proud of yourself. | the situation; what you achieved; how others reacted
 B2 | Talk about how you deal with stress. | causes of stress; what helps you; advice for others
 B2+ | Why do people find it hard to change their habits? | psychological reasons; examples; strategies that work

@@ -19,6 +19,9 @@ window.addEventListener("hashchange", () => {
 });
 export const subscribe = (f: () => void) => { subs.add(f); return () => subs.delete(f); };
 export function useRoute() { return useSyncExternalStore(subscribe, currentRoute); }
+/** The query part of the hash route; changes re-render even when the path stays the same. */
+const currentQuery = () => location.hash.split("#")[1]?.split("?")[1] ?? "";
+export function useQuery() { return useSyncExternalStore(subscribe, currentQuery); }
 export function navigate(href: string, replace = false) {
   const target = href.startsWith("/") ? `#${href}` : href;
   if (replace) { history.replaceState(null, "", target); window.dispatchEvent(new HashChangeEvent("hashchange")); }

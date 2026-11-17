@@ -125,8 +125,17 @@ test("streak flame: first activity lights it, celebration once, daily goal, pers
   await page.goto("/dashboard");
   await expect(page.getByTestId("streak")).toContainText("0 days");
   await expect(page.getByTestId("streak-chip")).toHaveAttribute("aria-label", /Study streak: 0 days/);
+  // Opening and scrolling a lesson is not enough: only completed learning counts.
   await page.goto("/grammar/relative-clauses");
   await page.mouse.wheel(0, 600);
+  await page.waitForTimeout(800);
+  await expect(page.getByTestId("streak-chip")).toHaveAttribute("aria-label", /Study streak: 0 days/);
+  // A completed activity (a logged listening session) lights the flame.
+  await page.goto("/listening");
+  await page.getByTestId("listening-list").getByRole("button", { name: "Log a session" }).first().click();
+  await page.getByLabel("Minutes listened").fill("15");
+  await page.getByRole("button", { name: /4 · Most details/ }).click();
+  await page.getByRole("button", { name: "Save session" }).click();
   await expect(page.getByTestId("streak-celebration")).toContainText("Your streak has started");
   await expect(page.getByTestId("streak-chip")).toHaveAttribute("aria-label", /Study streak: 1 day\. Today's goal: 1 of 3/);
   await page.goto("/settings");
@@ -258,7 +267,7 @@ test("every navigation item reaches a real page, with no serious accessibility v
   test.setTimeout(300_000);
   // Entrance animations fade content in; audit the settled page (reduced motion skips the fade).
   await page.emulateMedia({ reducedMotion: "reduce" });
-  const paths = ["/", "/dashboard", "/practice/smart?mode=mixed", "/writing/portfolio", "/topics", "/topics/environment", "/grammar", "/grammar/conditionals-and-unreal-past", "/grammar/practice", "/grammar/modals-and-modality/practice",
+  const paths = ["/", "/dashboard", "/practice/smart?mode=mixed", "/writing/portfolio", "/plan", "/writing/visual", "/writing/visual/task?id=line-bar-0-321", "/writing/visual/task?id=map-campus", "/writing/visual/task?id=process-glass", "/grammar/subject-verb-agreement", "/reading/the-moral-machine", "/topics", "/topics/environment", "/grammar", "/grammar/conditionals-and-unreal-past", "/grammar/practice", "/grammar/modals-and-modality/practice",
     "/vocabulary", "/vocabulary/topics/environment", "/vocabulary/scholarship", "/reading", "/reading/rewilding", "/dictionary", "/listening", "/speaking", "/speaking/grades-and-learning",
     "/writing", "/writing/gig-economy", "/review", "/library", "/progress", "/settings", "/learn", "/sign-in"];
   const problems: string[] = [];

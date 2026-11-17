@@ -81,6 +81,7 @@
     "points": "Consider: learning goals, honesty, assessment design, future workplaces."
    }
   ],
+  "furtherReading": [],
   "origin": "original"
  },
  {
@@ -175,6 +176,7 @@
     "points": "Consider: protest, apathy, responsibility, alternatives such as blank votes."
    }
   ],
+  "furtherReading": [],
   "origin": "original"
  },
  {
@@ -270,6 +272,124 @@
     "points": "Consider: identity, freedom, trust in government, misinformation."
    }
   ],
+  "furtherReading": [],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "governing-the-commons",
+  "title": "Governing the commons: why tragedy is not inevitable",
+  "standfirst": "For decades, economists assumed that shared resources were doomed to be overused unless the state or the market took control. Elinor Ostrom spent her career showing that communities often do better.",
+  "level": "C2",
+  "topics": [
+   "environment"
+  ],
+  "category": "environment",
+  "minutes": 8,
+  "paragraphs": [
+   "[A] Imagine a pasture open to every herder in a village. Each herder gains the full benefit of adding one more animal, while the cost of overgrazing is shared among everyone. The individually rational choice, repeated by each herder, leads to a collectively disastrous result: the grass is destroyed and all are ruined. This parable, popularised in a 1968 essay as \"the tragedy of the commons\", became one of the most influential ideas in environmental thinking. It seemed to explain overfishing, deforestation and the depletion of groundwater with unsettling clarity.",
+   "[B] The policy conclusion appeared equally clear. If individuals cannot be trusted to restrain themselves, shared resources must either be placed under the control of the state, which can impose limits, or divided into private property, so that each owner bears the cost of his or her own overuse. For much of the twentieth century these two options — government regulation or privatisation — framed almost every debate about natural resources.",
+   "[C] The political scientist Elinor Ostrom challenged this dichotomy not with a rival theory but with evidence. Studying fisheries, forests, irrigation systems and mountain pastures in many parts of the world, she and her colleagues documented communities that had managed shared resources sustainably, in some cases for centuries, without relying on either a central authority or private ownership. In 2009 she became the first woman to receive the Nobel Memorial Prize in Economic Sciences, awarded for her analysis of economic governance, especially the commons.",
+   "[D] What distinguished the successful cases was not altruism but institutions: rules, often unwritten, that the users themselves had devised and enforced. Ostrom identified recurring features. The boundaries of the resource and the group entitled to use it were clearly defined. Rules were adapted to local conditions and could be modified by the people affected. Users monitored one another, and sanctions for breaking the rules were graduated, starting mildly and escalating for repeat offenders. Cheap and accessible mechanisms existed for resolving disputes, and external authorities recognised the community's right to organise itself.",
+   "[E] These findings did not overturn the tragedy of the commons so much as qualify it. The original parable assumes that herders cannot communicate or make binding agreements. Where those conditions hold — among strangers, for instance, or when a resource is too vast for anyone to monitor — overuse remains a real danger. Ostrom's point was that such conditions are an empirical question rather than a law of nature, and that well-meaning interventions which replace functioning local arrangements with distant regulation or hasty privatisation can destroy the very trust on which cooperation depends.",
+   "[F] The relevance of her work has, if anything, grown. Many of the most pressing problems of the present — climate change, the oceans, even shared digital infrastructure — are commons on a global scale, where the features that made small communities successful are hardest to reproduce. Ostrom herself warned against \"panaceas\", single solutions applied regardless of context. Her legacy is less a formula than a disposition: a willingness to look at how people actually cooperate before deciding that they cannot."
+  ],
+  "exercises": [
+   "governing-the-commons-1",
+   "governing-the-commons-2",
+   "governing-the-commons-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "parable",
+    "definition": "a short story that teaches a moral or practical lesson",
+    "ru": "притча"
+   },
+   {
+    "term": "restrain",
+    "definition": "to stop someone, or yourself, from doing something",
+    "ru": "сдерживать"
+   },
+   {
+    "term": "dichotomy",
+    "definition": "a division into two opposed alternatives",
+    "ru": "дихотомия, противопоставление"
+   },
+   {
+    "term": "altruism",
+    "definition": "concern for other people's welfare without benefit to yourself",
+    "ru": "альтруизм"
+   },
+   {
+    "term": "graduated",
+    "definition": "increasing in steps or stages",
+    "ru": "постепенный, ступенчатый"
+   },
+   {
+    "term": "escalate",
+    "definition": "to become more serious or intense",
+    "ru": "обостряться, усиливаться"
+   },
+   {
+    "term": "qualify",
+    "definition": "to limit or modify a statement so it is less absolute",
+    "ru": "уточнять, ограничивать (утверждение)"
+   },
+   {
+    "term": "panacea",
+    "definition": "a solution claimed to solve all problems",
+    "ru": "панацея"
+   },
+   {
+    "term": "disposition",
+    "definition": "a natural tendency or attitude",
+    "ru": "склонность, установка"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "with unsettling clarity",
+    "meaning": "in a way that is clear but disturbing"
+   },
+   {
+    "phrase": "framed almost every debate",
+    "meaning": "defined the terms in which people discussed the issue"
+   },
+   {
+    "phrase": "not altruism but institutions",
+    "meaning": "rules, not kindness, made the difference"
+   },
+   {
+    "phrase": "an empirical question rather than a law of nature",
+    "meaning": "something to be investigated, not assumed"
+   }
+  ],
+  "critical": [
+   {
+    "question": "The writer says Ostrom's findings \"did not overturn the tragedy of the commons so much as qualify it\". Explain the distinction and why it matters.",
+    "points": "Consider: refuting vs limiting an idea; the conditions assumed in the parable; policy consequences."
+   },
+   {
+    "question": "Which of Ostrom's design features could apply to a shared resource you know (a shared kitchen, a Wikipedia page, a city park)?",
+    "points": "Consider: boundaries, monitoring, graduated sanctions, dispute resolution, local rule-making."
+   },
+   {
+    "question": "Why might global commons such as the atmosphere be harder to govern than a village pasture?",
+    "points": "Consider: scale, monitoring, number of users, enforcement, trust between states."
+   }
+  ],
+  "furtherReading": [
+   {
+    "title": "Elinor Ostrom – Facts (Prize in Economic Sciences 2009)",
+    "url": "https://www.nobelprize.org/prizes/economic-sciences/2009/ostrom/facts/",
+    "publisher": "NobelPrize.org"
+   }
+  ],
   "origin": "original"
  },
  {
@@ -363,6 +483,7 @@
     "points": "Consider: workers' jobs, enforcement, trade rules, unintended consequences."
    }
   ],
+  "furtherReading": [],
   "origin": "original"
  },
  {
@@ -455,6 +576,124 @@
    {
     "question": "How might university life increase or reduce loneliness for students?",
     "points": "Consider: moving away from home, clubs, accommodation, online study."
+   }
+  ],
+  "furtherReading": [],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "measuring-what-matters",
+  "title": "Measuring what matters: the case for looking beyond GDP",
+  "standfirst": "Gross domestic product is the most watched number in economics. Its critics argue that it was never meant to measure how well people live.",
+  "level": "C1",
+  "topics": [
+   "economics-globalisation"
+  ],
+  "category": "economics-globalisation",
+  "minutes": 7,
+  "paragraphs": [
+   "[A] When politicians boast about a growing economy, they are almost always referring to gross domestic product: the total value of goods and services produced in a country over a period of time. GDP is an extraordinarily useful statistic. It allows comparisons between countries and across decades, and changes in it signal booms and recessions. But it is also routinely treated as something it was never designed to be: a measure of national well-being.",
+   "[B] The limitations are well known to economists. GDP counts market activity, so unpaid work such as caring for children or elderly relatives does not appear in it, however valuable it is. It records spending without asking what the spending is for: rebuilding after a flood or treating the victims of pollution adds to GDP just as building a new school does. It says nothing about how income is distributed, so an economy can grow while most households see no improvement. And it treats the depletion of forests, fisheries and fossil fuels as income rather than as the running down of a stock of natural wealth.",
+   "[C] None of these criticisms is new. Robert F. Kennedy famously criticised the measure in a 1968 speech, and the debate gained official momentum when the French government set up a commission led by the economists Joseph Stiglitz, Amartya Sen and Jean-Paul Fitoussi. Its 2009 report argued that over-reliance on GDP had given policymakers a distorted picture, and recommended a broader \"dashboard\" of indicators covering material living standards, health, education, inequality, security, social connections, the environment and people's own evaluations of their lives.",
+   "[D] Since then, the \"beyond GDP\" agenda has moved from academic discussion into official statistics. The OECD launched its Better Life Initiative, and a follow-up report by an expert group linked to the original commission argued that focusing on the wrong indicators had contributed to inadequate policy responses to the 2008 financial crisis. National statistical offices now publish measures of well-being alongside traditional economic data, and the United Nations' Sustainable Development Goals set targets that go well beyond output.",
+   "[E] Critics of the dashboard approach raise practical objections. A single number is easy to communicate and hard to manipulate; dozens of indicators can be selectively quoted, and governments may highlight whichever ones look favourable. Combining very different dimensions — life expectancy, air quality, trust in institutions — into a single index requires value judgements about their relative importance, and reasonable people disagree. Subjective measures such as life satisfaction may also be influenced by culture and by how questions are asked.",
+   "[F] The defenders of broader measurement rarely argue that GDP should be abolished. Their point is about attention. As Stiglitz has put it, what we measure affects what we do. If a government is judged mainly by growth, it will pursue growth, even when the costs fall on health, nature or future generations. A richer set of indicators cannot settle political arguments about what matters most, but it can ensure that those arguments are conducted with the full picture in view."
+  ],
+  "exercises": [
+   "measuring-what-matters-1",
+   "measuring-what-matters-2",
+   "measuring-what-matters-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "boast",
+    "definition": "to talk proudly about your achievements",
+    "ru": "хвастаться"
+   },
+   {
+    "term": "routinely",
+    "definition": "regularly, as a normal practice",
+    "ru": "обычно, как правило"
+   },
+   {
+    "term": "depletion",
+    "definition": "the reduction of a supply of something",
+    "ru": "истощение"
+   },
+   {
+    "term": "running down",
+    "definition": "gradually reducing",
+    "ru": "сокращение, исчерпание"
+   },
+   {
+    "term": "momentum",
+    "definition": "the force that keeps something developing",
+    "ru": "импульс, движущая сила"
+   },
+   {
+    "term": "over-reliance",
+    "definition": "depending on something too much",
+    "ru": "чрезмерная зависимость"
+   },
+   {
+    "term": "dashboard",
+    "definition": "a set of indicators shown together",
+    "ru": "панель показателей"
+   },
+   {
+    "term": "value judgement",
+    "definition": "a decision about what is good or important, based on personal values",
+    "ru": "оценочное суждение"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "it was never designed to be",
+    "meaning": "it was not created for this purpose"
+   },
+   {
+    "phrase": "gained official momentum",
+    "meaning": "started to be taken seriously by governments"
+   },
+   {
+    "phrase": "moved from academic discussion into official statistics",
+    "meaning": "became part of what governments actually measure"
+   },
+   {
+    "phrase": "with the full picture in view",
+    "meaning": "considering all the relevant information"
+   }
+  ],
+  "critical": [
+   {
+    "question": "How does the writer present the opposing view in paragraph E? Is it treated fairly?",
+    "points": "Consider: the specific objections listed, whether the writer answers them in F, and the balance of the text."
+   },
+   {
+    "question": "Which three indicators would you choose to judge whether your country is doing well, and why?",
+    "points": "Consider: health, inequality, environment, trust, education; data availability; how each could be manipulated."
+   },
+   {
+    "question": "Explain the difference between a \"flow\" (income) and a \"stock\" (wealth) using the example of a forest.",
+    "points": "Consider: timber sold this year vs the remaining forest; sustainability."
+   }
+  ],
+  "furtherReading": [
+   {
+    "title": "Beyond GDP: Measuring What Counts for Economic and Social Performance",
+    "url": "https://www.oecd.org/en/publications/beyond-gdp_9789264307292-en/full-report/component-2",
+    "publisher": "OECD"
+   },
+   {
+    "title": "Beyond GDP: international efforts",
+    "url": "https://joint-research-centre.ec.europa.eu/projects-and-activities/beyond-gdp-delivering-sustainable-and-inclusive-wellbeing/international-efforts-beyond-gdp_en",
+    "publisher": "European Commission Joint Research Centre"
    }
   ],
   "origin": "original"
@@ -561,6 +800,120 @@
     "points": "Think about farming history, forests, rivers and how they have changed."
    }
   ],
+  "furtherReading": [],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "second-lives-for-old-buildings",
+  "title": "Second lives: why cities are reusing old buildings",
+  "standfirst": "Demolishing an old building and starting again used to be the obvious choice. Increasingly, architects argue that the greenest building is the one that already exists.",
+  "level": "B2+",
+  "topics": [
+   "architecture-design"
+  ],
+  "category": "architecture-design",
+  "minutes": 6,
+  "paragraphs": [
+   "[A] For most of the twentieth century, cities treated old industrial buildings as obstacles. Factories, warehouses and power stations that had lost their original purpose were usually demolished, and something new was built in their place. Today the opposite approach, known as adaptive reuse, is becoming mainstream. Instead of knocking a building down, designers keep its structure and give it a new function: a mill becomes flats, a railway shed becomes a market, a church becomes a library.",
+   "[B] One of the best-known examples is in London. Bankside Power Station, designed by Sir Giles Gilbert Scott and built in stages after the Second World War, stopped generating electricity in 1981 and stood empty for years, regularly threatened with demolition. In the mid-1990s the Tate gallery chose it as the home for a new museum of modern art, and the Swiss architects Herzog & de Meuron converted it. Tate Modern opened in 2000. The huge turbine hall, once filled with machinery, became a public space for large installations, and the building's industrial character became part of its appeal rather than something to hide.",
+   "[C] The environmental argument for reuse is simple but often overlooked. When we think about the carbon footprint of a building, we usually think about the energy needed to heat, cool and light it. However, a large share of a building's lifetime emissions comes from producing materials such as cement and steel and from construction itself. This so-called embodied carbon is released before anyone moves in. Demolishing a sound structure throws that investment away and creates waste, while a new building must \"pay back\" its own embodied carbon over many years before it becomes more efficient than the one it replaced.",
+   "[D] There are social reasons, too. Familiar buildings give neighbourhoods a sense of continuity and identity. Residents who have watched a local landmark decay often feel strongly about what happens to it, and successful projects frequently start with community campaigns. Reused buildings can also offer qualities that are expensive to create from scratch: high ceilings, thick walls, large windows and generous spaces that suit studios, schools and workplaces.",
+   "[E] Adaptive reuse is not always straightforward, however. Old buildings may contain hazardous materials, fail modern fire and accessibility standards, or be poorly insulated. Converting them can be technically complex and, in some cases, more expensive than building new. There is also the question of what to keep. Designers must decide which features carry the building's character and which can be changed, and conservation rules may limit their choices. Critics point out that celebrated conversions sometimes attract wealthier newcomers, contributing to rising rents in surrounding areas.",
+   "[F] Despite these challenges, many architects now argue that demolition should be the last option rather than the first. Some cities ask developers to justify why an existing building cannot be adapted before permission to demolish it is granted. The question is shifting from \"Is this building worth saving?\" to \"Can we afford not to save it?\" For a profession under pressure to cut emissions, the most sustainable material may be the one that is already standing."
+  ],
+  "exercises": [
+   "second-lives-for-old-buildings-1",
+   "second-lives-for-old-buildings-2",
+   "second-lives-for-old-buildings-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "adaptive reuse",
+    "definition": "giving an old building a new function while keeping its structure",
+    "ru": "приспособление (адаптивное повторное использование) зданий"
+   },
+   {
+    "term": "obstacle",
+    "definition": "something that blocks progress",
+    "ru": "препятствие"
+   },
+   {
+    "term": "demolition",
+    "definition": "the act of knocking down a building",
+    "ru": "снос"
+   },
+   {
+    "term": "embodied carbon",
+    "definition": "the emissions caused by producing materials and constructing a building",
+    "ru": "воплощённый углерод (выбросы при производстве и строительстве)"
+   },
+   {
+    "term": "continuity",
+    "definition": "the state of continuing without sudden change",
+    "ru": "преемственность, непрерывность"
+   },
+   {
+    "term": "hazardous",
+    "definition": "dangerous, especially to health",
+    "ru": "опасный"
+   },
+   {
+    "term": "conservation",
+    "definition": "protecting buildings or nature from damage or change",
+    "ru": "охрана, сохранение"
+   },
+   {
+    "term": "generous",
+    "definition": "(of space) larger than usual",
+    "ru": "просторный, щедрый"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "becoming mainstream",
+    "meaning": "becoming normal and widely accepted"
+   },
+   {
+    "phrase": "knocking a building down",
+    "meaning": "demolishing a building"
+   },
+   {
+    "phrase": "pay back its own embodied carbon",
+    "meaning": "save enough energy over time to compensate for the emissions caused by building it"
+   },
+   {
+    "phrase": "the last option rather than the first",
+    "meaning": "something to do only if nothing else works"
+   }
+  ],
+  "critical": [
+   {
+    "question": "What is the writer's position on adaptive reuse? Which words in paragraph F show it?",
+    "points": "Consider: \"the last option rather than the first\", the rhetorical question \"Can we afford not to save it?\", and how the writer acknowledges problems in paragraph E before concluding."
+   },
+   {
+    "question": "Think of a disused building in your city. What new use would you propose, and what obstacles would you expect?",
+    "points": "Consider: structure, location, safety rules, cost, who would benefit, and who might be displaced."
+   }
+  ],
+  "furtherReading": [
+   {
+    "title": "Constructing Tate Modern",
+    "url": "https://www.tate.org.uk/about-us/projects/constructing-tate-modern",
+    "publisher": "Tate"
+   },
+   {
+    "title": "Bankside Power Station, now Tate Modern",
+    "url": "https://c20society.org.uk/?p=3329",
+    "publisher": "The Twentieth Century Society"
+   }
+  ],
   "origin": "original"
  },
  {
@@ -654,6 +1007,7 @@
     "points": "Consider: exam systems that reward short-term results, procrastination, the feeling of effort, deadlines."
    }
   ],
+  "furtherReading": [],
   "origin": "original"
  },
  {
@@ -748,6 +1102,7 @@
     "points": "Consider: who benefits, inequality, consumer demand, well-being."
    }
   ],
+  "furtherReading": [],
   "origin": "original"
  },
  {
@@ -838,6 +1193,817 @@
    {
     "question": "Should governments tax meat to reduce emissions?",
     "points": "Consider: fairness, farmers, health, alternatives, public acceptance."
+   }
+  ],
+  "furtherReading": [],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "the-marshmallow-test-revisited",
+  "title": "The marshmallow test revisited: what waiting really predicts",
+  "standfirst": "A famous experiment seemed to show that a child's ability to wait for a treat shaped their future. A larger study told a more complicated story.",
+  "level": "C1",
+  "topics": [
+   "psychology-behaviour"
+  ],
+  "category": "psychology-behaviour",
+  "minutes": 7,
+  "paragraphs": [
+   "[A] Few psychology experiments are as well known as the \"marshmallow test\". In studies run at Stanford University from the 1960s, the psychologist Walter Mischel and his colleagues offered young children a choice: they could eat one treat immediately, or wait alone in a room for several minutes and receive two. Some children ate the treat almost at once; others sang, covered their eyes or turned away to resist temptation. Follow-up studies years later reported that children who had waited longer tended to have better outcomes as adolescents, including higher test scores.",
+   "[B] The findings became a cultural phenomenon. They were cited in books on success, in parenting advice and in school programmes designed to teach self-control. The appeal was obvious. The idea that a single, simple measure of willpower in early childhood could predict later achievement suggested a clear lesson: teach children to delay gratification, and their futures will improve.",
+   "[C] Scientists, however, had long been aware of the limitations of the original follow-ups. The samples were small and drawn largely from the children of staff and students at a prestigious university, a group far from representative of the wider population. In 2018, Tyler Watts, Greg Duncan and Haonan Quan published a conceptual replication in the journal Psychological Science. Using data from a much larger and more diverse group of children, they examined whether the ability to wait at around the age of four predicted achievement at fifteen.",
+   "[D] They did find an association, but it was considerably weaker than earlier work had suggested. More importantly, once they took into account factors such as family background, early cognitive ability and the home environment, the link shrank substantially. In other words, a child's ability to wait seemed to reflect, at least in part, the circumstances in which the child was growing up. A child from a household where promises are reliably kept has good reason to trust that a second treat will arrive; a child from a less predictable environment may reasonably take what is on offer now.",
+   "[E] It would be a mistake to conclude that self-control is irrelevant. Other research continues to find links between self-regulation and later outcomes, and some replications have reported that the marshmallow test retains a degree of predictive value. The more modest lesson concerns interpretation. A behaviour that looks like a fixed personal trait may partly be a rational response to the environment. Interventions that focus only on training individual willpower may therefore have less effect than those that address the conditions shaping children's choices.",
+   "[F] The story of the marshmallow test also illustrates how science is supposed to work. A striking result attracts attention; later researchers test it with better data; the conclusion is refined. The problem lies less with the original scientists than with the way their findings travelled beyond the laboratory, losing their caveats along the way. By the time the result reached popular culture, a cautious correlation had become a confident law of human destiny."
+  ],
+  "exercises": [
+   "the-marshmallow-test-revisited-1",
+   "the-marshmallow-test-revisited-2"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "resist temptation",
+    "definition": "to stop yourself from doing something you want to do",
+    "ru": "устоять перед соблазном"
+   },
+   {
+    "term": "delay gratification",
+    "definition": "to wait for a bigger reward instead of taking a smaller one now",
+    "ru": "откладывать удовольствие"
+   },
+   {
+    "term": "representative",
+    "definition": "typical of a larger group",
+    "ru": "репрезентативный"
+   },
+   {
+    "term": "conceptual replication",
+    "definition": "a study testing the same idea with different methods or participants",
+    "ru": "концептуальная репликация"
+   },
+   {
+    "term": "association",
+    "definition": "a statistical link between two things",
+    "ru": "связь, корреляция"
+   },
+   {
+    "term": "take into account",
+    "definition": "to consider something when judging",
+    "ru": "учитывать"
+   },
+   {
+    "term": "caveat",
+    "definition": "a warning that a statement has limits",
+    "ru": "оговорка"
+   },
+   {
+    "term": "refine",
+    "definition": "to improve something by making small changes",
+    "ru": "уточнять, совершенствовать"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "a cultural phenomenon",
+    "meaning": "something that becomes widely known and discussed in society"
+   },
+   {
+    "phrase": "far from representative of",
+    "meaning": "very different from"
+   },
+   {
+    "phrase": "the link shrank substantially",
+    "meaning": "the connection became much weaker"
+   },
+   {
+    "phrase": "losing their caveats along the way",
+    "meaning": "the warnings and limitations disappeared as the story spread"
+   }
+  ],
+  "critical": [
+   {
+    "question": "How does the writer avoid overstating the 2018 findings? Find at least two hedging expressions.",
+    "points": "Consider: \"at least in part\", \"considerably weaker\", \"it would be a mistake to conclude\", \"a degree of predictive value\", \"more modest lesson\"."
+   },
+   {
+    "question": "What policy implications follow if waiting reflects the environment rather than a fixed trait?",
+    "points": "Consider: training willpower vs improving stability, reliability of adults, poverty, school routines."
+   },
+   {
+    "question": "Think of another famous finding you have heard repeated in the media. What questions would you ask about its sample and replications?",
+    "points": "Consider: sample size, who was studied, effect size, later replications, how the claim changed in retelling."
+   }
+  ],
+  "furtherReading": [
+   {
+    "title": "Revisiting the Marshmallow Test (Watts, Duncan & Quan, 2018)",
+    "url": "https://doi.org/10.1177/0956797618761661",
+    "publisher": "Psychological Science"
+   },
+   {
+    "title": "The marshmallow study revisited",
+    "url": "https://www.socialsciencespace.com/2020/08/the-marshmallow-study-revisited-does-our-willpower-increase-our-likelihood-of-achievement/",
+    "publisher": "Social Science Space"
+   }
+  ],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "the-moral-machine",
+  "title": "The moral machine: can ethics be crowdsourced?",
+  "standfirst": "An online experiment collected tens of millions of decisions about who a self-driving car should save in an unavoidable crash. Its results are fascinating. Whether they should guide engineers is another matter.",
+  "level": "C2",
+  "topics": [
+   "science-technology"
+  ],
+  "category": "science-technology",
+  "minutes": 8,
+  "paragraphs": [
+   "[A] Philosophers have long used the \"trolley problem\" to probe moral intuitions. A runaway tram will kill five people unless you divert it onto a track where it will kill one. Should you intervene? For decades the scenario was a classroom puzzle. The prospect of autonomous vehicles has turned it, at least in the eyes of some researchers, into an engineering question: if a crash is unavoidable, whom should a self-driving car be programmed to protect?",
+   "[B] To explore public attitudes, a team led by researchers at the MIT Media Lab built the Moral Machine, a multilingual online platform that presented visitors with dilemmas of this kind. Should the car swerve to spare pedestrians at the cost of its passengers? Should it favour the young over the old, the many over the few, people crossing legally over those crossing against the signal? The platform gathered some forty million decisions from millions of participants in more than two hundred countries and territories, and the results were published in Nature in 2018.",
+   "[C] Some preferences were remarkably consistent across the world: respondents tended to favour sparing humans over animals, more lives over fewer, and younger people over older ones. Other preferences varied considerably. The researchers identified broad clusters of countries whose answers differed in systematic ways, and found that some of these differences correlated with cultural and institutional characteristics, such as the strength of the rule of law or the degree of economic inequality.",
+   "[D] The study's authors presented their findings as a contribution to public debate, not as a set of instructions. Even so, the experiment raises difficult questions about the relationship between what people prefer and what is right. A majority preference is not, in itself, a moral justification; history offers many examples of widely shared views that are now regarded as unjust. Some preferences revealed by such surveys — for instance, valuing certain categories of people over others — would conflict with principles of equal treatment embedded in law in many countries. Germany's ethics commission on automated driving, for example, recommended that systems should not distinguish between people on the basis of personal features such as age.",
+   "[E] Critics also question whether the scenarios capture anything real. In practice, a vehicle facing an emergency rarely has certain knowledge of the outcomes of each option; it must act under uncertainty, in fractions of a second, with imperfect sensors. Engineers point out that most safety gains come not from resolving dramatic dilemmas but from avoiding them altogether — through cautious speeds, better braking and more reliable detection. On this view, the trolley problem is a distraction that makes machine ethics seem more exotic, and more tractable, than it is.",
+   "[F] Yet the experiment's value may lie precisely in what it exposes. Automated systems will embody choices about risk, whether or not those choices are made explicit. Somebody decides how cautiously a car should drive near a school, how it should balance the safety of its occupants against that of cyclists, and who bears responsibility when it fails. Crowdsourcing cannot settle these questions. What it can do is show how differently people answer them, and remind us that leaving the decisions to engineers alone is itself a moral choice."
+  ],
+  "exercises": [
+   "the-moral-machine-1",
+   "the-moral-machine-2",
+   "the-moral-machine-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "probe",
+    "definition": "to examine or investigate something closely",
+    "ru": "исследовать, зондировать"
+   },
+   {
+    "term": "intuition",
+    "definition": "a feeling that something is true without conscious reasoning",
+    "ru": "интуиция"
+   },
+   {
+    "term": "divert",
+    "definition": "to change the direction of something",
+    "ru": "перенаправлять"
+   },
+   {
+    "term": "dilemma",
+    "definition": "a situation requiring a difficult choice between options",
+    "ru": "дилемма"
+   },
+   {
+    "term": "cluster",
+    "definition": "a group of similar things close together",
+    "ru": "кластер, группа"
+   },
+   {
+    "term": "justification",
+    "definition": "a good reason for doing something",
+    "ru": "обоснование, оправдание"
+   },
+   {
+    "term": "under uncertainty",
+    "definition": "without knowing what will happen",
+    "ru": "в условиях неопределённости"
+   },
+   {
+    "term": "tractable",
+    "definition": "easy to deal with or solve",
+    "ru": "поддающийся решению"
+   },
+   {
+    "term": "embody",
+    "definition": "to express or represent an idea in a concrete form",
+    "ru": "воплощать"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "a classroom puzzle",
+    "meaning": "an abstract problem used for teaching"
+   },
+   {
+    "phrase": "at the cost of",
+    "meaning": "with the loss or sacrifice of"
+   },
+   {
+    "phrase": "not, in itself, a moral justification",
+    "meaning": "not enough on its own to make something right"
+   },
+   {
+    "phrase": "leaving the decisions to engineers alone is itself a moral choice",
+    "meaning": "not deciding publicly is also a decision with ethical consequences"
+   }
+  ],
+  "critical": [
+   {
+    "question": "Distinguish between descriptive and normative claims in this text. Which sentences describe what people prefer, and which argue about what is right?",
+    "points": "Consider: paragraphs B–C (descriptive) vs D and F (normative); why mixing them is risky."
+   },
+   {
+    "question": "The writer presents engineers' criticism in paragraph E. Is the trolley problem really a \"distraction\"?",
+    "points": "Consider: rare vs common situations, value of making assumptions explicit, public trust."
+   },
+   {
+    "question": "Who should decide how automated systems balance risks — engineers, governments, the public, or courts? Justify your answer.",
+    "points": "Consider: expertise, democratic legitimacy, accountability, speed of innovation."
+   }
+  ],
+  "furtherReading": [
+   {
+    "title": "The Moral Machine experiment (Awad et al., 2018)",
+    "url": "https://www.media.mit.edu/publications/the-moral-machine-experiment",
+    "publisher": "MIT Media Lab"
+   },
+   {
+    "title": "How should autonomous vehicles be programmed?",
+    "url": "https://www.sciencedaily.com/releases/2018/10/181024131501.htm",
+    "publisher": "ScienceDaily"
+   }
+  ],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "the-planes-that-came-back",
+  "title": "The planes that came back: survivorship bias in business advice",
+  "standfirst": "Success stories are everywhere, and most of them teach the wrong lesson. A wartime puzzle explains why.",
+  "level": "B2+",
+  "topics": [
+   "business-finance"
+  ],
+  "category": "business-finance",
+  "minutes": 6,
+  "paragraphs": [
+   "[A] During the Second World War, military planners faced a difficult question. Bombers returning from missions were full of bullet holes, and adding armour could save lives. But armour is heavy, so it could not be added everywhere. The obvious solution was to reinforce the areas where the returning aircraft had been hit most often. A statistician called Abraham Wald, working for a research group in New York, is widely credited with pointing out the flaw in this reasoning.",
+   "[B] The planes being examined were only the ones that had survived. Aircraft hit in other places, such as the engines, had not come back at all, so their damage never appeared in the data. The holes on the returning planes showed where a plane could be hit and still fly home. The armour, Wald argued, should go where the survivors had no holes. The story is often simplified in retelling, but the principle it illustrates has a name: survivorship bias, the error of drawing conclusions only from cases that made it through a selection process.",
+   "[C] Business advice is particularly vulnerable to this error. Bookshops are full of biographies of successful founders, and online articles analyse the morning routines of billionaires. The message is usually that their habits explain their success: they took bold risks, dropped out of university, or trusted their instincts. What these stories leave out is the much larger group of people who did exactly the same things and failed. Their companies closed quietly, and nobody wrote a book about them.",
+   "[D] Once you notice the bias, it appears everywhere. If we study only companies that have lasted a hundred years, we may conclude that their culture made them resilient, without knowing whether many failed firms had the same culture. Investment funds that performed badly are often closed or merged, so the average performance of the funds that remain looks better than the true average. Even the belief that old buildings were \"built to last\" may partly reflect the fact that badly built ones have already been demolished.",
+   "[E] None of this means that successful people have nothing to teach us. The problem is the method, not the source. To learn what causes success, we need to compare winners with losers who started from similar positions. Researchers try to do this by following a whole group over time, including those who drop out, rather than looking backwards from the end. In practical terms, it means asking an awkward question whenever we hear an inspiring story: how many people did the same thing and are not here to tell us about it?",
+   "[F] That question is uncomfortable because it removes some of the magic from success. It suggests that luck, timing and starting conditions matter more than many stories admit. But it also offers a kind of protection. A founder who understands survivorship bias is less likely to bet everything on a strategy simply because it worked for someone famous, and more likely to look for evidence that includes the failures."
+  ],
+  "exercises": [
+   "the-planes-that-came-back-1",
+   "the-planes-that-came-back-2"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "reinforce",
+    "definition": "to make something stronger by adding material or support",
+    "ru": "укреплять, усиливать"
+   },
+   {
+    "term": "flaw",
+    "definition": "a mistake or weakness in a plan or argument",
+    "ru": "изъян, недостаток"
+   },
+   {
+    "term": "survivorship bias",
+    "definition": "the error of drawing conclusions only from cases that survived a selection process",
+    "ru": "ошибка выжившего"
+   },
+   {
+    "term": "selection process",
+    "definition": "a way of choosing which cases are included and which are excluded",
+    "ru": "процесс отбора"
+   },
+   {
+    "term": "vulnerable to",
+    "definition": "easily affected or harmed by",
+    "ru": "уязвимый для"
+   },
+   {
+    "term": "resilient",
+    "definition": "able to recover from difficulties",
+    "ru": "устойчивый, жизнестойкий"
+   },
+   {
+    "term": "merge",
+    "definition": "to combine two organisations into one",
+    "ru": "сливаться, объединяться"
+   },
+   {
+    "term": "awkward",
+    "definition": "causing difficulty or embarrassment",
+    "ru": "неудобный, неловкий"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "widely credited with",
+    "meaning": "generally believed to be responsible for"
+   },
+   {
+    "phrase": "made it through",
+    "meaning": "survived or passed"
+   },
+   {
+    "phrase": "the problem is the method, not the source",
+    "meaning": "the people are not wrong to share; our way of learning from them is wrong"
+   },
+   {
+    "phrase": "bet everything on",
+    "meaning": "risk all your resources on one option"
+   }
+  ],
+  "critical": [
+   {
+    "question": "Identify the writer's main argument and the evidence used to support it. Is the evidence convincing?",
+    "points": "Consider: the bomber example (is it proof or an illustration?), the examples in paragraph D, and the absence of statistics."
+   },
+   {
+    "question": "Find a popular piece of advice (\"successful people wake up at 5 a.m.\") and explain how survivorship bias could distort it. How could the claim be tested properly?",
+    "points": "Consider: comparison groups, people who followed the advice and failed, starting conditions, and following a group over time."
+   },
+   {
+    "question": "What does the writer imply about luck in paragraph F, and why might readers resist this idea?",
+    "points": "Consider: the appeal of control, meritocracy, and motivation."
+   }
+  ],
+  "furtherReading": [
+   {
+    "title": "Survivorship bias and Abraham Wald (overview with sources)",
+    "url": "https://sofrep.com/news/a-mathematicians-war-how-abraham-wald-helped-win-world-war-ii-without-ever-firing-a-shot",
+    "publisher": "SOFREP"
+   }
+  ],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "the-power-to-attract",
+  "title": "The power to attract: soft power in international relations",
+  "standfirst": "Armies and economies are not the only sources of influence. A concept coined at the end of the Cold War asks why some countries get what they want simply by being admired — and whether that is really power at all.",
+  "level": "C2",
+  "topics": [
+   "society-politics"
+  ],
+  "category": "society-politics",
+  "minutes": 8,
+  "paragraphs": [
+   "[A] Power, in its most familiar form, is the ability to make others do what they would not otherwise do. States have traditionally exercised it through coercion — the threat or use of force — and through inducement, such as trade deals, aid and sanctions. At the end of the Cold War, the Harvard political scientist Joseph Nye argued that this picture was incomplete. There was a third way to obtain the outcomes one wants: to make others want the same outcomes. He called it soft power.",
+   "[B] Soft power, in Nye's account, rests on attraction rather than pressure. Its resources are a country's culture, where others find it appealing; its political values, when it lives up to them at home and abroad; and its foreign policies, when others regard them as legitimate. A state whose universities draw students from around the world, whose films and music are widely enjoyed, and whose institutions are admired may find that other governments and publics are predisposed to cooperate with it, without being bribed or threatened.",
+   "[C] The concept proved enormously influential. Governments that had never used the phrase began to talk about \"nation branding\", cultural diplomacy and global rankings of soft power. Scholarship programmes, international broadcasting, film industries and even national football teams were reframed as strategic assets. In one sense this was a vindication of Nye's argument; in another, it threatened to empty the concept of meaning. If everything that makes a country look good counts as soft power, the term risks becoming a synonym for reputation.",
+   "[D] Critics raise deeper objections. First, attraction is difficult to measure and harder still to link to specific outcomes. Admiring a country's music does not necessarily mean supporting its foreign policy; millions of people consume the culture of states whose governments they distrust. Second, much of a country's appeal lies outside the control of its government. Popular culture, independent universities and civil society generate attraction precisely because they are not instruments of the state; once they are openly deployed as tools of policy, they may lose the credibility that made them attractive. Nye himself acknowledged that soft power is harder for governments to wield than hard power, because so many of its resources are beyond their direct command.",
+   "[E] A further complication is that soft power can be squandered quickly. Policies perceived as hypocritical — preaching human rights while violating them, or championing free trade while practising protectionism — erode the very legitimacy on which attraction depends. In an age of instant global media, the gap between a country's professed values and its conduct is visible to audiences everywhere, and credibility, as Nye later observed, becomes the scarcest resource.",
+   "[F] None of this makes the concept useless. Its enduring value lies in drawing attention to the fact that legitimacy affects the cost of achieving one's goals. A state that is trusted needs fewer threats and fewer payments to gain cooperation. Soft power is best understood not as a separate instrument, to be used instead of military or economic strength, but as a condition that makes all forms of power cheaper — or, when it is lost, considerably more expensive."
+  ],
+  "exercises": [
+   "the-power-to-attract-1",
+   "the-power-to-attract-2"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "coercion",
+    "definition": "the use of force or threats to make someone do something",
+    "ru": "принуждение"
+   },
+   {
+    "term": "inducement",
+    "definition": "something that persuades someone to act, such as a reward",
+    "ru": "стимул, побуждение"
+   },
+   {
+    "term": "legitimate",
+    "definition": "considered fair, acceptable or lawful",
+    "ru": "законный, легитимный"
+   },
+   {
+    "term": "predisposed to",
+    "definition": "inclined in advance to act in a particular way",
+    "ru": "склонный, расположенный к"
+   },
+   {
+    "term": "vindication",
+    "definition": "proof that someone was right",
+    "ru": "подтверждение правоты, оправдание"
+   },
+   {
+    "term": "wield",
+    "definition": "to have and use power or influence",
+    "ru": "обладать, применять (власть)"
+   },
+   {
+    "term": "squander",
+    "definition": "to waste something valuable",
+    "ru": "растрачивать впустую"
+   },
+   {
+    "term": "hypocritical",
+    "definition": "claiming to have standards you do not actually follow",
+    "ru": "лицемерный"
+   },
+   {
+    "term": "professed",
+    "definition": "claimed openly, though not necessarily true",
+    "ru": "декларируемый, провозглашённый"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "lives up to them",
+    "meaning": "behaves according to its own principles"
+   },
+   {
+    "phrase": "empty the concept of meaning",
+    "meaning": "make the idea so broad that it no longer means anything specific"
+   },
+   {
+    "phrase": "beyond their direct command",
+    "meaning": "not under their control"
+   },
+   {
+    "phrase": "makes all forms of power cheaper",
+    "meaning": "reduces the cost of achieving goals by any means"
+   }
+  ],
+  "critical": [
+   {
+    "question": "Trace the structure of the argument: definition, influence, critique, conclusion. Where does the writer's own position become clear?",
+    "points": "Consider: paragraph C (\"in one sense... in another\"), the use of \"critics raise deeper objections\", and the evaluative language in F."
+   },
+   {
+    "question": "Choose a country and assess its soft power using Nye's three resources. What could undermine it?",
+    "points": "Consider: culture, values at home and abroad, legitimacy of foreign policy, contradictions visible in the media."
+   },
+   {
+    "question": "Is \"being admired\" really a form of power, or only a form of reputation? Argue both sides.",
+    "points": "Consider: measurable outcomes, cost of cooperation, voluntary vs forced compliance, definitions of power."
+   }
+  ],
+  "furtherReading": [
+   {
+    "title": "Soft Power (Joseph S. Nye Jr., 1990)",
+    "url": "https://foreignpolicy.com/1990/09/01/soft-power-foreign-policy-magazine-joseph-nye/",
+    "publisher": "Foreign Policy"
+   }
+  ],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "the-price-of-attention",
+  "title": "The price of attention: who profits when we keep scrolling?",
+  "standfirst": "More than fifty years ago an economist warned that a wealth of information would create a poverty of attention. The digital economy has turned his warning into a business model.",
+  "level": "C1",
+  "topics": [
+   "communication-media"
+  ],
+  "category": "communication-media",
+  "minutes": 7,
+  "paragraphs": [
+   "[A] In 1971, long before smartphones or social networks, the economist and cognitive scientist Herbert Simon made an observation that now seems prophetic. In an information-rich world, he argued, information consumes something: the attention of its recipients. A wealth of information therefore creates a poverty of attention. The design problem of the future, Simon suggested, would not be how to supply more information, but how to help people decide what to ignore.",
+   "[B] Half a century later, the scarcity Simon described has become the basis of an entire economy. Many of the most widely used digital services are free at the point of use. Their revenue comes from advertising, and advertising pays for attention: the more time users spend on a platform, and the more precisely their interests can be predicted, the more valuable that platform becomes. In this sense, as critics often put it, the user is not the customer but the product being sold.",
+   "[C] This business model shapes design. Features such as infinite scrolling, autoplay, notifications and personalised recommendation feeds are not neutral conveniences; they are engineered to reduce the friction that might otherwise lead a user to stop. Recommendation systems learn which content holds each person's attention longest. Because emotionally arousing material — outrage, fear, novelty — tends to perform well on these measures, some researchers worry that platforms systematically amplify it, with consequences for public debate as well as for individual well-being.",
+   "[D] The evidence on harm is, however, contested. Studies of social media use and mental health have produced mixed results, and many associations are small. It is difficult to separate cause from correlation: anxious people may use their phones more, rather than phones making people anxious. Defenders of the platforms point out that users derive real value from them — information, connection, entertainment — and that \"attention\" has always been the currency of newspapers, radio and television, which also competed for audiences with dramatic headlines.",
+   "[E] What may be new is the scale and precision of the competition. A newspaper cannot rearrange its pages for each reader in real time; a feed can. Individual users face teams of engineers and data scientists whose explicit goal is to increase engagement, and the asymmetry of knowledge between the two sides is considerable. This is why some reformers argue that responsibility cannot rest on personal self-discipline alone, any more than healthy eating can be achieved purely through individual willpower in an environment saturated with cheap, heavily marketed food.",
+   "[F] Proposed responses vary widely. Some focus on regulation: limiting data collection, banning certain design features for children, or requiring platforms to offer feeds that are not driven by engagement. Others emphasise design ethics within the industry, or tools that help users set limits. Still others return to Simon's original insight: in an age of abundance, the scarce skill is not finding information but filtering it. Teaching that skill — deciding what deserves our attention — may be one of the central tasks of education in the twenty-first century."
+  ],
+  "exercises": [
+   "the-price-of-attention-1",
+   "the-price-of-attention-2"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "prophetic",
+    "definition": "correctly describing what will happen in the future",
+    "ru": "пророческий"
+   },
+   {
+    "term": "scarcity",
+    "definition": "a lack of something",
+    "ru": "дефицит"
+   },
+   {
+    "term": "friction",
+    "definition": "something that makes an action slightly more difficult",
+    "ru": "трение, препятствие"
+   },
+   {
+    "term": "amplify",
+    "definition": "to make something stronger or more widespread",
+    "ru": "усиливать"
+   },
+   {
+    "term": "contested",
+    "definition": "disputed; not agreed by everyone",
+    "ru": "спорный, оспариваемый"
+   },
+   {
+    "term": "asymmetry",
+    "definition": "a lack of balance between two sides",
+    "ru": "асимметрия, неравенство"
+   },
+   {
+    "term": "saturated with",
+    "definition": "so full of something that no more can be added",
+    "ru": "перенасыщенный"
+   },
+   {
+    "term": "abundance",
+    "definition": "a very large quantity of something",
+    "ru": "изобилие"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "free at the point of use",
+    "meaning": "costs nothing when you use it, although someone pays somehow"
+   },
+   {
+    "phrase": "not neutral conveniences",
+    "meaning": "features that are designed with a purpose, not just helpful additions"
+   },
+   {
+    "phrase": "separate cause from correlation",
+    "meaning": "decide whether one thing causes another or only occurs with it"
+   },
+   {
+    "phrase": "cannot rest on personal self-discipline alone",
+    "meaning": "individuals cannot be expected to solve the problem only through willpower"
+   }
+  ],
+  "critical": [
+   {
+    "question": "Identify where the writer presents counter-arguments. Does the conclusion take them into account?",
+    "points": "Consider: paragraph D (contested evidence, older media), and whether paragraphs E and F respond to them."
+   },
+   {
+    "question": "\"The user is not the customer but the product.\" Evaluate this claim.",
+    "points": "Consider: who pays, what is sold (attention, data), the value users receive, and subscription models."
+   },
+   {
+    "question": "Design one rule for a social platform that would reduce attention-maximising design without destroying its usefulness.",
+    "points": "Consider: default settings, time limits, chronological feeds, notification controls, transparency."
+   }
+  ],
+  "furtherReading": [
+   {
+    "title": "Economics of information overload: thoughts from Herb Simon",
+    "url": "https://conversableeconomist.com/2015/08/17/economics-of-information-overload-thoughts-from-herb-simon/",
+    "publisher": "Conversable Economist"
+   },
+   {
+    "title": "Attention economy (explainer)",
+    "url": "https://www.ubs.com/global/en/our-firm/what-we-do/our-brand/nobel-perspectives/laureates/behavioral-economics/attention-economy.html",
+    "publisher": "UBS Nobel Perspectives"
+   }
+  ],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "the-rise-of-living-alone",
+  "title": "A table for one: the rise of living alone",
+  "standfirst": "In many wealthy countries, one-person households are now common. Is this a sign of social decline, or of new kinds of freedom?",
+  "level": "C1",
+  "topics": [
+   "society-politics"
+  ],
+  "category": "society-politics",
+  "minutes": 7,
+  "paragraphs": [
+   "[A] For most of human history, living alone was unusual. People lived with parents, spouses, children, servants or lodgers, and households of one were largely confined to widows and a few eccentrics. Historical records suggest that this began to change in early-industrialised countries more than a century ago, and the shift accelerated in the second half of the twentieth century. Today, according to data compiled by Our World in Data, one-person households account for a large share of homes in many rich countries, and in some northern European cities they make up around half of all households.",
+   "[B] The pattern is closely linked to wealth. Across countries, the share of people living alone tends to rise with national income. This is not surprising: living alone is expensive. It requires an entire home's worth of rent, heating and furniture for a single person, as well as a labour market that offers stable incomes and a welfare state or pension system that reduces dependence on family. Where those conditions are absent, sharing a household is often an economic necessity rather than a preference.",
+   "[C] Demographic change has also played a role. People marry later, divorce more often and live longer than in the past. A widowed grandmother who would once have moved in with her children may now remain in her own flat for decades. Young professionals increasingly spend a period of their twenties or thirties living independently before or instead of forming a couple. Living alone, in other words, is less often a single permanent condition than a stage that many people pass through, sometimes more than once.",
+   "[D] It is tempting to read these figures as evidence of an epidemic of isolation. Commentators frequently cite the rise of solo living alongside warnings about loneliness, implying that one causes the other. Yet the relationship is far from straightforward. Loneliness is a subjective feeling: the gap between the relationships people want and the ones they have. Living alone is simply an arrangement. Many people who live by themselves have rich social lives and value the privacy and autonomy their homes provide, while others feel profoundly lonely in crowded family homes. Analyses of survey data have not found clear evidence that loneliness has risen in step with solitary living.",
+   "[E] This does not mean the trend is free of risks. Older people living alone may be vulnerable if their health declines, and those without close relatives can struggle to find support in a crisis. In poorer countries where welfare systems are weaker, a growing number of single-person households could place new pressures on families and states. Housing markets, too, have been slow to adapt: much of the existing housing stock was designed for families, and small, affordable homes are scarce in many cities.",
+   "[F] Perhaps the most interesting question is not whether living alone is good or bad, but what kinds of community it requires. If more people live by themselves, the importance of what sociologists call \"third places\" — cafés, libraries, sports clubs, community centres — increases. Cities that make it easy to be alone without being isolated may turn out to be the ones best prepared for the households of the future."
+  ],
+  "exercises": [
+   "the-rise-of-living-alone-1",
+   "the-rise-of-living-alone-2",
+   "the-rise-of-living-alone-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "lodger",
+    "definition": "a person who pays to live in a room in someone else's house",
+    "ru": "жилец, квартирант"
+   },
+   {
+    "term": "eccentric",
+    "definition": "a person who behaves in an unusual way",
+    "ru": "чудак, оригинал"
+   },
+   {
+    "term": "accelerate",
+    "definition": "to happen or develop faster",
+    "ru": "ускоряться"
+   },
+   {
+    "term": "compiled",
+    "definition": "collected and organised from different sources",
+    "ru": "собранный, составленный"
+   },
+   {
+    "term": "autonomy",
+    "definition": "the ability to make your own decisions independently",
+    "ru": "автономия, самостоятельность"
+   },
+   {
+    "term": "subjective",
+    "definition": "based on personal feelings rather than facts",
+    "ru": "субъективный"
+   },
+   {
+    "term": "in step with",
+    "definition": "at the same rate as",
+    "ru": "в ногу с, синхронно с"
+   },
+   {
+    "term": "housing stock",
+    "definition": "all the homes available in an area",
+    "ru": "жилищный фонд"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "largely confined to",
+    "meaning": "mostly limited to"
+   },
+   {
+    "phrase": "an economic necessity rather than a preference",
+    "meaning": "something people do because they must, not because they choose it"
+   },
+   {
+    "phrase": "far from straightforward",
+    "meaning": "very complicated"
+   },
+   {
+    "phrase": "it is tempting to read these figures as",
+    "meaning": "it is easy, but possibly wrong, to interpret the numbers as"
+   }
+  ],
+  "critical": [
+   {
+    "question": "What assumption do the \"commentators\" in paragraph D make, and how does the writer challenge it?",
+    "points": "Consider: correlation vs causation; the definition of loneliness; the evidence mentioned."
+   },
+   {
+    "question": "The writer ends with a question about community rather than a verdict. Why might this be a more effective conclusion?",
+    "points": "Consider: avoiding a simple good/bad judgement, shifting to policy, inviting the reader to think."
+   },
+   {
+    "question": "How might the picture differ in your country? Which economic and cultural factors would you consider?",
+    "points": "Consider: housing costs, family expectations, welfare, migration of young people to cities."
+   }
+  ],
+  "furtherReading": [
+   {
+    "title": "Percentage of one-person households (data)",
+    "url": "https://ourworldindata.org/grapher/one-person-households",
+    "publisher": "Our World in Data"
+   },
+   {
+    "title": "Are people more likely to be lonely in so-called \"individualistic\" societies?",
+    "url": "https://ourworldindata.org/lonely-not-alone",
+    "publisher": "Our World in Data"
+   }
+  ],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "when-results-wont-repeat",
+  "title": "When results won't repeat: science and the reproducibility debate",
+  "standfirst": "Repeating an experiment and getting the same result is meant to be the foundation of science. A survey of researchers suggested it happens less reliably than the public assumes.",
+  "level": "C1",
+  "topics": [
+   "science-technology"
+  ],
+  "category": "science-technology",
+  "minutes": 7,
+  "paragraphs": [
+   "[A] Science depends on a simple promise: if you follow the same method, you should get the same result. A finding that only one laboratory can produce is, at best, a curiosity. Yet over the past two decades, attempts to repeat published studies in fields from psychology to cancer biology have frequently failed. The problem has become known as the replication crisis, or, more cautiously, the reproducibility debate.",
+   "[B] In 2016 the journal Nature published the results of an online survey of more than 1,500 researchers. Just over half agreed that there was a significant crisis of reproducibility, and a large majority reported that they had, at some point, failed to reproduce another scientist's experiment; many had even failed to reproduce their own. Yet the same respondents were not pessimistic about science as a whole. Most still trusted much of the published work in their field, and relatively few thought that a failed replication automatically meant the original result was wrong.",
+   "[C] This apparent contradiction makes sense once we look at the causes. Some failures to replicate have innocent explanations: an experiment may depend on subtle details of equipment, materials or technique that the original paper did not describe. Others reflect genuine weaknesses in how research is done. Respondents to the survey most often pointed to selective reporting and the pressure to publish. Studies with small samples and low statistical power are also more likely to produce results that look impressive by chance and then disappear when others try to repeat them.",
+   "[D] The incentives of academic careers can make these problems worse. Researchers are rewarded for publishing novel, positive findings in prestigious journals. A study that confirms someone else's result, or that finds nothing at all, is harder to publish and rarely advances a career. As a result, the published literature can over-represent striking findings, while the less exciting attempts that would put them in context remain unpublished in \"file drawers\".",
+   "[E] Over the past decade, many reforms have been proposed and tried. In pre-registration, researchers publicly state their hypotheses and analysis plans before collecting data, which makes it harder to change the question after seeing the results. Some journals now accept papers on the basis of their design rather than their findings, so that a well-planned study is published whether or not it produces an exciting result. Sharing data and code allows others to check analyses, and large collaborative projects repeat key experiments across many laboratories at once.",
+   "[F] It is worth stressing what the reproducibility debate does not show. It does not mean that science is unreliable in general, or that every surprising result is false. Self-correction is the method working as intended: findings are tested, some do not survive, and confidence is adjusted. The real risk lies elsewhere — in a culture that treats a single published study as settled fact, whether in a laboratory, a newsroom or a government department."
+  ],
+  "exercises": [
+   "when-results-wont-repeat-1",
+   "when-results-wont-repeat-2",
+   "when-results-wont-repeat-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "reproduce",
+    "definition": "to repeat an experiment and obtain the same result",
+    "ru": "воспроизводить"
+   },
+   {
+    "term": "curiosity",
+    "definition": "something interesting but unusual and of limited importance",
+    "ru": "курьёз, диковинка"
+   },
+   {
+    "term": "selective reporting",
+    "definition": "publishing only some of the results, usually the most favourable",
+    "ru": "избирательное представление результатов"
+   },
+   {
+    "term": "statistical power",
+    "definition": "the probability that a study will detect an effect if one really exists",
+    "ru": "статистическая мощность"
+   },
+   {
+    "term": "incentive",
+    "definition": "something that encourages people to act in a particular way",
+    "ru": "стимул"
+   },
+   {
+    "term": "over-represent",
+    "definition": "to include too many of one type compared with reality",
+    "ru": "чрезмерно представлять"
+   },
+   {
+    "term": "pre-registration",
+    "definition": "publicly recording a study's plan before collecting data",
+    "ru": "предварительная регистрация исследования"
+   },
+   {
+    "term": "self-correction",
+    "definition": "the process of finding and fixing your own errors",
+    "ru": "самокоррекция"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "at best, a curiosity",
+    "meaning": "in the most positive view, only an interesting oddity"
+   },
+   {
+    "phrase": "this apparent contradiction makes sense once",
+    "meaning": "something that looks inconsistent becomes logical when"
+   },
+   {
+    "phrase": "put them in context",
+    "meaning": "show how important or typical they really are"
+   },
+   {
+    "phrase": "the method working as intended",
+    "meaning": "the system doing what it was designed to do"
+   }
+  ],
+  "critical": [
+   {
+    "question": "The writer uses \"replication crisis\" and then \"reproducibility debate\". What is the effect of this choice of words?",
+    "points": "Consider: connotations of \"crisis\", the writer's cautious stance, and how terminology frames a problem."
+   },
+   {
+    "question": "According to paragraph F, where does \"the real risk\" lie? Do you agree?",
+    "points": "Consider: media coverage of single studies, policy based on one paper, the public's trust in science."
+   },
+   {
+    "question": "How could the incentives described in paragraph D be changed in universities?",
+    "points": "Consider: hiring criteria, rewards for replication, open data, team science."
+   }
+  ],
+  "furtherReading": [
+   {
+    "title": "1,500 scientists lift the lid on reproducibility (Baker, 2016)",
+    "url": "https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970",
+    "publisher": "Nature"
    }
   ],
   "origin": "original"
@@ -935,6 +2101,7 @@
     "points": "Think about national identity, tourism, and access for ordinary citizens."
    }
   ],
+  "furtherReading": [],
   "origin": "original"
  },
  {
@@ -1029,6 +2196,7 @@
     "points": "Think about emotion, source, timing, who sent it."
    }
   ],
+  "furtherReading": [],
   "origin": "original"
  }
 ]

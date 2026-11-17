@@ -53,3 +53,18 @@ tension | n+ac | noun | B2+ | neutral | Mood | a feeling of nervousness or hosti
 touch | v | verb | B2 | neutral | Emotion | to affect someone's feelings, usually making them sympathetic | трогать | We were touched by the letter. | deeply touched; touching story | move; affect |
 twist | n | noun | B2+ | neutral | Plot | an unexpected change in a story | поворот (сюжета) | The film has a brilliant twist at the end. | plot twist; unexpected twist; twist of fate | turn; surprise |
 underlying | adj+ac | adjective | C1 | formal | Analysis | real but not immediately obvious | глубинный, лежащий в основе | The underlying message is about loneliness. | underlying cause; underlying problem | fundamental; root | psychology-behaviour
+
+# --- 2026-11-17 expansion
+evocative | adj | adjective | C1 | formal | Responding to art | bringing strong images, memories or feelings to mind | вызывающий образы, выразительный | The novel is full of evocative descriptions of the sea. | evocative image/description | expressive; atmospheric | travel-tourism
+poignant | adj | adjective | C1 | formal | Responding to art | causing a strong feeling of sadness or regret | трогательный, щемящий | The film ends on a poignant note. | poignant moment/reminder | moving; touching |
+derivative | adj | adjective | C1 | formal | Responding to art | copied from others; not original | вторичный, подражательный | Critics found the album derivative and dull. | derivative work/style | unoriginal; imitative |
+subversive | adj | adjective | C1 | formal | Responding to art | intended to challenge established beliefs or authority | подрывной, бунтарский | Her early work was quietly subversive. | subversive humour/art | radical; rebellious | society-politics
+resonate with | coll | verb phrase | C1 | neutral | Responding to art | to have special meaning or importance for someone | находить отклик у | The story resonates with young audiences. | resonate deeply with | strike a chord with |
+strike a chord | idiom | verb phrase | C1 | neutral | Responding to art | to cause people to feel sympathy or recognition | задеть за живое, найти отклик | The song struck a chord with millions of listeners. | strike a chord with | resonate |
+juxtaposition | n+ac | noun | C2 | academic | Creating art | placing contrasting things close together for effect | сопоставление, противопоставление | The juxtaposition of old and new buildings is striking. | the juxtaposition of X and Y | contrast | architecture-design
+cultural appropriation | coll+ac | noun phrase | C1 | academic | Culture and society | the adoption of elements of a minority culture by members of a dominant culture, often without understanding or respect | культурная апроприация | The fashion show was accused of cultural appropriation. | | | society-politics
+highbrow | adj | adjective | C1 | neutral | Culture and society | intellectual and serious, often considered difficult | интеллектуальный, «высоколобый» | The festival mixes highbrow and popular events. | highbrow culture/literature | intellectual | communication-media
+take centre stage | idiom | verb phrase | C1 | neutral | Culture and society | to become the focus of attention | выходить на первый план | Climate themes took centre stage at this year's biennale. | | |
+a labour of love | idiom | noun phrase | C1 | neutral | Creating art | hard work done for pleasure rather than money | работа ради удовольствия | Restoring the theatre was a labour of love. | | |
+@family interpret (v); interpretation (n); interpreter (n); misinterpret (v); interpretive (adj)
+@distinct artistic vs artificial vs artful :: *Artistic* relates to art or shows creative skill. *Artificial* means not natural. *Artful* means clever, sometimes in a dishonest way.

@@ -29,3 +29,17 @@ restriction | n+ac | noun | B2+ | neutral | Rules | a rule that limits something
 run out of | pv | phrasal verb | B2 | neutral | Supplies | to have no more left | закончиться | We ran out of petrol on the motorway. | run out of time; run out of money | use up |
 scratch | n | noun | B2+ | neutral | Damage | a thin mark on a surface | царапина | There's a scratch on the car door. | from scratch; up to scratch | mark; graze |
 stiff | adj | adjective | B2+ | neutral | Body | hard to bend or move; painful | затёкший, жёсткий | My legs were stiff after the long flight. | stiff neck; stiff competition | rigid; sore |
+
+# --- 2026-11-17 expansion
+gridlock | n | noun | C1 | neutral | Traffic | a situation in which traffic cannot move at all | пробка, полная остановка движения | The accident caused gridlock across the city. | | traffic jam; standstill | cities-urban
+modal shift | coll+ac | noun phrase | C2 | academic | Transport policy | a change in the type of transport people use, e.g. from cars to trains | смена вида транспорта | Cheap rail fares encourage a modal shift away from cars. | | | environment
+last-mile | adj | adjective | C1 | neutral | Transport policy | relating to the final part of a journey or delivery | «последней мили» (финальный этап доставки) | E-bikes are popular for last-mile deliveries. | last-mile delivery/connectivity | | business-finance
+car-dependent | adj | adjective | C1 | neutral | Transport policy | designed so that people need a car to travel | зависимый от автомобиля | Many suburbs are completely car-dependent. | car-dependent suburb/lifestyle | | cities-urban
+congestion charge | coll | noun phrase | C1 | neutral | Transport policy | a fee drivers pay to enter a busy city centre | плата за въезд в центр города | The congestion charge cut traffic by a fifth. | introduce a congestion charge | |
+ride-hailing | adj | adjective | C1 | neutral | Getting around | ordering a car and driver through an app | вызов такси через приложение | Ride-hailing apps changed the taxi industry. | ride-hailing app/service | | science-technology
+road rage | coll | noun phrase | B2+ | neutral | Traffic | violent anger caused by driving | агрессия на дороге | Road rage incidents increase in heavy traffic. | | |
+hold up | pv | phrasal verb | B2 | neutral | Traffic | to delay someone or something | задерживать | Sorry I'm late — I was held up at the border. | be held up by traffic | delay |
+a hold-up | n | noun | B2+ | neutral | Traffic | a delay | задержка | There's a hold-up on the motorway. | | delay |
+in transit | fx | prepositional phrase | B2+ | neutral | Getting around | while being moved from one place to another | в пути, при перевозке | The parcel was damaged in transit. | lost/damaged in transit | | travel-tourism
+@family mobile (adj); mobility (n); mobilise (v); immobile (adj); mobilisation (n)
+@distinct transport vs transportation :: In British English *transport* is the noun (*public transport*). American English prefers *transportation* for the noun. Both use *transport* as the verb.

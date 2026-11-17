@@ -8,7 +8,7 @@ import { useLearnerData } from "@/components/useLearnerData";
 import { PageHeader, EmptyState, StatCard } from "@/components/ui";
 import { FeedbackView, GrammarRefLink } from "@/components/FeedbackView";
 import { BandTrend } from "@/components/BandTrend";
-import { getWritingPrompt } from "@/lib/content";
+import { writingTitle, writingHref } from "@/lib/writing-task";
 import { WritingFeedbackView, CRITERIA_LABEL, countWords } from "@/lib/ai/schemas";
 import { bandSeries, recurringIssues, wordDiff, compareVersions, developmentSummary, bandOf, isAssessed, CATEGORY_LABEL } from "@/lib/portfolio";
 import type { EssayDraft, WritingSubmission } from "@/lib/store/types";
@@ -101,7 +101,7 @@ export default function WritingPortfolio() {
             <section className="card p-5" aria-labelledby="trend-h">
               <h2 id="trend-h" className="font-bold">Development over time</h2>
               {summary && <p className="mt-1 text-[15px] text-muted" data-testid="development-summary">{summary}</p>}
-              <div className="mt-3"><BandTrend label="Estimated writing band" points={banded.map((s) => ({ date: s.date, band: s.band!, title: getWritingPrompt(s.promptSlug)?.title }))} /></div>
+              <div className="mt-3"><BandTrend label="Estimated writing band" points={banded.map((s) => ({ date: s.date, band: s.band!, title: writingTitle(s.promptSlug) }))} /></div>
             </section>
           )}
 
@@ -133,9 +133,9 @@ export default function WritingPortfolio() {
               <h2 id="drafts-h" className="mb-3 text-lg font-bold">Drafts</h2>
               <ul className="card divide-y divide-line">
                 {activeDrafts.map((d) => (
-                  <li key={d.promptSlug}><Link href={`/writing/${d.promptSlug}`} className="flex items-center gap-3 px-4 py-3 hover:bg-surface-2">
+                  <li key={d.promptSlug}><Link href={writingHref(d.promptSlug)} className="flex items-center gap-3 px-4 py-3 hover:bg-surface-2">
                     <PenLine size={16} className="text-primary" aria-hidden="true" />
-                    <span className="flex-1"><span className="block font-semibold">{getWritingPrompt(d.promptSlug)?.title ?? d.promptSlug}</span><span className="text-sm text-muted">{countWords(d.body)} words · last edited {fmt(d.updatedAt)}</span></span>
+                    <span className="flex-1"><span className="block font-semibold">{writingTitle(d.promptSlug)}</span><span className="text-sm text-muted">{countWords(d.body)} words · last edited {fmt(d.updatedAt)}</span></span>
                     <span className="text-sm font-semibold text-primary">Continue</span>
                   </Link></li>
                 ))}
@@ -153,7 +153,7 @@ export default function WritingPortfolio() {
                   <li key={slug} className="card p-5">
                     <div className="flex flex-wrap items-center gap-2">
                       <FileText size={16} className="text-primary" aria-hidden="true" />
-                      <Link href={`/writing/${slug}`} className="font-semibold hover:underline">{getWritingPrompt(slug)?.title ?? slug}</Link>
+                      <Link href={writingHref(slug)} className="font-semibold hover:underline">{writingTitle(slug)}</Link>
                       <span className="chip">{vs.length} version{vs.length === 1 ? "" : "s"}</span>
                     </div>
                     <ol className="mt-3 flex flex-wrap gap-2">
@@ -191,7 +191,7 @@ export default function WritingPortfolio() {
                     {opened && opened.promptSlug === slug && (
                       <div className="mt-5 border-t border-line pt-5">
                         {openedFb?.success ? <FeedbackView feedback={openedFb.data} source={opened.body} kind="writing" />
-                          : <><p className="text-sm text-muted">This version hasn&apos;t been assessed yet. <Link className="font-semibold text-primary" href={`/writing/${slug}`}>Open the task</Link> to retry the assessment.</p><p className="mt-3 whitespace-pre-wrap rounded-xl bg-surface-2 p-4 text-[15px] leading-[1.8]">{opened.body}</p></>}
+                          : <><p className="text-sm text-muted">This version hasn&apos;t been assessed yet. <Link className="font-semibold text-primary" href={writingHref(slug)}>Open the task</Link> to retry the assessment.</p><p className="mt-3 whitespace-pre-wrap rounded-xl bg-surface-2 p-4 text-[15px] leading-[1.8]">{opened.body}</p></>}
                       </div>
                     )}
                   </li>

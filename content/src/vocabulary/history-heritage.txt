@@ -28,3 +28,18 @@ inspiration | n | noun | B2 | neutral | Creativity | a person or thing that give
 prime | adj | adjective | C1 | formal | Importance | main or most important; of the best quality | главный; первоклассный | Rome was the prime target. | prime example; prime minister; prime location | main; chief |
 reform | n | noun | C1 | formal | Change | a change to improve a system | реформа | The reforms of the 1830s changed working life. | political reform; carry out reforms | change; improvement | society-politics
 revolution | n | noun | B2 | neutral | Change | a violent attempt to change a government; a great change | революция | The Industrial Revolution transformed cities. | the Industrial Revolution; a revolution in | uprising; transformation |
+
+# --- 2026-11-17 expansion
+in retrospect | fx | prepositional phrase | B2+ | neutral | Interpreting the past | when you think about a past event with knowledge you have now | оглядываясь назад, в ретроспективе | In retrospect, the reforms came too late. | | with hindsight |
+with hindsight | fx | prepositional phrase | B2+ | neutral | Interpreting the past | using knowledge of what happened later | задним числом | With hindsight, the warning signs were clear. | with the benefit of hindsight | in retrospect |
+revisionist | adj+ac | adjective | C2 | academic | Interpreting the past | challenging accepted interpretations of history | ревизионистский | Revisionist historians questioned the official account. | revisionist history/view | |
+collective memory | coll+ac | noun phrase | C1 | academic | Interpreting the past | the shared memory of the past held by a group or society | коллективная память | The war remains central to the nation's collective memory. | | | society-politics
+primary source | coll+ac | noun phrase | C1 | academic | Interpreting the past | an original document or object from the time being studied | первоисточник | Letters and diaries are valuable primary sources. | | | education
+intangible heritage | coll+ac | noun phrase | C1 | academic | Preserving the past | traditions, languages and skills inherited from the past, rather than objects | нематериальное наследие | Folk music is part of the region's intangible heritage. | intangible cultural heritage | | arts-culture
+looted | adj | adjective | C1 | neutral | Preserving the past | stolen, especially during war or riots | разграбленный, похищенный | Museums are returning looted artefacts. | looted artefacts/treasures | plundered | crime-law
+repatriation | n | noun | C1 | formal | Preserving the past | returning objects or people to their country of origin | репатриация, возвращение на родину | The repatriation of the bronzes was widely welcomed. | the repatriation of artefacts | restitution |
+fall into disrepair | coll | verb phrase | C1 | neutral | Preserving the past | to become damaged because nobody looks after it | приходить в упадок | The castle fell into disrepair after the war. | | deteriorate | architecture-design
+the dawn of | fx | noun phrase | C1 | formal | Eras | the beginning of a period | заря, начало (эпохи) | the dawn of the industrial age | at the dawn of | the beginning of |
+stand the test of time | idiom | verb phrase | B2+ | neutral | Interpreting the past | to remain popular or valid for a long time | выдержать испытание временем | Her theories have stood the test of time. | | endure |
+@family colony (n); colonial (adj); colonise (v); colonisation (n); postcolonial (adj)
+@distinct legacy vs heritage :: *Heritage* is what a whole society inherits (buildings, traditions). A *legacy* is what a particular person, event or period leaves behind (*the legacy of colonialism*).

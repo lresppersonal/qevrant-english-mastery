@@ -4,36 +4,36 @@ import { useId } from "react";
 import clsx from "clsx";
 import type { FlameTier, StreakState } from "@/lib/streak";
 
-/** Gradient stops per tier: amber for a new streak, deeper and brighter with milestones, a cool sapphire flame from 100 days. */
-const TIERS: Record<FlameTier, { outer: [string, string]; core: [string, string]; glow: string; label: string }> = {
-  ember: { outer: ["var(--flame-off-a)", "var(--flame-off-b)"], core: ["var(--flame-off-core)", "var(--flame-off-core)"], glow: "transparent", label: "Not lit yet" },
-  flame: { outer: ["#F6BF4A", "#E37B22"], core: ["#FFF3C9", "#FFD36B"], glow: "rgb(240 160 50 / .28)", label: "Lit" },
-  bright: { outer: ["#F8C04A", "#E5612A"], core: ["#FFF6D8", "#FFC45A"], glow: "rgb(240 130 40 / .35)", label: "One week or more" },
-  blaze: { outer: ["#F39A2E", "#C73A2E"], core: ["#FFF0C4", "#FFB347"], glow: "rgb(220 80 40 / .38)", label: "One month or more" },
-  radiant: { outer: ["#8DB4FF", "#3655C9"], core: ["#FFFFFF", "#CFE0FF"], glow: "rgb(90 130 255 / .4)", label: "100 days or more" },
+/**
+ * Gradient stops per tier. The progression is deliberately gradual: a pale, quiet flame for the first
+ * days, warming through the brand amber to a deep, saturated flame for long streaks. Only the longest
+ * streaks get a soft halo.
+ */
+const TIERS: Record<FlameTier, { outer: [string, string]; core: string; glow: string | null; label: string }> = {
+  ember: { outer: ["var(--flame-off-a)", "var(--flame-off-b)"], core: "var(--flame-off-core)", glow: null, label: "Not lit today" },
+  spark: { outer: ["#F3D9A4", "#E9BF72"], core: "#FFF7E6", glow: null, label: "Getting started" },
+  warm: { outer: ["#F2C76E", "#E0A33A"], core: "#FFF1D2", glow: null, label: "Building momentum" },
+  bright: { outer: ["#F4B54A", "#E3842A"], core: "#FFE9B8", glow: null, label: "One week or more" },
+  vivid: { outer: ["#F5A23C", "#D9611F"], core: "#FFDF9E", glow: "rgb(230 120 40 / .22)", label: "Two weeks or more" },
+  deep: { outer: ["#EE8A2C", "#B8361C"], core: "#FFD27A", glow: "rgb(200 70 30 / .26)", label: "One month or more" },
+  radiant: { outer: ["#E9A23B", "#9E2A17"], core: "#FFE7A6", glow: "rgb(224 163 58 / .32)", label: "100 days or more" },
 };
 
 /**
- * QEVRANT streak flame: a drawn, two-layer flame (not an emoji or a character). It sways gently
- * when lit, rests when the day isn't done yet, and ignites when the streak is extended.
+ * QEVRANT streak flame: one clean drawn shape with a small inner light, in the brand's amber family
+ * (not an emoji or a character). It is still by default; only a soft halo breathes on long streaks,
+ * and it ignites briefly when the day's first completed activity extends the streak.
  */
 export function Flame({ tier, lit, size = 40, igniting = false, className }: { tier: FlameTier; lit: boolean; size?: number; igniting?: boolean; className?: string }) {
   const id = useId().replace(/:/g, "");
   const t = TIERS[lit ? tier : "ember"];
   return (
-    <span className={clsx("flame relative inline-grid place-items-center", lit && "is-lit", igniting && "is-igniting", className)} style={{ width: size, height: size * 1.15 }} aria-hidden="true">
-      {lit && <span className="flame-glow absolute inset-0 rounded-full" style={{ background: `radial-gradient(closest-side, ${t.glow}, transparent)` }} />}
+    <span className={clsx("flame relative inline-grid place-items-center", lit && "is-lit", lit && t.glow && "has-glow", igniting && "is-igniting", className)} style={{ width: size, height: size * 1.15 }} aria-hidden="true">
+      {lit && t.glow && <span className="flame-glow absolute inset-0 rounded-full" style={{ background: `radial-gradient(closest-side, ${t.glow}, transparent)` }} />}
       <svg viewBox="0 0 48 56" width={size} height={size * 1.15} className="relative overflow-visible">
-        <defs>
-          <linearGradient id={`o${id}`} x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor={t.outer[0]} /><stop offset="1" stopColor={t.outer[1]} /></linearGradient>
-          <linearGradient id={`c${id}`} x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor={t.core[0]} /><stop offset="1" stopColor={t.core[1]} /></linearGradient>
-        </defs>
-        <g className="flame-outer">
-          <path d="M24 2C27 12 38 18.5 38 33.5 38 45.5 31.6 53.5 24 53.5S10 45.5 10 34.5C10 27.5 13.4 22.5 17 19.2 17 25 19.4 28.2 22 29.2 20.2 20.4 21 10.4 24 2Z" fill={`url(#o${id})`} />
-        </g>
-        <g className="flame-core">
-          <path d="M24.2 27C26.6 32.6 31 35.4 31 41.6 31 46.8 27.9 50.2 24 50.2S17 46.9 17 42.2C17 37.9 19.8 35.4 21.4 32.4 22 35.3 23 36.8 24.6 37.4 23.6 33.6 23.4 30.2 24.2 27Z" fill={`url(#c${id})`} />
-        </g>
+        <defs><linearGradient id={`o${id}`} x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor={t.outer[0]} /><stop offset="1" stopColor={t.outer[1]} /></linearGradient></defs>
+        <path className="flame-outer" d="M24 3C30 13 39 21 39 33C39 44 32 52 24 52C16 52 9 44 9 33C9 25.5 13.5 19.5 18 15.5C18 22 20.8 25.6 24 26.8C22 19 21.2 11 24 3Z" fill={`url(#o${id})`} />
+        <path className="flame-core" d="M24 33C27 37.5 30 40 30 43.6C30 47.2 27.3 49.6 24 49.6C20.7 49.6 18 47.2 18 43.6C18 40 21 37.5 24 33Z" fill={t.core} opacity={lit ? 0.95 : 0.7} />
       </svg>
     </span>
   );

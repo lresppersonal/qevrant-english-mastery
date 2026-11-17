@@ -25,7 +25,66 @@ async function readJson(r: Response): Promise<Record<string, unknown>> {
   }
 }
 
+/** Everything the shared writing workspace needs to know about a task (essay or visual description). */
+export interface WorkspaceTask {
+  slug: string; title: string; minWords: number; href: string; positionLabel: string;
+  backHref: string; backLabel: string; textLabel: string; header: React.ReactNode; aside: React.ReactNode; variant: "essay" | "visual";
+}
+
 export function EssayWorkspace({ prompt }: { prompt: WritingPrompt }) {
+  const task: WorkspaceTask = {
+    slug: prompt.slug, title: prompt.title, minWords: prompt.minWords, href: `/writing/${prompt.slug}`, positionLabel: `Essay: ${prompt.title}`,
+    backHref: "/writing", backLabel: "Academic Writing", textLabel: "Your essay", variant: "essay",
+    header: (
+      <>
+        <div className="mb-2 flex flex-wrap items-center gap-2"><LevelBadge level={prompt.level} /><span className="chip">{ESSAY_LABEL[prompt.genre]}</span>{prompt.topics.map((t) => <span key={t} className="chip">{getTheme(t)?.title ?? t}</span>)}<span className="chip">{prompt.minWords}+ words</span><span className="chip">about {prompt.suggestedMinutes} min</span></div>
+        <h1 className="text-3xl font-extrabold">{prompt.title}</h1>
+        <blockquote className="card mt-4 border-l-4 !border-l-primary p-5 text-[17px] font-medium leading-relaxed">{prompt.prompt}</blockquote>
+      </>
+    ),
+    aside: <EssayAside prompt={prompt} />,
+  };
+  return <WritingWorkspace task={task} />;
+}
+
+function EssayAside({ prompt }: { prompt: WritingPrompt }) {
+  return (
+    <>
+      {prompt.plan.length > 0 && (
+        <div className="card p-5">
+          <p className="font-bold">Suggested plan</p>
+          <ol className="mt-2 list-decimal space-y-1.5 pl-5 text-[15px]">{prompt.plan.map((g) => <li key={g}>{g}</li>)}</ol>
+        </div>
+      )}
+      <div className="card p-5">
+        <p className="font-bold">Before you write</p>
+        <ul className="mt-2 list-disc space-y-1.5 pl-5 text-[15px] text-muted">{prompt.guidance.map((g) => <li key={g}>{g}</li>)}</ul>
+      </div>
+      {(prompt.usefulLanguage.length > 0 || prompt.vocabulary.length > 0) && (
+        <div className="card p-5">
+          <p className="font-bold">Advanced vocabulary</p>
+          <ul className="mt-2 flex flex-wrap gap-2">
+            {prompt.usefulLanguage.map((id) => { const r = getSense(id); return r && (
+              <li key={id}><Link href={`/vocabulary/${r.item.slug}#${id}`} className="chip !text-[13px] hover:border-primary hover:text-primary">{r.item.lemma}</Link></li>
+            ); })}
+            {prompt.vocabulary.map((v) => <li key={v} className="chip !text-[13px]">{v}</li>)}
+          </ul>
+          {prompt.collocations.length > 0 && <><p className="mt-3 text-sm font-semibold">Collocations</p><p className="mt-1 text-[15px] text-muted">{prompt.collocations.join(" · ")}</p></>}
+        </div>
+      )}
+      {getEssayGuide(prompt.genre) && (
+        <div className="card p-5">
+          <p className="font-bold">Linking for {ESSAY_LABEL[prompt.genre].toLowerCase()} essays</p>
+          <ul className="mt-2 flex flex-wrap gap-1.5">{getEssayGuide(prompt.genre)!.linking.map((l) => <li key={l} className="chip !text-[13px]">{l}</li>)}</ul>
+        </div>
+      )}
+      {prompt.ideas.length > 0 && <IdeasPanel ideas={prompt.ideas} />}
+    </>
+  );
+}
+
+export function WritingWorkspace({ task }: { task: WorkspaceTask }) {
+  const prompt = task;
   const { store, ready } = useLearner();
   const ai = useAiStatus();
   const draftKey = `qevrant.draft.writing.${prompt.slug}`;
@@ -64,9 +123,10 @@ export function EssayWorkspace({ prompt }: { prompt: WritingPrompt }) {
       if (pick) { setBody(pick.body); setSave({ local: pick.updatedAt, account: remote ? "saved" : "idle", accountAt: remote?.updatedAt }); }
       setLoaded(true);
     });
-    store.setLastPosition({ href: `/writing/${prompt.slug}`, label: `Essay: ${prompt.title}` }).catch(() => {});
+    store.setLastPosition({ href: task.href, label: task.positionLabel }).catch(() => {});
     refreshHistory().catch(() => {});
-  }, [ready, store, prompt, draftKey, refreshHistory]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ready, store, prompt.slug, draftKey, refreshHistory]);
 
   sendDraft.current = async (text: string) => {
     setSave((s) => ({ ...s, account: "saving" }));
@@ -156,14 +216,12 @@ export function EssayWorkspace({ prompt }: { prompt: WritingPrompt }) {
 
   return (
     <article>
-      <Link href="/writing" className="mb-2 inline-flex items-center gap-1 py-2.5 text-sm font-medium text-muted hover:text-ink"><ArrowLeft size={15} aria-hidden="true" /> Academic Writing</Link>
+      <Link href={task.backHref} className="mb-2 inline-flex items-center gap-1 py-2.5 text-sm font-medium text-muted hover:text-ink"><ArrowLeft size={15} aria-hidden="true" /> {task.backLabel}</Link>
       <div className="grid gap-6 lg:grid-cols-[1fr_300px]">
         <div className="min-w-0">
-          <div className="mb-2 flex flex-wrap items-center gap-2"><LevelBadge level={prompt.level} /><span className="chip">{ESSAY_LABEL[prompt.genre]}</span>{prompt.topics.map((t) => <span key={t} className="chip">{getTheme(t)?.title ?? t}</span>)}<span className="chip">{prompt.minWords}+ words</span><span className="chip">about {prompt.suggestedMinutes} min</span></div>
-          <h1 className="text-3xl font-extrabold">{prompt.title}</h1>
-          <blockquote className="card mt-4 border-l-4 !border-l-primary p-5 text-[17px] font-medium leading-relaxed">{prompt.prompt}</blockquote>
+          {task.header}
 
-          <label htmlFor="essay" className="mt-6 block font-semibold">Your essay</label>
+          <label htmlFor="essay" className="mt-6 block font-semibold">{task.textLabel}</label>
           <textarea id="essay" value={body} onChange={(e) => onChange(e.target.value)} disabled={!loaded}
             rows={18} spellCheck={false} placeholder={loaded ? "Start writing here. Your draft is saved automatically." : "Loading your draft…"}
             className="input mt-2 resize-y font-[450] text-[16.5px] leading-[1.8]" aria-describedby="wc" />
@@ -187,42 +245,14 @@ export function EssayWorkspace({ prompt }: { prompt: WritingPrompt }) {
           {error && (
             <div role="alert" className="mt-3 rounded-xl border border-danger/40 px-4 py-3" data-testid="writing-error">
               <p className="font-semibold text-danger">{error.message}</p>
-              <p className="mt-1 text-sm">{error.submission || body.trim() ? "Your essay is saved — nothing has been lost." : ""} {error.retry ? "You can retry the assessment now or later from “Your submissions”." : ""}</p>
+              <p className="mt-1 text-sm">{error.submission || body.trim() ? `Your ${task.variant === "visual" ? "response" : "essay"} is saved — nothing has been lost.` : ""} {error.retry ? "You can retry the assessment now or later from “Your submissions”." : ""}</p>
               {error.retry && <button type="button" className="btn btn-primary mt-2" disabled={busy || !ai?.enabled} onClick={() => submit(error.submission ?? undefined)}><RefreshCw size={16} aria-hidden="true" /> Retry assessment</button>}
             </div>
           )}
         </div>
 
         <aside className="space-y-4">
-          {prompt.plan.length > 0 && (
-            <div className="card p-5">
-              <p className="font-bold">Suggested plan</p>
-              <ol className="mt-2 list-decimal space-y-1.5 pl-5 text-[15px]">{prompt.plan.map((g) => <li key={g}>{g}</li>)}</ol>
-            </div>
-          )}
-          <div className="card p-5">
-            <p className="font-bold">Before you write</p>
-            <ul className="mt-2 list-disc space-y-1.5 pl-5 text-[15px] text-muted">{prompt.guidance.map((g) => <li key={g}>{g}</li>)}</ul>
-          </div>
-          {(prompt.usefulLanguage.length > 0 || prompt.vocabulary.length > 0) && (
-            <div className="card p-5">
-              <p className="font-bold">Advanced vocabulary</p>
-              <ul className="mt-2 flex flex-wrap gap-2">
-                {prompt.usefulLanguage.map((id) => { const r = getSense(id); return r && (
-                  <li key={id}><Link href={`/vocabulary/${r.item.slug}#${id}`} className="chip !text-[13px] hover:border-primary hover:text-primary">{r.item.lemma}</Link></li>
-                ); })}
-                {prompt.vocabulary.map((v) => <li key={v} className="chip !text-[13px]">{v}</li>)}
-              </ul>
-              {prompt.collocations.length > 0 && <><p className="mt-3 text-sm font-semibold">Collocations</p><p className="mt-1 text-[15px] text-muted">{prompt.collocations.join(" · ")}</p></>}
-            </div>
-          )}
-          {getEssayGuide(prompt.genre) && (
-            <div className="card p-5">
-              <p className="font-bold">Linking for {ESSAY_LABEL[prompt.genre].toLowerCase()} essays</p>
-              <ul className="mt-2 flex flex-wrap gap-1.5">{getEssayGuide(prompt.genre)!.linking.map((l) => <li key={l} className="chip !text-[13px]">{l}</li>)}</ul>
-            </div>
-          )}
-          {prompt.ideas.length > 0 && <IdeasPanel ideas={prompt.ideas} />}
+          {task.aside}
           {history.length > 0 && (
             <div className="card p-5">
               <p className="flex items-center gap-2 font-bold"><History size={16} aria-hidden="true" /> Your submissions</p>
@@ -245,7 +275,7 @@ export function EssayWorkspace({ prompt }: { prompt: WritingPrompt }) {
       </div>
 
       <div ref={resultRef} className="mt-10 scroll-mt-24">
-        {current && parsed?.success && <FeedbackView feedback={parsed.data} source={current.body} kind="writing" />}
+        {current && parsed?.success && <FeedbackView feedback={parsed.data} source={current.body} kind="writing" variant={task.variant} />}
       </div>
     </article>
   );

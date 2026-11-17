@@ -27,14 +27,20 @@ describe("streak", () => {
     const days = ["2026-01-01", "2026-01-02", "2026-01-03", "2026-01-10", "2026-01-11"];
     expect(longestStreak(days.map((d) => ev(at(d))))).toBe(3);
   });
-  it("counts daily-goal activities, a lesson once however many sections were opened", () => {
+  it("counts daily-goal activities: a lesson only when studied (3+ sections), review once a day", () => {
     const d = "2026-03-02";
-    const e = [ev(at(d, 9), "lesson_section_viewed", "articles#a"), ev(at(d, 9), "lesson_section_viewed", "articles#b"), ev(at(d, 10), "exercise_completed"), ev(at(d, 11), "review_completed"), ev(at(d, 11), "review_completed")];
+    const viewed = (n: number) => Array.from({ length: n }, (_, i) => ev(at(d, 9), "lesson_section_viewed", `articles#s${i}`));
+    const e = [...viewed(3), ev(at(d, 10), "exercise_completed"), ev(at(d, 11), "review_completed"), ev(at(d, 11), "review_completed")];
     expect(activitiesOn(e, d)).toBe(3);
     expect(streakState(e, 3, now).goalMet).toBe(true);
+    expect(activitiesOn(viewed(2), d)).toBe(0);
+  });
+  it("does not count merely opening a lesson as a study day", () => {
+    expect(computeStreak([ev(at("2026-03-02"), "lesson_section_viewed", "articles#overview")], now)).toBe(0);
+    expect(computeStreak(["a", "b", "c"].map((x) => ev(at("2026-03-02"), "lesson_section_viewed", `articles#${x}`)), now)).toBe(1);
   });
   it("assigns milestone tiers", () => {
-    expect([0, 1, 7, 30, 100].map(tierFor)).toEqual(["ember", "flame", "bright", "blaze", "radiant"]);
+    expect([0, 1, 3, 7, 14, 30, 100].map(tierFor)).toEqual(["ember", "spark", "warm", "bright", "vivid", "deep", "radiant"]);
     const e = Array.from({ length: 8 }, (_, i) => ev(new Date(now.getTime() - i * 864e5).toISOString()));
     expect(streakState(e, 3, now)).toMatchObject({ streak: 8, milestone: 7, next: 14, tier: "bright" });
   });

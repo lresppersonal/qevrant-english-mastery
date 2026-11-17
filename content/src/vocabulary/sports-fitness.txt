@@ -41,3 +41,18 @@ strain | n | noun | B2+ | neutral | Injuries and stress | an injury to a muscle;
 substitute | n | noun | B2+ | neutral | Teams | a player who replaces another; something used instead | замена | She came on as a substitute. | come on as a substitute; no substitute for | replacement |
 trip | v | verb | B2 | neutral | Accidents | to hit your foot on something and almost fall | спотыкаться | He tripped over the ball. | trip over; trip up | stumble |
 wound | n | noun | B2+ | neutral | Injuries | an injury where the skin is cut | рана | The wound needed six stitches. | open wound; reopen old wounds; lick your wounds | injury; cut | health-medicine
+
+# --- 2026-11-17 expansion
+endurance | n | noun | B2+ | neutral | Training | the ability to continue a difficult activity for a long time | выносливость | Marathons test endurance more than speed. | build endurance; endurance athlete | stamina |
+cardiovascular | adj+ac | adjective | C1 | academic | Training | relating to the heart and blood vessels | сердечно-сосудистый | Swimming improves cardiovascular fitness. | cardiovascular fitness/disease | | health-medicine
+peak performance | coll | noun phrase | C1 | neutral | Competition | the highest level of performance someone can achieve | пиковая форма | Athletes plan their training to reach peak performance at the Olympics. | reach/achieve peak performance | |
+personal best | coll | noun phrase | B2 | neutral | Competition | the best result an athlete has ever achieved | личный рекорд | She ran a personal best in the final. | set/beat a personal best | PB |
+hamstring | n | noun | C1 | neutral | Injuries | a tendon at the back of the upper leg | подколенное сухожилие | He pulled a hamstring in the second half. | pull/tear a hamstring | |
+make a comeback | coll | verb phrase | B2+ | neutral | Competition | to return to success after a period of failure or absence | вернуться (после перерыва), «камбэк» | She made a remarkable comeback after injury. | stage/make a comeback | return |
+pace yourself | coll | verb phrase | B2+ | neutral | Training | to do something at a steady rate so you do not get tired too soon | рассчитывать силы | Pace yourself — it's a long race. | | |
+the home stretch | idiom | noun phrase | C1 | informal | Competition | the last part of a race or project | финишная прямая | We're on the home stretch of the project now. | on the home stretch | final stage | work-careers
+move the goalposts | idiom | verb phrase | C1 | informal | Competition | to change the rules or conditions unfairly during a process | менять правила по ходу игры | The funders keep moving the goalposts. | | | business-finance
+hit the wall | idiom | verb phrase | B2+ | informal | Training | to suddenly feel too exhausted to continue | выдохнуться, «упереться в стену» | Many marathon runners hit the wall at around 30 km. | | run out of steam |
+doping | n | noun | C1 | neutral | Competition | the use of banned drugs to improve performance | допинг | The cyclist was banned for doping. | doping scandal/test | | crime-law
+@family perform (v); performance (n); performer (n); underperform (v); high-performing (adj)
+@distinct exercise vs training vs workout :: *Exercise* is physical activity in general. *Training* is planned exercise towards a goal or competition. A *workout* is a single session of exercise.

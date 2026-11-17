@@ -63,3 +63,18 @@ trait | n | noun | B2+ | neutral | Character | a particular quality in someone's
 upbeat | adj | adjective | C1 | informal | Mood | positive and cheerful | оптимистичный, жизнерадостный | She stayed upbeat despite all the setbacks. | upbeat mood; upbeat tone | cheerful; optimistic |
 vow | n | noun | C1 | formal | Promises | a serious promise | клятва, обет | They wrote their own wedding vows. | make a vow; wedding vows; break a vow | pledge; oath |
 waste | n | noun | B2 | neutral | Resources | bad use of something such as time or money; unwanted material | трата (впустую); отходы | That meeting was a complete waste of time. | a waste of time; waste disposal; go to waste | squandering; rubbish | environment
+
+# --- 2026-11-17 expansion
+empathetic | adj | adjective | B2+ | neutral | Personality | able to understand and share other people's feelings | эмпатичный, сопереживающий | An empathetic manager notices when staff are struggling. | empathetic listener/response | understanding; compassionate | psychology-behaviour
+level-headed | adj | adjective | C1 | neutral | Personality | calm and sensible, especially in difficult situations | рассудительный, уравновешенный | We need someone level-headed in a crisis. | | composed; sensible |
+outspoken | adj | adjective | C1 | neutral | Personality | expressing opinions directly, even if they offend | откровенный, прямолинейный | She is an outspoken critic of the policy. | outspoken critic/views | forthright; blunt | society-politics
+headstrong | adj | adjective | C1 | neutral | Personality | determined to do what you want, ignoring advice | своевольный, упрямый | As a headstrong teenager, he ignored every warning. | | wilful; obstinate |
+mutual respect | coll | noun phrase | B2 | neutral | Relationships | respect that two people or groups feel for each other | взаимное уважение | Their partnership is based on mutual respect. | based on mutual respect | |
+drift apart | pv | phrasal verb | B2+ | neutral | Relationships | to gradually become less close | отдаляться друг от друга | We drifted apart after university. | | grow apart |
+patch things up | idiom | verb phrase | B2+ | informal | Relationships | to end an argument and become friendly again | помириться, уладить отношения | They've finally patched things up. | patch things up with someone | make up; reconcile |
+on the same wavelength | idiom | prepositional phrase | C1 | informal | Relationships | thinking in the same way as someone | на одной волне | We were on the same wavelength from the first meeting. | | see eye to eye |
+take someone for granted | idiom | verb phrase | B2+ | neutral | Relationships | to fail to value someone because they are always there | принимать как должное | He took his wife for granted for years. | | undervalue |
+give someone the benefit of the doubt | idiom | verb phrase | C1 | neutral | Relationships | to believe someone even though you are not sure they are telling the truth | поверить на слово, не судить заранее | I'll give him the benefit of the doubt this time. | | trust |
+interpersonal skills | coll+ac | noun phrase | C1 | formal | Relationships | the ability to communicate and work well with other people | навыки межличностного общения | The role requires strong interpersonal skills. | develop interpersonal skills | people skills | work-careers
+@family trust (n/v); trustworthy (adj); trusting (adj); distrust (n/v); mistrust (n)
+@distinct sympathy vs empathy :: *Sympathy* is feeling sorry for someone's difficulty. *Empathy* is understanding and sharing their feelings as if from inside their situation.

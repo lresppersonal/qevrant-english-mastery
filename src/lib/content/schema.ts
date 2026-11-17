@@ -54,7 +54,7 @@ export const Block = z.union([BaseBlock, z.object({ type: z.literal("details"), 
 export type Block = z.infer<typeof Block>;
 
 // ---------- Grammar ----------
-export const SectionKind = z.enum(["overview", "form", "uses", "time", "contrasts", "errors", "advanced", "register", "pronunciation", "summary"]);
+export const SectionKind = z.enum(["overview", "theory", "form", "uses", "time", "examples", "contrasts", "errors", "advanced", "register", "pronunciation", "summary"]);
 export const LinkType = z.enum(["prerequisite", "extends", "contrasts_with", "practises", "appears_in"]);
 
 export const GrammarLesson = Meta.extend({
@@ -182,6 +182,8 @@ export const ReadingText = Meta.extend({
   keyVocabulary: z.array(z.object({ term: z.string(), definition: z.string(), ru: z.string(), sense: z.string().optional() })).default([]),
   expressions: z.array(z.object({ phrase: z.string(), meaning: z.string() })).default([]),
   critical: z.array(z.object({ question: z.string(), points: z.string() })).default([]),
+  /** Verified external sources the original passage draws on, for learners who want to read further. */
+  furtherReading: z.array(z.object({ title: z.string(), url: z.string().url(), publisher: z.string() })).default([]),
   origin: z.enum(["original"]).default("original"),
 });
 export type ReadingText = z.infer<typeof ReadingText>;

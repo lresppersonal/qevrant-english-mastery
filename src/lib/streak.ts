@@ -1,5 +1,5 @@
 import type { ActivityEvent } from "./store/types";
-import { dayKey, studyDays, computeStreak } from "./progress";
+import { dayKey, studyDays, computeStreak, LESSON_SECTIONS_FOR_STUDY } from "./progress";
 
 /**
  * Streak and daily goal, computed only from the learner's saved activity events (so they persist
@@ -8,29 +8,30 @@ import { dayKey, studyDays, computeStreak } from "./progress";
  * is "at risk", not lost.
  */
 export const MILESTONES = [3, 7, 14, 30, 50, 100, 200, 365] as const;
-export type FlameTier = "ember" | "flame" | "bright" | "blaze" | "radiant";
+export type FlameTier = "ember" | "spark" | "warm" | "bright" | "vivid" | "deep" | "radiant";
 export const DEFAULT_DAILY_GOAL = 3;
 export const DAILY_GOAL_OPTIONS = [1, 2, 3, 5, 8] as const;
 
 /**
- * Activities for the daily goal: each completed exercise, reading text, review session, essay,
- * speaking answer or listening log counts once; a lesson counts once per day however many of its
- * sections were opened.
+ * Activities for the daily goal: each completed exercise, reading text, essay, speaking answer or
+ * listening log counts once; review counts once a day; a lesson counts once it has actually been
+ * studied (three or more sections read that day). Simply opening a page never counts.
  */
-const GOAL_EVENTS = new Set(["lesson_section_viewed", "exercise_completed", "review_completed", "reading_completed", "writing_submitted", "speaking_submitted", "listening_logged"]);
+const COMPLETED = new Set(["exercise_completed", "reading_completed", "writing_submitted", "speaking_submitted", "listening_logged"]);
 export function activitiesOn(events: ActivityEvent[], day: string, tz?: string) {
-  const seen = new Set<string>();
-  let n = 0;
+  let n = 0, reviewed = false;
+  const lessons = new Map<string, Set<string>>();
   for (const e of events) {
-    if (!GOAL_EVENTS.has(e.type) || dayKey(e.createdAt, tz) !== day) continue;
-    if (e.type === "lesson_section_viewed" || e.type === "review_completed") {
-      const k = e.type === "review_completed" ? "review" : `lesson:${(e.contentRef ?? "").split("#")[0]}`;
-      if (seen.has(k)) continue;
-      seen.add(k);
+    if (dayKey(e.createdAt, tz) !== day) continue;
+    if (COMPLETED.has(e.type)) n++;
+    else if (e.type === "review_completed") reviewed = true;
+    else if (e.type === "lesson_section_viewed" && e.contentRef) {
+      const [lesson, section] = e.contentRef.split("#");
+      lessons.set(lesson, (lessons.get(lesson) ?? new Set()).add(section ?? ""));
     }
-    n++;
   }
-  return n;
+  for (const set of lessons.values()) if (set.size >= LESSON_SECTIONS_FOR_STUDY) n++;
+  return n + (reviewed ? 1 : 0);
 }
 
 export function longestStreak(events: ActivityEvent[], tz?: string) {
@@ -45,8 +46,9 @@ export function longestStreak(events: ActivityEvent[], tz?: string) {
   return best;
 }
 
+/** Gradual colour progression with consistency: 1–2 days spark, 3–6 warm, 7–13 bright, 14–29 vivid, 30–99 deep, 100+ radiant. */
 export function tierFor(streak: number): FlameTier {
-  return streak >= 100 ? "radiant" : streak >= 30 ? "blaze" : streak >= 7 ? "bright" : streak >= 1 ? "flame" : "ember";
+  return streak >= 100 ? "radiant" : streak >= 30 ? "deep" : streak >= 14 ? "vivid" : streak >= 7 ? "bright" : streak >= 3 ? "warm" : streak >= 1 ? "spark" : "ember";
 }
 
 export interface StreakState {
