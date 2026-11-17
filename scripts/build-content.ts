@@ -15,6 +15,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import crypto from "node:crypto";
 
 const ROOT = path.resolve(__dirname, "..");
 const SRC = path.join(ROOT, "content/src");
@@ -144,6 +145,16 @@ function parseBlocks(lines: string[], where: string): Block[] {
   for (let i = 0; i < lines.length; i++) {
     const l = lines[i].trim();
     if (!l) { flush(); continue; }
+    if (l.startsWith("+++ ")) {
+      flush();
+      const title = l.slice(4).trim(); const inner: string[] = [];
+      i++;
+      while (i < lines.length && lines[i].trim() !== "+++") inner.push(lines[i++]);
+      if (i >= lines.length) fail(where, `details "${title}" is not closed with +++`);
+      blocks.push({ type: "details", title, blocks: parseBlocks(inner, `${where} › ${title}`) } as Block); continue;
+    }
+    if (l.startsWith("#### ")) { flush(); blocks.push({ type: "h3", text: l.slice(5).trim() }); continue; }
+    if (l.startsWith("!rule ")) { flush(); blocks.push({ type: "rule", text: l.slice(6).trim() }); continue; }
     if (l.startsWith("- ")) {
       flush();
       const items: string[] = [];
@@ -341,6 +352,29 @@ for (const { f, text } of read(path.join(SRC, "writing"))) {
   });
 }
 
+// ---------- Speaking topic bank (random generator) ----------
+const speakingCategories: { slug: string; title: string }[] = [];
+const speakingBank: { id: string; category: string; level: string; prompt: string; points: string[] }[] = [];
+{
+  const f = path.join(SRC, "speaking", "bank.txt");
+  if (fs.existsSync(f)) {
+    let cat = "";
+    const seen = new Set<string>();
+    fs.readFileSync(f, "utf8").split("\n").forEach((line, n) => {
+      const l = line.trim();
+      if (!l || l.startsWith("# ")) return;
+      const h = l.match(/^## ([a-z-]+) \| (.+)$/);
+      if (h) { cat = h[1]; speakingCategories.push({ slug: h[1], title: h[2] }); return; }
+      const [level, prompt, pts] = l.split("|").map((x) => x.trim());
+      if (!cat || !/^(B2\+?|C1|C2)$/.test(level) || !prompt || !pts) return fail(`speaking/bank.txt:${n + 1}`, "expected: level | prompt | point; point");
+      const id = `${cat}-${crypto.createHash("sha1").update(prompt).digest("hex").slice(0, 8)}`;
+      if (seen.has(id)) return fail(`speaking/bank.txt:${n + 1}`, "duplicate prompt");
+      seen.add(id);
+      speakingBank.push({ id, category: cat, level, prompt, points: pts.split(";").map((x) => x.trim()).filter(Boolean) });
+    });
+  }
+}
+
 if (errors.length) {
   console.error(`✗ ${errors.length} content error(s):\n` + errors.map((e) => `  ${e}`).join("\n"));
   process.exit(1);
@@ -351,8 +385,10 @@ write("lessons.json", lessons);
 write("exercises.json", exercises);
 write("readings.json", readings);
 write("writing.json", { guides, prompts });
+write("speaking-bank.json", { categories: speakingCategories, prompts: speakingBank });
 const attested = vocab.filter((v) => (v.attestedIn as string[]).length).length;
 console.log(`✓ vocabulary ${vocab.length} entries (${attested} attested in reference books${Object.keys(sourceText).length ? "" : ", kept from previous run"}), ${families.length} word families, ${distinctions.length} distinctions`);
 console.log(`✓ grammar ${lessons.length} lessons, ${exercises.filter((e) => e.skill === "grammar").reduce((n, e) => n + (e.questions as unknown[]).length, 0)} practice questions`);
 console.log(`✓ reading ${readings.length} texts, ${exercises.filter((e) => e.skill === "reading").reduce((n, e) => n + (e.questions as unknown[]).length, 0)} questions`);
 console.log(`✓ writing ${guides.length} essay types, ${prompts.length} questions`);
+console.log(`✓ speaking bank ${speakingBank.length} prompts in ${speakingCategories.length} categories`);

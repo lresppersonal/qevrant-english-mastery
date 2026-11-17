@@ -51,7 +51,7 @@ Turning verbs and adjectives into nouns lets you treat processes as things and p
 > x: Scientists have proved that coffee is healthy. || Overclaiming: *Research suggests that moderate coffee consumption may have health benefits.*
 > x: The government should solve this problem fast. || Vague: *Governments could address the problem by…*
 
-## advanced | uses | Advanced usage and stylistic nuances
+## advanced | advanced | Advanced usage and stylistic nuances
 - **Boosters** for well-supported claims: *clearly, undoubtedly, demonstrate, it is evident that*. Balance boosters and hedges.
 - **Evaluative stance markers**: *Surprisingly, Notably, Importantly*.
 - **Cohesion through reference**: *this trend, such policies, these findings* (a summary noun after *this/these*).

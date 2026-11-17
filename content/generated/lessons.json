@@ -207,7 +207,7 @@
    },
    {
     "id": "advanced",
-    "kind": "uses",
+    "kind": "advanced",
     "title": "Advanced usage and stylistic nuances",
     "blocks": [
      {
@@ -697,7 +697,7 @@
    },
    {
     "id": "advanced",
-    "kind": "uses",
+    "kind": "advanced",
     "title": "Advanced ways of comparing (C1)",
     "blocks": [
      {
@@ -1089,7 +1089,7 @@
    },
    {
     "id": "advanced",
-    "kind": "uses",
+    "kind": "advanced",
     "title": "Advanced usage and stylistic nuances",
     "blocks": [
      {
@@ -1181,6 +1181,758 @@
    {
     "book": "Destination C1&C2",
     "unit": "13",
+    "confidence": "verified"
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "dependent-prepositions",
+  "title": "Dependent prepositions after verbs, adjectives and nouns",
+  "level": "B2",
+  "domain": "prepositions",
+  "topics": [
+   "education"
+  ],
+  "summary": "Many verbs, adjectives and nouns are followed by a fixed preposition. There is often no logical rule, so the best strategy is to learn them as chunks and notice patterns by meaning.",
+  "minutes": 30,
+  "sections": [
+   {
+    "id": "overview",
+    "kind": "overview",
+    "title": "What is a dependent preposition?",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "A **dependent preposition** is the preposition that a particular word \"chooses\". You learn *depend **on***, *interested **in***, *a reason **for*** as single units."
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "It **depends on** the weather."
+       },
+       {
+        "en": "She's **interested in** urban design."
+       },
+       {
+        "en": "What's the **reason for** the delay?"
+       }
+      ]
+     },
+     {
+      "type": "rule",
+      "text": "After a preposition, use a **noun**, a **pronoun** or an **-ing** form: *I'm thinking **of moving**.* (~~of move~~, ~~of to move~~)"
+     }
+    ]
+   },
+   {
+    "id": "form",
+    "kind": "form",
+    "title": "Patterns",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Pattern",
+       "Example"
+      ],
+      "rows": [
+       [
+        "verb + preposition + noun",
+        "She **apologised for** the mistake."
+       ],
+       [
+        "verb + object + preposition + noun",
+        "They **accused him of** fraud."
+       ],
+       [
+        "adjective + preposition + noun/-ing",
+        "I'm **good at** organising events."
+       ],
+       [
+        "noun + preposition + noun",
+        "There's been an **increase in** prices."
+       ],
+       [
+        "preposition + -ing",
+        "He left **without saying** goodbye."
+       ]
+      ]
+     },
+     {
+      "type": "details",
+      "title": "Questions and relative clauses: the preposition moves to the end",
+      "blocks": [
+       {
+        "type": "examples",
+        "items": [
+         {
+          "en": "What are you **worried about**?",
+          "note": "informal question"
+         },
+         {
+          "en": "the project **(that) I'm responsible for**",
+          "note": "informal relative clause"
+         },
+         {
+          "en": "the project **for which** I am responsible",
+          "note": "formal: preposition before *which/whom*"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "uses",
+    "kind": "uses",
+    "title": "High-frequency groups",
+    "blocks": [
+     {
+      "type": "h3",
+      "text": "Verbs"
+     },
+     {
+      "type": "table",
+      "head": [
+       "Preposition",
+       "Verbs"
+      ],
+      "rows": [
+       [
+        "**on**",
+        "depend, rely, insist, concentrate, comment, focus, spend (money)"
+       ],
+       [
+        "**in**",
+        "believe, specialise, succeed, invest, participate, result (= cause)"
+       ],
+       [
+        "**for**",
+        "apologise, apply, pay, search, wait, blame sb, thank sb"
+       ],
+       [
+        "**of**",
+        "accuse sb, approve, consist, remind sb, warn sb, dream (= imagine)"
+       ],
+       [
+        "**from**",
+        "benefit, recover, suffer, prevent sb, protect sb, differ"
+       ],
+       [
+        "**with**",
+        "agree, cope, deal, provide sb, cooperate, charge sb"
+       ],
+       [
+        "**to**",
+        "belong, object, react, refer, respond, adapt, contribute"
+       ]
+      ]
+     },
+     {
+      "type": "h3",
+      "text": "Adjectives"
+     },
+     {
+      "type": "table",
+      "head": [
+       "Preposition",
+       "Adjectives"
+      ],
+      "rows": [
+       [
+        "**of**",
+        "afraid, aware, capable, fond, jealous, proud, tired, typical"
+       ],
+       [
+        "**about**",
+        "anxious, excited, upset, worried, sure, enthusiastic"
+       ],
+       [
+        "**at**",
+        "good, bad, brilliant, hopeless, surprised, amazed"
+       ],
+       [
+        "**with**",
+        "angry, bored, familiar, satisfied, pleased, obsessed"
+       ],
+       [
+        "**in**",
+        "interested, involved, experienced, rich"
+       ],
+       [
+        "**to**",
+        "similar, equal, addicted, kind, polite, opposed"
+       ],
+       [
+        "**for**",
+        "famous, responsible, suitable, eligible, grateful (for sth)"
+       ]
+      ]
+     },
+     {
+      "type": "h3",
+      "text": "Nouns"
+     },
+     {
+      "type": "table",
+      "head": [
+       "Preposition",
+       "Nouns"
+      ],
+      "rows": [
+       [
+        "**in**",
+        "increase, rise, fall, decrease, change, interest, difference"
+       ],
+       [
+        "**for**",
+        "demand, need, reason, respect, responsibility, cure"
+       ],
+       [
+        "**to**",
+        "solution, answer, access, approach, attitude, threat, alternative"
+       ],
+       [
+        "**of**",
+        "lack, cause, example, knowledge, fear"
+       ],
+       [
+        "**on**",
+        "effect, impact, influence, ban, tax, emphasis"
+       ],
+       [
+        "**between**",
+        "difference, link, relationship, contrast"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "contrasts",
+    "kind": "contrasts",
+    "title": "Same word, different preposition",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Phrase",
+       "Meaning"
+      ],
+      "rows": [
+       [
+        "**angry with** a person / **angry about** a situation",
+        "different objects"
+       ],
+       [
+        "**agree with** a person or opinion / **agree to** a proposal / **agree on** a decision",
+        "accept a view / accept a plan / reach a joint decision"
+       ],
+       [
+        "**think of** (have an idea, opinion) / **think about** (consider)",
+        "*What do you think **of** it?* / *I'm thinking **about** it.*"
+       ],
+       [
+        "**result in** (cause) / **result from** (be caused by)",
+        "*Stress can result **in** illness.* / *Illness can result **from** stress.*"
+       ],
+       [
+        "**an increase in** prices / **an increase of** 5%",
+        "the thing / the amount"
+       ],
+       [
+        "**responsible for** a task / **responsible to** a person",
+        "duty / who you report to"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "errors",
+    "kind": "errors",
+    "title": "Common mistakes",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "~~It depends of the price.~~",
+        "note": "*depend **on***",
+        "wrong": true
+       },
+       {
+        "en": "~~She's married with a doctor.~~",
+        "note": "*married **to***",
+        "wrong": true
+       },
+       {
+        "en": "~~We discussed about the plan.~~",
+        "note": "*discuss* takes a direct object: *discussed the plan* (but *a discussion **about***)",
+        "wrong": true
+       },
+       {
+        "en": "~~I'm looking forward to see you.~~",
+        "note": "*to* is a preposition here: *looking forward to **seeing***",
+        "wrong": true
+       },
+       {
+        "en": "~~The impact to society is significant.~~",
+        "note": "*impact **on** society*",
+        "wrong": true
+       },
+       {
+        "en": "~~He entered into the room.~~",
+        "note": "*enter* takes a direct object: *entered the room* (*enter into* = begin an agreement)",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "advanced",
+    "kind": "advanced",
+    "title": "Academic collocations",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "The findings **shed light on** the causes of poverty."
+       },
+       {
+        "en": "The study **draws on** data from twelve countries."
+       },
+       {
+        "en": "Access **to** education is a key **determinant of** income."
+       },
+       {
+        "en": "**In contrast to** earlier research, this survey found no link **between** age and satisfaction."
+       }
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "register",
+      "text": "Formal writing often places the preposition before *which/whom*: *the conditions **under which** they work*, *the colleague **to whom** I reported*."
+     }
+    ]
+   },
+   {
+    "id": "summary",
+    "kind": "summary",
+    "title": "Summary",
+    "blocks": [
+     {
+      "type": "rule",
+      "text": "Learn the word **with** its preposition. After any preposition, use a noun or **-ing**."
+     },
+     {
+      "type": "list",
+      "items": [
+       "*depend on, consist of, insist on, succeed in, apologise for*",
+       "*good at, interested in, aware of, similar to, responsible for*",
+       "*increase in, impact on, solution to, reason for, lack of*"
+      ]
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "type": "extends",
+    "to": "verb-patterns",
+    "label": "Verb patterns",
+    "level": "B2",
+    "published": true
+   },
+   {
+    "type": "extends",
+    "to": "prepositional-phrases",
+    "label": "Prepositional phrases",
+    "level": "C1",
+    "published": true
+   }
+  ],
+  "exercises": [
+   "dependent-prepositions-practice"
+  ],
+  "sources": [
+   {
+    "book": "Destination C1&C2",
+    "unit": "-",
+    "confidence": "verified"
+   },
+   {
+    "book": "Outcomes Upper-Intermediate (coverage reviewed",
+    "unit": "-",
+    "confidence": "verified"
+   },
+   {
+    "book": "examples original)",
+    "unit": "-",
+    "confidence": "verified"
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "ellipsis-and-substitution",
+  "title": "Ellipsis and substitution: leaving words out and replacing them",
+  "level": "C1",
+  "domain": "complex-sentences",
+  "topics": [
+   "education"
+  ],
+  "summary": "Fluent speakers avoid repeating words. They replace them with so, not, one, do or that, or simply leave them out. These tools make speech and writing concise and cohesive.",
+  "minutes": 30,
+  "sections": [
+   {
+    "id": "overview",
+    "kind": "overview",
+    "title": "What ellipsis and substitution do",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "**Substitution** replaces a word or phrase with a shorter form; **ellipsis** leaves it out completely because the listener can recover it from context."
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "\"Is it going to rain?\" \"I hope **not**.\"",
+        "note": "*not* replaces *it isn't going to rain*."
+       },
+       {
+        "en": "I wanted a large coffee but they only had small **ones**.",
+        "note": "*ones* replaces *coffees*."
+       },
+       {
+        "en": "She said she'd help, and she **did**.",
+        "note": "*did* replaces *helped*."
+       },
+       {
+        "en": "\"Coming tonight?\" \"Can't, sorry.\"",
+        "note": "Ellipsis in informal speech: *Are you* and *I* are left out."
+       }
+      ]
+     },
+     {
+      "type": "rule",
+      "text": "Only leave out or replace what the listener can recover **unambiguously** from the text or situation."
+     }
+    ]
+   },
+   {
+    "id": "form",
+    "kind": "form",
+    "title": "The main substitute forms",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Replaces",
+       "Substitute",
+       "Example"
+      ],
+      "rows": [
+       [
+        "a countable noun",
+        "**one / ones**",
+        "This chair is broken — take the other **one**."
+       ],
+       [
+        "a clause after think, hope, expect, suppose, be afraid, guess",
+        "**so / not**",
+        "\"Will he win?\" \"I **expect so**.\" / \"I **hope not**.\""
+       ],
+       [
+        "a verb phrase",
+        "**do / does / did** (+ **so**, **it**, **that**)",
+        "He promised to call, and he **did**. / If you want to leave, **do so** now."
+       ],
+       [
+        "a verb phrase after modals and auxiliaries",
+        "the auxiliary alone",
+        "\"Can you swim?\" \"Yes, I **can**.\""
+       ],
+       [
+        "a verb phrase after to",
+        "**to** alone",
+        "I didn't want to go, but I had **to**."
+       ],
+       [
+        "a whole idea",
+        "**that / this / it**",
+        "\"He's resigned.\" \"**That**'s a surprise.\""
+       ]
+      ]
+     },
+     {
+      "type": "h3",
+      "text": "Negative forms with so/not"
+     },
+     {
+      "type": "table",
+      "head": [
+       "Positive",
+       "Negative (more natural)",
+       "Negative (formal/emphatic)"
+      ],
+      "rows": [
+       [
+        "I think so.",
+        "I **don't think so**.",
+        "I think not."
+       ],
+       [
+        "I hope so.",
+        "—",
+        "I **hope not**. (never ~~I don't hope so~~)"
+       ],
+       [
+        "I'm afraid so.",
+        "—",
+        "I'**m afraid not**."
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "uses",
+    "kind": "uses",
+    "title": "Ellipsis in clauses and conversation",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "After **and, but, or** you can leave out a repeated subject or auxiliary: *She opened the letter **and** (she) read it twice.*",
+       "In comparisons: *He earns more than I do / than me.*",
+       "After **wh-** words: *Someone's taken my pen, but I don't know **who**.*",
+       "In replies: *\"Where are you going?\" \"(I'm going to the) Library.\"*"
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "tip",
+      "text": "In informal speech, the start of a sentence is often dropped (*situational ellipsis*): *(Have you) Seen Tom? / (It) Sounds good. / (I'll) See you later.* Don't use this in essays."
+     },
+     {
+      "type": "details",
+      "title": "Ellipsis with auxiliaries: which one to keep?",
+      "blocks": [
+       {
+        "type": "p",
+        "text": "Keep the **first** auxiliary from the original verb phrase:"
+       },
+       {
+        "type": "examples",
+        "items": [
+         {
+          "en": "\"Have you been waiting long?\" \"Yes, I **have**.\"",
+          "note": "not ~~I have been~~ (possible but heavy)"
+         },
+         {
+          "en": "He said it would be finished, and it **will (be)**."
+         },
+         {
+          "en": "\"Should it have been sent?\" \"It **should have (been)**.\""
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "contrasts",
+    "kind": "contrasts",
+    "title": "so vs it, one vs it, do so vs do it",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Compare",
+       "Meaning",
+       "Example"
+      ],
+      "rows": [
+       [
+        "**one**",
+        "another of the same type",
+        "I lost my umbrella, so I bought a new **one**."
+       ],
+       [
+        "**it**",
+        "the same thing",
+        "I lost my umbrella, but then I found **it**."
+       ],
+       [
+        "**do so**",
+        "formal, replaces an action",
+        "Visitors wishing to leave early may **do so**."
+       ],
+       [
+        "**do it / do that**",
+        "informal, refers to a specific act",
+        "Don't touch the oven — I told you not to **do that**!"
+       ],
+       [
+        "**so** after *think, hope*",
+        "replaces a clause",
+        "\"Is it true?\" \"I think **so**.\""
+       ],
+       [
+        "**it** after *know, say*",
+        "refers to a stated fact",
+        "\"He's late.\" \"I **know** (~~so~~).\""
+       ]
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "warning",
+      "text": "*Know*, *sure* and *certain* do not take *so*: ~~I know so~~ → *I know.* ~~I'm sure so~~ → *I'm sure (of it).*"
+     }
+    ]
+   },
+   {
+    "id": "errors",
+    "kind": "errors",
+    "title": "Common mistakes",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "~~\"Is she coming?\" \"I don't hope so.\"~~",
+        "note": "*hope* forms the negative with **not**: *I hope not.*",
+        "wrong": true
+       },
+       {
+        "en": "~~I prefer the red shoes to the black.~~",
+        "note": "Fine in speech, but *ones* is needed when the noun is countable and not clear: *the black **ones***.",
+        "wrong": true
+       },
+       {
+        "en": "~~I'd like a one with a balcony.~~",
+        "note": "*a/an* + *one* needs an adjective: *a **big** one* — or just *one*.",
+        "wrong": true
+       },
+       {
+        "en": "~~\"Can you help?\" \"Yes, I can help it.\"~~",
+        "note": "Use the auxiliary alone: *Yes, I can.*",
+        "wrong": true
+       },
+       {
+        "en": "~~I didn't want to, but I had.~~",
+        "note": "Keep *to*: *but I had **to**.*",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "advanced",
+    "kind": "advanced",
+    "title": "Cohesion in formal writing",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "In academic writing, substitution prevents repetition and links sentences:"
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "Many studies have examined online learning. **Those** that included adult learners reported higher drop-out rates.",
+        "note": "*those* = the studies"
+       },
+       {
+        "en": "The government promised to reduce emissions but has not **done so**.",
+        "note": "formal *do so*"
+       },
+       {
+        "en": "Urban areas grew faster than rural **ones**.",
+        "note": "*ones* = areas"
+       },
+       {
+        "en": "Some participants improved; **others** did not.",
+        "note": "*others* + ellipsis of the verb"
+       }
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "register",
+      "text": "*Do so*, *those* and *the former / the latter* are typical of formal writing. *Do it*, *that one* and situational ellipsis are typical of speech."
+     }
+    ]
+   },
+   {
+    "id": "summary",
+    "kind": "summary",
+    "title": "Summary",
+    "blocks": [
+     {
+      "type": "rule",
+      "text": "Replace nouns with **one(s)**, clauses with **so/not**, verb phrases with **do / an auxiliary / to**. Leave words out only when they are easy to recover."
+     },
+     {
+      "type": "list",
+      "items": [
+       "*I hope not / I'm afraid not* — never *don't hope so*.",
+       "*I know / I'm sure* — never *know so*.",
+       "Formal: *do so, those, the former/latter*. Informal: dropped subjects (*Sounds great*)."
+      ]
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "type": "prerequisite",
+    "to": "verb-patterns",
+    "label": "Verb patterns",
+    "level": "B2",
+    "published": true
+   },
+   {
+    "type": "contrasts_with",
+    "to": "academic-register",
+    "label": "Academic register",
+    "level": "C1",
+    "published": true
+   }
+  ],
+  "exercises": [
+   "ellipsis-and-substitution-practice"
+  ],
+  "sources": [
+   {
+    "book": "Speakout C1–C2",
+    "unit": "-",
+    "confidence": "verified"
+   },
+   {
+    "book": "Destination C1&C2 (grammar coverage reviewed)",
+    "unit": "-",
     "confidence": "verified"
    }
   ]
@@ -1333,6 +2085,72 @@
     ]
    },
    {
+    "id": "time",
+    "kind": "time",
+    "title": "Time expressions with future forms",
+    "blocks": [
+     {
+      "type": "rule",
+      "text": "Time expressions do not choose the future form for you — your **reason** (plan, arrangement, prediction, decision) does. But some expressions strongly prefer particular forms."
+     },
+     {
+      "type": "table",
+      "head": [
+       "Expression",
+       "Typical form",
+       "Example"
+      ],
+      "rows": [
+       [
+        "**by** (Friday / the time …)",
+        "future perfect",
+        "**By Friday** I'**ll have finished** the draft."
+       ],
+       [
+        "**this time next week / at 10 tomorrow**",
+        "future continuous",
+        "**This time next week** we'**ll be lying** on a beach."
+       ],
+       [
+        "**tonight, on Monday** (fixed arrangement)",
+        "present continuous",
+        "I'**m meeting** Sam **on Monday**."
+       ],
+       [
+        "**at 6.15, on 3 May** (timetable)",
+        "present simple",
+        "The train **leaves at 6.15**."
+       ],
+       [
+        "**soon, one day, in the future**",
+        "will / be going to",
+        "**One day** robots **will do** most of this."
+       ],
+       [
+        "**when, as soon as, until, before, after**",
+        "present tense in the time clause",
+        "I'll call **when** I **arrive** (~~will arrive~~)."
+       ]
+      ]
+     },
+     {
+      "type": "details",
+      "title": "in, within, by, until",
+      "blocks": [
+       {
+        "type": "list",
+        "items": [
+         "*in two weeks* = at the end of that period: *I'll be back in two weeks.*",
+         "*within two weeks* = at some point before the end.",
+         "*by Friday* = no later than Friday (deadline).",
+         "*until Friday* = continuously up to Friday: *I'll be here until Friday.*"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
     "id": "contrasts",
     "kind": "contrasts",
     "title": "Differences between similar constructions",
@@ -1366,7 +2184,7 @@
    },
    {
     "id": "advanced",
-    "kind": "uses",
+    "kind": "advanced",
     "title": "Advanced usage: be + to, future in the past",
     "blocks": [
      {
@@ -1614,6 +2432,64 @@
     ]
    },
    {
+    "id": "time",
+    "kind": "time",
+    "title": "Time expressions for habits",
+    "blocks": [
+     {
+      "type": "rule",
+      "text": "Habit markers (frequency adverbs, *every*, *whenever*) go with present simple or *used to/would* for the past. *These days* and *now* contrast present habits with past ones."
+     },
+     {
+      "type": "table",
+      "head": [
+       "Expression",
+       "Example"
+      ],
+      "rows": [
+       [
+        "**always, usually, often, sometimes, rarely, never**",
+        "We **often** **used to** walk to school."
+       ],
+       [
+        "**every** day / summer / time",
+        "**Every** summer we **would** visit my grandparents."
+       ],
+       [
+        "**whenever, each time**",
+        "**Whenever** it rained, the roof **would** leak."
+       ],
+       [
+        "**in those days, back then, as a child**",
+        "**In those days** people **used to** write letters."
+       ],
+       [
+        "**these days, nowadays, now** (contrast)",
+        "I **used to** smoke, but **these days** I **don't**."
+       ],
+       [
+        "**no longer, not … any more**",
+        "She **no longer** works there. / She **doesn't** work there **any more**."
+       ]
+      ]
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "He's **always** borrowing my charger!",
+        "note": "*always* + continuous: an annoying present habit."
+       }
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "warning",
+      "text": "*Used to* and *would* need a past time frame. Don't use them with a specific number of times: ~~I used to visit Rome three times~~ → *I visited Rome three times.*"
+     }
+    ]
+   },
+   {
     "id": "errors",
     "kind": "errors",
     "title": "Common mistakes",
@@ -1689,6 +2565,353 @@
    {
     "book": "Destination C1&C2",
     "unit": "3",
+    "confidence": "verified"
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "indirect-questions-and-tags",
+  "title": "Indirect questions and question tags",
+  "level": "B2",
+  "domain": "questions-inversion",
+  "topics": [
+   "education"
+  ],
+  "summary": "Indirect questions make requests and enquiries more polite; question tags check information and invite agreement. Both depend on getting word order and auxiliaries exactly right.",
+  "minutes": 30,
+  "sections": [
+   {
+    "id": "overview",
+    "kind": "overview",
+    "title": "Why use them?",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "**Indirect questions** sound more polite and less direct. **Question tags** are short questions at the end of a statement, used to check facts or invite the listener to agree."
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "**Could you tell me where the station is?**",
+        "note": "more polite than *Where is the station?*"
+       },
+       {
+        "en": "You're from Kazan, **aren't you?**",
+        "note": "checking information"
+       },
+       {
+        "en": "It's a lovely day, **isn't it?**",
+        "note": "inviting agreement / small talk"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "form",
+    "kind": "form",
+    "title": "Formation",
+    "blocks": [
+     {
+      "type": "h3",
+      "text": "Indirect questions"
+     },
+     {
+      "type": "rule",
+      "text": "After the introductory phrase, use **statement word order** (subject + verb) and no *do/does/did*."
+     },
+     {
+      "type": "table",
+      "head": [
+       "Direct question",
+       "Indirect question"
+      ],
+      "rows": [
+       [
+        "Where **is the station**?",
+        "Could you tell me where **the station is**?"
+       ],
+       [
+        "What time **does it open**?",
+        "Do you know what time **it opens**?"
+       ],
+       [
+        "**Did** she **call**?",
+        "I wonder **if/whether** she **called**."
+       ],
+       [
+        "How much **does it cost**?",
+        "I'd like to know how much **it costs**."
+       ]
+      ]
+     },
+     {
+      "type": "p",
+      "text": "Common introductions: *Could you tell me…? / Do you know…? / I was wondering… / Would you mind telling me…? / Have you any idea…? / I'd like to know…*"
+     },
+     {
+      "type": "note",
+      "tone": "tip",
+      "text": "Yes/no questions need **if** or **whether**: *Do you know **if** the museum is open?*"
+     },
+     {
+      "type": "h3",
+      "text": "Question tags"
+     },
+     {
+      "type": "rule",
+      "text": "Positive statement → **negative tag**; negative statement → **positive tag**. Use the same auxiliary (or *do/does/did*) and a pronoun."
+     },
+     {
+      "type": "table",
+      "head": [
+       "Statement",
+       "Tag"
+      ],
+      "rows": [
+       [
+        "She **is** late,",
+        "**isn't she**?"
+       ],
+       [
+        "They **can** swim,",
+        "**can't they**?"
+       ],
+       [
+        "You **live** here,",
+        "**don't you**?"
+       ],
+       [
+        "He **didn't** call,",
+        "**did he**?"
+       ],
+       [
+        "We**'ve** met before,",
+        "**haven't we**?"
+       ]
+      ]
+     },
+     {
+      "type": "details",
+      "title": "Special tags",
+      "blocks": [
+       {
+        "type": "table",
+        "head": [
+         "Statement",
+         "Tag",
+         "Note"
+        ],
+        "rows": [
+         [
+          "**I'm** right,",
+          "**aren't I**?",
+          "not ~~amn't I~~"
+         ],
+         [
+          "**Let's** go,",
+          "**shall we**?",
+          "suggestions"
+         ],
+         [
+          "**Open** the window,",
+          "**will you / could you**?",
+          "imperatives"
+         ],
+         [
+          "**Nobody** called,",
+          "**did they**?",
+          "*nobody, nothing, never* are negative → positive tag"
+         ],
+         [
+          "**There's** a problem,",
+          "**isn't there**?",
+          "*there* is repeated"
+         ],
+         [
+          "**Everyone** agrees,",
+          "**don't they**?",
+          "*everyone/someone* → *they*"
+         ]
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "uses",
+    "kind": "uses",
+    "title": "Meaning and intonation",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "**Falling** intonation on a tag: you are fairly sure and expect agreement. *It's cold, ↘isn't it?*",
+       "**Rising** intonation: a real question; you're not sure. *You're coming, ↗aren't you?*",
+       "**Same-polarity tags** (positive + positive) show interest, surprise or sarcasm: *So you're the new manager, **are you**?*",
+       "Indirect questions are used for politeness, in formal emails and in interviews: *I was wondering whether you could send me the agenda.*"
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "register",
+      "text": "*I was wondering if…* and *Would you mind telling me…* are the most polite. *Any idea…?* is informal."
+     }
+    ]
+   },
+   {
+    "id": "contrasts",
+    "kind": "contrasts",
+    "title": "Indirect questions vs reported questions",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Indirect question (now, polite)",
+       "Reported question (telling what someone asked)"
+      ],
+      "rows": [
+       [
+        "Do you know where **she lives**?",
+        "He asked me where **she lived**."
+       ],
+       [
+        "Can you tell me if **it's** free?",
+        "She asked if **it was** free."
+       ]
+      ]
+     },
+     {
+      "type": "p",
+      "text": "Both use statement word order; reported questions usually also **backshift** the tense."
+     }
+    ]
+   },
+   {
+    "id": "errors",
+    "kind": "errors",
+    "title": "Common mistakes",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "~~Could you tell me where is the station?~~",
+        "note": "Statement order: *where **the station is***.",
+        "wrong": true
+       },
+       {
+        "en": "~~Do you know what time does the film start?~~",
+        "note": "No *does*: *what time **the film starts***.",
+        "wrong": true
+       },
+       {
+        "en": "~~I wonder are they coming.~~",
+        "note": "Add *if/whether*: *I wonder **if** they're coming.*",
+        "wrong": true
+       },
+       {
+        "en": "~~You haven't seen my keys, haven't you?~~",
+        "note": "Negative statement → positive tag: *have you?*",
+        "wrong": true
+       },
+       {
+        "en": "~~I'm late, am not I?~~",
+        "note": "Use *aren't I?*",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "advanced",
+    "kind": "advanced",
+    "title": "Advanced patterns",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "**What** she said I can't remember.",
+        "note": "A *wh*-clause as the object, fronted for emphasis."
+       },
+       {
+        "en": "It's anyone's guess **whether** the deal will go ahead.",
+        "note": "*whether* clause as a subject complement"
+       },
+       {
+        "en": "**Whether** we like it or not, prices will rise.",
+        "note": "*whether … or not* = it doesn't matter if"
+       },
+       {
+        "en": "I'd be grateful if you could let me know **when** the results will be available.",
+        "note": "formal email pattern"
+       }
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "tip",
+      "text": "In formal writing prefer *whether* to *if*, and always use *whether* after prepositions and before *to*-infinitives: *a debate about **whether** to ban cars* (~~about if~~)."
+     }
+    ]
+   },
+   {
+    "id": "summary",
+    "kind": "summary",
+    "title": "Summary",
+    "blocks": [
+     {
+      "type": "rule",
+      "text": "Indirect questions: polite opener + (wh-word / if / whether) + **subject + verb**. Tags: opposite polarity, same auxiliary, pronoun subject."
+     },
+     {
+      "type": "list",
+      "items": [
+       "*I'm…, aren't I? / Let's…, shall we? / Nobody…, did they?*",
+       "Falling tag = expecting agreement; rising tag = real question."
+      ]
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "type": "extends",
+    "to": "reported-speech",
+    "label": "Reported speech",
+    "level": "B2",
+    "published": true
+   },
+   {
+    "type": "contrasts_with",
+    "to": "inversion-and-emphasis",
+    "label": "Inversion and emphasis",
+    "level": "C1",
+    "published": true
+   }
+  ],
+  "exercises": [
+   "indirect-questions-and-tags-practice"
+  ],
+  "sources": [
+   {
+    "book": "Speakout B2",
+    "unit": "-",
+    "confidence": "verified"
+   },
+   {
+    "book": "Outcomes Upper-Intermediate (grammar coverage reviewed)",
+    "unit": "-",
     "confidence": "verified"
    }
   ]
@@ -2190,7 +3413,7 @@
    },
    {
     "id": "advanced",
-    "kind": "uses",
+    "kind": "advanced",
     "title": "Advanced usage and stylistic nuances",
     "blocks": [
      {
@@ -2488,7 +3711,7 @@
    },
    {
     "id": "advanced",
-    "kind": "uses",
+    "kind": "advanced",
     "title": "Advanced usage: modality beyond modal verbs",
     "blocks": [
      {
@@ -2705,6 +3928,75 @@
     ]
    },
    {
+    "id": "time",
+    "kind": "time",
+    "title": "Time expressions in narratives",
+    "blocks": [
+     {
+      "type": "rule",
+      "text": "Linkers show the order of events; the tense shows how the speaker sees them. Choose the linker first, then check the tense."
+     },
+     {
+      "type": "table",
+      "head": [
+       "Expression",
+       "Typical tense",
+       "Example"
+      ],
+      "rows": [
+       [
+        "**when, as soon as, the moment**",
+        "past simple (sequence)",
+        "**When** the alarm rang, we **left**."
+       ],
+       [
+        "**while, as, just as**",
+        "past continuous (background)",
+        "**While** we **were packing**, the lights went out."
+       ],
+       [
+        "**by the time, before, already, (not) yet**",
+        "past perfect (earlier event)",
+        "**By the time** we arrived, the film **had started**."
+       ],
+       [
+        "**for, since** (looking back from a past point)",
+        "past perfect continuous",
+        "She **had been working** there **for** years."
+       ],
+       [
+        "**after, once**",
+        "past simple or past perfect",
+        "**After** he **(had) finished**, he went home."
+       ],
+       [
+        "**then, next, eventually, in the end, at last**",
+        "past simple",
+        "**Eventually**, the rain **stopped**."
+       ]
+      ]
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "**No sooner had** we sat down **than** the phone rang.",
+        "note": "Inverted pattern for emphasis — see *Inversion and emphasis*."
+       },
+       {
+        "en": "**Hardly** had she arrived **when** the trouble began.",
+        "note": "*hardly/scarcely … when*"
+       }
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "tip",
+      "text": "*After* and *before* already show order, so the past perfect is optional: *After she (had) left, I called him.*"
+     }
+    ]
+   },
+   {
     "id": "contrasts",
     "kind": "contrasts",
     "title": "Differences between similar constructions",
@@ -2780,7 +4072,7 @@
    },
    {
     "id": "advanced",
-    "kind": "uses",
+    "kind": "advanced",
     "title": "Advanced usage and stylistic nuances",
     "blocks": [
      {
@@ -3070,7 +4362,7 @@
    },
    {
     "id": "advanced",
-    "kind": "uses",
+    "kind": "advanced",
     "title": "Advanced usage and stylistic nuances",
     "blocks": [
      {
@@ -3523,49 +4815,174 @@
     "title": "Formation",
     "blocks": [
      {
+      "type": "rule",
+      "text": "Present perfect = **have/has + past participle**. Present perfect continuous = **have/has been + -ing**. The auxiliary *have* does all the grammatical work: it carries negation, questions and short answers."
+     },
+     {
+      "type": "h3",
+      "text": "Affirmative"
+     },
+     {
       "type": "table",
       "head": [
-       "Form",
-       "Structure",
+       "Subject",
+       "Simple",
+       "Continuous"
+      ],
+      "rows": [
+       [
+        "I / you / we / they",
+        "**have** ('ve) **finished**",
+        "**have been** ('ve been) **working**"
+       ],
+       [
+        "he / she / it",
+        "**has** ('s) **finished**",
+        "**has been** ('s been) **working**"
+       ]
+      ]
+     },
+     {
+      "type": "h3",
+      "text": "Negative"
+     },
+     {
+      "type": "table",
+      "head": [
+       "Subject",
+       "Simple",
+       "Continuous"
+      ],
+      "rows": [
+       [
+        "I / you / we / they",
+        "**haven't** (have not) **finished**",
+        "**haven't been working**"
+       ],
+       [
+        "he / she / it",
+        "**hasn't** (has not) **finished**",
+        "**hasn't been working**"
+       ]
+      ]
+     },
+     {
+      "type": "h3",
+      "text": "Questions"
+     },
+     {
+      "type": "table",
+      "head": [
+       "Question",
        "Example"
       ],
       "rows": [
        [
-        "Present perfect simple",
-        "have/has + past participle",
-        "She **has written** three books."
+        "Have/Has + subject + past participle?",
+        "**Have** you **finished** the report?"
        ],
        [
-        "Present perfect continuous",
-        "have/has been + -ing",
-        "She **has been writing** since 8 a.m."
+        "Wh- + have/has + subject + past participle?",
+        "Where **has** she **gone**?"
        ],
        [
-        "Past perfect simple",
-        "had + past participle",
-        "They **had left** before we arrived."
+        "Have/Has + subject + been + -ing?",
+        "**Have** you **been waiting** long?"
        ],
        [
-        "Past perfect continuous",
-        "had been + -ing",
-        "I **had been waiting** for an hour."
+        "How long + have/has + subject + been + -ing?",
+        "How long **have** they **been living** here?"
+       ]
+      ]
+     },
+     {
+      "type": "h3",
+      "text": "Short answers"
+     },
+     {
+      "type": "table",
+      "head": [
+       "Question",
+       "Yes",
+       "No"
+      ],
+      "rows": [
+       [
+        "Have you seen it?",
+        "Yes, I **have**.",
+        "No, I **haven't**."
        ],
        [
-        "Future perfect",
-        "will have + past participle",
-        "We **will have finished** by May."
-       ],
-       [
-        "Passive perfect",
-        "have/has been + past participle",
-        "The results **have been published**."
+        "Has he been working?",
+        "Yes, he **has**.",
+        "No, he **hasn't**."
        ]
       ]
      },
      {
       "type": "note",
-      "tone": "warning",
-      "text": "Questions and negatives use the first auxiliary: *Have you been waiting long?* / *She hasn't been feeling well.*"
+      "tone": "tip",
+      "text": "Short answers repeat only the auxiliary: ~~Yes, I have seen~~ → *Yes, I have.*"
+     },
+     {
+      "type": "details",
+      "title": "The whole perfect family at a glance",
+      "blocks": [
+       {
+        "type": "table",
+        "head": [
+         "Form",
+         "Structure",
+         "Example"
+        ],
+        "rows": [
+         [
+          "Present perfect simple",
+          "have/has + past participle",
+          "She **has written** three books."
+         ],
+         [
+          "Present perfect continuous",
+          "have/has been + -ing",
+          "She **has been writing** since 8 a.m."
+         ],
+         [
+          "Past perfect simple",
+          "had + past participle",
+          "They **had left** before we arrived."
+         ],
+         [
+          "Past perfect continuous",
+          "had been + -ing",
+          "I **had been waiting** for an hour."
+         ],
+         [
+          "Future perfect",
+          "will have + past participle",
+          "We **will have finished** by May."
+         ],
+         [
+          "Passive perfect",
+          "have/has been + past participle",
+          "The results **have been published**."
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "type": "details",
+      "title": "Spelling of past participles and -ing forms",
+      "blocks": [
+       {
+        "type": "list",
+        "items": [
+         "Regular verbs add *-ed*: *work → worked*, *study → studied*, *stop → stopped*.",
+         "Irregular participles must be learned: *go → gone*, *write → written*, *take → taken*, *be → been*.",
+         "*-ing*: drop silent *-e* (*make → making*), double a final consonant after a short stressed vowel (*run → running*, *begin → beginning*)."
+        ]
+       }
+      ]
      }
     ]
    },
@@ -3607,6 +5024,86 @@
         "note": "The conversation starts in the present perfect, then moves to past simple for details."
        }
       ]
+     }
+    ]
+   },
+   {
+    "id": "time",
+    "kind": "time",
+    "title": "Time expressions and signal words",
+    "blocks": [
+     {
+      "type": "rule",
+      "text": "Expressions that mean \"up to now\" go with the present perfect. Expressions that point to a **finished** time go with the past simple."
+     },
+     {
+      "type": "table",
+      "head": [
+       "Present perfect",
+       "Past simple"
+      ],
+      "rows": [
+       [
+        "**for** two years, **since** 2020 (up to now)",
+        "**two years ago**, **in** 2020"
+       ],
+       [
+        "**just**, **already**, **yet**, **recently**, **lately**",
+        "**yesterday**, **last week**, **then**"
+       ],
+       [
+        "**ever**, **never**, **so far**, **up to now**, **to date**",
+        "**when I was a child**, **at 5 o'clock**"
+       ],
+       [
+        "**this week / today / this year** (period not finished)",
+        "**this morning** (when it is now afternoon)"
+       ]
+      ]
+     },
+     {
+      "type": "h3",
+      "text": "Where the adverbs go"
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "I've **just** sent it.",
+        "note": "*just, already, ever, never* go between *have* and the participle."
+       },
+       {
+        "en": "Have you finished **yet**? / I haven't finished **yet**.",
+        "note": "*yet* goes at the end in questions and negatives."
+       },
+       {
+        "en": "She's **already** left. / Has she left **already**?",
+        "note": "*already* at the end of a question shows surprise."
+       },
+       {
+        "en": "We've lived here **for** ten years / **since** 2015.",
+        "note": "*for* + a period; *since* + a starting point."
+       }
+      ]
+     },
+     {
+      "type": "details",
+      "title": "for, since, ago — quick check",
+      "blocks": [
+       {
+        "type": "list",
+        "items": [
+         "*for* + length of time: *for a week*, *for ages*.",
+         "*since* + point in time: *since Monday*, *since I moved*.",
+         "*ago* = back from now, past simple only: *a week ago* (~~I've arrived a week ago~~)."
+        ]
+       }
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "warning",
+      "text": "*How long* + present perfect asks about duration up to now; *When* asks about a finished moment and needs the past simple: ~~When have you arrived?~~ → *When did you arrive?*"
      }
     ]
    },
@@ -3738,7 +5235,7 @@
    },
    {
     "id": "advanced",
-    "kind": "uses",
+    "kind": "advanced",
     "title": "Advanced usage and stylistic nuances",
     "blocks": [
      {
@@ -3840,6 +5337,301 @@
    {
     "book": "Destination C1&C2",
     "unit": "1",
+    "confidence": "verified"
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "prepositional-phrases",
+  "title": "Prepositional phrases: fixed expressions beginning with a preposition",
+  "level": "C1",
+  "domain": "prepositions",
+  "topics": [
+   "education"
+  ],
+  "summary": "Phrases such as in charge of, by mistake, on behalf of and under pressure work as single units. Knowing them makes your English more precise and idiomatic, especially in formal writing.",
+  "minutes": 25,
+  "sections": [
+   {
+    "id": "overview",
+    "kind": "overview",
+    "title": "What are prepositional phrases?",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "A prepositional phrase begins with a preposition and works as one block of meaning: *at risk*, *in favour of*, *on purpose*. Many are fixed: you can't change the preposition or add an article."
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "The species is **at risk of** extinction."
+       },
+       {
+        "en": "I deleted the file **by mistake**."
+       },
+       {
+        "en": "She spoke **on behalf of** the whole team."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "form",
+    "kind": "form",
+    "title": "Common structures",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Structure",
+       "Examples"
+      ],
+      "rows": [
+       [
+        "preposition + noun",
+        "**at** first, **by** chance, **in** time, **on** time, **out of** order"
+       ],
+       [
+        "preposition + noun + of",
+        "**in** charge **of**, **on** behalf **of**, **in** spite **of**, **at** the expense **of**"
+       ],
+       [
+        "preposition + adjective/-ing",
+        "**in** general, **at** last, **for** good (= permanently)"
+       ],
+       [
+        "preposition + the + noun",
+        "**on the** whole, **in the** end, **at the** moment, **by the** way"
+       ]
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "warning",
+      "text": "Many fixed phrases have **no article**: *at risk, in debt, on foot, by car, under pressure* (~~in a debt~~, ~~by the car~~)."
+     }
+    ]
+   },
+   {
+    "id": "uses",
+    "kind": "uses",
+    "title": "Phrases grouped by preposition",
+    "blocks": [
+     {
+      "type": "h3",
+      "text": "at"
+     },
+     {
+      "type": "p",
+      "text": "*at first, at last, at least, at once, at risk, at random, at a loss (for words), at short notice, at your disposal, at stake*"
+     },
+     {
+      "type": "h3",
+      "text": "by"
+     },
+     {
+      "type": "p",
+      "text": "*by accident/mistake, by chance, by far, by heart, by law, by no means, by and large, by the time*"
+     },
+     {
+      "type": "h3",
+      "text": "in"
+     },
+     {
+      "type": "p",
+      "text": "*in advance, in charge of, in common, in debt, in danger, in favour of, in the long run, in detail, in theory, in practice, in short*"
+     },
+     {
+      "type": "h3",
+      "text": "on"
+     },
+     {
+      "type": "p",
+      "text": "*on average, on purpose, on behalf of, on the whole, on time, on the verge of, on the contrary, on second thoughts, on the grounds that*"
+     },
+     {
+      "type": "h3",
+      "text": "out of / under / beyond"
+     },
+     {
+      "type": "p",
+      "text": "*out of date, out of control, out of the question, out of stock / under pressure, under control, under construction, under the impression / beyond doubt, beyond repair, beyond belief*"
+     }
+    ]
+   },
+   {
+    "id": "contrasts",
+    "kind": "contrasts",
+    "title": "Easily confused pairs",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Pair",
+       "Difference"
+      ],
+      "rows": [
+       [
+        "**on time** / **in time**",
+        "exactly at the planned time / early enough (often *in time for/to*)"
+       ],
+       [
+        "**in the end** / **at the end (of)**",
+        "finally, after a long process / at the point where something finishes"
+       ],
+       [
+        "**at first** / **first(ly)**",
+        "at the beginning, in contrast to later / introducing the first point in a list"
+       ],
+       [
+        "**on the contrary** / **on the other hand**",
+        "rejects the previous statement / adds a contrasting point"
+       ],
+       [
+        "**in practice** / **in theory**",
+        "what really happens / what should happen"
+       ],
+       [
+        "**out of the question** / **out of question**",
+        "impossible / (not used)"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "errors",
+    "kind": "errors",
+    "title": "Common mistakes",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "~~In the other hand, cars are convenient.~~",
+        "note": "*On the other hand*",
+        "wrong": true
+       },
+       {
+        "en": "~~I met her by a chance.~~",
+        "note": "No article: *by chance*",
+        "wrong": true
+       },
+       {
+        "en": "~~The train arrived in time at 9.00 exactly.~~",
+        "note": "exact schedule: *on time*",
+        "wrong": true
+       },
+       {
+        "en": "~~At the end, we decided to stay.~~",
+        "note": "meaning *finally*: *In the end*",
+        "wrong": true
+       },
+       {
+        "en": "~~He's in charge for the project.~~",
+        "note": "*in charge of*",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "advanced",
+    "kind": "advanced",
+    "title": "Formal and academic phrases",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "**In the light of** these findings, the policy should be reviewed."
+       },
+       {
+        "en": "The plan was rejected **on the grounds that** it was too costly."
+       },
+       {
+        "en": "Growth came **at the expense of** the environment."
+       },
+       {
+        "en": "**With regard to** funding, three options are available."
+       },
+       {
+        "en": "**By virtue of** its location, the city became a trade centre."
+       },
+       {
+        "en": "The data are, **for the most part**, consistent with earlier studies."
+       }
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "register",
+      "text": "In essays, phrases like *in the light of, with regard to, by virtue of, on the grounds that* are more precise than *because of* or *about*. Don't overuse them: one or two per paragraph is plenty."
+     }
+    ]
+   },
+   {
+    "id": "summary",
+    "kind": "summary",
+    "title": "Summary",
+    "blocks": [
+     {
+      "type": "rule",
+      "text": "Learn prepositional phrases as fixed chunks; most take **no article** and the preposition cannot change."
+     },
+     {
+      "type": "list",
+      "items": [
+       "*on time ≠ in time; in the end ≠ at the end of*",
+       "*on the contrary* rejects; *on the other hand* adds a contrast",
+       "Formal: *in the light of, on the grounds that, at the expense of, with regard to*"
+      ]
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "type": "prerequisite",
+    "to": "dependent-prepositions",
+    "label": "Dependent prepositions",
+    "level": "B2",
+    "published": true
+   },
+   {
+    "type": "contrasts_with",
+    "to": "linking-contrast-concession",
+    "label": "Linking contrast and concession",
+    "level": "B2+",
+    "published": true
+   }
+  ],
+  "exercises": [
+   "prepositional-phrases-practice"
+  ],
+  "sources": [
+   {
+    "book": "Destination C1&C2",
+    "unit": "-",
+    "confidence": "verified"
+   },
+   {
+    "book": "Outcomes Advanced (coverage reviewed",
+    "unit": "-",
+    "confidence": "verified"
+   },
+   {
+    "book": "examples original)",
+    "unit": "-",
     "confidence": "verified"
    }
   ]
@@ -4156,6 +5948,276 @@
   "reviewer": null,
   "publishedAt": "2026-11-16",
   "id": "",
+  "slug": "vague-language-and-fillers",
+  "title": "Vague language, hedging and fillers in speech",
+  "level": "B2",
+  "domain": "register",
+  "topics": [
+   "education"
+  ],
+  "summary": "Natural speakers are often deliberately imprecise. Vague expressions, softeners and fillers make speech sound relaxed, polite and fluent, and they buy thinking time in speaking exams.",
+  "minutes": 25,
+  "sections": [
+   {
+    "id": "overview",
+    "kind": "overview",
+    "title": "Why be vague?",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Being vague is not bad English. We use **vague language** when exact detail isn't important, to sound friendly, or because we don't know. **Fillers** give us time to think without long silences."
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "There were **about thirty or so** people there."
+       },
+       {
+        "en": "We need pens, paper, **that kind of thing**."
+       },
+       {
+        "en": "**Well**, **I mean**, it's **sort of** complicated."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "form",
+    "kind": "form",
+    "title": "Types of expression",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Function",
+       "Expressions"
+      ],
+      "rows": [
+       [
+        "approximate numbers",
+        "**around / about / roughly** 50, 50 **or so**, 50**-ish**, **just over / under** 50, **dozens of**"
+       ],
+       [
+        "approximate time",
+        "**sixish**, **at some point**, **the other day**, **sometime** next week"
+       ],
+       [
+        "vague categories",
+        "**and stuff (like that)**, **and things**, **or something**, **that sort of thing**, **and so on**"
+       ],
+       [
+        "softening adjectives",
+        "**sort of / kind of** tired, **a bit** expensive, **slightly** odd, **quite** good"
+       ],
+       [
+        "fillers & thinking time",
+        "**well, um, er, you know, I mean, like, let me think, how can I put it**"
+       ],
+       [
+        "vague nouns",
+        "**thing, stuff, whatsit, thingy** (very informal)"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "uses",
+    "kind": "uses",
+    "title": "Using them well",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "**Softening** criticism or requests: *It's **a bit** small, isn't it?* / *Could you **possibly** move your bag?*",
+       "**Hedging** opinions: *I **tend to** think… / It **seems to me** that… / I'd **probably** say…*",
+       "**Gaining time** in speaking tasks: *That's an interesting question. **Let me think**… / **Well**, it depends really.*",
+       "**Reformulating**: *She's ambitious — **I mean**, she really wants to succeed.* / ***Or rather**, she was.*"
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "tip",
+      "text": "In speaking exams, one or two fillers are natural; constant *um* and *like* reduce your fluency score. Use \"useful\" fillers that also organise your answer: *Well, there are two main reasons…*"
+     }
+    ]
+   },
+   {
+    "id": "contrasts",
+    "kind": "contrasts",
+    "title": "Spoken vagueness vs academic hedging",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Speech (informal)",
+       "Academic writing (formal)"
+      ],
+      "rows": [
+       [
+        "It's **kind of** risky.",
+        "It **may be** risky / This **appears to** carry some risk."
+       ],
+       [
+        "**Loads of** people use it.",
+        "**A large proportion of** users…"
+       ],
+       [
+        "**About** half.",
+        "**Approximately** half / **roughly** 50%."
+       ],
+       [
+        "…**and stuff like that**.",
+        "…**and similar** factors / **among others**."
+       ],
+       [
+        "**I reckon** it'll fail.",
+        "It **seems likely** that it will fail."
+       ]
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "register",
+      "text": "*Stuff, things, kind of, like, loads of* never appear in essays. Use hedging (*may, tend to, suggest, appear*) instead."
+     }
+    ]
+   },
+   {
+    "id": "errors",
+    "kind": "errors",
+    "title": "Common mistakes",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "~~There were about 30 or so of approximately people.~~",
+        "note": "Use one vagueness marker: *about 30* **or** *30 or so*.",
+        "wrong": true
+       },
+       {
+        "en": "~~She's a kind of tired.~~",
+        "note": "*kind of* + adjective has no article: *She's **kind of** tired.*",
+        "wrong": true
+       },
+       {
+        "en": "~~In conclusion, the government should do something and stuff.~~",
+        "note": "Too informal for writing: *…and take similar measures.*",
+        "wrong": true
+       },
+       {
+        "en": "~~Like, um, like, I like, um, think…~~",
+        "note": "Overuse of fillers damages fluency. Pause briefly instead.",
+        "wrong": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "advanced",
+    "kind": "advanced",
+    "title": "Fine-tuning tone",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "It's **not exactly** cheap.",
+        "note": "understatement = it's expensive"
+       },
+       {
+        "en": "He's **not the most** reliable person.",
+        "note": "polite criticism"
+       },
+       {
+        "en": "I **wouldn't say** it was a disaster, but…",
+        "note": "distancing"
+       },
+       {
+        "en": "It was, **if anything**, a little too long.",
+        "note": "cautious opinion"
+       },
+       {
+        "en": "**For what it's worth**, I think you made the right choice.",
+        "note": "modest opinion"
+       }
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "tip",
+      "text": "Understatement and *not exactly / not the most* are very common in British English and can sound more critical than they look."
+     }
+    ]
+   },
+   {
+    "id": "summary",
+    "kind": "summary",
+    "title": "Summary",
+    "blocks": [
+     {
+      "type": "rule",
+      "text": "Vague language is natural and polite in speech; in academic writing, replace it with formal hedging."
+     },
+     {
+      "type": "list",
+      "items": [
+       "Numbers: *around, roughly, or so, -ish*",
+       "Categories: *and that kind of thing, or something*",
+       "Softeners: *a bit, sort of, slightly*; fillers: *well, I mean, let me think*"
+      ]
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "type": "contrasts_with",
+    "to": "academic-register",
+    "label": "Academic register",
+    "level": "C1",
+    "published": true
+   },
+   {
+    "type": "extends",
+    "to": "modals-and-modality",
+    "label": "Modals and modality",
+    "level": "B2+",
+    "published": true
+   }
+  ],
+  "exercises": [
+   "vague-language-and-fillers-practice"
+  ],
+  "sources": [
+   {
+    "book": "Speakout B2+",
+    "unit": "-",
+    "confidence": "verified"
+   },
+   {
+    "book": "Outcomes Upper-Intermediate (coverage reviewed",
+    "unit": "-",
+    "confidence": "verified"
+   },
+   {
+    "book": "examples original)",
+    "unit": "-",
+    "confidence": "verified"
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
   "slug": "verb-patterns",
   "title": "Verb patterns: -ing forms, infinitives and meaning changes",
   "level": "B2",
@@ -4306,7 +6368,7 @@
    },
    {
     "id": "advanced",
-    "kind": "uses",
+    "kind": "advanced",
     "title": "Advanced usage and stylistic nuances",
     "blocks": [
      {

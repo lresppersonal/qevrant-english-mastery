@@ -46,3 +46,42 @@ The books guided theme selection, grammar sequencing and level calibration only.
 ## How to add content
 
 Write in `content/src/` (formats documented at the top of `scripts/build-content.ts`), then run `npm run content:build` (with `SOURCES_DIR=/path/to/book-texts` to refresh headword checks) and `npm run content:check`. No code changes are needed.
+
+---
+
+## Update 2026-11-17 — vocabulary audit, grammar layout, listening, speaking, analytics
+
+### Vocabulary audit (Destination + Outcomes)
+Method: `scripts/vocab-audit.ts` extracts only **headword + part of speech + unit** from the readable books (facts, not copyrightable text), maps units to our themes, merges duplicates and compares with the database. Book texts stay outside the repository (`SOURCES_DIR`).
+
+| | Count |
+|---|---|
+| Headword occurrences found (Outcomes Upper-Int VB 1,266 · Outcomes Advanced VB 1,660 · Destination C1&C2 topic database 1,015) | 3,941 |
+| Duplicates across books merged | 895 |
+| Unique headwords | 3,046 |
+| Already in the database before this update | 182 |
+| **New entries written this update** (all headwords that appear in 2+ books) | **444** |
+| Covered after this update | 626 |
+| Still missing (single-book headwords) | 2,420 |
+| **Database size now** | **939 items** (892 compiled entries + education set), 943 senses, 50 word families, 40 distinctions, 24 themes |
+
+Every new entry has English, Russian, an original definition, an original example, part of speech, CEFR (metadata), theme + subtopic, collocations, synonyms and register; word families/distinctions where useful. A new theme **Everyday Life, Home and Shopping** was added for Outcomes' household/shopping units.
+
+**Not extracted automatically:** Destination B2 (image-only scan) and Destination C1&C2's phrasal-verb, phrase, idiom and word-formation databases (layout can't be split reliably). These need a searchable copy or manual review.
+
+**Remaining 2,420 headwords:** `npm run vocab:draft` (needs `ANTHROPIC_API_KEY`) writes original draft entries to `content/drafts/vocabulary/`, never into the live database. After a person reviews them, `npm run vocab:promote` moves them in (duplicates skipped) and `npm run content:build` validates everything.
+
+**Licensing note.** No definitions, examples or exercises were copied from the books. Headword lists are used only to find gaps. A headword's presence or absence isn't copyrightable, but the *selection and arrangement* of a whole published list can be. That's why entries are reorganised by our own themes and the lists themselves aren't reproduced. Before commercial launch, have a lawyer confirm this approach for the UK/EU. Flag for review: `attestedIn` metadata (which book a word appears in) is shown to learners only as "appears in reference books", not as page references.
+
+### Grammar
+- Lessons render as textbook parts **A Overview · B Formation · C Main uses · D Time expressions · E Comparison · F Common mistakes · G Advanced usage · H Review & practice**. Learners see one part at a time with previous/next buttons, or can switch to "show all". Parts include sub-section chips, rule boxes, expandable panels and an inline practice exercise.
+- New block types: `!rule`, `#### heading`, `+++ title … +++` (expandable).
+- Present perfect lesson rebuilt in the A–H format (affirmative/negative/questions/short answers tables, time expressions, for/since/ago).
+- Time-expression sections added to narrative tenses, future forms and habits.
+- 5 new lessons fill every gap in the grammar map: ellipsis & substitution, indirect questions & question tags, dependent prepositions, prepositional phrases, vague language & fillers. **22 lessons, 349 questions.**
+
+### Listening
+18 resources from BBC Learning English, BBC World Service/Radio 4, VOA, NPR, TED-Ed, British Council, ABC Australia, The Economist, Intelligence Squared and National Geographic. Each link was found through a live web search on 2026-11-17 and points to the provider's own page (or, for *More or Less*, a podcast directory page). Nothing is embedded or copied. **Not included:** Cambridge English (no free listening page could be verified) and individual TED talks (only the TED-Ed playlist was verified). *The Intelligence* is partly paywalled; *Overheard at National Geographic* is an archive with no new episodes.
+
+### Speaking
+161 original prompts in 16 categories × 4 levels; 1-minute (15 s + 60 s) and 2-minute (60 s + 120 s) modes.

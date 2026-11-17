@@ -49,7 +49,7 @@ Modal verbs (*can, could, may, might, must, shall, should, will, would*) take a 
 > ex: I **managed to / was able to** escape. || specific achievement in the past (not *could*)
 > ex: You **had better** leave now. || strong advice with a warning; refers to now or the future
 
-## advanced | uses | Advanced usage: modality beyond modal verbs
+## advanced | advanced | Advanced usage: modality beyond modal verbs
 At C1 you can express the same meanings more precisely with other structures:
 - adjectives: *It is **highly unlikely** that…*, *It is **essential** that…*, *X is **bound/liable/apt** to…*
 - adverbs: *conceivably, presumably, inevitably, arguably*

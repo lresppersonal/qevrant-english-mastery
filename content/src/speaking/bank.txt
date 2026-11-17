@@ -1,0 +1,178 @@
+# Speaking topic bank — original prompts. Format: level | prompt | point; point; point
+## general | General English
+B2 | Describe a habit you would like to change. | what the habit is; why you want to change it; how you plan to do it
+B2 | Talk about a place in your town where you like to spend time. | where it is; what you do there; why it matters to you
+B2 | Describe a useful piece of advice someone gave you. | who gave it; what it was; how it helped
+B2+ | Is it better to plan your free time carefully or to be spontaneous? | advantages of planning; advantages of spontaneity; your preference
+B2+ | Describe a time when you had to wait for something important. | what you were waiting for; how you felt; what you learned
+C1 | Some people say that modern life is too fast. Do you agree? | evidence of speed; effects on people; what could change
+C1 | Talk about a tradition in your country that you think should continue. | what it involves; why it is valuable; threats to it
+C1 | How has the way people spend weekends changed in the last twenty years? | past patterns; present patterns; reasons for change
+C2 | To what extent do routines make life richer or poorer? | the case for routine; the case against; a nuanced conclusion
+C2 | "Convenience is the enemy of meaning." Discuss with reference to everyday life. | interpret the statement; examples; your position
+B2 | Describe your ideal day off. | where you would be; who with; what you would do
+## academic | Academic Life
+B2 | Describe a subject you found difficult at school or university. | what made it hard; how you coped; what it taught you
+B2 | Talk about the best way to prepare for an important exam. | planning; techniques; mistakes to avoid
+B2+ | Should university students be required to take courses outside their main subject? | benefits; drawbacks; your view
+B2+ | Describe a lecture, talk or presentation that impressed you. | the topic; the speaker's style; why it stayed with you
+C1 | How important is critical thinking compared with memorising facts? | definitions; roles of each; balance in education
+C1 | Should academic research be freely available to everyone? | arguments for open access; costs and risks; possible models
+C1 | Discuss the advantages and disadvantages of group projects at university. | learning benefits; common problems; how to improve them
+C2 | Is the pressure to publish harming the quality of academic research? | what the pressure looks like; consequences; possible reforms
+C2 | To what extent should universities prepare students for jobs rather than for thinking? | competing purposes; examples; your reasoned view
+B2+ | Describe a skill you learned outside formal education. | how you learned it; why; how you use it
+## education | Education
+B2 | Talk about a teacher who influenced you. | who they were; what they did; the effect on you
+B2 | Should children have homework every day? | benefits; problems; a sensible amount
+B2+ | Is it better to study alone or with others? | advantages of each; your experience; recommendation
+B2+ | Describe an educational app or website you have used. | what it does; how well it works; who it suits
+C1 | Should schools teach practical life skills such as managing money? | why it matters; what to drop to make time; who should teach it
+C1 | How can schools reduce the gap between rich and poor students? | causes of the gap; possible measures; limits of schools
+C1 | Is online learning as effective as face-to-face teaching? | evidence for; evidence against; for whom it works
+C2 | Should examinations be abolished in favour of continuous assessment? | weaknesses of exams; risks of alternatives; your position
+C2 | What is education for? Discuss competing answers to this question. | economic view; personal development view; civic view
+B2 | Describe your favourite way to learn new vocabulary. | the method; why it works for you; tips for others
+B2+ | Should learning a second language be compulsory from primary school? | arguments for; practical problems; your view
+## environment | Environment
+B2 | Describe something you do to reduce your impact on the environment. | the action; how easy it is; whether others should do it
+B2 | Talk about a natural place you would like to protect. | where it is; why it is special; what threatens it
+B2+ | Should plastic packaging be banned? | problems with plastic; alternatives; possible downsides
+B2+ | Are individuals or governments more responsible for protecting the environment? | role of individuals; role of governments; your balance
+C1 | Should flying be made more expensive to reduce emissions? | environmental argument; social fairness; alternatives
+C1 | Discuss the idea of "rewilding" land that is currently used for farming. | what it means; benefits; costs and objections
+C1 | How should cities adapt to more extreme weather? | likely risks; practical measures; who should pay
+C2 | Is economic growth compatible with protecting the planet? | arguments for green growth; arguments for degrowth; your judgement
+C2 | "Climate change is a problem of politics, not technology." Discuss. | technological progress; political obstacles; synthesis
+B2 | Describe the weather and climate where you live and how it is changing. | typical weather; changes noticed; effects on daily life
+B2+ | Should people eat less meat for environmental reasons? | the evidence; cultural and personal factors; your view
+## technology | Technology
+B2 | Describe a piece of technology you couldn't live without. | what it is; how you use it; what life would be like without it
+B2 | Talk about how you use your phone during a typical day. | main uses; time spent; whether you would like to change it
+B2+ | Should children under twelve have smartphones? | benefits; risks; rules you would suggest
+B2+ | Describe an invention that you think was overrated. | what it is; the expectations; why it disappointed
+C1 | How will artificial intelligence change the jobs people do? | jobs at risk; new jobs; skills people will need
+C1 | Should social media companies be responsible for what users post? | arguments for responsibility; free-speech concerns; possible solutions
+C1 | Is technology making us more or less creative? | ways it helps; ways it hinders; your view
+C2 | Should there be a right to disconnect from work messages outside working hours? | the problem; legal approaches; practical difficulties
+C2 | Can we trust algorithms to make important decisions about people? | where they are used; benefits and biases; safeguards
+B2+ | Describe a time when technology let you down. | what happened; how you solved it; lessons learned
+C1 | Should personal data be treated as property that people can sell? | the idea; advantages; risks
+## business | Business & Economics
+B2 | Describe a small business you like in your area. | what it sells; why you like it; challenges it faces
+B2 | Would you prefer to work for a large company or a small one? | advantages of each; your personality; your choice
+B2+ | Is it a good idea to start a business straight after university? | opportunities; risks; advice you would give
+B2+ | Talk about an advertisement that persuaded you to buy something. | what it was; why it worked; whether you regret it
+C1 | Should companies be judged by their social impact as well as their profits? | the case for; the case against; how to measure impact
+C1 | Is the four-day working week a realistic idea? | evidence from trials; sectors where it is hard; your view
+C1 | How should governments support local shops against online giants? | the problem; possible policies; unintended consequences
+C2 | Does globalisation reduce or increase inequality? | between countries; within countries; your assessment
+C2 | Should a maximum wage be introduced for executives? | fairness arguments; economic arguments; alternatives
+B2+ | Describe a product that you think is well designed. | what it is; design features; why they matter
+C1 | Is cash going to disappear, and should we let it? | trends; who loses out; your view
+## society | Society & Culture
+B2 | Describe a festival or celebration that is important to you. | when it happens; what people do; why it matters
+B2 | Talk about the role of neighbours in your life. | how well you know them; how you help each other; changes over time
+B2+ | Is it important to preserve local languages and dialects? | cultural value; practical arguments; what can be done
+B2+ | Should museums return objects taken from other countries? | arguments for return; arguments against; compromises
+C1 | How do public spaces affect the way people behave? | examples; design features; social effects
+C1 | Are celebrities good role models for young people? | positive examples; negative influence; responsibility
+C1 | Should voting be compulsory? | participation arguments; freedom arguments; your view
+C2 | Is a shared national identity still possible in diverse societies? | what holds societies together; tensions; possible answers
+C2 | "Culture should be free." Discuss with reference to music, film and books. | access arguments; creators' rights; sustainable models
+B2+ | Describe a change in your community in recent years. | what changed; why; whether it was positive
+## psychology | Psychology & Behaviour
+B2 | Describe a time when you felt very proud of yourself. | the situation; what you achieved; how others reacted
+B2 | Talk about how you deal with stress. | causes of stress; what helps you; advice for others
+B2+ | Why do people find it hard to change their habits? | psychological reasons; examples; strategies that work
+B2+ | Is it better to be an optimist or a realist? | benefits of optimism; benefits of realism; your view
+C1 | Why do people believe things that are not true? | cognitive biases; social factors; how to resist
+C1 | How does comparing ourselves with others on social media affect wellbeing? | mechanisms; evidence; healthy habits
+C1 | Should schools teach emotional intelligence? | what it is; possible benefits; how to teach it
+C2 | To what extent is our personality shaped by our environment rather than our genes? | nature arguments; nurture arguments; interaction
+C2 | Is happiness a sensible goal to pursue directly? | arguments for; the paradox of pursuit; alternatives such as meaning
+B2+ | Describe a decision you made that surprised other people. | the decision; your reasons; how it turned out
+## science | Science
+B2 | Describe a scientific discovery that interests you. | what was discovered; why it matters; how it affects people
+B2 | Talk about a science lesson or experiment you remember. | what you did; what happened; what you learned
+B2+ | Should governments spend money on space exploration? | benefits; costs; priorities
+B2+ | Why are some people sceptical about science? | reasons; consequences; how scientists can build trust
+C1 | Should scientists be allowed to edit human genes? | medical benefits; ethical risks; possible limits
+C1 | How can science be communicated better to the public? | current problems; good examples; your suggestions
+C1 | Is it ethical to use animals in medical research? | arguments for; arguments against; alternatives
+C2 | Should funding go to research with clear practical uses or to pure curiosity-driven science? | value of applied research; value of basic research; balance
+C2 | Does scientific progress always lead to human progress? | examples of benefit; examples of harm; your judgement
+B2+ | Describe a mystery that science has not yet solved. | what it is; theories; why it matters
+## health | Health
+B2 | Describe a healthy habit you have. | what it is; how you started; its effects
+B2 | Talk about the food you usually eat during the week. | typical meals; how healthy they are; changes you want
+B2+ | Should junk food be taxed like tobacco? | health arguments; fairness concerns; alternatives
+B2+ | Is it the responsibility of employers to look after employees' health? | what employers can do; limits; your view
+C1 | How can societies deal with an ageing population? | challenges; solutions; role of families
+C1 | Should mental health days be treated the same as sick days? | arguments for; possible abuse; your view
+C1 | Are fitness trackers and health apps good for us? | benefits; risks such as anxiety or privacy; your view
+C2 | Should healthcare be completely free at the point of use? | equity arguments; cost and efficiency; models from different countries
+C2 | To what extent is health a matter of personal choice? | individual behaviour; social determinants; policy implications
+B2 | Describe a time you or someone you know recovered from an illness or injury. | what happened; the recovery; what helped
+## global | Global Issues
+B2 | Describe a global problem that worries you. | what it is; why it worries you; what could help
+B2+ | Should rich countries accept more refugees? | humanitarian arguments; practical challenges; your view
+B2+ | Is tourism good or bad for poorer countries? | economic benefits; social and environmental costs; better models
+C1 | Should international aid be given directly to people rather than governments? | effectiveness; risks; examples
+C1 | How can the world prevent future pandemics? | lessons from the past; international cooperation; individual role
+C1 | Is fast fashion a global ethical problem? | workers; environment; consumers' responsibility
+C2 | Can international organisations solve problems that individual countries cannot? | successes; failures; conditions for success
+C2 | Should access to clean water be treated as a human right with legal force? | arguments; implementation problems; your position
+B2+ | Describe a person who has made the world a better place. | who they are; what they did; why it matters
+C1 | Is it possible to end extreme poverty in the next twenty years? | progress so far; obstacles; your view
+## personal | Personal Experiences
+B2 | Describe a journey that didn't go as planned. | where you were going; what went wrong; how it ended
+B2 | Talk about a time you helped someone. | the situation; what you did; how you felt
+B2 | Describe a gift you gave or received that meant a lot. | what it was; the occasion; why it was meaningful
+B2+ | Describe a mistake that taught you something important. | what happened; the consequences; the lesson
+B2+ | Talk about a time you had to make a difficult decision quickly. | the situation; your choice; the result
+C1 | Describe a moment when you changed your mind about something important. | your original view; what changed it; how you see it now
+C1 | Talk about an experience that made you see your own culture differently. | the experience; what you noticed; lasting effects
+C2 | Describe a period of your life that shaped who you are, and reflect on why. | the period; key events; how it shaped you
+C2 | Talk about a risk you took and evaluate whether it was worth it. | the risk; the outcome; your evaluation
+B2+ | Describe a conversation that had a big effect on you. | who it was with; what was said; why it mattered
+## lifestyle | Lifestyle & Hobbies
+B2 | Describe a hobby you would like to try. | what it is; why it appeals; what stops you
+B2 | Talk about a book, film or series you enjoyed recently. | what it is about; why you liked it; who would enjoy it
+B2+ | Is it important to have hobbies that have nothing to do with work? | benefits; time pressures; your experience
+B2+ | Do people spend too much money on things they don't need? | examples; reasons; how to change
+C1 | Has the internet changed the way people form hobbies and communities? | online communities; benefits; drawbacks
+C1 | Is minimalism a realistic lifestyle for most people? | what it involves; benefits; obstacles
+C2 | To what extent do our leisure choices reflect social class? | examples; reasons; whether it is changing
+B2 | Describe a sport or physical activity you enjoy. | what it involves; how often you do it; benefits
+C1 | Should cities invest more in sports facilities or in arts and culture? | benefits of each; who uses them; your view
+B2+ | Describe a skill you are proud of. | what it is; how you developed it; how you use it
+## travel | Travel & Tourism
+B2 | Describe a city you would like to visit. | where it is; what you would do; why it appeals
+B2 | Talk about your best holiday. | where you went; what you did; why it was the best
+B2+ | Is it better to travel independently or on an organised tour? | advantages of each; your experience; recommendation
+B2+ | Should popular tourist destinations limit the number of visitors? | problems of overtourism; possible measures; fairness
+C1 | How has social media changed the way people travel? | choosing destinations; behaviour while travelling; consequences
+C1 | Is long-distance travel for pleasure becoming harder to justify? | environmental cost; cultural benefits; your view
+C2 | Does travel really broaden the mind, or do we mostly confirm what we already believe? | arguments for; arguments against; conditions for real learning
+B2 | Describe a memorable meal you had while travelling. | where it was; what you ate; why it was memorable
+C1 | Should tourists be expected to learn some of the local language? | respect; practicality; your view
+B2+ | Describe a place that was very different from what you expected. | your expectations; the reality; how you felt
+## media | Media & Communication
+B2 | Describe how you usually find out about the news. | sources; how often; how reliable they are
+B2+ | Should newspapers and news websites be free? | access arguments; quality journalism; funding models
+B2+ | Is it rude to use your phone during a conversation? | why people do it; effects; your rules
+C1 | How can people recognise misinformation online? | warning signs; tools; responsibilities of platforms
+C1 | Has texting made people worse at communicating face to face? | evidence; counter-arguments; your view
+C2 | Is complete objectivity in journalism possible or even desirable? | the ideal; limits; alternatives such as transparency
+C2 | Should public broadcasters be funded by taxes? | public value; independence; competition
+B2 | Describe a podcast, radio or TV programme you enjoy. | what it is; why you like it; who presents it
+## work | Work & Careers
+B2 | Describe your dream job. | what it involves; skills needed; why it appeals
+B2 | Talk about a job you would never want to do. | what it is; why; who might enjoy it
+B2+ | Is job satisfaction more important than salary? | arguments for each; your priorities; how they change with age
+B2+ | Should people stay in the same job for a long time? | advantages of staying; advantages of moving; your view
+C1 | Is working from home good for productivity? | evidence; types of work; future patterns
+C1 | Should companies hire for attitude rather than qualifications? | arguments; risks; examples
+C2 | Will the idea of a lifelong career disappear? | trends; consequences; how people should prepare
+B2+ | Describe a time you worked in a team that was very successful. | the task; your role; why it worked

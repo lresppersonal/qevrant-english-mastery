@@ -11,7 +11,9 @@ export default defineConfig({
   use: {
     baseURL: "http://localhost:3100",
     trace: "retain-on-failure",
-    launchOptions: chrome ? { executablePath: chrome } : undefined,
+    // Fake microphone so the speaking studio can be tested headlessly.
+    launchOptions: { ...(chrome ? { executablePath: chrome } : {}), args: ["--use-fake-ui-for-media-stream", "--use-fake-device-for-media-stream"] },
+    permissions: ["microphone"],
   },
   projects: [
     { name: "desktop", use: { ...devices["Desktop Chrome"], viewport: { width: 1440, height: 900 } } },

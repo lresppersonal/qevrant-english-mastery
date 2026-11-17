@@ -21,3 +21,23 @@ go the distance | idiom | verb phrase | C1 | informal | Competition | to continu
 @distinct play vs do vs go :: Use *play* with ball games and competitive games (*play tennis*), *go* with activities ending in -ing (*go swimming*), and *do* with other activities, especially individual ones (*do yoga*, *do judo*).
 @distinct beat vs win :: You *win* a game, match or prize; you *beat* an opponent. ~~We won them~~ is wrong.
 vigorously | adv | adverb | C1 | neutral | Fitness | with a lot of energy and effort | энергично, интенсивно | Exercise vigorously for at least twenty minutes. | exercise/defend vigorously | energetically; intensely | health-medicine
+cope | v | verb | B2 | neutral | Pressure | to deal successfully with a difficult situation | справляться | She copes well with pressure in big matches. | cope with; struggle to cope | manage; handle |
+dull | adj | adjective | B2 | neutral | Description | boring; not bright | скучный; тусклый | It was a dull game with no goals. | dull match; dull pain; never a dull moment | boring; tedious |
+dump | v | verb | B2+ | informal | Getting rid | to get rid of carelessly; to end a relationship | бросать, выбрасывать | The coach dumped him from the squad. | dump rubbish; get dumped | drop; discard |
+eccentric | adj | adjective | C1 | neutral | Personality | unusual and strange in a harmless way | эксцентричный | The club has an eccentric owner. | slightly eccentric; eccentric behaviour | odd; quirky | relationships-personality
+exclude | v+ac | verb | B2+ | formal | Rules | to deliberately not include | исключать | He was excluded from the team for a month. | exclude from; feel excluded | leave out; ban |
+fault | n | noun | B2 | neutral | Blame | responsibility for a mistake; a weakness | вина; недостаток | It wasn't my fault we lost. | it's my fault; at fault; find fault with | blame; flaw |
+flood | n | noun | B2 | neutral | Amount | a large amount arriving at once; water covering land | поток; наводнение | The club received a flood of complaints. | a flood of; flood warning | surge; deluge | environment
+infected | adj | adjective | B2+ | neutral | Injuries | containing harmful bacteria | инфицированный | The cut on his knee became infected. | infected wound; get infected | septic | health-medicine
+knock out | pv | phrasal verb | B2+ | neutral | Competition | to defeat and remove from a competition; to make unconscious | выбивать (из турнира); нокаутировать | They were knocked out in the quarter-finals. | knock out of the cup | eliminate |
+ligament | n | noun | C1 | neutral | Injuries | a band of tissue that holds bones together at a joint | связка | He tore a ligament in his knee. | torn ligament; ligament injury | | health-medicine
+obsessed | adj | adjective | B2+ | neutral | Interests | thinking about something all the time | одержимый | He's obsessed with football statistics. | obsessed with; become obsessed | fixated | hobbies-leisure
+overtake | v | verb | B2+ | neutral | Racing | to go past someone moving in the same direction | обгонять | She overtook the leader on the final lap. | overtake a car; be overtaken by events | pass; outstrip | transport-movement
+reluctant | adj | adjective | B2+ | neutral | Attitudes | not willing to do something | неохотный | He was reluctant to retire. | reluctant to; a reluctant hero | unwilling; hesitant |
+sack | v | verb | B2+ | informal | Jobs | to dismiss someone from a job | увольнять | The manager was sacked after five defeats. | get sacked; be sacked from | fire; dismiss | work-careers
+score | n | noun | B2 | neutral | Results | the number of points in a game | счёт | What's the score? | final score; keep score; settle a score | result |
+shot | n | noun | B2 | neutral | Attempts | an attempt to hit or score; an attempt at something | удар; попытка | Give it a shot — you might enjoy it. | have a shot at; good shot; long shot | attempt; go |
+strain | n | noun | B2+ | neutral | Injuries and stress | an injury to a muscle; pressure | растяжение; напряжение | He's out with a hamstring strain. | muscle strain; under strain; put a strain on | sprain; stress | health-medicine
+substitute | n | noun | B2+ | neutral | Teams | a player who replaces another; something used instead | замена | She came on as a substitute. | come on as a substitute; no substitute for | replacement |
+trip | v | verb | B2 | neutral | Accidents | to hit your foot on something and almost fall | спотыкаться | He tripped over the ball. | trip over; trip up | stumble |
+wound | n | noun | B2+ | neutral | Injuries | an injury where the skin is cut | рана | The wound needed six stitches. | open wound; reopen old wounds; lick your wounds | injury; cut | health-medicine

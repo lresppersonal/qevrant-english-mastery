@@ -55,7 +55,7 @@ export async function analyse<T extends z.ZodType>(schema: T, system: string, us
 }
 
 /** Drop references the model invented, so every link in the UI resolves. */
-export function sanitiseRefs<F extends { issues: { quote: string; grammarRef: string | null }[]; vocabularyUpgrades: { senseRef: string | null }[] }>(fb: F, source: string): F {
+export function sanitiseRefs<F extends { issues: { quote: string; grammarRef: string | null }[]; vocabularyUpgrades: { senseRef: string | null }[]; collocations?: { original: string }[] }>(fb: F, source: string): F {
   const g = grammarCatalogue().ids;
   const v = vocabularyList().ids;
   const norm = (s: string) => s.toLowerCase().replace(/\s+/g, " ").trim();
@@ -66,6 +66,7 @@ export function sanitiseRefs<F extends { issues: { quote: string; grammarRef: st
       .filter((i) => i.quote && src.includes(norm(i.quote).replace(/[.,;:!?]+$/, "")))
       .map((i) => ({ ...i, grammarRef: i.grammarRef && g.has(i.grammarRef) ? i.grammarRef : null })),
     vocabularyUpgrades: fb.vocabularyUpgrades.map((u) => ({ ...u, senseRef: u.senseRef && v.has(u.senseRef) ? u.senseRef : null })),
+    ...(fb.collocations ? { collocations: fb.collocations.filter((c) => c.original && src.includes(norm(c.original).replace(/[.,;:!?]+$/, ""))) } : {}),
   };
 }
 

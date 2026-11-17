@@ -13,7 +13,7 @@ export function dayKey(iso: string | Date, timeZone?: string) {
 }
 
 /** Events that count as "studying" for streaks (saving/unsaving alone does not). */
-const STUDY_EVENTS = new Set(["lesson_section_viewed", "exercise_completed", "review_completed", "reading_completed", "writing_submitted", "speaking_submitted"]);
+const STUDY_EVENTS = new Set(["lesson_section_viewed", "exercise_completed", "review_completed", "reading_completed", "writing_submitted", "speaking_submitted", "listening_logged"]);
 
 export function studyDays(events: ActivityEvent[], tz?: string) {
   return new Set(events.filter((e) => STUDY_EVENTS.has(e.type)).map((e) => dayKey(e.createdAt, tz)));

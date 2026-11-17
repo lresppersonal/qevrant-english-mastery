@@ -13,7 +13,10 @@
     "contrast": "tsx scripts/check-contrast.ts",
     "build:demo": "vite build --config spa/vite.config.mts",
     "content:build": "tsx scripts/build-content.ts",
-    "prebuild": "npm run content:build && npm run content:check"
+    "prebuild": "npm run content:build && npm run content:check",
+    "vocab:audit": "tsx scripts/vocab-audit.ts",
+    "vocab:draft": "tsx scripts/draft-vocab-with-ai.ts",
+    "vocab:promote": "tsx scripts/draft-vocab-with-ai.ts --promote"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.9.0",

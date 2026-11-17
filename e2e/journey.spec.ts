@@ -90,6 +90,9 @@ test("new learner: onboard, study, answer, review the rule, save from text, revi
 
   // Progress page shows the attempt
   await page.goto("/progress");
+  await expect(page.getByTestId("weekly-report")).toContainText("Grammar accuracy");
+  await expect(page.getByTestId("weekly-report")).toContainText("Insufficiently assessed");
+  await page.getByText("Exercise history").click();
   await expect(page.getByText("Relative clauses in context")).toBeVisible();
 });
 
@@ -99,7 +102,9 @@ test("academic essay gets AI practice feedback linked to grammar lessons", async
   await expect(page.locator("#wc")).toContainText(/\d+ words/);
   await page.getByRole("button", { name: "Get AI feedback" }).click();
   const fb = page.getByTestId("ai-feedback");
-  await expect(fb).toContainText("Practice feedback, not an official score.");
+  await expect(fb).toContainText("Educational estimate, not an official IELTS or Cambridge score.");
+  await expect(fb.getByTestId("band-estimate")).toContainText("6.0–6.5");
+  await expect(fb).toContainText("Argument and structure");
   await expect(fb).toContainText("Grammatical range and accuracy");
   await expect(fb.locator("mark").first()).toContainText("students which fail");
   await fb.getByRole("link", { name: /Review the rule: Form/ }).click();
@@ -117,6 +122,71 @@ test("speaking analysis API returns feedback and delivery metrics", async ({ req
   expect(json.attempt.feedback.criteria).toHaveLength(3);
   const short = await request.post("/api/ai/speaking", { data: { promptSlug: "a-failure-that-taught-you", transcript: "too short", durationSeconds: 5 } });
   expect(short.status()).toBe(422);
+});
+
+test("speaking studio: filters, random topic, timers, recording and AI feedback", async ({ page }) => {
+  await page.goto("/speaking");
+  await page.getByRole("group", { name: "Level" }).getByRole("button", { name: "C1" }).click();
+  await page.getByLabel("2 · Category").selectOption("environment");
+  await page.getByRole("radio", { name: /2-minute answer/ }).click();
+  await page.getByRole("button", { name: "Generate topic" }).click();
+  const topic = page.getByTestId("speaking-topic");
+  await expect(topic).toContainText("C1");
+  await expect(topic).toContainText("Environment");
+  await expect(topic).toContainText("60s + 120s");
+  const first = await topic.locator("p").first().textContent();
+  await page.getByRole("button", { name: "New topic" }).click();
+  await expect(topic.locator("p").first()).not.toHaveText(first ?? "");
+
+  await page.getByRole("button", { name: "Start", exact: true }).click();
+  await expect(page.getByText("Preparation", { exact: true })).toBeVisible();
+  await expect(page.getByRole("timer")).toHaveText(/^(1:00|0:5\d)$/);
+  await page.getByRole("button", { name: "Pause" }).click();
+  const frozen = await page.getByRole("timer").textContent();
+  await page.waitForTimeout(1500);
+  await expect(page.getByRole("timer")).toHaveText(frozen ?? "");
+  await page.getByRole("button", { name: "Resume" }).click();
+  await page.getByRole("button", { name: "Start speaking now" }).click();
+  await expect(page.getByText(/Speaking — recording/)).toBeVisible();
+  await page.waitForTimeout(2200);
+  await page.getByRole("button", { name: "Finish" }).click();
+  const box = page.getByLabel(/^Transcript/);
+  await expect(box).toBeVisible({ timeout: 15000 });
+  await box.fill("I think cities need to adapt to extreme weather because summers are getting hotter and floods are more common so councils should plant more trees build better drainage and protect older people who are very vulnerable during heatwaves which is very important");
+  await page.getByRole("button", { name: "Submit for AI feedback" }).click();
+  const fb = page.getByTestId("ai-feedback");
+  await expect(fb).toContainText("Did you answer the question?");
+  await expect(fb).toContainText("Pronunciation is not assessed");
+  await expect(fb.getByTestId("band-estimate")).toBeVisible();
+  await expect(page.getByText(/Your studio sessions \(1\)/)).toBeVisible();
+});
+
+test("listening library filters by level, type and accent and logs a session", async ({ page }) => {
+  await page.goto("/listening");
+  const list = page.getByTestId("listening-list");
+  await page.getByRole("group", { name: "Accent" }).getByRole("button", { name: "Australian" }).click();
+  await expect(list.locator("li")).toHaveCount(1);
+  await expect(list).toContainText("Conversations");
+  await page.getByRole("group", { name: "Accent" }).getByRole("button", { name: "All accents" }).click();
+  await page.getByRole("group", { name: "Level" }).getByRole("button", { name: "C2" }).click();
+  for (const t of await list.locator("li").allTextContents()) expect(t).toContain("C2");
+  const link = list.getByRole("link").first();
+  await expect(link).toHaveAttribute("href", /^https:\/\//);
+  await expect(link).toHaveAttribute("target", "_blank");
+  await list.getByRole("button", { name: "Log a session" }).first().click();
+  await page.getByLabel("Minutes listened").fill("25");
+  await page.getByRole("button", { name: /4 · Most details/ }).click();
+  await page.getByRole("button", { name: "Save session" }).click();
+  await expect(page.getByText(/25 min this week/)).toBeVisible();
+});
+
+test("speaking API rejects unknown topics and over-long recordings", async ({ request }) => {
+  const transcript = Array(40).fill("word").join(" ");
+  expect((await request.post("/api/ai/speaking", { data: { bankId: "nope", mode: "one", transcript, durationSeconds: 30 } })).status()).toBe(404);
+  const bank = (await import("../content/generated/speaking-bank.json", { with: { type: "json" } })).default as { prompts: { id: string }[] };
+  const id = bank.prompts[0].id;
+  expect((await request.post("/api/ai/speaking", { data: { bankId: id, mode: "one", transcript, durationSeconds: 200 } })).status()).toBe(400);
+  expect((await request.post("/api/ai/speaking", { data: { bankId: id, mode: "one", transcript, durationSeconds: 55 } })).status()).toBe(200);
 });
 
 test("every navigation item reaches a real page, with no serious accessibility violations in either theme", async ({ page }) => {

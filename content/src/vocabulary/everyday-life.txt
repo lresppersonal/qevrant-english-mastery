@@ -1,0 +1,31 @@
+# Everyday Life, Home and Shopping
+@family compensate (v); compensation (n); compensatory (adj)
+@family resolve (v); resolution (n); resolved (adj); unresolved (adj)
+@distinct fine vs penalty :: A *fine* is money you must pay as punishment (*a parking fine*). A *penalty* is a wider word for any punishment, including in sport. You *get* or *pay* a fine — not ~~make~~ a fine.
+auction | n | noun | B2+ | neutral | Buying and selling | a public sale where things go to the person who offers the most | аукцион | They bought the table at an auction. | sold at auction; online auction; auction house | sale | business-finance
+barrier | n | noun | B2 | neutral | Obstacles | something that stops people moving or progressing | барьер, преграда | Cost is the main barrier to buying a home. | language barrier; barrier to entry; break down barriers | obstacle; hurdle | society-politics
+bid | n | noun | B2+ | neutral | Buying and selling | an offer to pay a price; an attempt | ставка, предложение цены; попытка | I made a bid of £50 for the lamp. | make a bid; winning bid; in a bid to | offer; attempt | business-finance
+brake | n | noun | B2 | neutral | Vehicles | the part of a vehicle that makes it slow down or stop | тормоз | I had the brakes checked before the trip. | put the brakes on; slam on the brakes; brake failure | | transport-movement
+come off | pv | phrasal verb | B2+ | informal | Household problems | to become detached; to succeed | отваливаться; удаваться | The handle has come off the drawer. | the plan came off; come off well | fall off; succeed |
+compensation | n | noun | B2+ | neutral | Complaints | money paid to someone for loss or damage | компенсация | We claimed compensation for the delayed delivery. | claim compensation; pay compensation | damages; refund |
+corruption | n | noun | B2+ | neutral | Public life | dishonest or illegal behaviour by people in power | коррупция | Corruption makes public services more expensive. | widespread corruption; corruption scandal | bribery | society-politics
+debt | n | noun | B2 | neutral | Money | money that you owe | долг | They're trying to get out of debt. | in debt; pay off a debt; credit-card debt | arrears | business-finance
+distinguish | v | verb | B2+ | neutral | Differences | to see or show the difference between things | различать | It's hard to distinguish the real brand from fakes. | distinguish between; distinguish from | differentiate; tell apart |
+fine | n | noun | B2 | neutral | Rules | money you pay as a punishment | штраф | I got a fine for parking on the pavement. | parking fine; pay a fine; heavy fine | penalty | crime-law
+in short | fx | adverbial phrase | B2+ | neutral | Summarising | used to introduce a short summary | короче говоря | In short, the flat is too small for us. | | in brief; to sum up | communication-media
+interest | n | noun | B2 | neutral | Money | money you pay to borrow or earn on savings | проценты | The loan has a high rate of interest. | interest rate; pay interest; interest-free | | business-finance
+lifetime | n | noun | B2 | neutral | Time | the length of a person's life or a thing's use | (вся) жизнь, срок службы | This kettle should last a lifetime. | once in a lifetime; lifetime guarantee | lifespan |
+mark | n | noun | B2 | neutral | Damage | a small dirty or damaged area on a surface | пятно, след | There's a mark on the carpet. | leave a mark; scratch mark; make your mark | stain; spot |
+mop | n | noun | B2 | neutral | Cleaning | a tool with a long handle for washing floors | швабра | I need a mop and a bucket to clean this up. | mop up; mop the floor | |
+passion | n | noun | B2 | neutral | Interests | a very strong feeling of liking something | страсть, увлечение | Cooking is her real passion. | a passion for; share a passion | enthusiasm; love | hobbies-leisure
+plaster | n | noun | B2 | neutral | First aid and building | a small sticky cover for a cut; a substance for covering walls | пластырь; штукатурка | Put a plaster on that cut. | stick a plaster on; in plaster | dressing; bandage | health-medicine
+resolve | v+ac | verb | B2+ | formal | Problems | to find a solution to a problem | решать, урегулировать | The landlord resolved the heating problem quickly. | resolve a problem; resolve a dispute | solve; settle |
+retain | v+ac | verb | C1 | formal | Keeping | to keep or continue to have | сохранять | Keep your receipt and retain the packaging. | retain staff; retain information | keep; hold on to |
+ripped | adj | adjective | B2+ | informal | Clothes | torn | рваный | He was wearing ripped jeans. | ripped jeans; ripped open | torn |
+screw | n | noun | B2 | neutral | DIY | a thin metal object with a spiral used to fix things | шуруп, винт | One screw is missing from the shelf. | tighten a screw; loose screw | |
+smash | v | verb | B2 | neutral | Accidents | to break into pieces violently | разбивать вдребезги | I dropped a glass and it smashed. | smash a window; smash into | shatter; break |
+spot | n | noun | B2 | neutral | Places and marks | a particular place; a small round mark | место; пятно | We found a good spot for a picnic. | on the spot; a blind spot; spot of rain | place; mark |
+stain | v | verb | B2+ | neutral | Cleaning | to leave a mark that is hard to remove | пачкать, оставлять пятна | Red wine can stain the tablecloth. | stain remover; coffee stain | mark; discolour |
+thread | n | noun | B2+ | neutral | Sewing and discussions | a thin string for sewing; a series of online messages | нитка; ветка (обсуждения) | I need a needle and thread. | needle and thread; a discussion thread; hang by a thread | yarn | communication-media
+trigger | v | verb | C1 | neutral | Causes | to make something start | вызывать, запускать | Dust can trigger an allergic reaction. | trigger an alarm; trigger a reaction | cause; set off |
+will | n | noun | B2+ | neutral | Life events | a legal document saying who gets your property when you die; determination | завещание; воля | She left the house to her son in her will. | make a will; free will; against your will | testament; determination |

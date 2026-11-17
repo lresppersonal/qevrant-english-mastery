@@ -19,6 +19,11 @@ export function createSupabaseStore(): LearnerStore {
     context: (r.context as string) ?? null, sourceRef: (r.source_ref as string) ?? null, status: r.status as SavedItem["status"], createdAt: r.created_at as string,
   });
 
+  const mapListening = (r: Record<string, unknown>) => ({
+    id: r.id as string, resourceSlug: r.resource_slug as string, episode: (r.episode as string) ?? null, minutes: r.minutes as number,
+    comprehension: r.comprehension as number, notes: (r.notes as string) ?? null, createdAt: r.created_at as string,
+  });
+
   return {
     mode: "supabase",
     async getProfile() {
@@ -30,6 +35,7 @@ export function createSupabaseStore(): LearnerStore {
         id: auth.user.id, email: auth.user.email ?? null, displayName: (p.display_name as string) ?? null,
         goals: (p.goals as Profile["goals"]) ?? [], selfLevel: (p.self_level as Profile["selfLevel"]) ?? null,
         weeklyGoalDays: p.weekly_goal_days as number, audioStorageOptIn: !!p.audio_storage_opt_in, onboardedAt: (p.onboarded_at as string) ?? null,
+        preferences: (p.preferences as Record<string, unknown>) ?? {},
       };
     },
     async updateProfile(patch) {
@@ -40,6 +46,7 @@ export function createSupabaseStore(): LearnerStore {
       if (patch.weeklyGoalDays !== undefined) row.weekly_goal_days = patch.weeklyGoalDays;
       if (patch.audioStorageOptIn !== undefined) row.audio_storage_opt_in = patch.audioStorageOptIn;
       if (patch.onboardedAt !== undefined) row.onboarded_at = patch.onboardedAt;
+      if (patch.preferences !== undefined) row.preferences = patch.preferences;
       check(await sb.from("profiles").update(row).eq("id", await userId()));
     },
 
@@ -91,6 +98,28 @@ export function createSupabaseStore(): LearnerStore {
       check(await sb.from("review_logs").insert({ user_id: await userId(), saved_item_id: l.savedItemId, rating: l.rating, state: l.state, due: l.due }));
     },
 
+    async listReviewLogs() {
+      const rows = check(await sb.from("review_logs").select("*").order("reviewed_at").limit(10000)) as Record<string, unknown>[];
+      return rows.map((r) => ({ savedItemId: r.saved_item_id as string, rating: r.rating as number, state: r.state as number, due: r.due as string, reviewedAt: (r.reviewed_at ?? r.created_at) as string }));
+    },
+
+    async addListening(l) {
+      const r = check(await sb.from("listening_logs").insert({ user_id: await userId(), resource_slug: l.resourceSlug, episode: l.episode, minutes: l.minutes, comprehension: l.comprehension, notes: l.notes }).select().single()) as Record<string, unknown>;
+      return mapListening(r);
+    },
+    async listListening() {
+      return (check(await sb.from("listening_logs").select("*").order("created_at", { ascending: false })) as Record<string, unknown>[]).map(mapListening);
+    },
+    async deleteListening(id) { check(await sb.from("listening_logs").delete().eq("id", id)); },
+
+    async saveWeeklyReport(r) {
+      check(await sb.from("weekly_reports").upsert({ user_id: await userId(), week_start: r.weekStart, overall: r.overall, report: r.report }, { onConflict: "user_id,week_start" }));
+    },
+    async listWeeklyReports() {
+      const rows = check(await sb.from("weekly_reports").select("*").order("week_start", { ascending: false })) as Record<string, unknown>[];
+      return rows.map((r) => ({ id: r.id as string, weekStart: r.week_start as string, overall: r.overall as number | null, report: r.report, createdAt: r.created_at as string }));
+    },
+
     async getLastPosition() {
       const r = check(await sb.from("last_positions").select("*").maybeSingle()) as Record<string, unknown> | null;
       return r ? { href: r.href as string, label: r.label as string, updatedAt: r.updated_at as string } : null;
@@ -108,13 +137,24 @@ export function createSupabaseStore(): LearnerStore {
       return rows.map((r) => ({ id: r.id as string, promptSlug: r.prompt_slug as string, transcript: r.transcript as string, durationSeconds: r.duration_seconds as number, metrics: r.metrics as Record<string, number>, feedback: r.feedback, createdAt: r.created_at as string }));
     },
 
+    async deleteWriting(id) { check(await sb.from("writing_submissions").delete().eq("id", id)); },
+    async deleteSpeaking(id) {
+      const row = check(await sb.from("speaking_attempts").select("audio_path").eq("id", id).maybeSingle()) as { audio_path: string | null } | null;
+      if (row?.audio_path) await sb.storage.from("speaking-audio").remove([row.audio_path]);
+      check(await sb.from("speaking_attempts").delete().eq("id", id));
+    },
+
     async exportAll() {
-      const tables = ["profiles", "activity_events", "attempts", "responses", "saved_items", "review_cards", "review_logs", "last_positions", "writing_submissions", "speaking_attempts"];
+      const tables = ["profiles", "activity_events", "attempts", "responses", "saved_items", "review_cards", "review_logs", "last_positions", "writing_submissions", "speaking_attempts", "listening_logs", "weekly_reports"];
       const out: Record<string, unknown> = { exportedAt: new Date().toISOString() };
       for (const t of tables) out[t] = check(await sb.from(t).select("*"));
       return out;
     },
     async deleteAccount() {
+      // Storage files are not removed by the database cascade, so delete recordings first.
+      const uidv = await userId();
+      const { data: files } = await sb.storage.from("speaking-audio").list(uidv, { limit: 1000 });
+      if (files?.length) await sb.storage.from("speaking-audio").remove(files.map((f) => `${uidv}/${f.name}`));
       check(await sb.rpc("delete_my_account"));
       await sb.auth.signOut();
     },

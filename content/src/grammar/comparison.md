@@ -33,7 +33,7 @@ Comparison expresses differences or similarities in degree. Advanced users go be
 - **comparative + and + comparative**: *It's getting **harder and harder**.*
 - **the same as / similar to / different from**: *My view is **similar to** yours.*
 
-## advanced | uses | Advanced ways of comparing (C1)
+## advanced | advanced | Advanced ways of comparing (C1)
 > ex: There's **nowhere near as** much traffic as there used to be. || a big difference (informal-neutral)
 > ex: The results were **nothing like as** clear as we hoped.
 > ex: Unemployment is **not nearly as** high as predicted.

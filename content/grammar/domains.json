@@ -156,7 +156,7 @@
       {
         "title": "Omitting words: ellipsis and substitution",
         "level": "C1",
-        "lesson": null
+        "lesson": "ellipsis-and-substitution"
       }
     ]
   },
@@ -287,7 +287,7 @@
       {
         "title": "Indirect questions and question tags",
         "level": "B2",
-        "lesson": null
+        "lesson": "indirect-questions-and-tags"
       },
       {
         "title": "Inversion after negative and limiting adverbials",
@@ -341,12 +341,12 @@
       {
         "title": "Dependent prepositions",
         "level": "B2",
-        "lesson": null
+        "lesson": "dependent-prepositions"
       },
       {
         "title": "Prepositional phrases",
         "level": "C1",
-        "lesson": null
+        "lesson": "prepositional-phrases"
       }
     ]
   },
@@ -359,7 +359,7 @@
       {
         "title": "Vague language and fillers",
         "level": "B2",
-        "lesson": null
+        "lesson": "vague-language-and-fillers"
       },
       {
         "title": "Academic register: nominalisation and hedging",

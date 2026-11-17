@@ -16,7 +16,7 @@ export const NAV: NavGroup[] = [
       { href: "/grammar/practice", label: "Grammar practice", icon: Dumbbell },
       { href: "/vocabulary", label: "Vocabulary", icon: Languages },
       { href: "/reading", label: "Reading", icon: Newspaper },
-      { href: "/listening", label: "Listening", icon: Headphones, soon: true },
+      { href: "/listening", label: "Listening", icon: Headphones },
       { href: "/speaking", label: "Speaking", icon: Mic },
       { href: "/writing", label: "Academic Writing", icon: PenLine },
     ],

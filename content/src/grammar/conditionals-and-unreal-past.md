@@ -54,7 +54,7 @@ Mix times when a past condition has a present result, or a present state explain
 > x: Unless you don't hurry, you'll miss the bus. || *unless* is already negative: *Unless you hurry…*
 > x: I wish I can speak Japanese. || *I wish I could speak Japanese.*
 
-## advanced | uses | Advanced usage and stylistic nuances
+## advanced | advanced | Advanced usage and stylistic nuances
 - **Inverted conditionals** (formal): *Had I known* = If I had known; *Were it not for* = If it were not for; *Should you require* = If you require.
 - **Implied conditions** without a condition clause: *I'd have called, but my battery died.* / *A smaller company would never have survived.*
 - **if + will** for willingness or result: *If you'll follow me, I'll show you your room.*

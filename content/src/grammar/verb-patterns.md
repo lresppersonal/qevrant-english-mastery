@@ -36,7 +36,7 @@ A verb pattern is the structure that follows a verb. Patterns are largely fixed,
 > ex: I **saw** him **crossing** the road. || in the middle of the action
 In the passive, *make* and perception verbs take *to*: *He was **made to** apologise.* *She was **seen to** leave.*
 
-## advanced | uses | Advanced usage and stylistic nuances
+## advanced | advanced | Advanced usage and stylistic nuances
 - Perfect and passive forms: *He denies **having taken** the money.* *She hates **being interrupted**.* *I'd like **to have been** there.*
 - Possessive + -ing (formal): *I object to **his** smoking indoors* (informal: *him smoking*).
 - *It* as preparatory object: *I find **it** difficult **to concentrate**. I'd appreciate **it** if you could reply.*

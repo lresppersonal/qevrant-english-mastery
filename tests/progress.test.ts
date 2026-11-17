@@ -95,3 +95,91 @@ describe("AI helpers", () => {
     expect(fb.vocabularyUpgrades.map((u) => u.senseRef)).toEqual(["setback-n", null]);
   });
 });
+
+import { Countdown, fmtClock } from "../src/lib/countdown";
+import { pickPrompt, matchingPrompts, SPEAKING_MODES } from "../src/lib/speaking-bank";
+import { bandEstimate, repetitionStats } from "../src/lib/ai/schemas";
+
+describe("countdown", () => {
+  it("counts down by wall clock and excludes paused time", () => {
+    const c = new Countdown(60_000, 0);
+    expect(c.remainingMs(10_000)).toBe(50_000);
+    c.pause(10_000);
+    expect(c.remainingMs(40_000)).toBe(50_000);
+    c.resume(40_000);
+    expect(c.remainingMs(45_000)).toBe(45_000);
+    expect(c.elapsedMs(45_000)).toBe(15_000);
+    expect(c.done(100_000)).toBe(true);
+    expect(fmtClock(60_000)).toBe("1:00");
+    expect(fmtClock(14_200)).toBe("0:15");
+  });
+});
+
+describe("speaking bank", () => {
+  it("modes have fixed timings", () => {
+    expect(SPEAKING_MODES.one).toMatchObject({ prepSeconds: 15, speakSeconds: 60 });
+    expect(SPEAKING_MODES.two).toMatchObject({ prepSeconds: 60, speakSeconds: 120 });
+  });
+  it("respects level and category filters", () => {
+    for (let i = 0; i < 50; i++) {
+      const p = pickPrompt("C1", "environment", [])!;
+      expect(p.level).toBe("C1");
+      expect(p.category).toBe("environment");
+    }
+  });
+  it("avoids recently shown prompts until the pool is exhausted", () => {
+    const pool = matchingPrompts("B2", "all");
+    const recent: string[] = [];
+    for (let i = 0; i < pool.length; i++) { const p = pickPrompt("B2", "all", recent)!; expect(recent).not.toContain(p.id); recent.push(p.id); }
+    expect(pickPrompt("B2", "all", recent)!.id).toBe(recent[0]);
+  });
+  it("has at least 150 prompts covering every level", () => {
+    expect(matchingPrompts("all", "all").length).toBeGreaterThanOrEqual(150);
+    for (const l of ["B2", "B2+", "C1", "C2"] as const) expect(matchingPrompts(l, "all").length).toBeGreaterThan(10);
+  });
+});
+
+describe("feedback helpers", () => {
+  it("turns criterion bands into a transparent range", () => {
+    expect(bandEstimate([{ band: 6 }, { band: 6.5 }, { band: 6 }, { band: 6.5 }])).toMatchObject({ mean: 6.5, low: 6, high: 6.5 });
+    expect(bandEstimate([])).toBeNull();
+  });
+  it("finds repeated words and phrases", () => {
+    const r = repetitionStats("It is very important. Education is very important and education matters. Education again.");
+    expect(r.find((x) => x.word === "very important")?.count).toBe(2);
+    expect(r.find((x) => x.word === "education")?.count).toBe(3);
+  });
+});
+
+import { weeklyReport, sectionProgress, mondayOf } from "../src/lib/analytics";
+
+describe("weekly report", () => {
+  const info = { lessons: [{ slug: "l1", title: "Lesson one", sections: [{ id: "form", title: "Form" }] }], readingSlugs: ["t1"], exerciseSkill: (s: string) => (s.startsWith("g") ? "grammar" : "reading") };
+  const now = new Date("2026-11-18T12:00:00Z");
+  const iso = "2026-11-17T10:00:00Z";
+  const base = { events: [], responses: [], attempts: [], reviewLogs: [], saved: [], writing: [], speaking: [], listening: [], weeklyGoalDays: 4 };
+
+  it("marks sections without enough evidence as insufficiently assessed", () => {
+    const r = weeklyReport(base, info, now, now);
+    expect(r.overall).toBeNull();
+    expect(r.insufficient).toEqual(expect.arrayContaining(["grammar", "vocabulary", "reading", "listening", "speaking", "writing"]));
+  });
+
+  it("scores grammar accuracy, recurring mistakes and consistency from real rows", () => {
+    const attempts = [{ id: "a1", exerciseSlug: "g-ex", exerciseVersion: 1, score: 8, total: 12, startedAt: iso, completedAt: iso }];
+    const responses = Array.from({ length: 12 }, (_, i) => ({ attemptId: "a1", questionId: `q${i}`, targetRef: "l1", response: null, correct: i < 9, errorTag: i < 9 ? null : "l1:form", createdAt: iso }));
+    const events = [{ id: "e", type: "exercise_completed" as const, contentType: "exercise", contentRef: "g-ex", payload: {}, createdAt: iso }];
+    const r = weeklyReport({ ...base, attempts, responses, events }, info, now, now);
+    expect(r.sections.find((s) => s.key === "grammar")!.score).toBe(75);
+    expect(r.sections.find((s) => s.key === "consistency")!.score).toBe(25);
+    expect(r.recurringMistakes[0]).toMatchObject({ label: "Lesson one — Form", count: 3, href: "/grammar/l1#form" });
+    expect(r.overall).toBe(Math.round((25 + 10 + 75) / 3));
+    expect(r.weekStart).toBe("2026-11-16");
+  });
+
+  it("computes whole-history section progress", () => {
+    const p = sectionProgress({ ...base, events: [{ id: "v", type: "lesson_section_viewed", contentType: "grammar_lesson", contentRef: "l1#form", payload: {}, createdAt: iso }] }, info);
+    expect(p.rows.find((r) => r.key === "grammar-theory")!.value).toBe(1);
+    expect(mondayOf(now).getDay()).toBe(1);
+  });
+});

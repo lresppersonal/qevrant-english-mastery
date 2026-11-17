@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { getWritingPrompt } from "@/lib/content";
-import { WritingFeedback, countWords } from "@/lib/ai/schemas";
+import { WritingFeedback, countWords, bandEstimate, repetitionStats } from "@/lib/ai/schemas";
 import { writingSystem, writingUser } from "@/lib/ai/prompts";
 import { authorise, analyse, sanitiseRefs, errorResponse, HttpError, AI_MODEL } from "@/lib/ai/server";
 
@@ -23,8 +23,9 @@ export async function POST(req: Request) {
     if (words < 80) throw new HttpError(422, `Write at least 80 words before asking for feedback (you have ${words}).`);
 
     const { sb, userId } = await authorise();
-    const raw = await analyse(WritingFeedback, writingSystem(), writingUser(prompt, body, words));
-    const feedback = sanitiseRefs(raw, body);
+    const raw = await analyse(WritingFeedback, writingSystem(), writingUser(prompt, body, words, repetitionStats(body)));
+    const clean = sanitiseRefs(raw, body);
+    const feedback = { ...clean, estimate: bandEstimate(clean.criteria) };
 
     let id: string = crypto.randomUUID();
     let createdAt = new Date().toISOString();

@@ -18,3 +18,13 @@ turning point | coll | noun phrase | B2+ | neutral | The past | a time when an i
 @family history (n); historian (n); historic (adj); historical (adj); historically (adv); prehistoric (adj)
 @family preserve (v); preservation (n); preservative (n); preserved (adj)
 @distinct antique vs ancient vs old-fashioned :: *Ancient* means extremely old, often thousands of years (*ancient Rome*). An *antique* is a valuable old object (furniture, jewellery). *Old-fashioned* means no longer modern or popular.
+assert | v+ac | verb | C1 | formal | Claims | to state firmly; to show your authority | утверждать; отстаивать | Historians assert that the treaty was unfair. | assert that; assert yourself; assert authority | claim; insist |
+baffle | v | verb | C1 | neutral | Mystery | to confuse completely | озадачивать | The purpose of the stones still baffles experts. | be baffled by; baffling question | puzzle; mystify |
+clear | v | verb | B2+ | neutral | Land and law | to remove things from; to prove innocent | расчищать; оправдывать | Forests were cleared for farming. | clear land; clear your name; clear up | remove; acquit |
+contemplate | v | verb | C1 | formal | Thinking | to think about carefully; to consider doing | размышлять; рассматривать | The king contemplated surrender. | contemplate doing; contemplate the future | consider; ponder |
+dismiss | v | verb | C1 | neutral | Rejection | to reject as not important; to remove from a job | отвергать; увольнять | His theory was dismissed at the time. | dismiss an idea; dismiss out of hand | reject; brush aside |
+handle | v | verb | B2 | neutral | Managing | to deal with; to hold | справляться; обращаться | The ancient manuscripts are handled with gloves. | handle a situation; handle with care | manage; deal with |
+inspiration | n | noun | B2 | neutral | Creativity | a person or thing that gives you ideas | вдохновение | The ruins were the inspiration for the novel. | a source of inspiration; draw inspiration from | influence; stimulus | arts-culture
+prime | adj | adjective | C1 | formal | Importance | main or most important; of the best quality | главный; первоклассный | Rome was the prime target. | prime example; prime minister; prime location | main; chief |
+reform | n | noun | C1 | formal | Change | a change to improve a system | реформа | The reforms of the 1830s changed working life. | political reform; carry out reforms | change; improvement | society-politics
+revolution | n | noun | B2 | neutral | Change | a violent attempt to change a government; a great change | революция | The Industrial Revolution transformed cities. | the Industrial Revolution; a revolution in | uprising; transformation |

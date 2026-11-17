@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowLeft, Mic, Square, Sparkles, Loader2, RotateCcw, History } from "lucide-react";
 import type { SpeakingPrompt } from "@/lib/content/schema";
 import { getSense } from "@/lib/content";
-import { SpeakingFeedback } from "@/lib/ai/schemas";
+import { SpeakingFeedbackView } from "@/lib/ai/schemas";
 import type { SpeakingAttempt } from "@/lib/store/types";
 import { useLearner } from "./StoreProvider";
 import { useAiStatus } from "./useAiStatus";
@@ -169,7 +169,7 @@ export function SpeakingWorkspace({ prompt }: { prompt: SpeakingPrompt }) {
     }
   }
 
-  const parsed = current ? SpeakingFeedback.safeParse(current.feedback) : null;
+  const parsed = current ? SpeakingFeedbackView.safeParse(current.feedback) : null;
 
   return (
     <article>

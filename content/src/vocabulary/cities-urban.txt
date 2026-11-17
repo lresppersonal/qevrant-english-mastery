@@ -17,3 +17,22 @@ the concrete jungle | idiom | noun phrase | C1 | informal | Atmosphere | a city 
 @family urban (adj); urbanise (v); urbanisation (n); suburban (adj); suburbia (n)
 @family populate (v); population (n); populated (adj); populous (adj); depopulation (n)
 @distinct city vs town vs village :: Size and status differ: a *village* is small and rural; a *town* is larger; a *city* is a large, important town (in the UK often one with a cathedral or royal charter).
+agenda | n | noun | B2+ | neutral | Planning | a list of things to discuss; plans or aims | повестка дня; планы | Housing is high on the council's agenda. | on the agenda; hidden agenda; set the agenda | programme; plan | society-politics
+confide | v | verb | C1 | formal | Trust | to tell someone a secret | доверять (тайну) | She confided in her neighbour. | confide in; confide that | open up | relationships-personality
+conspiracy | n | noun | C1 | neutral | Secrets | a secret plan by a group to do something harmful | заговор | Some locals believe there's a conspiracy behind the plans. | conspiracy theory; conspiracy to | plot | communication-media
+crawl | v | verb | B2+ | neutral | Traffic | to move very slowly | ползти | Traffic was crawling along the ring road. | crawl along; at a crawl | creep | transport-movement
+demolish | v | verb | C1 | neutral | Development | to destroy a building | сносить | The old factory was demolished to build flats. | demolish a building; due to be demolished | knock down; tear down | architecture-design
+epidemic | n | noun | C1 | neutral | Problems | a disease or problem that spreads quickly among many people | эпидемия | an epidemic of loneliness in big cities | flu epidemic; epidemic proportions | outbreak | health-medicine
+grind | v | verb | C1 | neutral | Slowing down | (grind to a halt) to slowly stop | (медленно) остановиться; молоть | The city ground to a halt during the strike. | grind to a halt; grind coffee | stop; crush |
+halt | n | noun | C1 | neutral | Stopping | a stop | остановка | Building work came to a halt. | come to a halt; bring to a halt | standstill; stop |
+horn | n | noun | B2 | neutral | Traffic | the device in a car that makes a warning sound | гудок, клаксон | Drivers kept sounding their horns. | sound your horn; honk the horn | hooter | transport-movement
+impose | v+ac | verb | C1 | formal | Rules | to introduce a rule, tax or punishment | вводить, налагать | The city imposed a charge on drivers. | impose a ban; impose a fine; impose restrictions | introduce; enforce | society-politics
+pump | v | verb | B2+ | neutral | Money and liquids | to force liquid or money into something | накачивать, вкладывать | The government pumped money into the area. | pump money into; pump up | inject |
+seek | v+ac | verb | B2+ | formal | Searching | to try to find or get | искать, стремиться | Many young people seek work in the capital. | seek advice; seek help; seek to | look for; pursue |
+shrink | v | verb | B2+ | neutral | Size | to become smaller | сокращаться, уменьшаться | The town's population has shrunk. | shrink in size; shrinking budget | contract; decrease |
+speck | n | noun | C1 | neutral | Size | a very small spot | пятнышко, точка | From the tower, the cars looked like specks. | a speck of dust | dot; spot |
+subsequent | adj+ac | adjective | C1 | formal | Time | happening after something else | последующий | Subsequent research confirmed the findings. | subsequent years; subsequently | following; later |
+trace | n | noun | C1 | neutral | Evidence | a small sign that something existed | след | There was no trace of the old market. | without trace; trace of | sign; remnant | history-heritage
+undertake | v+ac | verb | C1 | formal | Projects | to begin or take responsibility for a task | предпринимать, браться | The council undertook a major regeneration project. | undertake research; undertake a task | carry out; take on |
+utter | adj | adjective | C1 | neutral | Emphasis | complete (for emphasis) | полный, совершенный | The new road is an utter disaster. | utter chaos; utter nonsense; utterly | total; absolute |
+widespread | adj | adjective | B2+ | neutral | Extent | existing in many places or among many people | широко распространённый | There is widespread support for more parks. | widespread concern; widespread use | common; extensive |

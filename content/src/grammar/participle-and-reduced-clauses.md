@@ -48,7 +48,7 @@ A defining or non-defining relative clause can often be reduced:
 > x: Having lived in Paris, she lives there for ten years. || Wrong logic: *Having lived in Paris for ten years, she speaks fluent French.*
 > x: The books writing by him are popular. || Passive meaning → *written*.
 
-## advanced | uses | Advanced usage and stylistic nuances
+## advanced | advanced | Advanced usage and stylistic nuances
 - Participle clauses with their own subject (absolute constructions, formal/literary): ***The work finished**, we went home.* ***Weather permitting**, the match will go ahead.*
 - Fixed participle expressions: *generally speaking, judging by, considering, given (that), assuming (that), provided*.
 - *With* + noun + participle: ***With prices rising**, families are cutting back.*

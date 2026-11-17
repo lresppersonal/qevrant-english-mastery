@@ -19,9 +19,12 @@ export async function POST(req: Request) {
 
     const upstream = new FormData();
     upstream.append("file", audio, "answer.webm");
-    upstream.append("model", process.env.OPENAI_TRANSCRIBE_MODEL || "gpt-4o-transcribe");
+    const model = process.env.OPENAI_TRANSCRIBE_MODEL || "gpt-4o-transcribe";
+    // whisper-1 can return segment timestamps, which let us count long pauses; newer models return text only.
+    const verbose = model.startsWith("whisper");
+    upstream.append("model", model);
     upstream.append("language", "en");
-    upstream.append("response_format", "json");
+    upstream.append("response_format", verbose ? "verbose_json" : "json");
     const r = await fetch("https://api.openai.com/v1/audio/transcriptions", {
       method: "POST", headers: { Authorization: `Bearer ${process.env.OPENAI_API_KEY}` }, body: upstream,
     });
@@ -29,7 +32,13 @@ export async function POST(req: Request) {
       console.error("Transcription failed", r.status, await r.text().catch(() => ""));
       throw new HttpError(502, "Transcription failed. Please try again.");
     }
-    const { text } = (await r.json()) as { text: string };
+    const out = (await r.json()) as { text: string; segments?: { start: number; end: number }[] };
+    const text = out.text;
+    let longPauses: number | undefined;
+    if (out.segments?.length) {
+      longPauses = 0;
+      for (let i = 1; i < out.segments.length; i++) if (out.segments[i].start - out.segments[i - 1].end > 1.5) longPauses++;
+    }
 
     let audioPath: string | null = null;
     if (sb && userId) {
@@ -40,7 +49,7 @@ export async function POST(req: Request) {
         if (!error) audioPath = path;
       }
     }
-    return Response.json({ text, audioPath });
+    return Response.json({ text, audioPath, longPauses });
   } catch (e) {
     return errorResponse(e);
   }

@@ -893,6 +893,409 @@
   "reviewer": null,
   "publishedAt": "2026-11-16",
   "id": "",
+  "slug": "dependent-prepositions-practice",
+  "title": "Dependent prepositions after verbs, adjectives and nouns: practice",
+  "skill": "grammar",
+  "format": "mixed",
+  "level": "B2",
+  "topics": [],
+  "target": {
+   "type": "lesson",
+   "ref": "dependent-prepositions"
+  },
+  "instructions": "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "The price ___ the size of the room.",
+    "explanation": "*depend on* is fixed.",
+    "errorTag": "dependent-prepositions:uses",
+    "theoryAnchor": {
+     "lesson": "dependent-prepositions",
+     "section": "uses"
+    },
+    "options": [
+     "depends on",
+     "depends of",
+     "depends from",
+     "depends at"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "format": "Gap fill",
+    "level": "B2",
+    "prompt": "She apologised ___ being late.",
+    "explanation": "*apologise (to sb) for sth*",
+    "errorTag": "dependent-prepositions:uses",
+    "theoryAnchor": {
+     "lesson": "dependent-prepositions",
+     "section": "uses"
+    },
+    "accepted": [
+     "for"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "He's very good ___ explaining complicated ideas.",
+    "explanation": "*good at* + noun / -ing",
+    "errorTag": "dependent-prepositions:uses",
+    "theoryAnchor": {
+     "lesson": "dependent-prepositions",
+     "section": "uses"
+    },
+    "options": [
+     "in",
+     "at",
+     "on",
+     "with"
+    ],
+    "answer": 1
+   },
+   {
+    "kind": "text",
+    "id": "q4",
+    "format": "Error correction",
+    "level": "B2",
+    "prompt": "Correct the mistake: \"We discussed about the new timetable.\"",
+    "explanation": "*discuss* has no preposition.",
+    "errorTag": "dependent-prepositions:errors",
+    "theoryAnchor": {
+     "lesson": "dependent-prepositions",
+     "section": "errors"
+    },
+    "accepted": [
+     "We discussed the new timetable."
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q5",
+    "format": "Gap fill",
+    "level": "B2+",
+    "prompt": "There has been a sharp increase ___ the number of cyclists.",
+    "explanation": "*an increase in* + the thing that rises",
+    "errorTag": "dependent-prepositions:uses",
+    "theoryAnchor": {
+     "lesson": "dependent-prepositions",
+     "section": "uses"
+    },
+    "accepted": [
+     "in"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q6",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "Most members agreed ___ the proposal to extend opening hours.",
+    "explanation": "*agree to* a proposal or plan; *agree with* a person or opinion.",
+    "errorTag": "dependent-prepositions:contrasts",
+    "theoryAnchor": {
+     "lesson": "dependent-prepositions",
+     "section": "contrasts"
+    },
+    "options": [
+     "with",
+     "to",
+     "about",
+     "in"
+    ],
+    "answer": 1
+   },
+   {
+    "kind": "text",
+    "id": "q7",
+    "format": "Error correction",
+    "level": "B2+",
+    "prompt": "Correct the mistake: \"Social media has a big impact to teenagers.\"",
+    "explanation": "*impact on*",
+    "errorTag": "dependent-prepositions:errors",
+    "theoryAnchor": {
+     "lesson": "dependent-prepositions",
+     "section": "errors"
+    },
+    "accepted": [
+     "Social media has a big impact on teenagers."
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q8",
+    "format": "Gap fill",
+    "level": "B2+",
+    "prompt": "I'm thinking ___ (apply) for a master's degree.",
+    "explanation": "Preposition + -ing.",
+    "errorTag": "dependent-prepositions:form",
+    "theoryAnchor": {
+     "lesson": "dependent-prepositions",
+     "section": "form"
+    },
+    "accepted": [
+     "of applying",
+     "about applying"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q9",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "Many health problems result ___ poor diet.",
+    "explanation": "*result from* = be caused by; *result in* = cause.",
+    "errorTag": "dependent-prepositions:contrasts",
+    "theoryAnchor": {
+     "lesson": "dependent-prepositions",
+     "section": "contrasts"
+    },
+    "options": [
+     "in",
+     "from",
+     "of",
+     "with"
+    ],
+    "answer": 1
+   },
+   {
+    "kind": "text",
+    "id": "q10",
+    "format": "Sentence transformation",
+    "level": "C1",
+    "prompt": "Make more formal: \"These are the conditions they work under.\"",
+    "explanation": "Formal style: preposition + *which*.",
+    "errorTag": "dependent-prepositions:advanced",
+    "theoryAnchor": {
+     "lesson": "dependent-prepositions",
+     "section": "advanced"
+    },
+    "accepted": [
+     "These are the conditions under which they work."
+    ]
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "ellipsis-and-substitution-practice",
+  "title": "Ellipsis and substitution: leaving words out and replacing them: practice",
+  "skill": "grammar",
+  "format": "mixed",
+  "level": "C1",
+  "topics": [],
+  "target": {
+   "type": "lesson",
+   "ref": "ellipsis-and-substitution"
+  },
+  "instructions": "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "\"Do you think it'll snow?\" \"I don't think ___.\"",
+    "explanation": "After *think*, *so* replaces the whole clause (*it'll snow*).",
+    "errorTag": "ellipsis-and-substitution:form",
+    "theoryAnchor": {
+     "lesson": "ellipsis-and-substitution",
+     "section": "form"
+    },
+    "options": [
+     "it",
+     "so",
+     "that",
+     "not"
+    ],
+    "answer": 1
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "\"Will the shop be open?\" \"I'm afraid ___.\"",
+    "explanation": "Negative with *be afraid*: *I'm afraid not.*",
+    "errorTag": "ellipsis-and-substitution:form",
+    "theoryAnchor": {
+     "lesson": "ellipsis-and-substitution",
+     "section": "form"
+    },
+    "options": [
+     "no",
+     "so not",
+     "not",
+     "don't"
+    ],
+    "answer": 2
+   },
+   {
+    "kind": "text",
+    "id": "q3",
+    "format": "Error correction",
+    "level": "C1",
+    "prompt": "Correct the mistake: \"Is it going to be expensive?\" \"I don't hope so.\"",
+    "explanation": "*Hope* is not used with *don't … so*; say *I hope not*.",
+    "errorTag": "ellipsis-and-substitution:errors",
+    "theoryAnchor": {
+     "lesson": "ellipsis-and-substitution",
+     "section": "errors"
+    },
+    "accepted": [
+     "I hope not.",
+     "I hope not"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q4",
+    "format": "Gap fill",
+    "level": "B2",
+    "prompt": "These glasses are too small. Have you got any bigger ___?",
+    "explanation": "*ones* replaces a plural countable noun (*glasses*).",
+    "errorTag": "ellipsis-and-substitution:form",
+    "theoryAnchor": {
+     "lesson": "ellipsis-and-substitution",
+     "section": "form"
+    },
+    "accepted": [
+     "ones"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q5",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "I lost my phone yesterday but luckily I found ___ in my coat.",
+    "explanation": "*it* refers to the same phone; *one* would mean a different phone.",
+    "errorTag": "ellipsis-and-substitution:contrasts",
+    "theoryAnchor": {
+     "lesson": "ellipsis-and-substitution",
+     "section": "contrasts"
+    },
+    "options": [
+     "it",
+     "one",
+     "so",
+     "that one"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q6",
+    "format": "Gap fill",
+    "level": "B2+",
+    "prompt": "I didn't want to sign the contract, but in the end I had ___.",
+    "explanation": "Keep *to* when the verb after it is left out.",
+    "errorTag": "ellipsis-and-substitution:uses",
+    "theoryAnchor": {
+     "lesson": "ellipsis-and-substitution",
+     "section": "uses"
+    },
+    "accepted": [
+     "to"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q7",
+    "format": "Sentence transformation",
+    "level": "C1",
+    "prompt": "Rewrite more formally: \"If you want to complain, you can complain online.\" (use DO SO)",
+    "explanation": "*Do so* replaces the repeated verb phrase in formal English.",
+    "errorTag": "ellipsis-and-substitution:advanced",
+    "theoryAnchor": {
+     "lesson": "ellipsis-and-substitution",
+     "section": "advanced"
+    },
+    "accepted": [
+     "If you want to complain, you can do so online.",
+     "If you wish to complain, you can do so online."
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q8",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "\"Have you ever been to Peru?\" \"Yes, I ___.\"",
+    "explanation": "Keep the first auxiliary from the question: *have*.",
+    "errorTag": "ellipsis-and-substitution:uses",
+    "theoryAnchor": {
+     "lesson": "ellipsis-and-substitution",
+     "section": "uses"
+    },
+    "options": [
+     "did",
+     "went",
+     "have",
+     "had been"
+    ],
+    "answer": 2
+   },
+   {
+    "kind": "text",
+    "id": "q9",
+    "format": "Error correction",
+    "level": "B2+",
+    "prompt": "Correct the mistake: \"He's left the company.\" \"Yes, I know so.\"",
+    "explanation": "*Know* doesn't take *so*.",
+    "errorTag": "ellipsis-and-substitution:errors",
+    "theoryAnchor": {
+     "lesson": "ellipsis-and-substitution",
+     "section": "errors"
+    },
+    "accepted": [
+     "Yes, I know.",
+     "I know.",
+     "Yes, I know it."
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q10",
+    "format": "In context",
+    "level": "C1",
+    "prompt": "Some cities invested heavily in cycling infrastructure; ___ did not, and saw little change.",
+    "explanation": "*others* = other cities; the verb phrase is substituted by *did not*.",
+    "errorTag": "ellipsis-and-substitution:advanced",
+    "theoryAnchor": {
+     "lesson": "ellipsis-and-substitution",
+     "section": "advanced"
+    },
+    "options": [
+     "another",
+     "others",
+     "the others one",
+     "ones"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
   "slug": "future-forms-practice",
   "title": "Future forms, probability and time clauses: practice",
   "skill": "grammar",
@@ -1314,6 +1717,207 @@
      "traditionally",
      "formerly"
     ]
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "indirect-questions-and-tags-practice",
+  "title": "Indirect questions and question tags: practice",
+  "skill": "grammar",
+  "format": "mixed",
+  "level": "B2",
+  "topics": [],
+  "target": {
+   "type": "lesson",
+   "ref": "indirect-questions-and-tags"
+  },
+  "instructions": "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "Could you tell me where ___?",
+    "explanation": "Indirect questions use statement word order.",
+    "errorTag": "indirect-questions-and-tags:form",
+    "theoryAnchor": {
+     "lesson": "indirect-questions-and-tags",
+     "section": "form"
+    },
+    "options": [
+     "is the nearest pharmacy",
+     "the nearest pharmacy is",
+     "does the nearest pharmacy be",
+     "the nearest pharmacy does"
+    ],
+    "answer": 1
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "format": "Sentence transformation",
+    "level": "B2",
+    "prompt": "Make polite: \"What time does the meeting start?\" (Do you know…)",
+    "explanation": "Remove *does* and use statement order: *the meeting starts*.",
+    "errorTag": "indirect-questions-and-tags:form",
+    "theoryAnchor": {
+     "lesson": "indirect-questions-and-tags",
+     "section": "form"
+    },
+    "accepted": [
+     "Do you know what time the meeting starts?"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q3",
+    "format": "Gap fill",
+    "level": "B2",
+    "prompt": "She doesn't eat meat, ___ she?",
+    "explanation": "Negative statement → positive tag with the same auxiliary.",
+    "errorTag": "indirect-questions-and-tags:form",
+    "theoryAnchor": {
+     "lesson": "indirect-questions-and-tags",
+     "section": "form"
+    },
+    "accepted": [
+     "does"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "I'm on the list, ___?",
+    "explanation": "The standard tag for *I am* is *aren't I?*",
+    "errorTag": "indirect-questions-and-tags:form",
+    "theoryAnchor": {
+     "lesson": "indirect-questions-and-tags",
+     "section": "form"
+    },
+    "options": [
+     "amn't I",
+     "aren't I",
+     "am I not it",
+     "isn't I"
+    ],
+    "answer": 1
+   },
+   {
+    "kind": "text",
+    "id": "q5",
+    "format": "Gap fill",
+    "level": "B2+",
+    "prompt": "Let's take a taxi, ___ we?",
+    "explanation": "Tag after *Let's* is *shall we?*",
+    "errorTag": "indirect-questions-and-tags:form",
+    "theoryAnchor": {
+     "lesson": "indirect-questions-and-tags",
+     "section": "form"
+    },
+    "accepted": [
+     "shall"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q6",
+    "format": "Error correction",
+    "level": "B2",
+    "prompt": "Correct the mistake: \"I wonder what does this word mean.\"",
+    "explanation": "No *does*; statement order *this word means*.",
+    "errorTag": "indirect-questions-and-tags:errors",
+    "theoryAnchor": {
+     "lesson": "indirect-questions-and-tags",
+     "section": "errors"
+    },
+    "accepted": [
+     "I wonder what this word means."
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q7",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "Nobody saw the accident, ___?",
+    "explanation": "*Nobody* makes the sentence negative, so the tag is positive; we use *they*.",
+    "errorTag": "indirect-questions-and-tags:form",
+    "theoryAnchor": {
+     "lesson": "indirect-questions-and-tags",
+     "section": "form"
+    },
+    "options": [
+     "didn't they",
+     "did they",
+     "did nobody",
+     "didn't he"
+    ],
+    "answer": 1
+   },
+   {
+    "kind": "text",
+    "id": "q8",
+    "format": "Sentence transformation",
+    "level": "C1",
+    "prompt": "Write a formal request: \"When will the results be available?\" (I'd be grateful if you could let me know…)",
+    "explanation": "Statement order: *the results will be available*.",
+    "errorTag": "indirect-questions-and-tags:advanced",
+    "theoryAnchor": {
+     "lesson": "indirect-questions-and-tags",
+     "section": "advanced"
+    },
+    "accepted": [
+     "I'd be grateful if you could let me know when the results will be available."
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q9",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "There was a long debate about ___ to raise the speed limit.",
+    "explanation": "Use *whether* after a preposition and before a *to*-infinitive.",
+    "errorTag": "indirect-questions-and-tags:advanced",
+    "theoryAnchor": {
+     "lesson": "indirect-questions-and-tags",
+     "section": "advanced"
+    },
+    "options": [
+     "if",
+     "whether",
+     "that",
+     "what"
+    ],
+    "answer": 1
+   },
+   {
+    "kind": "choice",
+    "id": "q10",
+    "format": "In context",
+    "level": "B2+",
+    "prompt": "(Seeing someone with a guitar) \"So you play in a band, ___?\" — showing interest, not a real question.",
+    "explanation": "A same-polarity tag (*play… do you?*) expresses interest or surprise.",
+    "errorTag": "indirect-questions-and-tags:uses",
+    "theoryAnchor": {
+     "lesson": "indirect-questions-and-tags",
+     "section": "uses"
+    },
+    "options": [
+     "do you",
+     "don't you",
+     "are you",
+     "aren't you"
+    ],
+    "answer": 0
    }
   ]
  },
@@ -2890,6 +3494,208 @@
   "reviewer": null,
   "publishedAt": "2026-11-16",
   "id": "",
+  "slug": "prepositional-phrases-practice",
+  "title": "Prepositional phrases: fixed expressions beginning with a preposition: practice",
+  "skill": "grammar",
+  "format": "mixed",
+  "level": "C1",
+  "topics": [],
+  "target": {
+   "type": "lesson",
+   "ref": "prepositional-phrases"
+  },
+  "instructions": "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "I'm afraid a pay rise is out of the ___ this year.",
+    "explanation": "*out of the question* = impossible.",
+    "errorTag": "prepositional-phrases:uses",
+    "theoryAnchor": {
+     "lesson": "prepositional-phrases",
+     "section": "uses"
+    },
+    "options": [
+     "question",
+     "order",
+     "control",
+     "date"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "format": "Gap fill",
+    "level": "B2+",
+    "prompt": "I didn't do it on ___ — it was an accident.",
+    "explanation": "*on purpose* = deliberately.",
+    "errorTag": "prepositional-phrases:uses",
+    "theoryAnchor": {
+     "lesson": "prepositional-phrases",
+     "section": "uses"
+    },
+    "accepted": [
+     "purpose"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "We got to the station just in ___ to catch the last train.",
+    "explanation": "*in time (to do sth)* = early enough.",
+    "errorTag": "prepositional-phrases:contrasts",
+    "theoryAnchor": {
+     "lesson": "prepositional-phrases",
+     "section": "contrasts"
+    },
+    "options": [
+     "time",
+     "the time",
+     "the end",
+     "order"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q4",
+    "format": "Error correction",
+    "level": "C1",
+    "prompt": "Correct the mistake: \"At the end, they agreed to sell the house.\"",
+    "explanation": "*In the end* = finally.",
+    "errorTag": "prepositional-phrases:errors",
+    "theoryAnchor": {
+     "lesson": "prepositional-phrases",
+     "section": "errors"
+    },
+    "accepted": [
+     "In the end, they agreed to sell the house.",
+     "In the end they agreed to sell the house."
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q5",
+    "format": "Gap fill",
+    "level": "C1",
+    "prompt": "She spoke on ___ of all the volunteers.",
+    "explanation": "*on behalf of* = representing.",
+    "errorTag": "prepositional-phrases:uses",
+    "theoryAnchor": {
+     "lesson": "prepositional-phrases",
+     "section": "uses"
+    },
+    "accepted": [
+     "behalf"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q6",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "\"Was the film boring?\" \"On the ___, it was gripping from start to finish.\"",
+    "explanation": "*On the contrary* rejects the previous idea.",
+    "errorTag": "prepositional-phrases:contrasts",
+    "theoryAnchor": {
+     "lesson": "prepositional-phrases",
+     "section": "contrasts"
+    },
+    "options": [
+     "contrary",
+     "other hand",
+     "whole",
+     "average"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q7",
+    "format": "Error correction",
+    "level": "B2+",
+    "prompt": "Correct the mistake: \"Who is in charge for the budget?\"",
+    "explanation": "*in charge of*",
+    "errorTag": "prepositional-phrases:errors",
+    "theoryAnchor": {
+     "lesson": "prepositional-phrases",
+     "section": "errors"
+    },
+    "accepted": [
+     "Who is in charge of the budget?"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q8",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "The application was refused on the ___ that it was incomplete.",
+    "explanation": "*on the grounds that* + clause.",
+    "errorTag": "prepositional-phrases:advanced",
+    "theoryAnchor": {
+     "lesson": "prepositional-phrases",
+     "section": "advanced"
+    },
+    "options": [
+     "reason",
+     "grounds",
+     "basis of",
+     "cause"
+    ],
+    "answer": 1
+   },
+   {
+    "kind": "text",
+    "id": "q9",
+    "format": "Gap fill",
+    "level": "C1",
+    "prompt": "Economic growth often comes at the ___ of the environment.",
+    "explanation": "*at the expense of* = causing harm to.",
+    "errorTag": "prepositional-phrases:advanced",
+    "theoryAnchor": {
+     "lesson": "prepositional-phrases",
+     "section": "advanced"
+    },
+    "accepted": [
+     "expense"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q10",
+    "format": "In context",
+    "level": "C1",
+    "prompt": "___ these findings, the committee decided to postpone the decision.",
+    "explanation": "*In the light of* = considering.",
+    "errorTag": "prepositional-phrases:advanced",
+    "theoryAnchor": {
+     "lesson": "prepositional-phrases",
+     "section": "advanced"
+    },
+    "options": [
+     "In the light of",
+     "On the light of",
+     "By light of",
+     "Under the light of"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
   "slug": "reported-speech-practice",
   "title": "Reported speech and reporting verbs: practice",
   "skill": "grammar",
@@ -3087,6 +3893,217 @@
     },
     "accepted": [
      "dismissed"
+    ]
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "vague-language-and-fillers-practice",
+  "title": "Vague language, hedging and fillers in speech: practice",
+  "skill": "grammar",
+  "format": "mixed",
+  "level": "B2",
+  "topics": [],
+  "target": {
+   "type": "lesson",
+   "ref": "vague-language-and-fillers"
+  },
+  "instructions": "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "The meeting should finish at six-___.",
+    "explanation": "*-ish* after a time/number = approximately.",
+    "errorTag": "vague-language-and-fillers:form",
+    "theoryAnchor": {
+     "lesson": "vague-language-and-fillers",
+     "section": "form"
+    },
+    "options": [
+     "ish",
+     "like",
+     "or so on",
+     "sort"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "(Polite criticism) \"The flat is ___ small for four people, isn't it?\"",
+    "explanation": "*a bit* softens criticism.",
+    "errorTag": "vague-language-and-fillers:uses",
+    "theoryAnchor": {
+     "lesson": "vague-language-and-fillers",
+     "section": "uses"
+    },
+    "options": [
+     "very",
+     "a bit",
+     "extremely",
+     "totally"
+    ],
+    "answer": 1
+   },
+   {
+    "kind": "text",
+    "id": "q3",
+    "format": "Gap fill",
+    "level": "B2",
+    "prompt": "We bought plates, cups, napkins, that ___ of thing.",
+    "explanation": "*that kind/sort of thing* = similar items.",
+    "errorTag": "vague-language-and-fillers:form",
+    "theoryAnchor": {
+     "lesson": "vague-language-and-fillers",
+     "section": "form"
+    },
+    "accepted": [
+     "kind",
+     "sort"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q4",
+    "format": "Error correction",
+    "level": "B2",
+    "prompt": "Correct the mistake: \"I'm a kind of nervous about the interview.\"",
+    "explanation": "No article before *kind of* + adjective.",
+    "errorTag": "vague-language-and-fillers:errors",
+    "theoryAnchor": {
+     "lesson": "vague-language-and-fillers",
+     "section": "errors"
+    },
+    "accepted": [
+     "I'm kind of nervous about the interview."
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q5",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "Which is most suitable for an essay?",
+    "explanation": "Formal writing avoids *loads of, and stuff, like*.",
+    "errorTag": "vague-language-and-fillers:contrasts",
+    "theoryAnchor": {
+     "lesson": "vague-language-and-fillers",
+     "section": "contrasts"
+    },
+    "options": [
+     "Loads of students use AI tools.",
+     "Students use AI tools and stuff.",
+     "A large proportion of students use AI tools.",
+     "Like, most students use AI tools."
+    ],
+    "answer": 2
+   },
+   {
+    "kind": "text",
+    "id": "q6",
+    "format": "Sentence transformation",
+    "level": "C1",
+    "prompt": "Rewrite formally: \"I reckon the plan will kind of fail.\"",
+    "explanation": "Replace spoken vagueness with formal hedging.",
+    "errorTag": "vague-language-and-fillers:contrasts",
+    "theoryAnchor": {
+     "lesson": "vague-language-and-fillers",
+     "section": "contrasts"
+    },
+    "accepted": [
+     "It seems likely that the plan will fail.",
+     "The plan seems likely to fail.",
+     "The plan is likely to fail.",
+     "It appears likely that the plan will fail."
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q7",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "\"How was the hotel?\" \"Well, it was ___ luxurious.\" (= quite basic)",
+    "explanation": "*not exactly* + adjective is an understatement.",
+    "errorTag": "vague-language-and-fillers:advanced",
+    "theoryAnchor": {
+     "lesson": "vague-language-and-fillers",
+     "section": "advanced"
+    },
+    "options": [
+     "not exactly",
+     "not at all exactly",
+     "exactly not",
+     "not so exactly"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q8",
+    "format": "In context",
+    "level": "B2+",
+    "prompt": "(In a speaking exam, to gain time) \"___ — I'd probably say the main reason is cost.\"",
+    "explanation": "A useful filler that also signals you are about to answer.",
+    "errorTag": "vague-language-and-fillers:uses",
+    "theoryAnchor": {
+     "lesson": "vague-language-and-fillers",
+     "section": "uses"
+    },
+    "options": [
+     "Like, um, like",
+     "That's an interesting question, let me think",
+     "Stuff and things",
+     "Or something"
+    ],
+    "answer": 1
+   },
+   {
+    "kind": "text",
+    "id": "q9",
+    "format": "Gap fill",
+    "level": "B2+",
+    "prompt": "The repairs will cost ___ £300 — I can't give you an exact figure yet.",
+    "explanation": "*around / about / roughly* make a number approximate.",
+    "errorTag": "vague-language-and-fillers:form",
+    "theoryAnchor": {
+     "lesson": "vague-language-and-fillers",
+     "section": "form"
+    },
+    "accepted": [
+     "around",
+     "about",
+     "roughly",
+     "approximately"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q10",
+    "format": "Error correction",
+    "level": "C1",
+    "prompt": "Correct for an academic essay: \"Loads of people think online learning is kind of useless.\"",
+    "explanation": "Replace *loads of* and *kind of* with formal quantifiers and hedging.",
+    "errorTag": "vague-language-and-fillers:contrasts",
+    "theoryAnchor": {
+     "lesson": "vague-language-and-fillers",
+     "section": "contrasts"
+    },
+    "accepted": [
+     "Many people believe that online learning is of limited value.",
+     "Many people consider online learning to be of limited value.",
+     "A large number of people believe online learning is ineffective.",
+     "Many people think online learning is of little use."
     ]
    }
   ]

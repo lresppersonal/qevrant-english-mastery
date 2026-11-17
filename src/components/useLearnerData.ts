@@ -1,7 +1,7 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
 import { useLearner } from "./StoreProvider";
-import type { ActivityEvent, Attempt, LastPosition, ResponseRow, ReviewCardRow, SpeakingAttempt, WritingSubmission } from "@/lib/store/types";
+import type { ActivityEvent, Attempt, LastPosition, ListeningLog, ResponseRow, ReviewCardRow, ReviewLogRow, SpeakingAttempt, WeeklyReportRow, WritingSubmission } from "@/lib/store/types";
 
 export interface LearnerData {
   events: ActivityEvent[];
@@ -11,6 +11,9 @@ export interface LearnerData {
   last: LastPosition | null;
   writing: WritingSubmission[];
   speaking: SpeakingAttempt[];
+  reviewLogs: ReviewLogRow[];
+  listening: ListeningLog[];
+  reports: WeeklyReportRow[];
 }
 
 export function useLearnerData() {
@@ -20,10 +23,11 @@ export function useLearnerData() {
 
   const load = useCallback(async () => {
     try {
-      const [events, responses, attempts, cards, last, writing, speaking] = await Promise.all([
+      const [events, responses, attempts, cards, last, writing, speaking, reviewLogs, listening, reports] = await Promise.all([
         store.listEvents(), store.listResponses(), store.listAttempts(), store.listReviewCards(), store.getLastPosition(), store.listWriting(), store.listSpeaking(),
+        store.listReviewLogs(), store.listListening(), store.listWeeklyReports().catch(() => []),
       ]);
-      setData({ events, responses, attempts, cards, last, writing, speaking });
+      setData({ events, responses, attempts, cards, last, writing, speaking, reviewLogs, listening, reports });
     } catch (e) {
       setError((e as Error).message);
     }

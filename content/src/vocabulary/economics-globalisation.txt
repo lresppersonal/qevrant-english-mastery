@@ -23,3 +23,9 @@ tighten your belt | idiom | verb phrase | C1 | informal | Consumption | to spend
 @family globe (n); global (adj); globally (adv); globalise (v); globalisation (n)
 @distinct rise vs raise :: *Rise* is intransitive (*prices rose*); *raise* needs an object (*the bank raised interest rates*). Note the noun *a pay rise* (BrE) / *a raise* (AmE).
 @distinct fewer vs less :: In formal writing use *fewer* with countable nouns (*fewer jobs*) and *less* with uncountable nouns (*less money*).
+advocate | v+ac | verb | C1 | formal | Policy | to publicly support an idea | выступать за | Many economists advocate a carbon tax. | strongly advocate; advocate for | support; champion |
+equation | n | noun | C1 | academic | Analysis | a mathematical statement; a situation where many factors must be considered | уравнение | Cost is only one part of the equation. | part of the equation; solve an equation | |
+imbalance | n | noun | C1 | formal | Trade | a situation where things are not equal | дисбаланс | a trade imbalance between the two countries | trade imbalance; redress the imbalance | inequality |
+primitive | adj | adjective | C1 | neutral | Development | very simple; belonging to an early stage | примитивный | The banking system was still primitive. | primitive tools; primitive conditions | basic; crude | history-heritage
+scarce | adj | adjective | C1 | neutral | Resources | not available in large amounts | дефицитный | Water is becoming scarce in the region. | scarce resources; make yourself scarce | rare; in short supply | environment
+solid | adj | adjective | B2 | neutral | Quality | firm; reliable | твёрдый, надёжный | The economy has solid foundations. | solid evidence; solid growth | firm; sound |

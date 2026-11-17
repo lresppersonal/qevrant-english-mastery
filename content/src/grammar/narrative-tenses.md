@@ -25,6 +25,19 @@ Narrative tenses organise a story in time. The **past simple** moves the story f
 - With **before, after, as soon as**, the past perfect is optional because the conjunction already shows the order.
 - Use the **past perfect continuous** to explain a visible result in the past: *Her eyes were red: she had been crying.*
 
+## time | time | Time expressions in narratives
+!rule Linkers show the order of events; the tense shows how the speaker sees them. Choose the linker first, then check the tense.
+| Expression | Typical tense | Example |
+| **when, as soon as, the moment** | past simple (sequence) | **When** the alarm rang, we **left**. |
+| **while, as, just as** | past continuous (background) | **While** we **were packing**, the lights went out. |
+| **by the time, before, already, (not) yet** | past perfect (earlier event) | **By the time** we arrived, the film **had started**. |
+| **for, since** (looking back from a past point) | past perfect continuous | She **had been working** there **for** years. |
+| **after, once** | past simple or past perfect | **After** he **(had) finished**, he went home. |
+| **then, next, eventually, in the end, at last** | past simple | **Eventually**, the rain **stopped**. |
+> ex: **No sooner had** we sat down **than** the phone rang. || Inverted pattern for emphasis — see *Inversion and emphasis*.
+> ex: **Hardly** had she arrived **when** the trouble began. || *hardly/scarcely … when*
+!tip *After* and *before* already show order, so the past perfect is optional: *After she (had) left, I called him.*
+
 ## contrasts | contrasts | Differences between similar constructions
 > ex: When she came in, we **had** dinner. || She came in, then we ate.
 > ex: When she came in, we **were having** dinner. || We were in the middle of dinner.
@@ -42,7 +55,7 @@ Narrative tenses organise a story in time. The **past simple** moves the story f
 > x: I was knowing the answer. || State verb: *I knew the answer.*
 > x: Yesterday I had met an old friend. || No earlier past reference point: *Yesterday I met an old friend.*
 
-## advanced | uses | Advanced usage and stylistic nuances
+## advanced | advanced | Advanced usage and stylistic nuances
 - Writers use the past perfect for **flashbacks**, then return to the past simple once the earlier time is established, to avoid a long chain of *had*.
 - **Hardly / No sooner** with the past perfect and inversion (formal): *No sooner had we sat down than the alarm went off.* (See *Inversion and emphasis*.)
 - **Perfect infinitives** for reported past: *He is said to have left the country.*

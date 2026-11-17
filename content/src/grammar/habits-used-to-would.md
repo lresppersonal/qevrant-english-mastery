@@ -38,6 +38,18 @@ These are completely different from *used to* + infinitive. They mean *be/become
 - With stress, it shows irritation: *She **WOULD** say that!*
 - **always / constantly + continuous** for annoying habits: *You're always leaving the lights on!*
 
+## time | time | Time expressions for habits
+!rule Habit markers (frequency adverbs, *every*, *whenever*) go with present simple or *used to/would* for the past. *These days* and *now* contrast present habits with past ones.
+| Expression | Example |
+| **always, usually, often, sometimes, rarely, never** | We **often** **used to** walk to school. |
+| **every** day / summer / time | **Every** summer we **would** visit my grandparents. |
+| **whenever, each time** | **Whenever** it rained, the roof **would** leak. |
+| **in those days, back then, as a child** | **In those days** people **used to** write letters. |
+| **these days, nowadays, now** (contrast) | I **used to** smoke, but **these days** I **don't**. |
+| **no longer, not … any more** | She **no longer** works there. / She **doesn't** work there **any more**. |
+> ex: He's **always** borrowing my charger! || *always* + continuous: an annoying present habit.
+!warning *Used to* and *would* need a past time frame. Don't use them with a specific number of times: ~~I used to visit Rome three times~~ → *I visited Rome three times.*
+
 ## errors | errors | Common mistakes
 > x: I am used to live in a big city. || *I'm used to living…* (familiar) or *I used to live…* (past habit).
 > x: I would have a dog when I was a child. || State → *I used to have a dog.*

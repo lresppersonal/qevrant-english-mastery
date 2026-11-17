@@ -2,7 +2,7 @@ import { NextResponse, type NextRequest } from "next/server";
 import { createServerClient } from "@supabase/ssr";
 import { SUPABASE_URL, SUPABASE_ANON_KEY, isDemoMode } from "@/lib/supabase/config";
 
-const PUBLIC = ["/", "/sign-in", "/sign-up", "/auth", "/privacy", "/offline"];
+const PUBLIC = ["/", "/sign-in", "/sign-up", "/forgot-password", "/auth", "/privacy", "/offline"];
 
 export async function middleware(req: NextRequest) {
   if (isDemoMode) return NextResponse.next();

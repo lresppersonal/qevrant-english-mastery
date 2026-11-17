@@ -14,6 +14,18 @@ Content is written in compact formats in `content/src/` and compiled with `npm r
 
 **Stack:** Next.js 15 · React 19 · TypeScript · Tailwind 4 · Radix UI · Supabase (Postgres + Auth + Storage, EU region) · Vercel · Claude API for AI practice feedback · FSRS for spaced revision.
 
+**New to this? Start with [docs/LAUNCH-GUIDE.md](docs/LAUNCH-GUIDE.md)**: a step-by-step, non-technical guide to putting the app online, creating your account and keeping your data.
+
+## What's new (2026-11-17)
+- Speaking studio: random topics (161 prompts, 16 categories, B2–C2), 1- and 2-minute modes with automatic prep/speaking timers, pause/resume/restart, microphone error handling.
+- AI feedback: estimated IELTS-style band ranges per criterion (educational estimates), detailed corrections, collocations, repetition, argument/paragraph advice, corrected essay; speaking topic relevance and "fine in speech" notes.
+- Listening library (18 verified external resources), listening log.
+- Grammar lessons in A–H textbook parts; 5 new lessons (22 total).
+- Vocabulary: 444 new entries from the book audit (939 total); AI drafting script for the rest.
+- Progress analytics: section progress, weekly report scored out of 100 with transparent criteria, history and trends.
+- Accounts: Google sign-in (OAuth), forgot/reset password, change password, bulk deletion of essays/recordings.
+- Database migration 3 (`listening_logs`, `weekly_reports`, `profiles.preferences`).
+
 ## What's in this release
 
 | Area | Status |

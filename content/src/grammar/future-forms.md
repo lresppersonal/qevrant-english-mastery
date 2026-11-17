@@ -36,6 +36,22 @@ After **when, as soon as, before, after, until, once, by the time** referring to
 > ex: Don't leave **until** you**'ve signed** the form. || present perfect stresses completion
 The same rule applies to **if, unless, provided (that), as long as**.
 
+## time | time | Time expressions with future forms
+!rule Time expressions do not choose the future form for you — your **reason** (plan, arrangement, prediction, decision) does. But some expressions strongly prefer particular forms.
+| Expression | Typical form | Example |
+| **by** (Friday / the time …) | future perfect | **By Friday** I'**ll have finished** the draft. |
+| **this time next week / at 10 tomorrow** | future continuous | **This time next week** we'**ll be lying** on a beach. |
+| **tonight, on Monday** (fixed arrangement) | present continuous | I'**m meeting** Sam **on Monday**. |
+| **at 6.15, on 3 May** (timetable) | present simple | The train **leaves at 6.15**. |
+| **soon, one day, in the future** | will / be going to | **One day** robots **will do** most of this. |
+| **when, as soon as, until, before, after** | present tense in the time clause | I'll call **when** I **arrive** (~~will arrive~~). |
++++ in, within, by, until
+- *in two weeks* = at the end of that period: *I'll be back in two weeks.*
+- *within two weeks* = at some point before the end.
+- *by Friday* = no later than Friday (deadline).
+- *until Friday* = continuously up to Friday: *I'll be here until Friday.*
++++
+
 ## contrasts | contrasts | Differences between similar constructions
 > ex: I**'ll** see Tom tomorrow. || prediction or spontaneous plan
 > ex: I**'m going to** see Tom tomorrow. || intention
@@ -43,7 +59,7 @@ The same rule applies to **if, unless, provided (that), as long as**.
 > ex: **Will you be using** the car tonight? || neutral, polite question about plans
 > ex: **Will you use** the car tonight? || can sound like a request or demand
 
-## advanced | uses | Advanced usage: be + to, future in the past
+## advanced | advanced | Advanced usage: be + to, future in the past
 - **be about to** (very near future), **be on the point of / on the verge of** + -ing.
 - **be due to** for scheduled events: *The report is due to be published on Monday.*
 - **be to** for formal arrangements and instructions: *The president **is to** visit Paris next week. You **are to** report to reception.*

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import clsx from "clsx";
 import type { Block } from "@/lib/content/schema";
-import { Lightbulb, TriangleAlert, Scale } from "lucide-react";
+import { Lightbulb, TriangleAlert, Scale, BookMarked, ChevronDown } from "lucide-react";
 
 const LEVEL_STYLE: Record<string, string> = {
   B2: "border-[color-mix(in_srgb,var(--primary)_35%,transparent)] text-primary",
@@ -78,6 +78,24 @@ export function Blocks({ blocks }: { blocks: Block[] }) {
       {blocks.map((b, i) => {
         switch (b.type) {
           case "p": return <p key={i}><Rich text={b.text} /></p>;
+          case "h3": return <h3 key={i} className="pt-2 text-lg font-bold text-ink"><Rich text={b.text} /></h3>;
+          case "rule":
+            return (
+              <div key={i} className="flex gap-3 rounded-xl border-2 border-primary bg-primary-soft px-4 py-3">
+                <BookMarked size={18} className="mt-1 shrink-0 text-primary" aria-hidden="true" />
+                <p><strong className="text-primary">Rule: </strong><Rich text={b.text} /></p>
+              </div>
+            );
+          case "details":
+            return (
+              <details key={i} className="group rounded-xl border border-line bg-surface">
+                <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 px-4 py-2.5 font-semibold [&::-webkit-details-marker]:hidden">
+                  <span><Rich text={b.title} /></span>
+                  <ChevronDown size={18} className="shrink-0 text-muted transition-transform group-open:rotate-180" aria-hidden="true" />
+                </summary>
+                <div className="border-t border-line px-4 py-4"><Blocks blocks={b.blocks} /></div>
+              </details>
+            );
           case "list": return <ul key={i} className="list-disc space-y-1.5 pl-5">{b.items.map((t, j) => <li key={j}><Rich text={t} /></li>)}</ul>;
           case "examples":
             return (

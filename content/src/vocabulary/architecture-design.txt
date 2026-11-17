@@ -19,3 +19,8 @@ do up | pv | phrasal verb | B2 | informal | Buildings | to repair and decorate a
 @family design (n, v); designer (n); designer (adj, = by a famous designer); redesign (v)
 @family function (n, v); functional (adj); functionality (n); dysfunctional (adj)
 @distinct fashionable vs trendy vs stylish :: *Fashionable* is neutral (popular now). *Trendy* is informal and can sound slightly critical. *Stylish* means attractive in a confident way, whether or not it is in fashion.
+agony | n | noun | C1 | neutral | Experience | very great pain or distress | мучение, агония | Choosing the colour scheme was agony. | in agony; agony aunt | torment |
+favour | n | noun | B2 | neutral | Preferences | approval or support; a kind act | одолжение; расположение | Concrete has fallen out of favour. | in favour of; do someone a favour; fall out of favour | support; approval |
+ideal | adj | adjective | B2 | neutral | Evaluation | perfect for a purpose | идеальный | The building is ideal for a gallery. | ideal location; in an ideal world | perfect |
+split | v | verb | B2 | neutral | Dividing | to divide into parts | разделять | The flat is split over two floors. | split into; split the cost; split up | divide |
+transparent | adj | adjective | C1 | neutral | Materials and honesty | able to be seen through; open and honest | прозрачный | The new library has a transparent glass facade. | transparent process; completely transparent | clear; open |

@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { Download, LogOut, Trash2, BarChart3 } from "lucide-react";
+import { Download, LogOut, Trash2, BarChart3, KeyRound } from "lucide-react";
 import { useLearner } from "@/components/StoreProvider";
 import { ProfileForm } from "@/components/ProfileForm";
 import { ThemeToggle } from "@/components/AppShell";
@@ -27,6 +27,16 @@ export default function Settings() {
     await store.updateProfile({ audioStorageOptIn: v });
     await refresh();
     toast(v ? "Recordings will be kept with your speaking attempts" : "Recordings will not be stored");
+  }
+
+  async function deleteAll(kind: "speaking" | "writing") {
+    const what = kind === "speaking" ? "all speaking sessions (recordings, transcripts and feedback)" : "all essays and their feedback";
+    if (!window.confirm(`Delete ${what}? This can't be undone.`)) return;
+    try {
+      const rows = kind === "speaking" ? await store.listSpeaking() : await store.listWriting();
+      for (const r of rows) await (kind === "speaking" ? store.deleteSpeaking(r.id) : store.deleteWriting(r.id));
+      toast(`Deleted ${rows.length} ${kind === "speaking" ? "speaking session(s)" : "essay(s)"}`);
+    } catch (e) { toast(`Couldn't delete: ${(e as Error).message}`); }
   }
 
   return (
@@ -60,12 +70,18 @@ export default function Settings() {
         <h2 id="h-data" className="text-lg font-bold">Your data</h2>
         <div className="flex flex-wrap gap-2">
           <button className="btn btn-ghost" onClick={exportJson}><Download size={16} aria-hidden="true" /> Export all my data (JSON)</button>
+          {store.mode === "supabase" && <Link href="/reset-password" className="btn btn-ghost"><KeyRound size={16} aria-hidden="true" /> Change password</Link>}
           {store.mode === "supabase" && <button className="btn btn-ghost" onClick={async () => { await store.signOut(); router.replace("/sign-in"); router.refresh(); }}><LogOut size={16} aria-hidden="true" /> Sign out</button>}
         </div>
+        <div className="flex flex-wrap gap-2">
+          <button className="btn btn-ghost" onClick={() => deleteAll("speaking")}><Trash2 size={16} aria-hidden="true" /> Delete all speaking recordings &amp; transcripts</button>
+          <button className="btn btn-ghost" onClick={() => deleteAll("writing")}><Trash2 size={16} aria-hidden="true" /> Delete all essays</button>
+        </div>
+        <p className="text-sm text-muted">You can also delete single sessions from the Speaking studio history. <Link href="/privacy" className="text-primary underline underline-offset-4">How your data is handled</Link>.</p>
         <div className="rounded-xl border border-danger/40 p-4">
           <p className="font-semibold text-danger">{store.mode === "supabase" ? "Delete account" : "Reset demo data"}</p>
           <p className="mt-1 text-sm text-muted">
-            {store.mode === "supabase" ? "Permanently deletes your account, progress, saved words, essays and speaking attempts. This can't be undone." : "Clears everything stored in this browser."}
+            {store.mode === "supabase" ? "Permanently deletes your account, progress, saved words, essays, speaking attempts and recordings, listening logs and weekly reports. This can't be undone." : "Clears everything stored in this browser."}
           </p>
           <label className="mt-3 block text-sm">Type <strong>DELETE</strong> to confirm
             <input className="input mt-1 max-w-xs" value={confirm} onChange={(e) => setConfirm(e.target.value)} />

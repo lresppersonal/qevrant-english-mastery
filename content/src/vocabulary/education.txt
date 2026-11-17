@@ -14,3 +14,5 @@ learn the ropes | idiom | verb phrase | B2+ | informal | Skills | to learn how t
 @family know (v); knowledge (n); knowledgeable (adj); acknowledge (v)
 @distinct learn vs teach vs study :: You *learn* something (gain knowledge); someone *teaches* you; you *study* a subject (spend time learning it, often formally). ~~She learned me English~~ is wrong.
 @distinct university vs college vs school :: In British English *school* is for children (to 18); *college* often means further education or a part of a university; *university* awards degrees. In American English *school* and *college* can mean university.
+concentrate | v | verb | B2 | neutral | Study skills | to give all your attention to something | сосредоточиться | I can't concentrate with music on. | concentrate on; concentrate your efforts | focus; pay attention |
+deliberate | adj | adjective | B2+ | neutral | Intentions | done on purpose; slow and careful | намеренный; обдуманный | It was a deliberate attempt to cheat. | deliberate attempt; deliberate choice; deliberately | intentional; planned |

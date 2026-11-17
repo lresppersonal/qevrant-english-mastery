@@ -5,7 +5,7 @@ import { ArrowLeft, Sparkles, Loader2, History } from "lucide-react";
 import type { WritingPrompt } from "@/lib/content/schema";
 import { getSense, getEssayGuide, getTheme } from "@/lib/content";
 import { ESSAY_LABEL } from "@/lib/essay";
-import { countWords, WritingFeedback } from "@/lib/ai/schemas";
+import { countWords, WritingFeedbackView } from "@/lib/ai/schemas";
 import type { WritingSubmission } from "@/lib/store/types";
 import { useLearner } from "./StoreProvider";
 import { useAiStatus } from "./useAiStatus";
@@ -57,7 +57,7 @@ export function EssayWorkspace({ prompt }: { prompt: WritingPrompt }) {
     }
   }
 
-  const parsed = current ? WritingFeedback.safeParse(current.feedback) : null;
+  const parsed = current ? WritingFeedbackView.safeParse(current.feedback) : null;
 
   return (
     <article>

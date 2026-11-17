@@ -17,3 +17,15 @@ in the fast lane | idiom | prepositional phrase | C1 | informal | Movement of pe
 @family move (v); movement (n); mobile (adj); mobility (n); immobile (adj)
 @family migrate (v); migration (n); migrant (n); immigrant (n); emigrate (v)
 @distinct emigrate vs immigrate vs migrate :: You *emigrate from* your country and *immigrate to* a new one. *Migrate* is the general word, also used for animals and seasonal moves.
+burst | v | verb | B2+ | neutral | Damage | to break open suddenly | лопнуть, прорваться | A tyre burst on the motorway. | burst a tyre; burst into tears; burst out laughing | explode; split |
+chest | n | noun | B2 | neutral | Body | the front of the body between the neck and the stomach | грудь | He complained of chest pains after the crash. | chest pain; get something off your chest | | health-medicine
+crack | n | noun | B2+ | neutral | Damage | a thin line where something is broken | трещина | There's a crack in the windscreen. | a hairline crack; crack down on | split; fracture |
+diagnose | v | verb | C1 | neutral | Problems | to identify an illness or fault | диагностировать | The mechanic diagnosed a fault in the engine. | be diagnosed with; diagnose a problem | identify | health-medicine
+dread | v | verb | C1 | neutral | Fear | to feel anxious about something that will happen | бояться, страшиться | I dread the drive home on Fridays. | dread doing; the dreaded | fear; be anxious about | psychology-behaviour
+fingers crossed | idiom | phrase | B2 | informal | Hope | used to say you hope for good luck | скрестим пальцы | Fingers crossed the train is on time. | keep your fingers crossed | hopefully |
+maintain | v+ac | verb | B2+ | formal | Upkeep | to keep in good condition; to continue | поддерживать, обслуживать | Roads are poorly maintained in rural areas. | maintain standards; well maintained | keep up; preserve |
+range | n+ac | noun | B2 | neutral | Distance and choice | the distance something can travel; a variety | дальность; ассортимент | Electric cars now have a longer range. | a wide range of; within range; price range | scope; variety |
+restriction | n+ac | noun | B2+ | neutral | Rules | a rule that limits something | ограничение | There are speed restrictions near schools. | impose restrictions; lift restrictions | limit; constraint |
+run out of | pv | phrasal verb | B2 | neutral | Supplies | to have no more left | закончиться | We ran out of petrol on the motorway. | run out of time; run out of money | use up |
+scratch | n | noun | B2+ | neutral | Damage | a thin mark on a surface | царапина | There's a scratch on the car door. | from scratch; up to scratch | mark; graze |
+stiff | adj | adjective | B2+ | neutral | Body | hard to bend or move; painful | затёкший, жёсткий | My legs were stiff after the long flight. | stiff neck; stiff competition | rigid; sore |

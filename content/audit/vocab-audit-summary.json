@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-11-17",
+  "headwordOccurrences": 3941,
+  "occurrencesPerBook": {
+    "Outcomes Upper-Int VB": 1266,
+    "Outcomes Advanced VB": 1660,
+    "Destination C1&C2": 1015
+  },
+  "uniqueHeadwords": 3046,
+  "duplicatesAcrossBooks": 895,
+  "alreadyInDatabase": 626,
+  "missing": 2420,
+  "notExtracted": [
+    "Destination B2 (image-only scan, no text)",
+    "Destination C1&C2 phrasal verbs, phrases/collocations, idioms and word-formation databases (layout cannot be split into headword and definition reliably; to be reviewed manually)"
+  ]
+}

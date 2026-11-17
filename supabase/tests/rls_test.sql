@@ -18,3 +18,21 @@ end $$;
 update public.saved_items set label = 'hacked';
 reset role;
 select label as a_label_after_b_update from public.saved_items;
+-- Migration 3: listening logs, weekly reports, preferences
+set role authenticated;
+set request.jwt.claim.sub = '11111111-1111-1111-1111-111111111111';
+insert into public.listening_logs (user_id, resource_slug, minutes, comprehension) values ('11111111-1111-1111-1111-111111111111','bbc-6-minute-english',20,4);
+insert into public.weekly_reports (user_id, week_start, overall, report) values ('11111111-1111-1111-1111-111111111111','2026-11-16',60,'{}');
+insert into public.activity_events (user_id, type) values ('11111111-1111-1111-1111-111111111111','listening_logged');
+update public.profiles set preferences = '{"speaking":{"mode":"two"}}' where id = '11111111-1111-1111-1111-111111111111';
+set request.jwt.claim.sub = '22222222-2222-2222-2222-222222222222';
+select count(*) as b_sees_a_listening from public.listening_logs;
+select count(*) as b_sees_a_reports from public.weekly_reports;
+do $$ begin
+  begin insert into public.weekly_reports (user_id, week_start, report) values ('11111111-1111-1111-1111-111111111111','2026-11-09','{}'); raise exception 'FAIL: B wrote A report';
+  exception when insufficient_privilege then raise notice 'OK: B cannot write A reports'; end;
+  begin insert into public.listening_logs (user_id, resource_slug, minutes, comprehension) values ('22222222-2222-2222-2222-222222222222','x',0,9); raise exception 'FAIL: invalid listening log accepted';
+  exception when check_violation then raise notice 'OK: listening log validated'; end;
+end $$;
+reset role;
+select count(*) as a_listening, (select preferences->'speaking'->>'mode' from public.profiles where id='11111111-1111-1111-1111-111111111111') as a_mode from public.listening_logs;

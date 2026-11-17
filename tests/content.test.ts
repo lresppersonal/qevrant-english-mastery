@@ -46,7 +46,7 @@ describe("tap-to-define tokenizer", () => {
   });
   it("does not match across punctuation", () => {
     const segs = segment("They had to drop. Out of time.", forms);
-    expect(segs.find((s) => s.text === "drop")!.match).toBeUndefined();
+    expect(segs.find((s) => s.text === "drop")!.match?.slug).not.toBe("drop-out");
   });
   it("highlights most target vocabulary in the reading text", () => {
     const text = getReading("is-failure-the-best-teacher")!;

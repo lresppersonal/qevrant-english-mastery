@@ -36,8 +36,10 @@ export const Theme = z.object({
 export type Theme = z.infer<typeof Theme>;
 
 // ---------- Rich text blocks ----------
-export const Block = z.discriminatedUnion("type", [
+const BaseBlock = z.discriminatedUnion("type", [
   z.object({ type: z.literal("p"), text: z.string() }),
+  z.object({ type: z.literal("h3"), text: z.string() }),
+  z.object({ type: z.literal("rule"), text: z.string() }),
   z.object({ type: z.literal("list"), items: z.array(z.string()).min(1) }),
   z.object({
     type: z.literal("examples"),
@@ -46,10 +48,13 @@ export const Block = z.discriminatedUnion("type", [
   z.object({ type: z.literal("table"), head: z.array(z.string()), rows: z.array(z.array(z.string())) }),
   z.object({ type: z.literal("note"), tone: z.enum(["tip", "warning", "register"]), text: z.string() }),
 ]);
+export type BaseBlock = z.infer<typeof BaseBlock>;
+/** Blocks may also be a collapsible "details" panel holding ordinary blocks (one level deep). */
+export const Block = z.union([BaseBlock, z.object({ type: z.literal("details"), title: z.string(), blocks: z.array(BaseBlock).min(1) })]);
 export type Block = z.infer<typeof Block>;
 
 // ---------- Grammar ----------
-export const SectionKind = z.enum(["overview", "form", "uses", "contrasts", "errors", "register", "pronunciation", "summary"]);
+export const SectionKind = z.enum(["overview", "form", "uses", "time", "contrasts", "errors", "advanced", "register", "pronunciation", "summary"]);
 export const LinkType = z.enum(["prerequisite", "extends", "contrasts_with", "practises", "appears_in"]);
 
 export const GrammarLesson = Meta.extend({

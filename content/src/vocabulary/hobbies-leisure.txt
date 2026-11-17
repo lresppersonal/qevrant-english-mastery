@@ -16,3 +16,18 @@ not my cup of tea | idiom | noun phrase | B2+ | informal | Enthusiasm | not some
 @family enjoy (v); enjoyment (n); enjoyable (adj)
 @family entertain (v); entertainment (n); entertaining (adj); entertainer (n)
 @distinct funny vs fun :: *Fun* means enjoyable (*a fun evening*, *it was fun*). *Funny* means making you laugh, or strange (*a funny story*, *a funny smell*).
+colloquial | adj | adjective | C1 | formal | Language | informal and used in conversation | разговорный | The book is written in colloquial English. | colloquial expression; colloquial language | informal; conversational | communication-media
+dubious | adj | adjective | C1 | neutral | Doubt | probably not honest or good; uncertain | сомнительный | The advert made some dubious claims. | dubious about; of dubious quality | questionable; suspicious |
+dwell | v | verb | C1 | formal | Thinking | (dwell on) to keep thinking about something unpleasant | зацикливаться | Don't dwell on your mistakes. | dwell on the past | brood; linger | psychology-behaviour
+emigrate | v | verb | B2+ | neutral | Moving | to leave your country to live in another | эмигрировать | They emigrated to Canada in 2010. | emigrate to; emigrate from | move abroad | society-politics
+evacuate | v | verb | C1 | neutral | Emergencies | to move people from a dangerous place | эвакуировать | The campsite was evacuated because of the fire. | evacuate a building; be evacuated | clear; remove | risk-safety
+fit in | pv | phrasal verb | B2 | neutral | Belonging | to be accepted by a group; to find time for | вписываться; найти время | It took me a while to fit in at the club. | fit in with; fit someone in | belong; blend in | relationships-personality
+flawed | adj | adjective | C1 | neutral | Evaluation | having a weakness or mistake | несовершенный, ошибочный | The argument is deeply flawed. | deeply flawed; fatally flawed | faulty; imperfect |
+grief | n | noun | C1 | neutral | Emotions | great sadness, especially after a death | горе | Gardening helped her cope with grief. | overcome with grief; come to grief | sorrow; mourning | psychology-behaviour
+modify | v+ac | verb | B2+ | neutral | Change | to change slightly | изменять, модифицировать | He modified his bike for long-distance rides. | genetically modified; modify behaviour | adjust; alter |
+neglect | v | verb | C1 | neutral | Care | to fail to give enough care or attention | пренебрегать, запускать | I've neglected my guitar practice recently. | neglect your duties; neglected garden | ignore; overlook |
+privileged | adj | adjective | C1 | neutral | Status | having advantages others don't have | привилегированный | I feel privileged to play with such musicians. | privileged background; feel privileged | advantaged; honoured | society-politics
+rage | n | noun | C1 | neutral | Emotions | very strong anger; (all the rage) very fashionable | ярость; (последний писк моды) | Paddleboarding is all the rage this summer. | road rage; all the rage; fly into a rage | fury; craze |
+roam | v | verb | C1 | neutral | Movement | to travel around with no particular purpose | бродить, странствовать | We roamed the hills all weekend. | free to roam; roam the streets | wander; ramble | travel-tourism
+scrutiny | n | noun | C1 | formal | Examination | careful and detailed examination | тщательная проверка | Celebrities' lives are under constant scrutiny. | under scrutiny; close scrutiny; public scrutiny | inspection; examination | communication-media
+uphold | v | verb | C1 | formal | Values | to support or maintain a law or tradition | поддерживать, отстаивать | The club upholds old traditions. | uphold the law; uphold a decision | maintain; defend | crime-law

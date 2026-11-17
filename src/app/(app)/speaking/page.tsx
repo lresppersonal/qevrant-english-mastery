@@ -2,6 +2,7 @@ import Link from "next/link";
 import { speakingPrompts } from "@/lib/content";
 import { PageHeader, LevelBadge } from "@/components/ui";
 import { Mic, Sparkles } from "lucide-react";
+import { SpeakingStudio } from "@/components/SpeakingStudio";
 
 export const metadata = { title: "Speaking" };
 const FORMAT = { interview: "Interview questions", long_turn: "Long turn", discussion: "Discussion" } as const;
@@ -10,7 +11,9 @@ export default function SpeakingIndex() {
   return (
     <>
       <PageHeader eyebrow="Learn" title="Speaking"
-        intro="Prepare, record your answer, and get AI practice feedback on fluency, vocabulary and grammar, with phrases to use next time." />
+        intro="Generate a random topic, prepare, speak against the clock and get AI practice feedback on fluency, vocabulary and grammar, with an estimated IELTS-style band." />
+      <SpeakingStudio />
+      <h2 className="mb-3 text-xl font-bold">Guided tasks</h2>
       <ul className="grid gap-4 md:grid-cols-3">
         {speakingPrompts.map((p) => (
           <li key={p.slug}>

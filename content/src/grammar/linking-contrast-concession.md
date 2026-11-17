@@ -49,7 +49,7 @@ Linking devices connect clauses and sentences: contrast (*however*), concession 
 > x: Although he was tired, but he continued. || Use one linker only: *Although he was tired, he continued.*
 > x: The economy grew, however unemployment rose. || *however* starts a new sentence or follows a semicolon: *…grew; however, unemployment rose.*
 
-## advanced | uses | Advanced usage and stylistic nuances
+## advanced | advanced | Advanced usage and stylistic nuances
 - Fronted concession: ***Much as** I admire the plan, it is unrealistic.* ***Difficult though** it may be, we must act.*
 - *Whereas* and *while* can begin the sentence for balanced contrast.
 - Overusing *Moreover/Furthermore* at the start of every sentence sounds mechanical; vary with *This also…, A further problem is…*.

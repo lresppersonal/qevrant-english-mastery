@@ -19,6 +19,27 @@ English verbs combine **tense** (present or past) with **aspect**. Aspect shows 
 > ex: I**'ve been reading** reports all morning. || Perfect continuous: activity up to now, focus on duration.
 
 ## form | form | Formation
+!rule Present perfect = **have/has + past participle**. Present perfect continuous = **have/has been + -ing**. The auxiliary *have* does all the grammatical work: it carries negation, questions and short answers.
+#### Affirmative
+| Subject | Simple | Continuous |
+| I / you / we / they | **have** ('ve) **finished** | **have been** ('ve been) **working** |
+| he / she / it | **has** ('s) **finished** | **has been** ('s been) **working** |
+#### Negative
+| Subject | Simple | Continuous |
+| I / you / we / they | **haven't** (have not) **finished** | **haven't been working** |
+| he / she / it | **hasn't** (has not) **finished** | **hasn't been working** |
+#### Questions
+| Question | Example |
+| Have/Has + subject + past participle? | **Have** you **finished** the report? |
+| Wh- + have/has + subject + past participle? | Where **has** she **gone**? |
+| Have/Has + subject + been + -ing? | **Have** you **been waiting** long? |
+| How long + have/has + subject + been + -ing? | How long **have** they **been living** here? |
+#### Short answers
+| Question | Yes | No |
+| Have you seen it? | Yes, I **have**. | No, I **haven't**. |
+| Has he been working? | Yes, he **has**. | No, he **hasn't**. |
+!tip Short answers repeat only the auxiliary: ~~Yes, I have seen~~ → *Yes, I have.*
++++ The whole perfect family at a glance
 | Form | Structure | Example |
 | Present perfect simple | have/has + past participle | She **has written** three books. |
 | Present perfect continuous | have/has been + -ing | She **has been writing** since 8 a.m. |
@@ -26,7 +47,12 @@ English verbs combine **tense** (present or past) with **aspect**. Aspect shows 
 | Past perfect continuous | had been + -ing | I **had been waiting** for an hour. |
 | Future perfect | will have + past participle | We **will have finished** by May. |
 | Passive perfect | have/has been + past participle | The results **have been published**. |
-!warning Questions and negatives use the first auxiliary: *Have you been waiting long?* / *She hasn't been feeling well.*
++++
++++ Spelling of past participles and -ing forms
+- Regular verbs add *-ed*: *work → worked*, *study → studied*, *stop → stopped*.
+- Irregular participles must be learned: *go → gone*, *write → written*, *take → taken*, *be → been*.
+- *-ing*: drop silent *-e* (*make → making*), double a final consonant after a short stressed vowel (*run → running*, *begin → beginning*).
++++
 
 ## uses | uses | Main rules: present perfect simple vs past simple
 Use the **present perfect** when the past action is connected to now and no finished time is given:
@@ -37,6 +63,25 @@ Use the **past simple** with a finished time or when the story is clearly in the
 > ex: I **lived** in Berlin in 2019. || finished time
 > x: I have lived in Berlin in 2019. || A finished time expression needs the past simple.
 > ex: **Have you seen** the new exhibition? ~ Yes, I **went** last week. || The conversation starts in the present perfect, then moves to past simple for details.
+
+## time | time | Time expressions and signal words
+!rule Expressions that mean "up to now" go with the present perfect. Expressions that point to a **finished** time go with the past simple.
+| Present perfect | Past simple |
+| **for** two years, **since** 2020 (up to now) | **two years ago**, **in** 2020 |
+| **just**, **already**, **yet**, **recently**, **lately** | **yesterday**, **last week**, **then** |
+| **ever**, **never**, **so far**, **up to now**, **to date** | **when I was a child**, **at 5 o'clock** |
+| **this week / today / this year** (period not finished) | **this morning** (when it is now afternoon) |
+#### Where the adverbs go
+> ex: I've **just** sent it. || *just, already, ever, never* go between *have* and the participle.
+> ex: Have you finished **yet**? / I haven't finished **yet**. || *yet* goes at the end in questions and negatives.
+> ex: She's **already** left. / Has she left **already**? || *already* at the end of a question shows surprise.
+> ex: We've lived here **for** ten years / **since** 2015. || *for* + a period; *since* + a starting point.
++++ for, since, ago — quick check
+- *for* + length of time: *for a week*, *for ages*.
+- *since* + point in time: *since Monday*, *since I moved*.
+- *ago* = back from now, past simple only: *a week ago* (~~I've arrived a week ago~~).
++++
+!warning *How long* + present perfect asks about duration up to now; *When* asks about a finished moment and needs the past simple: ~~When have you arrived?~~ → *When did you arrive?*
 
 ## continuous | uses | Simple or continuous? Results versus activity
 The **simple** form focuses on the result or quantity; the **continuous** form focuses on the activity, its duration, or the fact that it may be unfinished.
@@ -67,7 +112,7 @@ The **simple** form focuses on the result or quantity; the **continuous** form f
 > x: I've been knowing him for years. || State verb: *I've known him for years.*
 > x: Since three years I work here. || *since* + point in time, *for* + period: *I've worked here for three years.*
 
-## advanced | uses | Advanced usage and stylistic nuances
+## advanced | advanced | Advanced usage and stylistic nuances
 At C1, aspect becomes a **choice that shapes meaning and tone**:
 - The continuous can sound **less direct and more polite**: *I was wondering if you could help* (softer than *I wondered*).
 - The continuous can show **annoyance**: *You're always interrupting me.*

@@ -1,0 +1,132 @@
+---
+slug: prepositional-phrases
+title: Prepositional phrases: fixed expressions beginning with a preposition
+level: C1
+domain: prepositions
+minutes: 25
+summary: Phrases such as in charge of, by mistake, on behalf of and under pressure work as single units. Knowing them makes your English more precise and idiomatic, especially in formal writing.
+links: prerequisite>dependent-prepositions>Dependent prepositions>B2>published ; contrasts_with>linking-contrast-concession>Linking contrast and concession>B2+>published
+sources: Destination C1&C2 ; Outcomes Advanced (coverage reviewed; examples original)
+---
+## overview | overview | What are prepositional phrases?
+A prepositional phrase begins with a preposition and works as one block of meaning: *at risk*, *in favour of*, *on purpose*. Many are fixed: you can't change the preposition or add an article.
+> ex: The species is **at risk of** extinction.
+> ex: I deleted the file **by mistake**.
+> ex: She spoke **on behalf of** the whole team.
+
+## form | form | Common structures
+| Structure | Examples |
+| preposition + noun | **at** first, **by** chance, **in** time, **on** time, **out of** order |
+| preposition + noun + of | **in** charge **of**, **on** behalf **of**, **in** spite **of**, **at** the expense **of** |
+| preposition + adjective/-ing | **in** general, **at** last, **for** good (= permanently) |
+| preposition + the + noun | **on the** whole, **in the** end, **at the** moment, **by the** way |
+!warning Many fixed phrases have **no article**: *at risk, in debt, on foot, by car, under pressure* (~~in a debt~~, ~~by the car~~).
+
+## uses | uses | Phrases grouped by preposition
+#### at
+*at first, at last, at least, at once, at risk, at random, at a loss (for words), at short notice, at your disposal, at stake*
+#### by
+*by accident/mistake, by chance, by far, by heart, by law, by no means, by and large, by the time*
+#### in
+*in advance, in charge of, in common, in debt, in danger, in favour of, in the long run, in detail, in theory, in practice, in short*
+#### on
+*on average, on purpose, on behalf of, on the whole, on time, on the verge of, on the contrary, on second thoughts, on the grounds that*
+#### out of / under / beyond
+*out of date, out of control, out of the question, out of stock / under pressure, under control, under construction, under the impression / beyond doubt, beyond repair, beyond belief*
+
+## contrasts | contrasts | Easily confused pairs
+| Pair | Difference |
+| **on time** / **in time** | exactly at the planned time / early enough (often *in time for/to*) |
+| **in the end** / **at the end (of)** | finally, after a long process / at the point where something finishes |
+| **at first** / **first(ly)** | at the beginning, in contrast to later / introducing the first point in a list |
+| **on the contrary** / **on the other hand** | rejects the previous statement / adds a contrasting point |
+| **in practice** / **in theory** | what really happens / what should happen |
+| **out of the question** / **out of question** | impossible / (not used) |
+
+## errors | errors | Common mistakes
+> x: In the other hand, cars are convenient. || *On the other hand*
+> x: I met her by a chance. || No article: *by chance*
+> x: The train arrived in time at 9.00 exactly. || exact schedule: *on time*
+> x: At the end, we decided to stay. || meaning *finally*: *In the end*
+> x: He's in charge for the project. || *in charge of*
+
+## advanced | advanced | Formal and academic phrases
+> ex: **In the light of** these findings, the policy should be reviewed.
+> ex: The plan was rejected **on the grounds that** it was too costly.
+> ex: Growth came **at the expense of** the environment.
+> ex: **With regard to** funding, three options are available.
+> ex: **By virtue of** its location, the city became a trade centre.
+> ex: The data are, **for the most part**, consistent with earlier studies.
+!register In essays, phrases like *in the light of, with regard to, by virtue of, on the grounds that* are more precise than *because of* or *about*. Don't overuse them: one or two per paragraph is plenty.
+
+## summary | summary | Summary
+!rule Learn prepositional phrases as fixed chunks; most take **no article** and the preposition cannot change.
+- *on time ≠ in time; in the end ≠ at the end of*
+- *on the contrary* rejects; *on the other hand* adds a contrast
+- Formal: *in the light of, on the grounds that, at the expense of, with regard to*
+
+=== practice
+### [mc] @uses C1
+I'm afraid a pay rise is out of the ___ this year.
++ question
+- order
+- control
+- date
+> *out of the question* = impossible.
+
+### [gap] @uses B2+
+I didn't do it on ___ — it was an accident.
+= purpose
+> *on purpose* = deliberately.
+
+### [mc] @contrasts C1
+We got to the station just in ___ to catch the last train.
++ time
+- the time
+- the end
+- order
+> *in time (to do sth)* = early enough.
+
+### [error] @errors C1
+Correct the mistake: "At the end, they agreed to sell the house."
+= In the end, they agreed to sell the house.|In the end they agreed to sell the house.
+> *In the end* = finally.
+
+### [gap] @uses C1
+She spoke on ___ of all the volunteers.
+= behalf
+> *on behalf of* = representing.
+
+### [mc] @contrasts C1
+"Was the film boring?" "On the ___, it was gripping from start to finish."
++ contrary
+- other hand
+- whole
+- average
+> *On the contrary* rejects the previous idea.
+
+### [error] @errors B2+
+Correct the mistake: "Who is in charge for the budget?"
+= Who is in charge of the budget?
+> *in charge of*
+
+### [mc] @advanced C1
+The application was refused on the ___ that it was incomplete.
+- reason
++ grounds
+- basis of
+- cause
+> *on the grounds that* + clause.
+
+### [gap] @advanced C1
+Economic growth often comes at the ___ of the environment.
+= expense
+> *at the expense of* = causing harm to.
+
+### [context] @advanced C1
+___ these findings, the committee decided to postpone the decision.
++ In the light of
+- On the light of
+- By light of
+- Under the light of
+> *In the light of* = considering.

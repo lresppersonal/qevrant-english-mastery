@@ -1,7 +1,7 @@
 "use client";
 import type {
   LearnerStore, Profile, ActivityEvent, Attempt, ResponseRow, SavedItem, ReviewCardRow,
-  WritingSubmission, SpeakingAttempt, LastPosition,
+  WritingSubmission, SpeakingAttempt, LastPosition, ListeningLog, WeeklyReportRow,
 } from "./types";
 
 /**
@@ -21,11 +21,13 @@ interface DemoDb {
   last: LastPosition | null;
   writing: WritingSubmission[];
   speaking: SpeakingAttempt[];
+  listening: ListeningLog[];
+  reports: WeeklyReportRow[];
 }
 
 const fresh = (): DemoDb => ({
-  profile: { id: "demo-learner", displayName: null, email: null, goals: [], selfLevel: null, weeklyGoalDays: 4, audioStorageOptIn: false, onboardedAt: null },
-  events: [], attempts: [], responses: [], saved: [], cards: [], logs: [], last: null, writing: [], speaking: [],
+  profile: { id: "demo-learner", displayName: null, email: null, goals: [], selfLevel: null, weeklyGoalDays: 4, audioStorageOptIn: false, onboardedAt: null, preferences: {} },
+  events: [], attempts: [], responses: [], saved: [], cards: [], logs: [], last: null, writing: [], speaking: [], listening: [], reports: [],
 });
 
 function load(): DemoDb {
@@ -81,6 +83,19 @@ export function createDemoStore(): LearnerStore {
     async listReviewCards() { return load().cards; },
     async putReviewCard(c) { mutate((db) => { db.cards = db.cards.filter((x) => x.savedItemId !== c.savedItemId); db.cards.push(c); }); },
     async addReviewLog(l) { mutate((db) => { db.logs.push({ ...l, reviewedAt: now() }); }); },
+    async listReviewLogs() { return load().logs; },
+
+    async addListening(l) { return mutate((db) => { const row: ListeningLog = { ...l, id: uid(), createdAt: now() }; db.listening.push(row); return row; }); },
+    async listListening() { return [...load().listening].sort((a, b) => b.createdAt.localeCompare(a.createdAt)); },
+    async deleteListening(id) { mutate((db) => { db.listening = db.listening.filter((x) => x.id !== id); }); },
+
+    async saveWeeklyReport(r) {
+      mutate((db) => {
+        db.reports = db.reports.filter((x) => x.weekStart !== r.weekStart);
+        db.reports.push({ id: uid(), weekStart: r.weekStart, overall: r.overall, report: r.report, createdAt: now() });
+      });
+    },
+    async listWeeklyReports() { return [...load().reports].sort((a, b) => b.weekStart.localeCompare(a.weekStart)); },
 
     async getLastPosition() { return load().last; },
     async setLastPosition(p) { mutate((db) => { db.last = { ...p, updatedAt: now() }; }); },
@@ -89,6 +104,9 @@ export function createDemoStore(): LearnerStore {
     async listSpeaking() { return load().speaking; },
     async addWritingLocal(s) { return mutate((db) => { const row = { ...s, id: uid(), createdAt: now() }; db.writing.push(row); return row; }); },
     async addSpeakingLocal(s) { return mutate((db) => { const row = { ...s, id: uid(), createdAt: now() }; db.speaking.push(row); return row; }); },
+
+    async deleteWriting(id) { mutate((db) => { db.writing = db.writing.filter((x) => x.id !== id); }); },
+    async deleteSpeaking(id) { mutate((db) => { db.speaking = db.speaking.filter((x) => x.id !== id); }); },
 
     async exportAll() { return { exportedAt: now(), mode: "demo", ...load() }; },
     async deleteAccount() { localStorage.removeItem(KEY); },

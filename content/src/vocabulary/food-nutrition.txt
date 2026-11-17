@@ -19,3 +19,13 @@ food for thought | idiom | noun phrase | B2+ | neutral | Eating habits | somethi
 @family taste (n, v); tasty (adj); tasteless (adj); tasteful (adj, = showing good style)
 @distinct tasty vs tasteful :: *Tasty* means having a good flavour. *Tasteful* means attractive and showing good judgement in style (*a tasteful interior*), not food.
 @distinct cook vs cooker vs chef :: A *cook* or *chef* is a person (*chef* = professional). A *cooker* is a machine for cooking. ~~My mother is a good cooker~~ is wrong.
+chuck | v | verb | B2+ | informal | Waste | to throw; to throw away | выбрасывать, швырять | We chuck out far too much food. | chuck out; chuck away | throw away; bin | everyday-life
+establish | v+ac | verb | B2+ | formal | Facts | to discover facts; to start something lasting | устанавливать; основывать | Scientists have established a link between sugar and decay. | establish a link; establish a business; well established | prove; found |
+fancy | v | verb | B2 | informal | Wants | (British) to want to have or do | хотеть | Do you fancy a curry tonight? | fancy doing; fancy a drink | feel like |
+input | n | noun | B2+ | neutral | Contributions | ideas, advice or effort given to a project | вклад | The chef had no input into the menu. | valuable input; input into | contribution |
+lighten up | pv | phrasal verb | C1 | informal | Mood | to become less serious | расслабиться | Lighten up — it's only a dessert! | | relax; chill out | relationships-personality
+overdue | adj | adjective | C1 | neutral | Time | late; needed for some time | просроченный; давно назревший | A change in school dinners is long overdue. | long overdue; overdue bill | late; belated |
+settle down | pv | phrasal verb | B2+ | neutral | Life stages | to start living a quiet, stable life | остепениться | He wants to settle down and open a café. | settle down and have kids | put down roots | relationships-personality
+squeeze | v | verb | B2+ | neutral | Preparation | to press firmly | выжимать | Squeeze half a lemon over the fish. | squeeze a lemon; squeeze in; financial squeeze | press; crush |
+texture | n | noun | B2+ | neutral | Description | the way food or a surface feels | текстура, консистенция | I don't like the texture of raw oysters. | smooth texture; creamy texture | consistency; feel |
+urge | n | noun | C1 | neutral | Desire | a strong wish or need | сильное желание, порыв | I had a sudden urge to eat chocolate. | resist the urge; a sudden urge | craving; impulse | psychology-behaviour

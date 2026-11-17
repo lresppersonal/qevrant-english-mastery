@@ -1,0 +1,1841 @@
+{
+ "categories": [
+  {
+   "slug": "general",
+   "title": "General English"
+  },
+  {
+   "slug": "academic",
+   "title": "Academic Life"
+  },
+  {
+   "slug": "education",
+   "title": "Education"
+  },
+  {
+   "slug": "environment",
+   "title": "Environment"
+  },
+  {
+   "slug": "technology",
+   "title": "Technology"
+  },
+  {
+   "slug": "business",
+   "title": "Business & Economics"
+  },
+  {
+   "slug": "society",
+   "title": "Society & Culture"
+  },
+  {
+   "slug": "psychology",
+   "title": "Psychology & Behaviour"
+  },
+  {
+   "slug": "science",
+   "title": "Science"
+  },
+  {
+   "slug": "health",
+   "title": "Health"
+  },
+  {
+   "slug": "global",
+   "title": "Global Issues"
+  },
+  {
+   "slug": "personal",
+   "title": "Personal Experiences"
+  },
+  {
+   "slug": "lifestyle",
+   "title": "Lifestyle & Hobbies"
+  },
+  {
+   "slug": "travel",
+   "title": "Travel & Tourism"
+  },
+  {
+   "slug": "media",
+   "title": "Media & Communication"
+  },
+  {
+   "slug": "work",
+   "title": "Work & Careers"
+  }
+ ],
+ "prompts": [
+  {
+   "id": "general-e14505dd",
+   "category": "general",
+   "level": "B2",
+   "prompt": "Describe a habit you would like to change.",
+   "points": [
+    "what the habit is",
+    "why you want to change it",
+    "how you plan to do it"
+   ]
+  },
+  {
+   "id": "general-feeed797",
+   "category": "general",
+   "level": "B2",
+   "prompt": "Talk about a place in your town where you like to spend time.",
+   "points": [
+    "where it is",
+    "what you do there",
+    "why it matters to you"
+   ]
+  },
+  {
+   "id": "general-54f8e7d6",
+   "category": "general",
+   "level": "B2",
+   "prompt": "Describe a useful piece of advice someone gave you.",
+   "points": [
+    "who gave it",
+    "what it was",
+    "how it helped"
+   ]
+  },
+  {
+   "id": "general-795e5a15",
+   "category": "general",
+   "level": "B2+",
+   "prompt": "Is it better to plan your free time carefully or to be spontaneous?",
+   "points": [
+    "advantages of planning",
+    "advantages of spontaneity",
+    "your preference"
+   ]
+  },
+  {
+   "id": "general-985bedda",
+   "category": "general",
+   "level": "B2+",
+   "prompt": "Describe a time when you had to wait for something important.",
+   "points": [
+    "what you were waiting for",
+    "how you felt",
+    "what you learned"
+   ]
+  },
+  {
+   "id": "general-ed9a5937",
+   "category": "general",
+   "level": "C1",
+   "prompt": "Some people say that modern life is too fast. Do you agree?",
+   "points": [
+    "evidence of speed",
+    "effects on people",
+    "what could change"
+   ]
+  },
+  {
+   "id": "general-7f0f473a",
+   "category": "general",
+   "level": "C1",
+   "prompt": "Talk about a tradition in your country that you think should continue.",
+   "points": [
+    "what it involves",
+    "why it is valuable",
+    "threats to it"
+   ]
+  },
+  {
+   "id": "general-a41e988d",
+   "category": "general",
+   "level": "C1",
+   "prompt": "How has the way people spend weekends changed in the last twenty years?",
+   "points": [
+    "past patterns",
+    "present patterns",
+    "reasons for change"
+   ]
+  },
+  {
+   "id": "general-bd836249",
+   "category": "general",
+   "level": "C2",
+   "prompt": "To what extent do routines make life richer or poorer?",
+   "points": [
+    "the case for routine",
+    "the case against",
+    "a nuanced conclusion"
+   ]
+  },
+  {
+   "id": "general-a8ba6d93",
+   "category": "general",
+   "level": "C2",
+   "prompt": "\"Convenience is the enemy of meaning.\" Discuss with reference to everyday life.",
+   "points": [
+    "interpret the statement",
+    "examples",
+    "your position"
+   ]
+  },
+  {
+   "id": "general-b2c35e38",
+   "category": "general",
+   "level": "B2",
+   "prompt": "Describe your ideal day off.",
+   "points": [
+    "where you would be",
+    "who with",
+    "what you would do"
+   ]
+  },
+  {
+   "id": "academic-add0f7e6",
+   "category": "academic",
+   "level": "B2",
+   "prompt": "Describe a subject you found difficult at school or university.",
+   "points": [
+    "what made it hard",
+    "how you coped",
+    "what it taught you"
+   ]
+  },
+  {
+   "id": "academic-cfa5f6a2",
+   "category": "academic",
+   "level": "B2",
+   "prompt": "Talk about the best way to prepare for an important exam.",
+   "points": [
+    "planning",
+    "techniques",
+    "mistakes to avoid"
+   ]
+  },
+  {
+   "id": "academic-f3c612b9",
+   "category": "academic",
+   "level": "B2+",
+   "prompt": "Should university students be required to take courses outside their main subject?",
+   "points": [
+    "benefits",
+    "drawbacks",
+    "your view"
+   ]
+  },
+  {
+   "id": "academic-edea4378",
+   "category": "academic",
+   "level": "B2+",
+   "prompt": "Describe a lecture, talk or presentation that impressed you.",
+   "points": [
+    "the topic",
+    "the speaker's style",
+    "why it stayed with you"
+   ]
+  },
+  {
+   "id": "academic-52026add",
+   "category": "academic",
+   "level": "C1",
+   "prompt": "How important is critical thinking compared with memorising facts?",
+   "points": [
+    "definitions",
+    "roles of each",
+    "balance in education"
+   ]
+  },
+  {
+   "id": "academic-8f203ef7",
+   "category": "academic",
+   "level": "C1",
+   "prompt": "Should academic research be freely available to everyone?",
+   "points": [
+    "arguments for open access",
+    "costs and risks",
+    "possible models"
+   ]
+  },
+  {
+   "id": "academic-f2d57438",
+   "category": "academic",
+   "level": "C1",
+   "prompt": "Discuss the advantages and disadvantages of group projects at university.",
+   "points": [
+    "learning benefits",
+    "common problems",
+    "how to improve them"
+   ]
+  },
+  {
+   "id": "academic-22df6ec2",
+   "category": "academic",
+   "level": "C2",
+   "prompt": "Is the pressure to publish harming the quality of academic research?",
+   "points": [
+    "what the pressure looks like",
+    "consequences",
+    "possible reforms"
+   ]
+  },
+  {
+   "id": "academic-e5a18e38",
+   "category": "academic",
+   "level": "C2",
+   "prompt": "To what extent should universities prepare students for jobs rather than for thinking?",
+   "points": [
+    "competing purposes",
+    "examples",
+    "your reasoned view"
+   ]
+  },
+  {
+   "id": "academic-96b408f7",
+   "category": "academic",
+   "level": "B2+",
+   "prompt": "Describe a skill you learned outside formal education.",
+   "points": [
+    "how you learned it",
+    "why",
+    "how you use it"
+   ]
+  },
+  {
+   "id": "education-9d4d8e91",
+   "category": "education",
+   "level": "B2",
+   "prompt": "Talk about a teacher who influenced you.",
+   "points": [
+    "who they were",
+    "what they did",
+    "the effect on you"
+   ]
+  },
+  {
+   "id": "education-de571bd6",
+   "category": "education",
+   "level": "B2",
+   "prompt": "Should children have homework every day?",
+   "points": [
+    "benefits",
+    "problems",
+    "a sensible amount"
+   ]
+  },
+  {
+   "id": "education-1294e8ac",
+   "category": "education",
+   "level": "B2+",
+   "prompt": "Is it better to study alone or with others?",
+   "points": [
+    "advantages of each",
+    "your experience",
+    "recommendation"
+   ]
+  },
+  {
+   "id": "education-1a71d87d",
+   "category": "education",
+   "level": "B2+",
+   "prompt": "Describe an educational app or website you have used.",
+   "points": [
+    "what it does",
+    "how well it works",
+    "who it suits"
+   ]
+  },
+  {
+   "id": "education-884508e2",
+   "category": "education",
+   "level": "C1",
+   "prompt": "Should schools teach practical life skills such as managing money?",
+   "points": [
+    "why it matters",
+    "what to drop to make time",
+    "who should teach it"
+   ]
+  },
+  {
+   "id": "education-2f5ffd38",
+   "category": "education",
+   "level": "C1",
+   "prompt": "How can schools reduce the gap between rich and poor students?",
+   "points": [
+    "causes of the gap",
+    "possible measures",
+    "limits of schools"
+   ]
+  },
+  {
+   "id": "education-0281778d",
+   "category": "education",
+   "level": "C1",
+   "prompt": "Is online learning as effective as face-to-face teaching?",
+   "points": [
+    "evidence for",
+    "evidence against",
+    "for whom it works"
+   ]
+  },
+  {
+   "id": "education-bd15b556",
+   "category": "education",
+   "level": "C2",
+   "prompt": "Should examinations be abolished in favour of continuous assessment?",
+   "points": [
+    "weaknesses of exams",
+    "risks of alternatives",
+    "your position"
+   ]
+  },
+  {
+   "id": "education-0bbd8192",
+   "category": "education",
+   "level": "C2",
+   "prompt": "What is education for? Discuss competing answers to this question.",
+   "points": [
+    "economic view",
+    "personal development view",
+    "civic view"
+   ]
+  },
+  {
+   "id": "education-a2c77f58",
+   "category": "education",
+   "level": "B2",
+   "prompt": "Describe your favourite way to learn new vocabulary.",
+   "points": [
+    "the method",
+    "why it works for you",
+    "tips for others"
+   ]
+  },
+  {
+   "id": "education-56d46703",
+   "category": "education",
+   "level": "B2+",
+   "prompt": "Should learning a second language be compulsory from primary school?",
+   "points": [
+    "arguments for",
+    "practical problems",
+    "your view"
+   ]
+  },
+  {
+   "id": "environment-5b53ddf1",
+   "category": "environment",
+   "level": "B2",
+   "prompt": "Describe something you do to reduce your impact on the environment.",
+   "points": [
+    "the action",
+    "how easy it is",
+    "whether others should do it"
+   ]
+  },
+  {
+   "id": "environment-bf95f4c6",
+   "category": "environment",
+   "level": "B2",
+   "prompt": "Talk about a natural place you would like to protect.",
+   "points": [
+    "where it is",
+    "why it is special",
+    "what threatens it"
+   ]
+  },
+  {
+   "id": "environment-c2190e4d",
+   "category": "environment",
+   "level": "B2+",
+   "prompt": "Should plastic packaging be banned?",
+   "points": [
+    "problems with plastic",
+    "alternatives",
+    "possible downsides"
+   ]
+  },
+  {
+   "id": "environment-b636f313",
+   "category": "environment",
+   "level": "B2+",
+   "prompt": "Are individuals or governments more responsible for protecting the environment?",
+   "points": [
+    "role of individuals",
+    "role of governments",
+    "your balance"
+   ]
+  },
+  {
+   "id": "environment-fb45cb10",
+   "category": "environment",
+   "level": "C1",
+   "prompt": "Should flying be made more expensive to reduce emissions?",
+   "points": [
+    "environmental argument",
+    "social fairness",
+    "alternatives"
+   ]
+  },
+  {
+   "id": "environment-e0f1a2a4",
+   "category": "environment",
+   "level": "C1",
+   "prompt": "Discuss the idea of \"rewilding\" land that is currently used for farming.",
+   "points": [
+    "what it means",
+    "benefits",
+    "costs and objections"
+   ]
+  },
+  {
+   "id": "environment-0212dee2",
+   "category": "environment",
+   "level": "C1",
+   "prompt": "How should cities adapt to more extreme weather?",
+   "points": [
+    "likely risks",
+    "practical measures",
+    "who should pay"
+   ]
+  },
+  {
+   "id": "environment-51c97d80",
+   "category": "environment",
+   "level": "C2",
+   "prompt": "Is economic growth compatible with protecting the planet?",
+   "points": [
+    "arguments for green growth",
+    "arguments for degrowth",
+    "your judgement"
+   ]
+  },
+  {
+   "id": "environment-198a49b7",
+   "category": "environment",
+   "level": "C2",
+   "prompt": "\"Climate change is a problem of politics, not technology.\" Discuss.",
+   "points": [
+    "technological progress",
+    "political obstacles",
+    "synthesis"
+   ]
+  },
+  {
+   "id": "environment-e33eba27",
+   "category": "environment",
+   "level": "B2",
+   "prompt": "Describe the weather and climate where you live and how it is changing.",
+   "points": [
+    "typical weather",
+    "changes noticed",
+    "effects on daily life"
+   ]
+  },
+  {
+   "id": "environment-c71353b4",
+   "category": "environment",
+   "level": "B2+",
+   "prompt": "Should people eat less meat for environmental reasons?",
+   "points": [
+    "the evidence",
+    "cultural and personal factors",
+    "your view"
+   ]
+  },
+  {
+   "id": "technology-ed907ae0",
+   "category": "technology",
+   "level": "B2",
+   "prompt": "Describe a piece of technology you couldn't live without.",
+   "points": [
+    "what it is",
+    "how you use it",
+    "what life would be like without it"
+   ]
+  },
+  {
+   "id": "technology-7f805454",
+   "category": "technology",
+   "level": "B2",
+   "prompt": "Talk about how you use your phone during a typical day.",
+   "points": [
+    "main uses",
+    "time spent",
+    "whether you would like to change it"
+   ]
+  },
+  {
+   "id": "technology-b8ad4120",
+   "category": "technology",
+   "level": "B2+",
+   "prompt": "Should children under twelve have smartphones?",
+   "points": [
+    "benefits",
+    "risks",
+    "rules you would suggest"
+   ]
+  },
+  {
+   "id": "technology-27da1582",
+   "category": "technology",
+   "level": "B2+",
+   "prompt": "Describe an invention that you think was overrated.",
+   "points": [
+    "what it is",
+    "the expectations",
+    "why it disappointed"
+   ]
+  },
+  {
+   "id": "technology-a872dde9",
+   "category": "technology",
+   "level": "C1",
+   "prompt": "How will artificial intelligence change the jobs people do?",
+   "points": [
+    "jobs at risk",
+    "new jobs",
+    "skills people will need"
+   ]
+  },
+  {
+   "id": "technology-86196d87",
+   "category": "technology",
+   "level": "C1",
+   "prompt": "Should social media companies be responsible for what users post?",
+   "points": [
+    "arguments for responsibility",
+    "free-speech concerns",
+    "possible solutions"
+   ]
+  },
+  {
+   "id": "technology-2ee99442",
+   "category": "technology",
+   "level": "C1",
+   "prompt": "Is technology making us more or less creative?",
+   "points": [
+    "ways it helps",
+    "ways it hinders",
+    "your view"
+   ]
+  },
+  {
+   "id": "technology-b2252442",
+   "category": "technology",
+   "level": "C2",
+   "prompt": "Should there be a right to disconnect from work messages outside working hours?",
+   "points": [
+    "the problem",
+    "legal approaches",
+    "practical difficulties"
+   ]
+  },
+  {
+   "id": "technology-49ca8a93",
+   "category": "technology",
+   "level": "C2",
+   "prompt": "Can we trust algorithms to make important decisions about people?",
+   "points": [
+    "where they are used",
+    "benefits and biases",
+    "safeguards"
+   ]
+  },
+  {
+   "id": "technology-c39cfee1",
+   "category": "technology",
+   "level": "B2+",
+   "prompt": "Describe a time when technology let you down.",
+   "points": [
+    "what happened",
+    "how you solved it",
+    "lessons learned"
+   ]
+  },
+  {
+   "id": "technology-1d16fca0",
+   "category": "technology",
+   "level": "C1",
+   "prompt": "Should personal data be treated as property that people can sell?",
+   "points": [
+    "the idea",
+    "advantages",
+    "risks"
+   ]
+  },
+  {
+   "id": "business-7440896c",
+   "category": "business",
+   "level": "B2",
+   "prompt": "Describe a small business you like in your area.",
+   "points": [
+    "what it sells",
+    "why you like it",
+    "challenges it faces"
+   ]
+  },
+  {
+   "id": "business-6e11622d",
+   "category": "business",
+   "level": "B2",
+   "prompt": "Would you prefer to work for a large company or a small one?",
+   "points": [
+    "advantages of each",
+    "your personality",
+    "your choice"
+   ]
+  },
+  {
+   "id": "business-88188d70",
+   "category": "business",
+   "level": "B2+",
+   "prompt": "Is it a good idea to start a business straight after university?",
+   "points": [
+    "opportunities",
+    "risks",
+    "advice you would give"
+   ]
+  },
+  {
+   "id": "business-f070537e",
+   "category": "business",
+   "level": "B2+",
+   "prompt": "Talk about an advertisement that persuaded you to buy something.",
+   "points": [
+    "what it was",
+    "why it worked",
+    "whether you regret it"
+   ]
+  },
+  {
+   "id": "business-f7d2e691",
+   "category": "business",
+   "level": "C1",
+   "prompt": "Should companies be judged by their social impact as well as their profits?",
+   "points": [
+    "the case for",
+    "the case against",
+    "how to measure impact"
+   ]
+  },
+  {
+   "id": "business-244ae18c",
+   "category": "business",
+   "level": "C1",
+   "prompt": "Is the four-day working week a realistic idea?",
+   "points": [
+    "evidence from trials",
+    "sectors where it is hard",
+    "your view"
+   ]
+  },
+  {
+   "id": "business-7ed5c5ec",
+   "category": "business",
+   "level": "C1",
+   "prompt": "How should governments support local shops against online giants?",
+   "points": [
+    "the problem",
+    "possible policies",
+    "unintended consequences"
+   ]
+  },
+  {
+   "id": "business-bee40482",
+   "category": "business",
+   "level": "C2",
+   "prompt": "Does globalisation reduce or increase inequality?",
+   "points": [
+    "between countries",
+    "within countries",
+    "your assessment"
+   ]
+  },
+  {
+   "id": "business-0418e606",
+   "category": "business",
+   "level": "C2",
+   "prompt": "Should a maximum wage be introduced for executives?",
+   "points": [
+    "fairness arguments",
+    "economic arguments",
+    "alternatives"
+   ]
+  },
+  {
+   "id": "business-0c04e049",
+   "category": "business",
+   "level": "B2+",
+   "prompt": "Describe a product that you think is well designed.",
+   "points": [
+    "what it is",
+    "design features",
+    "why they matter"
+   ]
+  },
+  {
+   "id": "business-9d5a6a61",
+   "category": "business",
+   "level": "C1",
+   "prompt": "Is cash going to disappear, and should we let it?",
+   "points": [
+    "trends",
+    "who loses out",
+    "your view"
+   ]
+  },
+  {
+   "id": "society-3d57d58b",
+   "category": "society",
+   "level": "B2",
+   "prompt": "Describe a festival or celebration that is important to you.",
+   "points": [
+    "when it happens",
+    "what people do",
+    "why it matters"
+   ]
+  },
+  {
+   "id": "society-166cef9c",
+   "category": "society",
+   "level": "B2",
+   "prompt": "Talk about the role of neighbours in your life.",
+   "points": [
+    "how well you know them",
+    "how you help each other",
+    "changes over time"
+   ]
+  },
+  {
+   "id": "society-a357595c",
+   "category": "society",
+   "level": "B2+",
+   "prompt": "Is it important to preserve local languages and dialects?",
+   "points": [
+    "cultural value",
+    "practical arguments",
+    "what can be done"
+   ]
+  },
+  {
+   "id": "society-4c102cf1",
+   "category": "society",
+   "level": "B2+",
+   "prompt": "Should museums return objects taken from other countries?",
+   "points": [
+    "arguments for return",
+    "arguments against",
+    "compromises"
+   ]
+  },
+  {
+   "id": "society-0171d3f3",
+   "category": "society",
+   "level": "C1",
+   "prompt": "How do public spaces affect the way people behave?",
+   "points": [
+    "examples",
+    "design features",
+    "social effects"
+   ]
+  },
+  {
+   "id": "society-53ea1048",
+   "category": "society",
+   "level": "C1",
+   "prompt": "Are celebrities good role models for young people?",
+   "points": [
+    "positive examples",
+    "negative influence",
+    "responsibility"
+   ]
+  },
+  {
+   "id": "society-38f64b90",
+   "category": "society",
+   "level": "C1",
+   "prompt": "Should voting be compulsory?",
+   "points": [
+    "participation arguments",
+    "freedom arguments",
+    "your view"
+   ]
+  },
+  {
+   "id": "society-97cf2e3f",
+   "category": "society",
+   "level": "C2",
+   "prompt": "Is a shared national identity still possible in diverse societies?",
+   "points": [
+    "what holds societies together",
+    "tensions",
+    "possible answers"
+   ]
+  },
+  {
+   "id": "society-c607d68b",
+   "category": "society",
+   "level": "C2",
+   "prompt": "\"Culture should be free.\" Discuss with reference to music, film and books.",
+   "points": [
+    "access arguments",
+    "creators' rights",
+    "sustainable models"
+   ]
+  },
+  {
+   "id": "society-63ef9bab",
+   "category": "society",
+   "level": "B2+",
+   "prompt": "Describe a change in your community in recent years.",
+   "points": [
+    "what changed",
+    "why",
+    "whether it was positive"
+   ]
+  },
+  {
+   "id": "psychology-bf2ff3ef",
+   "category": "psychology",
+   "level": "B2",
+   "prompt": "Describe a time when you felt very proud of yourself.",
+   "points": [
+    "the situation",
+    "what you achieved",
+    "how others reacted"
+   ]
+  },
+  {
+   "id": "psychology-fbed2ab8",
+   "category": "psychology",
+   "level": "B2",
+   "prompt": "Talk about how you deal with stress.",
+   "points": [
+    "causes of stress",
+    "what helps you",
+    "advice for others"
+   ]
+  },
+  {
+   "id": "psychology-3e9487c6",
+   "category": "psychology",
+   "level": "B2+",
+   "prompt": "Why do people find it hard to change their habits?",
+   "points": [
+    "psychological reasons",
+    "examples",
+    "strategies that work"
+   ]
+  },
+  {
+   "id": "psychology-e1d7c960",
+   "category": "psychology",
+   "level": "B2+",
+   "prompt": "Is it better to be an optimist or a realist?",
+   "points": [
+    "benefits of optimism",
+    "benefits of realism",
+    "your view"
+   ]
+  },
+  {
+   "id": "psychology-9f8b5298",
+   "category": "psychology",
+   "level": "C1",
+   "prompt": "Why do people believe things that are not true?",
+   "points": [
+    "cognitive biases",
+    "social factors",
+    "how to resist"
+   ]
+  },
+  {
+   "id": "psychology-def09d66",
+   "category": "psychology",
+   "level": "C1",
+   "prompt": "How does comparing ourselves with others on social media affect wellbeing?",
+   "points": [
+    "mechanisms",
+    "evidence",
+    "healthy habits"
+   ]
+  },
+  {
+   "id": "psychology-d2b03f36",
+   "category": "psychology",
+   "level": "C1",
+   "prompt": "Should schools teach emotional intelligence?",
+   "points": [
+    "what it is",
+    "possible benefits",
+    "how to teach it"
+   ]
+  },
+  {
+   "id": "psychology-d681da5f",
+   "category": "psychology",
+   "level": "C2",
+   "prompt": "To what extent is our personality shaped by our environment rather than our genes?",
+   "points": [
+    "nature arguments",
+    "nurture arguments",
+    "interaction"
+   ]
+  },
+  {
+   "id": "psychology-70b8d59c",
+   "category": "psychology",
+   "level": "C2",
+   "prompt": "Is happiness a sensible goal to pursue directly?",
+   "points": [
+    "arguments for",
+    "the paradox of pursuit",
+    "alternatives such as meaning"
+   ]
+  },
+  {
+   "id": "psychology-61d5de2f",
+   "category": "psychology",
+   "level": "B2+",
+   "prompt": "Describe a decision you made that surprised other people.",
+   "points": [
+    "the decision",
+    "your reasons",
+    "how it turned out"
+   ]
+  },
+  {
+   "id": "science-99cec080",
+   "category": "science",
+   "level": "B2",
+   "prompt": "Describe a scientific discovery that interests you.",
+   "points": [
+    "what was discovered",
+    "why it matters",
+    "how it affects people"
+   ]
+  },
+  {
+   "id": "science-549c41d7",
+   "category": "science",
+   "level": "B2",
+   "prompt": "Talk about a science lesson or experiment you remember.",
+   "points": [
+    "what you did",
+    "what happened",
+    "what you learned"
+   ]
+  },
+  {
+   "id": "science-d3e01bc9",
+   "category": "science",
+   "level": "B2+",
+   "prompt": "Should governments spend money on space exploration?",
+   "points": [
+    "benefits",
+    "costs",
+    "priorities"
+   ]
+  },
+  {
+   "id": "science-a9064745",
+   "category": "science",
+   "level": "B2+",
+   "prompt": "Why are some people sceptical about science?",
+   "points": [
+    "reasons",
+    "consequences",
+    "how scientists can build trust"
+   ]
+  },
+  {
+   "id": "science-ec8295c2",
+   "category": "science",
+   "level": "C1",
+   "prompt": "Should scientists be allowed to edit human genes?",
+   "points": [
+    "medical benefits",
+    "ethical risks",
+    "possible limits"
+   ]
+  },
+  {
+   "id": "science-12dd4d50",
+   "category": "science",
+   "level": "C1",
+   "prompt": "How can science be communicated better to the public?",
+   "points": [
+    "current problems",
+    "good examples",
+    "your suggestions"
+   ]
+  },
+  {
+   "id": "science-6287d41b",
+   "category": "science",
+   "level": "C1",
+   "prompt": "Is it ethical to use animals in medical research?",
+   "points": [
+    "arguments for",
+    "arguments against",
+    "alternatives"
+   ]
+  },
+  {
+   "id": "science-97cd86f3",
+   "category": "science",
+   "level": "C2",
+   "prompt": "Should funding go to research with clear practical uses or to pure curiosity-driven science?",
+   "points": [
+    "value of applied research",
+    "value of basic research",
+    "balance"
+   ]
+  },
+  {
+   "id": "science-b0cf8a2c",
+   "category": "science",
+   "level": "C2",
+   "prompt": "Does scientific progress always lead to human progress?",
+   "points": [
+    "examples of benefit",
+    "examples of harm",
+    "your judgement"
+   ]
+  },
+  {
+   "id": "science-47b75598",
+   "category": "science",
+   "level": "B2+",
+   "prompt": "Describe a mystery that science has not yet solved.",
+   "points": [
+    "what it is",
+    "theories",
+    "why it matters"
+   ]
+  },
+  {
+   "id": "health-c0dfd492",
+   "category": "health",
+   "level": "B2",
+   "prompt": "Describe a healthy habit you have.",
+   "points": [
+    "what it is",
+    "how you started",
+    "its effects"
+   ]
+  },
+  {
+   "id": "health-239774e1",
+   "category": "health",
+   "level": "B2",
+   "prompt": "Talk about the food you usually eat during the week.",
+   "points": [
+    "typical meals",
+    "how healthy they are",
+    "changes you want"
+   ]
+  },
+  {
+   "id": "health-4f2f8519",
+   "category": "health",
+   "level": "B2+",
+   "prompt": "Should junk food be taxed like tobacco?",
+   "points": [
+    "health arguments",
+    "fairness concerns",
+    "alternatives"
+   ]
+  },
+  {
+   "id": "health-4c6921ca",
+   "category": "health",
+   "level": "B2+",
+   "prompt": "Is it the responsibility of employers to look after employees' health?",
+   "points": [
+    "what employers can do",
+    "limits",
+    "your view"
+   ]
+  },
+  {
+   "id": "health-a25f6b7d",
+   "category": "health",
+   "level": "C1",
+   "prompt": "How can societies deal with an ageing population?",
+   "points": [
+    "challenges",
+    "solutions",
+    "role of families"
+   ]
+  },
+  {
+   "id": "health-ae2a429d",
+   "category": "health",
+   "level": "C1",
+   "prompt": "Should mental health days be treated the same as sick days?",
+   "points": [
+    "arguments for",
+    "possible abuse",
+    "your view"
+   ]
+  },
+  {
+   "id": "health-9e03f264",
+   "category": "health",
+   "level": "C1",
+   "prompt": "Are fitness trackers and health apps good for us?",
+   "points": [
+    "benefits",
+    "risks such as anxiety or privacy",
+    "your view"
+   ]
+  },
+  {
+   "id": "health-b226dd55",
+   "category": "health",
+   "level": "C2",
+   "prompt": "Should healthcare be completely free at the point of use?",
+   "points": [
+    "equity arguments",
+    "cost and efficiency",
+    "models from different countries"
+   ]
+  },
+  {
+   "id": "health-0e52b548",
+   "category": "health",
+   "level": "C2",
+   "prompt": "To what extent is health a matter of personal choice?",
+   "points": [
+    "individual behaviour",
+    "social determinants",
+    "policy implications"
+   ]
+  },
+  {
+   "id": "health-edb5d5e7",
+   "category": "health",
+   "level": "B2",
+   "prompt": "Describe a time you or someone you know recovered from an illness or injury.",
+   "points": [
+    "what happened",
+    "the recovery",
+    "what helped"
+   ]
+  },
+  {
+   "id": "global-8bbccaa8",
+   "category": "global",
+   "level": "B2",
+   "prompt": "Describe a global problem that worries you.",
+   "points": [
+    "what it is",
+    "why it worries you",
+    "what could help"
+   ]
+  },
+  {
+   "id": "global-2a81f27c",
+   "category": "global",
+   "level": "B2+",
+   "prompt": "Should rich countries accept more refugees?",
+   "points": [
+    "humanitarian arguments",
+    "practical challenges",
+    "your view"
+   ]
+  },
+  {
+   "id": "global-f8764924",
+   "category": "global",
+   "level": "B2+",
+   "prompt": "Is tourism good or bad for poorer countries?",
+   "points": [
+    "economic benefits",
+    "social and environmental costs",
+    "better models"
+   ]
+  },
+  {
+   "id": "global-277fd96d",
+   "category": "global",
+   "level": "C1",
+   "prompt": "Should international aid be given directly to people rather than governments?",
+   "points": [
+    "effectiveness",
+    "risks",
+    "examples"
+   ]
+  },
+  {
+   "id": "global-17a2086f",
+   "category": "global",
+   "level": "C1",
+   "prompt": "How can the world prevent future pandemics?",
+   "points": [
+    "lessons from the past",
+    "international cooperation",
+    "individual role"
+   ]
+  },
+  {
+   "id": "global-816d4e7b",
+   "category": "global",
+   "level": "C1",
+   "prompt": "Is fast fashion a global ethical problem?",
+   "points": [
+    "workers",
+    "environment",
+    "consumers' responsibility"
+   ]
+  },
+  {
+   "id": "global-bb64a26d",
+   "category": "global",
+   "level": "C2",
+   "prompt": "Can international organisations solve problems that individual countries cannot?",
+   "points": [
+    "successes",
+    "failures",
+    "conditions for success"
+   ]
+  },
+  {
+   "id": "global-c30438e4",
+   "category": "global",
+   "level": "C2",
+   "prompt": "Should access to clean water be treated as a human right with legal force?",
+   "points": [
+    "arguments",
+    "implementation problems",
+    "your position"
+   ]
+  },
+  {
+   "id": "global-c476e1a0",
+   "category": "global",
+   "level": "B2+",
+   "prompt": "Describe a person who has made the world a better place.",
+   "points": [
+    "who they are",
+    "what they did",
+    "why it matters"
+   ]
+  },
+  {
+   "id": "global-b7adbabb",
+   "category": "global",
+   "level": "C1",
+   "prompt": "Is it possible to end extreme poverty in the next twenty years?",
+   "points": [
+    "progress so far",
+    "obstacles",
+    "your view"
+   ]
+  },
+  {
+   "id": "personal-000cd60f",
+   "category": "personal",
+   "level": "B2",
+   "prompt": "Describe a journey that didn't go as planned.",
+   "points": [
+    "where you were going",
+    "what went wrong",
+    "how it ended"
+   ]
+  },
+  {
+   "id": "personal-d017b256",
+   "category": "personal",
+   "level": "B2",
+   "prompt": "Talk about a time you helped someone.",
+   "points": [
+    "the situation",
+    "what you did",
+    "how you felt"
+   ]
+  },
+  {
+   "id": "personal-698598a2",
+   "category": "personal",
+   "level": "B2",
+   "prompt": "Describe a gift you gave or received that meant a lot.",
+   "points": [
+    "what it was",
+    "the occasion",
+    "why it was meaningful"
+   ]
+  },
+  {
+   "id": "personal-f70acea8",
+   "category": "personal",
+   "level": "B2+",
+   "prompt": "Describe a mistake that taught you something important.",
+   "points": [
+    "what happened",
+    "the consequences",
+    "the lesson"
+   ]
+  },
+  {
+   "id": "personal-94b27a82",
+   "category": "personal",
+   "level": "B2+",
+   "prompt": "Talk about a time you had to make a difficult decision quickly.",
+   "points": [
+    "the situation",
+    "your choice",
+    "the result"
+   ]
+  },
+  {
+   "id": "personal-6f2494e2",
+   "category": "personal",
+   "level": "C1",
+   "prompt": "Describe a moment when you changed your mind about something important.",
+   "points": [
+    "your original view",
+    "what changed it",
+    "how you see it now"
+   ]
+  },
+  {
+   "id": "personal-46b73e5b",
+   "category": "personal",
+   "level": "C1",
+   "prompt": "Talk about an experience that made you see your own culture differently.",
+   "points": [
+    "the experience",
+    "what you noticed",
+    "lasting effects"
+   ]
+  },
+  {
+   "id": "personal-e94f8c7f",
+   "category": "personal",
+   "level": "C2",
+   "prompt": "Describe a period of your life that shaped who you are, and reflect on why.",
+   "points": [
+    "the period",
+    "key events",
+    "how it shaped you"
+   ]
+  },
+  {
+   "id": "personal-4d595de8",
+   "category": "personal",
+   "level": "C2",
+   "prompt": "Talk about a risk you took and evaluate whether it was worth it.",
+   "points": [
+    "the risk",
+    "the outcome",
+    "your evaluation"
+   ]
+  },
+  {
+   "id": "personal-bbe3317b",
+   "category": "personal",
+   "level": "B2+",
+   "prompt": "Describe a conversation that had a big effect on you.",
+   "points": [
+    "who it was with",
+    "what was said",
+    "why it mattered"
+   ]
+  },
+  {
+   "id": "lifestyle-53bca8b0",
+   "category": "lifestyle",
+   "level": "B2",
+   "prompt": "Describe a hobby you would like to try.",
+   "points": [
+    "what it is",
+    "why it appeals",
+    "what stops you"
+   ]
+  },
+  {
+   "id": "lifestyle-84e30411",
+   "category": "lifestyle",
+   "level": "B2",
+   "prompt": "Talk about a book, film or series you enjoyed recently.",
+   "points": [
+    "what it is about",
+    "why you liked it",
+    "who would enjoy it"
+   ]
+  },
+  {
+   "id": "lifestyle-249a42ac",
+   "category": "lifestyle",
+   "level": "B2+",
+   "prompt": "Is it important to have hobbies that have nothing to do with work?",
+   "points": [
+    "benefits",
+    "time pressures",
+    "your experience"
+   ]
+  },
+  {
+   "id": "lifestyle-54e4015a",
+   "category": "lifestyle",
+   "level": "B2+",
+   "prompt": "Do people spend too much money on things they don't need?",
+   "points": [
+    "examples",
+    "reasons",
+    "how to change"
+   ]
+  },
+  {
+   "id": "lifestyle-6bd88500",
+   "category": "lifestyle",
+   "level": "C1",
+   "prompt": "Has the internet changed the way people form hobbies and communities?",
+   "points": [
+    "online communities",
+    "benefits",
+    "drawbacks"
+   ]
+  },
+  {
+   "id": "lifestyle-9385d2a8",
+   "category": "lifestyle",
+   "level": "C1",
+   "prompt": "Is minimalism a realistic lifestyle for most people?",
+   "points": [
+    "what it involves",
+    "benefits",
+    "obstacles"
+   ]
+  },
+  {
+   "id": "lifestyle-011399bd",
+   "category": "lifestyle",
+   "level": "C2",
+   "prompt": "To what extent do our leisure choices reflect social class?",
+   "points": [
+    "examples",
+    "reasons",
+    "whether it is changing"
+   ]
+  },
+  {
+   "id": "lifestyle-9c8b1efe",
+   "category": "lifestyle",
+   "level": "B2",
+   "prompt": "Describe a sport or physical activity you enjoy.",
+   "points": [
+    "what it involves",
+    "how often you do it",
+    "benefits"
+   ]
+  },
+  {
+   "id": "lifestyle-69436917",
+   "category": "lifestyle",
+   "level": "C1",
+   "prompt": "Should cities invest more in sports facilities or in arts and culture?",
+   "points": [
+    "benefits of each",
+    "who uses them",
+    "your view"
+   ]
+  },
+  {
+   "id": "lifestyle-6a01292f",
+   "category": "lifestyle",
+   "level": "B2+",
+   "prompt": "Describe a skill you are proud of.",
+   "points": [
+    "what it is",
+    "how you developed it",
+    "how you use it"
+   ]
+  },
+  {
+   "id": "travel-48dc87c5",
+   "category": "travel",
+   "level": "B2",
+   "prompt": "Describe a city you would like to visit.",
+   "points": [
+    "where it is",
+    "what you would do",
+    "why it appeals"
+   ]
+  },
+  {
+   "id": "travel-99bcc0da",
+   "category": "travel",
+   "level": "B2",
+   "prompt": "Talk about your best holiday.",
+   "points": [
+    "where you went",
+    "what you did",
+    "why it was the best"
+   ]
+  },
+  {
+   "id": "travel-cee78cc7",
+   "category": "travel",
+   "level": "B2+",
+   "prompt": "Is it better to travel independently or on an organised tour?",
+   "points": [
+    "advantages of each",
+    "your experience",
+    "recommendation"
+   ]
+  },
+  {
+   "id": "travel-310cde05",
+   "category": "travel",
+   "level": "B2+",
+   "prompt": "Should popular tourist destinations limit the number of visitors?",
+   "points": [
+    "problems of overtourism",
+    "possible measures",
+    "fairness"
+   ]
+  },
+  {
+   "id": "travel-cc03b768",
+   "category": "travel",
+   "level": "C1",
+   "prompt": "How has social media changed the way people travel?",
+   "points": [
+    "choosing destinations",
+    "behaviour while travelling",
+    "consequences"
+   ]
+  },
+  {
+   "id": "travel-10e628ec",
+   "category": "travel",
+   "level": "C1",
+   "prompt": "Is long-distance travel for pleasure becoming harder to justify?",
+   "points": [
+    "environmental cost",
+    "cultural benefits",
+    "your view"
+   ]
+  },
+  {
+   "id": "travel-8c470a25",
+   "category": "travel",
+   "level": "C2",
+   "prompt": "Does travel really broaden the mind, or do we mostly confirm what we already believe?",
+   "points": [
+    "arguments for",
+    "arguments against",
+    "conditions for real learning"
+   ]
+  },
+  {
+   "id": "travel-c0006db9",
+   "category": "travel",
+   "level": "B2",
+   "prompt": "Describe a memorable meal you had while travelling.",
+   "points": [
+    "where it was",
+    "what you ate",
+    "why it was memorable"
+   ]
+  },
+  {
+   "id": "travel-eef50e3c",
+   "category": "travel",
+   "level": "C1",
+   "prompt": "Should tourists be expected to learn some of the local language?",
+   "points": [
+    "respect",
+    "practicality",
+    "your view"
+   ]
+  },
+  {
+   "id": "travel-2e092674",
+   "category": "travel",
+   "level": "B2+",
+   "prompt": "Describe a place that was very different from what you expected.",
+   "points": [
+    "your expectations",
+    "the reality",
+    "how you felt"
+   ]
+  },
+  {
+   "id": "media-1e71626d",
+   "category": "media",
+   "level": "B2",
+   "prompt": "Describe how you usually find out about the news.",
+   "points": [
+    "sources",
+    "how often",
+    "how reliable they are"
+   ]
+  },
+  {
+   "id": "media-934e0dff",
+   "category": "media",
+   "level": "B2+",
+   "prompt": "Should newspapers and news websites be free?",
+   "points": [
+    "access arguments",
+    "quality journalism",
+    "funding models"
+   ]
+  },
+  {
+   "id": "media-1429bcf8",
+   "category": "media",
+   "level": "B2+",
+   "prompt": "Is it rude to use your phone during a conversation?",
+   "points": [
+    "why people do it",
+    "effects",
+    "your rules"
+   ]
+  },
+  {
+   "id": "media-251a851c",
+   "category": "media",
+   "level": "C1",
+   "prompt": "How can people recognise misinformation online?",
+   "points": [
+    "warning signs",
+    "tools",
+    "responsibilities of platforms"
+   ]
+  },
+  {
+   "id": "media-db668e1a",
+   "category": "media",
+   "level": "C1",
+   "prompt": "Has texting made people worse at communicating face to face?",
+   "points": [
+    "evidence",
+    "counter-arguments",
+    "your view"
+   ]
+  },
+  {
+   "id": "media-2c653b09",
+   "category": "media",
+   "level": "C2",
+   "prompt": "Is complete objectivity in journalism possible or even desirable?",
+   "points": [
+    "the ideal",
+    "limits",
+    "alternatives such as transparency"
+   ]
+  },
+  {
+   "id": "media-32815330",
+   "category": "media",
+   "level": "C2",
+   "prompt": "Should public broadcasters be funded by taxes?",
+   "points": [
+    "public value",
+    "independence",
+    "competition"
+   ]
+  },
+  {
+   "id": "media-fd16cc89",
+   "category": "media",
+   "level": "B2",
+   "prompt": "Describe a podcast, radio or TV programme you enjoy.",
+   "points": [
+    "what it is",
+    "why you like it",
+    "who presents it"
+   ]
+  },
+  {
+   "id": "work-bcad9421",
+   "category": "work",
+   "level": "B2",
+   "prompt": "Describe your dream job.",
+   "points": [
+    "what it involves",
+    "skills needed",
+    "why it appeals"
+   ]
+  },
+  {
+   "id": "work-202a9405",
+   "category": "work",
+   "level": "B2",
+   "prompt": "Talk about a job you would never want to do.",
+   "points": [
+    "what it is",
+    "why",
+    "who might enjoy it"
+   ]
+  },
+  {
+   "id": "work-fd7a088a",
+   "category": "work",
+   "level": "B2+",
+   "prompt": "Is job satisfaction more important than salary?",
+   "points": [
+    "arguments for each",
+    "your priorities",
+    "how they change with age"
+   ]
+  },
+  {
+   "id": "work-ddf8ab94",
+   "category": "work",
+   "level": "B2+",
+   "prompt": "Should people stay in the same job for a long time?",
+   "points": [
+    "advantages of staying",
+    "advantages of moving",
+    "your view"
+   ]
+  },
+  {
+   "id": "work-761a4e34",
+   "category": "work",
+   "level": "C1",
+   "prompt": "Is working from home good for productivity?",
+   "points": [
+    "evidence",
+    "types of work",
+    "future patterns"
+   ]
+  },
+  {
+   "id": "work-b2665596",
+   "category": "work",
+   "level": "C1",
+   "prompt": "Should companies hire for attitude rather than qualifications?",
+   "points": [
+    "arguments",
+    "risks",
+    "examples"
+   ]
+  },
+  {
+   "id": "work-29c0b589",
+   "category": "work",
+   "level": "C2",
+   "prompt": "Will the idea of a lifelong career disappear?",
+   "points": [
+    "trends",
+    "consequences",
+    "how people should prepare"
+   ]
+  },
+  {
+   "id": "work-4687a61d",
+   "category": "work",
+   "level": "B2+",
+   "prompt": "Describe a time you worked in a team that was very successful.",
+   "points": [
+    "the task",
+    "your role",
+    "why it worked"
+   ]
+  }
+ ]
+}

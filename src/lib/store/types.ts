@@ -11,11 +11,12 @@ export interface Profile {
   weeklyGoalDays: number;
   audioStorageOptIn: boolean;
   onboardedAt: string | null;
+  preferences: Record<string, unknown>;
 }
 
 export type EventType =
   | "lesson_section_viewed" | "exercise_completed" | "answer_submitted" | "item_saved" | "item_unsaved"
-  | "review_completed" | "reading_completed" | "writing_submitted" | "speaking_submitted";
+  | "review_completed" | "reading_completed" | "writing_submitted" | "speaking_submitted" | "listening_logged";
 
 export interface ActivityEvent {
   id: string;
@@ -94,6 +95,20 @@ export interface SpeakingAttempt {
   createdAt: string;
 }
 
+export interface ListeningLog {
+  id: string;
+  resourceSlug: string;
+  episode: string | null;
+  minutes: number;
+  comprehension: number; // 1–5 self-rating
+  notes: string | null;
+  createdAt: string;
+}
+
+export interface ReviewLogRow { savedItemId: string; rating: number; state: number; due: string; reviewedAt: string }
+
+export interface WeeklyReportRow { id: string; weekStart: string; overall: number | null; report: unknown; createdAt: string }
+
 export interface LastPosition { href: string; label: string; updatedAt: string }
 
 export interface LearnerStore {
@@ -116,6 +131,15 @@ export interface LearnerStore {
   listReviewCards(): Promise<ReviewCardRow[]>;
   putReviewCard(c: ReviewCardRow): Promise<void>;
   addReviewLog(l: { savedItemId: string; rating: number; state: number; due: string }): Promise<void>;
+  listReviewLogs(): Promise<ReviewLogRow[]>;
+
+  addListening(l: Omit<ListeningLog, "id" | "createdAt">): Promise<ListeningLog>;
+  listListening(): Promise<ListeningLog[]>;
+  deleteListening(id: string): Promise<void>;
+
+  /** Saves (or replaces) the report for one week, so history can be compared. */
+  saveWeeklyReport(r: { weekStart: string; overall: number | null; report: unknown }): Promise<void>;
+  listWeeklyReports(): Promise<WeeklyReportRow[]>;
 
   getLastPosition(): Promise<LastPosition | null>;
   setLastPosition(p: { href: string; label: string }): Promise<void>;
@@ -125,6 +149,8 @@ export interface LearnerStore {
   /** Demo mode only: in Supabase mode the server route stores submissions. */
   addWritingLocal?(s: Omit<WritingSubmission, "id" | "createdAt">): Promise<WritingSubmission>;
   addSpeakingLocal?(s: Omit<SpeakingAttempt, "id" | "createdAt">): Promise<SpeakingAttempt>;
+  deleteWriting(id: string): Promise<void>;
+  deleteSpeaking(id: string): Promise<void>;
 
   exportAll(): Promise<Record<string, unknown>>;
   deleteAccount(): Promise<void>;
