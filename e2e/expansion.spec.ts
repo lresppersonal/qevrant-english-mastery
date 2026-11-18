@@ -69,7 +69,7 @@ test("speaking topics come with a language kit from the vocabulary themes, and s
   await page.goto(`/speaking?topic=${p.id}`);
   const kit = page.getByTestId("topic-language");
   await kit.locator("summary").click();
-  await expect(kit.getByRole("link").first()).toBeVisible();
+  await expect(kit.getByRole("button").first()).toBeVisible();
   // Save a word from a theme, then the speaking page suggests a related topic
   await page.goto("/vocabulary/topics/psychology-behaviour");
   await page.getByRole("button", { name: /^Save/ }).first().click();

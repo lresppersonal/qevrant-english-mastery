@@ -16,6 +16,14 @@ Content is written in compact formats in `content/src/` and compiled with `npm r
 
 **New to this? Start with [docs/LAUNCH-GUIDE.md](docs/LAUNCH-GUIDE.md)**: a step-by-step, non-technical guide to putting the app online, creating your account and keeping your data.
 
+## What's new (2026-11-18, speaking word card)
+- **Speaking ▸ Language for this topic**: tapping a word or phrase no longer leaves the page. It opens the same small dictionary card as Reading, next to the word, with:
+  - the headword, Russian, a short definition and up to three synonyms;
+  - UK/US audio, **Save**, and **Source: Speaking — <topic>**.
+
+  The topic, timers and any recording carry on untouched.
+- Saved words are stored as the vocabulary entry itself, with the topic as context and Speaking as the source, so the Library shows "“<topic>” · Speaking". Saving a word you already have doesn't create a second entry.
+
 ## What's new (2026-11-18, flashcard fix)
 - **No more page jumps in flashcard practice.** There were two causes:
   - the Show answer button grabbed focus on every new card, so the browser scrolled to it;

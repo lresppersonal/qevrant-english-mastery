@@ -18,9 +18,15 @@ const GAP = 10, MARGIN = 8, MAX_W = 360;
  * preventScroll. It opens above the word when there is room, otherwise below, and is clamped
  * horizontally to stay inside the viewport.
  */
-export function WordPopover({ anchor, word, sentence, items, sourceRef, gloss, onClose }: {
+export function WordPopover({ anchor, word, sentence, items, sourceRef, gloss, onClose, senseId, source, saveContext }: {
   anchor: HTMLElement; word: string; sentence: string; items: VocabItem[]; sourceRef: string;
   gloss?: { term: string; definition: string; ru: string }; onClose: (returnFocus: boolean) => void;
+  /** Show this vocabulary sense (when the caller already knows which meaning is meant, e.g. a topic word list) */
+  senseId?: string;
+  /** Where the word comes from, shown on the card, e.g. "Speaking — <topic>" */
+  source?: string;
+  /** Context stored with a saved word (defaults to the sentence) */
+  saveContext?: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [pos, setPos] = useState<{ top: number; left: number; width: number; above: boolean; arrow: number } | null>(null);
@@ -65,7 +71,9 @@ export function WordPopover({ anchor, word, sentence, items, sourceRef, gloss, o
     return () => { window.removeEventListener("keydown", onKey); document.removeEventListener("pointerdown", onDown); };
   }, [anchor, onClose]);
 
-  const sense = entry ? entry.senses[entry.contextIndex ?? 0] ?? entry.senses[0] : null;
+  const fixed = senseId && entry ? entry.senses.find((x) => x.senseRef === senseId) : undefined;
+  const sense = entry ? fixed ?? entry.senses[entry.contextIndex ?? 0] ?? entry.senses[0] : null;
+  const keep = saveContext ?? sentence;
   const synonyms = entry ? [...new Set(entry.synonyms)].filter((s) => s.toLowerCase() !== entry.lemma.toLowerCase()).slice(0, 3) : [];
 
   const body = (
@@ -84,7 +92,7 @@ export function WordPopover({ anchor, word, sentence, items, sourceRef, gloss, o
           <p role="alert" className="text-sm text-danger">{error}</p>
           <div className="flex flex-wrap gap-2">
             <button type="button" className="btn btn-primary !min-h-9 !px-3 text-sm" onClick={retry}><RefreshCw size={14} aria-hidden="true" /> Try again</button>
-            <SaveButton itemType="custom" itemRef={lookup.toLowerCase()} label={lookup} context={sentence} sourceRef={sourceRef} />
+            <SaveButton itemType="custom" itemRef={lookup.toLowerCase()} label={lookup} context={keep} sourceRef={sourceRef} />
           </div>
         </div>
       )}
@@ -97,14 +105,15 @@ export function WordPopover({ anchor, word, sentence, items, sourceRef, gloss, o
           </div>
           {sense?.ru ? <p lang="ru" className="font-semibold text-primary" data-testid="pop-ru">{sense.ru}</p>
             : gloss ? <p lang="ru" className="font-semibold text-primary" data-testid="pop-ru">{gloss.ru}</p> : null}
-          {sense?.definition ? <p className="text-[15px] leading-snug" data-testid="pop-definition">{entry.contextNote ?? sense.definition}</p>
+          {sense?.definition ? <p className="text-[15px] leading-snug" data-testid="pop-definition">{fixed ? sense.definition : entry.contextNote ?? sense.definition}</p>
             : gloss && <p className="text-[15px] leading-snug" data-testid="pop-definition">{gloss.definition}</p>}
           {synonyms.length > 0 && <p className="text-sm" data-testid="pop-synonyms"><span className="font-semibold">Synonyms: </span>{synonyms.join(", ")}</p>}
           <Pronounce word={entry.lemma} ipa={entry.ipa} audio={entry.audio} serverTts={ai?.tts} />
+          {source && <p className="text-xs text-muted" data-testid="pop-source"><span className="font-semibold">Source:</span> {source}</p>}
           {entry.missing.length > 0 && !sense?.ru && <p className="text-xs text-muted">Not available yet: {entry.missing.join("; ")}.</p>}
           <div className="flex flex-wrap items-center gap-2 border-t border-line pt-2.5">
-            {sense?.senseRef ? <SaveButton itemType="sense" itemRef={sense.senseRef} label={entry.lemma} context={sentence} sourceRef={sourceRef} />
-              : <SaveButton itemType="custom" itemRef={entry.lemma.toLowerCase()} label={entry.lemma} context={[sense?.ru, sense?.definition].filter(Boolean).join(" — ") || sentence} sourceRef={sourceRef} />}
+            {sense?.senseRef ? <SaveButton itemType="sense" itemRef={sense.senseRef} label={entry.lemma} context={keep} sourceRef={sourceRef} />
+              : <SaveButton itemType="custom" itemRef={entry.lemma.toLowerCase()} label={entry.lemma} context={[sense?.ru, sense?.definition].filter(Boolean).join(" — ") || keep} sourceRef={sourceRef} />}
             <button type="button" className="ml-auto inline-flex items-center gap-1 text-sm font-semibold text-primary" onClick={() => setMore(true)} aria-expanded={false}>More details <ChevronDown size={14} aria-hidden="true" /></button>
           </div>
         </div>

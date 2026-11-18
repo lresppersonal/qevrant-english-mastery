@@ -21,7 +21,7 @@ const geo = (page: Page) => page.evaluate(() => {
   return { y: scrollY, top: Math.round(r.top), h: Math.round(r.height), progressTop: Math.round(p.top), H: document.documentElement.scrollHeight, flipped: document.querySelector('[data-testid="flashcard"]')!.getAttribute("data-flipped") };
 });
 async function settle(page: Page) { await page.waitForTimeout(700); }
-async function scrollTo(page: Page, y: number) { await page.evaluate((y) => scrollTo(0, y), y); await page.waitForTimeout(150); await page.evaluate(() => ((window as any).__ys = [])); }
+async function scrollTo(page: Page, y: number) { await page.evaluate((y) => window.scrollTo(0, y), y); await page.waitForTimeout(150); await page.evaluate(() => ((window as any).__ys = [])); }
 async function noScrollHappened(page: Page) { expect(await page.evaluate(() => (window as any).__ys)).toEqual([]); }
 /** A point on the card that is on screen and not covered by fixed UI (e.g. the phone's bottom navigation): a corner, an edge or the middle */
 async function point(page: Page, where: "tl" | "br" | "mid" | "tr") {

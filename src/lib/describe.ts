@@ -19,6 +19,7 @@ export function describeSaved(s: SavedItem) {
 export function sourceLabel(ref: string | null) {
   if (!ref) return null;
   if (ref.startsWith("reading:")) return getReading(ref.slice(8))?.title ?? null;
+  if (ref.startsWith("speaking:")) return "Speaking";
   return null;
 }
 
