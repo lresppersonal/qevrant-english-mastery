@@ -4,7 +4,9 @@
   "title": "Nominal relative clauses: what, whatever, whoever",
   "level": "C1",
   "domain": "relative-clauses",
-  "topics": ["education"],
+  "topics": [
+    "education"
+  ],
   "summary": "A nominal relative clause works like a whole noun phrase. It lets you make a clause the subject or object of a sentence, and is a key tool for emphasis and precise argument.",
   "minutes": 25,
   "status": "published",
@@ -14,17 +16,64 @@
   "publishedAt": "2026-11-16",
   "sections": [
     {
+      "id": "core",
+      "kind": "core",
+      "title": "Core concept",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A nominal relative clause works as a **noun phrase on its own**. The noun and the relative word merge into one word: *the thing that* becomes **what**; *anyone who* becomes **whoever**. The whole clause can then be a subject, an object or a complement."
+        },
+        {
+          "type": "rule",
+          "text": "*what* = the thing(s) that · *whoever* = anyone who · *whatever* = anything that · *whichever* = any one (of a set) that."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "**What surprised me** was the cost.",
+              "note": "= the thing that surprised me"
+            },
+            {
+              "en": "**Whoever finishes early** can leave.",
+              "note": "= anyone who finishes early"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "A *what*-clause at the start of a sentence also creates emphasis, because it delays the key information until after *is* or *was*."
+        }
+      ]
+    },
+    {
       "id": "overview",
       "kind": "overview",
       "title": "From relative clause to noun phrase",
       "blocks": [
-        { "type": "p", "text": "In an ordinary relative clause, the clause describes a noun: *the thing that surprised me*. In a **nominal relative clause**, the noun and the relative word merge into one word, and the whole clause becomes a noun phrase: **what surprised me**." },
-        { "type": "examples", "items": [
-          { "en": "The thing that surprised me was the cost. → **What surprised me** was the cost." },
-          { "en": "Anyone who finishes early can leave. → **Whoever finishes early** can leave." },
-          { "en": "You can choose any topic that interests you. → You can choose **whichever topic interests you**." }
-        ] },
-        { "type": "p", "text": "Because the clause is now a noun phrase, it can go anywhere a noun phrase goes: subject, object, complement, or after a preposition." }
+        {
+          "type": "p",
+          "text": "In an ordinary relative clause, the clause describes a noun: *the thing that surprised me*. In a **nominal relative clause**, the noun and the relative word merge into one word, and the whole clause becomes a noun phrase: **what surprised me**."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "The thing that surprised me was the cost. → **What surprised me** was the cost."
+            },
+            {
+              "en": "Anyone who finishes early can leave. → **Whoever finishes early** can leave."
+            },
+            {
+              "en": "You can choose any topic that interests you. → You can choose **whichever topic interests you**."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Because the clause is now a noun phrase, it can go anywhere a noun phrase goes: subject, object, complement, or after a preposition."
+        }
       ]
     },
     {
@@ -32,22 +81,76 @@
       "kind": "form",
       "title": "Form: the nominal relative words",
       "blocks": [
-        { "type": "table", "head": ["Word", "Meaning", "Example"], "rows": [
-          ["what", "the thing(s) that", "**What she proposed** was radical."],
-          ["whatever", "anything that / it doesn't matter what", "Take **whatever you need**."],
-          ["whoever", "the person who / anyone who", "**Whoever wrote this** understood the problem."],
-          ["whichever", "any one (from a known set) that", "Pick **whichever essay question** suits you."],
-          ["wherever", "any place where / the place where", "She studies **wherever she can find a quiet desk**."],
-          ["whenever", "any time that / every time that", "Ask **whenever you're unsure**."],
-          ["however", "in any way that / the way that", "Organise your notes **however works for you**."]
-        ] },
-        { "type": "p", "text": "Positions in the sentence:" },
-        { "type": "examples", "items": [
-          { "en": "**What the data shows** is a steady decline.", "note": "Subject: takes a singular verb." },
-          { "en": "I didn't understand **what the lecturer meant**.", "note": "Object." },
-          { "en": "That is exactly **what worries me**.", "note": "Complement after *be*." },
-          { "en": "It depends on **what you mean by success**.", "note": "After a preposition." }
-        ] }
+        {
+          "type": "table",
+          "head": [
+            "Word",
+            "Meaning",
+            "Example"
+          ],
+          "rows": [
+            [
+              "what",
+              "the thing(s) that",
+              "**What she proposed** was radical."
+            ],
+            [
+              "whatever",
+              "anything that / it doesn't matter what",
+              "Take **whatever you need**."
+            ],
+            [
+              "whoever",
+              "the person who / anyone who",
+              "**Whoever wrote this** understood the problem."
+            ],
+            [
+              "whichever",
+              "any one (from a known set) that",
+              "Pick **whichever essay question** suits you."
+            ],
+            [
+              "wherever",
+              "any place where / the place where",
+              "She studies **wherever she can find a quiet desk**."
+            ],
+            [
+              "whenever",
+              "any time that / every time that",
+              "Ask **whenever you're unsure**."
+            ],
+            [
+              "however",
+              "in any way that / the way that",
+              "Organise your notes **however works for you**."
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Positions in the sentence:"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "**What the data shows** is a steady decline.",
+              "note": "Subject: takes a singular verb."
+            },
+            {
+              "en": "I didn't understand **what the lecturer meant**.",
+              "note": "Object."
+            },
+            {
+              "en": "That is exactly **what worries me**.",
+              "note": "Complement after *be*."
+            },
+            {
+              "en": "It depends on **what you mean by success**.",
+              "note": "After a preposition."
+            }
+          ]
+        }
       ]
     },
     {
@@ -55,14 +158,36 @@
       "kind": "contrasts",
       "title": "What vs that / which",
       "blocks": [
-        { "type": "p", "text": "**What** already contains its noun. **That** and **which** need a noun before them. If there is a noun, you cannot use *what*; if there is no noun, you cannot use *that* or *which* as a relative." },
-        { "type": "examples", "items": [
-          { "en": "~~Everything what he said was true.~~", "wrong": true, "note": "There is a noun (*everything*), so use *that*." },
-          { "en": "Everything **that** he said was true." },
-          { "en": "~~That he said was true.~~", "wrong": true, "note": "No noun, so the clause needs *what*." },
-          { "en": "**What** he said was true." }
-        ] },
-        { "type": "note", "tone": "warning", "text": "*All what* is always wrong. Use **all (that)**: *All (that) you need is a library card.*" }
+        {
+          "type": "p",
+          "text": "**What** already contains its noun. **That** and **which** need a noun before them. If there is a noun, you cannot use *what*; if there is no noun, you cannot use *that* or *which* as a relative."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "~~Everything what he said was true.~~",
+              "wrong": true,
+              "note": "There is a noun (*everything*), so use *that*."
+            },
+            {
+              "en": "Everything **that** he said was true."
+            },
+            {
+              "en": "~~That he said was true.~~",
+              "wrong": true,
+              "note": "No noun, so the clause needs *what*."
+            },
+            {
+              "en": "**What** he said was true."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "tone": "warning",
+          "text": "*All what* is always wrong. Use **all (that)**: *All (that) you need is a library card.*"
+        }
       ]
     },
     {
@@ -70,14 +195,34 @@
       "kind": "uses",
       "title": "What-clauses for emphasis (pseudo-clefts)",
       "blocks": [
-        { "type": "p", "text": "A *what*-clause followed by *be* lets you delay the key information until the end of the sentence, where English puts its focus. This structure is called a pseudo-cleft, and it is one of the most useful emphasis tools in academic writing and speaking." },
-        { "type": "examples", "items": [
-          { "en": "The curriculum needs more flexibility. → **What the curriculum needs is** more flexibility." },
-          { "en": "**What I'm suggesting is that** we assess skills, not memory." },
-          { "en": "**What happened was that** the funding was cut in the middle of the project.", "note": "*What happened was (that)…* introduces an event." },
-          { "en": "**What they did was (to) redesign** the whole first year.", "note": "*What + subject + did + was + (to) infinitive* focuses on an action." }
-        ] },
-        { "type": "note", "tone": "tip", "text": "In IELTS-style Speaking Part 3 and in essay conclusions, a pseudo-cleft is a natural way to signal your main point: *What really matters, in my view, is…*" }
+        {
+          "type": "p",
+          "text": "A *what*-clause followed by *be* lets you delay the key information until the end of the sentence, where English puts its focus. This structure is called a pseudo-cleft, and it is one of the most useful emphasis tools in academic writing and speaking."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "The curriculum needs more flexibility. → **What the curriculum needs is** more flexibility."
+            },
+            {
+              "en": "**What I'm suggesting is that** we assess skills, not memory."
+            },
+            {
+              "en": "**What happened was that** the funding was cut in the middle of the project.",
+              "note": "*What happened was (that)…* introduces an event."
+            },
+            {
+              "en": "**What they did was (to) redesign** the whole first year.",
+              "note": "*What + subject + did + was + (to) infinitive* focuses on an action."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "tone": "tip",
+          "text": "In IELTS-style Speaking Part 3 and in essay conclusions, a pseudo-cleft is a natural way to signal your main point: *What really matters, in my view, is…*"
+        }
       ]
     },
     {
@@ -85,29 +230,71 @@
       "kind": "uses",
       "title": "-ever words: two meanings",
       "blocks": [
-        { "type": "p", "text": "The *-ever* words have two related uses. Keep them apart." },
-        { "type": "list", "items": [
-          "**As a noun phrase** (nominal relative): *Whoever designed this timetable* had never taught. = the person who …",
-          "**As a concession** (it doesn't matter …): *Whatever you decide, tell your supervisor early.* = No matter what you decide …"
-        ] },
-        { "type": "examples", "items": [
-          { "en": "**Whichever university you choose**, the first year will be demanding.", "note": "Concession; comma after the clause." },
-          { "en": "**However hard the course is**, don't give up in the first month.", "note": "*However* + adjective/adverb = no matter how." },
-          { "en": "She'll succeed **wherever she goes**.", "note": "Concession at the end; no comma needed." }
-        ] }
+        {
+          "type": "p",
+          "text": "The *-ever* words have two related uses. Keep them apart."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**As a noun phrase** (nominal relative): *Whoever designed this timetable* had never taught. = the person who …",
+            "**As a concession** (it doesn't matter …): *Whatever you decide, tell your supervisor early.* = No matter what you decide …"
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "**Whichever university you choose**, the first year will be demanding.",
+              "note": "Concession; comma after the clause."
+            },
+            {
+              "en": "**However hard the course is**, don't give up in the first month.",
+              "note": "*However* + adjective/adverb = no matter how."
+            },
+            {
+              "en": "She'll succeed **wherever she goes**.",
+              "note": "Concession at the end; no comma needed."
+            }
+          ]
+        }
       ]
     },
     {
       "id": "errors",
       "kind": "errors",
-      "title": "Common errors",
+      "title": "Common mistakes",
       "blocks": [
-        { "type": "examples", "items": [
-          { "en": "~~What I need it is more time.~~", "wrong": true, "note": "The *what*-clause is already the subject. → *What I need **is** more time.*" },
-          { "en": "~~What made me choose this course was because it was practical.~~", "wrong": true, "note": "After *What … was*, use a noun phrase or a *that*-clause, not *because*. → *What made me choose this course **was that** it was practical.*" },
-          { "en": "~~I don't know what does she want.~~", "wrong": true, "note": "No question word order inside the clause. → *I don't know what **she wants**.*" },
-          { "en": "~~Who arrives first should open the room.~~", "wrong": true, "note": "Plain *who* cannot be a nominal relative in modern English. → ***Whoever** arrives first …*" }
-        ] }
+        {
+          "type": "mistakes",
+          "rows": [
+            {
+              "wrong": "What I need it is more time.",
+              "right": "What I need is more time.",
+              "why": "The *what*-clause is already the subject; do not add *it*."
+            },
+            {
+              "wrong": "What made me choose this course was because it was practical.",
+              "right": "What made me choose this course was that it was practical.",
+              "why": "After *What … was*, use a noun phrase or a *that*-clause, not *because*."
+            },
+            {
+              "wrong": "I don't know what does she want.",
+              "right": "I don't know what she wants.",
+              "why": "Inside the clause, use statement word order with no *does*."
+            },
+            {
+              "wrong": "Who arrives first should open the room.",
+              "right": "Whoever arrives first should open the room.",
+              "why": "Plain *who* cannot be a nominal relative in modern English; use *whoever*."
+            },
+            {
+              "wrong": "I'll support that you decide.",
+              "right": "I'll support whatever you decide.",
+              "why": "*That* needs a noun before it; *whatever* contains the meaning \"anything that\"."
+            }
+          ]
+        }
       ]
     },
     {
@@ -115,11 +302,21 @@
       "kind": "register",
       "title": "Register notes",
       "blocks": [
-        { "type": "p", "text": "Nominal relatives are neutral and appear in every register. Pseudo-clefts with *what* are especially common in speech and in argument writing. Very formal academic writing sometimes prefers a noun: *the extent to which*, *the way in which*, *the factors that*." },
-        { "type": "examples", "items": [
-          { "en": "Neutral: Researchers disagree about **what causes** the gap." },
-          { "en": "More formal: Researchers disagree about **the factors that cause** the gap." }
-        ] }
+        {
+          "type": "p",
+          "text": "Nominal relatives are neutral and appear in every register. Pseudo-clefts with *what* are especially common in speech and in argument writing. Very formal academic writing sometimes prefers a noun: *the extent to which*, *the way in which*, *the factors that*."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "Neutral: Researchers disagree about **what causes** the gap."
+            },
+            {
+              "en": "More formal: Researchers disagree about **the factors that cause** the gap."
+            }
+          ]
+        }
       ]
     },
     {
@@ -127,23 +324,138 @@
       "kind": "summary",
       "title": "Summary",
       "blocks": [
-        { "type": "list", "items": [
-          "*what* = *the thing(s) that*; never after a noun or *all*.",
-          "A nominal relative clause is a noun phrase: subject, object, complement or after a preposition.",
-          "Use *What … is …* to move new information to the end for emphasis.",
-          "*whoever, whatever, whichever* can mean *anyone/anything that* or *no matter who/what/which*.",
-          "Use statement word order inside the clause."
-        ] }
+        {
+          "type": "list",
+          "items": [
+            "*what* = *the thing(s) that*; never after a noun or *all*.",
+            "A nominal relative clause is a noun phrase: subject, object, complement or after a preposition.",
+            "Use *What … is …* to move new information to the end for emphasis.",
+            "*whoever, whatever, whichever* can mean *anyone/anything that* or *no matter who/what/which*.",
+            "Use statement word order inside the clause."
+          ]
+        }
       ]
     }
   ],
   "links": [
-    { "type": "prerequisite", "to": "relative-clauses", "label": "Relative clauses: defining, non-defining and comment clauses", "level": "B2", "published": true },
-    { "type": "contrasts_with", "to": "inversion-and-emphasis", "label": "Cleft sentences (It is … that …)", "level": "C1", "published": true },
-    { "type": "appears_in", "to": "is-failure-the-best-teacher", "label": "Reading: Is failure the best teacher?", "level": "C1", "published": true }
+    {
+      "type": "prerequisite",
+      "to": "relative-clauses",
+      "label": "Relative clauses: defining, non-defining and comment clauses",
+      "level": "B2",
+      "published": true
+    },
+    {
+      "type": "contrasts_with",
+      "to": "inversion-and-emphasis",
+      "label": "Cleft sentences (It is … that …)",
+      "level": "C1",
+      "published": true
+    },
+    {
+      "type": "appears_in",
+      "to": "is-failure-the-best-teacher",
+      "label": "Reading: Is failure the best teacher?",
+      "level": "C1",
+      "published": true
+    }
   ],
-  "exercises": ["nominal-relatives-practice"],
+  "exercises": [
+    "nominal-relatives-practice"
+  ],
   "sources": [
-    { "book": "Speakout 3rd C1-C2", "unit": "1", "lesson": "1B", "confidence": "verified" }
-  ]
+    {
+      "book": "Speakout 3rd C1-C2",
+      "unit": "1",
+      "lesson": "1B",
+      "confidence": "verified"
+    }
+  ],
+  "recognise": {
+    "title": "Notes from a team meeting",
+    "sentences": [
+      {
+        "text": "[[What we need]] is a clearer timeline.",
+        "has": true,
+        "note": "*what*-clause as subject: the thing that we need"
+      },
+      {
+        "text": "[[Whoever is free on Friday]] should join the client call.",
+        "has": true,
+        "note": "*whoever* = anyone who"
+      },
+      {
+        "text": "The client approved the budget last week.",
+        "has": false
+      },
+      {
+        "text": "We can use [[whichever template works best]].",
+        "has": true,
+        "note": "*whichever* = any one of the set that"
+      },
+      {
+        "text": "Maria will send the minutes tomorrow.",
+        "has": false
+      },
+      {
+        "text": "[[Whatever you decide]], please tell the team by Monday.",
+        "has": true,
+        "note": "*whatever* = no matter what"
+      }
+    ]
+  },
+  "check": [
+    {
+      "kind": "choice",
+      "id": "c1",
+      "prompt": "___ impressed me most was the attention to detail.",
+      "options": [
+        "That",
+        "What",
+        "Which"
+      ],
+      "answer": 1,
+      "explanation": "A nominal relative: *what* = the thing that."
+    },
+    {
+      "kind": "choice",
+      "id": "c2",
+      "prompt": "You can invite ___ you like.",
+      "options": [
+        "whoever",
+        "who",
+        "what"
+      ],
+      "answer": 0,
+      "explanation": "*Whoever* = anyone who."
+    },
+    {
+      "kind": "choice",
+      "id": "c3",
+      "prompt": "Which sentence is correct?",
+      "options": [
+        "What I want it is a quiet place.",
+        "What I want is a quiet place.",
+        "That I want is a quiet place."
+      ],
+      "answer": 1,
+      "explanation": "The *what*-clause is the subject; no extra *it*."
+    },
+    {
+      "kind": "explain",
+      "id": "c4",
+      "prompt": "Why might a writer choose *What the study shows is that…* instead of *The study shows that…*?",
+      "model": "The *what*-clause delays the key information to the end of the sentence, so it receives more emphasis and sounds more deliberate.",
+      "explanation": "This is a pseudo-cleft, a common emphasis structure in academic and spoken English."
+    }
+  ],
+  "produce": {
+    "prompt": "Write 4–5 sentences about what you value in a job, a course or a place to live. Use nominal relative clauses to highlight your points.",
+    "checklist": [
+      "I started at least one sentence with a *what*-clause followed by *is/was*.",
+      "I used *whoever*, *whatever* or *whichever*.",
+      "I did not add an extra *it* after a *what*-clause subject.",
+      "I used statement word order inside every clause."
+    ]
+  }
 }

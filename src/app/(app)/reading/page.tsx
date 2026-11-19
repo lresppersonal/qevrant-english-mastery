@@ -1,3 +1,4 @@
+import { ContextBackLink } from "@/components/NavMemory";
 import { readingTexts, getExercise, getTheme } from "@/lib/content";
 import { PageHeader } from "@/components/ui";
 import { ReadingLibrary, type ReadingCard } from "@/components/ReadingLibrary";
@@ -15,6 +16,7 @@ export default function Reading() {
   });
   return (
     <>
+      <ContextBackLink />
       <PageHeader eyebrow="Learn" title="Reading library"
         intro={<>{cards.length} original articles for B2–C2 learners, with IELTS-style tasks (True/False/Not given, matching headings, matching information, sentence and summary completion, short answers, multiple choice), key vocabulary and critical-thinking questions. Tap any word for its meaning.</>} />
       <ReadingLibrary cards={cards} />

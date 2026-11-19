@@ -8,6 +8,14 @@ summary: English has no single future tense. The form you choose shows how certa
 links: prerequisite>perfect-and-continuous-aspect>Present perfect and aspect>B2>published
 sources: Speakout B2 2A ; Speakout B2 4A ; Speakout C1–C2 8B ; Destination C1&C2 Unit 5
 ---
+## core | core | Core concept
+English has no single future tense. Instead, you choose a form that shows **how you see** the future event: as a prediction, a decision, a plan, a fixed arrangement or a timetable. The choice depends on your attitude and your evidence, not on how far away the event is.
+!rule *will* = prediction or decision made now · *going to* = plan, or prediction from present evidence · present continuous = arrangement · present simple = timetable.
+> ex: Look at those clouds: it**'s going to rain**. || evidence you can see now
+> ex: I think it**'ll rain** later. || a prediction based on opinion
+> ex: I**'m meeting** the director at ten. || an arrangement in the diary
+> ex: The train **leaves** at 8.15. || a timetable
+
 ## overview | overview | Definition and function
 Future meaning is expressed with modal verbs (*will, might*), present forms (*I'm meeting*, *the train leaves*) and semi-modals (*be going to, be about to, be due to*). Each adds a different shade of certainty or planning.
 
@@ -67,10 +75,11 @@ The same rule applies to **if, unless, provided (that), as long as**.
 - **will** for assumptions about the present: *That**'ll** be the postman.* (See *Uses of will and would*.)
 
 ## errors | errors | Common mistakes
-> x: I will meet my dentist at four tomorrow. || Fixed arrangement → *I'm seeing my dentist at four.*
-> x: When I will finish university, I'll travel. || Time clause → *When I finish…*
-> x: She will probably not come. || More natural: *She probably won't come.*
-
+!! I will meet my dentist at four tomorrow. || I'm seeing my dentist at four tomorrow. || A fixed arrangement with another person is normally expressed with the present continuous.
+!! When I will finish university, I'll travel. || When I finish university, I'll travel. || After time conjunctions (*when, as soon as, until, before, after*) use a present form, not *will*.
+!! She will probably not come. || She probably won't come. || In natural English *probably* goes before *won't* (but after *will*: *She'll probably come*).
+!! Wait, I'm going to help you with that bag! || Wait, I'll help you with that bag! || A decision or offer made at the moment of speaking takes *will*, not *going to*.
+!! Do you come to the party on Saturday? || Are you coming to the party on Saturday? || Asking about someone's arrangement needs the present continuous; the present simple is for timetables and routines.
 ## register | register | Formal and academic use
 Academic writing prefers impersonal forms of prediction: *It is likely that…*, *X is expected to…*, *X is projected to rise by 3%*. Formal notices use *be to* and *be due to*: *The building is due to reopen in spring.*
 
@@ -152,3 +161,40 @@ Complete in an academic style: ‘Global demand for lithium ___ (expect) to trip
 ‘The company is on the ___ of collapse; analysts give it weeks.’
 = verge | brink | point
 > *on the verge / brink / point of* + noun or -ing = about to happen.
+
+=== recognise
+@title Planning the conference
++ The keynote speaker [[arrives]] on Thursday at 6.40 p.m., according to the airline. || present simple: a timetable
++ I[['m meeting]] her at the airport, and we[['re having]] dinner at the hotel. || present continuous: personal arrangements
+- Last year the event took place in Vilnius.
++ Registrations are rising fast, so we[['re going to need]] a bigger room. || *going to*: a prediction based on present evidence
+- The venue staff were very helpful when we visited.
++ Don't worry about the badges: I[['ll print]] them tonight. || *will*: a decision and an offer made now
+- Everyone enjoyed the closing reception.
+
+=== check
+### [mc] "The phone's ringing." "Don't move, I ___ it."
++ 'll get
+- 'm going to get
+- get
+> A decision made at the moment of speaking takes *will*.
+### [mc] I can't come on Friday: I ___ my cousin at the station.
+- will meet
++ am meeting
+- meet
+> A fixed arrangement with another person: present continuous.
+### [mc] Which sentence is correct?
+- I'll call you as soon as I will land.
++ I'll call you as soon as I land.
+- I call you as soon as I will land.
+> After *as soon as* (and other time conjunctions) the verb is in the present.
+### [explain] What is the difference between *It'll rain tomorrow* and *It's going to rain*?
+= *It'll rain tomorrow* is a general prediction or opinion. *It's going to rain* is a prediction based on present evidence, such as dark clouds.
+> *Going to* connects the future to something you can see or know now.
+
+=== produce
+Write a short message (5–6 sentences) to a friend about next weekend. Include an arrangement, a plan, a prediction, a timetable, and one offer or decision you make while writing.
+- I used the present continuous for an arrangement with someone.
+- I used *going to* for a plan, or for a prediction based on evidence.
+- I used *will* for a decision or offer made now.
+- I used the present simple for a timetable and after *when* or *as soon as*.

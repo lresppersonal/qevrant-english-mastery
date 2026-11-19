@@ -7,6 +7,13 @@ minutes: 40
 summary: "The meeting over, we went home." "If in doubt, ask." Proficient writers compress information into clauses with no finite verb. Used well, they make prose dense and elegant; used carelessly, they dangle.
 links: prerequisite>participle-and-reduced-clauses>Participle and reduced clauses>C1>published ; extends>purpose-and-result-clauses>Purpose and result>B2+>published ; contrasts_with>cohesion-and-reference>Cohesion and reference>C1>published
 ---
+## core | core | Core concept
+At C2, writers often drop words that the reader can easily recover. A **verbless clause** leaves out the subject and the verb *be*: *When **in doubt**, check the source* (= when you are in doubt). An **absolute clause** has its own subject but no full verb: ***The vote taken**, the chair closed the meeting.*
+!rule Leave out the subject and *be* only when the subject is the same as in the main clause. If the subject is different, keep it (absolute clause) or write a full clause.
+> ex: **Although tired**, she kept working. || = although she was tired; same subject
+> ex: **Weather permitting**, we'll go hiking. || absolute clause: its own subject (*weather*)
+> ex: **With prices rising**, people are buying less. || *with* + subject + participle
+
 ## overview | overview | Overview and purpose
 Advanced English often omits the subject and verb of a subordinate clause when they can be recovered: ***When in doubt**, check the original source.* It can even attach a clause with its **own subject** but no finite verb: ***The vote taken**, the chair closed the meeting.* These **verbless** and **absolute** clauses are typical of high-quality journalism, academic prose and literary writing. They save words, vary sentence rhythm and foreground circumstances.
 
@@ -63,14 +70,13 @@ Absolutes describing posture or appearance are a literary device: *She waited by
 !register Fixed verbless phrases (*if necessary, where possible, if so*) are neutral and very common. Absolute clauses without *with* (*The work done, ...*) are formal or literary. *With* absolutes are neutral and frequent in journalism.
 Stacking several absolutes creates a dense, literary rhythm; in academic writing one per sentence is usually enough.
 
-## errors | errors | Common mistakes advanced learners make
-> x: When a child, my grandmother taught me to sew. || When I was a child, my grandmother taught me to sew.
-> x: Although tiring, she continued working. (meaning she was tired) || Although tired, she continued working.
-> x: With the prices rise, people buy less. || With prices rising, people buy less.
-> x: If possible to finish early, please do. || If possible, please finish early.
-> x: Weather permits, we will go hiking. || Weather permitting, we will go hiking.
-> x: The work finishing, we went home. (completed action) || The work finished, we went home. / With the work finished, we went home.
-
+## errors | errors | Common mistakes
+!! When a child, my grandmother taught me to sew. || When I was a child, my grandmother taught me to sew. || The verbless clause would refer to the main subject (*my grandmother*); write a full clause.
+!! Although tiring, she continued working. (meaning she was tired) || Although tired, she continued working. || *Tired* describes how she felt; *tiring* would describe what caused tiredness.
+!! With the prices rise, people buy less. || With prices rising, people buy less. || *With* + subject + participle, not a finite verb.
+!! If possible to finish early, please do. || If possible, please finish early. || *If possible* is a fixed verbless clause; do not add an infinitive.
+!! Weather permits, we will go hiking. || Weather permitting, we will go hiking. || The absolute construction uses the *-ing* form.
+!! The work finishing, we went home. (completed action) || The work finished, we went home. / With the work finished, we went home. || A completed action needs the past participle.
 ## advanced | advanced | Advanced applications
 #### Varying sentence openings
 Fronted verbless and absolute clauses let you avoid starting every sentence with the subject: ***Cheaper and faster**, the new process soon replaced the old one.* Use them to vary rhythm, not to show off.
@@ -164,3 +170,39 @@ Choose the best insertion: *The effect, ___, was too small to matter in practice
 Combine using a fronted adjective phrase: *The team was unable to reach the summit. They turned back.*
 = Unable to reach the summit, the team turned back.
 > Fronted adjective phrase sharing the main subject.
+
+=== recognise
+@title From a travel feature
++ [[Once inside]], visitors are struck by the silence of the cathedral. || verbless clause: once (they are) inside
++ [[If in doubt]], ask a guide about opening hours. || fixed verbless clause
+- The cathedral was completed in 1520.
++ [[Its restoration finally complete]], the tower is open again. || absolute clause with its own subject
++ [[With the crowds gone]], the evening is the best time to visit. || *with* + subject + past participle
++ [[Weather permitting]], boat trips leave every hour. || absolute clause with an *-ing* form
+
+=== check
+### [mc] ___, the patient made a full recovery.
++ Although seriously ill at first
+- Although was seriously ill at first
+- Although being seriously ill at first, so
+> A verbless clause: the subject and *be* are left out, and the subject is the same as in the main clause.
+### [mc] ___, we will hold the event outdoors.
++ Weather permitting
+- Weather permits
+- If weather permitting
+> A fixed absolute clause.
+### [mc] Which sentence is correct?
+- When a student, my teacher encouraged me to read.
++ When a student, I read widely.
+- When was a student, I read widely.
+> The verbless clause must share the subject of the main clause (*I*).
+### [explain] What is the difference between *With the meeting over, we went home* and *The meeting being over, we went home*?
+= Both are absolute clauses with the same meaning. The *with* version is more common and slightly less formal; the version without *with* sounds literary or very formal.
+> Absolute clauses can be introduced by *with* or stand alone.
+
+=== produce
+Write a short descriptive paragraph (5–6 sentences) about a place you know, as in a travel guide. Use compact structures to vary your sentences.
+- I used at least two verbless clauses (*once inside, if in doubt, although tired*).
+- I used an absolute clause with its own subject.
+- I used *with* + subject + participle.
+- Each verbless clause shares the subject of the main clause.

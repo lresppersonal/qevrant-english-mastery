@@ -8,6 +8,13 @@ summary: Fluent speakers avoid repeating words. They replace them with so, not, 
 links: prerequisite>verb-patterns>Verb patterns>B2>published ; contrasts_with>academic-register>Academic register>C1>published
 sources: Speakout C1–C2 ; Destination C1&C2 (grammar coverage reviewed)
 ---
+## core | core | Core concept
+Good English avoids repeating what the listener already knows. **Substitution** replaces a word or phrase with a short form (*one, so, do, not*); **ellipsis** leaves it out entirely. Both make speech and writing more natural and more cohesive.
+!rule Replace or leave out only what the listener can recover **unambiguously**. Nouns → *one/ones*. Clauses → *so/not* (*I think so, I hope not*). Verb phrases → an auxiliary (*She said she'd help, and she **did***).
+> ex: "Is it going to rain?" "I hope **not**." || *not* replaces "it isn't going to rain"
+> ex: I wanted a large coffee, but they only had small **ones**. || *ones* replaces *coffees*
+> ex: "Coming tonight?" "Can't, sorry." || informal ellipsis: *Are you* and *I* are left out
+
 ## overview | overview | What ellipsis and substitution do
 **Substitution** replaces a word or phrase with a shorter form; **ellipsis** leaves it out completely because the listener can recover it from context.
 > ex: "Is it going to rain?" "I hope **not**." || *not* replaces *it isn't going to rain*.
@@ -54,12 +61,11 @@ Keep the **first** auxiliary from the original verb phrase:
 !warning *Know*, *sure* and *certain* do not take *so*: ~~I know so~~ → *I know.* ~~I'm sure so~~ → *I'm sure (of it).*
 
 ## errors | errors | Common mistakes
-> x: "Is she coming?" "I don't hope so." || *hope* forms the negative with **not**: *I hope not.*
-> x: I prefer the red shoes to the black. || Fine in speech, but *ones* is needed when the noun is countable and not clear: *the black **ones***.
-> x: I'd like a one with a balcony. || *a/an* + *one* needs an adjective: *a **big** one* — or just *one*.
-> x: "Can you help?" "Yes, I can help it." || Use the auxiliary alone: *Yes, I can.*
-> x: I didn't want to, but I had. || Keep *to*: *but I had **to**.*
-
+!! "Is she coming?" "I don't hope so." || "Is she coming?" "I hope not." || *Hope* forms its negative with *not*, not with *don't … so*.
+!! I'd like a one with a balcony. || I'd like one with a balcony. / I'd like a big one with a balcony. || *A one* is only possible with an adjective: *a big one*.
+!! "Can you help?" "Yes, I can help it." || "Can you help?" "Yes, I can." || Answer with the auxiliary alone.
+!! I didn't want to go, but I had. || I didn't want to go, but I had to. || Keep *to* when the infinitive is left out.
+!! "Do you think it will work?" "I think it." || "Do you think it will work?" "I think so." || *So* replaces a whole clause after *think, hope, expect, suppose*.
 ## advanced | advanced | Cohesion in formal writing
 In academic writing, substitution prevents repetition and links sentences:
 > ex: Many studies have examined online learning. **Those** that included adult learners reported higher drop-out rates. || *those* = the studies
@@ -139,3 +145,40 @@ Some cities invested heavily in cycling infrastructure; ___ did not, and saw lit
 - the others one
 - ones
 > *others* = other cities; the verb phrase is substituted by *did not*.
+
+=== recognise
+@title A conversation at work
+- "Have you finished the budget report?"
++ "Not yet, but I [[will]] by Friday." || ellipsis: *will (finish it)*
++ "Do you need the latest figures?" "I think [[so]]." || *so* replaces a whole clause
++ "The old template is slow. Can I use a newer [[one]]?" || *one* replaces *template*
++ "Is the client unhappy?" "I hope [[not]]." || *not* replaces "the client isn't unhappy"
++ "Can you send it tonight?" "I'll [[try to]]." || ellipsis after *to*: *try to (send it)*
+- "Thanks, that would be great."
+
+=== check
+### [mc] "Will the shop be open on Sunday?" "I'm afraid ___."
++ not
+- no
+- don't
+> *Not* replaces the negative clause after *I'm afraid, I hope, I suppose*.
+### [mc] These shoes are too small. Have you got any bigger ___?
+- one
++ ones
+- it
+> *Ones* replaces a plural countable noun.
+### [mc] She promised to call, but she ___.
+- didn't call it
++ didn't
+- didn't so
+> The auxiliary alone replaces the verb phrase.
+### [explain] Why is *I'd like to* acceptable as a complete answer to "Would you like to join us?"
+= The rest of the verb phrase (*join you*) is clear from the question, so it can be left out; *to* stays to show that an infinitive is understood.
+> In ellipsis after *to*, the *to* is kept.
+
+=== produce
+Write a short dialogue (6–8 lines) between two colleagues planning a meeting. Avoid repeating words the other person has just said.
+- I used *so* or *not* after *think, hope* or *be afraid*.
+- I used *one / ones* to replace a noun.
+- I used an auxiliary alone (*I will, she didn't, we can*) to avoid repetition.
+- Every replaced or missing word is clear from the context.

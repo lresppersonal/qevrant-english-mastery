@@ -8,6 +8,14 @@ summary: Conditionals link a condition to a result. Advanced use includes mixed 
 links: prerequisite>narrative-tenses>Narrative tenses>B2+>published ; contrasts_with>modals-and-modality>Modals (should have)>B2>published ; extends>inversion-and-emphasis>Inverted conditionals>C1>published
 sources: Speakout B2 7B ; Speakout B2 8B ; Speakout C1–C2 1A ; Destination C1&C2 Unit 11 ; Destination C1&C2 Unit 13
 ---
+## core | core | Core concept
+Conditional sentences connect a **condition** to a **result**. The verb forms tell the listener how real you think the situation is. A present form says "this is a real possibility"; a past form says "this is imagined, unlikely or contrary to the facts".
+!rule Real or likely → present form in the *if*-clause. Imagined now → past simple (*If I knew…, I would…*). Imagined past → past perfect (*If I had known…, I would have…*).
+> ex: If it **rains**, we**'ll stay** inside. || a real possibility
+> ex: If I **had** more time, I**'d learn** Japanese. || imagined: I don't have the time
+> ex: If I**'d known**, I**'d have come**. || the past cannot be changed
+The same "past = unreal" idea explains *I wish I knew*, *If only I had listened* and *It's time we left*: the past form signals distance from reality, not past time.
+
 ## overview | overview | Definition and function
 A conditional sentence has a **condition clause** (often with *if*) and a **result clause**. The tenses show whether the situation is real or imagined, and its time.
 
@@ -50,10 +58,11 @@ Mix times when a past condition has a present result, or a present state explain
 > ex: **Should** you need help, call me. || formal, less likely (inverted first conditional)
 
 ## errors | errors | Common mistakes
-> x: If I would have known, I would have come. || No *would* in the if-clause: *If I had known…*
-> x: Unless you don't hurry, you'll miss the bus. || *unless* is already negative: *Unless you hurry…*
-> x: I wish I can speak Japanese. || *I wish I could speak Japanese.*
-
+!! If I would have known, I would have come. || If I had known, I would have come. || *Would* belongs in the result clause, not in the *if*-clause.
+!! Unless you don't hurry, you'll miss the bus. || Unless you hurry, you'll miss the bus. || *Unless* already means *if not*, so the verb after it is positive.
+!! I wish I can speak Japanese. || I wish I could speak Japanese. || *Wish* about the present takes a past form, because the situation is unreal.
+!! If I was rich, I would buy a house. (formal writing) || If I were rich, I would buy a house. || *Was* is common in speech, but *were* is expected in formal and written English.
+!! If I had studied medicine, I would have been a doctor now. || If I had studied medicine, I would be a doctor now. || *Now* shows a present result, so the result clause takes *would* + infinitive: a mixed conditional (past condition, present result).
 ## advanced | advanced | Advanced usage and stylistic nuances
 - **Inverted conditionals** (formal): *Had I known* = If I had known; *Were it not for* = If it were not for; *Should you require* = If you require.
 - **Implied conditions** without a condition clause: *I'd have called, but my battery died.* / *A smaller company would never have survived.*
@@ -147,3 +156,39 @@ I'd rather you ___ my phone without asking.
 ‘___ any further information be required, please do not hesitate to contact us.’
 = Should
 > Inverted first conditional in formal letters: *Should* + subject + infinitive.
+
+=== recognise
+@title Looking back on the project
++ If we [[had started]] the survey a month earlier, we [[would have had]] more responses. || third conditional: an imagined change to the past
+- The deadline was fixed by the funding body.
++ If the budget [[were]] larger, we [[could hire]] a second researcher. || second conditional: imagined present
++ I [[wish]] we [[had]] a better way to reach older participants. || *wish* + past: a present situation we would like to be different
++ If the pilot results [[are]] confirmed, we [[will publish]] them in spring. || first conditional: a real possibility
+- The team worked hard throughout the year.
+
+=== check
+### [mc] If I ___ about the strike, I would have taken the car.
+- knew
++ had known
+- would know
+> An imagined past situation: *if* + past perfect.
+### [mc] I wish I ___ more patient with my students.
+- am
++ were
+- will be
+> *Wish* about the present: past form (*were* in careful English).
+### [mc] Which is a mixed conditional (past condition, present result)?
+- If I had left earlier, I would have caught the train.
++ If I had taken that job, I would be living in Canada now.
+- If I leave now, I'll catch the train.
+> A past condition (*had taken*) with a present result (*would be living now*).
+### [explain] What does *It's time we left* mean, and why is *left* in the past?
+= It means we should leave now. The past form does not refer to past time; it shows that the action has not happened yet, so it is still "unreal".
+> The unreal past is used after *it's time*, *wish*, *if only* and *would rather*.
+
+=== produce
+Write 5–6 sentences about a decision you made in the past and how your life might be different. Then add one wish about your present situation.
+- I used a third conditional for an imagined past (*if* + past perfect, *would have* + past participle).
+- I used at least one mixed conditional (past condition, present result).
+- I used *wish* or *if only* + past form for the present.
+- I did not put *would* in any *if*-clause.

@@ -8,6 +8,13 @@ summary: Indirect questions make requests and enquiries more polite; question ta
 links: extends>reported-speech>Reported speech>B2>published ; contrasts_with>inversion-and-emphasis>Inversion and emphasis>C1>published
 sources: Speakout B2 ; Outcomes Upper-Intermediate (grammar coverage reviewed)
 ---
+## core | core | Core concept
+Indirect questions and question tags both make communication **softer and more interactive**. An indirect question wraps a direct question inside a polite frame (*Could you tell me…?*). A question tag turns a statement into a check or an invitation to agree (*…, isn't it?*).
+!rule Indirect question: polite frame + statement word order, no *do/does/did*. Tag: positive statement → negative tag; negative statement → positive tag.
+> ex: Where is the station? → **Could you tell me where the station is?** || statement word order inside the frame
+> ex: You're from Kazan, **aren't you?** || checking information
+> ex: You haven't seen my keys, **have you?** || negative statement, positive tag
+
 ## overview | overview | Why use them?
 **Indirect questions** sound more polite and less direct. **Question tags** are short questions at the end of a statement, used to check facts or invite the listener to agree.
 > ex: **Could you tell me where the station is?** || more polite than *Where is the station?*
@@ -56,12 +63,11 @@ Common introductions: *Could you tell me…? / Do you know…? / I was wondering
 Both use statement word order; reported questions usually also **backshift** the tense.
 
 ## errors | errors | Common mistakes
-> x: Could you tell me where is the station? || Statement order: *where **the station is***.
-> x: Do you know what time does the film start? || No *does*: *what time **the film starts***.
-> x: I wonder are they coming. || Add *if/whether*: *I wonder **if** they're coming.*
-> x: You haven't seen my keys, haven't you? || Negative statement → positive tag: *have you?*
-> x: I'm late, am not I? || Use *aren't I?*
-
+!! Could you tell me where is the station? || Could you tell me where the station is? || Inside an indirect question, use statement word order.
+!! Do you know what time does the film start? || Do you know what time the film starts? || No *do/does/did* inside an indirect question.
+!! I wonder are they coming. || I wonder if they're coming. || A yes/no question needs *if* or *whether*.
+!! You haven't seen my keys, haven't you? || You haven't seen my keys, have you? || A negative statement takes a positive tag.
+!! I'm late, am not I? || I'm late, aren't I? || The standard tag for *I am* is *aren't I*.
 ## advanced | advanced | Advanced patterns
 > ex: **What** she said I can't remember. || A *wh*-clause as the object, fronted for emphasis.
 > ex: It's anyone's guess **whether** the deal will go ahead. || *whether* clause as a subject complement
@@ -139,3 +145,39 @@ There was a long debate about ___ to raise the speed limit.
 - are you
 - aren't you
 > A same-polarity tag (*play… do you?*) expresses interest or surprise.
+
+=== recognise
+@title At the hotel reception
++ "Good evening. [[Could you tell me whether]] breakfast is included?" || indirect yes/no question: *whether* + statement order
+- "Yes, it's served from seven to ten."
++ "Great. The pool is on the top floor, [[isn't it]]?" || positive statement, negative tag: checking information
++ "[[Do you know what time]] the airport bus leaves?" || indirect *wh*-question: no *does*
++ "You don't have a city map, [[do you]]?" || negative statement, positive tag
+- "Of course, here you are."
+
+=== check
+### [mc] Could you tell me how much ___?
+- does this cost
++ this costs
+- costs this
+> Indirect question: statement word order, no *does*.
+### [mc] She's never been to Paris, ___?
+- hasn't she
++ has she
+- is she
+> *Never* makes the statement negative, so the tag is positive.
+### [mc] Let's start, ___?
++ shall we
+- will we
+- don't we
+> The tag after *Let's* is *shall we*.
+### [explain] How does intonation change the meaning of *It's Tuesday, isn't it?*
+= With falling intonation, the speaker is fairly sure and expects agreement. With rising intonation, the speaker is genuinely unsure and is asking a real question.
+> Tags can check information or invite agreement, depending on the tone.
+
+=== produce
+Write 5–6 lines you might use when arriving at a conference or a new workplace: polite questions to staff and small talk with another guest.
+- I used at least three indirect questions with statement word order.
+- I used *if* or *whether* for a yes/no indirect question.
+- I used at least two question tags, one after a positive and one after a negative statement.
+- I avoided *do/does/did* inside the indirect questions.

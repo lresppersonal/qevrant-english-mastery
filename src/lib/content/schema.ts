@@ -47,6 +47,8 @@ const BaseBlock = z.discriminatedUnion("type", [
   }),
   z.object({ type: z.literal("table"), head: z.array(z.string()), rows: z.array(z.array(z.string())) }),
   z.object({ type: z.literal("note"), tone: z.enum(["tip", "warning", "register"]), text: z.string() }),
+  /** Typical learner errors: Incorrect → Correct → why the incorrect version does not work. */
+  z.object({ type: z.literal("mistakes"), rows: z.array(z.object({ wrong: z.string(), right: z.string(), why: z.string() })).min(1) }),
 ]);
 export type BaseBlock = z.infer<typeof BaseBlock>;
 /** Blocks may also be a collapsible "details" panel holding ordinary blocks (one level deep). */
@@ -54,7 +56,7 @@ export const Block = z.union([BaseBlock, z.object({ type: z.literal("details"), 
 export type Block = z.infer<typeof Block>;
 
 // ---------- Grammar ----------
-export const SectionKind = z.enum(["overview", "theory", "form", "uses", "time", "examples", "contrasts", "errors", "advanced", "register", "pronunciation", "summary"]);
+export const SectionKind = z.enum(["core", "overview", "theory", "form", "uses", "time", "examples", "contrasts", "errors", "advanced", "register", "pronunciation", "summary"]);
 export const LinkType = z.enum(["prerequisite", "extends", "contrasts_with", "practises", "appears_in"]);
 
 export const GrammarLesson = Meta.extend({
@@ -70,6 +72,18 @@ export const GrammarLesson = Meta.extend({
   links: z.array(z.object({ type: LinkType, to: z.string(), label: z.string(), level: Level, published: z.boolean() })),
   exercises: z.array(slug),
   sources: z.array(SourceRef),
+  /** Recognise stage: a short original passage; the learner finds the sentences that use the structure. */
+  recognise: z.object({
+    title: z.string(),
+    sentences: z.array(z.object({ text: z.string(), has: z.boolean(), note: z.string().optional() })).min(4),
+  }).optional(),
+  /** Quick understanding check at the end of the theory (active recall, not a test). */
+  check: z.array(z.discriminatedUnion("kind", [
+    z.object({ kind: z.literal("choice"), id: z.string(), prompt: z.string(), options: z.array(z.string()).min(2), answer: z.number().int().nonnegative(), explanation: z.string() }),
+    z.object({ kind: z.literal("explain"), id: z.string(), prompt: z.string(), model: z.string(), explanation: z.string() }),
+  ])).default([]),
+  /** Produce stage: a short guided production task with a self-check list. */
+  produce: z.object({ prompt: z.string(), checklist: z.array(z.string()).min(2) }).optional(),
 });
 export type GrammarLesson = z.infer<typeof GrammarLesson>;
 

@@ -8,6 +8,13 @@ summary: Modal verbs and modal expressions show how certain, necessary or permit
 links: extends>academic-register>Academic register: hedging and nominalisation>C1>published ; contrasts_with>conditionals-and-unreal-past>Unreal past (should have)>C1>published
 sources: Speakout B2 6A ; Speakout B2 7A ; Speakout C1–C2 3A ; Destination C1&C2 Unit 9
 ---
+## core | core | Core concept
+Modal verbs show the speaker's **attitude** to an action or a statement. They answer two kinds of question. *Is it necessary, allowed or advisable?* That is obligation and permission. *How sure am I that it's true?* That is deduction and probability. The same verb, especially *must*, can do both jobs.
+!rule Obligation: *must, have to, should, can, needn't*. Certainty: *must* (I'm sure it is) → *should, will* → *may, might, could* → *can't* (I'm sure it isn't).
+> ex: You **must** wear a helmet. || obligation
+> ex: She **must** be tired after the flight. || deduction: I'm almost certain
+> ex: She **must have** left already. || deduction about the past: *modal* + *have* + past participle
+
 ## overview | overview | Definition and function
 Modality expresses the speaker's attitude to a statement. Two main areas:
 - **Obligation and permission** (deontic): *must, have to, should, can, be allowed to, needn't*.
@@ -59,10 +66,11 @@ At C1 you can express the same meanings more precisely with other structures:
 > ex: It is **imperative** that every passenger **wear** a seat belt. || formal subjunctive after *imperative/essential*
 
 ## errors | errors | Common mistakes
-> x: You mustn't to wear a tie. || No *to* after modals: *You don't have to wear a tie* (if you mean no obligation).
-> x: He must have been at home yesterday, I'm not sure. || *must* = certainty; use *might have been* if unsure.
-> x: I could finish the marathon last year. || Specific achievement → *I managed to finish*.
-
+!! You mustn't to wear a tie. || You don't have to wear a tie. || Modals are followed by the infinitive without *to*. And *mustn't* means "it is forbidden"; *don't have to* means "it isn't necessary".
+!! He must have been at home yesterday, I'm not sure. || He might have been at home yesterday. || *Must have* expresses near-certainty; if you are unsure, use *might have* or *may have*.
+!! I could finish the marathon last year. || I managed to finish the marathon last year. || For one specific achievement in the past, use *managed to* or *was able to*, not *could*.
+!! She can't to come tomorrow. || She can't come tomorrow. || No *to* after a modal verb.
+!! You needn't to worry. || You needn't worry. / You don't need to worry. || Modal *needn't* takes a bare infinitive; *need* as a main verb takes *to*.
 ## register | register | Formal and academic use
 Academic writing uses modality to **hedge** claims: *These findings **may** indicate…*, *This **could** be explained by…*, *It **would seem** that…*. Strong modals (*must, certainly*) are reserved for well-supported claims. Formal rules use *be required to, be prohibited from, be permitted to*.
 
@@ -153,3 +161,40 @@ Hedge this claim for an essay: ‘These results ___ suggest that diet affects mo
 ‘Whether the reforms will work ___ to be seen.’
 = remains
 > *It remains to be seen whether…* = it is not yet known.
+
+=== recognise
+@title Before the field trip
++ All students [[must]] bring a waterproof jacket. || *must*: obligation
++ You [[don't have to]] buy special boots; trainers are fine. || *don't have to*: no obligation
+- The coach leaves at eight.
++ It [[might]] rain in the afternoon, so pack an umbrella. || *might*: possibility
++ The guide [[must have]] walked this route a hundred times; she knows every stone. || *must have*: deduction about the past
+- Lunch is included in the price.
++ You [[shouldn't]] leave food on the trail. || *shouldn't*: advice, weaker than a rule
+
+=== check
+### [mc] "Is that Anna's car?" "It ___ be hers: she sold her car last month."
+- mustn't
++ can't
+- doesn't have to
+> *Can't* expresses certainty that something is not true.
+### [mc] You ___ pay now: you can pay at the end of the month.
+- mustn't
++ don't have to
+- can't
+> No obligation: *don't have to*. *Mustn't* would mean it is forbidden.
+### [mc] The lights are off. They ___ gone to bed.
++ must have
+- must
+- can't have
+> A confident deduction about the past: *must have* + past participle.
+### [explain] Explain the difference between *You mustn't tell her* and *You don't have to tell her*.
+= *You mustn't tell her* means it is forbidden: don't tell her. *You don't have to tell her* means it is not necessary, but you can if you want.
+> Negative *must* and negative *have to* have different meanings.
+
+=== produce
+Write 5–6 sentences of advice for someone starting a new job in your field. Include rules, things that are not necessary, and at least two guesses about the situation or about the past.
+- I used *must* or *have to* for obligation and *don't have to* for no obligation.
+- I used *should* or *ought to* for advice.
+- I used *might*, *must* or *can't* for at least one deduction.
+- I used a past deduction (*must have / might have / can't have* + past participle).

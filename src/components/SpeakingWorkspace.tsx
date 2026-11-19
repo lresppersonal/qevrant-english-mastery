@@ -1,4 +1,5 @@
 "use client";
+import { BackLink, ContextLink } from "./NavMemory";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { ArrowLeft, Mic, Square, Sparkles, Loader2, RotateCcw, History } from "lucide-react";
@@ -175,7 +176,7 @@ export function SpeakingWorkspace({ prompt }: { prompt: SpeakingPrompt }) {
 
   return (
     <article>
-      <Link href="/speaking" className="mb-2 inline-flex items-center gap-1 py-2.5 text-sm font-medium text-muted hover:text-ink"><ArrowLeft size={15} aria-hidden="true" /> Speaking</Link>
+      <BackLink href="/speaking" label="Speaking" />
       <div className="grid gap-6 lg:grid-cols-[1fr_300px]">
         <div className="min-w-0">
           <div className="mb-2 flex flex-wrap items-center gap-2"><LevelBadge level={prompt.level} /><span className="chip">Prepare {prompt.prepSeconds}s</span><span className="chip">Speak up to {fmt(prompt.speakSeconds)}</span></div>
@@ -235,7 +236,7 @@ export function SpeakingWorkspace({ prompt }: { prompt: SpeakingPrompt }) {
             <p className="font-bold">Useful language</p>
             <ul className="mt-2 flex flex-wrap gap-2">
               {prompt.usefulLanguage.map((id) => { const r = getSense(id); return r && (
-                <li key={id}><Link href={`/vocabulary/${r.item.slug}#${id}`} className="chip !text-[13px] hover:border-primary hover:text-primary">{r.item.lemma}</Link></li>
+                <li key={id}><ContextLink href={`/vocabulary/${r.item.slug}#${id}`} className="chip !text-[13px] hover:border-primary hover:text-primary">{r.item.lemma}</ContextLink></li>
               ); })}
             </ul>
           </div>

@@ -1,10 +1,12 @@
-import { getLesson, getReading, getSense, getWritingPrompt, getTheme } from "../content";
+import { getLesson, getReading, getSense, getWritingPrompt, getTheme, getExercise } from "../content";
 import { mastery, dueItems } from "../progress";
 import { mistakeQueue } from "../learning";
 import { SPEAKING_BANK, bankPrompt } from "../speaking-bank";
 import { visualFromSlug, getVisualTask, VISUAL_PREFIX } from "../visual";
 import type { ActivityEvent, Attempt, ListeningLog, ResponseRow, ReviewCardRow, SavedItem, SpeakingAttempt, WritingSubmission, Profile } from "../store/types";
 import { PROGRAMME, type PlanDay } from "./programme";
+import { SKILL_LABEL, priorityOf, type Priority, type Skill, type SkillPriority } from "./personal";
+import { THEME_LISTENING } from "../listening";
 
 /**
  * Progress through the Intensive Study Plan is derived entirely from real activity: a block is complete
@@ -12,24 +14,24 @@ import { PROGRAMME, type PlanDay } from "./programme";
  * A day begins when the previous day was completed (or skipped), so the plan is self-paced. The only
  * stored state is the enrolment itself and any days the learner chose to skip.
  */
-export interface PlanSettings { startedAt: string; intensity: "full" | "focused"; startWeek: 1 | 3; skipped: Record<string, string> }
+export interface PlanSettings { startedAt: string; intensity: "full" | "focused"; startWeek: 1 | 3; skipped: Record<string, string>; personal: boolean }
 export const readPlan = (p: Profile | null): PlanSettings | null => {
   const raw = (p?.preferences as { intensive?: Partial<PlanSettings> } | undefined)?.intensive;
-  return raw && typeof raw.startedAt === "string" ? { startedAt: raw.startedAt, intensity: raw.intensity ?? "full", startWeek: raw.startWeek ?? 1, skipped: raw.skipped ?? {} } : null;
+  return raw && typeof raw.startedAt === "string" ? { startedAt: raw.startedAt, intensity: raw.intensity ?? "full", startWeek: raw.startWeek ?? 1, skipped: raw.skipped ?? {}, personal: raw.personal !== false } : null;
 };
 
 export interface PlanData {
   events: ActivityEvent[]; attempts: Attempt[]; responses: ResponseRow[]; cards: ReviewCardRow[];
   writing: WritingSubmission[]; speaking: SpeakingAttempt[]; listening: ListeningLog[]; saved: SavedItem[];
 }
-export type BlockKey = "grammar" | "vocabulary" | "reading" | "listening" | "writing" | "speaking" | "revision";
-export interface Block { key: BlockKey; label: string; title: string; why: string; href: string; minutes: number; required: boolean; doneAt: string | null; result?: string }
+export type BlockKey = "grammar" | "vocabulary" | "reading" | "listening" | "writing" | "speaking" | "revision" | "focus";
+export interface Block { key: BlockKey; label: string; title: string; why: string; href: string; minutes: number; required: boolean; doneAt: string | null; result?: string; skill?: Skill; priority?: Priority }
 export interface DayView { day: PlanDay; start: string | null; blocks: Block[]; status: "done" | "skipped" | "current" | "upcoming"; completedAt: string | null; minutes: number }
 
 const after = (iso: string | undefined | null, start: string) => !!iso && iso >= start;
 const firstAfter = (xs: (string | null | undefined)[], start: string) => xs.filter((x): x is string => after(x, start)).sort()[0] ?? null;
 const lessonsOf = (d: PlanDay) => (Array.isArray(d.grammar) ? d.grammar : [d.grammar]);
-const LABEL: Record<BlockKey, string> = { grammar: "Grammar", vocabulary: "Vocabulary", reading: "Reading", listening: "Listening", writing: "Academic Writing", speaking: "Speaking", revision: "Revision" };
+const LABEL: Record<BlockKey, string> = { grammar: "Grammar", vocabulary: "Vocabulary", reading: "Reading", listening: "Listening", writing: "Academic Writing", speaking: "Speaking", revision: "Revision", focus: "Focus" };
 
 /** A speaking prompt from the day's category, close to its level, that the learner hasn't answered yet. */
 export function speakingPromptFor(d: PlanDay, done: string[]) {
@@ -114,14 +116,85 @@ function blocksFor(d: PlanDay, start: string, data: PlanData, s: PlanSettings): 
   return blocks;
 }
 
-export function planProgress(s: PlanSettings, data: PlanData): { days: DayView[]; current: DayView | null; doneCount: number } {
+// ---------- Personalisation (a transparent layer over the universal day) ----------
+const round5 = (n: number) => Math.max(5, Math.round(n / 5) * 5);
+const SKILL_OF: Partial<Record<BlockKey, Skill>> = { grammar: "grammar", vocabulary: "vocabulary", reading: "reading", listening: "listening", writing: "writing", speaking: "speaking" };
+
+/** An extra block for a high-priority skill, built from the same day's theme, text and grammar. */
+function focusBlock(skill: Skill, d: PlanDay, start: string, data: PlanData): Block {
+  const lesson = lessonsOf(d)[0];
+  const lt = getLesson(lesson)?.title.split(":")[0] ?? lesson;
+  const theme = getTheme(d.theme)?.title ?? d.theme;
+  const since = data.attempts.filter((a) => after(a.completedAt, start));
+  const base = { key: "focus" as const, label: `${SKILL_LABEL[skill]} focus`, skill, priority: "high" as const, required: true, minutes: 15 };
+  switch (skill) {
+    case "listening": {
+      const logs = data.listening.filter((l) => after(l.createdAt, start)).map((l) => l.createdAt).sort();
+      const topic = THEME_LISTENING[d.theme]?.[0];
+      return { ...base, title: `A second episode on ${theme.toLowerCase()}, with a different accent or speed`, why: "Listening is one of your priorities: two shorter sessions a day build more than one long one. Note five words from today's theme you hear, then log the episode.", href: topic ? `/listening?topic=${topic}` : "/listening", doneAt: logs[1] ?? null };
+    }
+    case "speaking": {
+      const sp = data.speaking.filter((x) => after(x.createdAt, start)).map((x) => x.createdAt).sort();
+      return { ...base, title: `A second answer, this time using ${lt.toLowerCase()}`, why: "Speaking is one of your priorities: repeat a topic with a different focus, aiming to use today's grammar and three theme words without notes.", href: "/speaking", minutes: 10, doneAt: sp[1] ?? null };
+    }
+    case "writing": {
+      const at = since.find((a) => a.exerciseSlug === `grammar-produce-${lesson}`);
+      return { ...base, title: `Write a paragraph with today's grammar: ${lt}`, why: "Academic Writing is one of your priorities: a short guided paragraph with a self-check, before the longer task.", href: `/grammar/${lesson}?stage=produce`, doneAt: at?.completedAt ?? null };
+    }
+    case "grammar": {
+      const at = since.find((a) => a.exerciseSlug === `grammar-recognise-${lesson}`);
+      return { ...base, title: `Spot it in context: ${lt}`, why: "Grammar is one of your priorities: recognising the structure in a real passage connects the rule to meaning.", href: `/grammar/${lesson}?stage=recognise`, minutes: 10, doneAt: at?.completedAt ?? null };
+    }
+    case "vocabulary": {
+      const at = since.find((a) => a.exerciseSlug === `vocab-context-${d.theme}`);
+      return { ...base, title: `${theme} vocabulary in context`, why: "Vocabulary is one of your priorities: gap-fills, meaning in context and your own sentence move words from recognition to use.", href: `/vocabulary/topics/${d.theme}/context`, doneAt: at?.completedAt ?? null };
+    }
+    case "reading": {
+      const at = since.find((a) => getExercise(a.exerciseSlug)?.target.ref === d.reading);
+      return { ...base, title: `Close reading: the questions on ${getReading(d.reading)?.title ?? d.reading}`, why: "Reading is one of your priorities: answer the comprehension questions and check the explanation for each one.", href: `/reading/${d.reading}`, doneAt: at?.completedAt ?? null };
+    }
+  }
+}
+
+/** Re-weight a universal day for one learner. Nothing is removed: stronger skills become shorter or every other day. */
+export function personaliseDay(blocks: Block[], d: PlanDay, start: string, data: PlanData, s: PlanSettings, ps: SkillPriority[]): Block[] {
+  const review = d.kind === "review";
+  const out: Block[] = [];
+  for (const b of blocks) {
+    const sk = SKILL_OF[b.key];
+    const pr = sk ? priorityOf(ps, sk) : null;
+    if (!sk || !pr || pr === "medium") { out.push(sk ? { ...b, skill: sk, priority: "medium" } : b); continue; }
+    if (pr === "high") {
+      out.push({ ...b, skill: sk, priority: "high", required: true, minutes: review ? b.minutes : round5(b.minutes * 1.25) });
+      continue;
+    }
+    // maintenance
+    if (review) { out.push({ ...b, skill: sk, priority: "maintenance" }); continue; }
+    const anchor = b.key === "grammar" || b.key === "vocabulary"; // the day is built around these, so they stay, shorter
+    const everyDay = b.key === "reading" || b.key === "speaking" || s.intensity === "full";
+    out.push({ ...b, skill: sk, priority: "maintenance", minutes: anchor ? Math.max(10, round5(b.minutes * 0.7)) : round5(b.minutes * 0.7),
+      required: anchor ? b.required : everyDay ? b.required && d.n % 2 === 0 : b.required,
+      why: `${b.why} Shorter today: this is one of your stronger areas, kept for regular revision.` });
+  }
+  if (!review) {
+    const tops = ps.filter((p) => p.priority === "high").sort((a, b) => b.need - a.need).slice(0, 2);
+    for (const t of tops) {
+      const at = out.findIndex((b) => b.skill === t.skill);
+      out.splice(at >= 0 ? at + 1 : out.length - 1, 0, focusBlock(t.skill, d, start, data));
+    }
+  }
+  return out;
+}
+
+export function planProgress(s: PlanSettings, data: PlanData, priorities?: SkillPriority[] | null): { days: DayView[]; current: DayView | null; doneCount: number } {
+  const shape = (d: PlanDay, start: string) => { const b = blocksFor(d, start, data, s); return s.personal && priorities ? personaliseDay(b, d, start, data, s, priorities) : b; };
   const days: DayView[] = [];
   let start: string | null = s.startedAt;
   const first = s.startWeek === 3 ? 15 : 1;
   for (const d of PROGRAMME) {
     if (d.n < first) continue;
-    if (!start) { days.push({ day: d, start: null, blocks: blocksFor(d, "9999", data, s).map((b) => ({ ...b, doneAt: null, result: undefined })), status: "upcoming", completedAt: null, minutes: 0 }); continue; }
-    const blocks = blocksFor(d, start, data, s);
+    if (!start) { days.push({ day: d, start: null, blocks: shape(d, "9999").map((b) => ({ ...b, doneAt: null, result: undefined })), status: "upcoming", completedAt: null, minutes: 0 }); continue; }
+    const blocks = shape(d, start);
     const skipped = s.skipped[String(d.n)];
     const req = blocks.filter((b) => b.required);
     const allDone = req.every((b) => b.doneAt);

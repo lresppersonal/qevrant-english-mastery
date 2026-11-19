@@ -43,7 +43,7 @@ import { planProgress } from "@/lib/plan/engine";
 describe("plan workload matches what the plan page promises", () => {
   const data = { events: [], attempts: [], responses: [], cards: [], writing: [], speaking: [], listening: [], saved: [] };
   const minutes = (intensity: "full" | "focused") =>
-    planProgress({ startedAt: "2026-01-01", intensity, startWeek: 1, skipped: {} }, data as never).days.map((d) => d.blocks.filter((b) => b.required).reduce((n, b) => n + b.minutes, 0));
+    planProgress({ startedAt: "2026-01-01", intensity, startWeek: 1, skipped: {}, personal: false }, data as never).days.map((d) => d.blocks.filter((b) => b.required).reduce((n, b) => n + b.minutes, 0));
   const avg = (xs: number[]) => xs.reduce((a, b) => a + b, 0) / xs.length;
   it("focused averages about 1 h 40 min, full about 2 h and never above 2½ h", () => {
     expect(avg(minutes("focused"))).toBeGreaterThanOrEqual(90);

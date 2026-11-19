@@ -8,6 +8,13 @@ summary: English normally puts new or important information at the end of a sent
 links: prerequisite>nominal-relative-clauses>Nominal relative clauses (what-clefts)>C1>published ; contrasts_with>conditionals-and-unreal-past>Inverted conditionals>C1>published
 sources: Speakout B2 3B ; Speakout B2 3D ; Speakout C1–C2 5A ; Destination C1&C2 Unit 19
 ---
+## core | core | Core concept
+In a normal English sentence, the most important new information comes at the end. Emphasis structures change that order on purpose, to put **one part of the message in the spotlight**. Cleft sentences, inversion and fronting are tools for persuasion, contrast and drama.
+!rule Cleft: *It was X that…* / *What I need is…*. Inversion after a negative or limiting adverbial: *Never **have I** seen…*. Emphatic *do*: *I **do** understand.*
+> ex: Maria solved the problem. → **It was Maria who** solved the problem. || the spotlight is on Maria, not someone else
+> ex: I have never seen such a mess. → **Never have I seen** such a mess. || formal, dramatic emphasis
+> ex: I need a long holiday. → **What I need is** a long holiday. || builds up to the key point
+
 ## overview | overview | Definition and function
 Emphasis structures change the normal order of information to highlight one part of the message. They are typical of persuasive essays, presentations and careful conversation.
 
@@ -50,10 +57,11 @@ When a negative or restrictive expression comes first, use **question word order
 > ex: What Jack did was break the window. || focus on the action
 
 ## errors | errors | Common mistakes
-> x: Never I have seen such a mess. || Invert: *Never have I seen…*
-> x: Not only she sings, but she also dances. || *Not only does she sing…*
-> x: Only when I got home I noticed the cut. || *…did I notice the cut*.
-
+!! Never I have seen such a mess. || Never have I seen such a mess. || After a fronted negative adverbial, the auxiliary comes before the subject, as in a question.
+!! Not only she sings, but she also dances. || Not only does she sing, but she also dances. || *Not only* at the start triggers inversion; with no auxiliary, add *do/does/did*.
+!! Only when I got home I noticed the cut. || Only when I got home did I notice the cut. || With *only when / only after*, the inversion is in the main clause.
+!! What I need it is a long holiday. || What I need is a long holiday. || In a *what*-cleft, the *what*-clause is the subject: no extra *it*.
+!! It was in 2019 when I moved here. || It was in 2019 that I moved here. || In *it*-clefts, use *that* after a time or place phrase (*when* is informal).
 ## register | register | Formal and academic use
 Inversion is formal and should be used sparingly in essays, typically once or twice for impact, especially in introductions and conclusions: *Not only does tourism create jobs, but it also funds conservation.* Clefts are useful in academic writing to signal contrast: *It is this assumption that the present study challenges.*
 
@@ -133,3 +141,39 @@ ___, I can't agree with the decision.
 Write the missing word for an academic sentence: ‘It is ___ assumption that this study sets out to challenge.’
 = this
 > It-cleft focusing on a specific idea already introduced.
+
+=== recognise
+@title A speech to new graduates
++ [[Never before have]] so many opportunities been open to people your age. || inversion after *never before*
+- You have worked hard to get here.
++ [[What matters now is]] how you use what you have learned. || *what*-cleft: builds up to the key point
++ [[It was]] your curiosity, not your grades, [[that]] impressed us most. || *it*-cleft: contrasts curiosity with grades
++ [[Not only did]] you master the theory, but you also learned to work as a team. || inversion after *not only*
++ We [[do]] believe that you will make a difference. || emphatic *do*: strong confirmation
+
+=== check
+### [mc] Rarely ___ such a talented student.
+- I have met
++ have I met
+- I met
+> After *rarely* at the start, invert the auxiliary and subject.
+### [mc] ___ the noise that kept me awake, not the heat.
++ It was
+- What was
+- That was
+> An *it*-cleft focuses on *the noise* in contrast to *the heat*.
+### [mc] Which sentence is correct?
+- No sooner I had arrived than it started raining.
++ No sooner had I arrived than it started raining.
+- No sooner had I arrived when it started raining.
+> *No sooner* + inversion, followed by *than*.
+### [explain] Why might a speaker say *What we need is more time* instead of *We need more time*?
+= The *what*-cleft delays the key information (*more time*) to the end, where it gets the most emphasis; it sounds more deliberate and persuasive.
+> Clefts control where the spotlight falls.
+
+=== produce
+Write a short persuasive paragraph (5–6 sentences) arguing for a change in your town, school or workplace. Use emphasis to highlight your main points.
+- I used at least one *it*-cleft and one *what*-cleft.
+- I used inversion after a negative or limiting adverbial (*never, rarely, not only, only when*).
+- I used emphatic *do / does / did* once.
+- Every inversion has the auxiliary before the subject.

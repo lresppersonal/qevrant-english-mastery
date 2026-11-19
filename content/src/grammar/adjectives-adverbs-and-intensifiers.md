@@ -7,6 +7,13 @@ minutes: 35
 summary: Choosing the right intensifier depends on whether an adjective is gradable. Adverb position changes focus and meaning, and adjective order follows a logic native speakers feel but rarely explain.
 links: extends>comparison>Comparison and degree>B2+>published ; contrasts_with>academic-register>Academic register>C1>published
 ---
+## core | core | Core concept
+Intensifiers and adverbs make your descriptions precise, but they have to **match** the word they modify. The key idea is **gradability**. Some adjectives describe a quality you can have more or less of (*good, cold, interesting*); others already describe an extreme or an absolute (*excellent, freezing, unique*).
+!rule Gradable adjectives → *very, extremely, rather, fairly*. Extreme or absolute adjectives → *absolutely, completely, utterly, totally*. *Really* and *quite* work with both, with different meanings.
+> ex: The lecture was **very interesting**. || gradable: more or less interesting
+> ex: The lecture was **absolutely fascinating**. || extreme: *very fascinating* sounds wrong
+Position and order follow similar logic: adverbs sit next to what they modify, and adjectives before a noun follow a fixed order (opinion, size, age, colour, origin, material, purpose).
+
 ## overview | overview | Overview and purpose
 Adjectives and adverbs carry much of the precision in advanced English: *a **marginally** better result*, *a **deeply** flawed argument*, *an **utterly** convincing case*. Three systems decide whether these combinations sound natural: **gradability** (which intensifiers an adjective accepts), **position** (where an adverb sits and what it modifies) and **order** (how several adjectives line up before a noun).
 
@@ -62,14 +69,13 @@ Moving an adverb changes what it modifies: *She **only** teaches on Fridays* (an
 !register Informal: *really, so, super, pretty, totally*. Neutral: *very, quite, extremely*. Formal/academic: *highly, considerably, substantially, markedly, relatively, comparatively, somewhat*.
 In academic writing, intensifiers are used sparingly; overuse of *extremely* or *absolutely* sounds emotional. Precision comes from evidence and from exact collocations: *a **statistically significant** difference*, *a **markedly** higher rate*.
 
-## errors | errors | Common mistakes advanced learners make
-> x: The view was very breathtaking. || The view was absolutely breathtaking.
-> x: This is a very unique opportunity. || This is a unique opportunity. / This is a truly unique opportunity.
-> x: She speaks very well English. || She speaks English very well.
-> x: I hardly worked to finish the project. || I worked hard to finish the project.
-> x: a wooden old big table || a big old wooden table
-> x: The results were highly disappointed. || The results were highly disappointing.
-
+## errors | errors | Common mistakes
+!! The view was very breathtaking. || The view was absolutely breathtaking. || *Breathtaking* is already extreme, so it takes *absolutely*, not *very*.
+!! This is a very unique opportunity. || This is a unique opportunity. / This is a truly unique opportunity. || *Unique* is absolute; in careful English use *truly* or no intensifier.
+!! She speaks very well English. || She speaks English very well. || An adverb of manner does not go between a verb and its object.
+!! I hardly worked to finish the project. || I worked hard to finish the project. || *Hard* is the adverb; *hardly* means "almost not".
+!! We bought a wooden old big table. || We bought a big old wooden table. || Adjective order: size, then age, then material.
+!! The results were highly disappointed. || The results were highly disappointing. || *-ing* describes the effect of something; *-ed* describes how a person feels.
 ## advanced | advanced | Advanced applications
 #### Intensifying with structure rather than adverbs
 *Not only is the method slow, it is **far from** reliable.* *Nothing could be **further from** the truth.* *The difference is **by no means** trivial.* Litotes and negated adverbs give controlled emphasis in formal prose.
@@ -166,3 +172,39 @@ Which sentence expresses strong emphasis through litotes?
 Replace *very* with a precise collocation: *The committee was very worried about the delay.* (deep)
 = The committee was deeply concerned about the delay. | The committee was deeply worried about the delay.
 > *Deeply concerned/worried* is a natural, more formal collocation.
+
+=== recognise
+@title A restaurant review
++ The setting is [[absolutely stunning]]: a converted mill beside the river. || non-gradable *stunning* with *absolutely*
++ Service was [[fairly slow]] at first, but the staff were friendly. || gradable *slow* with *fairly*
+- We arrived at about eight.
++ The dessert was [[utterly delicious]], and the portion was generous. || extreme adjective with *utterly*
++ Prices are [[slightly higher]] than in the town centre. || comparative modified with *slightly*
++ It's a [[lovely little Italian]] place that I would recommend. || adjective order: opinion, size, origin
+
+=== check
+### [mc] The film was ___ hilarious; we couldn't stop laughing.
+- very
++ absolutely
+- fairly
+> *Hilarious* is an extreme adjective, so it takes *absolutely*.
+### [mc] Which sentence is correct?
+- She plays very well the piano.
++ She plays the piano very well.
+- She very well plays the piano.
+> The adverb of manner follows the object, not the verb.
+### [mc] I found the instructions really ___.
+- confused
++ confusing
+- confuse
+> The instructions caused the confusion: *-ing*.
+### [explain] Why can you say *quite good* and *quite impossible*, and what is the difference in meaning?
+= With a gradable adjective, *quite* means "fairly" (*quite good* = reasonably good). With a non-gradable adjective, *quite* means "completely" (*quite impossible* = totally impossible).
+> *Quite* changes its meaning depending on gradability.
+
+=== produce
+Write a short review (5–6 sentences) of a place, book or film. Make your opinions precise with well-chosen intensifiers.
+- I matched gradable adjectives with *very, extremely* or *fairly*.
+- I matched extreme adjectives with *absolutely, utterly* or *completely*.
+- I used at least one pair of adjectives in the correct order before a noun.
+- I checked *-ing* versus *-ed* adjectives.

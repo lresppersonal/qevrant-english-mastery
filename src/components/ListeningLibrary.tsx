@@ -1,4 +1,5 @@
 "use client";
+import { useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import clsx from "clsx";
 import { Clock, ExternalLink, FileText, Headphones, Trash2, X, Plus } from "lucide-react";
@@ -16,7 +17,8 @@ export function ListeningLibrary({ resources, verifiedOn, note }: { resources: L
   const [level, setLevel] = useState<string>("all");
   const [type, setType] = useState<string>("all");
   const [accent, setAccent] = useState<string>("all");
-  const [topic, setTopic] = useState<string>("all");
+  const initialTopic = useSearchParams().get("topic");
+  const [topic, setTopic] = useState<string>(initialTopic && resources.some((r) => r.topics.includes(initialTopic)) ? initialTopic : "all");
   const [q, setQ] = useState("");
   const [logs, setLogs] = useState<ListeningLog[]>([]);
   const [logFor, setLogFor] = useState<ListeningResource | null>(null);
@@ -53,7 +55,7 @@ export function ListeningLibrary({ resources, verifiedOn, note }: { resources: L
       {shown.length === 0 ? <EmptyState title="Nothing matches these filters" body="Try a different level, type or accent." /> : (
         <ul className="grid gap-4 md:grid-cols-2" data-testid="listening-list">
           {shown.map((r) => (
-            <li key={r.slug} className="card flex flex-col p-5">
+            <li key={r.slug} id={`listen-${r.slug}`} className="card flex scroll-mt-24 flex-col p-5">
               <div className="flex flex-wrap items-center gap-2">
                 {r.levels.map((l) => <LevelBadge key={l} level={l} />)}
                 <span className="chip">{ACCENTS[r.accent]}</span>

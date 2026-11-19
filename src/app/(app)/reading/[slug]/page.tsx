@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BackLink } from "@/components/NavMemory";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Clock } from "lucide-react";
 import { readingTexts, getReading, getExercise, buildFormIndex, vocabItems, getTheme, getSense, rulesFor } from "@/lib/content";
@@ -23,7 +24,7 @@ export default async function ReadingPage({ params }: { params: Promise<{ slug: 
   const words = text.paragraphs.join(" ").replace(/\[[A-Z]\]/g, "").split(/\s+/).filter(Boolean).length;
   return (
     <article>
-      <Link href="/reading" className="mb-2 inline-flex items-center gap-1 py-2.5 text-sm font-medium text-muted hover:text-ink"><ArrowLeft size={15} aria-hidden="true" /> Reading library</Link>
+      <BackLink href="/reading" label="Reading library" />
       <header className="mb-6 max-w-3xl">
         <div className="mb-3 flex flex-wrap items-center gap-2">
           <LevelBadge level={text.level} /><span className="chip"><Clock size={12} aria-hidden="true" />{text.minutes} min · {words} words</span>

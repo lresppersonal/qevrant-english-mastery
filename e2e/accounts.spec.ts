@@ -28,6 +28,15 @@ async function latestLink(to: string, kind: RegExp) {
   throw new Error(`No "${kind}" email for ${to}`);
 }
 
+/** Fill in the self-assessment (onboarding step 2, Settings or the plan page). */
+async function assess(page: Page, ratings: Record<string, number>, focus: string[]) {
+  const form = page.getByTestId("learning-profile");
+  for (const [skill, n] of Object.entries(ratings)) await form.getByRole("radiogroup", { name: `${skill}: confidence` }).getByRole("radio", { name: new RegExp(`^${n}:`) }).click();
+  for (const f of focus) await form.getByRole("button", { name: f, exact: true }).click();
+}
+const LISTENING_WEAK = { Grammar: 4, Vocabulary: 4, Reading: 5, Listening: 1, Speaking: 2, "Academic Writing": 3 };
+const GRAMMAR_WEAK = { Grammar: 1, Vocabulary: 5, Reading: 4, Listening: 4, Speaking: 4, "Academic Writing": 2 };
+
 async function signIn(page: Page, u: { email: string; password: string }, next = "") {
   await page.goto(`/sign-in${next}`);
   await page.getByLabel("Email").fill(u.email);
@@ -66,6 +75,10 @@ test("sign-up: validation, email confirmation, onboarding, protected pages and t
   // Confirm via the real email link → callback → onboarding
   await page.goto(await latestLink(A.email, /confirm/i));
   await expect(page).toHaveURL(/\/onboarding/);
+  await page.getByRole("button", { name: "Continue" }).click();
+  // Step 2: the learning-needs self-assessment
+  await expect(page.getByText("Step 2 of 2")).toBeVisible();
+  await assess(page, LISTENING_WEAK, ["Listening"]);
   await page.getByRole("button", { name: "Save and go to dashboard" }).click();
   await expect(page).toHaveURL(/\/dashboard/);
   await expect(page.getByTestId("account-summary")).toContainText(A.email);
@@ -204,4 +217,45 @@ test("row-level security: another user cannot read or write this learner's data"
   // Anonymous requests see nothing
   const anon = await (await fetch(`${API}/rest/v1/saved_items?select=*`, { headers: { apikey: ANON } })).json();
   expect(anon).toEqual([]);
+});
+
+test("personalised plans: two learners with different weaknesses get different priorities, saved in their accounts", async ({ browser }) => {
+  // Learner A (listening weak) answered the self-assessment during onboarding; learner B (grammar weak) does it now, from Settings.
+  const ctxB = await browser.newContext({ baseURL: "http://localhost:3200" });
+  await consent(ctxB);
+  const b = await ctxB.newPage();
+  await signIn(b, B, "?next=/settings");
+  await expect(b).toHaveURL(/\/settings/);
+  await assess(b, GRAMMAR_WEAK, ["Grammar", "Academic Writing"]);
+  await b.getByRole("button", { name: "Save my learning profile" }).click();
+  await expect(b.getByText("Your learning profile is saved")).toBeVisible();
+  await b.goto("/plan");
+  await expect(b.getByTestId("priority-grammar")).toHaveAttribute("data-priority", "high");
+  await expect(b.getByTestId("priority-vocabulary")).toHaveAttribute("data-priority", "maintenance");
+  // B starts the personal plan; a reload (a new session read from the database) keeps everything
+  await b.getByRole("button", { name: "Start the Intensive Study Plan" }).click();
+  await expect(b.getByTestId("plan-version")).toHaveText("Personal plan");
+  await expect(b.getByTestId("plan-today")).toContainText("Grammar focus");
+  await b.reload();
+  await expect(b.getByTestId("plan-version")).toHaveText("Personal plan");
+  await expect(b.getByTestId("plan-today")).toContainText("Grammar focus");
+  await expect(b.getByTestId("plan-today")).not.toContainText("Listening focus");
+
+  const ctxA = await browser.newContext({ baseURL: "http://localhost:3200" });
+  await consent(ctxA);
+  const a = await ctxA.newPage();
+  await signIn(a, A, "?next=/plan");
+  // A started the plan in an earlier test, so the priorities card is folded: open it
+  await a.getByTestId("personal-priorities").getByRole("button", { name: /Show/ }).click();
+  await expect(a.getByTestId("priority-listening")).toHaveAttribute("data-priority", "high");
+  await expect(a.getByTestId("priority-reading")).toHaveAttribute("data-priority", "maintenance");
+  await expect(a.getByTestId("priority-grammar")).not.toHaveAttribute("data-priority", "high");
+  // A changes a priority by hand; it is saved and survives a reload
+  await a.getByLabel("Reading priority").selectOption("high");
+  await expect(a.getByTestId("priority-reading")).toHaveAttribute("data-priority", "high");
+  await a.reload();
+  await a.getByTestId("personal-priorities").getByRole("button", { name: /Show/ }).click();
+  await expect(a.getByTestId("priority-reading")).toHaveAttribute("data-priority", "high");
+  await expect(a.getByTestId("priority-reading")).toContainText("You set this");
+  await ctxA.close(); await ctxB.close();
 });

@@ -281,5 +281,6 @@ export function cycleInfo(slug: string) {
   if (!l) return null;
   const readingSlugs = l.links.filter((x) => x.type === "appears_in" && x.published).map((x) => x.to);
   const readings = readingTexts.filter((r) => readingSlugs.includes(r.slug)).map((r) => ({ slug: r.slug, title: r.title }));
-  return { slug, sections: l.sections.length, readings: readings.length ? readings : [{ slug: readingTexts[0].slug, title: readingTexts[0].title }], questionIds: [...questionPool().values()].filter((p) => p.lesson === slug).map((p) => p.key) };
+  // Only texts the lesson is really linked to (no unrelated fallback).
+  return { slug, sections: l.sections.length, readings, questionIds: [...questionPool().values()].filter((p) => p.lesson === slug).map((p) => p.key) };
 }

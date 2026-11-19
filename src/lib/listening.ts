@@ -49,3 +49,19 @@ export const LISTENING_TASKS: { stage: string; tasks: string[] }[] = [
     "Save the new words to your vocabulary list and review them tomorrow.",
   ] },
 ];
+
+/** Which listening-library topics belong to each QEVRANT theme (the library uses its providers' own topic labels). */
+export const THEME_LISTENING: Record<string, string[]> = {
+  "education": ["education"], "science-technology": ["science", "technology"], "environment": ["environment", "nature"],
+  "nature-wildlife": ["nature", "environment"], "work-careers": ["work", "business"], "business-finance": ["business", "economics"],
+  "economics-globalisation": ["economics", "global-issues"], "society-politics": ["society", "politics"], "crime-law": ["society", "politics"],
+  "health-medicine": ["health"], "sports-fitness": ["health"], "psychology-behaviour": ["psychology"],
+  "relationships-personality": ["personal-stories", "psychology"], "communication-media": ["news"], "arts-culture": ["arts", "culture"],
+  "history-heritage": ["history"], "travel-tourism": ["travel"], "transport-movement": ["technology"], "architecture-design": ["arts"],
+  "cities-urban": ["society"], "food-nutrition": ["health"], "hobbies-leisure": ["culture"], "risk-safety": ["global-issues", "science"],
+  "everyday-life": ["general", "idioms"],
+};
+export const listeningForTheme = (theme: string) => {
+  const ts = THEME_LISTENING[theme] ?? [];
+  return listeningResources.filter((r) => r.topics.some((t) => ts.includes(t)));
+};

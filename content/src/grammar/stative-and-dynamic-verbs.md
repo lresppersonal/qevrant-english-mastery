@@ -7,6 +7,13 @@ minutes: 35
 summary: Some verbs describe states rather than actions, and states normally resist the continuous. Advanced users know when that "rule" bends, and why the continuous then changes the meaning.
 links: extends>perfect-and-continuous-aspect>Present perfect and aspect>B2>published ; contrasts_with>narrative-tenses>Narrative tenses>B2+>published
 ---
+## core | core | Core concept
+Some verbs describe **actions and events** that unfold over time (*write, run, explain, become*). Others describe **states**: conditions that simply exist (*know, belong, contain, seem*). Continuous forms show something in progress or temporary, so they fit actions naturally but usually clash with states.
+!rule Ask: *is this something happening, or something that just is?* Happening → continuous possible. Just is → simple form.
+> ex: She**'s writing** a report. || an action in progress
+> ex: She **knows** the answer. || a state: knowing does not unfold step by step
+Many verbs have both uses. *Think* is a state in *I think so* (an opinion) but an action in *I'm thinking about it* (considering). The meaning decides, not the verb itself.
+
 ## overview | overview | Overview and purpose
 Verbs describe either **actions and events** (dynamic: *run, write, explain, become*) or **states** (stative: *know, belong, contain, seem*). The difference matters because continuous forms present a situation as **in progress, temporary or developing**, and a state is usually none of those things. *I know the answer* describes a stable condition; *~~I'm knowing the answer~~* makes no sense because knowing does not unfold over time.
 !rule A verb is not "stative" in the dictionary. A **use** of a verb is stative or dynamic. *Have* is stative in *I have two sisters* but dynamic in *I'm having lunch*.
@@ -65,14 +72,13 @@ A few states that describe a lasting relationship accept the perfect continuous 
 !register In academic writing, use stative verbs in the simple form for claims: *The findings **indicate**, the model **assumes**, the sample **comprises**.* The continuous of a stative verb sounds conversational.
 Informal speech uses stative continuous for **vividness**: *I'm loving it, I'm needing a break, I'm not liking this.* These are acceptable in casual conversation and marketing but avoid them in essays. In narrative, *was being* + adjective can characterise a moment: *She was being kind, not honest.*
 
-## errors | errors | Common mistakes advanced learners make
-> x: I am knowing him since 2019. || I have known him since 2019.
-> x: This box is containing old letters. || This box contains old letters.
-> x: I am agree with the author. || I agree with the author. (agree is a verb, not an adjective)
-> x: I'm hearing a strange noise. || I can hear a strange noise.
-> x: The results are depending on the sample size. || The results depend on the sample size.
-!warning Over-correcting is also a mistake: *We're having a meeting* and *I'm thinking about it* are correct, because *have* and *think* are dynamic here.
-
+## errors | errors | Common mistakes
+!! I am knowing him since 2019. || I have known him since 2019. || *Know* is a state; a state that began in the past and continues takes the present perfect simple.
+!! This box is containing old letters. || This box contains old letters. || *Contain* describes what something consists of, a state, so the simple form is used.
+!! I am agree with the author. || I agree with the author. || *Agree* is a verb, not an adjective, so it needs no *be*.
+!! I'm hearing a strange noise. || I can hear a strange noise. || Perception verbs (*hear, see, smell*) normally use *can* to describe what you perceive at the moment.
+!! The results are depending on the sample size. || The results depend on the sample size. || *Depend* expresses a permanent relationship, a state.
+!warning Over-correcting is also a mistake: *We're having a meeting* and *I'm thinking about it* are correct, because *have* and *think* describe actions here.
 ## advanced | advanced | Advanced applications
 #### Stative passives and resultative states
 *The door **is locked*** can describe a state (it is locked now) rather than an action. Compare *The door **is locked** every night at ten* (a repeated action). Advanced writers exploit this: *The region **is** largely **populated** by farmers* is stative; *is being populated* would describe a process of settlement.
@@ -166,3 +172,40 @@ Which sentence describes a process rather than a state?
 Rewrite to show that the behaviour is unusual for him: *He is selfish.* (use *be* in the continuous)
 = He is being selfish. | He's being selfish.
 > *Be being* + adjective describes behaviour at a particular time.
+
+=== recognise
+@title A note from the lab
++ The new sample [[contains]] traces of copper, which surprised us. || stative *contain*: what the sample consists of
++ We[['re currently testing]] it again to rule out contamination. || dynamic: an activity in progress
++ The supervisor [[thinks]] the equipment may be faulty. || stative *think*: an opinion
++ She[['s thinking]] of ordering a replacement part. || dynamic *think*: considering, a mental process in progress
+- The original results arrived on Friday.
++ This result [[seems]] unlikely, but we can't ignore it. || stative *seem*: how something appears
+- We will report back next week.
+
+=== check
+### [mc] Which sentence is correct?
+- I'm not understanding this paragraph.
++ I don't understand this paragraph.
+- I'm not understand this paragraph.
+> *Understand* describes a mental state, so the simple form is normal.
+### [mc] "Where's Leo?" "He ___ a shower."
+- has
++ 's having
+- is had
+> *Have a shower* is an action, so the continuous is correct.
+### [mc] Which sentence uses *see* dynamically, as an action?
+- I see what you mean.
++ I'm seeing the consultant on Monday.
+- I can see the mountains from here.
+> *See* = meet (an arrangement) is an action, so it can be continuous.
+### [explain] Why is *This soup is tasting delicious* unusual, while *The chef is tasting the soup* is fine?
+= In the first, *taste* describes a quality of the soup, a state, so the simple form is normal: *This soup tastes delicious*. In the second, *taste* is a deliberate action the chef is performing, so the continuous is natural.
+> The same verb can describe a state or an action; only the action use takes the continuous.
+
+=== produce
+Write 4–5 sentences describing a situation at work or at home today. Use at least three verbs that can be both states and actions (for example *think, have, see, taste, appear*), and use each one in the right way.
+- I used at least one verb as a state in the simple form.
+- I used the same verb, or another one, as an action in the continuous.
+- I avoided the continuous with pure state verbs such as *know, belong, contain*.
+- I checked that *agree*, *depend* and *seem* have no continuous form in my text.

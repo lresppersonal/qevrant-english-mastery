@@ -1,4 +1,5 @@
 "use client";
+import { BackLink, ContextLink } from "./NavMemory";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import clsx from "clsx";
@@ -65,7 +66,7 @@ function EssayAside({ prompt }: { prompt: WritingPrompt }) {
           <p className="font-bold">Advanced vocabulary</p>
           <ul className="mt-2 flex flex-wrap gap-2">
             {prompt.usefulLanguage.map((id) => { const r = getSense(id); return r && (
-              <li key={id}><Link href={`/vocabulary/${r.item.slug}#${id}`} className="chip !text-[13px] hover:border-primary hover:text-primary">{r.item.lemma}</Link></li>
+              <li key={id}><ContextLink href={`/vocabulary/${r.item.slug}#${id}`} className="chip !text-[13px] hover:border-primary hover:text-primary">{r.item.lemma}</ContextLink></li>
             ); })}
             {prompt.vocabulary.map((v) => <li key={v} className="chip !text-[13px]">{v}</li>)}
           </ul>
@@ -216,7 +217,7 @@ export function WritingWorkspace({ task }: { task: WorkspaceTask }) {
 
   return (
     <article>
-      <Link href={task.backHref} className="mb-2 inline-flex items-center gap-1 py-2.5 text-sm font-medium text-muted hover:text-ink"><ArrowLeft size={15} aria-hidden="true" /> {task.backLabel}</Link>
+      <BackLink href={task.backHref} label={task.backLabel} />
       <div className="grid gap-6 lg:grid-cols-[1fr_300px]">
         <div className="min-w-0">
           {task.header}

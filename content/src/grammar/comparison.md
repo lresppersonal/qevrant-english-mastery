@@ -8,6 +8,13 @@ summary: Precise comparison is central to academic writing and data description.
 links: extends>academic-register>Academic register>C1>published
 sources: Speakout C1–C2 2A ; Destination C1&C2 Unit 15
 ---
+## core | core | Core concept
+Comparison is about **degree**: how much of a quality something has compared with something else. Basic comparatives tell you the direction (*bigger, more expensive*); advanced English also tells you **how big the difference is** (*slightly bigger, far more expensive, nowhere near as good*).
+!rule Short adjectives → *-er / the -est*. Longer adjectives → *more / the most*. Equality → *as … as*. The size of the difference → *slightly, a bit, much, far, considerably* + comparative.
+> ex: The new model is **far more efficient** than the old one. || a big difference
+> ex: It's **not quite as fast** as I expected. || a small difference, expressed negatively
+> ex: The more you practise, **the easier** it gets. || two changes that grow together
+
 ## overview | overview | Definition and function
 Comparison expresses differences or similarities in degree. Advanced users go beyond *bigger than* to say **how much** bigger and to compare with precision.
 
@@ -48,10 +55,11 @@ Comparison expresses differences or similarities in degree. Advanced users go be
 > ex: less / fewer || *less* + uncountable; *fewer* + plural in formal English
 
 ## errors | errors | Common mistakes
-> x: She is more taller than me. || Double comparative: *taller than me*.
-> x: It's the most good restaurant. || *the best restaurant*.
-> x: My bag is the same like yours. || *the same as yours*.
-
+!! She is more taller than me. || She is taller than me. || Use either *-er* or *more*, never both.
+!! It's the most good restaurant in town. || It's the best restaurant in town. || *Good, bad* and *far* have irregular forms: *better/best, worse/worst, further/furthest*.
+!! My bag is the same like yours. || My bag is the same as yours. || *The same* is followed by *as*, not *like*.
+!! This exam was very easier than the last one. || This exam was much easier than the last one. || *Very* does not modify comparatives; use *much, far, a lot* or *slightly*.
+!! The more you read, the more you are better. || The more you read, the better you become. || In *the … the* structures, the comparative goes at the front of each clause.
 ## register | register | Formal and academic use
 Data descriptions combine comparatives with precise modifiers: *Spending rose marginally, whereas investment fell sharply.* Avoid vague intensifiers (*very, really*) in favour of *substantially, slightly, approximately, roughly twice as*.
 
@@ -128,3 +136,39 @@ Please contact us if you require ___ information.
 - more far
 - furthest
 > *further* = additional; *farther* is only for distance.
+
+=== recognise
+@title Choosing a laptop
++ The Aero is [[slightly lighter than]] the Pro, but the difference is hardly noticeable. || modified comparative: a small difference
++ Its battery lasts [[nowhere near as long as]] the Pro's. || *nowhere near as … as*: a large difference, expressed negatively
+- Both models come with a two-year warranty.
++ The Pro is [[by far the most powerful]] machine in this price range. || superlative with *by far*: emphasises the gap
++ [[The more]] programs you run, [[the hotter]] the Aero gets. || *the … the*: two changes that grow together
+- I'll probably buy the Pro next month.
+
+=== check
+### [mc] The second test was ___ harder than the first.
+- very
++ much
+- more
+> Comparatives are modified with *much, far, a lot, slightly*, not *very*.
+### [mc] This city isn't ___ crowded ___ London.
++ as … as
+- so … than
+- more … as
+> Equality, here negative: *not as … as*.
+### [mc] ___ the deadline gets, the more nervous I feel.
+- Closer
++ The closer
+- The more close
+> *The* + comparative … *the* + comparative.
+### [explain] What is the difference between *a little more expensive* and *considerably more expensive*?
+= Both say the price is higher, but *a little* means the difference is small, while *considerably* means it is large.
+> Modifiers show the size of the difference, which makes comparisons precise.
+
+=== produce
+Compare two places, products or jobs you know well in 5–6 sentences. Say how big the differences are, not only which is better.
+- I used at least three different modifiers (*slightly, much, far, nowhere near*).
+- I used *as … as* or *not as … as*.
+- I used a superlative, ideally with *by far* or *one of the*.
+- I used a *the more …, the more …* sentence.

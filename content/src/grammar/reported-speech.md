@@ -8,6 +8,13 @@ summary: Reporting what others say involves tense and pronoun changes, but at C1
 links: prerequisite>verb-patterns>Verb patterns>B2>published ; extends>academic-register>Academic register>C1>published
 sources: Speakout B2 6B ; Speakout C1–C2 2B ; Destination C1&C2 Unit 25
 ---
+## core | core | Core concept
+Reported speech gives the **content** of what someone said, inside your own sentence. Because the words now belong to a new moment and a new speaker, the details shift: pronouns, time words and often the tense move to fit the reporter's point of view.
+!rule The tense moves back when the reporting verb is past and the situation may no longer be true: *"I'm tired"* → *She said she **was** tired*. If it is still true now, you may keep the original tense.
+> ex: "I'll call you tomorrow." → He said he **would** call me **the next day**. || tense, pronoun and time word all change
+> ex: "The Earth goes round the Sun." → She explained that the Earth **goes** round the Sun. || still true: no backshift
+At C1 the reporting verb matters as much as the content: *claim, admit, insist, deny* show your view of what was said.
+
 ## overview | overview | Definition and function
 Direct speech quotes exact words; reported (indirect) speech gives the content in your own sentence. Reporting changes **tenses, pronouns, time and place words**, and **word order** in questions.
 > ex: “I'm moving to Oslo,” she said. → She said (that) she **was** moving to Oslo.
@@ -52,10 +59,11 @@ Summarising verbs: *outline, summarise, conclude, sum up, highlight, emphasise, 
 > ex: She **suggested going** by train. / She **suggested that we go** by train. || never *suggested us to go*
 
 ## errors | errors | Common mistakes
-> x: She asked me where did I work. || Statement order: *where I worked*.
-> x: He said me that he was busy. || *He told me / He said (to me)*.
-> x: They accused him for stealing. || *accused him of stealing*.
-
+!! She asked me where did I work. || She asked me where I worked. || Reported questions use statement word order and no *do/did*.
+!! He said me that he was busy. || He told me that he was busy. / He said (to me) that he was busy. || *Tell* takes a personal object; *say* does not (or needs *to*).
+!! They accused him for stealing. || They accused him of stealing. || Each reporting verb has its own pattern: *accuse someone of* + *-ing*.
+!! She suggested me to apply. || She suggested (that) I (should) apply. / She suggested applying. || *Suggest* is not followed by object + *to*-infinitive.
+!! He asked if I can help him. || He asked if I could help him. || After a past reporting verb, *can* normally moves back to *could*.
 ## register | register | Formal and academic use
 Academic writing reports sources with present-tense reporting verbs: *Smith (2019) **argues** that… / As Lee **points out**,…* Choose verbs carefully: *claim* and *assert* can distance you from a source; *show* commits you to it.
 
@@ -133,3 +141,39 @@ Choose the most appropriate sentence for an essay.
 ‘Critics ___ the proposal as unrealistic and too expensive.’ (rejected it without serious consideration)
 = dismissed
 > *dismiss something as* = reject it as not worth considering.
+
+=== recognise
+@title After the interview
++ The candidate [[explained that she had worked]] abroad for six years. || reported statement: past perfect for an earlier past
+- Her presentation was clear and well organised.
++ She [[asked whether we offered]] remote working. || reported yes/no question: *whether* + statement order
++ The HR manager [[told her that she would hear]] from us within a week. || *tell* + person; *will* → *would*
++ She [[admitted having]] little experience of budgeting. || reporting verb + *-ing*: *admit having*
+- We all agreed she was a strong candidate.
+
+=== check
+### [mc] "Where do you live?" → He asked me ___.
+- where did I live
++ where I lived
+- where do I live
+> Reported question: statement word order, no *do/did*.
+### [mc] "You should see a doctor." → She ___ see a doctor.
+- said me to
++ advised me to
+- suggested me to
+> *Advise* + object + *to*-infinitive.
+### [mc] "I didn't take the money." → He ___ the money.
++ denied taking
+- denied to take
+- refused taking
+> *Deny* + *-ing*. (*Refuse* is for unwillingness, not for denying a fact.)
+### [explain] Why can you say *She told me she lives in Prague* without backshift?
+= Because she still lives in Prague now: when the situation is still true at the time of reporting, the original present tense can stay.
+> Backshift is normal but not compulsory when the content is still true.
+
+=== produce
+Report a short conversation you had recently (5–6 sentences): a statement, a question, a request and at least one reaction. Use a variety of reporting verbs.
+- I used *say* and *tell* correctly (*tell* + person).
+- I reported at least one question with statement word order.
+- I used at least two reporting verbs with their pattern (for example *admit + -ing*, *advise + object + to*).
+- I shifted tenses back where the situation is no longer true.

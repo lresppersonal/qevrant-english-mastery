@@ -7,6 +7,13 @@ minutes: 35
 summary: "Look up a word" and "look at a word" look alike but behave differently. Knowing the grammar of multi-word verbs lets you place objects correctly, form passives and nouns, and choose between a phrasal verb and a formal single-word verb.
 links: extends>verb-patterns>Verb patterns>B2>published ; contrasts_with>dependent-prepositions>Dependent prepositions>B2>published ; contrasts_with>academic-register>Academic register>C1>published
 ---
+## core | core | Core concept
+Multi-word verbs combine a verb with one or two particles: *give up, look into, put up with*. Their meaning is often not the sum of the parts, and their **grammar depends on the type**: whether the particle is an adverb (separable) or a preposition (not separable).
+!rule Separable phrasal verbs: the object can go before or after the particle, but a pronoun must go in the middle: *turn **it** off*. Prepositional verbs: the object always follows: *look **after** her*.
+> ex: Turn off the light. / Turn the light off. / Turn **it** off. || separable: a pronoun goes in the middle
+> ex: She looks after her grandmother. / She looks after **her**. || prepositional: never *looks her after*
+> ex: I can't put up with this noise. || three-part verb: never separated
+
 ## overview | overview | Overview and purpose
 English has thousands of verbs made of a verb plus a particle: *give up, look into, put up with, carry out*. They are not one category but three, and their grammar differs: where the object can go, whether the particle is stressed, and whether they can be passivised. Advanced users also need to know when a phrasal verb is the natural choice and when a formal equivalent is better.
 
@@ -61,14 +68,12 @@ Many phrasal verbs have a Latinate equivalent: *find out / discover, put off / p
 !register Informal phrasal verbs such as *get on with, mess up, sort out, chuck out* belong in speech and informal writing. In essays, prefer *proceed, spoil, resolve, discard* — but do not replace academic phrasal verbs like *carry out, point out, account for* with odd formal equivalents.
 Overly formal single verbs in conversation sound stiff: *We must postpone the meeting* is fine at work, but among friends *Let's put it off* is more natural.
 
-## errors | errors | Common mistakes advanced learners make
-> x: I looked up it in the dictionary. || I looked it up in the dictionary.
-> x: She is looking forward to meet you. || She is looking forward to meeting you. (*to* is a preposition)
-> x: Can you pick up me at eight? || Can you pick me up at eight?
-> x: They called off it because of the rain. || They called it off because of the rain.
-> x: We need to discuss about the problem. || We need to discuss the problem. (no preposition)
-> x: The data was carried by the team out. || The data were collected by the team. / The analysis was carried out by the team.
-
+## errors | errors | Common mistakes
+!! I looked up it in the dictionary. || I looked it up in the dictionary. || With a separable phrasal verb, a pronoun object goes between the verb and the particle.
+!! Can you pick up me at eight? || Can you pick me up at eight? || Pronoun object in the middle.
+!! They called off it because of the rain. || They called it off because of the rain. || Pronoun object in the middle.
+!! She is looking forward to meet you. || She is looking forward to meeting you. || *To* is a preposition, so it is followed by *-ing*.
+!! I'll look her after this weekend. || I'll look after her this weekend. || *Look after* is a prepositional verb: the object always follows the preposition.
 ## advanced | advanced | Advanced applications
 #### Particles with consistent meanings
 Learning particle meanings speeds up acquisition: **up** = completion or increase (*fill up, step up, scale up*); **down** = reduction or recording (*scale down, write down, narrow down*); **out** = to the end or outward (*sort out, wear out, phase out*); **off** = separation or cancellation (*call off, cut off, write off*); **through** = to completion (*follow through, see through*).
@@ -162,3 +167,39 @@ Choose the best replacement for the informal phrase in an essay: *Governments sh
 Replace the verb with a phrasal verb using *stem*: *The problem originates from poor communication.*
 = The problem stems from poor communication.
 > *Stem from* = originate in; academic.
+
+=== recognise
+@title A message to a new flatmate
++ Please [[turn]] the heating [[off]] when you go out. || separable phrasal verb with the object in the middle
++ The landlord will [[look into]] the broken window this week. || prepositional verb: inseparable
+- The rent is due on the first of each month.
++ I've [[put up with]] the noise from upstairs for months. || three-part verb
++ If you lose your key, I can [[let]] you [[in]]. || separable: pronoun in the middle
+- Welcome to the flat!
+
+=== check
+### [mc] That music is too loud. Please turn ___.
+- down it
++ it down
+- it to down
+> Separable phrasal verb: the pronoun goes in the middle.
+### [mc] Who's going to ___ while you're away?
++ look after the children
+- look the children after
+- look after to the children
+> *Look after* is inseparable: the object follows the preposition.
+### [mc] Which is the more formal equivalent of *find out* in an academic text?
+- look up
++ discover
+- come across
+> Many phrasal verbs have formal one-word equivalents (*find out → discover, carry out → conduct*).
+### [explain] Why can you say *turn the light off* but not *look the children after*?
+= *Turn off* is a phrasal verb with an adverb particle, so the object can go before or after it. *Look after* is a prepositional verb: the preposition must come directly before its object.
+> The type of multi-word verb decides the word order.
+
+=== produce
+Write 5–6 sentences about problems in a flat or an office and how they were solved. Use at least five multi-word verbs.
+- I used a separable phrasal verb with a pronoun object in the middle.
+- I used a prepositional verb (*look after, deal with, rely on*) with the object after the preposition.
+- I used a three-part verb (*put up with, run out of, look forward to*).
+- I replaced at least one phrasal verb with a formal equivalent in a more formal sentence.

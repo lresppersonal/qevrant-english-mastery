@@ -8,16 +8,25 @@ summary: Tense tells you when; aspect tells you how the speaker sees an action: 
 links: extends>narrative-tenses>Narrative tenses and the past perfect>B2+>published ; extends>future-forms>Future continuous and future perfect>B2>published
 sources: Speakout B2 1A ; Speakout C1–C2 4B ; Destination C1&C2 Unit 1
 ---
-## overview | overview | Definition and function
-English verbs combine **tense** (present or past) with **aspect**. Aspect shows how the speaker views the action:
-- **Simple**: the action is seen as a complete whole or a fact.
-- **Continuous** (*be* + *-ing*): the action is seen as in progress, temporary or unfinished.
-- **Perfect** (*have* + past participle): the action is seen from a later point and connected to it.
-> ex: I **read** the report. || Simple: a complete fact.
-> ex: I **was reading** the report when you called. || Continuous: in progress at that moment.
-> ex: I**'ve read** the report, so I can comment. || Perfect: past action relevant now.
-> ex: I**'ve been reading** reports all morning. || Perfect continuous: activity up to now, focus on duration.
+## core | core | Core concept
+The present perfect connects a past event to **now**. You use it when what happened before still matters at the moment of speaking: a result you can see, an experience you have, or a situation that started earlier and is still true.
+!rule Present perfect = a past event seen from the present. Past simple = a past event seen in the past, cut off from now.
+> ex: I**'ve lost** my keys. || The loss is in the past, but the problem is now: I can't get in.
+> ex: I **lost** my keys last week. || A finished event at a finished time: we are telling a story, not describing now.
+Ask yourself one question: *am I talking about now, or about then?* If the answer is "now" and no finished time is mentioned, the present perfect is usually right.
 
+## overview | overview | Definition and function
+This lesson builds the idea in three steps, so you meet one contrast at a time:
+- **Step 1, perfect or past?** *I've finished* (relevant now) versus *I finished at six* (a finished time). See parts B and E.
+- **Step 2, result or activity?** *I've painted the kitchen* (the result) versus *I've been painting the kitchen* (the activity, perhaps unfinished). See part B.
+- **Step 3, the wider system.** The same logic (complete, in progress, connected to a later point) runs through all English tenses. See part H.
++++ The aspect system in one view
+English verbs combine **tense** (present or past) with **aspect**, which shows how the speaker views the action:
+- **Simple**: a complete whole or a fact: *I read the report.*
+- **Continuous** (*be* + *-ing*): in progress, temporary or unfinished: *I was reading the report when you called.*
+- **Perfect** (*have* + past participle): seen from a later point and connected to it: *I've read the report, so I can comment.*
+- **Perfect continuous**: an activity up to a point, with the focus on duration: *I've been reading reports all morning.*
++++
 ## form | form | Formation
 !rule Present perfect = **have/has + past participle**. Present perfect continuous = **have/has been + -ing**. The auxiliary *have* does all the grammatical work: it carries negation, questions and short answers.
 #### Affirmative
@@ -107,11 +116,12 @@ The **simple** form focuses on the result or quantity; the **continuous** form f
 | *I've been working here for two years.* | almost the same; continuous stresses the ongoing activity |
 
 ## errors | errors | Common mistakes
-> x: I am living here since 2018. || Russian uses the present tense here; English needs the present perfect: *I've lived / I've been living here since 2018.*
-> x: When have you arrived? || Questions with *when* point to a finished time: *When did you arrive?*
-> x: I've been knowing him for years. || State verb: *I've known him for years.*
-> x: Since three years I work here. || *since* + point in time, *for* + period: *I've worked here for three years.*
-
+!! I am living here since 2018. || I've lived here since 2018. / I've been living here since 2018. || A situation that started in the past and continues now needs the present perfect. The present tense (as in Russian *я живу здесь с 2018 года*) only describes now.
+!! When have you arrived? || When did you arrive? || *When* asks about a finished moment, so it needs the past simple.
+!! I have seen him yesterday. || I saw him yesterday. || A finished time expression (*yesterday, last week, in 2019, ago*) cuts the event off from now.
+!! I've been knowing him for years. || I've known him for years. || *Know* is a state verb: it describes a state, not an activity, so it is not used in the continuous.
+!! Since three years I work here. || I've worked here for three years. || *For* + a period, *since* + a starting point; the situation continues, so the present perfect.
+!! She's been writing 2,000 words today. || She's written 2,000 words today. || A completed number or quantity focuses on the result, so use the simple form.
 ## advanced | advanced | Advanced usage and stylistic nuances
 At C1, aspect becomes a **choice that shapes meaning and tone**:
 - The continuous can sound **less direct and more polite**: *I was wondering if you could help* (softer than *I wondered*).
@@ -212,3 +222,45 @@ Which part is incorrect? *Researchers have been knowing for decades that the dru
 - that the drug
 - has side effects
 > *know* is a state verb → *have known*.
+
+=== recognise
+@title A message from the project lead
++ We [[have finished]] the first round of interviews, so the transcripts are ready for you. || present perfect simple: a completed result that matters now
+- I sent you the link to the folder on Monday.
++ Kasia [[has been coding]] the data since Tuesday, so some files are still open. || present perfect continuous: an activity that started earlier and is still in progress
+- The ethics committee approved the study last month.
++ Unfortunately, two participants [[have withdrawn]], which means we need replacements. || present perfect simple: a recent change with a present consequence
+- Please let me know if anything is unclear.
++ I [[haven't had]] time to read the pilot report yet. || negative present perfect with *yet*: not done up to now
+
+=== check
+### [mc] Which sentence is correct?
+- I have finished the report two hours ago.
++ I finished the report two hours ago.
+- I have been finishing the report two hours ago.
+> *Ago* points to a finished time, so the past simple is needed.
+### [mc] "Why are your hands so dirty?" "I ___ the car."
+- repaired
++ 've been repairing
+- 'm repairing
+> The dirty hands are the visible result of a recent activity: the present perfect continuous focuses on that activity.
+### [mc] It's only eleven o'clock and she ___ three chapters already.
++ has written
+- has been writing
+- wrote
+> A completed quantity (*three chapters*) up to now: present perfect simple.
+### [explain] Explain the difference between *I've lived in Riga for five years* and *I lived in Riga for five years*.
+= The first means I still live in Riga: the period continues up to now. The second means that period is over: I no longer live there.
+> The present perfect links the period to now; the past simple places it entirely in the past.
+### [mc] Which question asks about a finished moment?
+- How long have you been here?
++ When did you get here?
+- Have you been here before?
+> *When* asks for a point in the past, so it takes the past simple.
+
+=== produce
+Write a short update (4–6 sentences) to a colleague about a project you are working on. Say what you have done, what you have been doing recently and what you haven't done yet. Add one sentence about something that happened at a specific past time.
+- I used the present perfect simple for at least one result that matters now.
+- I used the present perfect continuous for an activity that is still going on or has just stopped.
+- I put *yet*, *already* or *just* in the right position.
+- My sentence with a finished time (*yesterday, last week, on Monday*) uses the past simple.

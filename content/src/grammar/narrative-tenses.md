@@ -8,6 +8,12 @@ summary: Telling a story in English means choosing between past simple, past con
 links: prerequisite>perfect-and-continuous-aspect>Present perfect and aspect>B2>published ; extends>conditionals-and-unreal-past>Unreal past and mixed conditionals>C1>published
 sources: Speakout B2 5A ; Speakout C1–C2 6A ; Destination C1&C2 Unit 3
 ---
+## core | core | Core concept
+When you tell a story, each past tense has a different job. The **past simple** moves the story forward, event by event. The **past continuous** paints the background: what was going on around those events. The **past perfect** steps back to something that had already happened before them.
+!rule Main events → past simple. Background → past continuous. An earlier event → past perfect.
+> ex: The lights **were flickering** when I **got** home. Someone **had left** the door open. || background → main event → an earlier event that explains it
+The past perfect is a tool for going *back*, not a "more past" tense: you need it only when the order of events would otherwise be unclear, or when you want to stress that something happened first.
+
 ## overview | overview | Definition and function
 Narrative tenses organise a story in time. The **past simple** moves the story forward; the **past continuous** describes the background; the **past perfect** steps back to an earlier event; the **past perfect continuous** shows an activity that continued up to a past moment.
 > ex: It **was raining** and the streets **were** empty. I **had been walking** for an hour when I **realised** I **had left** my keys at the office.
@@ -51,10 +57,11 @@ Narrative tenses organise a story in time. The **past simple** moves the story f
 - **The historic present**: storytellers and journalists sometimes use present tenses to make a past story vivid: *So I'm walking home, and this man stops me…* (informal speech, C1).
 
 ## errors | errors | Common mistakes
-> x: After I had finished, I had gone home. || Only the earlier action needs the past perfect: *After I had finished, I went home.*
-> x: I was knowing the answer. || State verb: *I knew the answer.*
-> x: Yesterday I had met an old friend. || No earlier past reference point: *Yesterday I met an old friend.*
-
+!! After I had finished, I had gone home. || After I had finished, I went home. || Only the earlier event needs the past perfect; the main event stays in the past simple.
+!! Yesterday I had met an old friend. || Yesterday I met an old friend. || There is no earlier past event to refer back to, so the past simple is enough.
+!! I was knowing the answer. || I knew the answer. || *Know* is a state verb and is not normally used in the continuous.
+!! I didn't recognise him at first. I never met him before. || I didn't recognise him at first. I had never met him before. || *Never… before* looks back from a past moment over the time up to it, which needs the past perfect.
+!! While I walked home, it was starting to rain. || While I was walking home, it started to rain. || The longer background action takes the continuous; the short event that interrupts it takes the past simple.
 ## advanced | advanced | Advanced usage and stylistic nuances
 - Writers use the past perfect for **flashbacks**, then return to the past simple once the earlier time is established, to avoid a long chain of *had*.
 - **Hardly / No sooner** with the past perfect and inversion (formal): *No sooner had we sat down than the alarm went off.* (See *Inversion and emphasis*.)
@@ -133,3 +140,40 @@ Rewrite with a perfect infinitive: ‘People say that he left the country.’ �
 ‘Hardly ___ the door when the phone rang.’ (I / close)
 = had I closed
 > *Hardly … when* takes inversion and the past perfect.
+
+=== recognise
+@title The interview
+- I arrived at the building just before nine.
++ Several other candidates [[were already waiting]] in the corridor, and nobody [[was talking]]. || past continuous: the background scene around the main event
++ I suddenly realised that I [[had left]] my portfolio on the train. || past perfect: an earlier event that explains the problem
+- I phoned the station immediately.
++ A guard [[had found]] it and handed it in, so I collected it during my lunch break. || past perfect: it happened before my call
++ By the time they called my name, I [[had been sitting]] there for over an hour. || past perfect continuous: an activity lasting up to a past moment
+- In the end, the interview went surprisingly well.
+
+=== check
+### [mc] When we got to the cinema, the film ___, so we missed the beginning.
+- started
++ had started
+- was starting
+> The film started before we arrived; the past perfect shows the earlier event.
+### [mc] I ___ along the river when I heard someone calling my name.
+- walked
++ was walking
+- had walked
+> A longer background action interrupted by a short event takes the past continuous.
+### [mc] Which sentence uses the past perfect unnecessarily?
+- She realised she had forgotten her passport.
++ Last summer we had gone to Portugal and had stayed by the sea.
+- By the time help arrived, the fire had spread.
+> There is no earlier past reference point: *Last summer we went to Portugal and stayed by the sea.*
+### [explain] What is the difference between *When I arrived, she left* and *When I arrived, she had left*?
+= In the first, she left when I arrived (at that moment or just after). In the second, she was already gone before I got there.
+> The past perfect moves her leaving back to a time before my arrival.
+
+=== produce
+Write the opening of a short story (5–7 sentences) about a journey that went wrong. Set the scene, tell the main events in order and explain at least one thing that had happened earlier.
+- I used the past continuous for the background: the weather, the people, what was going on.
+- The main events move forward in the past simple.
+- I used the past perfect for at least one earlier event, and only where it helps.
+- I used a time expression such as *by the time*, *already* or *just*.

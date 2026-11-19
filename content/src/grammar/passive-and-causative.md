@@ -8,6 +8,13 @@ summary: The passive lets you choose what a sentence is about and leave out who 
 links: extends>academic-register>Academic register>C1>published ; extends>reported-speech>Reporting verbs>C1>published
 sources: Speakout B2 4B ; Speakout C1–C2 3B ; Destination C1&C2 Unit 7
 ---
+## core | core | Core concept
+In an active sentence the subject does the action; in a passive sentence the subject **receives** it. You choose the passive to control what the sentence is about: the thing affected becomes the topic, and the doer can disappear.
+!rule Passive = *be* + past participle. The tense is shown by *be*: *is built, was built, has been built, will be built*.
+> ex: Someone stole my bike. → My bike **was stolen**. || the bike is the topic; the thief is unknown
+> ex: The study **was funded** by the EU. || the agent is added with *by* only when it matters
+The causative (*have/get something done*) is related: the subject arranges the action, but someone else does it: *I had my laptop repaired.*
+
 ## overview | overview | Definition and function
 In an active sentence the subject does the action; in a passive sentence the subject **receives** it. Use the passive when the agent is unknown, obvious, unimportant, or when you want to keep the focus on a topic already mentioned.
 > ex: The bridge **was built** in 1890. || who built it is not important here
@@ -52,10 +59,11 @@ Related active patterns: **have someone do** (*I had the mechanic check the brak
 > ex: The report got written in the end. || informal; suggests difficulty
 
 ## errors | errors | Common mistakes
-> x: The meeting was happened on Monday. || Intransitive verbs (*happen, arrive, die, occur*) have no passive.
-> x: It is said that he to be rich. || Mix of two patterns: *It is said that he is rich* / *He is said to be rich*.
-> x: I must repair my car tomorrow at the garage. || If someone else does it: *I must have/get my car repaired.*
-
+!! The meeting was happened on Monday. || The meeting happened on Monday. || Verbs with no object (*happen, arrive, die, occur*) cannot be passive.
+!! It is said that he to be rich. || It is said that he is rich. / He is said to be rich. || These are two different patterns; do not mix them.
+!! I must repair my car tomorrow at the garage. || I must have my car repaired tomorrow. || If someone else does the work for you, use the causative.
+!! The results were analysed by us carefully. || We analysed the results carefully. / The results were analysed carefully. || Do not add *by* + a pronoun; either use the active or leave the agent out.
+!! This house was build in 1890. || This house was built in 1890. || The passive needs the past participle, not the base form.
 ## register | register | Formal and academic use
 Academic and scientific writing uses the passive to focus on processes and results: *Samples were collected from 40 sites and analysed.* Impersonal passives distance the writer from claims: *It has been argued that…*, *X is widely regarded as…*. Don't overuse it: a mix of active and passive reads more clearly.
 
@@ -135,3 +143,39 @@ Which sentence is most appropriate in a methods section?
 - People got randomly assigned to two groups.
 - Two groups were randomly assigned participants by us.
 > Formal passive without the agent focuses on the procedure; *got* is too informal.
+
+=== recognise
+@title Renovating the library
++ The old library building [[was closed]] in 2022 for safety reasons. || passive: the building is the topic; who closed it is obvious
++ Since then, the roof [[has been replaced]] and new windows [[have been fitted]]. || present perfect passive: results that matter now
+- Local residents raised more than €200,000 for the project.
++ The work [[is being carried out]] by a firm that specialises in historic buildings. || continuous passive with an agent that adds information
++ The director [[had]] the original plans [[scanned]] so that the public can see them online. || causative: she arranged it; others did the work
+- The reopening is planned for September.
+
+=== check
+### [mc] The results ___ next week.
+- will publish
++ will be published
+- will be publish
+> The results receive the action, so the future passive is needed.
+### [mc] Which sentence is wrong?
+- The parcel was delivered this morning.
++ The accident was happened at midnight.
+- The suspect has been arrested.
+> *Happen* has no object, so it has no passive form.
+### [mc] I can't drive at the moment: I'm ___.
+- repairing my car
++ having my car repaired
+- my car repaired
+> Someone else is repairing it for me: the causative *have something done*.
+### [explain] Why does an academic writer prefer *The samples were heated to 80°C* to *We heated the samples to 80°C*?
+= The passive keeps the focus on the process and the material rather than on the researchers, which is the convention in many scientific methods sections.
+> In formal writing the passive helps keep the topic (the samples) at the start of the sentence.
+
+=== produce
+Describe a process you know well (for example how coffee is produced or how a document is approved) in 5–6 sentences. Then add one sentence about something you recently had done by a professional.
+- I used the passive where the doer is unknown, obvious or unimportant.
+- I used at least two different tenses of the passive.
+- I added *by* + agent only where it gives useful information.
+- My last sentence uses *have* or *get* + object + past participle.

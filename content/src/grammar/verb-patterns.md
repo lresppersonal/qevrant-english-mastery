@@ -8,6 +8,14 @@ summary: The verb you choose decides what follows it: an -ing form, a to-infinit
 links: extends>reported-speech>Reporting verbs and their patterns>C1>published
 sources: Speakout B2 1B ; Speakout B2 5B ; Speakout C1–C2 4A ; Destination C1&C2 Unit 23
 ---
+## core | core | Core concept
+When one verb follows another, the first verb **chooses** the form of the second: an *-ing* form, a *to*-infinitive or a bare infinitive. These patterns are not logical rules you can work out; they are part of each verb, like its meaning.
+!rule Learn verbs with their pattern: *avoid **doing***, *decide **to do***, *let someone **do***, *advise someone **to do***.
+> ex: She **avoided answering** the question. || *avoid* + *-ing*
+> ex: They **decided to postpone** the launch. || *decide* + *to*-infinitive
+> ex: The manager **let us leave** early. || *let* + object + bare infinitive
+A small group of verbs (*remember, forget, stop, try, regret, go on*) takes both patterns, with a **change of meaning**.
+
 ## overview | overview | Definition and function
 A verb pattern is the structure that follows a verb. Patterns are largely fixed, so they must be learned with the verb: *avoid **doing***, *decide **to do***, *make someone **do***.
 
@@ -43,11 +51,11 @@ In the passive, *make* and perception verbs take *to*: *He was **made to** apolo
 - *suggest / recommend / insist* + **that** + (should) + base form (formal): *She insisted that he **be** present.*
 
 ## errors | errors | Common mistakes
-> x: He suggested me to apply. || *He suggested (that) I apply / suggested applying.*
-> x: I'm looking forward to meet you. || *to meeting you*.
-> x: They let us to leave early. || *let* + bare infinitive: *let us leave*.
-> x: I avoid to eat sugar. || *avoid eating*.
-
+!! He suggested me to apply. || He suggested (that) I apply. / He suggested applying. || *Suggest* is never followed by object + *to*-infinitive.
+!! I'm looking forward to meet you. || I'm looking forward to meeting you. || *To* is a preposition in *look forward to*, so it is followed by *-ing*.
+!! They let us to leave early. || They let us leave early. || *Let* and *make* take object + bare infinitive.
+!! I avoid to eat sugar. || I avoid eating sugar. || *Avoid* takes *-ing*.
+!! I stopped to smoke last year. (meaning I gave it up) || I stopped smoking last year. || *Stop doing* = end an activity; *stop to do* = stop in order to do something else.
 ## register | register | Formal and academic use
 Formal writing prefers nominal or that-clause patterns: *The committee recommended **that the policy be reviewed***. Verbs such as *tend to, appear to, fail to* are frequent in academic hedging: *Earlier studies **tended to overlook** this group.*
 
@@ -133,3 +141,39 @@ After years as a journalist, she went on ___ one of the country's leading noveli
 - become
 - to becoming
 > *go on to do* = move on to a new achievement.
+
+=== recognise
+@title Notes from a mentoring session
++ My mentor [[advised me to keep]] a record of every project. || *advise* + object + *to*-infinitive
++ She [[admitted feeling]] nervous in her first job. || *admit* + *-ing*
+- We met in the café near the office.
++ I [[remember meeting]] her at a conference years ago. || *remember* + *-ing*: a memory of the past
++ I must [[remember to send]] her my CV this week. || *remember* + *to*-infinitive: a task not to forget
++ She [[made me rewrite]] my summary three times. || *make* + object + bare infinitive
+
+=== check
+### [mc] Would you mind ___ the window?
++ closing
+- to close
+- close
+> *Mind* takes *-ing*.
+### [mc] I tried ___ the file, but the system kept crashing.
++ to open
+- open
+- opening
+> *Try to do* = make an effort to do something difficult.
+### [mc] Which sentence means "I gave up coffee"?
+- I stopped to drink coffee.
++ I stopped drinking coffee.
+- I stopped drink coffee.
+> *Stop* + *-ing* = end the activity.
+### [explain] What is the difference between *I regret to tell you* and *I regret telling you*?
+= *I regret to tell you* is a formal way of announcing bad news now. *I regret telling you* means I told you something earlier and now wish I hadn't.
+> *Regret* + *to* refers to the present act; *regret* + *-ing* to a past one.
+
+=== produce
+Write 5–6 sentences about a habit you changed or a decision you made. Use at least five different verb patterns.
+- I used at least two verbs + *-ing* (for example *avoid, enjoy, consider*).
+- I used at least two verbs + *to*-infinitive (for example *decide, manage, refuse*).
+- I used *make* or *let* + object + bare infinitive.
+- I used one verb that changes meaning (*remember, stop, try, regret*) correctly.

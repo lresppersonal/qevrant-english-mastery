@@ -8,6 +8,14 @@ summary: Articles are one of the hardest areas for speakers of languages without
 links: extends>academic-register>Academic register (nominalisation)>C1>published
 sources: Speakout B2 2B ; Speakout C1–C2 8A ; Destination C1&C2 Unit 21
 ---
+## core | core | Core concept
+Articles answer one question for the listener: **do we both know which one I mean?** *A/an* introduces something new or non-specific; *the* points to something we can both identify; no article talks about things in general (plurals and uncountable nouns).
+!rule New or one of many → *a/an*. Known, unique or already mentioned → *the*. In general (plural or uncountable) → no article.
+> ex: I read **an** article about sleep. **The** article argued that teenagers need more of it. || first mention → second mention
+> ex: **Sleep** affects memory. || sleep in general: no article
+> ex: **The sleep** I got last night wasn't enough. || a specific, identified sleep
+Countability works with this system: *a* needs a singular countable noun, so uncountables (*advice, information, research*) never take *a*.
+
 ## overview | overview | Definition and function
 A noun phrase is a noun plus everything that describes or limits it: *the **three** **rather old** **wooden** chairs **in the hall***. Determiners (*a, the, some, every, this*) tell the listener whether the thing is known, how much or how many.
 
@@ -47,11 +55,11 @@ Tools: noun modifiers (*a **government** report*), compound adjectives (*a **two
 !warning Compound adjectives with numbers have no plural: *a **five-year** plan*, not ~~five-years plan~~.
 
 ## errors | errors | Common mistakes
-> x: I am student. || Jobs and roles need *a/an*: *I am a student.*
-> x: The most of people agree. || *Most people agree.* / *Most of the people I asked agree.*
-> x: We need more informations. || *more information*.
-> x: He is in the hospital since Monday. || BrE: *He has been in hospital since Monday.*
-
+!! I am student. || I am a student. || Jobs and roles take *a/an* with a singular countable noun.
+!! The most of people agree. || Most people agree. / Most of the people I asked agree. || *Most* + noun is general; *most of the* + noun refers to a specific group.
+!! We need more informations. || We need more information. || *Information* is uncountable: no plural, no *a*.
+!! He is in the hospital since Monday. (British English) || He has been in hospital since Monday. || In British English *in hospital* (as a patient) has no article; and a state continuing up to now takes the present perfect.
+!! The life is short. || Life is short. || Abstract nouns used in general take no article.
 ## register | register | Formal and academic use
 Academic writing relies on long noun phrases and generic reference: *The introduction of tuition fees has led to a decline in applications from low-income students.* Countable/uncountable precision matters: *a growing body of **research**, a number of **studies**, an amount of **evidence**.*
 
@@ -137,3 +145,39 @@ ___ cheetah is the fastest land animal.
 ‘A significant ___ of research has examined the long-term effects of remote learning.’
 = body | amount
 > Uncountable *research* takes *a body of / an amount of*, not *a number of*.
+
+=== recognise
+@title A short news report
++ [[A]] new study suggests that teenagers need more sleep than adults. || *a*: first mention of one study among many
++ [[The]] study, published last week, followed 2,000 students for a year. || *the*: the study already mentioned
++ [[Sleep]] was measured with wrist monitors rather than questionnaires. || no article: sleep in general, uncountable
+- Researchers at three universities took part.
++ [[The]] students who slept least also reported [[the]] highest stress levels. || *the*: a specific, defined group; *the* + superlative
+- The findings may influence school timetables.
+
+=== check
+### [mc] She gave me ___ useful advice about the interview.
+- a
++ some
+- an
+> *Advice* is uncountable, so it cannot take *a*; use *some* or no article.
+### [mc] ___ honesty is important in any relationship.
+- The
+- An
++ (no article)
+> An abstract noun used in general takes no article.
+### [mc] Which sentence is correct?
+- The most of my friends live abroad.
++ Most of my friends live abroad.
+- Most of friends live abroad.
+> *Most of* + a determiner (*my, the, these*) + noun refers to a specific group.
+### [explain] Why do we say *I saw a film last night. The film was about climate change.*?
+= *A* introduces the film as new information; *the* is used the second time because the listener now knows which film I mean.
+> The choice of article depends on what the listener can identify, not on the noun itself.
+
+=== produce
+Write 5–6 sentences summarising a news item or an article you read recently. Mention it for the first time, refer back to it, and make at least two general statements.
+- I used *a/an* to introduce something new and *the* to refer back to it.
+- I used no article for at least one general plural or uncountable noun.
+- I checked that uncountable nouns (*information, advice, research*) have no *a* and no plural.
+- I used *the* with a superlative or with a unique thing.

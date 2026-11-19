@@ -27,8 +27,8 @@ test("speaking: topic words open a dictionary card in place; saving keeps the se
   await kit.locator("summary").click();
   const chip = kit.getByRole("button").first();
   const word = (await chip.textContent())!.replace("★ ", "").trim();
-  await chip.scrollIntoViewIfNeeded();
-  await page.evaluate(() => window.scrollBy(0, -120)); // keep the word clear of the sticky header
+  // Centre the word so the card (opened above or below it) is fully on screen and no click needs scrolling
+  await chip.evaluate((el) => el.scrollIntoView({ block: "center" }));
   const y = await page.evaluate(() => window.scrollY);
   const cb0 = (await chip.boundingBox())!;
   await page.mouse.click(cb0.x + cb0.width / 2, cb0.y + cb0.height / 2);

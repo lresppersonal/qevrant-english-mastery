@@ -16,6 +16,34 @@ Content is written in compact formats in `content/src/` and compiled with `npm r
 
 **New to this? Start with [docs/LAUNCH-GUIDE.md](docs/LAUNCH-GUIDE.md)**: a step-by-step, non-technical guide to putting the app online, creating your account and keeping your data.
 
+## What's new (2026-11-19, contextual navigation, grammar learning environment, personal plan)
+- **Context-aware navigation.**
+  - **The cause:** every module page had a fixed back link (Reading → Reading library, Writing → Academic Writing), and one practice page always went back to *Education*. So entering through a topic lost the topic.
+  - **The fix:** links now carry where the learner came from, as a structured `?from=` value (`topic:<theme>`, or `grammar:<lesson>:<stage>`). It nests, survives reloads and works with the browser's Back.
+  - **One back link everywhere** returns to the source page, using the browser's own Back when that's the previous page. Otherwise it opens the page and restores the saved scroll position.
+  - **The topic page remembers** its level filter and its scroll position. Topics now also list Listening resources.
+  - **Direct access is unchanged:** a page opened from the sidebar goes back to its own section.
+- **Grammar as one learning environment.**
+  - **Stages inside the lesson:** Understand, Recognise, Practise, Produce, Feedback and Review all live in the lesson (`?stage=…`). Nothing opens another section.
+  - **Progress is kept** in every stage while the learner moves between them.
+  - **What each stage does:**
+    - Recognise is an in-lesson passage: the learner selects the sentences that use the structure, and each form is then highlighted and explained.
+    - Produce is a guided writing task with a self-check list.
+    - Feedback gathers the learner's wrong answers and AI-flagged sentences for this lesson.
+    - Review is a spaced set built from the learner's own answers.
+  - **The theory follows one teaching sequence:** core concept, when and why, formation, examples, comparison, common mistakes (Incorrect → Correct → Why), register, C1–C2 nuance, and a quick understanding check.
+  - **The part index** sits on the right on wide screens and folds into one compact line on phones.
+- **All 36 grammar lessons revised.** Each has a new core-concept opener, mistakes rewritten as Incorrect → Correct → Why, a Recognise passage, a quick check with explanations, and a Produce task. The present perfect lesson also introduces one contrast at a time.
+- **Personal Intensive Study Plan.**
+  - **Self-assessment:** onboarding step 2 asks for confidence (1–5) in six areas and up to three areas to improve. It's editable in Settings and on the plan page.
+  - **Priorities:** these follow transparent rules from the self-assessment and real results, and the learner can change any priority by hand.
+  - **Effect on the plan:**
+    - High-priority areas become required every day, get a little more time, and get an integrated focus block on the same day's theme.
+    - Stronger areas become shorter or every other day; nothing is removed.
+    - The universal plan is unchanged and stays available.
+  - **Storage and labelling:** everything is saved in the learner's profile. It isn't presented as AI.
+- **Subtle motion:** staggered card entrances, smooth stage switches, progress bars that grow, and small confirmations. All of it respects reduced-motion settings.
+
 ## What's new (2026-11-18, speaking word card)
 - **Speaking ▸ Language for this topic**: tapping a word or phrase no longer leaves the page. It opens the same small dictionary card as Reading, next to the word, with:
   - the headword, Russian, a short definition and up to three synonyms;

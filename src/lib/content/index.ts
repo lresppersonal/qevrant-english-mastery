@@ -211,6 +211,7 @@ export function ruleSummary(lesson: string, section?: string): string | null {
     const note = pick("note"); if (note) return clip(note.text);
     const list = pick("list"); if (list) return clip(list.items.slice(0, 2).join(" · "));
     const table = pick("table"); if (table && table.rows.length) return clip(table.rows.slice(0, 2).map((r) => r.join(" → ")).join(" · "));
+    const mk = pick("mistakes"); if (mk && mk.rows.length) { const m = mk.rows[0]; return clip(`${m.right} (not ~~${m.wrong.replace(/~~/g, "")}~~): ${m.why}`); }
     const ex = pick("examples"); if (ex && ex.items.length) { const it = ex.items[0] as { en: string; note?: string }; return clip(it.note ? `${it.en} → ${it.note}` : it.en); }
   }
   return null;

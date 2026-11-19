@@ -1,3 +1,4 @@
+import { ContextBackLink } from "@/components/NavMemory";
 import { Suspense } from "react";
 import Link from "next/link";
 import { FolderOpen, BarChart3, ArrowRight } from "lucide-react";
@@ -12,6 +13,7 @@ export default function WritingIndex() {
   const cards: EssayCard[] = writingPrompts.map((p) => ({ slug: p.slug, title: p.title, prompt: p.prompt, level: p.level, genre: p.genre, themes: p.topics.map((t) => ({ slug: t, title: getTheme(t)?.title ?? t })) }));
   return (
     <>
+      <ContextBackLink />
       <PageHeader eyebrow="Learn" title="Academic Writing"
         intro={<>{cards.length} original essay questions in the style of IELTS Academic Writing Task 2, organised by the eight essay types. Each task has a planning structure, vocabulary, linking expressions and ideas, and AI practice feedback linked to our grammar lessons.</>}>
         <Link href="/writing/portfolio" className="btn btn-ghost"><FolderOpen size={16} aria-hidden="true" /> My writing portfolio</Link>

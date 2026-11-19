@@ -132,6 +132,11 @@ h1, h2, h3, h4, .font-display { font-family: var(--font-display); letter-spacing
 
 .page-enter { animation: fade-up .38s var(--ease-out) both; }
 .enter { animation: fade-up .45s var(--ease-out) both; animation-delay: calc(var(--i, 0) * 55ms); }
+/* Small, purposeful motion: content revealed after an action, a stage switch, a confirmation */
+.fade-up { animation: fade-up .3s var(--ease-out) both; }
+.stage-enter { animation: fade-up .32s var(--ease-out) both; }
+@keyframes bar-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.bar-grow { transform-origin: left center; animation: bar-grow .6s var(--ease-out) both; }
 .anim-pop { animation: pop .35s var(--ease-spring); }
 .anim-shake { animation: shake .4s ease; }
 .anim-celebrate { animation: celebrate .6s var(--ease-spring) both; }

@@ -7,6 +7,13 @@ minutes: 35
 summary: Purpose answers "why, with what aim?"; result answers "with what consequence?". English has a range of structures for each, from the everyday "to" to the formal "lest" and "in order that".
 links: extends>linking-contrast-concession>Linking and concession>B2+>published ; contrasts_with>verb-patterns>Verb patterns>B2>published
 ---
+## core | core | Core concept
+A **purpose** clause states an aim: why someone does something. A **result** clause states a consequence: what happened because of something. They can look similar (both often use *so*), so the key question is: *is this an intention or an outcome?*
+!rule Purpose: *to / in order to / so as to* + infinitive; *so that* + subject + *can/could/will/would*. Result: *so* + adjective/adverb + *that*; *such (a)* + noun + *that*.
+> ex: She moved to Vienna **to be** closer to her family. || purpose: her aim
+> ex: The lecture was **so** dense **that** most of us gave up. || result: what happened
+> ex: I left early **so that** I **wouldn't** miss the train. || purpose with a different subject or a modal
+
 ## overview | overview | Overview and purpose
 A **purpose** clause states an intention: *She moved to Vienna **to be** closer to her family.* A **result** clause states a consequence: *The lecture was **so** dense **that** most of us gave up.* Advanced learners need a range of both, because repeating *so* and *to* makes writing monotonous, and because some structures carry formal or negative meanings that others do not.
 
@@ -70,14 +77,13 @@ The modal verb is the clue: purpose clauses with *so that / in order that* usual
 !register Neutral: *to, so that, so ... that*. Formal: *in order to, in order that, so as to, consequently, thus, hence*. Very formal or literary: *lest, for fear that, such that* (*The design is **such that** maintenance is minimal*).
 In academic writing, *in order to* is often wordy: *In order to test the hypothesis, we ...* can usually be *To test the hypothesis, we ...*. Use *in order to* when the purpose needs emphasis or would otherwise be ambiguous.
 
-## errors | errors | Common mistakes advanced learners make
-> x: I came here for study English. || I came here to study English.
-> x: She saved money for to buy a car. || She saved money to buy a car.
-> x: It was so a difficult exam that many failed. || It was such a difficult exam that ... / The exam was so difficult that ...
-> x: Take my number so that you call me. || Take my number so that you can call me.
-> x: He is enough tall to reach it. || He is tall enough to reach it.
-> x: The room was too much small. || The room was much too small. / The room was far too small.
-
+## errors | errors | Common mistakes
+!! I came here for study English. || I came here to study English. || To express a purpose with a verb, use *to* + infinitive, not *for*.
+!! She saved money for to buy a car. || She saved money to buy a car. || *For to* is never correct; the *to*-infinitive alone already expresses the purpose.
+!! It was so a difficult exam that many failed. || It was such a difficult exam that many failed. / The exam was so difficult that many failed. || *So* + adjective alone; *such (a)* + adjective + noun.
+!! Take my number so that you call me. || Take my number so that you can call me. || *So that* normally takes a modal (*can, could, will, would*).
+!! He is enough tall to reach it. || He is tall enough to reach it. || *Enough* comes after an adjective but before a noun.
+!! The room was too much small. || The room was much too small. / The room was far too small. || Modify *too* with *much* or *far* in front of it.
 ## advanced | advanced | Advanced applications
 #### Inverted result clauses
 For emphasis: ***So** severe **was** the damage **that** the bridge had to be closed.* ***Such was** the demand **that** tickets sold out in minutes.* These inversions are formal and rhetorical.
@@ -168,3 +174,39 @@ The witnesses were kept apart ___ they should influence one another. (one word, 
 Rewrite with *so much so that*: *The project was popular. The council extended it for two years.*
 = The project was popular, so much so that the council extended it for two years.
 > *So much so that* emphasises the degree that led to the result.
+
+=== recognise
+@title Notes on the new library rules
++ The opening hours have been extended [[so that]] students [[can]] study in the evening. || purpose: *so that* + modal
++ The reading room is [[so]] popular [[that]] seats must now be booked. || result: *so* + adjective + *that*
+- Booking opens every Monday at nine.
++ Phones must be silenced [[in order not to]] disturb other readers. || negative purpose: *in order not to*
++ It was [[such a]] successful trial [[that]] the system will continue. || result: *such a* + adjective + noun
+- Feedback forms are available at the desk.
+
+=== check
+### [mc] I wrote down the address ___ forget it.
+- so as not
++ so as not to
+- for not
+> Negative purpose: *so as not to* / *in order not to* + infinitive.
+### [mc] It was ___ good film that we watched it twice.
+- so
++ such a
+- so a
+> *Such a* + adjective + singular noun.
+### [mc] She spoke slowly ___ everyone could follow.
++ so that
+- in order to
+- so as
+> A purpose with a different subject: *so that* + subject + modal.
+### [explain] Explain the difference between *He left early so that he could catch the train* and *He left early, so he caught the train*.
+= The first expresses his aim (we don't know if he caught it). The second expresses the result: he did catch it.
+> *So that* = purpose; *, so* = result.
+
+=== produce
+Write 5–6 sentences about changes you made to your daily routine and their effects. Include both aims and consequences.
+- I used *to*, *in order to* or *so as to* for at least one purpose.
+- I used *so that* + subject + modal at least once.
+- I used *so … that* or *such … that* for a result.
+- I used *too* or *enough* correctly.

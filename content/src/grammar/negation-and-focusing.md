@@ -7,6 +7,13 @@ minutes: 40
 summary: Where you put "not" or "only" decides what you are denying or highlighting. Advanced English uses negative transfer, negative quantifiers and understatement to make claims precise and tactful.
 links: extends>inversion-and-emphasis>Inversion and emphasis>C1>published ; extends>indirect-questions-and-tags>Questions and tags>B2>published ; contrasts_with>adjectives-adverbs-and-intensifiers>Intensifiers>B2>published
 ---
+## core | core | Core concept
+A negative or focusing word does not affect the whole sentence equally; it applies to a particular part of it, called its **scope**. Moving *not*, *only* or *even* can change what you are claiming. Advanced English also follows conventions for negating politely, such as *I don't think…* rather than *I think… not*.
+!rule Put *not, only, even* as close as possible to the part you want to negate or focus on. Negate the opinion verb, not the clause: *I don't think it's fair*.
+> ex: **Not all** the students passed. || some failed
+> ex: **Only** Maria passed the test. || nobody else passed
+> ex: Maria **only** passed the test. || she passed, but only just, or did nothing more
+
 ## overview | overview | Overview and purpose
 *All the students didn't pass* and *Not all the students passed* look similar but can mean different things. *I don't think it's fair* is more natural than *I think it isn't fair*. *Only* in different positions changes the claim. This lesson is about **what** a negative or focusing word applies to — its **scope** — and the conventions English uses to negate politely and precisely.
 
@@ -67,14 +74,13 @@ After negative adverbs, use positive tags: *She **seldom** complains, **does** s
 !register Formal: *no, none, neither, nor, scarcely, seldom, little, few*. Neutral/informal: *not any, not ... either, hardly, me neither*. Double negatives (*I don't know nothing*) are features of some dialects and informal speech, but non-standard in writing.
 Litotes and negative transfer are key politeness devices in British English: *That's **not the best** idea* often means *That's a bad idea*. Be aware of this when interpreting feedback.
 
-## errors | errors | Common mistakes advanced learners make
-> x: I think it isn't a good idea. || I don't think it's a good idea.
-> x: All the students didn't pass the exam. (meaning some failed) || Not all the students passed the exam.
-> x: I don't like coffee too. || I don't like coffee either.
-> x: He hardly didn't sleep. || He hardly slept.
-> x: Few people came, so it was crowded. || Few people came, so it was quiet. / A few people came ... (meaning changes)
-> x: None of us have no idea. || None of us has any idea. / None of us have any idea.
-
+## errors | errors | Common mistakes
+!! I think it isn't a good idea. || I don't think it's a good idea. || English normally negates the opinion verb (*think, believe, expect*), not the clause after it.
+!! All the students didn't pass the exam. (meaning some failed) || Not all the students passed the exam. || *Not all* makes the scope clear: some passed, some didn't.
+!! I don't like coffee too. || I don't like coffee either. || In negative sentences, *too* becomes *either*.
+!! He hardly didn't sleep. || He hardly slept. || *Hardly* is already negative; do not add *not*.
+!! None of us have no idea. || None of us has any idea. / None of us have any idea. || One negative is enough; after a negative, use *any*.
+!! Few people came, so it was crowded. || Few people came, so it was quiet. || *Few* means "not many" (a negative idea); *a few* means "some".
 ## advanced | advanced | Advanced applications
 #### Negative inversion for rhetoric
 ***Under no circumstances** should the data be shared. **Not only** was it late, it was incomplete. **At no point** did the minister apologise.* (See the inversion lesson.)
@@ -168,3 +174,39 @@ Which phrase presents 12% as disappointingly small?
 Correct the double negative: *Nobody didn't say nothing about it.*
 = Nobody said anything about it.
 > Standard English allows one negative per clause.
+
+=== recognise
+@title Feedback on a draft
++ [[I don't think]] the introduction is long enough. || negating the opinion verb
++ [[Not all]] of your sources are recent. || *not all*: partial negation
+- Your conclusion is clear and well argued.
++ You have [[hardly]] mentioned the counter-arguments. || *hardly*: almost not, a negative adverb
++ [[Only]] the second section needs major changes. || *only* focusing on one part
++ [[Even]] the tables are well formatted. || *even*: something surprising added
+
+=== check
+### [mc] Which sentence means that some people did not agree?
+- All the members didn't agree.
++ Not all the members agreed.
+- All the members agreed not.
+> *Not all* clearly limits the negation to part of the group.
+### [mc] "I can't swim." "I can't ___."
+- too
++ either
+- also
+> *Either* in negative agreement.
+### [mc] There's ___ milk left; we need to buy some.
++ hardly any
+- hardly no
+- not hardly any
+> *Hardly* + *any*: one negative only.
+### [explain] Explain the difference between *Only I saw the film* and *I only saw the film*.
+= *Only I saw the film* means nobody else saw it. *I only saw the film* means that seeing it is all I did (I didn't read the book, for example), or that I saw only that film.
+> The position of *only* changes what it focuses on.
+
+=== produce
+Write 5–6 sentences giving balanced feedback on a plan, a draft or a product. Be precise about what is and isn't a problem.
+- I negated an opinion verb (*I don't think / I don't believe*).
+- I used *not all* or *not every* for a partial negative.
+- I used *only* or *even* in a position that focuses on the right word.
+- I used *hardly / few / little* without an extra *not*.

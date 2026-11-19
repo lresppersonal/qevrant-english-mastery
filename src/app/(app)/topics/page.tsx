@@ -14,12 +14,12 @@ export default function Topics() {
         <section key={g} className="mb-8">
           <h2 className="eyebrow mb-3">{g}</h2>
           <ul className="grid gap-3 sm:grid-cols-2">
-            {themes.filter((t) => t.group === g).map((t) => {
+            {themes.filter((t) => t.group === g).map((t, i) => {
               const v = itemsInTheme(t.slug).length;
               const r = readingTexts.filter((x) => (x.category ?? x.topics[0]) === t.slug).length;
               const w = writingPrompts.filter((x) => x.topics.includes(t.slug)).length;
               return (
-                <li key={t.slug}>
+                <li key={t.slug} className="enter" style={{ ["--i" as string]: Math.min(i, 8) }}>
                   <Link href={`/topics/${t.slug}`} className="card card-link flex h-full flex-col p-5 ">
                     <span className="text-lg font-bold">{t.title}</span>
                     <span className="mt-1 flex-1 text-muted">{t.summary}</span>

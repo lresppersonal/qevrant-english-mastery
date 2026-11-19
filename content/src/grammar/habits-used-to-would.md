@@ -8,6 +8,12 @@ summary: Several structures talk about typical behaviour. They differ in time (p
 links: extends>future-forms>Future forms (will for assumptions)>B2>published
 sources: Speakout C1–C2 8B ; Destination C1&C2 Unit 3
 ---
+## core | core | Core concept
+These forms all describe what is **typical**, but they look at habits from different angles. *Used to* and *would* look back at past habits that are no longer true. *Be used to* is completely different: it describes something that feels **normal and familiar** to you now.
+!rule *used to* + infinitive = a past habit or state, now finished · *would* + infinitive = a repeated past action (not a state) · *be/get used to* + *-ing* or a noun = be or become accustomed to.
+> ex: I **used to** cycle to work. || I did it regularly; I don't any more.
+> ex: I**'m used to** cycling in traffic. || It feels normal to me now.
+
 ## overview | overview | Definition and function
 Habitual forms describe things that happened regularly or were true for a long period. **used to** and **would** look back at past habits; **be/get used to** describes familiarity; **will** and **would** can describe typical (sometimes annoying) behaviour.
 > ex: We **used to** live by the sea. Every summer we **would** swim before breakfast.
@@ -51,10 +57,11 @@ These are completely different from *used to* + infinitive. They mean *be/become
 !warning *Used to* and *would* need a past time frame. Don't use them with a specific number of times: ~~I used to visit Rome three times~~ → *I visited Rome three times.*
 
 ## errors | errors | Common mistakes
-> x: I am used to live in a big city. || *I'm used to living…* (familiar) or *I used to live…* (past habit).
-> x: I would have a dog when I was a child. || State → *I used to have a dog.*
-> x: I use to go to the gym. || For present habits use the present simple: *I usually go…*
-
+!! I am used to live in a big city. || I'm used to living in a big city. / I used to live in a big city. || *Be used to* is followed by *-ing* (familiarity); *used to* + infinitive describes a past habit. Choose the meaning you need.
+!! I would have a dog when I was a child. || I used to have a dog when I was a child. || *Would* describes repeated actions, not states such as *have, live, be* or *believe*.
+!! I use to go to the gym. || I usually go to the gym. || *Used to* has no present form; for present habits use the present simple, often with an adverb.
+!! Did you used to live here? || Did you use to live here? || After *did* the verb is in the base form: *use to*.
+!! I can't get used to wake up early. || I can't get used to waking up early. || In *get used to*, *to* is a preposition, so it is followed by a noun or an *-ing* form.
 ## register | register | Formal and academic use
 In formal writing, prefer *formerly*, *traditionally*, *in the past* or *tended to*: *Families traditionally ate together*; *Earlier studies tended to overlook gender.* *Would* for past habit is more literary and narrative.
 
@@ -132,3 +139,40 @@ Complete with 3–4 words. ‘Working at night still feels strange to me.’ →
 Rewrite more formally: ‘In the past, families used to eat together.’ → ‘Families ___ ate together.’
 = traditionally | formerly
 > Formal writing prefers adverbs such as *traditionally* or *formerly*.
+
+=== recognise
+@title My grandmother's village
++ When I was small, we [[used to]] spend every August at my grandmother's house. || *used to*: a past habit that has ended
++ Every morning she [[would]] wake us at six to collect the eggs. || *would*: a repeated past action in a nostalgic description
+- The house stood at the end of a dirt road.
++ There [[used to]] be a bakery opposite, but it closed years ago. || *used to* with a state: *would* is not possible here
+- Last year I went back for the first time.
++ I live in a city now, so I[['m not used to]] the silence at night any more. || *be used to* + noun: familiarity, not a past habit
+- It took me three nights to sleep properly.
+
+=== check
+### [mc] When we were students, we ___ talk for hours in the café downstairs.
++ would
+- were used to
+- use to
+> A repeated past action in a nostalgic description: *would* (or *used to*).
+### [mc] I ___ have long hair, but I cut it last year.
+- would
++ used to
+- am used to
+> *Have* here is a state, so only *used to* is possible.
+### [mc] She's from Oslo, so she ___ cold winters.
+- used to
++ is used to
+- would
+> *Be used to* + noun: the cold feels normal to her.
+### [explain] Explain the difference between *I used to drive on the left* and *I'm used to driving on the left*.
+= The first is a past habit that has ended: I don't drive on the left now. The second means that driving on the left feels normal and easy for me.
+> *Used to* + infinitive looks back; *be used to* + *-ing* describes present familiarity.
+
+=== produce
+Write 5–6 sentences comparing your life ten years ago with now. Describe past habits and states, and something you have had to get used to.
+- I used *used to* for at least one past state (for example *live, have, be*).
+- I used *would* only for repeated actions, not for states.
+- I used *be used to* or *get used to* followed by an *-ing* form or a noun.
+- My present habits are in the present simple, not *use to*.

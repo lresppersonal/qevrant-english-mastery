@@ -7,6 +7,13 @@ minutes: 40
 summary: English has a small but important subjunctive: the base form after demands and recommendations, and "were" for unreal situations. Together with as if, suppose and but for, it lets you talk precisely about the hypothetical.
 links: prerequisite>conditionals-and-unreal-past>Conditionals and the unreal past>B2+>published ; extends>modals-and-modality>Modality>C1>published ; contrasts_with>noun-clauses>Noun clauses>B2+>published
 ---
+## core | core | Core concept
+English uses a few special verb forms to show that something is **not a fact**: it is required, recommended, imagined or hypothetical. The most important are the **mandative subjunctive** (*insist that he **be** present*) and the **were-subjunctive** (*if I **were** you*). They are not about time; they mark meaning.
+!rule After verbs and adjectives of demand or importance (*insist, recommend, essential, vital*), formal English uses the base form for every person: *that she **attend**, that they **be** informed*.
+> ex: The committee recommended that the report **be** published. || a requirement, not a fact (formal)
+> ex: He behaves as if he **were** the owner. || imagined: he isn't
+In everyday British English, *should* + infinitive (*that she should attend*) or an ordinary tense (*that she attends*) is common. Recognise all three, and use the subjunctive in formal writing.
+
 ## overview | overview | Overview and purpose
 Compare *The board insisted that the director **resigns*** (British, everyday), *... that the director **should resign*** (British, neutral) and *... that the director **resign*** (formal; standard in American English). The last uses the **mandative subjunctive**: the base form of the verb for every person, with no *-s* and no tense. Alongside it, the **were-subjunctive** (*If I **were** you, as if he **were** in charge*) marks situations as unreal. These forms are few, but they appear in exactly the contexts advanced users need: formal recommendations, legal and academic texts, and careful hypothetical reasoning.
 
@@ -62,14 +69,13 @@ Regulations, minutes, academic recommendations: *The committee proposes that the
 !register The mandative subjunctive is formal in British English and sounds natural in legal, academic and institutional writing. In conversation British speakers prefer *should* or the indicative. American English uses the subjunctive in all registers after *insist, recommend, suggest*.
 Formulaic subjunctives (*be that as it may, suffice it to say, come what may*) are stylistically marked: one per text can add elegance; several sound archaic.
 
-## errors | errors | Common mistakes advanced learners make
-> x: The doctor recommended that he takes more rest. (in formal writing) || The doctor recommended that he take more rest. / ... that he should take more rest.
-> x: It is essential that she doesn't be late. || It is essential that she not be late. / ... that she should not be late.
-> x: He talks as if he knows everything, but he knows nothing. || He talks as if he knew everything ... (unreal)
-> x: It's time we leave. || It's time we left. / It's time to leave.
-> x: I'd rather you don't tell anyone. || I'd rather you didn't tell anyone.
-> x: But for your advice, I would make a mistake. (past event) || But for your advice, I would have made a mistake.
-
+## errors | errors | Common mistakes
+!! The doctor recommended that he takes more rest. (formal writing) || The doctor recommended that he take more rest. / … that he should take more rest. || After *recommend that*, formal English uses the base form or *should* + infinitive.
+!! It is essential that she doesn't be late. || It is essential that she not be late. / … that she should not be late. || The negative subjunctive is *not* + base form, with no *do*.
+!! He talks as if he knows everything, but he knows nothing. || He talks as if he knew everything. || When the comparison is clearly unreal, use a past form after *as if*.
+!! It's time we leave. || It's time we left. / It's time to leave. || After *it's time* + subject, use the past form for the present.
+!! I'd rather you don't tell anyone. || I'd rather you didn't tell anyone. || *Would rather* + another subject takes a past form for the present or future.
+!! But for your advice, I would make a mistake. (about a past event) || But for your advice, I would have made a mistake. || A hypothetical past result needs *would have* + past participle.
 ## advanced | advanced | Advanced applications
 #### Inverted hypotheticals
 ***Were** the government **to** abandon the target, credibility would suffer. **Had** we **known**, we would have acted. **Should** you **require** assistance, please contact us.* These are formal alternatives to *if*-clauses; *should* expresses an unlikely but possible event.
@@ -160,3 +166,39 @@ Choose the best formal continuation: *The regulations require that each applican
 Rewrite as a thought experiment beginning *Suppose*: *Imagine that the internet stopped working tomorrow. How would we cope?*
 = Suppose the internet stopped working tomorrow. How would we cope? | Suppose that the internet stopped working tomorrow. How would we cope?
 > *Suppose* + past for an imagined scenario.
+
+=== recognise
+@title Minutes of the board meeting
++ The chair proposed that the annual report [[be]] published in both languages. || mandative subjunctive: base form after *propose that*
+- The finance director presented the figures.
++ Several members insisted that the auditor [[attend]] the next meeting. || mandative subjunctive: no *-s* with a singular subject
++ It is vital that the new policy [[not be]] delayed any further. || negative subjunctive: *not* + base form
+- The meeting closed at 7 p.m.
++ One member spoke as though the decision [[were]] already final. || *were* after *as though*: an unreal comparison
+
+=== check
+### [mc] The regulations require that every visitor ___ a badge.
+- wears
++ wear
+- wore
+> Formal *require that*: base form for every person (*wear*).
+### [mc] Which sentence is formal and correct?
+- It's crucial that he doesn't miss the deadline.
++ It is crucial that he not miss the deadline.
+- It is crucial that he don't miss the deadline.
+> The negative subjunctive: *not* + base form.
+### [mc] If I ___ in your position, I would accept the offer.
+- am
+- will be
++ were
+> An imagined situation: *were* for all persons in careful English.
+### [explain] Why does *I'd rather you came tomorrow* use a past form for a future action?
+= After *would rather* + another person, the past form shows a preference about something that has not happened; it marks the action as hypothetical, not past.
+> The same "unreal past" appears after *it's time*, *wish* and *if only*.
+
+=== produce
+Write a short formal recommendation (4–5 sentences) from a committee about a change at a school or workplace. Then add one informal sentence giving your own opinion with *I'd rather* or *it's time*.
+- I used the mandative subjunctive at least twice (*recommend / insist / essential that* + base form).
+- I used a negative subjunctive (*that … not be*).
+- I used *were* in an unreal comparison or condition.
+- My informal sentence uses *I'd rather you* or *it's time we* + past form.

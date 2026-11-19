@@ -1,3 +1,4 @@
+import { ContextBackLink } from "@/components/NavMemory";
 import Link from "next/link";
 import { Suspense } from "react";
 import { SpeakingSuggestions } from "@/components/SpeakingSuggestions";
@@ -13,6 +14,7 @@ const FORMAT = { interview: "Interview Â· Part 1 style", long_turn: "Long turn Â
 export default function SpeakingIndex() {
   return (
     <>
+      <ContextBackLink />
       <PageHeader eyebrow="Learn" title="Speaking"
         intro="Generate a random topic, prepare, speak against the clock and get AI practice feedback on fluency, vocabulary and grammar, with an estimated IELTS-style band." />
       <Suspense fallback={<div className="skeleton h-64 rounded-2xl" />}><SpeakingStudio /></Suspense>

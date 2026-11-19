@@ -178,6 +178,16 @@ function parseBlocks(lines: string[], where: string): Block[] {
       while (i < lines.length && lines[i].trim().startsWith("|")) rows.push(lines[i++].trim().replace(/^\||\|$/g, "").split("|").map((c) => c.trim()));
       i--; blocks.push({ type: "table", head: rows[0], rows: rows.slice(1) }); continue;
     }
+    if (l.startsWith("!! ")) {
+      flush();
+      const rows: { wrong: string; right: string; why: string }[] = [];
+      while (i < lines.length && lines[i].trim().startsWith("!! ")) {
+        const parts = lines[i++].trim().slice(3).split("||").map((x) => x.trim());
+        if (parts.length !== 3 || parts.some((x) => !x)) fail(where, `mistake needs "wrong || right || why": ${parts.join(" || ")}`);
+        rows.push({ wrong: parts[0], right: parts[1], why: parts[2] });
+      }
+      i--; blocks.push({ type: "mistakes", rows } as Block); continue;
+    }
     const note = l.match(/^!(tip|warning|register)\s+(.*)$/);
     if (note) { flush(); blocks.push({ type: "note", tone: note[1], text: note[2] }); continue; }
     para.push(l);
@@ -218,12 +228,63 @@ function parsePractice(text: string, lessonSlug: string, where: string) {
   return qs;
 }
 
+/** Recognise passage:  @title …  then one sentence per line: "+ text || why" (uses the structure) or "- text". */
+function parseRecognise(text: string, where: string) {
+  const lines = text.split("\n").map((x) => x.trim()).filter(Boolean);
+  const title = lines.find((l) => l.startsWith("@title "))?.slice(7).trim();
+  if (!title) fail(where, "recognise needs @title");
+  const sentences = lines.filter((l) => /^[+-] /.test(l)).map((l) => {
+    const [t, note] = l.slice(2).split("||").map((x) => x.trim());
+    return { text: t, has: l.startsWith("+"), ...(note ? { note } : {}) };
+  });
+  if (sentences.filter((x) => x.has).length < 2 || sentences.filter((x) => !x.has).length < 1) fail(where, "recognise needs at least 2 + and 1 - sentences");
+  for (const x of sentences) if (x.has && !/\[\[.+?\]\]/.test(x.text)) fail(where, `recognise + sentence must mark the form with [[…]]: ${x.text}`);
+  return { title, sentences };
+}
+/** Quick check:  ### [mc] prompt / - wrong / + right / > why   or   ### [explain] prompt / = model answer / > why */
+function parseCheck(text: string, where: string) {
+  return text.split(/^### /m).slice(1).map((chunk, n) => {
+    const [head, ...rest] = chunk.split("\n");
+    const kind = head.match(/^\[(mc|explain)\]/)?.[1];
+    if (!kind) fail(where, `check item ${n + 1}: header must be [mc] or [explain]`);
+    const prompt: string[] = [head.replace(/^\[\w+\]\s*/, "")].filter(Boolean); const opts: { t: string; ok: boolean }[] = []; let model = ""; let expl = "";
+    for (const l of rest.map((x) => x.trim()).filter(Boolean)) {
+      if (l.startsWith("- ")) opts.push({ t: l.slice(2), ok: false });
+      else if (l.startsWith("+ ")) opts.push({ t: l.slice(2), ok: true });
+      else if (l.startsWith("= ")) model = l.slice(2);
+      else if (l.startsWith("> ")) expl += (expl ? " " : "") + l.slice(2);
+      else prompt.push(l);
+    }
+    if (!expl) fail(where, `check item ${n + 1} has no explanation`);
+    if (kind === "mc") {
+      if (opts.filter((o) => o.ok).length !== 1) fail(where, `check item ${n + 1} needs exactly one + option`);
+      return { kind: "choice", id: `c${n + 1}`, prompt: prompt.join(" "), options: opts.map((o) => o.t), answer: opts.findIndex((o) => o.ok), explanation: expl };
+    }
+    if (!model) fail(where, `check item ${n + 1} needs = model answer`);
+    return { kind: "explain", id: `c${n + 1}`, prompt: prompt.join(" "), model, explanation: expl };
+  });
+}
+/** Produce:  first paragraph = the task; "- " lines = self-check list. */
+function parseProduce(text: string, where: string) {
+  const lines = text.split("\n").map((x) => x.trim()).filter(Boolean);
+  const checklist = lines.filter((l) => l.startsWith("- ")).map((l) => l.slice(2));
+  const prompt = lines.filter((l) => !l.startsWith("- ")).join(" ");
+  if (!prompt || checklist.length < 2) fail(where, "produce needs a task and at least 2 checklist lines");
+  return { prompt, checklist };
+}
+
 const lessons: Record<string, unknown>[] = [];
 const exercises: Record<string, unknown>[] = [];
 for (const { f, text } of read(path.join(SRC, "grammar"))) {
   const where = `grammar/${f}`;
   const { meta, body } = parseFront(text, where);
-  const [theoryText, practiceText = ""] = body.split(/^=== practice\s*$/m);
+  // The theory comes first; then optional blocks, each introduced by "=== name" on its own line.
+  const pieces = body.split(/^=== (\w+)\s*$/m);
+  const theoryText = pieces[0];
+  const extra: Record<string, string> = {};
+  for (let k = 1; k < pieces.length; k += 2) extra[pieces[k]] = pieces[k + 1] ?? "";
+  for (const k of Object.keys(extra)) if (!["practice", "recognise", "check", "produce"].includes(k)) fail(where, `unknown block "=== ${k}"`);
+  const practiceText = extra.practice ?? "";
   const sections = theoryText.split(/^## /m).slice(1).map((chunk) => {
     const [head, ...rest] = chunk.split("\n");
     const [id, kind, title] = head.split("|").map((x) => x.trim());
@@ -233,7 +294,10 @@ for (const { f, text } of read(path.join(SRC, "grammar"))) {
   const sources = list(meta.sources).map((s) => { const m = s.match(/^(.*?)\s+(Unit\s+\d+|\d+[A-D]?)\s*$/); return { book: m ? m[1] : s, unit: m ? m[2].replace("Unit ", "") : "-", confidence: "verified" }; });
   const practiceSlug = `${meta.slug}-practice`;
   const questions = parsePractice(practiceText, meta.slug, where);
-  lessons.push({ ...META, id: "", slug: meta.slug, title: meta.title, level: meta.level, domain: meta.domain, topics: list(meta.topics).length ? list(meta.topics) : ["education"], summary: meta.summary, minutes: Number(meta.minutes || 25), sections, links, exercises: [practiceSlug], sources });
+  lessons.push({ ...META, id: "", slug: meta.slug, title: meta.title, level: meta.level, domain: meta.domain, topics: list(meta.topics).length ? list(meta.topics) : ["education"], summary: meta.summary, minutes: Number(meta.minutes || 25), sections, links, exercises: [practiceSlug], sources,
+    ...(extra.recognise ? { recognise: parseRecognise(extra.recognise, `${where} › recognise`) } : {}),
+    ...(extra.check ? { check: parseCheck(extra.check, `${where} › check`) } : {}),
+    ...(extra.produce ? { produce: parseProduce(extra.produce, `${where} › produce`) } : {}) });
   exercises.push({ ...META, id: "", slug: practiceSlug, title: `${meta.title}: practice`, skill: "grammar", format: "mixed", level: meta.level, topics: [], target: { type: "lesson", ref: meta.slug }, instructions: "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.", questions });
 }
 

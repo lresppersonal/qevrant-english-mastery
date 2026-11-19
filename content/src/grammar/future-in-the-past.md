@@ -7,6 +7,13 @@ minutes: 35
 summary: To talk about a past moment's future — plans, predictions, destinies and plans that failed — English shifts future forms into the past. The choice signals whether the future happened.
 links: prerequisite>future-forms>Future forms>B2>published ; extends>narrative-tenses>Narrative tenses>B2+>published ; contrasts_with>modals-and-modality>Modality>C1>published
 ---
+## core | core | Core concept
+Sometimes you stand at a point in the past and look **forward** from it. The future-in-the-past forms describe what was planned, expected or destined *at that time*, whether or not it actually happened.
+!rule Take an ordinary future form and move it into the past: *will → would*, *am going to → was going to*, *am about to → was about to*, *am to → was to*.
+> ex: In 1995 few people imagined that the internet **would** change everything. || an expectation, seen from 1995
+> ex: I **was going to** call you, but my phone died. || a plan that was not carried out
+The key question is always: *where is the viewpoint?* If it is in the past and you are looking ahead from it, you need one of these forms.
+
 ## overview | overview | Overview and purpose
 When we narrate or report, we often need to look forward from a point in the past: *In 1990 nobody knew that the internet **would** change everything.* *I **was going to** call you, but my phone died.* *She **was to** become the first woman to lead the institute.* These forms are the past-shifted versions of ordinary future forms. They allow a narrator to show plans, expectations, destinies and **unfulfilled intentions** with precision.
 
@@ -64,14 +71,13 @@ Whether the future event actually happened is often left open, or clarified by c
 !register *Was to* for destiny and *was to have done* for cancelled arrangements are formal and typical of historical narrative, biography and news. In conversation, *was going to* covers most cases.
 Foreshadowing with *would* (*It would prove a costly mistake*) is a hallmark of narrative non-fiction and quality journalism; it creates suspense from hindsight.
 
-## errors | errors | Common mistakes advanced learners make
-> x: I knew she will pass the exam. || I knew she would pass the exam.
-> x: I was going to call you but I have forgotten. || I was going to call you, but I forgot.
-> x: The concert was to be held last week but was cancelled. (fine) / The concert was to held last week. || The concert was to be held last week.
-> x: We were about leaving when it started raining. || We were about to leave when it started raining.
-> x: The bridge was to open in 2020, but it didn't. (correct) / The bridge was to have open in 2020. || The bridge was to have opened in 2020.
-> x: He said he is going to come, but he didn't. || He said he was going to come, but he didn't.
-
+## errors | errors | Common mistakes
+!! I knew she will pass the exam. || I knew she would pass the exam. || The viewpoint (*I knew*) is in the past, so *will* becomes *would*.
+!! I was going to call you, but I have forgotten. || I was going to call you, but I forgot. || The whole sequence is in the past: the plan and its failure both belong there.
+!! The concert was to held last week. || The concert was to be held last week. || *Was to* is followed by an infinitive; the passive infinitive is *be held*.
+!! We were about leaving when it started raining. || We were about to leave when it started raining. || *Be about* takes *to* + infinitive, not *-ing*.
+!! The bridge was to have open in 2020. || The bridge was to have opened in 2020. || *Was to have* + past participle describes a plan that did not happen.
+!! He said he is going to come, but he didn't. || He said he was going to come, but he didn't. || After a past reporting verb, *is going to* normally becomes *was going to*, especially when the plan failed.
 ## advanced | advanced | Advanced applications
 #### Foreshadowing for rhetorical effect
 *It **was to prove** a turning point.* *This decision **would come back** to haunt the government.* Narrative hindsight adds drama to historical or analytical writing.
@@ -162,3 +168,40 @@ Choose the best continuation: *The decision seemed minor at the time, but it ___
 Report the promise: *"I'll send the documents tomorrow," he said.*
 = He said he would send the documents the next day. | He said that he would send the documents the next day. | He said he would send the documents the following day.
 > *Will → would*; *tomorrow → the next/following day*.
+
+=== recognise
+@title A biography in brief
++ When Ada left school in 1998, she had no idea that she [[would]] one day run the national archive. || *would*: a later outcome seen from a past viewpoint
+- She started as a part-time cataloguer.
++ She [[was going to]] study law, but a summer job changed her mind. || *was going to*: a plan that was not carried out
++ Ten years later she [[was to]] become the youngest director in the archive's history. || *was to*: what lay ahead, in a formal narrative
+- Her colleagues remember her as patient and precise.
++ In 2020 she [[was about to]] announce a digitisation programme when the pandemic struck. || *was about to*: something on the point of happening
+- The programme finally launched two years later.
+
+=== check
+### [mc] I ___ phone you last night, but I fell asleep.
++ was going to
+- will
+- would have
+> A plan in the past that was not carried out: *was going to*.
+### [mc] Nobody suspected that the small start-up ___ a global brand.
+- will become
++ would become
+- is about to become
+> The viewpoint is in the past (*nobody suspected*), so *will* becomes *would*.
+### [mc] Which sentence describes a plan that did NOT happen?
+- The new law was to come into force in May.
++ The new law was to have come into force in May.
+- The new law was going to come into force, and it did.
+> *Was to have* + past participle signals that the plan was not fulfilled.
+### [explain] Why might a historian write *He was to die in exile ten years later* rather than *He died in exile ten years later*?
+= *Was to* looks forward from the point reached in the story and presents the later event as what lay ahead for him; the past simple simply reports the fact.
+> This is a formal narrative use: the viewpoint stays in the story's past while revealing the future.
+
+=== produce
+Write 4–5 sentences about a turning point in someone's life, real or invented. Describe what they expected, what they planned and what was in fact to happen.
+- I used *would* for something expected or predicted from a past viewpoint.
+- I used *was going to* for a plan that did not happen, followed by what happened instead.
+- I used *was to* or *was about to* at least once.
+- My reporting verbs are in the past, and the forms after them have moved back correctly.

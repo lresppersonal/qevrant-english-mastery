@@ -7,6 +7,13 @@ minutes: 35
 summary: Long subjects, collective nouns, quantifiers and coordinated phrases make agreement surprisingly hard. Learn the grammatical rule, the "notional" exceptions, and what careful writers choose.
 links: extends>articles-and-noun-phrases>Articles and noun phrases>B2>published ; contrasts_with>noun-clauses>Noun clauses>B2+>published
 ---
+## core | core | Core concept
+The verb agrees with the **head noun** of its subject, not with the noun that happens to be nearest. In short sentences this is easy; in academic writing subjects are long (*The impact of these policies on rural communities…*), so the head noun can be several words away from the verb.
+!rule Find the head noun, then make the verb agree with it. *The results of the survey **show**…* (head = *results*). *The number of cars **has** risen* (head = *number*).
+> ex: The **impact** of these policies on rural communities **has** been significant. || head noun *impact*: singular
+> ex: A **number** of problems **have** been reported. || *a number of* = several: plural
+Some nouns follow meaning rather than form: *the police **are***, *the government **is/are*** (British English allows both), *data **are/is***.
+
 ## overview | overview | Overview and purpose
 In English the verb agrees with its **subject** in number: *The report **is** late*, *The reports **are** late*. At B1 this looks trivial. At C1 it is one of the most frequent errors in academic writing, because real subjects are long (*The impact of these policies on rural communities…*), because some nouns are grammatically singular but refer to groups (*the government, the staff*), and because quantifiers and coordinated phrases follow their own logic.
 !rule Find the **head noun** of the subject and make the verb agree with it, not with the noun closest to the verb. Then check whether the meaning (notional agreement) overrides the grammar.
@@ -69,15 +76,13 @@ Two subjects joined by *and* are plural, unless they form a single idea (*Resear
 !register Academic style favours **grammatical** agreement and singular verbs after *none, neither, each* and *either*. Conversation freely uses plural (*Neither of them are coming*), and this is not a mistake in speech.
 Informal speech also uses *there's* with plural nouns (*There's three reasons*), which careful writing avoids. In BrE journalism plural verbs with organisations are common (*Arsenal **are** through to the final*, *the BBC **have** apologised*); in academic and American English the singular is safer.
 
-## errors | errors | Common mistakes advanced learners make
-> x: The results of the survey shows a clear pattern. || The results of the survey **show** a clear pattern. (head = *results*)
-> x: The number of cars have increased. || The number of cars **has** increased.
-> x: Every student and teacher have a card. || Every student and teacher **has** a card. (*every* makes the subject singular)
-> x: One of the main reasons are cost. || One of the main reasons **is** cost.
-> x: The police has arrested a suspect. || The police **have** arrested a suspect.
-> x: These criteria is not met. || These criteria **are** not met. (*criterion* is the singular)
-!warning Watch *one of the + plural noun + who/that*: *She is **one of the researchers who have** questioned this* (the relative clause describes *researchers*). *She is **the only one** of the researchers **who has**…* is singular because the antecedent is *the only one*.
-
+## errors | errors | Common mistakes
+!! The results of the survey shows a clear pattern. || The results of the survey show a clear pattern. || The head noun is *results* (plural), not *survey*.
+!! The number of cars have increased. || The number of cars has increased. || *The number of* has *number* as its head: singular.
+!! Every student and teacher have a card. || Every student and teacher has a card. || *Every* makes the subject singular.
+!! One of the main reasons are cost. || One of the main reasons is cost. || The head is *one*: singular.
+!! The police has arrested a suspect. || The police have arrested a suspect. || *Police* is always plural.
+!! These criteria is not met. || These criteria are not met. || *Criteria* is the plural of *criterion*.
 ## advanced | advanced | Advanced applications
 #### Agreement in pseudo-clefts and inverted sentences
 In *What worries economists **is** the falling birth rate*, the verb agrees with the *what*-clause (singular). With a plural complement, both *is* and *are* occur: *What we need **is/are** more teachers*; formal writing prefers *is*. In inversion, agreement is with the postponed subject: *Of greater concern **are** the long-term effects. Among the survivors **was** a young doctor.*
@@ -172,3 +177,39 @@ Which sentence is most appropriate in an academic report?
 - These findings, what they suggest, is that the policy has had little effect.
 - What these findings are suggesting it is that the policy has had little effect.
 > A *what*-clause subject takes a singular verb, especially before a *that*-clause.
+
+=== recognise
+@title From a policy brief
++ The cost of rents in the capital [[has]] doubled in ten years. || head noun *cost*: singular verb
++ A number of young families [[have]] moved to the suburbs. || *a number of* = several: plural verb
++ The police [[have]] reported fewer burglaries. || *police*: always plural
+- The ministry published the figures in June.
++ Each of the proposed measures [[requires]] new funding. || *each of*: singular
++ These data [[suggest]] that the trend will continue. || *data* treated as plural in formal writing
+
+=== check
+### [mc] The quality of the photographs ___ excellent.
++ is
+- are
+- were being
+> The head noun is *quality* (singular).
+### [mc] A large number of applicants ___ applied this year.
+- has
++ have
+- is
+> *A number of* = many: plural verb.
+### [mc] Neither the manager nor the employees ___ aware of the change.
+- was
++ were
+- is
+> With *neither … nor*, the verb usually agrees with the nearer subject (*employees*).
+### [explain] Why is it *The number of students has risen* but *A number of students have complained*?
+= *The number of* refers to a figure, so its head is the singular noun *number*. *A number of* means "several", so the real subject is the plural *students*.
+> The determiner changes which noun is the head.
+
+=== produce
+Write 5–6 sentences describing trends in your city, country or field, as in a short report. Use long subjects with *of*-phrases.
+- I found the head noun of every long subject and checked the verb.
+- I used *the number of* and *a number of* correctly.
+- I used *each / every / one of* with a singular verb.
+- I checked irregular plurals (*criteria, phenomena, data*).

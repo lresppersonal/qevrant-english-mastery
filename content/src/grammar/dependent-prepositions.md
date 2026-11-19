@@ -8,6 +8,13 @@ summary: Many verbs, adjectives and nouns are followed by a fixed preposition. T
 links: extends>verb-patterns>Verb patterns>B2>published ; extends>prepositional-phrases>Prepositional phrases>C1>published
 sources: Destination C1&C2 ; Outcomes Upper-Intermediate (coverage reviewed; examples original)
 ---
+## core | core | Core concept
+Many verbs, adjectives and nouns are followed by one particular preposition: *depend **on***, *interested **in***, *a reason **for***. The preposition rarely follows a logical rule and often differs from Russian, so it is best learned as part of the word.
+!rule Learn the chunk, not the word: *rely on, aware of, responsible for, an increase in, an impact on*. After the preposition comes a noun, a pronoun or an *-ing* form.
+> ex: The outcome **depends on** the weather. || verb + preposition
+> ex: She's **responsible for** training new staff. || adjective + preposition + *-ing*
+> ex: There has been an **increase in** demand. || noun + preposition
+
 ## overview | overview | What is a dependent preposition?
 A **dependent preposition** is the preposition that a particular word "chooses". You learn *depend **on***, *interested **in***, *a reason **for*** as single units.
 > ex: It **depends on** the weather.
@@ -66,13 +73,12 @@ A **dependent preposition** is the preposition that a particular word "chooses".
 | **responsible for** a task / **responsible to** a person | duty / who you report to |
 
 ## errors | errors | Common mistakes
-> x: It depends of the price. || *depend **on***
-> x: She's married with a doctor. || *married **to***
-> x: We discussed about the plan. || *discuss* takes a direct object: *discussed the plan* (but *a discussion **about***)
-> x: I'm looking forward to see you. || *to* is a preposition here: *looking forward to **seeing***
-> x: The impact to society is significant. || *impact **on** society*
-> x: He entered into the room. || *enter* takes a direct object: *entered the room* (*enter into* = begin an agreement)
-
+!! It depends of the price. || It depends on the price. || *Depend* always takes *on*.
+!! She's married with a doctor. || She's married to a doctor. || *Married to* someone.
+!! We discussed about the plan. || We discussed the plan. || *Discuss* takes a direct object (but *a discussion about*).
+!! I'm looking forward to see you. || I'm looking forward to seeing you. || *To* is a preposition here, so it is followed by *-ing*.
+!! The impact to society is significant. || The impact on society is significant. || *An impact on* something.
+!! He entered into the room. || He entered the room. || *Enter* takes a direct object; *enter into* means begin an agreement or a discussion.
 ## advanced | advanced | Academic collocations
 > ex: The findings **shed light on** the causes of poverty.
 > ex: The study **draws on** data from twelve countries.
@@ -148,3 +154,39 @@ Many health problems result ___ poor diet.
 Make more formal: "These are the conditions they work under."
 = These are the conditions under which they work.
 > Formal style: preposition + *which*.
+
+=== recognise
+@title An email from a project manager
++ We are very [[grateful for]] your feedback on the draft. || adjective + *for*
++ The final schedule [[depends on]] the client's approval. || verb + *on*
+- I'll send the revised version tomorrow.
++ There has been a sharp [[increase in]] costs since January. || noun + *in*
++ Please let me know if you are [[aware of]] any other risks. || adjective + *of*
+- Thank you again for your help.
+
+=== check
+### [mc] She's very good ___ explaining complex ideas.
++ at
+- in
+- on
+> *Good at* + noun or *-ing*.
+### [mc] The new policy had a huge effect ___ small businesses.
+- to
++ on
+- for
+> *An effect on* something.
+### [mc] Which sentence is correct?
+- We need to discuss about the budget.
++ We need to discuss the budget.
+- We need to discuss on the budget.
+> *Discuss* takes a direct object.
+### [explain] Why is it *I'm used to working* but *I used to work*?
+= In *be used to*, *to* is a preposition, so it is followed by an *-ing* form; in *used to* + infinitive, *to* is part of the infinitive.
+> After a preposition, the verb takes the *-ing* form.
+
+=== produce
+Write 5–6 sentences about your current job or studies: what you are responsible for, good at, interested in and worried about.
+- I used at least three adjective + preposition chunks.
+- I used at least two verb + preposition chunks.
+- I used one noun + preposition (for example *a reason for, an increase in*).
+- I used an *-ing* form after at least one preposition.

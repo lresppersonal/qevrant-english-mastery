@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { themes, getTheme, grammarLessons, itemsInTheme, lexClassOf, readingTexts, exercises, speakingPrompts, writingPrompts } from "@/lib/content";
 import { TopicHub } from "@/components/TopicHub";
+import { listeningForTheme, THEME_LISTENING } from "@/lib/listening";
 
 export function generateStaticParams() {
   return themes.map((t) => ({ slug: t.slug }));
@@ -22,6 +23,8 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
       exercises={exercises.filter((e) => e.skill === "vocabulary" && has(e.topics))}
       speaking={speakingPrompts.filter((p) => has(p.topics))}
       writing={writingPrompts.filter((p) => has(p.topics))}
+      listening={listeningForTheme(theme.slug)}
+      listeningTopic={THEME_LISTENING[theme.slug]?.[0] ?? null}
     />
   );
 }

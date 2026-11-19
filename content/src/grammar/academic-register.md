@@ -8,6 +8,12 @@ summary: Academic English is not just longer words. It packages ideas into noun 
 links: prerequisite>articles-and-noun-phrases>Complex noun phrases>B2>published ; prerequisite>modals-and-modality>Modality>B2>published ; prerequisite>passive-and-causative>Impersonal passives>B2>published
 sources: Speakout C1–C2 7A ; Speakout B2 3C
 ---
+## core | core | Core concept
+Academic writing is not just "difficult" English: it makes specific choices so that claims are **precise, objective and appropriately cautious**. Four grammatical tools do most of the work: nominalisation (turning actions into nouns), hedging (limiting how strong a claim is), impersonal structures and formal linking.
+!rule Say exactly as much as the evidence supports. Prefer *Research suggests that… may…* to *Scientists have proved…*; prefer *The reduction in emissions* to *When they reduced emissions*.
+> ex: People are using more energy, so prices are going up. → **The rise in energy consumption has led to higher prices.** || nominalisation: the actions become nouns
+> ex: This proves that the policy works. → **These findings suggest that the policy may be effective.** || hedging: the claim matches the evidence
+
 ## overview | overview | Definition and function
 Register is the choice of language to suit reader, purpose and medium. Academic register is **precise, objective, cautious and dense**. Four grammatical tools create it: nominalisation, hedging, impersonal structures and formal vocabulary and linking.
 
@@ -47,10 +53,11 @@ Turning verbs and adjectives into nouns lets you treat processes as things and p
 | rhetorical questions, exclamation marks | statements |
 
 ## errors | errors | Common mistakes
-> x: Nowadays, there are a lot of people who think that technology is very bad for kids. || *Many people now argue that technology may harm children's development.*
-> x: Scientists have proved that coffee is healthy. || Overclaiming: *Research suggests that moderate coffee consumption may have health benefits.*
-> x: The government should solve this problem fast. || Vague: *Governments could address the problem by…*
-
+!! Nowadays, there are a lot of people who think that technology is very bad for kids. || Many people now argue that technology may harm children's development. || Informal vocabulary (*a lot of, very bad, kids*) and vague structure; academic style is concise and precise.
+!! Scientists have proved that coffee is healthy. || Research suggests that moderate coffee consumption may have health benefits. || Overclaiming: few studies "prove" anything; hedge the claim.
+!! The government should solve this problem fast. || Governments could address the problem by investing in public transport. || Vague: say how; *address* is more formal than *solve fast*.
+!! I think that the results are not good. || The results appear to be inconclusive. || Avoid personal *I think* and vague evaluation; use an impersonal, precise verb.
+!! It's clear that the policy didn't work. || The evidence indicates that the policy did not achieve its aims. || Avoid contractions and absolute claims in formal writing.
 ## advanced | advanced | Advanced usage and stylistic nuances
 - **Boosters** for well-supported claims: *clearly, undoubtedly, demonstrate, it is evident that*. Balance boosters and hedges.
 - **Evaluative stance markers**: *Surprisingly, Notably, Importantly*.
@@ -130,3 +137,39 @@ Replace the informal phrase: ‘There are ___ (lots of) factors involved.’
 ‘___ is little evidence to support the claim that bilingual children fall behind.’
 = There
 > *There is little evidence…* is an impersonal evaluative pattern.
+
+=== recognise
+@title From a literature review
++ [[The expansion of]] online learning has transformed higher education. || nominalisation: the expansion
++ However, the evidence [[appears to suggest]] that outcomes vary widely. || hedging: a cautious claim
++ [[It has been argued that]] online formats disadvantage weaker students. || impersonal structure
+- Some universities reported higher completion rates.
++ These findings [[may]] reflect differences in student support rather than format. || hedging modal
+- Further research is needed.
+
+=== check
+### [mc] Which sentence is the most appropriate for an academic essay?
+- Loads of studies show that sleep is super important.
++ Numerous studies indicate that sleep plays a significant role in learning.
+- I really think that sleep is important for learning.
+> Formal vocabulary, an impersonal subject and a precise verb.
+### [mc] Choose the best hedged version of *Social media causes depression*.
+- Social media definitely causes depression.
++ Heavy social media use may contribute to depression in some groups.
+- Social media is depression.
+> The hedged version limits the claim (*may, contribute, some groups*).
+### [mc] Which phrase is a nominalisation of *prices increased rapidly*?
++ the rapid increase in prices
+- prices that rapidly increased
+- increasingly rapid prices
+> The action (*increase*) becomes a noun with its own modifiers.
+### [explain] Why do academic writers hedge their claims? Isn't it a sign of weakness?
+= Hedging is not weakness but accuracy: it shows the reader exactly how strong the evidence is, which makes the writer more credible and harder to refute.
+> Overclaiming is one of the most common reasons essays lose marks.
+
+=== produce
+Rewrite this informal paragraph in academic style (4–5 sentences): *Loads of people think that working from home is great because you don't waste time commuting. But some bosses say it's bad for teamwork. I think it depends on the job.*
+- I replaced informal words with precise, formal vocabulary.
+- I used at least two nominalisations.
+- I hedged at least two claims (*may, appear, suggest, tend to*).
+- I used an impersonal structure instead of *I think*.

@@ -7,6 +7,13 @@ minutes: 30
 summary: Small words such as "admittedly", "arguably", "to be fair" and "that said" show your attitude, your certainty and how your ideas fit together. Learn their meaning, position and register so that you sound precise in writing and natural in conversation.
 links: extends>linking-contrast-concession>Linking ideas>B2>published ; contrasts_with>vague-language-and-fillers>Vague language>B2>published ; extends>academic-register>Academic register>C1>published
 ---
+## core | core | Core concept
+Stance adverbials tell the reader **how to take** a sentence. *Admittedly* concedes a weakness; *arguably* makes a claim open to debate; *frankly* signals honesty; *surprisingly* signals the unexpected. Discourse markers such as *that said* or *mind you* organise an argument or a conversation.
+!rule Choose the adverbial for its meaning, not for decoration. Concession → *admittedly, granted*. Cautious claim → *arguably, presumably*. Opinion → *frankly, personally*. Contrast with what came before → *that said, mind you*.
+> ex: **Admittedly**, the sample was small. || I accept this weakness
+> ex: **Arguably**, it is the best novel of the decade. || I claim this, but it can be debated
+> ex: The hotel was expensive. **That said**, the service was excellent. || a balancing contrast
+
 ## overview | overview | Overview and purpose
 Grammar is not only about what happened; it is also about **how the speaker or writer positions themselves**. Stance adverbials comment on the whole sentence: *Admittedly, the sample was small* (I concede this), *Arguably, it is the best novel of the decade* (I claim this, but it can be debated), *Frankly, I was disappointed* (I'm being direct). Discourse markers organise interaction and argument: *That said, … / Mind you, … / As it happens, …*
 !rule A stance adverbial tells the reader **how to take** the sentence: as a concession, a cautious claim, an honest opinion, a surprise or a fact. Choosing the wrong one changes your meaning, not just your style.
@@ -61,14 +68,13 @@ Many stance meanings can also be expressed by a clause: *It is arguable that…,
 !register Academic writing favours epistemic stance (*arguably, presumably, to some extent, in principle*) and cautious attitude stance (*notably, significantly, interestingly*). It avoids highly personal style markers (*frankly, honestly, to be honest*) and conversational markers (*mind you, anyway, as it happens*).
 In speech, style markers (*honestly, to be fair, to be honest, I mean*) are frequent and make speakers sound engaged and natural, but repeating one marker (*to be honest… to be honest…*) sounds like a verbal tic. In professional emails, *Unfortunately*, *As it turns out* and *Just to clarify* are polite, neutral choices.
 
-## errors | errors | Common mistakes advanced learners make
-> x: Actually, the unemployment rate is 5% (meaning "at present"). || **Currently**, the unemployment rate is 5%.
-> x: Eventually, the company will close the factory (meaning "possibly"). || **Possibly / Potentially**, the company will close the factory.
-> x: Admittedly, this is the best solution. || **Undoubtedly / Arguably**, this is the best solution. (*admittedly* concedes a weakness)
-> x: Ironically, it rained on the day of the picnic. || **Unfortunately**, it rained… (bad luck is not irony unless there is a contradiction)
-> x: To my mind, I think the policy is wrong. || **To my mind**, the policy is wrong. (avoid double stance markers)
+## errors | errors | Common mistakes
+!! Actually, the unemployment rate is 5%. (meaning "at present") || Currently, the unemployment rate is 5%. || *Actually* means "in fact" (often correcting something), not "now", unlike Russian *актуально* or German *aktuell*.
+!! Eventually, the company will close the factory. (meaning "possibly") || Possibly, the company will close the factory. || *Eventually* means "in the end, after a long time", not "possibly".
+!! Admittedly, this is the best solution. || Arguably, this is the best solution. || *Admittedly* concedes a weakness; it cannot introduce a strong positive claim.
+!! Ironically, it rained on the day of the picnic. || Unfortunately, it rained on the day of the picnic. || Bad luck is not irony; irony needs a contradiction between what is expected and what happens.
+!! To my mind, I think the policy is wrong. || To my mind, the policy is wrong. || Do not use two opinion markers for the same opinion.
 !warning Do not use *on the other hand* without a first hand: it introduces the second side of a comparison. To contrast with a previous claim, use *however*, *by contrast* or *that said*.
-
 ## advanced | advanced | Advanced applications
 #### Layering stance for nuance
 Advanced writers combine stance markers to calibrate a claim precisely: *The policy was, **admittedly**, **at least partly** successful* (concession + limited degree). *This is, **in all likelihood**, a temporary effect* (high but not total certainty).
@@ -169,3 +175,39 @@ Which sentence calibrates certainty most precisely?
 The staff were unhelpful and the room was cold. ___, the view was spectacular. (two words, concession after criticism)
 = That said
 > *That said* introduces a contrasting point after what has just been said.
+
+=== recognise
+@title An opinion column
++ [[Admittedly]], the new tram line has had its problems. || concession of a weakness
++ [[Arguably]], however, it is the best investment the city has made in decades. || a cautious claim open to debate
+- It opened in 2024 after six years of construction.
++ [[Frankly]], the delays were embarrassing. || honest opinion
++ [[That said]], passenger numbers have exceeded every forecast. || balancing contrast
++ [[Surprisingly]], car traffic in the centre has fallen by a third. || the unexpected
+
+=== check
+### [mc] ___, my results were not as good as I had hoped, but I learned a lot.
++ Admittedly
+- Eventually
+- Actually
+> *Admittedly* concedes a weakness before a positive point.
+### [mc] The flat is small. ___, it's in a perfect location.
+- On the other hand
++ That said
+- Eventually
+> *That said* introduces a balancing point after the previous sentence.
+### [mc] Which adverbial means "at present"?
+- Actually
++ Currently
+- Eventually
+> *Currently* = now; *actually* = in fact; *eventually* = in the end.
+### [explain] What is the difference between *Clearly, the policy failed* and *Arguably, the policy failed*?
+= *Clearly* presents the failure as obvious and not open to debate. *Arguably* presents it as a claim that can be supported but that others might dispute.
+> Stance adverbials change the strength of the claim.
+
+=== produce
+Write a short opinion paragraph (5–6 sentences) about a recent decision in your city, school or company. Make your stance clear at each step.
+- I conceded a weakness with *admittedly* or *granted*.
+- I made a cautious claim with *arguably* or *presumably*.
+- I balanced two points with *that said* or *mind you*.
+- I checked that *actually* and *eventually* have their English meanings.

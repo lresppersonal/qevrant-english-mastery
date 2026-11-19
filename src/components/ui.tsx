@@ -1,7 +1,7 @@
 import Link from "next/link";
 import clsx from "clsx";
 import type { Block } from "@/lib/content/schema";
-import { Lightbulb, TriangleAlert, Scale, BookMarked, ChevronDown } from "lucide-react";
+import { Lightbulb, TriangleAlert, Scale, BookMarked, ChevronDown, XCircle, CheckCircle2 } from "lucide-react";
 
 const LEVEL_STYLE: Record<string, string> = {
   B2: "border-[color-mix(in_srgb,var(--primary)_35%,transparent)] text-primary",
@@ -117,6 +117,26 @@ export function Blocks({ blocks }: { blocks: Block[] }) {
                 </table>
               </div>
             );
+          case "mistakes":
+            return (
+              <ol key={i} className="space-y-3" data-testid="mistakes">
+                {b.rows.map((m, j) => (
+                  <li key={j} className="overflow-hidden rounded-xl border border-line">
+                    <div className="grid sm:grid-cols-2">
+                      <p className="flex gap-2 border-b border-line bg-[color-mix(in_srgb,var(--danger)_6%,var(--surface))] px-4 py-2.5 sm:border-b-0 sm:border-r">
+                        <XCircle size={17} className="mt-1 shrink-0 text-danger" aria-hidden="true" />
+                        <span><span className="block text-xs font-semibold uppercase tracking-wide text-danger">Incorrect</span><s className="decoration-danger/70"><Rich text={m.wrong} /></s></span>
+                      </p>
+                      <p className="flex gap-2 bg-[color-mix(in_srgb,var(--success)_7%,var(--surface))] px-4 py-2.5">
+                        <CheckCircle2 size={17} className="mt-1 shrink-0 text-success" aria-hidden="true" />
+                        <span><span className="block text-xs font-semibold uppercase tracking-wide text-success">Correct</span><Rich text={m.right} /></span>
+                      </p>
+                    </div>
+                    <p className="border-t border-line px-4 py-2.5 text-[15px]"><span className="font-semibold">Why: </span><Rich text={m.why} /></p>
+                  </li>
+                ))}
+              </ol>
+            );
           case "note": {
             const n = NOTE[b.tone];
             return (
@@ -146,7 +166,7 @@ export function ProgressBar({ value, label }: { value: number; label: string }) 
   const pct = Math.round(Math.max(0, Math.min(1, value)) * 100);
   return (
     <div role="progressbar" aria-label={label} aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100} className="h-2 w-full overflow-hidden rounded-full bg-surface-2">
-      <div className="h-full rounded-full bg-primary transition-[width]" style={{ width: `${pct}%` }} />
+      <div className="bar-grow h-full rounded-full bg-primary transition-[width] duration-500 ease-out" style={{ width: `${pct}%` }} />
     </div>
   );
 }

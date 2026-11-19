@@ -9,13 +9,24 @@ import type { Exercise, Question } from "@/lib/content/schema";
 import { useLearner } from "./StoreProvider";
 import { Rich, ProgressBar } from "./ui";
 import { isCorrect } from "@/lib/answers";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 /** On the lesson's own page a plain anchor is used, so the browser fires hashchange and the lesson switches to Theory. */
 function RuleLink({ lesson, section, children, className }: { lesson: string; section: string; children: React.ReactNode; className: string }) {
   const path = usePathname();
+  const router = useRouter();
   const href = `/grammar/${lesson}#${section}`;
-  return path === `/grammar/${lesson}` ? <a href={`#${section}`} className={className}>{children}</a> : <Link href={href} className={className}>{children}</Link>;
+  if (path !== `/grammar/${lesson}`) return <Link href={href} className={className}>{children}</Link>;
+  // Inside the lesson: open the Understand stage at that rule (keeping where the lesson was entered from)
+  return (
+    <a href={`#${section}`} className={className} onClick={(e) => {
+      const q = new URLSearchParams(location.hash.startsWith("#/") ? location.hash.split("?")[1]?.split("#")[0] ?? "" : location.search);
+      if (!q.get("stage") || q.get("stage") === "understand") return;
+      e.preventDefault();
+      q.delete("stage");
+      router.push(`/grammar/${lesson}${q.toString() ? `?${q}` : ""}#${section}`, { scroll: false });
+    }}>{children}</a>
+  );
 }
 
 type Result = { questionId: string; answer: string | number; correct: boolean };

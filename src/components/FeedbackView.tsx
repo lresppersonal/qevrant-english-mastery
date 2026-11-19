@@ -1,4 +1,5 @@
 "use client";
+import { ContextLink } from "./NavMemory";
 import Link from "next/link";
 import clsx from "clsx";
 import { BookOpen, Info, ArrowRight, Repeat2, Mic, FileCheck2 } from "lucide-react";
@@ -19,14 +20,14 @@ export function GrammarRefLink({ refId }: { refId: string | null }) {
     const sec = lesson?.sections.find((s) => s.id === section);
     if (!lesson) return null;
     return (
-      <Link href={`/grammar/${slug}#${section}`} className="inline-flex items-center gap-1 text-sm font-semibold text-primary underline-offset-4 hover:underline">
+      <ContextLink href={`/grammar/${slug}#${section}`} className="inline-flex items-center gap-1 text-sm font-semibold text-primary underline-offset-4 hover:underline">
         <BookOpen size={14} aria-hidden="true" /> Review the rule: {sec?.title ?? lesson.title}
-      </Link>
+      </ContextLink>
     );
   }
   const d = grammarDomains.find((x) => `domain:${x.key}` === refId);
   if (!d) return null;
-  return <Link href={`/grammar#${d.key}`} className="inline-flex items-center gap-1 text-sm font-semibold text-primary underline-offset-4 hover:underline"><BookOpen size={14} aria-hidden="true" /> Grammar area: {d.title}</Link>;
+  return <ContextLink href={`/grammar#${d.key}`} className="inline-flex items-center gap-1 text-sm font-semibold text-primary underline-offset-4 hover:underline"><BookOpen size={14} aria-hidden="true" /> Grammar area: {d.title}</ContextLink>;
 }
 
 function RatingMeter({ rating }: { rating?: (typeof RATING_ORDER)[number] }) {

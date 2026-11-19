@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BackLink } from "@/components/NavMemory";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { vocabItems, getVocabItem, readingTexts, getTheme, LEX_CLASSES, lexClassOf } from "@/lib/content";
@@ -19,7 +20,7 @@ export default async function VocabEntry({ params }: { params: Promise<{ slug: s
 
   return (
     <article className="max-w-3xl">
-      <Link href="/vocabulary" className="mb-2 inline-flex items-center gap-1 py-2.5 text-sm font-medium text-muted hover:text-ink"><ArrowLeft size={15} aria-hidden="true" /> Vocabulary</Link>
+      <BackLink href="/vocabulary" label="Vocabulary" />
       <h1 className="sr-only">{item.lemma}</h1>
       <ItemHeader item={item} />
       <p className="mt-2 flex flex-wrap items-center gap-2 text-sm">

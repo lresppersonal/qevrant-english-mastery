@@ -2,15 +2,18 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import clsx from "clsx";
-import { ArrowRight, BookOpen, CheckCircle2, Circle, Clock, Headphones, Library, Mic, PenLine, Repeat, SkipForward, Target, CalendarDays, TrendingDown } from "lucide-react";
+import { ArrowRight, BookOpen, CheckCircle2, Circle, Clock, Headphones, Library, Mic, PenLine, Repeat, SkipForward, Target, CalendarDays, TrendingDown, SlidersHorizontal, ChevronDown, UserRound } from "lucide-react";
 import { useLearner } from "@/components/StoreProvider";
 import { useLearnerData } from "@/components/useLearnerData";
 import { PageHeader, LevelBadge, ProgressBar } from "@/components/ui";
 import { PROGRAMME, WEEK_TITLES } from "@/lib/plan/programme";
 import { planProgress, planInsights, readPlan, type Block, type BlockKey, type DayView, type PlanSettings } from "@/lib/plan/engine";
 import { getTheme } from "@/lib/content";
+import { computePriorities, readAssessment, readOverrides, SKILL_LABEL, PRIORITY_LABEL, type Priority, type Skill, type SkillPriority } from "@/lib/plan/personal";
+import { LearningProfileForm } from "@/components/LearningProfileForm";
 
-const ICON: Record<BlockKey, typeof BookOpen> = { grammar: BookOpen, vocabulary: Library, reading: BookOpen, listening: Headphones, writing: PenLine, speaking: Mic, revision: Repeat };
+const ICON: Record<BlockKey, typeof BookOpen> = { grammar: BookOpen, vocabulary: Library, reading: BookOpen, listening: Headphones, writing: PenLine, speaking: Mic, revision: Repeat, focus: Target };
+const PRIORITY_CHIP: Record<Priority, string> = { high: "!border-primary !bg-primary-soft !text-primary", medium: "", maintenance: "!text-muted" };
 
 const PRINCIPLES = [
   ["One theme, seven activities", "Each day links a grammar topic to a vocabulary theme and uses both in reading, listening, writing and speaking, so new language is met in context and then used."],
@@ -21,15 +24,15 @@ const PRINCIPLES = [
   ["Progressive difficulty", "Week 1 starts at B2; weeks 5–6 work at C1–C2. Learners who already have a secure B2 can start at week 3."],
 ] as const;
 
-function BlockRow({ b, active }: { b: Block; active: boolean }) {
+function BlockRow({ b, active, index = 0 }: { b: Block; active: boolean; index?: number }) {
   const Icon = ICON[b.key];
   return (
-    <li className={clsx("flex items-start gap-3 py-3", !b.required && "opacity-80")}>
-      <span className={clsx("mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-full", b.doneAt ? "bg-success text-white" : "bg-surface-2 text-muted")}>
+    <li className={clsx("enter flex items-start gap-3 py-3", !b.required && "[&>div]:opacity-80 [&>span]:opacity-80")} style={{ ["--i" as string]: Math.min(index, 9) }}>
+      <span className={clsx("mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-full transition-colors duration-300", b.doneAt ? "anim-pop bg-success text-white" : "bg-surface-2 text-muted")}>
         {b.doneAt ? <CheckCircle2 size={16} aria-label="Done" /> : <Icon size={16} aria-hidden="true" />}
       </span>
       <div className="min-w-0 flex-1">
-        <p className="flex flex-wrap items-center gap-2 text-sm"><span className="font-semibold">{b.label}</span><span className="text-muted">· {b.minutes} min</span>{!b.required && <span className="chip !text-[11px]">extension</span>}{b.result && <span className="chip !text-[11px]">{b.result}</span>}</p>
+        <p className="flex flex-wrap items-center gap-2 text-sm"><span className="font-semibold">{b.label}</span><span className="text-muted">· {b.minutes} min</span>{!b.required && <span className="chip !text-[11px]">extension</span>}{b.priority === "high" && <span className="chip !border-primary !text-[11px] !text-primary">your priority</span>}{b.priority === "maintenance" && b.key !== "focus" && <span className="chip !text-[11px]">lighter: a stronger area</span>}{b.result && <span className="chip !text-[11px]">{b.result}</span>}</p>
         <p className="font-medium">{b.title}</p>
         <p className="text-sm text-muted">{b.why}</p>
       </div>
@@ -53,7 +56,7 @@ function DayCard({ v, onSkip }: { v: DayView; onSkip?: () => void }) {
           <span className="tabular-nums" data-testid="plan-day-progress">{done} / {req} done</span>
         </div>
       </div>
-      <ol className="divide-y divide-line px-5 sm:px-6">{v.blocks.map((b) => <BlockRow key={b.key} b={b} active />)}</ol>
+      <ol className="divide-y divide-line px-5 sm:px-6">{v.blocks.map((b, i) => <BlockRow key={`${b.key}-${b.skill ?? i}`} b={b} active index={i} />)}</ol>
       {onSkip && <div className="border-t border-line px-5 py-3 text-right sm:px-6"><button type="button" onClick={onSkip} className="btn btn-ghost !min-h-9 !px-3 text-sm"><SkipForward size={14} aria-hidden="true" /> Skip this day</button></div>}
     </section>
   );
@@ -66,14 +69,26 @@ export default function PlanPage() {
   const [startWeek, setStartWeek] = useState<1 | 3>(1);
   const [intensity, setIntensity] = useState<"full" | "focused">("focused");
   const pd = useMemo(() => (data ? { ...data, saved } : null), [data, saved]);
-  const prog = useMemo(() => (settings && pd ? planProgress(settings, pd) : null), [settings, pd]);
+  const assessment = readAssessment(profile);
+  const overrides = readOverrides(profile);
+  const priorities = useMemo(() => (data ? computePriorities(assessment, data, overrides) : null),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [data, JSON.stringify(assessment), JSON.stringify(overrides)]);
+  const [personal, setPersonal] = useState(true);
+  const prog = useMemo(() => (settings && pd ? planProgress(settings, pd, priorities) : null), [settings, pd, priorities]);
   const insights = useMemo(() => (settings && pd && prog ? planInsights(settings, pd, prog.days) : null), [settings, pd, prog]);
 
   async function save(next: PlanSettings | null) {
     await store.updateProfile({ preferences: { ...(profile?.preferences ?? {}), intensive: next } });
     await refresh();
   }
-  async function start() { await save({ startedAt: new Date().toISOString(), intensity, startWeek, skipped: {} }); toast("Intensive Study Plan started"); }
+  async function start() { await save({ startedAt: new Date().toISOString(), intensity, startWeek, skipped: {}, personal: personal && !!assessment }); toast(personal && assessment ? "Your personal study plan has started" : "Intensive Study Plan started"); }
+  async function setOverride(skill: Skill, p: Priority | "auto") {
+    const next = { ...overrides }; if (p === "auto") delete next[skill]; else next[skill] = p;
+    await store.updateProfile({ preferences: { ...(profile?.preferences ?? {}), priorities: next } });
+    await refresh();
+  }
+  async function setPlanMode(on: boolean) { if (settings) { await save({ ...settings, personal: on }); toast(on ? "Using your personal plan" : "Using the standard plan"); } }
   async function skip(n: number) {
     if (!settings || !window.confirm("Skip this day? It will be marked as skipped, not completed, and the next day will start.")) return;
     await save({ ...settings, skipped: { ...settings.skipped, [String(n)]: new Date().toISOString() } });
@@ -112,8 +127,16 @@ export default function PlanPage() {
                 ))}
               </div>
             </fieldset>
+            <fieldset className="mt-4"><legend className="text-sm font-semibold">Version</legend>
+              <div className="mt-2 grid gap-2">
+                {([[true, "My personal plan", assessment ? "Weighted by your strengths and priorities (see below)" : "Complete the one-minute self-assessment below to enable it"], [false, "The standard plan", "The same balanced weighting for every learner"]] as const).map(([v, l, h]) => (
+                  <label key={String(v)} className={clsx("flex cursor-pointer items-start gap-3 rounded-xl border p-3", (personal && !!assessment) === v ? "border-primary bg-primary-soft" : "border-line", v && !assessment && "opacity-60")}><input type="radio" name="ver" className="mt-1" checked={(personal && !!assessment) === v} disabled={v && !assessment} onChange={() => setPersonal(v)} /><span><span className="block font-semibold">{l}</span><span className="text-sm text-muted">{h}</span></span></label>
+                ))}
+              </div>
+            </fieldset>
             <button type="button" className="btn btn-primary mt-5 w-full" onClick={start}>Start the Intensive Study Plan</button>
           </section>
+          <div className="lg:col-span-2"><PrioritiesCard priorities={priorities} hasAssessment={!!assessment} onOverride={setOverride} /></div>
           <section className="card p-5 sm:p-6 lg:col-span-2" aria-labelledby="h-weeks">
             <h2 id="h-weeks" className="text-lg font-bold">The six weeks</h2>
             <ol className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -133,9 +156,12 @@ export default function PlanPage() {
               <div className="mt-1.5"><ProgressBar value={prog.doneCount / prog.days.length} label="Plan progress" /></div>
             </div>
             <span className="chip">{settings.intensity === "full" ? "Full intensity" : "Focused intensity"}</span>
+            <span className="chip" data-testid="plan-version">{settings.personal ? "Personal plan" : "Standard plan"}</span>
+            <button type="button" className="btn btn-ghost !min-h-9 !px-3 text-sm" onClick={() => setPlanMode(!settings.personal)} disabled={!settings.personal && !assessment}>{settings.personal ? "Use the standard plan" : "Use my personal plan"}</button>
             <button type="button" className="btn btn-ghost !min-h-9 !px-3 text-sm" onClick={leave}>Leave plan</button>
           </div>
 
+          {settings.personal && <PrioritiesCard priorities={priorities} hasAssessment={!!assessment} onOverride={setOverride} compact />}
           {prog.current ? <DayCard v={prog.current} onSkip={() => skip(prog.current!.day.n)} />
             : <div className="card p-6"><p className="text-lg font-bold">Plan complete — well done.</p><p className="mt-1 text-muted">Keep your progress with spaced review and the adaptive practice sets.</p></div>}
 
@@ -166,5 +192,63 @@ export default function PlanPage() {
         </div>
       )}
     </>
+  );
+}
+
+/** The learner's six priorities, with the reasons behind each one and a manual override. */
+function PrioritiesCard({ priorities, hasAssessment, onOverride, compact = false }: { priorities: SkillPriority[] | null; hasAssessment: boolean; onOverride: (s: Skill, p: Priority | "auto") => void; compact?: boolean }) {
+  const [editing, setEditing] = useState(!hasAssessment && !compact);
+  const [open, setOpen] = useState(!compact);
+  if (!priorities) return null;
+  const order: Priority[] = ["high", "medium", "maintenance"];
+  const rows = [...priorities].sort((a, b) => order.indexOf(a.priority) - order.indexOf(b.priority) || b.need - a.need);
+  return (
+    <section className="card overflow-hidden" aria-labelledby="h-prio" data-testid="personal-priorities">
+      <div className="flex flex-wrap items-center gap-3 px-5 py-4 sm:px-6">
+        <SlidersHorizontal size={19} className="text-primary" aria-hidden="true" />
+        <div className="min-w-0 flex-1">
+          <h2 id="h-prio" className="text-lg font-bold">Your learning priorities</h2>
+          <p className="text-sm text-muted">{hasAssessment ? "From your self-assessment and your real results, recalculated as you study. Not AI: the rules are listed below." : "Take the one-minute self-assessment to personalise your plan."}</p>
+        </div>
+        {compact && <button type="button" className="btn btn-ghost !min-h-9 !px-3 text-sm" aria-expanded={open} onClick={() => setOpen((o) => !o)}>{open ? "Hide" : "Show"} <ChevronDown size={14} className={clsx("transition-transform duration-200", open && "rotate-180")} aria-hidden="true" /></button>}
+      </div>
+      {open && (
+        <div className="fade-up border-t border-line px-5 py-4 sm:px-6">
+          {hasAssessment && (
+            <ul className="grid gap-2.5 md:grid-cols-2">
+              {rows.map((r, i) => (
+                <li key={r.skill} className="enter rounded-xl border border-line p-3" style={{ ["--i" as string]: i }} data-testid={`priority-${r.skill}`} data-priority={r.priority}>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="flex-1 font-semibold">{SKILL_LABEL[r.skill]}</span>
+                    <span className={clsx("chip", PRIORITY_CHIP[r.priority])}>{PRIORITY_LABEL[r.priority]}</span>
+                  </div>
+                  <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-surface-2" aria-hidden="true"><div className="bar-grow h-full rounded-full bg-primary/70" style={{ width: `${Math.round(10 + r.need * 90)}%` }} /></div>
+                  <ul className="mt-2 space-y-0.5 text-[13.5px] text-muted">{r.reasons.slice(0, 3).map((x) => <li key={x}>{x}</li>)}</ul>
+                  <label className="mt-2 flex items-center gap-2 text-sm"><span className="text-muted">Set:</span>
+                    <select className="input !w-auto !py-1 text-sm" value={r.source === "manual" ? r.priority : "auto"} onChange={(e) => onOverride(r.skill, e.target.value as Priority | "auto")} aria-label={`${SKILL_LABEL[r.skill]} priority`}>
+                      <option value="auto">Automatic</option><option value="high">High priority</option><option value="medium">Medium priority</option><option value="maintenance">Maintenance</option>
+                    </select>
+                  </label>
+                </li>
+              ))}
+            </ul>
+          )}
+          <div className="mt-4">
+            {!editing ? <button type="button" className="btn btn-ghost !min-h-9 !px-3 text-sm" onClick={() => setEditing(true)}><UserRound size={14} aria-hidden="true" /> {hasAssessment ? "Edit my self-assessment" : "Take the self-assessment"}</button>
+              : <div className="rounded-xl border border-line p-4"><LearningProfileForm submitLabel="Save and update my priorities" onDone={() => setEditing(false)} /></div>}
+          </div>
+          <details className="mt-4 rounded-xl bg-surface-2 px-4 py-3 text-sm">
+            <summary className="cursor-pointer font-semibold">How personalisation works</summary>
+            <ul className="mt-2 list-disc space-y-1 pl-5 text-muted">
+              <li>Each area gets a need score from your confidence rating (1–5). Areas you chose to improve get extra weight.</li>
+              <li>Once there is enough evidence (for example 15 grammar answers, 15 flashcard reviews, 2 listening logs or 2 assessed essays in the last 30 days), your results count for 60% and your self-rating for 40%.</li>
+              <li>High priority (at most two areas): the block is required every day, gets a little more time, and an extra focus block uses the same day&apos;s theme and grammar.</li>
+              <li>Maintenance: the area stays in the plan, shorter or every other day, so it is revised regularly. Nothing is ever removed.</li>
+              <li>A priority you set yourself always wins. The standard plan stays available at any time.</li>
+            </ul>
+          </details>
+        </div>
+      )}
+    </section>
   );
 }

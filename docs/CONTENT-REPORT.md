@@ -170,3 +170,15 @@ The data are invented for practice, and each task says so.
 - `content/synonyms/part1.json` and `part2.json`: 16 synonym groups (important, show, improve, problem, change, increase, help, cause, say, think, examine, effect, difficult, get, many, clear). Each group has 5 members with register, typical collocations, a distinction note and an example, plus 4 exercises (64 in all). The types are replace, most precise, inappropriate, near-synonym, register and collocation, with a note on every option. **All of this is original writing**: no lists, definitions or exercises were copied from the reference textbooks. Like the rest of the content, it is marked for human editorial review.
 - Context practice (gap fill, multiple choice, correct form, meaning in context) is **generated from our own vocabulary entries** (examples, collocations, definitions) by `src/lib/vocab-context.ts`. Wrong options come from other topics with the same part of speech and a similar level, so they can't also be correct. No new licensed material is used.
 - Synonyms in the reading word card come from our own vocabulary entries or from the open Free Dictionary API (Wiktionary, CC BY-SA). No additional licensing is needed.
+
+
+## Update 2026-11-19: grammar teaching sequence (all 36 lessons)
+
+- Every lesson now opens with a **Core concept** section: the central meaning in plain English, one rule and two contrasting examples.
+- **Common mistakes** sections are rewritten as Incorrect → Correct → Why. There are 4–6 rows per lesson, and each explains why the incorrect version fails.
+- Each lesson has three new blocks:
+  - a **Recognise** passage: an original mini-text of 6–7 sentences, with the target forms marked and a note on each;
+  - a **Quick understanding check**: four or five items, choice and "explain the difference", each with an explanation;
+  - a **Produce** task with a self-check list.
+- The present perfect lesson's overview was rewritten so it introduces one contrast at a time; the full aspect system moved to a collapsible panel.
+- **All new text is original writing**; nothing was copied from the reference textbooks. The source format is described at the top of `scripts/build-content.ts`. Unit tests (`tests/grammar-pedagogy.test.ts`) check that every lesson keeps the full sequence. As with the rest of the content, it is marked for human editorial review.

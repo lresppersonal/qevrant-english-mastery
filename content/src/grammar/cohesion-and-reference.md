@@ -7,6 +7,12 @@ minutes: 40
 summary: A text holds together through reference: pronouns, determiners and summary nouns that point back to ideas. Clear reference, plus a given-before-new order, is what makes advanced writing easy to follow.
 links: extends>ellipsis-and-substitution>Ellipsis and substitution>C1>published ; extends>linking-contrast-concession>Linking devices>B2+>published ; contrasts_with>academic-register>Academic register>C1>published
 ---
+## core | core | Core concept
+A text holds together when each sentence **picks up** something from the one before. Linkers like *however* help, but most cohesion comes from reference words that point back: *this shift, such policies, these findings, the former*. The reader should always be able to answer "what does *this* refer to?"
+!rule Begin a sentence with what the reader already knows (given) and end with what is new. Use a **summary noun** after *this/these* to make the reference precise: *This **decision**…*, *These **figures**…*.
+> ex: The council banned cars from the centre. **This decision** was unpopular at first. || *this* + summary noun points back clearly
+> ex: Cycling and walking both increased; **the latter** rose by 20%. || *the latter* = the second of two
+
 ## overview | overview | Overview and purpose
 Linking words (*however, therefore*) are only one source of cohesion. Most of the connection between sentences comes from **reference**: *This shift, such policies, the former, these findings, the latter approach*. Readers constantly ask "what does *this* refer to?". If the answer is unclear, the argument breaks down even when each sentence is grammatical.
 
@@ -62,14 +68,12 @@ Topic sentence → development sentences beginning with given information → co
 !register Academic and professional writing relies on summary nouns and *such*; conversation relies on *it, that, this thing, stuff like that*. *The former/the latter* and *respectively* are formal and best used in writing.
 Overusing bare *this* (*This shows that this is why this happens*) is a common weakness. One clear summary noun is worth several vague pronouns.
 
-## errors | errors | Common mistakes advanced learners make
-> x: The company cut costs and closed two factories. This caused protests. (ambiguous: which?) || The closure of the factories caused protests.
-> x: There are three options; the latter is the cheapest. || There are three options; the last is the cheapest.
-> x: Such a policies are unpopular. || Such policies are unpopular. / Such a policy is unpopular.
-> x: Group A and Group B improved by 5% and 9% respectively each. || Groups A and B improved by 5% and 9%, respectively.
-> x: Pollution is a serious problem. These problem affects cities. || This problem affects cities.
-> x: The results were good and it showed that the method works. || The results were good, which showed that ... / These results show that ...
-
+## errors | errors | Common mistakes
+!! The company cut costs and closed two factories. This caused protests. (unclear) || The closure of the factories caused protests. || *This* alone is ambiguous here; name what you mean with a summary noun.
+!! There are three options; the latter is the cheapest. || There are three options; the last is the cheapest. || *The former / the latter* refer to one of exactly two things.
+!! Such a policies are unpopular. || Such policies are unpopular. / Such a policy is unpopular. || *Such a* + singular; *such* + plural or uncountable.
+!! Pollution is a serious problem. These problem affects cities. || Pollution is a serious problem. This problem affects cities. || *This* + singular; *these* + plural.
+!! The results were good and it showed that the method works. || The results were good, which showed that the method works. || *It* is unclear; *which* refers back to the whole previous clause.
 ## advanced | advanced | Advanced applications
 #### Encapsulation and evaluation
 Summary nouns can encapsulate a whole paragraph and steer the reader's view: *This **oversimplification** ...*, *This **paradox** ...*, *This **apparent contradiction** ...*. Choosing between *claim, argument, finding, assumption* is a stance decision.
@@ -163,3 +167,39 @@ Correct the sentence: *Such a measures have been tried before.*
 Make the reference clear with a summary noun: *Prices rose while demand fell. This worried the board.*
 = Prices rose while demand fell. This combination worried the board. | Prices rose while demand fell. This combination of trends worried the board.
 > A summary noun specifies what *this* refers to.
+
+=== recognise
+@title From an essay on urban transport
+- Many cities have introduced congestion charges in recent years.
++ [[This measure]] aims to reduce traffic in the centre. || summary noun after *this*
++ [[Such schemes]] are often unpopular at first. || *such* + plural: schemes of this kind
++ Stockholm and London both introduced charges; [[the former]] held a referendum. || *the former* = Stockholm, the first of two
++ [[These results]] suggest that public opinion can change. || *these* + summary noun pointing back
+- Cities should communicate the benefits clearly.
+
+=== check
+### [mc] Prices rose by 12% last year. ___ led to protests.
+- It
++ This increase
+- That it
+> A summary noun makes the reference precise.
+### [mc] We considered buses and trams; ___ were cheaper to run.
++ the former
+- the first
+- the later
+> *The former* = the first of two things mentioned.
+### [mc] Which sentence is correct?
+- Such a decisions take time.
++ Such decisions take time.
+- Such decision takes time.
+> *Such* + plural noun with no article.
+### [explain] What is the "given-new" principle, and why does it make a text easier to read?
+= Each sentence starts with information the reader already has and ends with new information. The reader can link each new idea to something familiar, so the argument flows.
+> Reference words like *this, such* and *these* usually carry the given information at the start.
+
+=== produce
+Write a short paragraph (5–6 sentences) explaining a change in your city or workplace and its effects. Make each sentence pick up something from the one before.
+- I used *this / these* + a summary noun at least twice.
+- I used *such* + noun correctly.
+- I used *the former / the latter* for two things, or avoided them for three or more.
+- Each sentence starts with given information and ends with new information.

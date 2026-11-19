@@ -7,6 +7,14 @@ minutes: 35
 summary: Infinitives and -ing forms can show time and voice too. Learn how "to have done", "being asked" and "having been told" add earlier time and passive meaning, and why they make advanced writing precise and compact.
 links: prerequisite>verb-patterns>Verb patterns>B2>published ; extends>passive-and-causative>The passive>B2>published ; contrasts_with>participle-and-reduced-clauses>Participle clauses>B2+>published
 ---
+## core | core | Core concept
+Infinitives (*to do*) and *-ing* forms have no tense, but they can still show **time** and **voice**. A perfect form shows that something happened earlier; a passive form shows that the subject receives the action.
+!rule Two steps: **time**: same time → *to do / doing*; earlier → *to have done / having done*. **Voice**: subject does it → active; subject receives it → *to be done / being done / to have been done / having been done*.
+> ex: She seems **to know** the answer. || same time, active
+> ex: She seems **to have left**. || earlier, active
+> ex: He hates **being interrupted**. || same time, passive
+> ex: **Having been warned**, they took precautions. || earlier, passive
+
 ## overview | overview | Overview and purpose
 Finite verbs show time and voice through tense and *be* + past participle: *He **was told**. She **has finished**.* But many structures need a **non-finite** form — an infinitive (*to do*) or an *-ing* form (*doing*) — after verbs, adjectives, prepositions and in reporting patterns. These forms can also carry **perfect** meaning (an earlier time) and **passive** meaning (the subject receives the action):
 - *I'd like **to be consulted**.* (passive infinitive)
@@ -74,14 +82,13 @@ Perfect infinitives express unreal or unfulfilled past events after *would like,
 !register Passive reporting structures (*is believed to, is estimated to have*) and perfect participle clauses are hallmarks of formal writing: they make claims impersonal and compress two clauses into one. In conversation, people usually say *They think the fire started in the kitchen* or *After I'd read it, I…*.
 Avoid stacking several non-finite forms in one sentence (*Having been asked to have been seen…*): this sounds heavy even in academic prose. Use a finite clause instead.
 
-## errors | errors | Common mistakes advanced learners make
-> x: He is said to be born in Vienna. || He is said **to have been born** in Vienna. (the birth was in the past)
-> x: I hate to be interrupted when I'm working. || I hate **being interrupted** when I'm working. (both possible, but -ing is more natural for a general dislike)
-> x: Having finished the report, the computer crashed. || **When I had** finished the report, the computer crashed. (dangling participle: the computer didn't finish the report)
-> x: She denied to have taken the money. || She denied **taking / having taken** the money.
-> x: The suspect is believed having left the country. || The suspect is believed **to have left** the country.
+## errors | errors | Common mistakes
+!! He is said to be born in Vienna. || He is said to have been born in Vienna. || The birth happened in the past (earlier) and he received the action (passive): *to have been born*.
+!! Having finished the report, the computer crashed. || When I had finished the report, the computer crashed. || A perfect participle clause must share the subject of the main clause; the computer did not finish the report.
+!! She denied to have taken the money. || She denied taking the money. / She denied having taken the money. || *Deny* is followed by an *-ing* form, never by an infinitive.
+!! The suspect is believed having left the country. || The suspect is believed to have left the country. || *Be believed / said / thought* is followed by a *to*-infinitive.
+!! I don't like to be shouted. || I don't like being shouted at. / I don't like to be shouted at. || Keep the preposition in a passive form: *shout at someone* → *be shouted at*.
 !warning A perfect participle clause must share the subject of the main clause. ***Having been repaired**, the engineers tested the engine* says that the engineers were repaired. Write: *Once the engine had been repaired, the engineers tested it.*
-
 ## advanced | advanced | Advanced applications
 #### Hedged reporting in academic writing
 Passive reporting with *appear, seem* and perfect infinitives lets writers report evidence cautiously: *The effect **appears to have been overestimated** in earlier studies.* Compare the stronger *Earlier studies overestimated the effect.*
@@ -172,3 +179,39 @@ Choose the best completion for formal narrative: *Rejected by three publishers, 
 - to have praised
 - being praise
 > An infinitive of outcome presents a later (often ironic) result: *to be praised*.
+
+=== recognise
+@title A news brief
++ The painting is believed [[to have been stolen]] in the 1970s. || perfect passive infinitive: earlier, and the painting received the action
++ It is now thought [[to be]] in a private collection. || simple infinitive: a present state
+- Police have not released further details.
++ The owner remembers [[being told]] that it had been sold legally. || passive *-ing*: she received the information
++ [[Having examined]] the frame, experts confirmed it was the original. || perfect participle: an earlier action
+- The investigation continues.
+
+=== check
+### [mc] The bridge is reported ___ during the storm last night.
+- to collapse
++ to have collapsed
+- to be collapsed
+> The collapse happened before the report: perfect infinitive.
+### [mc] Nobody likes ___ in public.
+- criticising
++ being criticised
+- to have criticised
+> The subject receives the action: passive *-ing*.
+### [mc] ___ twice, she decided not to apply again.
+- Rejecting
+- Having rejected
++ Having been rejected
+> She received the action earlier: perfect passive participle.
+### [explain] What is the difference between *He seems to work hard* and *He seems to have worked hard*?
+= The first describes his work now or in general; the second describes work done before now, for example to explain a result we can see.
+> The perfect infinitive moves the action back in time.
+
+=== produce
+Write a short news report (5–6 sentences) about an event whose details are not fully confirmed. Use reporting structures and non-finite forms.
+- I used *is said / believed / thought* + a perfect infinitive.
+- I used at least one passive infinitive or passive *-ing* form.
+- I used a perfect participle clause with the same subject as the main clause.
+- I checked the time (same or earlier) and the voice (active or passive) of each form.

@@ -13,6 +13,7 @@ import { NAV, NAV_FOOTER, MOBILE_NAV, mobileSection } from "@/lib/nav";
 import { isDemoMode } from "@/lib/supabase/config";
 import { useLearner } from "./StoreProvider";
 import { OfflineBanner } from "./PwaSupport";
+import { NavMemory } from "./NavMemory";
 
 export function ThemeToggle() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -141,7 +142,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             Demo mode: no database is connected, so your progress is saved in this browser only.
           </div>
         )}
-        <main id="main" className="main-mobile mx-auto w-full max-w-5xl flex-1 px-4 pt-6 md:px-8 md:pb-16 md:pt-8"><div key={path} className="page-enter">{children}</div></main>
+        <NavMemory />
+        <main id="main" className={clsx("main-mobile mx-auto w-full flex-1 px-4 pt-6 md:px-8 md:pb-16 md:pt-8", /^\/grammar\/[^/]+$/.test(path) ? "max-w-6xl" : "max-w-5xl")}><div key={path} className="page-enter">{children}</div></main>
       </div>
 
       {/* Mobile bottom nav */}

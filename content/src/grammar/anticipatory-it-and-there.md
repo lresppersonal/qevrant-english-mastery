@@ -7,6 +7,13 @@ minutes: 40
 summary: English dislikes long subjects at the front of a sentence. Anticipatory "it" and existential "there" move heavy information to the end, where it is easier to process and naturally stressed.
 links: prerequisite>noun-clauses>Noun clauses>B2+>published ; extends>inversion-and-emphasis>Emphasis and inversion>C1>published ; extends>passive-and-causative>Passive and reporting>B2+>published
 ---
+## core | core | Core concept
+English likes to keep the beginning of a sentence light and to put long or new information at the **end**. The "empty" subjects *it* and *there* make this possible. *It* stands in for a long subject that moves to the end; *there* introduces something new.
+!rule *It* + *be* + adjective + *to*-infinitive / *that*-clause: ***It** is difficult **to find a flat***. *There* + *be* + new noun phrase: ***There** are three reasons for this.*
+> ex: To find a flat in central Vienna is difficult. → **It** is difficult to find a flat in central Vienna. || the heavy subject moves to the end
+> ex: A link between diet and memory exists. → **There is** a link between diet and memory. || new information introduced naturally
+Russian often leaves the subject out (*Важно проанализировать…*), but English always needs a subject: *It is important to analyse…*
+
 ## overview | overview | Overview and purpose
 *To find a flat in central Vienna is difficult* is grammatical but sounds heavy. Native speakers say ***It** is difficult to find a flat in central Vienna.* The empty subject *it* "anticipates" the real subject, which moves to the end. Similarly, ***There** are three reasons for this* introduces new information more naturally than *Three reasons for this are*. Mastering these two dummy subjects is one of the clearest differences between intermediate and advanced writing.
 
@@ -71,14 +78,13 @@ After *find, make, consider, think, believe* the infinitive or that-clause canno
 !register Academic writing relies heavily on anticipatory *it* to evaluate and hedge (*It is likely / possible / clear / important that*). Overuse, however, produces a string of empty openings. Vary with personal or noun subjects: *These results suggest ...*, *A plausible explanation is ...*.
 In speech, *there's* + plural and the object-*it* pattern are frequent; existential *there* with verbs other than *be* (*there exists, there arose*) is formal or literary.
 
-## errors | errors | Common mistakes advanced learners make
-> x: Is important to analyse the results. || It is important to analyse the results.
-> x: There is important to remember the context. || It is important to remember the context.
-> x: I find difficult to concentrate in the library. || I find it difficult to concentrate in the library.
-> x: It exists a strong link between diet and health. || There is a strong link between diet and health.
-> x: There is many reasons for this. || There are many reasons for this.
-> x: It is said the fire to have started at night. || The fire is said to have started at night. / It is said that the fire started at night.
-
+## errors | errors | Common mistakes
+!! Is important to analyse the results. || It is important to analyse the results. || English sentences need a subject; *it* fills the empty position.
+!! There is important to remember the context. || It is important to remember the context. || *It* anticipates a clause; *there* introduces a noun phrase.
+!! I find difficult to concentrate in the library. || I find it difficult to concentrate in the library. || After *find, make, consider* + adjective, add *it* before the adjective.
+!! It exists a strong link between diet and health. || There is a strong link between diet and health. || Use *there is / there are* to say that something exists.
+!! There is many reasons for this. || There are many reasons for this. || The verb agrees with the noun that follows *there*.
+!! It is said the fire to have started at night. || The fire is said to have started at night. / It is said that the fire started at night. || These are two separate patterns; do not mix them.
 ## advanced | advanced | Advanced applications
 #### Extraposition from noun phrases
 Long post-modifiers can also move to the end: *A rumour spread **that the CEO had resigned**.* (instead of *A rumour that the CEO had resigned spread*). The result is lighter and clearer.
@@ -169,3 +175,39 @@ Choose the most natural academic sentence.
 Move the heavy clause to the end: *A report that the company was in financial difficulty appeared in the press.*
 = A report appeared in the press that the company was in financial difficulty.
 > Extraposition from a noun phrase improves end-weight.
+
+=== recognise
+@title From a research summary
++ [[It is]] widely accepted [[that]] sleep affects memory. || anticipatory *it* + *that*-clause
++ [[There are]], however, few studies of older adults. || *there*: introducing new information
+- The present study addresses this gap.
++ [[It was]] not possible [[to recruit]] participants over 80. || anticipatory *it* + *to*-infinitive
++ We found [[it]] difficult [[to measure]] sleep quality at home. || *find it* + adjective + *to*-infinitive
+- The results are presented in Section 4.
+
+=== check
+### [mc] ___ is essential that all participants give their consent.
++ It
+- There
+- (no word)
+> Anticipatory *it* + *that*-clause.
+### [mc] ___ a number of problems with the new software.
+- It is
++ There are
+- It are
+> *There are* introduces new plural information.
+### [mc] Which sentence is correct?
+- I consider important to be punctual.
++ I consider it important to be punctual.
+- I consider it important being punctual.
+> *Consider* + *it* + adjective + *to*-infinitive.
+### [explain] Why do writers prefer *It is clear that the policy failed* to *That the policy failed is clear*?
+= The second version puts a long clause at the start, which is heavy and harder to process. Anticipatory *it* moves the clause to the end, where English places long and new information.
+> This is the principle of end-weight.
+
+=== produce
+Write 5–6 sentences evaluating an idea or plan, as in a short report. Begin some sentences with *it* and *there*.
+- I used anticipatory *it* + adjective + *to*-infinitive at least once.
+- I used anticipatory *it* + adjective + *that*-clause at least once.
+- I used *there is / there are* to introduce new information, with correct agreement.
+- I used *find / make / consider* + *it* + adjective.

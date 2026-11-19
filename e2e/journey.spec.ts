@@ -31,15 +31,17 @@ test("new learner: onboard, study, answer, review the rule, save from text, revi
   await page.getByLabel("What should we call you?").fill("Aigerim");
   await page.locator("#main").getByText("Exam preparation", { exact: true }).click();
   await page.getByRole("radio", { name: /^C1/ }).check();
-  await page.getByRole("button", { name: "Save and go to dashboard" }).click();
+  await page.getByRole("button", { name: "Continue" }).click();
+  // Step 2 (self-assessment) is optional
+  await page.getByRole("button", { name: "Skip for now" }).click();
   await expect(page.getByRole("heading", { name: /^Good (morning|afternoon|evening), Aigerim\.$/ })).toBeVisible();
   await expect(page.getByTestId("streak")).toContainText("0 days");
 
-  // Grammar: theory and practice are separate pages; wrong answers link back to the exact rule
+  // Grammar: the lesson opens on its core concept; Practise is a stage of the same lesson; wrong answers link back to the exact rule
   await page.goto("/grammar/relative-clauses");
-  await expect(page.getByRole("heading", { name: "What relative clauses do" })).toBeVisible();
-  await page.getByRole("link", { name: /Practise this topic/ }).click();
-  await expect(page).toHaveURL(/\/grammar\/relative-clauses\/practice$/);
+  await expect(page.getByRole("heading", { name: "Core concept" }).first()).toBeVisible();
+  await page.getByTestId("stage-nav").getByRole("link", { name: /Practise/ }).click();
+  await expect(page).toHaveURL(/\/grammar\/relative-clauses\?stage=practise$/);
   await page.getByRole("radio", { name: /that/ }).first().click();
   await page.getByRole("button", { name: "Check" }).click();
   await expect(page.getByText("Not quite")).toBeVisible();

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BackLink } from "@/components/NavMemory";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { themes, getTheme, itemsInTheme, lexClassOf, wordFamilies, distinctions, readingTexts, writingPrompts } from "@/lib/content";
@@ -27,7 +28,7 @@ export default async function ThemePage({ params }: { params: Promise<{ slug: st
   const essays = writingPrompts.filter((p) => p.topics.includes(theme.slug)).length;
   return (
     <>
-      <Link href="/vocabulary" className="mb-2 inline-flex items-center gap-1 py-2.5 text-sm font-medium text-muted hover:text-ink"><ArrowLeft size={15} aria-hidden="true" /> All themes</Link>
+      <BackLink href="/vocabulary" label="All themes" />
       <PageHeader eyebrow={`Vocabulary · ${theme.group}`} title={theme.title} intro={theme.summary}>
         <Link href={`/topics/${theme.slug}`} className="btn btn-ghost">Theme hub{texts + essays ? ` · ${texts} ${texts === 1 ? "text" : "texts"}, ${essays} ${essays === 1 ? "essay" : "essays"}` : ""}</Link>
       </PageHeader>

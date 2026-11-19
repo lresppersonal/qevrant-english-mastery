@@ -8,6 +8,13 @@ summary: Phrases such as in charge of, by mistake, on behalf of and under pressu
 links: prerequisite>dependent-prepositions>Dependent prepositions>B2>published ; contrasts_with>linking-contrast-concession>Linking contrast and concession>B2+>published
 sources: Destination C1&C2 ; Outcomes Advanced (coverage reviewed; examples original)
 ---
+## core | core | Core concept
+A prepositional phrase begins with a preposition and works as **one fixed block** of meaning: *at risk*, *in favour of*, *on purpose*, *by mistake*. You cannot usually change the preposition or add an article, so these phrases are learned whole, like single words.
+!rule Treat each phrase as a unit: *on time* (punctual) is not *in time* (early enough); *in the end* (finally) is not *at the end of* (the final part of).
+> ex: The species is **at risk of** extinction. || fixed: no article, fixed preposition
+> ex: I deleted the file **by mistake**. || not *by a mistake*
+> ex: She spoke **on behalf of** the whole team. || a formal phrase used in writing and meetings
+
 ## overview | overview | What are prepositional phrases?
 A prepositional phrase begins with a preposition and works as one block of meaning: *at risk*, *in favour of*, *on purpose*. Many are fixed: you can't change the preposition or add an article.
 > ex: The species is **at risk of** extinction.
@@ -44,12 +51,11 @@ A prepositional phrase begins with a preposition and works as one block of meani
 | **out of the question** / **out of question** | impossible / (not used) |
 
 ## errors | errors | Common mistakes
-> x: In the other hand, cars are convenient. || *On the other hand*
-> x: I met her by a chance. || No article: *by chance*
-> x: The train arrived in time at 9.00 exactly. || exact schedule: *on time*
-> x: At the end, we decided to stay. || meaning *finally*: *In the end*
-> x: He's in charge for the project. || *in charge of*
-
+!! In the other hand, cars are convenient. || On the other hand, cars are convenient. || The fixed phrase is *on the other hand*.
+!! I met her by a chance. || I met her by chance. || No article in *by chance*.
+!! The train arrived in time at 9.00 exactly. || The train arrived on time, at 9.00 exactly. || *On time* = at the scheduled time; *in time* = early enough.
+!! At the end, we decided to stay. || In the end, we decided to stay. || *In the end* = finally; *at the end of* needs *of* + a noun.
+!! He's in charge for the project. || He's in charge of the project. || *In charge of* something.
 ## advanced | advanced | Formal and academic phrases
 > ex: **In the light of** these findings, the policy should be reviewed.
 > ex: The plan was rejected **on the grounds that** it was too costly.
@@ -130,3 +136,39 @@ ___ these findings, the committee decided to postpone the decision.
 - By light of
 - Under the light of
 > *In the light of* = considering.
+
+=== recognise
+@title Committee update
++ The proposal was approved [[in principle]] last month. || fixed phrase: agreed in general, details to follow
++ [[In the end]], the vote was unanimous. || *in the end* = finally
+- The meeting lasted two hours.
++ The chair spoke [[on behalf of]] the whole committee. || formal fixed phrase: representing someone
++ Several older buildings are [[at risk of]] closure. || *at risk of* + noun
++ All reports must be submitted [[on time]]. || *on time* = at the scheduled time
+
+=== check
+### [mc] I didn't do it ___; it was an accident.
++ on purpose
+- by purpose
+- in purpose
+> *On purpose* = intentionally.
+### [mc] We got to the station just ___ to catch the last train.
+- on time
++ in time
+- at time
+> *In time* = early enough.
+### [mc] ___ the end of the film, everyone was crying.
++ At
+- In
+- On
+> *At the end of* + noun = the final part of something.
+### [explain] When would you say *in the end* rather than *at the end*?
+= *In the end* means "finally, after a long time or many changes". *At the end* refers to the last part of something and normally needs *of*: *at the end of the meeting*.
+> They look similar, but they are different fixed phrases.
+
+=== produce
+Write 5–6 sentences about a plan or project that changed several times before it was finished.
+- I used *in the end* and *at the end of* correctly.
+- I used at least two fixed phrases without articles (for example *by chance, on purpose, in principle*).
+- I used a formal phrase (*on behalf of, in favour of, in accordance with*).
+- I used *on time* or *in time* with the right meaning.

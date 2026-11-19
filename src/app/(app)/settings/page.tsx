@@ -7,6 +7,7 @@ import { useLearner, dailyGoalOf } from "@/components/StoreProvider";
 import { DAILY_GOAL_OPTIONS } from "@/lib/streak";
 import { Flame } from "@/components/StreakFlame";
 import { ProfileForm } from "@/components/ProfileForm";
+import { LearningProfileForm } from "@/components/LearningProfileForm";
 import { ThemeToggle } from "@/components/AppShell";
 import { PageHeader } from "@/components/ui";
 import { InstallAppPanel } from "@/components/PwaSupport";
@@ -68,6 +69,12 @@ export default function Settings() {
             })}
           </div>
         </div>
+      </section>
+
+      <section className="card mb-6 p-6" aria-labelledby="h-strengths" id="learning-profile">
+        <h2 id="h-strengths" className="mb-1 text-lg font-bold">Strengths and priorities</h2>
+        <p className="mb-5 text-sm text-muted">Your self-assessment for the personal study plan.</p>
+        <LearningProfileForm submitLabel="Save my learning profile" />
       </section>
 
       <section className="card mb-6 space-y-3 p-6" aria-labelledby="h-install">

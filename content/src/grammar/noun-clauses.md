@@ -7,6 +7,12 @@ minutes: 40
 summary: A noun clause does the job of a noun: it can be the subject, object or complement of a sentence. Noun clauses let you package whole ideas, which is essential for argument and academic writing.
 links: prerequisite>indirect-questions-and-tags>Indirect questions>B2>published ; extends>reported-speech>Reported speech>B2+>published ; contrasts_with>relative-clauses>Relative clauses>B2>published
 ---
+## core | core | Core concept
+A noun clause is a whole clause that does the job of a **noun**: it can be the subject or object of a sentence. It lets you treat a statement, a question or a fact as a single "thing" you can talk about: *I understand **why the system failed***.
+!rule Statement → *that*-clause (*I know **that** she's right*). Question → *wh*-clause or *whether/if*, with **statement word order** (*I wonder **where she lives***).
+> ex: **What the data show** is that the effect is temporary. || *what*-clause as subject, *that*-clause as complement
+> ex: We don't know **whether the plan will work**. || a yes/no question turned into a noun clause
+
 ## overview | overview | Overview and purpose
 Compare *I understand **the problem*** with *I understand **why the system failed***. The clause *why the system failed* fills the same position as the noun phrase *the problem*. That is a **noun clause** (also called a nominal or content clause). Noun clauses let you treat a statement, a question or a fact as a single unit you can then describe, evaluate or argue about: ***What the data show** is **that** the effect is temporary.*
 
@@ -58,14 +64,13 @@ Prepositions cannot be followed directly by a that-clause. Use ***the fact that*
 !register Subject that-clauses (*That X is true is clear*) are formal and can sound heavy; most writers prefer *It is clear that X*. Subject wh-clauses (*What matters is ...*) are common in both speech and writing as a focusing device.
 Overuse of *the fact that* makes prose wordy: *Due to the fact that* → *because*; *In spite of the fact that* → *although*. Keep it where a noun phrase is genuinely needed.
 
-## errors | errors | Common mistakes advanced learners make
-> x: I don't know what does he want. || I don't know what he wants.
-> x: Despite that it was late, we continued. || Despite the fact that it was late, ... / Although it was late, ...
-> x: The question is if we should continue. || The question is whether we should continue.
-> x: What I want to say that education matters. || What I want to say is that education matters.
-> x: I'm not sure about if it is correct. || I'm not sure whether it is correct.
-> x: The news which he had resigned shocked everyone. || The news that he had resigned shocked everyone.
-
+## errors | errors | Common mistakes
+!! I don't know what does he want. || I don't know what he wants. || Noun clauses use statement word order, with no *do/does/did*.
+!! Despite that it was late, we continued. || Despite the fact that it was late, we continued. / Although it was late, we continued. || *Despite* is a preposition; it needs a noun or *the fact that*.
+!! The question is if we should continue. || The question is whether we should continue. || After *be* and after prepositions, use *whether*, not *if*.
+!! What I want to say that education matters. || What I want to say is that education matters. || A *what*-clause subject needs its own verb (*is*).
+!! I'm not sure about if it is correct. || I'm not sure whether it is correct. || After a preposition, use *whether*.
+!! The news which he had resigned shocked everyone. || The news that he had resigned shocked everyone. || The clause gives the content of *the news*, so use *that*, not *which*.
 ## advanced | advanced | Advanced applications
 #### Pseudo-clefts with noun clauses
 ***What** the evidence suggests **is that** the effect fades over time.* The wh-clause sets up expectation; the that-clause delivers the point. This structure is powerful in conclusions but loses force if repeated.
@@ -156,3 +161,39 @@ Correct the sentence: *The question if the results can be generalised remains op
 Much depends ___ whether the reforms are implemented consistently.
 = on
 > *Depend on* + whether-clause.
+
+=== recognise
+@title From a committee report
++ [[What the survey shows]] is a clear demand for evening classes. || *what*-clause as subject
++ The committee agreed [[that the timetable should change]]. || *that*-clause as object
+- The survey was carried out in March.
++ It is still unclear [[whether funding will be available]]. || *whether*-clause: an open question
++ Members asked [[how the new classes would be staffed]]. || *wh*-clause with statement word order
+- The next meeting is on 4 May.
+
+=== check
+### [mc] Can you tell me ___?
+- where is the library
++ where the library is
+- where does the library be
+> Statement word order inside a noun clause.
+### [mc] The decision depends on ___ the funding is approved.
+- if
++ whether
+- that
+> After a preposition, use *whether*.
+### [mc] ___ surprised me was the speed of the response.
++ What
+- That
+- Which
+> A *what*-clause as the subject: "the thing that surprised me".
+### [explain] Why is it *the fact that he left* but *the reason why he left*?
+= *The fact that* gives the content of the fact (a noun clause); *the reason why* asks about a cause, so a *wh*-word is used.
+> *That* gives content; *wh*-words carry question meanings.
+
+=== produce
+Write 5–6 sentences reflecting on a problem you faced: what happened, what you didn't understand at first, and what you learned.
+- I used a *what*-clause as the subject of a sentence.
+- I used at least one *that*-clause and one *wh*-clause as objects.
+- I used *whether* after a preposition or after *be*.
+- All my *wh*-clauses use statement word order.
