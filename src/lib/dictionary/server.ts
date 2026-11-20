@@ -1,7 +1,6 @@
 import "server-only";
+import { structured, aiConfigured } from "@/lib/ai/server";
 import nlp from "compromise";
-import Anthropic from "@anthropic-ai/sdk";
-import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
 import { z } from "zod";
 import { createClient } from "@supabase/supabase-js";
 import { vocabItems } from "@/lib/content";
@@ -21,7 +20,6 @@ import { emptyEntry, pickContextSense, posClass, type DictEntry, type DictSense,
 
 const local = createLocalDictionary(vocabItems, core as CoreWord[]);
 const DICT_BASE = process.env.DICTIONARY_API_BASE || "https://api.dictionaryapi.dev/api/v2/entries/en";
-const DICT_MODEL = process.env.DICTIONARY_AI_MODEL || "claude-haiku-5-5";
 export const ttsConfigured = () => !!process.env.GOOGLE_TTS_API_KEY;
 
 export class DictionaryUnavailable extends Error {}
@@ -132,19 +130,10 @@ const AiEntry = z.object({
   forms: z.array(z.string()).max(8).describe("Inflections and word family, e.g. 'run – ran – run', 'runner (noun)'"),
   usageNotes: z.array(z.string()).max(3),
 });
-let anthropic: Anthropic | null = null;
-const ai = () => (anthropic ??= new Anthropic({ timeout: 25_000, maxRetries: Number(process.env.AI_MAX_RETRIES ?? 2) }));
-export const dictionaryAiConfigured = () => !!process.env.ANTHROPIC_API_KEY;
+export const dictionaryAiConfigured = () => aiConfigured();
 
 async function aiEntry(query: string, sentence: string, lemmaGuess: string, hints: DictSense[]): Promise<z.infer<typeof AiEntry>> {
-  const msg = await ai().messages.parse({
-    model: DICT_MODEL, max_tokens: 1800,
-    system: "You are a lexicographer writing a learner's dictionary entry for adult learners of English whose first language is Russian. Write ORIGINAL, concise definitions and examples (do not copy the hint definitions). Order senses from most to least common, but make sure the meaning used in the given sentence is included, and set contextIndex to it. Russian translations must be natural equivalents (1-3 options, separated by commas). For grammar words (articles, determiners, prepositions, conjunctions), explain the grammatical function clearly. IPA in slashes, British (RP) and General American.",
-    messages: [{ role: "user", content: `Word clicked: "${query}"\nSentence: "${sentence || query}"\nLikely base form: ${lemmaGuess}\nHint senses from Wiktionary (for reference only): ${hints.slice(0, 6).map((h) => `[${h.pos}] ${h.definition}`).join(" | ") || "none"}` }],
-    output_config: { format: zodOutputFormat(AiEntry) },
-  });
-  if (!msg.parsed_output) throw new Error("AI dictionary output unreadable");
-  return msg.parsed_output;
+  return structured(AiEntry, "You are a lexicographer writing a learner's dictionary entry for adult learners of English whose first language is Russian. Write ORIGINAL, concise definitions and examples (do not copy the hint definitions). Order senses from most to least common, but make sure the meaning used in the given sentence is included, and set contextIndex to it. Russian translations must be natural equivalents (1-3 options, separated by commas). For grammar words (articles, determiners, prepositions, conjunctions), explain the grammatical function clearly. IPA in slashes, British (RP) and General American.", `Word clicked: "${query}"\nSentence: "${sentence || query}"\nLikely base form: ${lemmaGuess}\nHint senses from Wiktionary (for reference only): ${hints.slice(0, 6).map((h) => `[${h.pos}] ${h.definition}`).join(" | ") || "none"}`, { maxTokens: 1800, fast: true, timeoutMs: 25_000 });
 }
 
 function mergeAi(base: DictEntry, a: z.infer<typeof AiEntry>, keepFdSenses: boolean): DictEntry {
@@ -251,14 +240,7 @@ async function phoneticsFor(lemma: string) {
 /** "Explain in this sentence": a short AI call for cached entries. */
 const Explain = z.object({ contextIndex: z.number().int(), contextNote: z.string(), ru: z.string() });
 export async function explainInContext(entry: DictEntry, sentence: string) {
-  const msg = await ai().messages.parse({
-    model: DICT_MODEL, max_tokens: 400,
-    system: "Choose which listed sense of the word is used in the sentence and explain its meaning there in one short sentence for an intermediate learner. Give the best Russian translation for this context.",
-    messages: [{ role: "user", content: `Word: ${entry.query} (base form ${entry.lemma})\nSentence: "${sentence}"\nSenses:\n${entry.senses.map((s, i) => `${i}. [${s.pos}] ${s.definition}`).join("\n")}` }],
-    output_config: { format: zodOutputFormat(Explain) },
-  });
-  if (!msg.parsed_output) throw new Error("unreadable");
-  return msg.parsed_output;
+  return structured(Explain, "Choose which listed sense of the word is used in the sentence and explain its meaning there in one short sentence for an intermediate learner. Give the best Russian translation for this context.", `Word: ${entry.query} (base form ${entry.lemma})\nSentence: "${sentence}"\nSenses:\n${entry.senses.map((s, i) => `${i}. [${s.pos}] ${s.definition}`).join("\n")}`, { maxTokens: 400, fast: true, timeoutMs: 25_000 });
 }
 
 export { posClass };

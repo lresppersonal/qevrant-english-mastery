@@ -1,10 +1,8 @@
 import { z } from "zod";
-import Anthropic from "@anthropic-ai/sdk";
-import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
 import { exercises, ruleSummary } from "@/lib/content";
 import { isDemoMode } from "@/lib/supabase/config";
 import { supabaseServer } from "@/lib/supabase/server";
-import { describeError } from "@/lib/ai/server";
+import { describeError, structured, aiConfigured } from "@/lib/ai/server";
 
 /**
  * "Explain my mistake": a short AI explanation of why the learner's own answer doesn't fit,
@@ -21,12 +19,11 @@ const Out = z.object({
 });
 const cache = new Map<string, z.infer<typeof Out>>();
 const usage = new Map<string, { day: string; n: number }>();
-let client: Anthropic | null = null;
 
 export async function POST(req: Request) {
   const parsed = Body.safeParse(await req.json().catch(() => null));
   if (!parsed.success) return Response.json({ error: "Invalid request." }, { status: 400 });
-  if (!process.env.ANTHROPIC_API_KEY) return Response.json({ error: "AI explanations aren't configured on this server." }, { status: 503 });
+  if (!aiConfigured()) return Response.json({ error: "AI explanations aren't configured on this server." }, { status: 503 });
   let user = "demo";
   if (isDemoMode) { if (process.env.AI_DEMO_ALLOW !== "true") return Response.json({ error: "AI explanations need an account." }, { status: 401 }); }
   else {
@@ -53,17 +50,10 @@ export async function POST(req: Request) {
 
   const rule = q.theoryAnchor ? ruleSummary(q.theoryAnchor.lesson, q.theoryAnchor.section) : null;
   try {
-    client ??= new Anthropic({ timeout: 30_000, maxRetries: Number(process.env.AI_MAX_RETRIES ?? 2) });
-    const msg = await client.messages.parse({
-      model: process.env.DICTIONARY_AI_MODEL || "claude-haiku-5-5", max_tokens: 700,
-      system: "You are an experienced teacher of advanced English grammar for adult learners (B2–C2) whose first language is Russian. Explain the learner's specific mistake clearly and kindly. Be precise about grammar; do not invent rules; if the learner's answer is acceptable in another context, say in which context. Use British English.",
-      messages: [{ role: "user", content: `Exercise: ${ex.title}\nQuestion: ${q.prompt}\n${q.kind === "choice" ? `Options: ${q.options.join(" | ")}\n` : ""}Correct answer: ${correct}\nLearner's answer: ${learner}\nTeacher's explanation of the key: ${q.explanation}\n${rule ? `Rule from the lesson: ${rule}\n` : ""}` }],
-      output_config: { format: zodOutputFormat(Out) },
-    });
-    if (!msg.parsed_output) throw new Error("unreadable");
-    cache.set(key, msg.parsed_output);
+    const out = await structured(Out, "You are an experienced teacher of advanced English grammar for adult learners (B2–C2) whose first language is Russian. Explain the learner's specific mistake clearly and kindly. Be precise about grammar; do not invent rules; if the learner's answer is acceptable in another context, say in which context. Use British English.", `Exercise: ${ex.title}\nQuestion: ${q.prompt}\n${q.kind === "choice" ? `Options: ${q.options.join(" | ")}\n` : ""}Correct answer: ${correct}\nLearner's answer: ${learner}\nTeacher's explanation of the key: ${q.explanation}\n${rule ? `Rule from the lesson: ${rule}\n` : ""}`, { maxTokens: 700, fast: true, timeoutMs: 30_000 });
+    cache.set(key, out);
     if (cache.size > 5000) cache.delete(cache.keys().next().value!);
-    return Response.json({ explanation: msg.parsed_output });
+    return Response.json({ explanation: out });
   } catch (e) {
     const d = describeError(e);
     return Response.json({ error: d.error, retry: d.retry }, { status: d.status });

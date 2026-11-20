@@ -1,11 +1,9 @@
 import { z } from "zod";
-import Anthropic from "@anthropic-ai/sdk";
-import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
 import { getSense } from "@/lib/content";
 import { usesItem } from "@/lib/vocab-context";
 import { isDemoMode } from "@/lib/supabase/config";
 import { supabaseServer } from "@/lib/supabase/server";
-import { describeError } from "@/lib/ai/server";
+import { describeError, structured, aiConfigured } from "@/lib/ai/server";
 
 /**
  * Vocabulary in Context, "active production": feedback on a learner's own sentence with a target
@@ -22,7 +20,6 @@ const Out = z.object({
   tip: z.string().describe("One short, practical tip for using this item"),
 });
 const usage = new Map<string, { day: string; n: number }>();
-let client: Anthropic | null = null;
 
 export async function POST(req: Request) {
   const parsed = Body.safeParse(await req.json().catch(() => null));
@@ -30,7 +27,7 @@ export async function POST(req: Request) {
   const ref = getSense(parsed.data.senseId);
   if (!ref) return Response.json({ error: "Unknown vocabulary item." }, { status: 404 });
   if (!usesItem(ref, parsed.data.sentence)) return Response.json({ error: `Your sentence doesn't contain “${ref.item.lemma}” yet.` }, { status: 422 });
-  if (!process.env.ANTHROPIC_API_KEY) return Response.json({ error: "AI feedback isn't configured on this server." }, { status: 503 });
+  if (!aiConfigured()) return Response.json({ error: "AI feedback isn't configured on this server." }, { status: 503 });
   let user = "demo";
   if (isDemoMode) { if (process.env.AI_DEMO_ALLOW !== "true") return Response.json({ error: "AI feedback needs an account." }, { status: 401 }); }
   else {
@@ -44,16 +41,9 @@ export async function POST(req: Request) {
   if (u && u.day === day && u.n >= Number(process.env.VOCAB_SENTENCE_DAILY_LIMIT || 100)) return Response.json({ error: "You've reached today's limit for sentence feedback." }, { status: 429 });
   usage.set(user, { day, n: u && u.day === day ? u.n + 1 : 1 });
   try {
-    client ??= new Anthropic({ timeout: 30_000, maxRetries: Number(process.env.AI_MAX_RETRIES ?? 2) });
     const { item, sense } = ref;
-    const msg = await client.messages.parse({
-      model: process.env.DICTIONARY_AI_MODEL || "claude-haiku-5-5", max_tokens: 600,
-      system: "You are an experienced teacher of advanced English vocabulary (B2–C2) for adult learners whose first language is Russian. Judge a learner's sentence that uses a target word or expression. Be precise and encouraging; do not invent rules; accept any natural British or American usage. Use British English in your explanations.",
-      messages: [{ role: "user", content: `Target: ${item.lemma} (${item.pos}, ${sense.level}, ${sense.register})\nMeaning: ${sense.definition}\nCommon collocations: ${sense.collocations.join("; ") || "—"}\nModel example: ${sense.examples[0]}\nLearner's sentence: ${parsed.data.sentence}` }],
-      output_config: { format: zodOutputFormat(Out) },
-    });
-    if (!msg.parsed_output) throw new Error("unreadable");
-    return Response.json({ feedback: msg.parsed_output });
+    const out = await structured(Out, "You are an experienced teacher of advanced English vocabulary (B2–C2) for adult learners whose first language is Russian. Judge a learner's sentence that uses a target word or expression. Be precise and encouraging; do not invent rules; accept any natural British or American usage. Use British English in your explanations.", `Target: ${item.lemma} (${item.pos}, ${sense.level}, ${sense.register})\nMeaning: ${sense.definition}\nCommon collocations: ${sense.collocations.join("; ") || "—"}\nModel example: ${sense.examples[0]}\nLearner's sentence: ${parsed.data.sentence}`, { maxTokens: 600, fast: true, timeoutMs: 30_000 });
+    return Response.json({ feedback: out });
   } catch (e) {
     const d = describeError(e);
     return Response.json({ error: d.error, retry: d.retry }, { status: d.status });
