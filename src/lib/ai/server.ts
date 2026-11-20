@@ -18,9 +18,11 @@ import { z as zod } from "zod";
 export const AI_PROVIDER = (process.env.AI_PROVIDER || (process.env.HF_TOKEN && !process.env.ANTHROPIC_API_KEY ? "huggingface" : "anthropic")).toLowerCase();
 const OPEN = AI_PROVIDER === "huggingface" || AI_PROVIDER === "openai-compatible";
 const OPEN_BASE = (process.env.AI_BASE_URL || "https://router.huggingface.co/v1").replace(/\/$/, "");
-const OPEN_KEY = process.env.HF_TOKEN || process.env.AI_API_KEY || "";
-export const AI_MODEL = OPEN ? (process.env.AI_OPEN_MODEL || "openai/gpt-oss-120b:cheapest") : (process.env.ANTHROPIC_MODEL || "claude-sonnet-5-5");
-export const AI_FAST_MODEL = OPEN ? (process.env.AI_OPEN_FAST_MODEL || AI_MODEL) : (process.env.DICTIONARY_AI_MODEL || "claude-haiku-5-5");
+const OPEN_KEY = process.env.AI_API_KEY || process.env.HF_TOKEN || "";
+// ":cheapest"/":fastest" are Hugging Face router hints; other OpenAI-compatible servers (Groq, vLLM) need the bare id.
+const routerHint = (m: string) => (OPEN_BASE.includes("huggingface.co") ? m : m.replace(/:(cheapest|fastest|[a-z-]+)$/i, ""));
+export const AI_MODEL = OPEN ? routerHint(process.env.AI_OPEN_MODEL || "openai/gpt-oss-120b:cheapest") : (process.env.ANTHROPIC_MODEL || "claude-sonnet-5-5");
+export const AI_FAST_MODEL = OPEN ? routerHint(process.env.AI_OPEN_FAST_MODEL || AI_MODEL) : (process.env.DICTIONARY_AI_MODEL || "claude-haiku-5-5");
 export const aiConfigured = () => (OPEN ? !!OPEN_KEY : !!process.env.ANTHROPIC_API_KEY);
 export const aiProviderLabel = () => (OPEN ? `open model ${AI_MODEL}` : `Claude ${AI_MODEL}`);
 export const transcriptionConfigured = () => !!process.env.OPENAI_API_KEY;
