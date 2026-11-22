@@ -21,11 +21,11 @@ export function HeroQ() {
       <g className="hq-spin">
       <g>
         {/* light stroke: the ring is drawn closed, so the tail crosses it like a continuous band */}
-        <circle className="hq-ring" cx="32" cy="32" r="16" pathLength={100} transform="rotate(45 32 32)" fill="none" stroke="var(--logo-ring)" strokeWidth="3.4" />
+        <circle className="hq-ring" cx="32" cy="32" r="16" pathLength={100} transform="rotate(45 32 32)" fill="none" stroke="var(--logo-ring)" strokeWidth="1.5" />
       </g>
       <g className="hq-tail-in">
-        <path className="hq-tail" d="M34.04 33.04L49.88 48.88" stroke="var(--logo-tail)" strokeWidth="3.6" strokeLinecap="round" />
-        <path className="hq-glint" pathLength={100} d="M34.04 33.04L49.88 48.88" stroke="url(#hq-glint)" strokeWidth="1.8" strokeLinecap="round" />
+        <path className="hq-tail" d="M34.04 33.04L49.88 48.88" stroke="var(--logo-tail)" strokeWidth="1.5" strokeLinecap="round" />
+        <path className="hq-glint" pathLength={100} d="M34.04 33.04L49.88 48.88" stroke="url(#hq-glint)" strokeWidth="0.8" strokeLinecap="round" />
       </g>
       </g>
     </svg>
