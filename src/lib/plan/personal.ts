@@ -17,7 +17,7 @@ export type Skill = (typeof SKILLS)[number];
 export const SKILL_LABEL: Record<Skill, string> = { grammar: "Grammar", vocabulary: "Vocabulary", reading: "Reading", listening: "Listening", speaking: "Speaking", writing: "Academic Writing" };
 export type Priority = "high" | "medium" | "maintenance";
 export const PRIORITY_LABEL: Record<Priority, string> = { high: "High priority", medium: "Medium priority", maintenance: "Maintenance" };
-export const CONFIDENCE_LABEL = ["", "I struggle considerably", "I have noticeable difficulties", "Intermediate confidence", "Relatively comfortable", "Very confident"] as const;
+export const CONFIDENCE_LABEL = ["", "Very weak", "Weak", "Average", "Good", "Excellent"] as const;
 
 export interface Assessment { ratings: Partial<Record<Skill, number>>; focus: Skill[]; updatedAt: string }
 export type Overrides = Partial<Record<Skill, Priority>>;

@@ -1,4 +1,4 @@
-import { BookA,
+import {
   LayoutDashboard, BookOpenText, Library, Languages, Newspaper, Headphones, Mic, PenLine, Dumbbell,
   RotateCcw, BarChart3, Settings, Layers, CalendarCheck, type LucideIcon,
 } from "lucide-react";
@@ -7,19 +7,24 @@ export interface NavItem { href: string; label: string; icon: LucideIcon; soon?:
 export interface NavGroup { label: string; items: NavItem[] }
 
 export const NAV: NavGroup[] = [
-  { label: "Home", items: [{ href: "/dashboard", label: "Dashboard", icon: LayoutDashboard }, { href: "/plan", label: "Intensive plan", icon: CalendarCheck }] },
+  {
+    label: "Home",
+    items: [
+      { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
+      { href: "/plan", label: "Intensive plan", icon: CalendarCheck },
+      { href: "/topics", label: "Topics", icon: Layers },
+    ],
+  },
   {
     label: "Learn",
     items: [
-      { href: "/topics", label: "Topics", icon: Layers },
       { href: "/grammar", label: "Grammar", icon: BookOpenText },
       { href: "/grammar/practice", label: "Grammar practice", icon: Dumbbell },
+      { href: "/writing", label: "Academic Writing", icon: PenLine },
       { href: "/vocabulary", label: "Vocabulary", icon: Languages },
-      { href: "/dictionary", label: "Dictionary", icon: BookA },
       { href: "/reading", label: "Reading", icon: Newspaper },
       { href: "/listening", label: "Listening", icon: Headphones },
       { href: "/speaking", label: "Speaking", icon: Mic },
-      { href: "/writing", label: "Academic Writing", icon: PenLine },
     ],
   },
   {
@@ -39,16 +44,16 @@ export const NAV_FOOTER: NavItem[] = [
 export const MOBILE_NAV: NavItem[] = [
   { href: "/dashboard", label: "Home", icon: LayoutDashboard },
   { href: "/learn", label: "Learn", icon: BookOpenText },
+  { href: "/plan", label: "Plan", icon: CalendarCheck },
   { href: "/review", label: "Review", icon: RotateCcw },
-  { href: "/library", label: "Library", icon: Library },
   { href: "/settings", label: "Profile", icon: Settings },
 ];
 
 /** Which mobile tab is active for a given path. */
 export function mobileSection(path: string) {
   if (path.startsWith("/dashboard")) return "/dashboard";
-  if (path.startsWith("/review")) return "/review";
-  if (path.startsWith("/library")) return "/library";
+  if (path.startsWith("/plan")) return "/plan";
+  if (path.startsWith("/review") || path.startsWith("/library")) return "/review";
   if (path.startsWith("/settings") || path.startsWith("/progress")) return "/settings";
   return "/learn";
 }

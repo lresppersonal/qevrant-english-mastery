@@ -270,7 +270,7 @@ test("every navigation item reaches a real page, with no serious accessibility v
   // Entrance animations fade content in; audit the settled page (reduced motion skips the fade).
   await page.emulateMedia({ reducedMotion: "reduce" });
   const paths = ["/", "/dashboard", "/practice/smart?mode=mixed", "/writing/portfolio", "/plan", "/writing/visual", "/writing/visual/task?id=line-bar-0-321", "/writing/visual/task?id=map-campus", "/writing/visual/task?id=process-glass", "/grammar/subject-verb-agreement", "/reading/the-moral-machine", "/topics", "/topics/environment", "/grammar", "/grammar/conditionals-and-unreal-past", "/grammar/practice", "/grammar/modals-and-modality/practice",
-    "/vocabulary", "/vocabulary/topics/environment", "/vocabulary/scholarship", "/reading", "/reading/rewilding", "/dictionary", "/listening", "/speaking", "/speaking/grades-and-learning",
+    "/vocabulary", "/vocabulary/topics/environment", "/vocabulary/scholarship", "/reading", "/reading/rewilding", "/listening", "/speaking", "/speaking/grades-and-learning",
     "/writing", "/writing/gig-economy", "/review", "/library", "/progress", "/settings", "/learn", "/sign-in"];
   const problems: string[] = [];
   for (const theme of ["light", "dark"]) {

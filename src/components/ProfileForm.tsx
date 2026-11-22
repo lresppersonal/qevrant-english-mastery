@@ -6,7 +6,7 @@ import type { Goal } from "@/lib/store/types";
 import { LEVELS, type Level } from "@/lib/content/schema";
 
 const GOALS: { id: Goal; label: string; hint: string }[] = [
-  { id: "ielts", label: "Exam preparation", hint: "For example IELTS Academic" },
+  { id: "ielts", label: "Exam preparation", hint: "Any English proficiency exam" },
   { id: "university", label: "University study", hint: "Study or research in English" },
   { id: "professional", label: "Professional English", hint: "Communicate at work" },
   { id: "general", label: "General mastery", hint: "Become a confident C1/C2 user" },
@@ -25,17 +25,21 @@ export function ProfileForm({ submitLabel, onDone }: { submitLabel: string; onDo
   const [level, setLevel] = useState<Level | null>(null);
   const [days, setDays] = useState(4);
   const [busy, setBusy] = useState(false);
+  const [examTaken, setExamTaken] = useState<boolean | null>(null);
+  const [examName, setExamName] = useState("");
 
   useEffect(() => {
     if (!profile) return;
     setName(profile.displayName ?? ""); setGoals(profile.goals); setLevel(profile.selfLevel); setDays(profile.weeklyGoalDays);
+    const ex = (profile.preferences?.exam ?? null) as { taken?: boolean; name?: string } | null;
+    if (ex && typeof ex.taken === "boolean") { setExamTaken(ex.taken); setExamName(ex.name ?? ""); }
   }, [profile]);
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
     setBusy(true);
     try {
-      await store.updateProfile({ displayName: name.trim() || null, goals, selfLevel: level, weeklyGoalDays: days, onboardedAt: profile?.onboardedAt ?? new Date().toISOString() });
+      await store.updateProfile({ displayName: name.trim() || null, goals, selfLevel: level, weeklyGoalDays: days, preferences: { ...(profile?.preferences ?? {}), exam: examTaken === null ? null : { taken: examTaken, name: examTaken ? examName.trim().slice(0, 80) : "" } }, onboardedAt: profile?.onboardedAt ?? new Date().toISOString() });
       await refresh();
       toast("Study plan saved");
       onDone?.();
@@ -51,6 +55,23 @@ export function ProfileForm({ submitLabel, onDone }: { submitLabel: string; onDo
       <label className="block max-w-sm text-sm font-semibold">What should we call you?
         <input className="input mt-1.5" value={name} onChange={(e) => setName(e.target.value)} maxLength={80} autoComplete="given-name" />
       </label>
+
+      <fieldset>
+        <legend className="text-sm font-semibold">Have you ever taken an English language proficiency examination?</legend>
+        <div className="mt-2 flex gap-2">
+          {([true, false] as const).map((v) => (
+            <label key={String(v)} className={clsx("flex cursor-pointer items-center gap-2 rounded-xl border px-4 py-2", examTaken === v ? "border-primary bg-primary-soft" : "border-line bg-surface")}>
+              <input type="radio" name="exam" className="h-4 w-4 accent-[var(--primary)]" checked={examTaken === v} onChange={() => setExamTaken(v)} />{v ? "Yes" : "No"}
+            </label>
+          ))}
+        </div>
+        {examTaken && (
+          <label className="mt-3 block max-w-sm text-sm">Which exam? <span className="text-muted">(optional)</span>
+            <input className="input mt-1.5" value={examName} onChange={(e) => setExamName(e.target.value)} maxLength={80} />
+          </label>
+        )}
+        <p className="mt-2 text-xs text-muted">This is context only; it does not set your level.</p>
+      </fieldset>
 
       <fieldset>
         <legend className="text-sm font-semibold">What are you learning for? <span className="font-normal text-muted">Choose any.</span></legend>

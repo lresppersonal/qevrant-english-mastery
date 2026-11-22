@@ -1,16 +1,16 @@
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
-import { HeroMark } from "@/components/HeroMark";
+import { HeroQ } from "@/components/HeroQ";
 import { ThemeToggle } from "@/components/AppShell";
 import { BRAND } from "@/lib/brand";
 import { isDemoMode } from "@/lib/supabase/config";
 import { Network, Layers3, Sparkles, Gauge } from "lucide-react";
 
 const PILLARS = [
-  { icon: Network, title: "A map, not a feed", body: "Every grammar point and word exists once, tagged by level and topic, and linked to what comes before and after it." },
-  { icon: Layers3, title: "Real depth at C1 and C2", body: "Advanced levels add new syntax, nuance and register control, not just longer lessons." },
-  { icon: Sparkles, title: "AI practice feedback", body: "Detailed analysis of your speaking and academic essays, linked back to the exact grammar you need." },
-  { icon: Gauge, title: "Honest measurement", body: "Progress and revision come only from your real answers. No decorative points, no fake band scores." },
+  { icon: Network, title: "One connected system", body: "Grammar, words, texts and tasks linked by level and topic." },
+  { icon: Layers3, title: "Real depth at C1 and C2", body: "Nuance, register and new structures, not just longer lessons." },
+  { icon: Sparkles, title: "Feedback that explains", body: "Every answer is checked, with the reason behind it." },
+  { icon: Gauge, title: "Your own plan", body: "A study plan built from your self-assessment and real results." },
 ];
 
 export default function Landing() {
@@ -32,42 +32,40 @@ export default function Landing() {
       </header>
 
       <main>
-        <section className="mx-auto grid max-w-6xl items-center gap-x-10 px-5 pb-16 pt-12 md:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)] md:pt-20">
-          <div>
-          <p className="eyebrow mb-4">For upper-intermediate and advanced learners</p>
-          <h1 className="max-w-3xl text-4xl font-extrabold leading-[1.08] md:text-6xl">
-            Advanced English, <span className="text-accent-text">as one connected system.</span>
-          </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-            {BRAND.product} takes you from B2 to C2 with structured grammar, a level-tagged vocabulary graph, original reading,
-            and AI feedback on your speaking and academic writing. Academic Writing includes extensive IELTS-style essay practice.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link href={isDemoMode ? "/onboarding" : "/sign-up"} className="btn btn-primary !px-6 !py-3 text-base">Start learning</Link>
-            <Link href={isDemoMode ? "/topics/education" : "/sign-in"} className="btn btn-ghost !px-6 !py-3 text-base">
-              {isDemoMode ? "Explore the Education topic" : "I already have an account"}
-            </Link>
+        <section className="relative isolate overflow-hidden">
+          <HeroQ />
+          <div className="mx-auto flex min-h-[calc(100dvh-14rem)] max-w-6xl items-center px-5 pb-16 pt-56 md:min-h-[38rem] md:pt-12">
+            <div className="ml-auto w-full md:w-[52%]">
+              <p className="eyebrow mb-4">For upper-intermediate and advanced learners</p>
+              <h1 className="text-4xl font-extrabold leading-[1.08] md:text-[3.4rem]">
+                Advanced English, <span className="text-primary">as one connected system.</span>
+              </h1>
+              <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
+                Grammar, vocabulary, reading, listening, speaking and academic writing, from B2 to C2, in one personal plan.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Link href={isDemoMode ? "/onboarding" : "/sign-up"} className="btn btn-primary !px-6 !py-3 text-base">Start learning</Link>
+                <Link href="/topics" className="btn btn-ghost !px-6 !py-3 text-base">Explore the topics</Link>
+              </div>
+            </div>
           </div>
-          </div>
-          <div className="mx-auto mt-12 aspect-square w-40 sm:w-48 md:mt-0 md:w-[min(100%,26rem)]"><HeroMark /></div>
         </section>
 
-        <section className="border-y border-line bg-surface">
-          <div className="mx-auto grid max-w-6xl gap-8 px-5 py-14 sm:grid-cols-2 lg:grid-cols-4">
+        <section className="border-t border-line">
+          <div className="mx-auto grid max-w-6xl gap-8 px-5 py-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0 lg:divide-x lg:divide-line">
             {PILLARS.map((p) => (
-              <div key={p.title}>
-                <p.icon className="text-accent-text" size={24} aria-hidden="true" />
-                <h2 className="mt-3 text-lg font-bold">{p.title}</h2>
-                <p className="mt-2 text-muted">{p.body}</p>
+              <div key={p.title} className="lg:px-6 lg:first:pl-0 lg:last:pr-0">
+                <p.icon className="text-primary" size={22} aria-hidden="true" />
+                <h2 className="mt-3 text-base font-bold">{p.title}</h2>
+                <p className="mt-1.5 text-sm leading-relaxed text-muted">{p.body}</p>
               </div>
             ))}
           </div>
         </section>
       </main>
 
-      <footer className="mx-auto flex max-w-6xl flex-wrap justify-between gap-4 px-5 py-8 text-sm text-muted">
+      <footer className="mx-auto max-w-6xl px-5 py-8 text-sm text-muted">
         <span>© {new Date().getFullYear()} {BRAND.company}</span>
-        <span>IELTS is a registered trademark of its owners. {BRAND.product} is not affiliated with or endorsed by them.</span>
       </footer>
     </div>
   );

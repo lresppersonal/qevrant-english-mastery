@@ -5,38 +5,38 @@
  */
 export const tokens = {
   light: {
-    bg: "#F7F8FB",
-    surface: "#FFFFFF",
-    surface2: "#F0F2F7",
-    border: "#D9DFE9",
-    text: "#0E1A33", // Midnight Blue
-    muted: "#4A5671",
-    primary: "#1B3668", // Navy
+    bg: "#F5F2EA",
+    surface: "#FBF9F4",
+    surface2: "#EFEBE1",
+    border: "#E1DACB",
+    text: "#14223F", // Midnight Blue
+    muted: "#535D74",
+    primary: "#2C4777", // Navy
     primaryFg: "#FFFFFF",
-    primarySoft: "#E8EEF8",
+    primarySoft: "#E4EAF2",
     accent: "#D99A2B", // Warm Amber (fills only)
     accentFg: "#1A1204",
     accentText: "#8A5A00", // amber used as text on light surfaces
     success: "#1C7347",
     danger: "#B3261E",
-    focus: "#2E62C9",
+    focus: "#3B64A6",
   },
   dark: {
-    bg: "#08101F",
-    surface: "#0F1A2E",
-    surface2: "#16233D",
-    border: "#26385C",
-    text: "#E7ECF5",
-    muted: "#A2AEC6",
-    primary: "#93B4EE",
-    primaryFg: "#08101F",
-    primarySoft: "#1A2C4E",
+    bg: "#0A1322",
+    surface: "#101B2F",
+    surface2: "#16233B",
+    border: "#22324D",
+    text: "#E3E8F1",
+    muted: "#9DA9BF",
+    primary: "#A7BFE3",
+    primaryFg: "#0A1322",
+    primarySoft: "#1A2A45",
     accent: "#F0B44C",
     accentFg: "#1A1204",
     accentText: "#F3C26A",
     success: "#5CC48D",
     danger: "#F28B82",
-    focus: "#8FB2FF",
+    focus: "#9DB8E6",
   },
 } as const;
 

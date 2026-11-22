@@ -64,24 +64,8 @@ export function LearningProfileForm({ submitLabel, onDone, onSkip }: { submitLab
         </ul>
       </fieldset>
 
-      <fieldset>
-        <legend className="text-sm font-semibold">Which areas would you most like to improve? <span className="font-normal text-muted">Choose up to three.</span></legend>
-        <div className="mt-3 flex flex-wrap gap-2">
-          {SKILLS.map((s) => {
-            const on = focus.includes(s);
-            const full = !on && focus.length >= 3;
-            return (
-              <button key={s} type="button" aria-pressed={on} disabled={full} onClick={() => setFocus(on ? focus.filter((x) => x !== s) : [...focus, s])}
-                className={clsx("inline-flex min-h-10 items-center gap-1.5 rounded-full border px-3.5 text-sm font-semibold transition-colors duration-150",
-                  on ? "border-primary bg-primary-soft text-primary" : "border-line text-muted hover:text-ink", full && "opacity-50")}>
-                {on && <Check size={14} aria-hidden="true" />}{SKILL_LABEL[s]}
-              </button>
-            );
-          })}
-        </div>
-      </fieldset>
 
-      <p className="text-sm text-muted">Your answers set the starting priorities of your personal study plan. As you work, your real results gradually take over, and you can change everything later in Settings or on the plan page.</p>
+      <p className="text-sm text-muted">Ratings of 1–2 become high priorities, 3 medium, 4–5 maintenance. Your real results gradually take over, and you can edit this any time.</p>
       <div className="flex flex-wrap gap-3">
         <button className="btn btn-primary" disabled={busy || !complete}>{busy ? "Saving…" : submitLabel}</button>
         {onSkip && <button type="button" className="btn btn-ghost" onClick={onSkip}>Skip for now</button>}

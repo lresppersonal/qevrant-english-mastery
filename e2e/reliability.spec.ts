@@ -22,7 +22,8 @@ async function stubAudio(page: Page, voices: { lang: string; name: string }[] = 
 }
 const played = (page: Page) => page.evaluate(() => (window as unknown as { __played: string[] }).__played);
 
-test.describe("dictionary", () => {
+// The standalone Dictionary page was removed (brief P3); lookup now lives in the in-context word popup.
+test.describe.skip("dictionary", () => {
   test.beforeEach(async ({ context }) => { await consent(context); });
 
   test("reading: common word, database word and inflected form all return entries with context", async ({ page }) => {

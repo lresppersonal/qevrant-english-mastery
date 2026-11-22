@@ -1,14 +1,6 @@
-import { vocabItems } from "@/lib/content";
-import { PageHeader } from "@/components/ui";
-import { DictionarySearch } from "@/components/DictionarySearch";
+import { redirect } from "next/navigation";
 
-export const metadata = { title: "Dictionary" };
-
+// The standalone Dictionary was retired: word lookup now lives inside Reading and Vocabulary.
 export default function DictionaryPage() {
-  return (
-    <>
-      <PageHeader eyebrow="Learn" title="Dictionary" intro="Look up any English word: meaning, Russian translation, grammar, British and American pronunciation, collocations and related forms." />
-      <DictionarySearch items={vocabItems} />
-    </>
-  );
+  redirect("/vocabulary");
 }

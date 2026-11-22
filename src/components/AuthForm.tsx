@@ -15,12 +15,11 @@ export function AuthForm({ mode }: { mode: "sign-in" | "sign-up" }) {
   const next = rawNext && rawNext.startsWith("/") && !rawNext.startsWith("//") && !rawNext.startsWith("/\\") ? rawNext : (mode === "sign-up" ? "/onboarding" : "/dashboard");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [name, setName] = useState("");
+  const [show, setShow] = useState(false);
   const [busy, setBusy] = useState(false);
   const errParam = params.get("error");
   const [error, setError] = useState<string | null>(errParam === "oauth" ? "Google sign-in was cancelled or failed. Please try again." : errParam ? "That link has expired or was already used. Please sign in again." : null);
   const expired = params.get("expired") === "1";
-  const [confirm, setConfirm] = useState("");
   const [info, setInfo] = useState<string | null>(null);
 
   if (isDemoMode) {
@@ -52,7 +51,6 @@ export function AuthForm({ mode }: { mode: "sign-in" | "sign-up" }) {
     e.preventDefault();
     if (pwProblem) { setError(pwProblem); return; }
     if (!/^\S+@\S+\.\S+$/.test(email)) { setError("Enter a valid email address."); return; }
-    if (mode === "sign-up" && password !== confirm) { setError("The two passwords don't match."); return; }
     setBusy(true);
     setError(null);
     const sb = supabaseBrowser();
@@ -60,7 +58,7 @@ export function AuthForm({ mode }: { mode: "sign-in" | "sign-up" }) {
       if (mode === "sign-up") {
         const { data, error } = await sb.auth.signUp({
           email, password,
-          options: { data: { display_name: name || null }, emailRedirectTo: `${location.origin}/auth/callback?next=/onboarding` },
+          options: { emailRedirectTo: `${location.origin}/auth/callback?next=/onboarding` },
         });
         if (error) throw error;
         // With email confirmation on, Supabase answers an existing address with a user that has no identities.
@@ -96,33 +94,23 @@ export function AuthForm({ mode }: { mode: "sign-in" | "sign-up" }) {
           <div className="flex items-center gap-3 text-xs text-muted"><span className="h-px flex-1 bg-line" />or use email<span className="h-px flex-1 bg-line" /></div>
         </>
       )}
-      {mode === "sign-up" && (
-        <label className="block text-sm font-medium">Name (optional)
-          <input className="input mt-1" value={name} onChange={(e) => setName(e.target.value)} autoComplete="name" />
-        </label>
-      )}
       <label className="block text-sm font-medium">Email
         <input className="input mt-1" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" />
       </label>
       <div>
         <label className="block text-sm font-medium">Password
-          <input className="input mt-1" type="password" required minLength={8} value={password} onChange={(e) => setPassword(e.target.value)} autoComplete={mode === "sign-up" ? "new-password" : "current-password"} aria-describedby={mode === "sign-up" ? "pw-rule" : undefined} />
+          <input className="input mt-1" type={show ? "text" : "password"} required minLength={8} value={password} onChange={(e) => setPassword(e.target.value)} autoComplete={mode === "sign-up" ? "new-password" : "current-password"} aria-describedby={mode === "sign-up" ? "pw-rule" : undefined} />
         </label>
         {mode === "sign-up" && <span id="pw-rule" className={pwProblem ? "mt-1 block text-xs text-danger" : "mt-1 block text-xs text-muted"}>At least 8 characters, including a letter and a number.</span>}
       </div>
-      {mode === "sign-up" && (
-        <div>
-          <label className="block text-sm font-medium">Confirm password
-            <input className="input mt-1" type="password" required value={confirm} onChange={(e) => setConfirm(e.target.value)} autoComplete="new-password" aria-invalid={!!confirm && confirm !== password} aria-describedby="pw-match" />
-          </label>
-          {confirm && confirm !== password && <span id="pw-match" className="mt-1 block text-xs text-danger">The passwords don't match yet.</span>}
-        </div>
-      )}
+      <label className="flex items-center gap-2 text-sm text-muted">
+        <input type="checkbox" checked={show} onChange={(e) => setShow(e.target.checked)} /> Show password
+      </label>
       {mode === "sign-in" && <p className="-mt-2 text-right text-sm"><Link href="/forgot-password" className="font-medium text-primary underline-offset-4 hover:underline">Forgot your password?</Link></p>}
       {expired && !error && <p role="status" className="rounded-lg bg-surface-2 px-3 py-2 text-sm">Your session has ended. Please sign in again; your progress is saved in your account.</p>}
       {error && <p role="alert" className="text-sm text-danger">{error}</p>}
       {info && <p role="status" className="text-sm text-success">{info}</p>}
-      <button className="btn btn-primary w-full" disabled={busy || !email || password.length < 8 || (mode === "sign-up" && !confirm)}>
+      <button className="btn btn-primary w-full" disabled={busy || !email || password.length < 8}>
         {busy ? "Please wait…" : mode === "sign-up" ? "Create account" : "Sign in"}
       </button>
       <p className="text-center text-sm text-muted">

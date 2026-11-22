@@ -32,7 +32,7 @@ async function latestLink(to: string, kind: RegExp) {
 async function assess(page: Page, ratings: Record<string, number>, focus: string[]) {
   const form = page.getByTestId("learning-profile");
   for (const [skill, n] of Object.entries(ratings)) await form.getByRole("radiogroup", { name: `${skill}: confidence` }).getByRole("radio", { name: new RegExp(`^${n}:`) }).click();
-  for (const f of focus) await form.getByRole("button", { name: f, exact: true }).click();
+  void focus; // the "areas to improve" question was removed: priorities come from the ratings
 }
 const LISTENING_WEAK = { Grammar: 4, Vocabulary: 4, Reading: 5, Listening: 1, Speaking: 2, "Academic Writing": 3 };
 const GRAMMAR_WEAK = { Grammar: 1, Vocabulary: 5, Reading: 4, Listening: 4, Speaking: 4, "Academic Writing": 2 };
@@ -58,13 +58,8 @@ test("sign-up: validation, email confirmation, onboarding, protected pages and t
   await page.goto("/sign-up");
   await page.getByLabel("Email").fill(A.email);
   await page.getByLabel(/^Password/).fill("short1");
-  await page.getByLabel("Confirm password").fill("short1");
   await expect(page.getByRole("button", { name: "Create account" })).toBeDisabled(); // fewer than 8 characters
   await page.getByLabel(/^Password/).fill(A.password);
-  await page.getByLabel("Confirm password").fill(A.password + "x");
-  await page.getByRole("button", { name: "Create account" }).click();
-  await expect(page.locator("form [role=alert]")).toHaveText("The two passwords don't match.");
-  await page.getByLabel("Confirm password").fill(A.password);
   await page.getByRole("button", { name: "Create account" }).click();
   await expect(page.locator("form [role=status]")).toContainText("Check your inbox");
 
@@ -90,7 +85,6 @@ test("sign-up: validation, email confirmation, onboarding, protected pages and t
   await p2.goto("http://localhost:3200/sign-up");
   await p2.getByLabel("Email").fill(A.email);
   await p2.getByLabel(/^Password/).fill(A.password);
-  await p2.getByLabel("Confirm password").fill(A.password);
   await p2.getByRole("button", { name: "Create account" }).click();
   await expect(p2.locator("form [role=alert]")).toContainText("already exists");
   await other.close();

@@ -5,10 +5,11 @@ import { PageHeader } from "@/components/ui";
 export const metadata = { title: "Learn" };
 
 export default function Learn() {
-  const groups = NAV.filter((g) => g.label === "Learn");
+  const topics = NAV[0].items.find((i) => i.href === "/topics")!;
+  const groups = NAV.filter((g) => g.label !== "Home").map((g) => (g.label === "Learn" ? { ...g, items: [topics, ...g.items] } : g));
   return (
     <>
-      <PageHeader title="Learn" intro="Choose a module, or start from a topic to see everything about it in one place." />
+      <PageHeader title="Learn" intro="Choose a module or a topic." />
       {groups.map((g) => (
         <section key={g.label} className="mb-8">
           <h2 className="eyebrow mb-3">{g.label}</h2>
