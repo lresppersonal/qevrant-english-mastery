@@ -11809,6 +11809,408 @@
   "reviewer": null,
   "publishedAt": "2026-11-16",
   "id": "",
+  "slug": "punctuation",
+  "title": "Punctuation for clear academic writing",
+  "level": "B2+",
+  "domain": "register",
+  "topics": [
+   "education"
+  ],
+  "summary": "Punctuation shows how a sentence is built. This lesson covers commas with clauses and linkers, comma splices, semicolons, colons, apostrophes, hyphens and dashes, and the conventions of formal writing.",
+  "minutes": 35,
+  "sections": [
+   {
+    "id": "core",
+    "kind": "core",
+    "title": "Core concept",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Punctuation is not decoration: it **shows the grammar of a sentence** to the reader. A full stop ends a complete idea; a comma separates parts *inside* a sentence; a semicolon joins two complete, closely related ideas; a colon announces that what follows explains or lists what came before."
+     },
+     {
+      "type": "rule",
+      "text": "Two complete sentences cannot be joined with a comma alone. Use a full stop, a semicolon, or a comma + *and / but / or / so / yet*."
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "Prices rose sharply**;** demand, however, remained stable.",
+        "note": "two complete ideas, closely linked"
+       },
+       {
+        "en": "The study had one major limitation**:** the sample was small.",
+        "note": "the colon introduces an explanation"
+       },
+       {
+        "en": "Although the results were promising**,** further research is needed.",
+        "note": "comma after a fronted subordinate clause"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "uses",
+    "kind": "uses",
+    "title": "When and why we use each mark",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "**Comma**: after an introductory clause or phrase (*In 2020, …*); before *and/but/so* joining two full clauses; around extra (non-essential) information; between items in a list.",
+       "**Semicolon**: between two complete clauses that are closely related; before a sentence adverb such as *however* or *therefore* when it joins two clauses; to separate long list items that already contain commas.",
+       "**Colon**: after a complete clause, to introduce a list, an explanation, an example or a quotation.",
+       "**Apostrophe**: possession (*the government's plan*, *the students' results*) and contractions (*it's = it is*). Never for plurals.",
+       "**Dash**: in less formal writing, to add emphasis or an aside. In formal writing, commas or brackets are usually safer.",
+       "**Hyphen**: to join words that work together before a noun (*a well-known study*, *long-term effects*)."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "form",
+    "kind": "form",
+    "title": "How the patterns are built",
+    "blocks": [
+     {
+      "type": "table",
+      "head": [
+       "Pattern",
+       "Punctuation",
+       "Example"
+      ],
+      "rows": [
+       [
+        "Main clause + main clause",
+        "; or . or , + and/but/so",
+        "*Costs fell; profits rose.*"
+       ],
+       [
+        "Main clause + *however* + main clause",
+        "; however,",
+        "*Costs fell; however, profits did not rise.*"
+       ],
+       [
+        "Subordinate clause first",
+        "clause**,** main clause",
+        "*If costs fall, profits rise.*"
+       ],
+       [
+        "Main clause first",
+        "main clause + subordinate clause (no comma)",
+        "*Profits rise if costs fall.*"
+       ],
+       [
+        "Non-defining relative clause",
+        "**,** who/which … **,**",
+        "*The report, which was published in May, …*"
+       ],
+       [
+        "Defining relative clause",
+        "no commas",
+        "*Students who submit late lose marks.*"
+       ],
+       [
+        "Introducing a list",
+        "complete clause**:** item, item and item",
+        "*Three factors matter: cost, speed and safety.*"
+       ]
+      ]
+     },
+     {
+      "type": "note",
+      "tone": "tip",
+      "text": "Read the part before a colon on its own. If it is not a complete sentence (*The factors are:*), remove the colon."
+     }
+    ]
+   },
+   {
+    "id": "examples",
+    "kind": "examples",
+    "title": "Examples in context",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "In most developed countries**,** life expectancy has risen steadily.",
+        "note": "comma after an introductory phrase"
+       },
+       {
+        "en": "The data were collected in 2019**,** and the analysis was completed a year later.",
+        "note": "comma + *and* between two full clauses"
+       },
+       {
+        "en": "Remote work offers flexibility**;** however**,** it can blur the line between work and home.",
+        "note": "semicolon + *however* + comma"
+       },
+       {
+        "en": "The council**,** which had promised new housing**,** delayed the project again.",
+        "note": "commas around a non-defining clause"
+       },
+       {
+        "en": "Researchers identified two risks**:** rising costs and falling participation.",
+        "note": "colon before a list after a complete clause"
+       },
+       {
+        "en": "The **company's** profits fell, but its **employees'** salaries rose.",
+        "note": "singular and plural possession"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "contrasts",
+    "kind": "contrasts",
+    "title": "Commonly confused choices",
+    "blocks": [
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "its / it's",
+        "note": "*its* = belonging to it (*the city and its history*); *it's* = it is / it has"
+       },
+       {
+        "en": "however, / , however,",
+        "note": "*However, costs rose.* (start of a sentence) vs *Costs, however, rose.* (inside a clause) vs *Prices fell; however, costs rose.* (joining two clauses: semicolon first)"
+       },
+       {
+        "en": "which (with commas) / that (without)",
+        "note": "*The report, which…* adds extra information; *the report that…* identifies which report"
+       },
+       {
+        "en": "colon / semicolon",
+        "note": "a colon introduces something; a semicolon joins two equal clauses"
+       },
+       {
+        "en": "hyphen / dash",
+        "note": "a hyphen joins words (*long-term*); a dash separates parts of a sentence"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "errors",
+    "kind": "errors",
+    "title": "Common mistakes",
+    "blocks": [
+     {
+      "type": "mistakes",
+      "rows": [
+       {
+        "wrong": "The results were clear, the hypothesis was confirmed.",
+        "right": "The results were clear; the hypothesis was confirmed.",
+        "why": "This is a comma splice: two complete sentences need a full stop, a semicolon or a conjunction."
+       },
+       {
+        "wrong": "Costs fell, however profits did not increase.",
+        "right": "Costs fell; however, profits did not increase.",
+        "why": "*However* is an adverb, not a conjunction. Use a semicolon before it and a comma after it."
+       },
+       {
+        "wrong": "The main factors are: cost, time and quality.",
+        "right": "The main factors are cost, time and quality.",
+        "why": "A colon must follow a complete clause. *The main factors are* is not complete."
+       },
+       {
+        "wrong": "Students, who submit late, lose marks.",
+        "right": "Students who submit late lose marks.",
+        "why": "This is a defining clause (only the late students lose marks), so it takes no commas."
+       },
+       {
+        "wrong": "The governments policy was criticised.",
+        "right": "The government's policy was criticised.",
+        "why": "Possession needs an apostrophe."
+       },
+       {
+        "wrong": "In the 1990's many factory's closed.",
+        "right": "In the 1990s many factories closed.",
+        "why": "Plurals and decades do not take apostrophes."
+       },
+       {
+        "wrong": "Unemployment fell which surprised economists.",
+        "right": "Unemployment fell, which surprised economists.",
+        "why": "A *which* clause that comments on the whole previous clause needs a comma."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "register",
+    "kind": "register",
+    "title": "Formal writing and nuance",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Academic writing prefers full stops, commas, semicolons and colons; dashes, exclamation marks and contractions (*don't, it's*) are usually avoided. Long sentences are acceptable if the punctuation makes their structure clear, but a sequence of several commas often signals that a sentence should be split."
+     },
+     {
+      "type": "note",
+      "tone": "tip",
+      "text": "At C1–C2, a semicolon can balance two contrasting ideas elegantly: *Some regions prospered; others were left behind.* Use it sparingly: one or two in a paragraph is enough."
+     },
+     {
+      "type": "examples",
+      "items": [
+       {
+        "en": "The policy had three aims**:** to cut costs**;** to improve access**,** especially in rural areas**;** and to raise standards.",
+        "note": "semicolons separate list items that already contain commas"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "summary",
+    "kind": "summary",
+    "title": "Summary",
+    "blocks": [
+     {
+      "type": "list",
+      "items": [
+       "Never join two complete sentences with a comma alone.",
+       "*however / therefore* between clauses: **; however,**",
+       "Commas around non-defining clauses; none around defining clauses.",
+       "A colon follows a complete clause.",
+       "Apostrophes for possession and contractions, never for plurals."
+      ]
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "type": "extends",
+    "to": "linking-contrast-concession",
+    "label": "Linking, contrast and concession",
+    "level": "B2+",
+    "published": true
+   },
+   {
+    "type": "extends",
+    "to": "academic-register",
+    "label": "Academic register",
+    "level": "C1",
+    "published": true
+   }
+  ],
+  "exercises": [
+   "punctuation-practice"
+  ],
+  "sources": [
+   {
+    "book": "QEVRANT original lesson",
+    "unit": "-",
+    "confidence": "verified"
+   }
+  ],
+  "recognise": {
+   "title": "A report on cycling in cities",
+   "sentences": [
+    {
+     "text": "Over the past decade[[,]] cycling has grown in many European cities.",
+     "has": true,
+     "note": "comma after an introductory phrase"
+    },
+    {
+     "text": "The growth has been uneven[[;]] some cities have doubled their numbers, while others have seen little change.",
+     "has": true,
+     "note": "semicolon joining two closely related complete clauses"
+    },
+    {
+     "text": "Most surveys ask people how often they cycle and why.",
+     "has": false
+    },
+    {
+     "text": "Two factors stand out[[:]] safe lanes and short distances.",
+     "has": true,
+     "note": "colon introducing a list after a complete clause"
+    },
+    {
+     "text": "Amsterdam[[,]] which has invested heavily for decades[[,]] remains the best-known example.",
+     "has": true,
+     "note": "commas around a non-defining relative clause"
+    },
+    {
+     "text": "Cyclists who feel safe are more likely to cycle every day.",
+     "has": false
+    },
+    {
+     "text": "Costs are relatively low[[; however,]] political support can be difficult to secure.",
+     "has": true,
+     "note": "semicolon + *however* + comma between two clauses"
+    }
+   ]
+  },
+  "check": [
+   {
+    "kind": "choice",
+    "id": "c1",
+    "prompt": "Which sentence contains a comma splice?",
+    "options": [
+     "The data were incomplete, the conclusions were uncertain.",
+     "The data were incomplete, so the conclusions were uncertain.",
+     "Because the data were incomplete, the conclusions were uncertain."
+    ],
+    "answer": 0,
+    "explanation": "Two full sentences joined by a comma alone form a comma splice."
+   },
+   {
+    "kind": "choice",
+    "id": "c2",
+    "prompt": "Where does the comma go? ‘Profits fell however the company kept all its staff.’",
+    "options": [
+     "Profits fell, however the company kept all its staff.",
+     "Profits fell; however, the company kept all its staff.",
+     "Profits fell however, the company kept all its staff."
+    ],
+    "answer": 1,
+    "explanation": "*However* between two clauses: semicolon before, comma after."
+   },
+   {
+    "kind": "choice",
+    "id": "c3",
+    "prompt": "Which needs an apostrophe?",
+    "options": [
+     "the governments decision",
+     "the 1990s",
+     "three reports"
+    ],
+    "answer": 0,
+    "explanation": "Possession: *the government's decision*. Decades and plurals take no apostrophe."
+   },
+   {
+    "kind": "explain",
+    "id": "c4",
+    "prompt": "Why do these two sentences mean different things? *The players, who were injured, did not travel.* / *The players who were injured did not travel.*",
+    "model": "With commas, all the players were injured and none travelled; without commas, only the injured players stayed behind.",
+    "explanation": "Commas make a relative clause non-defining; without them, the clause identifies which players."
+   }
+  ],
+  "produce": {
+   "prompt": "Write a paragraph of 5–7 sentences about a change in your town or country. Use punctuation to make the structure of each sentence clear.",
+   "checklist": [
+    "I used at least one semicolon between two complete clauses.",
+    "I used *however* or *therefore* between two clauses with correct punctuation (; however,).",
+    "I used a colon after a complete clause to introduce a list or explanation.",
+    "I used commas around one non-defining relative clause.",
+    "I checked that no two complete sentences are joined by a comma alone."
+   ]
+  }
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
   "slug": "purpose-and-result-clauses",
   "title": "Purpose and result: in order to, so that, lest, so ... that, such ... that",
   "level": "B2+",

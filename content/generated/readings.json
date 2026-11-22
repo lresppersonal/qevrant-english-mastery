@@ -6,6 +6,90 @@
   "reviewer": null,
   "publishedAt": "2026-11-16",
   "id": "",
+  "slug": "bikes-back-in-town",
+  "title": "The bicycle comes back to town",
+  "standfirst": "In many cities, cycling is growing again. New lanes and shared bikes help, but the biggest change may be in how people think about streets.",
+  "level": "B1",
+  "topics": [
+   "cities-urban"
+  ],
+  "category": "cities-urban",
+  "minutes": 4,
+  "paragraphs": [
+   "[A] Fifty years ago, many city planners thought the bicycle belonged to the past. Roads were built for cars, and cycling was seen as slow, dangerous or only for children. Today, in many cities around the world, the picture looks very different. In the morning rush hour, there can be long lines of cyclists waiting at traffic lights.",
+   "[B] Part of the reason is practical. In a crowded city centre, a bicycle is often the fastest way to travel short distances. You do not need to look for a parking space, and you do not need to wait for a bus. For journeys of a few kilometres, cyclists often arrive before drivers.",
+   "[C] Cities have also changed their streets. Some have built separate cycle lanes, protected from cars by a kerb or a line of plants. These lanes make a big difference: many people say they would like to cycle but feel unsafe sharing the road with heavy traffic. When the lanes appear, new cyclists often appear too.",
+   "[D] Shared bikes are another reason. With a phone app, you can unlock a bike in one part of the city and leave it in another. Electric bikes make hills and longer trips easier, which means cycling is no longer only for the young and fit.",
+   "[E] Not everyone is happy. Some shop owners worry that fewer parking spaces will mean fewer customers, although studies in several cities suggest that people who walk and cycle often visit shops more frequently. Drivers sometimes complain that new lanes make traffic worse, especially while they are being built.",
+   "[F] Perhaps the most important change is in how people think about streets. A street is not only a road for moving vehicles; it is also a place where people meet, shop and play. More bicycles can mean quieter, cleaner and friendlier streets — but only if cities plan them carefully and listen to everyone who uses them."
+  ],
+  "exercises": [
+   "bikes-back-in-town-1",
+   "bikes-back-in-town-2",
+   "bikes-back-in-town-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "rush hour",
+    "definition": "the busy time when people travel to or from work",
+    "ru": "час пик"
+   },
+   {
+    "term": "lane",
+    "definition": "a part of a road for one line of traffic",
+    "ru": "полоса (движения)"
+   },
+   {
+    "term": "kerb",
+    "definition": "the edge between the pavement and the road",
+    "ru": "бордюр"
+   },
+   {
+    "term": "unlock",
+    "definition": "to open something that was locked",
+    "ru": "разблокировать"
+   },
+   {
+    "term": "frequently",
+    "definition": "often",
+    "ru": "часто"
+   },
+   {
+    "term": "vehicle",
+    "definition": "a car, bus, lorry, etc.",
+    "ru": "транспортное средство"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "the picture looks very different",
+    "meaning": "the situation has changed a lot"
+   },
+   {
+    "phrase": "make a big difference",
+    "meaning": "have an important effect"
+   }
+  ],
+  "critical": [
+   {
+    "question": "Would more people cycle in your town if there were safer lanes?",
+    "points": "Consider: weather, distances, hills, culture, safety."
+   },
+   {
+    "question": "Who should decide how a street is used: drivers, shop owners or local residents?",
+    "points": "Think about fairness, the economy and quality of life."
+   }
+  ],
+  "furtherReading": [],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
   "slug": "can-machines-create",
   "title": "Can machines be creative?",
   "standfirst": "Software can now write poems, compose music and produce images in seconds. Whether that counts as creativity depends on what we think creativity is.",
@@ -79,6 +163,95 @@
    {
     "question": "Should students be allowed to use generative tools for essays? Under what conditions?",
     "points": "Consider: learning goals, honesty, assessment design, future workplaces."
+   }
+  ],
+  "furtherReading": [],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "carbon-in-the-deep",
+  "title": "The carbon store beneath the waves",
+  "standfirst": "Mud on the sea floor rarely makes headlines. Yet marine sediments hold vast amounts of carbon, and how we treat them may matter more than we assumed.",
+  "level": "C1",
+  "topics": [
+   "environment"
+  ],
+  "category": "environment",
+  "minutes": 7,
+  "paragraphs": [
+   "[A] When people picture the natural systems that keep carbon out of the atmosphere, they tend to imagine forests. Far less attention is paid to the sea floor, where the remains of plankton, plants and animals settle slowly into layers of sediment. Over thousands of years, some of that organic material is buried deeply enough to be locked away, making ocean sediments one of the largest long-term carbon stores on the planet.",
+   "[B] Coastal habitats are a particularly striking case. Salt marshes, mangrove forests and seagrass meadows occupy a tiny fraction of the ocean's area, yet they are thought to bury carbon at rates per hectare that can exceed those of many land forests. Their waterlogged soils contain little oxygen, which slows the decomposition that would otherwise return carbon to the air. Scientists sometimes group these ecosystems under the label \"blue carbon\".",
+   "[C] The difficulty is that what has been stored can also be released. When mangroves are cleared for aquaculture, or coastal wetlands are drained for development, the exposed soils begin to break down, and carbon accumulated over centuries may be lost within years. Further offshore, there is growing debate about bottom trawling, a fishing method that drags heavy nets across the sea bed. Some studies have argued that the disturbance releases significant amounts of carbon from sediments; others question the size of the effect and how much of it reaches the atmosphere rather than remaining dissolved in seawater.",
+   "[D] This uncertainty is not a reason for complacency, but it does complicate policy. Carbon markets increasingly offer credits for protecting or restoring coastal ecosystems, which can channel money towards conservation. Critics warn, however, that measuring carbon in mud is technically demanding and that poorly verified credits could allow polluters to claim reductions that never occur.",
+   "[E] There is also a risk of treating the sea floor purely as a carbon accounting problem. Seagrass meadows shelter young fish, mangroves protect shorelines from storms, and sediments support communities of organisms that are still barely catalogued. Protecting them for carbon alone may lead to the wrong priorities, such as favouring fast-growing plantations over diverse but slower habitats.",
+   "[F] What emerges is a picture of a quiet, slow-moving system whose value has long been overlooked. The research is far from settled, yet a cautious conclusion seems reasonable: it is usually cheaper, and more certain, to keep existing stores intact than to try to rebuild them once they have been disturbed."
+  ],
+  "exercises": [
+   "carbon-in-the-deep-1",
+   "carbon-in-the-deep-2",
+   "carbon-in-the-deep-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "sediment",
+    "definition": "sand, mud and other material that settles at the bottom of water",
+    "ru": "осадок, донные отложения"
+   },
+   {
+    "term": "waterlogged",
+    "definition": "so full of water that no more can be absorbed",
+    "ru": "заболоченный, переувлажнённый"
+   },
+   {
+    "term": "decomposition",
+    "definition": "the process of decaying and breaking down",
+    "ru": "разложение"
+   },
+   {
+    "term": "aquaculture",
+    "definition": "the farming of fish, shellfish or water plants",
+    "ru": "аквакультура"
+   },
+   {
+    "term": "complacency",
+    "definition": "a feeling of satisfaction that stops you seeing a danger",
+    "ru": "самоуспокоенность"
+   },
+   {
+    "term": "verified",
+    "definition": "checked and shown to be true",
+    "ru": "проверенный, подтверждённый"
+   },
+   {
+    "term": "catalogued",
+    "definition": "recorded in an organised list",
+    "ru": "каталогизированный"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "make headlines",
+    "meaning": "be reported prominently in the news"
+   },
+   {
+    "phrase": "far from settled",
+    "meaning": "still very uncertain or disputed"
+   }
+  ],
+  "critical": [
+   {
+    "question": "Should carbon credits be used to fund nature conservation?",
+    "points": "Consider: measurement, honesty, incentives, alternatives such as direct regulation."
+   },
+   {
+    "question": "Is it right to value ecosystems mainly for the carbon they store?",
+    "points": "Think about biodiversity, local livelihoods, coastal protection, culture."
    }
   ],
   "furtherReading": [],
@@ -270,6 +443,90 @@
    {
     "question": "Why do planning debates sometimes become so emotional?",
     "points": "Consider: identity, freedom, trust in government, misinformation."
+   }
+  ],
+  "furtherReading": [],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "four-day-week",
+  "title": "Less time, same work? The four-day week under scrutiny",
+  "standfirst": "Trials of a shorter working week have produced enthusiastic headlines. A closer look shows why the results are promising but not simple.",
+  "level": "B2",
+  "topics": [
+   "work-careers"
+  ],
+  "category": "work-careers",
+  "minutes": 6,
+  "paragraphs": [
+   "[A] The idea is easy to explain: employees work four days instead of five, keep the same pay and are expected to produce the same amount. In the past few years, companies in several countries have tried it, often as part of organised trials in which researchers interview staff and compare results before and after the change.",
+   "[B] The headline findings have been positive. Many participating companies reported that output stayed roughly the same, while employees described lower stress, better sleep and more time for family and exercise. Some firms also found it easier to recruit and keep staff, which can save considerable money on hiring and training.",
+   "[C] However, the details matter. Companies usually choose to join these trials, so they may already have managers who are open to change and work that can be reorganised. A design studio or a software team may cut unnecessary meetings and gain time; a hospital ward, a school or a bus company cannot simply close for a day. In such sectors, a four-day week often means hiring more people or arranging shifts in complicated ways.",
+   "[D] There is also the question of how the same work fits into fewer hours. In some cases, the answer is genuine efficiency: fewer interruptions, shorter meetings and clearer priorities. In others, employees simply work longer days or feel pressure to answer messages on their day off. Researchers point out that a compressed week of four ten-hour days is not the same as a reduced week of four eight-hour days.",
+   "[E] Finally, most trials have lasted months rather than years. It is possible that the early enthusiasm fades, or that productivity gains are harder to keep once the novelty is gone. Long-term studies are still relatively rare.",
+   "[F] None of this means the idea has failed. Rather, it suggests that working time is not one policy but many. For some organisations, a shorter week may be a realistic goal; for others, more flexible hours, fewer meetings or better planning might bring similar benefits without changing the calendar."
+  ],
+  "exercises": [
+   "four-day-week-1",
+   "four-day-week-2",
+   "four-day-week-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "trial",
+    "definition": "a test of something over a period of time",
+    "ru": "испытание, пилотный проект"
+   },
+   {
+    "term": "output",
+    "definition": "the amount of work produced",
+    "ru": "объём работы, выработка"
+   },
+   {
+    "term": "recruit",
+    "definition": "to find and employ new people",
+    "ru": "нанимать"
+   },
+   {
+    "term": "sector",
+    "definition": "a part of the economy, e.g. health or transport",
+    "ru": "сектор, отрасль"
+   },
+   {
+    "term": "compressed",
+    "definition": "made shorter by squeezing the same content into less space",
+    "ru": "сжатый"
+   },
+   {
+    "term": "novelty",
+    "definition": "the quality of being new and unusual",
+    "ru": "новизна"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "under scrutiny",
+    "meaning": "being examined carefully"
+   },
+   {
+    "phrase": "the details matter",
+    "meaning": "the general result hides important differences"
+   }
+  ],
+  "critical": [
+   {
+    "question": "Which jobs in your country could realistically move to a four-day week?",
+    "points": "Consider: services that must run every day, office work, seasonal work."
+   },
+   {
+    "question": "Is a shorter week more important than flexible hours?",
+    "points": "Think about family life, commuting, productivity, fairness between sectors."
    }
   ],
   "furtherReading": [],
@@ -696,6 +953,104 @@
     "publisher": "European Commission Joint Research Centre"
    }
   ],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "persuaded-by-numbers",
+  "title": "Why a number can win an argument it should lose",
+  "standfirst": "Statistics carry an air of objectivity that words rarely enjoy. That authority is earned in some cases and borrowed in others, and telling the two apart is harder than it looks.",
+  "level": "C2",
+  "topics": [
+   "communication-media"
+  ],
+  "category": "communication-media",
+  "minutes": 8,
+  "paragraphs": [
+   "[A] Few rhetorical devices are as effective as a well-placed figure. \"Crime has risen by 40 per cent\" lands with a force that \"crime seems to be getting worse\" can only envy. The number implies measurement, method and an expert somewhere who has done the counting. Precisely because it appears to have been stripped of opinion, it is rarely interrogated with the scepticism we would bring to an adjective.",
+   "[B] Yet every statistic is the residue of a series of human choices. Someone decided what to count, how to define it, over what period and against which baseline. A 40 per cent rise from twenty incidents to twenty-eight tells a different story from the same percentage applied to thousands, and a rise measured from an unusually quiet year may reflect nothing more than a return to normal. None of these choices is necessarily dishonest; most are unavoidable. But they are seldom visible in the headline, and the reader who sees only the result inherits the conclusions without the caveats.",
+   "[C] Relative figures are a particular hazard. To say that a habit \"doubles the risk\" of a disease sounds alarming, and may be entirely accurate, but if the underlying risk is one in a hundred thousand, the doubled risk remains vanishingly small. Researchers in risk communication have long argued that absolute numbers — how many people out of a given group are affected — are more readily understood, yet relative framings persist, not least because they make for more arresting copy.",
+   "[D] Then there is the question of what goes uncounted. Official statistics tend to capture what is easy to record: transactions, registrations, reported offences. Activity that happens informally, in unpaid care or in communities reluctant to deal with authorities, may be under-represented or absent altogether. A policy that improves the measured indicator can therefore leave the underlying reality unchanged, or even worse; when a number becomes a target, institutions learn to manage the number.",
+   "[E] None of this licenses the opposite error, a blanket cynicism in which all figures are dismissed as spin. Carefully collected data remain among the best tools societies have for checking intuitions that are frequently wrong. The point is not to trust numbers less, but to trust them more selectively: to ask what was counted, compared with what, and by whom, before allowing a single figure to settle a question.",
+   "[F] In that sense, statistical literacy is less a technical skill than a habit of mind. It consists largely of a few modest questions, asked consistently. They will not make anyone immune to persuasion, but they may at least ensure that, when we are persuaded by a number, it is because the number deserves it."
+  ],
+  "exercises": [
+   "persuaded-by-numbers-1",
+   "persuaded-by-numbers-2",
+   "persuaded-by-numbers-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "rhetorical device",
+    "definition": "a technique used to persuade or impress",
+    "ru": "риторический приём"
+   },
+   {
+    "term": "interrogate",
+    "definition": "to question something closely",
+    "ru": "подвергать сомнению, тщательно проверять"
+   },
+   {
+    "term": "residue",
+    "definition": "what is left after a process",
+    "ru": "остаток, след"
+   },
+   {
+    "term": "caveat",
+    "definition": "a warning or limitation that should be considered",
+    "ru": "оговорка"
+   },
+   {
+    "term": "arresting",
+    "definition": "attracting attention strongly",
+    "ru": "поразительный, привлекающий внимание"
+   },
+   {
+    "term": "under-represented",
+    "definition": "present in smaller numbers than it should be",
+    "ru": "недостаточно представленный"
+   },
+   {
+    "term": "cynicism",
+    "definition": "a belief that people's motives are always selfish or dishonest",
+    "ru": "цинизм"
+   },
+   {
+    "term": "immune",
+    "definition": "not affected by something",
+    "ru": "невосприимчивый"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "lands with a force",
+    "meaning": "has a strong impact"
+   },
+   {
+    "phrase": "not least because",
+    "meaning": "partly and importantly because"
+   },
+   {
+    "phrase": "a habit of mind",
+    "meaning": "a regular way of thinking"
+   }
+  ],
+  "critical": [
+   {
+    "question": "Think of a statistic you have seen recently in the news. What questions would you ask about it?",
+    "points": "Consider: what was counted, the baseline, the time period, absolute versus relative figures, who collected it."
+   },
+   {
+    "question": "Should news organisations be required to report absolute numbers alongside percentages?",
+    "points": "Think about clarity, space, freedom of the press, audience understanding."
+   }
+  ],
+  "furtherReading": [],
   "origin": "original"
  },
  {
@@ -1903,6 +2258,90 @@
   "reviewer": null,
   "publishedAt": "2026-11-16",
   "id": "",
+  "slug": "what-museums-keep",
+  "title": "What museums owe to the objects they keep",
+  "standfirst": "Museums are often described as places that protect the past. Increasingly, they are also being asked who that past belongs to.",
+  "level": "B2",
+  "topics": [
+   "arts-culture"
+  ],
+  "category": "arts-culture",
+  "minutes": 5,
+  "paragraphs": [
+   "[A] Walk through any large museum and you will see objects from almost every part of the world: carved masks, ancient coins, ceremonial clothing, fragments of buildings. For most visitors, these collections are a chance to learn about other cultures without leaving their own city. For a growing number of critics, however, they also raise an uncomfortable question: how did the objects get there?",
+   "[B] Some items were bought legally or given as gifts. Others, though, were taken during wars or under colonial rule, when the people who owned them had little power to refuse. In recent years, governments and communities in several countries have asked for the return of objects they consider part of their heritage. A number of museums have agreed; others have argued that the law, or their own rules, prevents them from doing so.",
+   "[C] Museums that resist returns often make two arguments. The first is about access: in a major city museum, an object can be seen by millions of people from many countries. The second is about care. Old and fragile materials need stable temperatures, careful handling and expert conservation, and museums claim they are well equipped to provide this.",
+   "[D] Critics reply that both arguments can sound patronising. Many countries now have modern museums of their own, and some objects were never meant to be displayed at all, but to be used in ceremonies or kept by particular families. For these communities, having an object returned is less about where it is safest than about who has the right to decide.",
+   "[E] Between these positions, new approaches are appearing. Some museums now work with communities to research the history of each item, share decisions about how it is displayed, or lend objects on long-term loans. Digital technology also allows detailed 3D records to be shared widely, although few people believe a scan can replace the real thing.",
+   "[F] The debate is unlikely to end soon, partly because every object has its own story. What is changing is the starting point. Instead of asking whether an object can stay, more museums are asking how it arrived, and what they owe to the people it came from."
+  ],
+  "exercises": [
+   "what-museums-keep-1",
+   "what-museums-keep-2",
+   "what-museums-keep-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "collection",
+    "definition": "a group of objects kept together, especially in a museum",
+    "ru": "коллекция"
+   },
+   {
+    "term": "heritage",
+    "definition": "the history, traditions and objects that a group values",
+    "ru": "наследие"
+   },
+   {
+    "term": "fragile",
+    "definition": "easily broken or damaged",
+    "ru": "хрупкий"
+   },
+   {
+    "term": "conservation",
+    "definition": "work to protect and repair old objects",
+    "ru": "консервация, реставрация"
+   },
+   {
+    "term": "patronising",
+    "definition": "treating someone as if they were less intelligent or able",
+    "ru": "снисходительный"
+   },
+   {
+    "term": "loan",
+    "definition": "something that is lent for a period of time",
+    "ru": "ссуда; передача во временное пользование"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "raise an uncomfortable question",
+    "meaning": "make people think about a difficult issue"
+   },
+   {
+    "phrase": "well equipped to",
+    "meaning": "having the skills or tools needed for"
+   }
+  ],
+  "critical": [
+   {
+    "question": "Should objects taken during colonial rule always be returned?",
+    "points": "Consider: legal ownership, moral responsibility, safety, access for the public."
+   },
+   {
+    "question": "Can a digital copy ever be as meaningful as the original object?",
+    "points": "Think about authenticity, emotion, education, ritual use."
+   }
+  ],
+  "furtherReading": [],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
   "slug": "when-results-wont-repeat",
   "title": "When results won't repeat: science and the reproducibility debate",
   "standfirst": "Repeating an experiment and getting the same result is meant to be the foundation of science. A survey of researchers suggested it happens less reliably than the public assumes.",
@@ -2194,6 +2633,90 @@
    {
     "question": "Describe a time you shared or nearly shared something that turned out to be false. What made it convincing?",
     "points": "Think about emotion, source, timing, who sent it."
+   }
+  ],
+  "furtherReading": [],
+  "origin": "original"
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "why-we-forget-dreams",
+  "title": "Why do we forget our dreams?",
+  "standfirst": "Most of us dream every night, but by breakfast the story has usually gone. Sleep researchers have some ideas about why.",
+  "level": "B1",
+  "topics": [
+   "psychology-behaviour"
+  ],
+  "category": "psychology-behaviour",
+  "minutes": 4,
+  "paragraphs": [
+   "[A] Almost everyone dreams, even people who say they never do. Sleep scientists have found that if you wake people up during certain stages of sleep, most of them can describe a dream. But if the same people wake up naturally a few hours later, they often remember nothing at all. So where do the dreams go?",
+   "[B] One simple explanation is timing. Our longest and most story-like dreams usually happen in the second half of the night. If we wake up slowly, or our alarm goes off in a different stage of sleep, the dream may already be over. In that case, there is nothing fresh to remember.",
+   "[C] Another explanation is about the brain itself. During sleep, some of the chemicals that help us store new memories are at lower levels than during the day. The brain may be busy with other work, such as sorting information from the previous day. As a result, a dream can feel very real while it is happening but leave almost no trace afterwards.",
+   "[D] Attention also matters. When we wake up, our mind quickly turns to the day ahead: the time, the weather, a meeting, a message on our phone. Every new thought pushes the dream further away. Researchers have noticed that people who lie still for a minute and think about their dream before doing anything else remember much more.",
+   "[E] Some people keep a dream diary next to their bed and write down a few words as soon as they wake up. After a few weeks, many of them say they remember dreams more often. Nobody is completely sure why this works, but it suggests that remembering dreams is partly a habit that we can learn.",
+   "[F] Is it a problem if we forget? Probably not. Scientists still disagree about what dreams are for, and forgetting them seems to be completely normal. But for anyone who is curious about their own mind, a pen and a notebook may be the easiest place to start."
+  ],
+  "exercises": [
+   "why-we-forget-dreams-1",
+   "why-we-forget-dreams-2",
+   "why-we-forget-dreams-3"
+  ],
+  "keyVocabulary": [
+   {
+    "term": "stage",
+    "definition": "one part of a process",
+    "ru": "стадия, этап"
+   },
+   {
+    "term": "alarm",
+    "definition": "a clock or phone sound that wakes you up",
+    "ru": "будильник"
+   },
+   {
+    "term": "trace",
+    "definition": "a small sign that something existed",
+    "ru": "след"
+   },
+   {
+    "term": "habit",
+    "definition": "something you do regularly, often without thinking",
+    "ru": "привычка"
+   },
+   {
+    "term": "diary",
+    "definition": "a book where you write about each day",
+    "ru": "дневник"
+   },
+   {
+    "term": "curious",
+    "definition": "wanting to know or learn about something",
+    "ru": "любопытный"
+   }
+  ],
+  "expressions": [
+   {
+    "phrase": "goes off",
+    "meaning": "(of an alarm) starts making a sound"
+   },
+   {
+    "phrase": "leave no trace",
+    "meaning": "disappear completely"
+   }
+  ],
+  "critical": [
+   {
+    "question": "Do you think dreams have a meaning, or are they random?",
+    "points": "Consider: personal experience, culture, what science can and cannot measure."
+   },
+   {
+    "question": "Would you like to remember more of your dreams? Why, or why not?",
+    "points": "Think about curiosity, sleep quality, unpleasant dreams."
    }
   ],
   "furtherReading": [],

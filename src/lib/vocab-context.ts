@@ -116,11 +116,14 @@ export function contextItem(r: SenseRef, kind: ContextKind, pool: SenseRef[], se
  * first, so the practice turns recognised words into usable ones; formats rotate, and every round
  * ends with one production task.
  */
-export function buildContextRound(theme: string, studied: string[], seed: number, size = 10): ContextItem[] {
+export function buildContextRound(theme: string, studied: string[], seed: number, size = 10, level?: string): ContextItem[] {
   const pool = allSenses().filter((r) => r.sense.topics.includes(theme));
   const rand = rng(seed);
   const known = new Set(studied);
-  const order = pool.map((r) => ({ r, k: (known.has(r.sense.id) ? 0 : 1) + rand() })).sort((a, b) => a.k - b.k).map((o) => o.r);
+  // With a target level, senses at that level come first, then the neighbouring levels; studied words still lead within each band.
+  const L = ["B2", "B2+", "C1", "C2"];
+  const dist = (l: string) => (level ? Math.abs(L.indexOf(l) - L.indexOf(level)) * 2 : 0);
+  const order = pool.map((r) => ({ r, k: dist(r.sense.level) + (known.has(r.sense.id) ? 0 : 1) + rand() })).sort((a, b) => a.k - b.k).map((o) => o.r);
   const kinds: ContextKind[] = ["choice", "gap", "meaning", "form"];
   const out: ContextItem[] = [];
   const used = new Set<string>();
@@ -144,3 +147,20 @@ export const normalise = (s: string) => s.trim().toLowerCase().replace(/[’']/g
 /** Does a learner's own sentence use the item (any regular form)? */
 export function usesItem(r: SenseRef, sentence: string) { return !!locate(r, sentence); }
 export { cap };
+
+/** B2→C2 progression: per-level accuracy from the learner's saved context-practice answers. */
+export const VOCAB_LEVELS = ["B2", "B2+", "C1", "C2"] as const;
+export function levelStats(responses: { targetRef: string | null; correct: boolean; errorTag: string | null; questionId: string }[], senseLevel: (id: string) => string | undefined) {
+  const out = Object.fromEntries(VOCAB_LEVELS.map((l) => [l, { answered: 0, correct: 0 }])) as Record<string, { answered: number; correct: number }>;
+  for (const r of responses) {
+    if (!r.targetRef || !/^(choice|gap|meaning|form):/.test(r.questionId)) continue;
+    const l = senseLevel(r.targetRef); if (!l || !out[l]) continue;
+    out[l].answered++; if (r.correct) out[l].correct++;
+  }
+  return out;
+}
+/** Start at B2; move up a level after at least 8 answers at the current level with 80% or more correct. */
+export function suggestedLevel(stats: Record<string, { answered: number; correct: number }>): string {
+  for (const l of VOCAB_LEVELS) { const s = stats[l]; if (!(s.answered >= 8 && s.correct / s.answered >= 0.8)) return l; }
+  return "C2";
+}

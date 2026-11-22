@@ -1,7 +1,7 @@
 import { ContextBackLink } from "@/components/NavMemory";
 import { Suspense } from "react";
 import Link from "next/link";
-import { FolderOpen, BarChart3, ArrowRight } from "lucide-react";
+import { FolderOpen, BarChart3, ArrowRight, PenLine } from "lucide-react";
 import { writingPrompts, essayGuides, getTheme } from "@/lib/content";
 import { PageHeader } from "@/components/ui";
 import { UnfinishedEssays } from "@/components/UnfinishedEssays";
@@ -15,15 +15,23 @@ export default function WritingIndex() {
     <>
       <ContextBackLink />
       <PageHeader eyebrow="Learn" title="Academic Writing"
-        intro={<>{cards.length} original essay questions in the style of IELTS Academic Writing Task 2, organised by the eight essay types. Each task has a planning structure, vocabulary, linking expressions and ideas, and AI practice feedback linked to our grammar lessons.</>}>
+        intro={<>Two kinds of academic writing, each with planning support and detailed AI feedback on every criterion, including punctuation. {cards.length} original essay questions.</>}>
         <Link href="/writing/portfolio" className="btn btn-ghost"><FolderOpen size={16} aria-hidden="true" /> My writing portfolio</Link>
       </PageHeader>
-      <Link href="/writing/visual" className="card card-link enter mb-6 flex items-center gap-4 p-5" data-testid="visual-entry">
-        <BarChart3 size={28} className="shrink-0 text-primary" aria-hidden="true" />
-        <span className="min-w-0 flex-1"><span className="block font-display text-lg font-bold">Visual Data Description</span><span className="block text-sm text-muted">Describe charts, tables, processes, maps and plans in a 150-word academic report, with AI feedback that checks your facts against the data.</span></span>
-        <ArrowRight size={18} className="text-primary" aria-hidden="true" />
-      </Link>
+      <div className="mb-8 grid gap-4 sm:grid-cols-2" data-testid="writing-categories">
+        <Link href="/writing/visual" className="card card-link enter flex items-start gap-4 p-5" data-testid="visual-entry">
+          <BarChart3 size={26} className="mt-0.5 shrink-0 text-primary" aria-hidden="true" />
+          <span className="min-w-0 flex-1"><span className="block font-display text-lg font-bold">Visual Data Description</span><span className="block text-sm text-muted">Charts, graphs, tables, diagrams, processes, maps and combined visuals.</span></span>
+          <ArrowRight size={18} className="mt-1 text-primary" aria-hidden="true" />
+        </Link>
+        <a href="#essays" className="card card-link enter flex items-start gap-4 p-5" data-testid="essay-entry">
+          <PenLine size={26} className="mt-0.5 shrink-0 text-primary" aria-hidden="true" />
+          <span className="min-w-0 flex-1"><span className="block font-display text-lg font-bold">Essay Writing</span><span className="block text-sm text-muted">Eight essay types: opinion, discussion, advantages and disadvantages, problem–solution, two-part, positive/negative development, cause–effect and cause–problem–solution.</span></span>
+          <ArrowRight size={18} className="mt-1 text-primary" aria-hidden="true" />
+        </a>
+      </div>
       <UnfinishedEssays titles={Object.fromEntries(writingPrompts.map((p) => [p.slug, p.title]))} />
+      <h2 id="essays" className="mb-3 scroll-mt-24 text-xl font-bold">Essay Writing</h2>
       <Suspense><EssayBank cards={cards} guides={essayGuides} /></Suspense>
     </>
   );

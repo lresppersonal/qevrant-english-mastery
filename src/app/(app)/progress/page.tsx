@@ -5,7 +5,9 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import clsx from "clsx";
 import { useLearnerData } from "@/components/useLearnerData";
 import { useLearner } from "@/components/StoreProvider";
-import { computeStreak, daysThisWeek, mastery, studyDays, dayKey } from "@/lib/progress";
+import { computeStreak, daysThisWeek, mastery } from "@/lib/progress";
+import { activeMinutesByDay, completedBySkill } from "@/lib/study-time";
+import { CompletedDoughnut, StudyTimeBars, StudyHeatmap } from "@/components/ProgressCharts";
 import { grammarLessons, getExercise, readingTexts, getTheme } from "@/lib/content";
 import { CRITERIA, SECTION_ORDER, mondayOf, sectionProgress, skillIndicators, type Indicator, weeklyActivity, weeklyReport, type AnalyticsInput, type ContentInfo, type WeeklyReport } from "@/lib/analytics";
 import { LevelBadge, PageHeader, ProgressBar, StatCard } from "@/components/ui";
@@ -155,12 +157,7 @@ export default function ProgressPage() {
   })();
   const trend = [...new Map([...history.map((h) => [h.weekStart, h.overall] as const), [previous.weekStart, previous.overall] as const, [current.weekStart, current.overall] as const]).entries()].sort((a, b) => a[0].localeCompare(b[0])).slice(-10);
 
-  const days = studyDays(data.events);
-  const weeks = 12;
-  const today = new Date();
-  const start = new Date(today);
-  start.setDate(today.getDate() - ((today.getDay() + 6) % 7) - (weeks - 1) * 7);
-  const grid = Array.from({ length: weeks }, (_, w) => Array.from({ length: 7 }, (_, d) => { const x = new Date(start); x.setDate(start.getDate() + w * 7 + d); return x; }));
+  const activeMin = activeMinutesByDay(data);
   const answered = data.responses.length;
   const correct = data.responses.filter((r) => r.correct).length;
 
@@ -174,8 +171,27 @@ export default function ProgressPage() {
         <StatCard label="Skills practice" value={`${data.writing.length + data.speaking.length + data.listening.length}`} hint={`${data.writing.length} essays · ${data.speaking.length} speaking · ${data.listening.length} listening`} />
       </div>
 
-      <section className="card mt-6 p-5 sm:p-6" aria-labelledby="h-sections">
-        <h2 id="h-sections" className="text-lg font-bold">Progress by section</h2>
+      <div className="mt-6 grid gap-6 lg:grid-cols-2">
+        <section className="card p-5 sm:p-6" aria-labelledby="h-done">
+          <h2 id="h-done" className="text-lg font-bold">Completed material</h2>
+          <p className="mb-4 mt-0.5 text-sm text-muted">Finished tasks in each area. Grammar includes Grammar Practice.</p>
+          <CompletedDoughnut counts={completedBySkill(data.events)} />
+        </section>
+        <section className="card p-5 sm:p-6" aria-labelledby="h-time">
+          <h2 id="h-time" className="text-lg font-bold">Study time</h2>
+          <p className="mb-4 mt-0.5 text-sm text-muted">Active minutes per day, last 14 days.</p>
+          <StudyTimeBars minutes={activeMin} />
+        </section>
+      </div>
+
+      <section className="card mt-6 p-5 sm:p-6" aria-labelledby="h-activity">
+        <h2 id="h-activity" className="text-lg font-bold">Study days</h2>
+        <p className="mb-4 mt-0.5 text-sm text-muted">Shaded by active minutes. Hover or focus a day for details.</p>
+        <StudyHeatmap minutes={activeMin} />
+      </section>
+
+      <details className="card mt-6 p-5 sm:p-6">
+        <summary className="cursor-pointer text-lg font-bold">Progress by section</summary>
         <ul className="mt-4 space-y-4">
           {sp.rows.map((r) => (
             <li key={r.key}>
@@ -184,11 +200,11 @@ export default function ProgressPage() {
             </li>
           ))}
         </ul>
-      </section>
+      </details>
 
       {indicators && (
-        <section className="card mt-6 p-5 sm:p-6" aria-labelledby="h-ind" data-testid="skill-indicators">
-          <h2 id="h-ind" className="text-lg font-bold">Skill indicators</h2>
+        <details className="card mt-6 p-5 sm:p-6" data-testid="skill-indicators">
+          <summary className="cursor-pointer text-lg font-bold">Skill indicators</summary>
           <p className="mt-1 text-sm text-muted">The last 30 days compared with the 30 days before. “—” means there isn&apos;t enough evidence yet, not a score of zero.</p>
           <div className="mt-4 overflow-x-auto rounded-xl border border-line">
             <table className="w-full text-[15px]">
@@ -196,12 +212,12 @@ export default function ProgressPage() {
               <tbody>{indicators.map((i) => <IndicatorRow key={i.key} i={i} />)}</tbody>
             </table>
           </div>
-        </section>
+        </details>
       )}
 
-      <section className="card mt-6 p-5 sm:p-6" aria-labelledby="h-report">
-        <div className="mb-4 flex flex-wrap items-center gap-3">
-          <h2 id="h-report" className="flex-1 text-lg font-bold">Weekly report</h2>
+      <details className="card mt-6 p-5 sm:p-6">
+        <summary className="cursor-pointer text-lg font-bold">Weekly report</summary>
+        <div className="mb-4 mt-3 flex flex-wrap items-center gap-3">
           <label htmlFor="wk" className="sr-only">Choose a week</label>
           <select id="wk" className="input !w-auto !py-1.5 text-sm" value={week} onChange={(e) => setWeek(e.target.value)}>
             <option value="current">This week (so far)</option>
@@ -210,18 +226,18 @@ export default function ProgressPage() {
           </select>
         </div>
         <ReportView r={shown} previous={prevOverall} />
-      </section>
+      </details>
 
-      <section className="card mt-6 p-5 sm:p-6" aria-labelledby="h-trends">
+      <section className="card mt-6 p-5" aria-labelledby="h-trends">
         <h2 id="h-trends" className="text-lg font-bold">Trends</h2>
-        <div className="mt-4 grid gap-8 lg:grid-cols-2">
+        <div className="mt-3 grid gap-6 lg:grid-cols-2">
           <figure>
             <figcaption className="mb-2 text-sm font-semibold">Weekly overall score</figcaption>
-            <div className="flex h-40 items-end gap-2 border-b border-line" role="img" aria-label={`Weekly overall scores: ${trend.map(([w, o]) => `${w}: ${o ?? "no data"}`).join("; ")}`}>
+            <div className="flex h-24 items-end gap-2 border-b border-line" role="img" aria-label={`Weekly overall scores: ${trend.map(([w, o]) => `${w}: ${o ?? "no data"}`).join("; ")}`}>
               {trend.map(([w, o]) => (
                 <div key={w} className="flex flex-1 flex-col items-center justify-end gap-1">
                   <span className="text-xs font-semibold tabular-nums">{o ?? "—"}</span>
-                  <div className="w-full max-w-10 rounded-t-md bg-primary" style={{ height: `${Math.max(2, (o ?? 0) * 1.2)}px` }} />
+                  <div className="w-full max-w-10 rounded-t-md bg-primary" style={{ height: `${Math.max(2, (o ?? 0) * 0.7)}px` }} />
                 </div>
               ))}
             </div>
@@ -229,7 +245,7 @@ export default function ProgressPage() {
           </figure>
           <figure>
             <figcaption className="mb-2 text-sm font-semibold">Practice volume, last 8 weeks</figcaption>
-            <div className="flex h-40 items-end gap-2 border-b border-line" role="img" aria-label="Stacked bars of grammar answers, reading answers, vocabulary reviews and listening minutes per week">
+            <div className="flex h-24 items-end gap-2 border-b border-line" role="img" aria-label="Stacked bars of grammar answers, reading answers, vocabulary reviews and listening minutes per week">
               {activity.map((a) => (
                 <div key={a.week} className="flex h-full flex-1 flex-col justify-end">
                   {SERIES.map((s) => a[s.key] > 0 && <div key={s.key} className={clsx("w-full max-w-10 self-center first:rounded-t-md", s.cls)} style={{ height: `${(a[s.key] / maxAct) * 100}%` }} title={`${s.label}: ${a[s.key]}`} />)}
@@ -244,20 +260,6 @@ export default function ProgressPage() {
         </div>
       </section>
 
-      <section className="card mt-6 p-5" aria-labelledby="h-activity">
-        <h2 id="h-activity" className="text-lg font-bold">Study days, last {weeks} weeks</h2>
-        <div className="mt-4 flex gap-1 overflow-x-auto" role="img" aria-label={`${days.size} study days recorded`}>
-          {grid.map((wk, w) => (
-            <div key={w} className="flex flex-col gap-1">
-              {wk.map((d) => {
-                const on = days.has(dayKey(d));
-                const future = d > today;
-                return <span key={d.toISOString()} title={d.toDateString()} className={`h-4 w-4 rounded-[4px] ${future ? "bg-transparent" : on ? "bg-primary" : "bg-surface-2"}`} />;
-              })}
-            </div>
-          ))}
-        </div>
-      </section>
 
       <details className="card mt-6 p-5">
         <summary className="cursor-pointer text-lg font-bold">Grammar mastery by topic</summary>

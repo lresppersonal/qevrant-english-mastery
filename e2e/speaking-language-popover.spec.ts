@@ -9,7 +9,7 @@ const consent = (page: Page) => page.context().addCookies([{ name: "em_consent",
 test("speaking: topic words open a dictionary card in place; saving keeps the session and avoids duplicates", async ({ page }) => {
   await consent(page);
   await page.goto("/speaking");
-  await page.getByRole("group", { name: "Level" }).getByRole("button", { name: "C1" }).click();
+  await page.getByLabel("1 · Level").selectOption("C1");
   await page.getByLabel("2 · Category").selectOption("environment");
   await page.getByRole("radio", { name: /2-minute answer/ }).click();
   await page.getByRole("button", { name: "Generate topic" }).click();

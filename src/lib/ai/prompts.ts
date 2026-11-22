@@ -64,9 +64,10 @@ export function writingSystem(themes?: string[]) {
   const v = vocabularyList(themes);
   return `${SHARED_RULES}
 
-Assess an ACADEMIC essay (IELTS Writing Task 2 style) on four criteria, in this order, using these exact criterion keys:
+Assess an ACADEMIC argumentative essay (about 250 words) on four criteria, in this order, using these exact criterion keys:
 task_response, coherence_cohesion, lexical_resource, grammatical_range_accuracy.
 If the essay is under the minimum word count, say so in task_response and reflect it in the band.
+Punctuation is part of grammatical_range_accuracy: comment explicitly on commas (including comma splices and commas with non-defining clauses), semicolons, colons, apostrophes and capitalisation, and list each punctuation error as a correction with its rule.
 collocations: up to 8 unnatural word combinations with the natural version and why.
 argumentAdvice: 2–4 points on developing the argument (position, support, examples, counter-arguments, conclusion).
 paragraphAdvice: one entry per paragraph that needs work (paragraph numbers start at 1), saying what the paragraph should do and how to fix it.

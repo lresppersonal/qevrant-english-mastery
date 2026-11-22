@@ -6,7 +6,8 @@ import { CheckCircle2, XCircle, ArrowRight, Sparkles, Loader2, Shuffle } from "l
 import { useLearner } from "./StoreProvider";
 import { useAiStatus } from "./useAiStatus";
 import { LevelBadge, ProgressBar, Rich } from "./ui";
-import { buildContextRound, normalise, usesItem, type ContextItem } from "@/lib/vocab-context";
+import { buildContextRound, normalise, usesItem, levelStats, suggestedLevel, VOCAB_LEVELS, type ContextItem } from "@/lib/vocab-context";
+import { useLearnerData } from "./useLearnerData";
 import { getSense } from "@/lib/content";
 
 const TITLE: Record<ContextItem["kind"], string> = {
@@ -27,7 +28,11 @@ export function ContextPractice({ theme }: { theme: string }) {
   const ai = useAiStatus();
   const [seed, setSeed] = useState(() => Math.floor(Date.now() / 1000));
   const studied = useMemo(() => saved.filter((s) => s.itemType === "sense").map((s) => s.itemRef), [saved]);
-  const items = useMemo(() => (ready ? buildContextRound(theme, studied, seed) : []), [theme, seed, ready]); // eslint-disable-line react-hooks/exhaustive-deps
+  const { data } = useLearnerData();
+  const stats = useMemo(() => levelStats(data?.responses ?? [], (id) => getSense(id)?.sense.level), [data]);
+  const [levelChoice, setLevelChoice] = useState<string>("auto");
+  const target = levelChoice === "auto" ? suggestedLevel(stats) : levelChoice;
+  const items = useMemo(() => (ready ? buildContextRound(theme, studied, seed, 10, target) : []), [theme, seed, ready, target]); // eslint-disable-line react-hooks/exhaustive-deps
   const [i, setI] = useState(0);
   const [value, setValue] = useState("");
   const [choice, setChoice] = useState<number | null>(null);
@@ -104,9 +109,22 @@ export function ContextPractice({ theme }: { theme: string }) {
     );
   }
 
+  const levelBar = (
+    <div className="mb-4 flex flex-wrap items-end gap-x-5 gap-y-2" data-testid="context-level">
+      <label className="text-sm"><span className="mb-1 block font-semibold">Level</span>
+        <select aria-label="Practice level" className="input !w-auto !py-1.5 text-sm" value={levelChoice} onChange={(e) => { setLevelChoice(e.target.value); newRound(); }}>
+          <option value="auto">Adaptive (now {suggestedLevel(stats)})</option>
+          {VOCAB_LEVELS.map((l) => <option key={l} value={l}>{l}</option>)}
+        </select>
+      </label>
+      <p className="text-xs text-muted" aria-label="Your accuracy by level">Your accuracy: {VOCAB_LEVELS.map((l) => { const x = stats[l]; return `${l} ${x.answered ? `${Math.round((x.correct / x.answered) * 100)}% (${x.answered})` : "–"}`; }).join(" · ")}</p>
+    </div>
+  );
   const ok = checked && item.kind !== "produce" && isCorrect(item);
   const canCheck = item.options ? choice !== null : item.kind === "produce" ? !!ref && usesItem(ref, value) && value.trim().split(/\s+/).length >= 5 : value.trim().length > 0;
   return (
+    <>
+    {levelBar}
     <div className="mx-auto max-w-2xl" data-testid="context-practice">
       <div className="mb-4 flex items-center gap-3 text-sm text-muted">
         <span className="tabular-nums">{i + 1} / {items.length}</span>
@@ -201,5 +219,6 @@ export function ContextPractice({ theme }: { theme: string }) {
         </div>
       </div>
     </div>
+    </>
   );
 }

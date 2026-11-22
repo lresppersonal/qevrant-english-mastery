@@ -3,6 +3,10 @@ import { z } from "zod";
 export const LEVELS = ["B2", "B2+", "C1", "C2"] as const;
 export const Level = z.enum(LEVELS);
 export type Level = z.infer<typeof Level>;
+/** Reading (and its exercises) add B1 as a supplementary level below the B2–C2 core. */
+export const READING_LEVELS = ["B1", ...LEVELS] as const;
+export const ReadingLevel = z.enum(READING_LEVELS);
+export type ReadingLevel = z.infer<typeof ReadingLevel>;
 
 export const Register = z.enum(["neutral", "formal", "informal", "academic", "spoken"]);
 export const Status = z.enum(["draft", "in_review", "published", "archived"]);
@@ -171,7 +175,7 @@ export const Exercise = Meta.extend({
   skill: z.enum(["grammar", "vocabulary", "reading"]),
   format: z.enum(["gap_fill", "multiple_choice", "matching", "tfng", "transformation", "mixed",
     "matching_headings", "matching_information", "sentence_completion", "summary_completion", "short_answer"]),
-  level: Level,
+  level: ReadingLevel,
   topics: z.array(slug),
   target: z.object({ type: z.enum(["lesson", "vocab_set", "text"]), ref: slug }),
   instructions: z.string(),
@@ -186,7 +190,7 @@ export const ReadingText = Meta.extend({
   slug,
   title: z.string(),
   standfirst: z.string(),
-  level: Level,
+  level: ReadingLevel,
   topics: z.array(slug),
   minutes: z.number().int(),
   paragraphs: z.array(z.string()).min(3),

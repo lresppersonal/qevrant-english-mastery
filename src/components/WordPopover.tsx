@@ -108,6 +108,7 @@ export function WordPopover({ anchor, word, sentence, items, sourceRef, gloss, o
           {sense?.definition ? <p className="text-[15px] leading-snug" data-testid="pop-definition">{fixed ? sense.definition : entry.contextNote ?? sense.definition}</p>
             : gloss && <p className="text-[15px] leading-snug" data-testid="pop-definition">{gloss.definition}</p>}
           {synonyms.length > 0 && <p className="text-sm" data-testid="pop-synonyms"><span className="font-semibold">Synonyms: </span>{synonyms.join(", ")}</p>}
+          {sentence && <p className="rounded-lg bg-surface-2 px-2.5 py-1.5 text-[13.5px] leading-snug" data-testid="pop-context"><span className="font-semibold">In this text: </span><InContext sentence={sentence} word={word} /></p>}
           <Pronounce word={entry.lemma} ipa={entry.ipa} audio={entry.audio} serverTts={ai?.tts} />
           {source && <p className="text-xs text-muted" data-testid="pop-source"><span className="font-semibold">Source:</span> {source}</p>}
           {entry.missing.length > 0 && !sense?.ru && <p className="text-xs text-muted">Not available yet: {entry.missing.join("; ")}.</p>}
@@ -130,4 +131,12 @@ export function WordPopover({ anchor, word, sentence, items, sourceRef, gloss, o
     </div>
   );
   return createPortal(body, document.body);
+}
+
+/** The sentence the word came from, with the word itself emphasised (trimmed around it when long). */
+function InContext({ sentence, word }: { sentence: string; word: string }) {
+  const i = sentence.toLowerCase().indexOf(word.toLowerCase());
+  if (i < 0) return <>{sentence.length > 180 ? `${sentence.slice(0, 177)}…` : sentence}</>;
+  const start = Math.max(0, i - 80), end = Math.min(sentence.length, i + word.length + 80);
+  return <>{start > 0 && "…"}{sentence.slice(start, i)}<mark className="rounded bg-primary-soft px-0.5 font-semibold text-ink">{sentence.slice(i, i + word.length)}</mark>{sentence.slice(i + word.length, end)}{end < sentence.length && "…"}</>;
 }

@@ -5591,6 +5591,331 @@
   "reviewer": null,
   "publishedAt": "2026-11-16",
   "id": "",
+  "slug": "punctuation-practice",
+  "title": "Punctuation for clear academic writing: practice",
+  "skill": "grammar",
+  "format": "mixed",
+  "level": "B2+",
+  "topics": [],
+  "target": {
+   "type": "lesson",
+   "ref": "punctuation"
+  },
+  "instructions": "Mixed practice from B2 to C2. Every explanation links back to the rule it practises.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "Which sentence is correctly punctuated?",
+    "explanation": "Two complete sentences: use a semicolon or full stop, not a comma alone (comma splice).",
+    "errorTag": "punctuation:errors",
+    "theoryAnchor": {
+     "lesson": "punctuation",
+     "section": "errors"
+    },
+    "options": [
+     "The museum was closed; we visited the park instead.",
+     "The museum was closed, we visited the park instead.",
+     "The museum was closed we visited the park instead.",
+     "The museum, was closed; we visited the park instead."
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "Choose the correct punctuation: ‘Sales increased in March ___ they fell again in April.’",
+    "explanation": "A comma + coordinating conjunction (*but*) can join two full clauses. *However* would need a semicolon before it.",
+    "errorTag": "punctuation:uses",
+    "theoryAnchor": {
+     "lesson": "punctuation",
+     "section": "uses"
+    },
+    "options": [
+     ", but",
+     "; but,",
+     ": but",
+     ", however"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "Prices rose sharply ___ demand remained stable.",
+    "explanation": "*However* joining two clauses: semicolon before, comma after.",
+    "errorTag": "punctuation:contrasts",
+    "theoryAnchor": {
+     "lesson": "punctuation",
+     "section": "contrasts"
+    },
+    "options": [
+     "; however,",
+     ", however",
+     "however,",
+     ", however;"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "Which sentence needs NO comma?",
+    "explanation": "A defining relative clause identifies the noun, so it takes no commas.",
+    "errorTag": "punctuation:form",
+    "theoryAnchor": {
+     "lesson": "punctuation",
+     "section": "form"
+    },
+    "options": [
+     "Students who miss the deadline will lose marks.",
+     "Although it was late, the meeting continued.",
+     "The report, which was published in May, was widely read.",
+     "In 2021, the policy was changed."
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q5",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "Which use of the colon is correct?",
+    "explanation": "A colon must follow a complete clause and introduce an explanation, list or quotation.",
+    "errorTag": "punctuation:uses",
+    "theoryAnchor": {
+     "lesson": "punctuation",
+     "section": "uses"
+    },
+    "options": [
+     "The plan has one weakness: it is too expensive.",
+     "The reasons for the decision were: cost and time.",
+     "We need to buy: paper, pens and folders.",
+     "She said: that she would come later."
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q6",
+    "format": "Gap fill",
+    "level": "B2",
+    "prompt": "Write the correct form: ‘The ___ (company) profits fell, but its employees kept their jobs.’",
+    "explanation": "Singular possession: *company's*.",
+    "errorTag": "punctuation:errors",
+    "theoryAnchor": {
+     "lesson": "punctuation",
+     "section": "errors"
+    },
+    "accepted": [
+     "company's"
+    ]
+   },
+   {
+    "kind": "text",
+    "id": "q7",
+    "format": "Gap fill",
+    "level": "B2+",
+    "prompt": "Write the correct form: ‘All the ___ (student) results were published online.’",
+    "explanation": "Plural noun ending in -s + apostrophe after the s.",
+    "errorTag": "punctuation:errors",
+    "theoryAnchor": {
+     "lesson": "punctuation",
+     "section": "errors"
+    },
+    "accepted": [
+     "students'"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q8",
+    "format": "Multiple choice",
+    "level": "B2",
+    "prompt": "The city is proud of ___ long history.",
+    "explanation": "*its* = belonging to it; *it's* = it is.",
+    "errorTag": "punctuation:contrasts",
+    "theoryAnchor": {
+     "lesson": "punctuation",
+     "section": "contrasts"
+    },
+    "options": [
+     "its",
+     "it's",
+     "its'",
+     "it is"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q9",
+    "format": "Error correction",
+    "level": "B2+",
+    "prompt": "Which part is incorrect? *Unemployment fell sharply last year which surprised many economists.*",
+    "explanation": "A sentence-relative *which* clause needs a comma: *…last year, which surprised…*",
+    "errorTag": "punctuation:errors",
+    "theoryAnchor": {
+     "lesson": "punctuation",
+     "section": "errors"
+    },
+    "options": [
+     "last year which",
+     "Unemployment fell",
+     "sharply",
+     "many economists"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q10",
+    "format": "Error correction",
+    "level": "B2+",
+    "prompt": "Which part is incorrect? *The three main causes are: poverty, poor housing and lack of education.*",
+    "explanation": "A colon must follow a complete clause; remove it after *are*.",
+    "errorTag": "punctuation:errors",
+    "theoryAnchor": {
+     "lesson": "punctuation",
+     "section": "errors"
+    },
+    "options": [
+     "are:",
+     "The three main causes",
+     "poor housing",
+     "lack of education"
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q11",
+    "format": "Multiple choice",
+    "level": "B2+",
+    "prompt": "Choose the correctly punctuated sentence.",
+    "explanation": "Fronted subordinate clause → comma before the main clause.",
+    "errorTag": "punctuation:form",
+    "theoryAnchor": {
+     "lesson": "punctuation",
+     "section": "form"
+    },
+    "options": [
+     "If governments invest in public transport, car use tends to fall.",
+     "If governments invest in public transport car use, tends to fall.",
+     "If governments, invest in public transport car use tends to fall.",
+     "If governments invest, in public transport, car use tends to fall."
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q12",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "Which sentence uses commas to show that ALL the scientists were consulted?",
+    "explanation": "Commas make the clause non-defining: it adds information about all the scientists.",
+    "errorTag": "punctuation:examples",
+    "theoryAnchor": {
+     "lesson": "punctuation",
+     "section": "examples"
+    },
+    "options": [
+     "The scientists, who were consulted in advance, supported the plan.",
+     "The scientists who were consulted in advance supported the plan.",
+     "The scientists who, were consulted in advance supported the plan.",
+     "The scientists who were consulted, in advance supported the plan."
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q13",
+    "format": "Sentence transformation",
+    "level": "C1",
+    "prompt": "Join with a semicolon and *therefore*. ‘The sample was small. The results should be treated with caution.’ → ‘The sample was small___ the results should be treated with caution.’",
+    "explanation": "Sentence adverb between two clauses: semicolon before, comma after.",
+    "errorTag": "punctuation:uses",
+    "theoryAnchor": {
+     "lesson": "punctuation",
+     "section": "uses"
+    },
+    "accepted": [
+     "; therefore,"
+    ]
+   },
+   {
+    "kind": "choice",
+    "id": "q14",
+    "format": "Multiple choice",
+    "level": "C1",
+    "prompt": "Which sentence is most appropriate in formal academic writing?",
+    "explanation": "Formal style avoids dashes, exclamation marks and contractions; *nevertheless* between clauses needs a semicolon.",
+    "errorTag": "punctuation:register",
+    "theoryAnchor": {
+     "lesson": "punctuation",
+     "section": "register"
+    },
+    "options": [
+     "The findings were unexpected; nevertheless, they were consistent with earlier studies.",
+     "The findings were unexpected – but they matched earlier studies!",
+     "The findings weren't expected, but they matched what others found.",
+     "The findings were unexpected, nevertheless they were consistent with earlier studies."
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "choice",
+    "id": "q15",
+    "format": "Multiple choice",
+    "level": "C2",
+    "prompt": "Which sentence punctuates a list of complex items correctly?",
+    "explanation": "When list items contain commas, semicolons separate the items so the reader can see where each one ends.",
+    "errorTag": "punctuation:register",
+    "theoryAnchor": {
+     "lesson": "punctuation",
+     "section": "register"
+    },
+    "options": [
+     "The strategy had three aims: to reduce costs; to improve access, particularly in rural areas; and to raise standards.",
+     "The strategy had three aims: to reduce costs, to improve access, particularly in rural areas, and to raise standards.",
+     "The strategy had three aims; to reduce costs, to improve access, particularly in rural areas, and to raise standards.",
+     "The strategy had three aims, to reduce costs; to improve access; particularly in rural areas; and to raise standards."
+    ],
+    "answer": 0
+   },
+   {
+    "kind": "text",
+    "id": "q16",
+    "format": "In context",
+    "level": "C1",
+    "prompt": "‘The results were striking___ participation doubled within a year.’ (the second part explains the first)",
+    "explanation": "A colon introduces an explanation of the complete clause before it.",
+    "errorTag": "punctuation:uses",
+    "theoryAnchor": {
+     "lesson": "punctuation",
+     "section": "uses"
+    },
+    "accepted": [
+     ":"
+    ]
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
   "slug": "purpose-and-result-clauses-practice",
   "title": "Purpose and result: in order to, so that, lest, so ... that, such ... that: practice",
   "skill": "grammar",
@@ -7673,6 +7998,201 @@
   "reviewer": null,
   "publishedAt": "2026-11-16",
   "id": "",
+  "slug": "bikes-back-in-town-1",
+  "title": "Matching information",
+  "skill": "reading",
+  "format": "matching_information",
+  "level": "B1",
+  "topics": [
+   "cities-urban"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "bikes-back-in-town"
+  },
+  "passageRef": "bikes-back-in-town",
+  "instructions": "Which paragraph contains the following information? Write A–F.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "a reason why some people do not cycle",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E",
+     "Paragraph F"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph C: people feel unsafe with heavy traffic.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "how technology helps older or less fit people cycle",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E",
+     "Paragraph F"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph D: electric bikes make hills easier.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "a worry about business",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E",
+     "Paragraph F"
+    ],
+    "answer": 4,
+    "explanation": "Paragraph E: shop owners worry about customers.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "prompt": "how planners once saw the bicycle",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E",
+     "Paragraph F"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph A: it \"belonged to the past\".",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "bikes-back-in-town-2",
+  "title": "True / False / Not given",
+  "skill": "reading",
+  "format": "tfng",
+  "level": "B1",
+  "topics": [
+   "cities-urban"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "bikes-back-in-town"
+  },
+  "passageRef": "bikes-back-in-town",
+  "instructions": "Do the statements agree with the information in the text?",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "For short journeys in the city centre, cycling can be faster than driving.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph B.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "All shop owners support new cycle lanes.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph E: some shop owners worry.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "Shared bikes are free to use.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 2,
+    "explanation": "The text does not mention the price.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "bikes-back-in-town-3",
+  "title": "Sentence completion",
+  "skill": "reading",
+  "format": "sentence_completion",
+  "level": "B1",
+  "topics": [
+   "cities-urban"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "bikes-back-in-town"
+  },
+  "passageRef": "bikes-back-in-town",
+  "instructions": "Complete the sentences with NO MORE THAN TWO WORDS from the text.",
+  "questions": [
+   {
+    "kind": "text",
+    "id": "q1",
+    "prompt": "Some cycle lanes are protected from cars by a kerb or a line of ___.",
+    "accepted": [
+     "plants"
+    ],
+    "explanation": "Paragraph C.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "prompt": "The writer says a street is also a place where people meet, shop and ___.",
+    "accepted": [
+     "play"
+    ],
+    "explanation": "Paragraph F.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
   "slug": "can-machines-create-1",
   "title": "True / False / Not given",
   "skill": "reading",
@@ -7834,6 +8354,224 @@
      "people"
     ],
     "explanation": "Paragraph D: \"that judgement still comes from people\".",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "carbon-in-the-deep-1",
+  "title": "True / False / Not given",
+  "skill": "reading",
+  "format": "tfng",
+  "level": "C1",
+  "topics": [
+   "environment"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "carbon-in-the-deep"
+  },
+  "passageRef": "carbon-in-the-deep",
+  "instructions": "Do the statements agree with the information in the text?",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "Coastal habitats cover a large share of the ocean's surface.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph B: \"a tiny fraction\".",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "Low oxygen in coastal soils slows the release of carbon.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph B.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "All researchers agree on how much carbon bottom trawling releases.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph C: others question the size of the effect.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "prompt": "Seagrass meadows are the most common habitat for young fish worldwide.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 2,
+    "explanation": "Paragraph E says they shelter young fish but makes no comparison.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "carbon-in-the-deep-2",
+  "title": "Matching information",
+  "skill": "reading",
+  "format": "matching_information",
+  "level": "C1",
+  "topics": [
+   "environment"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "carbon-in-the-deep"
+  },
+  "passageRef": "carbon-in-the-deep",
+  "instructions": "Which paragraph contains the following information? Write A–F.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "a concern about dishonest claims of reduced emissions",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E",
+     "Paragraph F"
+    ],
+    "answer": 3,
+    "explanation": "Paragraph D: poorly verified credits.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "an explanation of how carbon becomes stored over time",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E",
+     "Paragraph F"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph A: material settles and is buried.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "a warning against judging ecosystems by a single measure",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E",
+     "Paragraph F"
+    ],
+    "answer": 4,
+    "explanation": "Paragraph E: not purely a carbon accounting problem.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "prompt": "the writer's recommendation",
+    "options": [
+     "Paragraph A",
+     "Paragraph B",
+     "Paragraph C",
+     "Paragraph D",
+     "Paragraph E",
+     "Paragraph F"
+    ],
+    "answer": 5,
+    "explanation": "Paragraph F: keep existing stores intact.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "carbon-in-the-deep-3",
+  "title": "Summary completion",
+  "skill": "reading",
+  "format": "summary_completion",
+  "level": "C1",
+  "topics": [
+   "environment"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "carbon-in-the-deep"
+  },
+  "passageRef": "carbon-in-the-deep",
+  "instructions": "Complete the summary. Use ONE word from the text for each gap.",
+  "questions": [
+   {
+    "kind": "text",
+    "id": "q1",
+    "prompt": "When mangroves are cleared for ___, exposed soils start to break down.",
+    "accepted": [
+     "aquaculture"
+    ],
+    "explanation": "Paragraph C.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "prompt": "Carbon ___ can pay for protecting coastal ecosystems.",
+    "accepted": [
+     "markets"
+    ],
+    "explanation": "Paragraph D.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q3",
+    "prompt": "The writer argues that keeping stores ___ is cheaper than rebuilding them.",
+    "accepted": [
+     "intact"
+    ],
+    "explanation": "Paragraph F.",
     "theoryAnchor": null
    }
   ]
@@ -8188,6 +8926,178 @@
      "housing"
     ],
     "explanation": "Paragraph E.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "four-day-week-1",
+  "title": "True / False / Not given",
+  "skill": "reading",
+  "format": "tfng",
+  "level": "B2",
+  "topics": [
+   "work-careers"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "four-day-week"
+  },
+  "passageRef": "four-day-week",
+  "instructions": "Do the statements agree with the information in the text?",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "In most trials, employees received less pay.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph A: they keep the same pay.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "Companies in trials are probably more open to change than average.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph C: they usually choose to join.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "Hospitals have found the four-day week easier to introduce than design studios.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph C: a hospital ward cannot simply close.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "prompt": "Most trials were funded by governments.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 2,
+    "explanation": "Funding is not mentioned.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "four-day-week-2",
+  "title": "Multiple choice",
+  "skill": "reading",
+  "format": "multiple_choice",
+  "level": "B2",
+  "topics": [
+   "work-careers"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "four-day-week"
+  },
+  "passageRef": "four-day-week",
+  "instructions": "Choose the correct answer.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "What is the main point of paragraph D?",
+    "explanation": "Paragraph D contrasts genuine efficiency with longer days and pressure.",
+    "options": [
+     "Employees always work longer days in a four-day week.",
+     "The same amount of work can be achieved in different ways, not all of them positive.",
+     "Meetings should be banned.",
+     "Researchers have measured every type of working week."
+    ],
+    "answer": 1,
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "What is the writer's overall conclusion?",
+    "explanation": "Paragraph F: \"working time is not one policy but many\".",
+    "options": [
+     "The four-day week has failed.",
+     "Every company should adopt a four-day week.",
+     "It may suit some organisations, while others could find different solutions.",
+     "Long-term studies prove it works."
+    ],
+    "answer": 2,
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "four-day-week-3",
+  "title": "Sentence completion",
+  "skill": "reading",
+  "format": "sentence_completion",
+  "level": "B2",
+  "topics": [
+   "work-careers"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "four-day-week"
+  },
+  "passageRef": "four-day-week",
+  "instructions": "Complete the sentences with NO MORE THAN TWO WORDS from the text.",
+  "questions": [
+   {
+    "kind": "text",
+    "id": "q1",
+    "prompt": "Some firms found it easier to recruit and ___ staff.",
+    "accepted": [
+     "keep"
+    ],
+    "explanation": "Paragraph B.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "prompt": "Four ten-hour days is called a ___ week.",
+    "accepted": [
+     "compressed"
+    ],
+    "explanation": "Paragraph D.",
     "theoryAnchor": null
    }
   ]
@@ -9035,6 +9945,192 @@
      "value judgements"
     ],
     "explanation": "Paragraph E.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "persuaded-by-numbers-1",
+  "title": "Multiple choice",
+  "skill": "reading",
+  "format": "multiple_choice",
+  "level": "C2",
+  "topics": [
+   "communication-media"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "persuaded-by-numbers"
+  },
+  "passageRef": "persuaded-by-numbers",
+  "instructions": "Choose the correct answer.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "In paragraph A, the writer suggests that numbers",
+    "explanation": "Paragraph A: they are rarely interrogated with scepticism.",
+    "options": [
+     "are always more reliable than words.",
+     "are questioned less than they should be because they seem objective.",
+     "are mainly used by criminals.",
+     "should not appear in news reports."
+    ],
+    "answer": 1,
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "What is the main idea of paragraph B?",
+    "explanation": "Paragraph B: every statistic is the residue of human choices that are seldom visible.",
+    "options": [
+     "Statisticians deliberately mislead the public.",
+     "The choices behind a statistic shape its meaning but are often hidden.",
+     "Percentages are always misleading.",
+     "Crime figures are never accurate."
+    ],
+    "answer": 1,
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "The writer's attitude in paragraph E can best be described as",
+    "explanation": "Paragraph E rejects blanket cynicism but asks for selective trust.",
+    "options": [
+     "dismissive of data.",
+     "uncritically enthusiastic about statistics.",
+     "balanced: sceptical but still valuing careful data.",
+     "indifferent."
+    ],
+    "answer": 2,
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "persuaded-by-numbers-2",
+  "title": "True / False / Not given",
+  "skill": "reading",
+  "format": "tfng",
+  "level": "C2",
+  "topics": [
+   "communication-media"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "persuaded-by-numbers"
+  },
+  "passageRef": "persuaded-by-numbers",
+  "instructions": "Do the statements agree with the views of the writer?",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "Absolute numbers are generally easier for the public to understand than relative risk.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph C.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "Official statistics capture informal activity well.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph D: it may be under-represented or absent.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "Most journalists have received training in statistics.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 2,
+    "explanation": "Not mentioned.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "prompt": "Statistical literacy mainly requires advanced mathematics.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph F: it is \"less a technical skill than a habit of mind\".",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "persuaded-by-numbers-3",
+  "title": "Short-answer questions",
+  "skill": "reading",
+  "format": "short_answer",
+  "level": "C2",
+  "topics": [
+   "communication-media"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "persuaded-by-numbers"
+  },
+  "passageRef": "persuaded-by-numbers",
+  "instructions": "Answer with NO MORE THAN THREE WORDS from the text.",
+  "questions": [
+   {
+    "kind": "text",
+    "id": "q1",
+    "prompt": "What happens, according to paragraph D, when a number becomes a target?",
+    "accepted": [
+     "institutions manage it"
+    ],
+    "explanation": "\"institutions learn to manage the number\".",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "prompt": "What kind of trust in numbers does the writer recommend?",
+    "accepted": [
+     "selective trust"
+    ],
+    "explanation": "Paragraph E: trust them more selectively.",
     "theoryAnchor": null
    }
   ]
@@ -11153,6 +12249,200 @@
   "reviewer": null,
   "publishedAt": "2026-11-16",
   "id": "",
+  "slug": "what-museums-keep-1",
+  "title": "Matching headings",
+  "skill": "reading",
+  "format": "matching_headings",
+  "level": "B2",
+  "topics": [
+   "arts-culture"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "what-museums-keep"
+  },
+  "passageRef": "what-museums-keep",
+  "instructions": "Choose the correct heading for paragraphs B, C, D and E.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "Paragraph B",
+    "options": [
+     "i. Why some museums want to keep objects",
+     "ii. How objects reached museums",
+     "iii. Ways of sharing responsibility",
+     "iv. The museum that refused every request",
+     "v. Who has the right to decide",
+     "vi. Why visitors prefer modern art"
+    ],
+    "answer": 1,
+    "explanation": "Bought, given, or taken during wars and colonial rule.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "Paragraph C",
+    "options": [
+     "i. Why some museums want to keep objects",
+     "ii. How objects reached museums",
+     "iii. Ways of sharing responsibility",
+     "iv. The museum that refused every request",
+     "v. Who has the right to decide",
+     "vi. Why visitors prefer modern art"
+    ],
+    "answer": 0,
+    "explanation": "Access and care are the two arguments.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "Paragraph D",
+    "options": [
+     "i. Why some museums want to keep objects",
+     "ii. How objects reached museums",
+     "iii. Ways of sharing responsibility",
+     "iv. The museum that refused every request",
+     "v. Who has the right to decide",
+     "vi. Why visitors prefer modern art"
+    ],
+    "answer": 4,
+    "explanation": "Returning is \"about who has the right to decide\".",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "prompt": "Paragraph E",
+    "options": [
+     "i. Why some museums want to keep objects",
+     "ii. How objects reached museums",
+     "iii. Ways of sharing responsibility",
+     "iv. The museum that refused every request",
+     "v. Who has the right to decide",
+     "vi. Why visitors prefer modern art"
+    ],
+    "answer": 2,
+    "explanation": "Shared research, decisions and loans.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "what-museums-keep-2",
+  "title": "Multiple choice",
+  "skill": "reading",
+  "format": "multiple_choice",
+  "level": "B2",
+  "topics": [
+   "arts-culture"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "what-museums-keep"
+  },
+  "passageRef": "what-museums-keep",
+  "instructions": "Choose the correct answer.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "According to paragraph C, museums that resist returns believe that",
+    "explanation": "Paragraph C: access for millions and expert care.",
+    "options": [
+     "the objects are not valuable.",
+     "they can show the objects to more people and protect them well.",
+     "the communities do not want the objects.",
+     "digital copies are better than the originals."
+    ],
+    "answer": 1,
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "What does the writer suggest in paragraph F?",
+    "explanation": "Paragraph F: the starting point is changing.",
+    "options": [
+     "Most museums will soon return all their objects.",
+     "The debate has already been solved.",
+     "Museums are starting to ask different questions about their collections.",
+     "Every object should stay where it is."
+    ],
+    "answer": 2,
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "what-museums-keep-3",
+  "title": "Summary completion",
+  "skill": "reading",
+  "format": "summary_completion",
+  "level": "B2",
+  "topics": [
+   "arts-culture"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "what-museums-keep"
+  },
+  "passageRef": "what-museums-keep",
+  "instructions": "Complete the summary. Use ONE word from the text for each gap.",
+  "questions": [
+   {
+    "kind": "text",
+    "id": "q1",
+    "prompt": "Some objects were never meant to be ___ but to be used in ceremonies.",
+    "accepted": [
+     "displayed"
+    ],
+    "explanation": "Paragraph D.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "prompt": "Technology can produce detailed 3D ___ of objects.",
+    "accepted": [
+     "records"
+    ],
+    "explanation": "Paragraph E.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q3",
+    "prompt": "Few people think a scan can ___ the real object.",
+    "accepted": [
+     "replace"
+    ],
+    "explanation": "Paragraph E.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
   "slug": "when-results-wont-repeat-1",
   "title": "Matching headings",
   "skill": "reading",
@@ -11776,6 +13066,178 @@
      "scale"
     ],
     "explanation": "Paragraph F.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "why-we-forget-dreams-1",
+  "title": "True / False / Not given",
+  "skill": "reading",
+  "format": "tfng",
+  "level": "B1",
+  "topics": [
+   "psychology-behaviour"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "why-we-forget-dreams"
+  },
+  "passageRef": "why-we-forget-dreams",
+  "instructions": "Do the statements agree with the information in the text?",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "Some people never have dreams at all.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 1,
+    "explanation": "Paragraph A: even people who say they never dream usually do.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "Long, story-like dreams are more common late in the night.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph B: \"the second half of the night\".",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "prompt": "Dream diaries were invented by sleep scientists.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 2,
+    "explanation": "The text does not say who invented them.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "prompt": "Thinking about the day ahead can make a dream harder to remember.",
+    "options": [
+     "True",
+     "False",
+     "Not given"
+    ],
+    "answer": 0,
+    "explanation": "Paragraph D: every new thought pushes the dream away.",
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "why-we-forget-dreams-2",
+  "title": "Multiple choice",
+  "skill": "reading",
+  "format": "multiple_choice",
+  "level": "B1",
+  "topics": [
+   "psychology-behaviour"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "why-we-forget-dreams"
+  },
+  "passageRef": "why-we-forget-dreams",
+  "instructions": "Choose the correct answer.",
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "prompt": "What does paragraph C suggest?",
+    "explanation": "Paragraph C: memory chemicals are lower, so dreams leave little trace.",
+    "options": [
+     "Dreams are not real experiences.",
+     "The brain may not store dreams well during sleep.",
+     "We only remember dreams that happen during the day.",
+     "Chemicals in food stop us remembering dreams."
+    ],
+    "answer": 1,
+    "theoryAnchor": null
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "prompt": "What is the writer's opinion in paragraph F?",
+    "explanation": "Paragraph F: forgetting \"seems to be completely normal\"; a notebook is for the curious.",
+    "options": [
+     "Forgetting dreams is a sign of poor health.",
+     "Everyone should keep a dream diary.",
+     "Forgetting dreams is normal, but recording them can be interesting.",
+     "Scientists now agree about the purpose of dreams."
+    ],
+    "answer": 2,
+    "theoryAnchor": null
+   }
+  ]
+ },
+ {
+  "status": "published",
+  "version": 1,
+  "author": "QEVRANT editorial (AI-assisted draft)",
+  "reviewer": null,
+  "publishedAt": "2026-11-16",
+  "id": "",
+  "slug": "why-we-forget-dreams-3",
+  "title": "Short-answer questions",
+  "skill": "reading",
+  "format": "short_answer",
+  "level": "B1",
+  "topics": [
+   "psychology-behaviour"
+  ],
+  "target": {
+   "type": "text",
+   "ref": "why-we-forget-dreams"
+  },
+  "passageRef": "why-we-forget-dreams",
+  "instructions": "Answer with NO MORE THAN TWO WORDS from the text.",
+  "questions": [
+   {
+    "kind": "text",
+    "id": "q1",
+    "prompt": "What do some people keep next to their bed?",
+    "accepted": [
+     "a dream diary"
+    ],
+    "explanation": "Paragraph E.",
+    "theoryAnchor": null
+   },
+   {
+    "kind": "text",
+    "id": "q2",
+    "prompt": "What should you do for a minute before getting up, according to researchers?",
+    "accepted": [
+     "lie still"
+    ],
+    "explanation": "Paragraph D.",
     "theoryAnchor": null
    }
   ]

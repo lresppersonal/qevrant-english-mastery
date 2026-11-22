@@ -80,7 +80,7 @@ export function FeedbackView({ feedback, source, metrics, kind, variant = "essay
         </div>
         {feedback.estimate && (
           <div className="mt-4 flex flex-wrap items-center gap-4 rounded-xl border border-primary/40 bg-primary-soft px-4 py-3" data-testid="band-estimate">
-            <div><p className="text-xs font-semibold uppercase tracking-wide text-muted">{visual ? "Estimated band (9-point scale)" : "Estimated IELTS-style band"}</p><p className="font-display text-3xl font-extrabold">{feedback.estimate.low.toFixed(1)}–{feedback.estimate.high.toFixed(1)}</p></div>
+            <div><p className="text-xs font-semibold uppercase tracking-wide text-muted">{visual ? "Estimated band (9-point scale)" : "Estimated band (9-point scale)"}</p><p className="font-display text-3xl font-extrabold">{feedback.estimate.low.toFixed(1)}–{feedback.estimate.high.toFixed(1)}</p></div>
             <p className="min-w-0 flex-1 text-sm text-muted">{feedback.estimate.basis}</p>
           </div>
         )}

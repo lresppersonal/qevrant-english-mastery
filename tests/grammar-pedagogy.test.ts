@@ -3,7 +3,7 @@ import { grammarLessons, exercises } from "@/lib/content";
 import { buildParts } from "@/lib/grammar-parts";
 
 describe("grammar lessons follow the teaching sequence", () => {
-  it("has all 36 lessons", () => expect(grammarLessons.length).toBe(36));
+  it("has all 37 lessons", () => expect(grammarLessons.length).toBe(37));
   for (const l of grammarLessons) {
     describe(l.slug, () => {
       it("opens with the core concept and keeps the A–I order", () => {

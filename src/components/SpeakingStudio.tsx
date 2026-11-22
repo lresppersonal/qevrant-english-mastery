@@ -258,8 +258,8 @@ export function SpeakingStudio() {
 
         <fieldset disabled={busy} className="mt-5 space-y-4">
           <div>
-            <legend className="mb-2 text-sm font-semibold">1 · Level</legend>
-            <div role="group" aria-label="Level" className="scroll-row">{(["all", ...SPEAKING_LEVELS] as const).map((l) => <button key={l} type="button" aria-pressed={level === l} className={chip(level === l)} onClick={() => setLevel(l)}>{l === "all" ? "Any level" : l}</button>)}</div>
+            <label htmlFor="sp-level" className="mb-2 block text-sm font-semibold">1 · Level</label>
+            <select id="sp-level" className="input sm:!w-48" value={level} onChange={(e) => setLevel(e.target.value as SpeakingLevel | "all")}>{(["all", ...SPEAKING_LEVELS] as const).map((l) => <option key={l} value={l}>{l === "all" ? "Any level" : l}</option>)}</select>
           </div>
           <div>
             <label htmlFor="sp-cat" className="mb-2 block text-sm font-semibold">2 · Category</label>

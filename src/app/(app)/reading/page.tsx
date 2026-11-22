@@ -18,7 +18,7 @@ export default function Reading() {
     <>
       <ContextBackLink />
       <PageHeader eyebrow="Learn" title="Reading library"
-        intro={<>{cards.length} original articles for B2–C2 learners, with IELTS-style tasks (True/False/Not given, matching headings, matching information, sentence and summary completion, short answers, multiple choice), key vocabulary and critical-thinking questions. Tap any word for its meaning.</>} />
+        intro={<>{cards.length} original articles for B2–C2 learners, with exam-style tasks (True/False/Not given, matching headings, matching information, sentence and summary completion, short answers, multiple choice), key vocabulary and critical-thinking questions. Tap any word for its meaning.</>} />
       <ReadingLibrary cards={cards} />
     </>
   );

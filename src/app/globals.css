@@ -255,3 +255,9 @@ body { overscroll-behavior-y: none; }
   .flip-inner { transition: none !important; }
   .flame .flame-outer, .flame .flame-core, .flame .flame-glow { animation: none !important; }
 }
+
+/* Chart palette (validated: CVD separation and normal-vision floor pass in both themes; labels and tables accompany every chart) */
+:root { --viz-1:#2a78d6; --viz-2:#eb6834; --viz-3:#1baf7a; --viz-4:#eda100; --viz-5:#e87ba4; --viz-6:#008300;
+  --heat-1:#cde2fb; --heat-2:#86b6ef; --heat-3:#3987e5; --heat-4:#256abf; --heat-5:#104281; }
+[data-theme="dark"] { --viz-1:#3987e5; --viz-2:#d95926; --viz-3:#199e70; --viz-4:#c98500; --viz-5:#d55181; --viz-6:#0ca30c;
+  --heat-1:#1c3a66; --heat-2:#184f95; --heat-3:#256abf; --heat-4:#3987e5; --heat-5:#86b6ef; }

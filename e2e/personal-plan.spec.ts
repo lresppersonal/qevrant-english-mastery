@@ -6,7 +6,7 @@ const consent = (page: Page) => page.context().addCookies([{ name: "em_consent",
 async function assess(page: Page, ratings: Record<string, number>, focus: string[]) {
   const form = page.getByTestId("learning-profile");
   for (const [skill, n] of Object.entries(ratings)) await form.getByRole("radiogroup", { name: `${skill}: confidence` }).getByRole("radio", { name: new RegExp(`^${n}:`) }).click();
-  for (const f of focus) await form.getByRole("button", { name: f, exact: true }).click();
+  void focus; // priorities now come from the ratings alone
 }
 
 test("onboarding self-assessment → personal priorities → a personal plan that survives a reload", async ({ page }) => {

@@ -118,6 +118,8 @@ test("new learner: onboard, study, answer, review the rule, save from text, revi
   await expect(page.getByTestId("skill-indicators")).toContainText("Vocabulary retention");
   await expect(page.getByTestId("weekly-report")).toContainText("Grammar accuracy");
   await expect(page.getByTestId("weekly-report")).toContainText("Insufficiently assessed");
+  await expect(page.getByTestId("completed-doughnut")).toContainText("Grammar"); // real completed work, not an empty state
+  await expect(page.getByTestId("study-heatmap").locator("table")).toHaveCount(3);
   await page.getByText("Exercise history").click();
   await expect(page.getByText("Relative clauses in context")).toBeVisible();
 });
@@ -201,7 +203,7 @@ test("speaking analysis API returns feedback and delivery metrics", async ({ req
 
 test("speaking studio: filters, random topic, timers, recording and AI feedback", async ({ page }) => {
   await page.goto("/speaking");
-  await page.getByRole("group", { name: "Level" }).getByRole("button", { name: "C1" }).click();
+  await page.getByLabel("1 · Level").selectOption("C1");
   await page.getByLabel("2 · Category").selectOption("environment");
   await page.getByRole("radio", { name: /2-minute answer/ }).click();
   await page.getByRole("button", { name: "Generate topic" }).click();
@@ -239,11 +241,11 @@ test("speaking studio: filters, random topic, timers, recording and AI feedback"
 test("listening library filters by level, type and accent and logs a session", async ({ page }) => {
   await page.goto("/listening");
   const list = page.getByTestId("listening-list");
-  await page.getByRole("group", { name: "Accent" }).getByRole("button", { name: "Australian" }).click();
+  await page.getByLabel("Accent").selectOption("australian");
   await expect(list.locator("li")).toHaveCount(1);
   await expect(list).toContainText("Conversations");
-  await page.getByRole("group", { name: "Accent" }).getByRole("button", { name: "All accents" }).click();
-  await page.getByRole("group", { name: "Level" }).getByRole("button", { name: "C2" }).click();
+  await page.getByLabel("Accent").selectOption("all");
+  await page.getByLabel("Level", { exact: true }).selectOption("C2");
   for (const t of await list.locator("li").allTextContents()) expect(t).toContain("C2");
   const link = list.getByRole("link").first();
   await expect(link).toHaveAttribute("href", /^https:\/\//);
@@ -329,7 +331,7 @@ test("vocabulary is organised by theme with lexical classes and CEFR filters", a
 
 test("reading library filters and multi-task texts; essay bank by type", async ({ page }) => {
   await page.goto("/reading");
-  await page.getByLabel("Topic").selectOption("environment");
+  await page.getByLabel("Subject area").selectOption("environment");
   await expect(page.getByTestId("reading-list")).toContainText("Letting nature take back control");
   await page.getByRole("link", { name: /Letting nature take back control/ }).click();
   await expect(page.getByText("Key vocabulary")).toBeVisible();

@@ -126,15 +126,18 @@ test("sidebar: stays in every module, collapses to icons with tooltips, remember
   await expect(page.getByRole("navigation", { name: "Main" }).last()).toBeVisible();
 });
 
-test("landing: animated logo on the right, still with reduced motion, logo opens the dashboard", async ({ page }) => {
+test("landing: large animated Q on the left, text on the right, still with reduced motion, logo opens the dashboard", async ({ page }) => {
   await page.goto("/");
   const mark = page.getByTestId("hero-mark");
   await expect(mark).toBeVisible();
   const [h1, m] = [await page.locator("h1").boundingBox(), await mark.boundingBox()];
-  expect(m!.x).toBeGreaterThan(h1!.x + h1!.width * 0.6); // right-hand side
-  expect(await mark.locator(".hero-ring").evaluate((el) => getComputedStyle(el).animationName)).toBe("hero-ring");
+  expect(m!.x).toBeLessThan(0); // cropped by the left edge
+  expect(h1!.x).toBeGreaterThan(m!.x + m!.width * 0.5); // the text sits to the right of the Q's centre
+  expect(await mark.locator(".hq-ring").evaluate((el) => getComputedStyle(el).animationName)).toBe("hq-draw");
+  expect(await mark.locator(".hq-spin").evaluate((el) => getComputedStyle(el).animationName)).toBe("hq-spin");
+  await expect(page.getByText(/IELTS/)).toHaveCount(0);
   await page.emulateMedia({ reducedMotion: "reduce" });
-  expect(await mark.locator(".hero-ring").evaluate((el) => getComputedStyle(el).animationName)).toBe("none");
+  expect(await mark.locator(".hq-ring").evaluate((el) => getComputedStyle(el).animationName)).toBe("none");
   await page.getByRole("link", { name: "QEVRANT: open your dashboard" }).click();
   await expect(page).toHaveURL(/\/dashboard/);
   await expect(page.getByTestId("account-summary")).toBeVisible();

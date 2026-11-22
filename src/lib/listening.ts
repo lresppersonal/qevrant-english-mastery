@@ -1,7 +1,8 @@
 import { z } from "zod";
 import raw from "@content/listening/resources.json";
 
-export const LISTENING_LEVELS = ["B2", "B2+", "C1", "C2"] as const;
+/** B1 is supplementary: a few learner-oriented resources for consolidation below the B2–C2 core. */
+export const LISTENING_LEVELS = ["B1", "B2", "B2+", "C1", "C2"] as const;
 export const LISTENING_TYPES = { interview: "Interviews", lecture: "Lectures & talks", conversation: "Conversations", news: "News", documentary: "Documentaries", podcast: "Podcasts", debate: "Debates & discussions", educational: "Educational videos" } as const;
 export const ACCENTS = { british: "British", american: "American", australian: "Australian", mixed: "Mixed / international" } as const;
 

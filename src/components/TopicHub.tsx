@@ -48,7 +48,7 @@ export function TopicHub(props: {
   }, [levelKey]);
   const setLevel = (l: Level | "all") => { setLevelState(l); try { sessionStorage.setItem(levelKey, l); } catch { /* storage unavailable */ } };
   const listening = level === "all" ? props.listening : props.listening.filter((r) => (r.levels as string[]).includes(level));
-  const f = <T extends { level: Level }>(xs: T[]) => (level === "all" ? xs : xs.filter((x) => x.level === level));
+  const f = <T extends { level: string }>(xs: T[]) => (level === "all" ? xs : xs.filter((x) => x.level === level));
   const senses = f(props.senses);
 
   return (

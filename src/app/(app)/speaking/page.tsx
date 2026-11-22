@@ -16,7 +16,7 @@ export default function SpeakingIndex() {
     <>
       <ContextBackLink />
       <PageHeader eyebrow="Learn" title="Speaking"
-        intro="Generate a random topic, prepare, speak against the clock and get AI practice feedback on fluency, vocabulary and grammar, with an estimated IELTS-style band." />
+        intro="Generate a random topic, prepare, speak against the clock and get AI practice feedback on fluency, vocabulary and grammar, with an estimated band on a 9-point scale. Pronunciation is not scored: the app works from a transcript, not audio analysis." />
       <Suspense fallback={<div className="skeleton h-64 rounded-2xl" />}><SpeakingStudio /></Suspense>
       <SpeakingSuggestions />
       <SpeakingDevelopment />
