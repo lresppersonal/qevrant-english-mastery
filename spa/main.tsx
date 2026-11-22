@@ -38,6 +38,7 @@ import SmartPractice from "@/app/(app)/practice/smart/page";
 import WritingPortfolio from "@/app/(app)/writing/portfolio/page";
 import PlanPage from "@/app/(app)/plan/page";
 import VisualHub from "@/app/(app)/writing/visual/page";
+import EssayWriting from "@/app/(app)/writing/essays/page";
 import VisualTaskPage from "@/app/(app)/writing/visual/task/page";
 import GrammarPracticeHub from "@/app/(app)/grammar/practice/page";
 import LessonPracticePage from "@/app/(app)/grammar/[slug]/practice/page";
@@ -85,6 +86,7 @@ function App() {
   if (a === "writing" && b === "portfolio") return <AppShell><WritingPortfolio /></AppShell>;
   if (a === "writing" && b === "visual" && c === "task") return <AppShell><VisualTaskPage key={route} /></AppShell>;
   if (a === "writing" && b === "visual") return <AppShell><VisualHub /></AppShell>;
+  if (a === "writing" && b === "essays") return <AppShell><EssayWriting /></AppShell>;
   if (a === "plan") return <AppShell><PlanPage /></AppShell>;
   if (a === "grammar" && b === "practice" && !c) return <AppShell><GrammarPracticeHub /></AppShell>;
   if (a === "grammar" && b && c === "practice") return <AppShell><Resolve key={route} page={LessonPracticePage as Page} slug={b} /></AppShell>;

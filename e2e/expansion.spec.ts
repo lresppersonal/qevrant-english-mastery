@@ -9,7 +9,7 @@ const RESPONSE = "The line graph compares the percentage of households with broa
 test("visual data description: four groups, a real figure, consistent task, AI feedback with data check", async ({ page }) => {
   await page.goto("/writing/visual");
   const kinds = page.getByRole("radiogroup", { name: "Type of visual" });
-  for (const g of ["Charts", "Graphs", "Tables", "Diagrams", "Processes", "Maps", "Combined"]) await expect(kinds.getByRole("radio", { name: g, exact: true })).toBeVisible();
+  for (const g of ["Charts", "Graphs", "Tables", "Diagrams", "Processes", "Maps", "Combined Visuals"]) await expect(kinds.getByRole("radio", { name: g, exact: true })).toBeVisible();
   await kinds.getByRole("radio", { name: "Maps", exact: true }).click();
   await expect(page.getByTestId("visual-hub")).toContainText("Site plan");
   await expect(page.getByTestId("visual-hub")).not.toContainText("Line graph");

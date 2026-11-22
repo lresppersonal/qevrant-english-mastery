@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useMemo } from "react";
 import clsx from "clsx";
-import { ArrowRight, Target, CheckCircle2, Clock, Compass, TrendingDown, Sparkles, BookOpen, Newspaper, Trophy, History } from "lucide-react";
+import { ChevronDown, ArrowRight, Target, CheckCircle2, Clock, Compass, TrendingDown, Sparkles, BookOpen, Newspaper, Trophy, History } from "lucide-react";
 import { useLearner, dailyGoalOf } from "@/components/StoreProvider";
 import { useLearnerData } from "@/components/useLearnerData";
 import { getLesson, getReading, getExercise } from "@/lib/content";
@@ -162,25 +162,10 @@ export default function Dashboard() {
       </section>
       </div>
 
-      <div className="mt-6 grid items-start gap-4 lg:grid-cols-2">
-        {/* 3. What are my weakest areas? */}
-        <section className="card enter p-5" style={{ ["--i" as string]: 4 }} aria-labelledby="h-weak" data-testid="weak-areas">
-          <h2 id="h-weak" className="flex items-center gap-2 text-lg font-bold"><TrendingDown size={18} aria-hidden="true" /> Weakest areas</h2>
-          {plan.weak.length === 0 ? <p className="mt-3 text-sm text-muted">Not enough evidence yet. After a few exercises, essays or speaking answers, your weak spots appear here automatically.</p> : (
-            <ul className="mt-3 space-y-2">
-              {plan.weak.slice(0, 3).map((w) => (
-                <li key={w.key} className="rounded-lg border border-line px-3 py-2">
-                  <Link href={w.href} className="font-semibold hover:text-primary">{w.label}</Link>
-                  <p className="text-sm text-muted">{w.detail}</p>
-                  {w.practiceHref && <Link href={w.practiceHref} className="mt-1 inline-flex items-center gap-1 text-sm font-semibold text-primary"><Target size={14} aria-hidden="true" /> Targeted practice</Link>}
-                </li>
-              ))}
-            </ul>
-          )}
-        </section>
+      <div className="mt-4"><WeeklySkillProgress grid={grid} hasPlan={!!planSettings} /></div>
 
-        {/* 4. What should I improve next? */}
-        <section className="card enter p-5" style={{ ["--i" as string]: 5 }} aria-labelledby="h-next">
+      <div className="mt-4 grid items-start gap-4 lg:grid-cols-3">
+        <section className="card enter p-5 lg:col-span-2" style={{ ["--i" as string]: 5 }} aria-labelledby="h-next">
           <h2 id="h-next" className="flex items-center gap-2 text-lg font-bold"><Sparkles size={18} aria-hidden="true" /> Next in your path</h2>
           {plan.next ? (
             <>
@@ -191,24 +176,36 @@ export default function Dashboard() {
           ) : <p className="mt-3 text-sm text-muted">You've started every grammar topic. Keep them fresh with mixed review.</p>}
           {plan.neglected[0] && <p className="mt-3 text-sm">Also: <Link href={plan.neglected[0].href} className="font-semibold text-primary">{plan.neglected[0].label}</Link> <span className="text-muted">{Number.isFinite(plan.neglected[0].days) ? `— not practised for ${Math.round(plan.neglected[0].days)} days` : "— not tried yet"}</span></p>}
         </section>
-      </div>
-
-      <div className="mt-6 grid items-start gap-4 lg:grid-cols-3">
-        <div className="lg:col-span-2"><WeeklySkillProgress grid={grid} hasPlan={!!planSettings} /></div>
-        <section className="card enter p-5" style={{ ["--i" as string]: 10 }} aria-labelledby="h-studied" data-testid="recently-studied">
-          <h2 id="h-studied" className="flex items-center gap-2 text-lg font-bold"><History size={18} aria-hidden="true" /> Recently studied</h2>
-          {recent.length === 0 ? <p className="mt-2 text-sm text-muted">Lessons, texts and exercises you open will appear here.</p> : (
-            <ul className="mt-2 divide-y divide-line">
-              {recent.map((r) => (
-                <li key={r.href}><Link href={r.href} className="flex items-center gap-3 py-2.5 transition-colors hover:text-primary">
-                  <r.icon size={16} className="shrink-0 text-muted" aria-hidden="true" />
-                  <span className="min-w-0 flex-1 truncate font-medium">{r.title}</span>
-                  <span className="shrink-0 text-xs text-muted">{ago(r.at)}</span>
-                </Link></li>
-              ))}
-            </ul>
-          )}
-        </section>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
+          <details open className="card enter group p-5" style={{ ["--i" as string]: 4 }} data-testid="weak-areas">
+            <summary className="flex cursor-pointer list-none items-center gap-2"><h2 id="h-weak" className="flex flex-1 items-center gap-2 text-lg font-bold"><TrendingDown size={18} aria-hidden="true" /> Weakest areas</h2><ChevronDown size={16} className="shrink-0 text-muted transition-transform group-open:rotate-180" aria-hidden="true" /></summary>
+            {plan.weak.length === 0 ? <p className="mt-3 text-sm text-muted">Not enough evidence yet. After a few exercises, essays or speaking answers, your weak spots appear here automatically.</p> : (
+              <ul className="mt-3 space-y-2">
+                {plan.weak.slice(0, 3).map((w) => (
+                  <li key={w.key} className="rounded-lg border border-line px-3 py-2">
+                    <Link href={w.href} className="font-semibold hover:text-primary">{w.label}</Link>
+                    <p className="text-sm text-muted">{w.detail}</p>
+                    {w.practiceHref && <Link href={w.practiceHref} className="mt-1 inline-flex items-center gap-1 text-sm font-semibold text-primary"><Target size={14} aria-hidden="true" /> Targeted practice</Link>}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </details>
+          <details open className="card enter group p-5" style={{ ["--i" as string]: 10 }} data-testid="recently-studied">
+            <summary className="flex cursor-pointer list-none items-center gap-2"><h2 id="h-studied" className="flex flex-1 items-center gap-2 text-lg font-bold"><History size={18} aria-hidden="true" /> Recently studied</h2><ChevronDown size={16} className="shrink-0 text-muted transition-transform group-open:rotate-180" aria-hidden="true" /></summary>
+            {recent.length === 0 ? <p className="mt-2 text-sm text-muted">Lessons, texts and exercises you open will appear here.</p> : (
+              <ul className="mt-2 divide-y divide-line">
+                {recent.map((r) => (
+                  <li key={r.href}><Link href={r.href} className="flex items-center gap-3 py-2.5 transition-colors hover:text-primary">
+                    <r.icon size={16} className="shrink-0 text-muted" aria-hidden="true" />
+                    <span className="min-w-0 flex-1 truncate font-medium">{r.title}</span>
+                    <span className="shrink-0 text-xs text-muted">{ago(r.at)}</span>
+                  </Link></li>
+                ))}
+              </ul>
+            )}
+          </details>
+        </div>
       </div>
     </>
   );

@@ -5,12 +5,17 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import clsx from "clsx";
 import { useLearnerData } from "@/components/useLearnerData";
 import { useLearner } from "@/components/StoreProvider";
-import { computeStreak, daysThisWeek, mastery } from "@/lib/progress";
-import { activeMinutesByDay, completedBySkill } from "@/lib/study-time";
-import { CompletedDoughnut, StudyTimeBars, StudyHeatmap } from "@/components/ProgressCharts";
+import { mastery } from "@/lib/progress";
+import { activeMinutesByDay, sectionCompletion } from "@/lib/study-time";
+import { allSenses, writingPrompts, speakingPrompts } from "@/lib/content";
+import { listeningResources } from "@/lib/listening";
+import { SPEAKING_BANK } from "@/lib/speaking-bank";
+import { visualFromSlug } from "@/lib/visual";
+import { GROUP_TYPES } from "@/lib/visual/types";
+import { SectionDonut, StudyTimeBars, StudyHeatmap } from "@/components/ProgressCharts";
 import { grammarLessons, getExercise, readingTexts, getTheme } from "@/lib/content";
 import { CRITERIA, SECTION_ORDER, mondayOf, sectionProgress, skillIndicators, type Indicator, weeklyActivity, weeklyReport, type AnalyticsInput, type ContentInfo, type WeeklyReport } from "@/lib/analytics";
-import { LevelBadge, PageHeader, ProgressBar, StatCard } from "@/components/ui";
+import { LevelBadge, PageHeader, ProgressBar } from "@/components/ui";
 
 const smartTitle = (slug: string) => {
   if (slug.startsWith("vocab-context-")) return `Vocabulary in context: ${getTheme(slug.slice(14))?.title ?? slug.slice(14)}`;
@@ -158,36 +163,40 @@ export default function ProgressPage() {
   const trend = [...new Map([...history.map((h) => [h.weekStart, h.overall] as const), [previous.weekStart, previous.overall] as const, [current.weekStart, current.overall] as const]).entries()].sort((a, b) => a[0].localeCompare(b[0])).slice(-10);
 
   const activeMin = activeMinutesByDay(data);
-  const answered = data.responses.length;
-  const correct = data.responses.filter((r) => r.correct).length;
+  const row = (k: string) => sp.rows.find((r) => r.key === k)?.value ?? 0;
+  const learned = saved.filter((x) => x.itemType === "sense" && (x.status === "familiar" || x.status === "mastered")).length;
+  const essaySlugs = new Set(data.writing.filter((w) => !visualFromSlug(w.promptSlug)).map((w) => w.promptSlug));
+  const visualTypes = new Set(data.writing.map((w) => visualFromSlug(w.promptSlug)?.type).filter(Boolean));
+  const completion = sectionCompletion({
+    grammarTheory: row("grammar-theory"), grammarPractice: row("grammar-practice"),
+    learnedSenses: learned, totalSenses: allSenses().length,
+    textsDone: Math.round(row("reading") * readingTexts.length), totalTexts: readingTexts.length,
+    listenedResources: new Set(data.listening.map((l) => l.resourceSlug)).size, totalResources: listeningResources.length,
+    speakingDone: new Set(data.speaking.map((x) => x.promptSlug)).size, totalSpeaking: speakingPrompts.length + SPEAKING_BANK.length,
+    writingDone: essaySlugs.size + visualTypes.size, totalWriting: writingPrompts.length + Object.values(GROUP_TYPES).flat().length,
+  });
 
   return (
     <>
       <PageHeader eyebrow="Me" title="Progress" intro="Every number here is calculated from your own answers and activity. Rules are shown next to each score, and nothing is rounded up." />
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <StatCard label="Overall progress" value={`${Math.round(sp.overall * 100)}%`} hint="Average of the seven section bars below" />
-        <StatCard label="Study streak" value={`${computeStreak(data.events)} d`} hint={`This week: ${daysThisWeek(data.events)} / ${profile.weeklyGoalDays} days`} />
-        <StatCard label="Exercises completed" value={sp.exercisesCompleted} hint={answered ? `${Math.round((correct / answered) * 100)}% of ${answered} answers correct` : "No answers yet"} />
-        <StatCard label="Skills practice" value={`${data.writing.length + data.speaking.length + data.listening.length}`} hint={`${data.writing.length} essays · ${data.speaking.length} speaking · ${data.listening.length} listening`} />
-      </div>
 
-      <div className="mt-6 grid items-start gap-6 lg:grid-cols-2">
+      <div className="grid items-start gap-6 lg:grid-cols-2">
         <section className="card p-5 sm:p-6" aria-labelledby="h-done">
-          <h2 id="h-done" className="text-lg font-bold">Completed material</h2>
-          <p className="mb-4 mt-0.5 text-sm text-muted">Finished tasks in each area. Grammar includes Grammar Practice.</p>
-          <CompletedDoughnut counts={completedBySkill(data.events)} />
+          <h2 id="h-done" className="text-lg font-bold">Overall progress per section</h2>
+          <p className="mb-4 mt-0.5 text-sm text-muted">The share of each section&apos;s material you have completed, from your own records.</p>
+          <SectionDonut values={completion} />
         </section>
-        <section className="card p-5 sm:p-6" aria-labelledby="h-time">
-          <h2 id="h-time" className="text-lg font-bold">Study time</h2>
-          <p className="mb-4 mt-0.5 text-sm text-muted">Active minutes per day, last 14 days.</p>
-          <StudyTimeBars minutes={activeMin} />
+        <section className="card p-5 sm:p-6" aria-labelledby="h-activity">
+          <h2 id="h-activity" className="text-lg font-bold">Study days</h2>
+          <p className="mb-4 mt-0.5 text-sm text-muted">Shaded by active minutes. Hover or focus a day for details.</p>
+          <StudyHeatmap minutes={activeMin} months={2} />
         </section>
       </div>
 
-      <section className="card mt-6 p-5 sm:p-6" aria-labelledby="h-activity">
-        <h2 id="h-activity" className="text-lg font-bold">Study days</h2>
-        <p className="mb-4 mt-0.5 text-sm text-muted">Shaded by active minutes. Hover or focus a day for details.</p>
-        <StudyHeatmap minutes={activeMin} />
+      <section className="card mt-6 p-5 sm:p-6" aria-labelledby="h-time">
+        <h2 id="h-time" className="text-lg font-bold">Study time</h2>
+        <p className="mb-4 mt-0.5 text-sm text-muted">Active minutes per day, last 14 days.</p>
+        <StudyTimeBars minutes={activeMin} />
       </section>
 
       <details className="card mt-6 p-5 sm:p-6">

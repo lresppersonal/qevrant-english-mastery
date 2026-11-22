@@ -4,8 +4,8 @@
  *
  * Motion (CSS only, see globals.css "Landing hero Q"):
  * 1. on load the ring draws itself in one sweep, then the tail slides in along its own 45° line;
- * 2. afterwards every 16 s the ring makes one slow, eased turn while the tail draws back a little and
- *    locks again as the ring's opening returns to it, and a soft light runs along the tail.
+ * 2. afterwards the whole Q turns slowly back and forth around its centre (which sits off-screen, top
+ *    left), so the visible arc sweeps smoothly; the tail draws back and locks, and a soft light runs along it.
  * With reduced motion the symbol is shown still.
  */
 export function HeroQ() {
@@ -19,11 +19,13 @@ export function HeroQ() {
         </linearGradient>
       </defs>
       <g className="hq-spin">
+      <g>
         <path className="hq-ring" pathLength={100} d="M39.01 45.38A16 16 0 1 1 46.38 38.01" fill="none" stroke="var(--logo-ring)" strokeWidth="6.4" strokeLinecap="round" />
       </g>
       <g className="hq-tail-in">
         <path className="hq-tail" d="M34.04 33.04L49.88 48.88" stroke="var(--logo-tail)" strokeWidth="6.4" strokeLinecap="round" />
         <path className="hq-glint" pathLength={100} d="M34.04 33.04L49.88 48.88" stroke="url(#hq-glint)" strokeWidth="3.2" strokeLinecap="round" />
+      </g>
       </g>
     </svg>
   );

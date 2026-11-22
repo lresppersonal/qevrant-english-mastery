@@ -42,3 +42,30 @@ export function completedBySkill(events: Pick<ActivityEvent, "type" | "contentTy
 }
 
 export const dayKeyLocal = key;
+
+/**
+ * Share of each section's learning material the learner has completed (0–1), from real records only:
+ * Grammar = average of theory sections read and lessons practised to "secure" (Grammar Practice included);
+ * Vocabulary = senses learned (familiar or mastered) out of all senses; Reading = texts completed;
+ * Listening = resources logged at least once; Speaking = distinct prompts answered;
+ * Academic Writing = distinct essay questions plus distinct visual types submitted.
+ */
+export interface CompletionInput {
+  grammarTheory: number; grammarPractice: number;
+  learnedSenses: number; totalSenses: number;
+  textsDone: number; totalTexts: number;
+  listenedResources: number; totalResources: number;
+  speakingDone: number; totalSpeaking: number;
+  writingDone: number; totalWriting: number;
+}
+export function sectionCompletion(c: CompletionInput): Record<Skill, number> {
+  const r = (a: number, b: number) => (b > 0 ? Math.min(1, a / b) : 0);
+  return {
+    grammar: (c.grammarTheory + c.grammarPractice) / 2,
+    writing: r(c.writingDone, c.totalWriting),
+    vocabulary: r(c.learnedSenses, c.totalSenses),
+    reading: r(c.textsDone, c.totalTexts),
+    listening: r(c.listenedResources, c.totalResources),
+    speaking: r(c.speakingDone, c.totalSpeaking),
+  };
+}

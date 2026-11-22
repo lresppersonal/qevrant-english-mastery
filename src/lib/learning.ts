@@ -132,7 +132,7 @@ export function weakAreas(s: LearnerSnapshot, now = Date.now()): Weakness[] {
   }
   const CAT: Record<string, [string, string]> = {
     collocation: ["Collocations", "/vocabulary"], vocabulary: ["Word choice", "/vocabulary"], cohesion: ["Cohesion and linking", "/grammar/linking-contrast-concession"],
-    register: ["Formal register", "/grammar/academic-register"], task: ["Answering the question fully", "/writing"], spelling_punctuation: ["Spelling and punctuation", "/writing"],
+    register: ["Formal register", "/grammar/academic-register"], task: ["Answering the question fully", "/writing/essays"], spelling_punctuation: ["Spelling and punctuation", "/writing"],
   };
   for (const [c, n] of cats) if (n >= 3 && CAT[c]) out.push({ key: `cat:${c}`, label: CAT[c][0], detail: `${n} issues in your recent essays and speaking`, href: CAT[c][1], severity: Math.min(1, n / 8) });
   return out.sort((a, b) => b.severity - a.severity).slice(0, 5);

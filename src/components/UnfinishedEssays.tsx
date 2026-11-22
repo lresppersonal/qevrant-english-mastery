@@ -20,7 +20,7 @@ export function UnfinishedEssays({ titles }: { titles: Record<string, string> })
   if (!drafts.length && !failed.length) return null;
   return (
     <section className="card mb-8 p-5" aria-labelledby="h-unfinished" data-testid="unfinished-essays">
-      <h2 id="h-unfinished" className="flex items-center gap-2 text-lg font-bold"><PenLine size={18} aria-hidden="true" /> Continue where you left off</h2>
+      <h2 id="h-unfinished" className="flex items-center gap-2 text-lg font-bold"><PenLine size={18} aria-hidden="true" /> Your unfinished essays</h2>
       <ul className="mt-3 divide-y divide-line">
         {drafts.map((d) => {
           const title = titles[d.promptSlug];

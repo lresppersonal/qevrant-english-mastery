@@ -15,7 +15,7 @@ export const VISUAL_KINDS: { key: string; label: string; types: VisualType[] }[]
   { key: "diagrams", label: "Diagrams", types: ["object", "mechanism"] },
   { key: "processes", label: "Processes", types: ["process", "cycle"] },
   { key: "maps", label: "Maps", types: ["map", "plan", "floorplan"] },
-  { key: "combined", label: "Combined", types: ["line-bar", "pie-table", "bar-table", "line-pie"] },
+  { key: "combined", label: "Combined Visuals", types: ["line-bar", "pie-table", "bar-table", "line-pie"] },
 ];
 
 export function VisualCatalogue({ items }: { items: CatalogueItem[] }) {

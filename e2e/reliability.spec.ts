@@ -190,8 +190,8 @@ test.describe("academic writing reliability", () => {
     await expect(page.getByTestId("submissions")).toContainText("Assessed");
     await expect(page.getByTestId("submissions")).not.toContainText("not assessed yet");
 
-    // the writing page lists the unfinished draft
-    await page.goto("/writing");
+    // the Essay Writing page lists the unfinished draft
+    await page.goto("/writing/essays");
     await expect(page.getByTestId("unfinished-essays")).toContainText("Learning from failure");
   });
 

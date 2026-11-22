@@ -76,7 +76,7 @@ export function TopicHub(props: {
         <Section icon={Newspaper} i={1} title="Reading" count={f(props.texts).length} href={to("/reading")}>
           <ul>{f(props.texts).map((r) => <Row key={r.slug} href={to(`/reading/${r.slug}`)} level={r.level} title={r.title} sub={r.standfirst} />)}</ul>
         </Section>
-        <Section icon={PenLine} i={2} title="Academic Writing" count={f(props.writing).length} href={to(`/writing?theme=${props.theme.slug}`)}>
+        <Section icon={PenLine} i={2} title="Academic Writing" count={f(props.writing).length} href={to(`/writing/essays?theme=${props.theme.slug}`)}>
           <ul>{f(props.writing).map((p) => <Row key={p.slug} href={to(`/writing/${p.slug}`)} level={p.level} title={p.title} sub={`${ESSAY_LABEL[p.genre]} · ${p.prompt}`} />)}</ul>
         </Section>
         {(props.speaking.length > 0 || level !== "all") && props.speaking.length > 0 && (

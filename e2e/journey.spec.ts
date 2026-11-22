@@ -118,8 +118,10 @@ test("new learner: onboard, study, answer, review the rule, save from text, revi
   await expect(page.getByTestId("skill-indicators")).toContainText("Vocabulary retention");
   await expect(page.getByTestId("weekly-report")).toContainText("Grammar accuracy");
   await expect(page.getByTestId("weekly-report")).toContainText("Insufficiently assessed");
-  await expect(page.getByTestId("completed-doughnut")).toContainText("Grammar"); // real completed work, not an empty state
-  await expect(page.getByTestId("study-heatmap").locator("table")).toHaveCount(3);
+  await expect(page.getByTestId("section-donut").locator("[data-testid^=segment-]")).toHaveCount(6);
+  await expect(page.getByTestId("section-donut")).toContainText("Grammar + Grammar Practice");
+  await expect(page.getByTestId("study-heatmap").locator("table")).toHaveCount(2);
+  await expect(page.getByText("Exercises completed")).toHaveCount(0);
   await page.getByText("Exercise history").click();
   await expect(page.getByText("Relative clauses in context")).toBeVisible();
 });
@@ -272,7 +274,7 @@ test("every navigation item reaches a real page, with no serious accessibility v
   await page.emulateMedia({ reducedMotion: "reduce" });
   const paths = ["/", "/dashboard", "/practice/smart?mode=mixed", "/writing/portfolio", "/plan", "/writing/visual", "/writing/visual/task?id=line-bar-0-321", "/writing/visual/task?id=map-campus", "/writing/visual/task?id=process-glass", "/grammar/subject-verb-agreement", "/reading/the-moral-machine", "/topics", "/topics/environment", "/grammar", "/grammar/conditionals-and-unreal-past", "/grammar/practice", "/grammar/modals-and-modality/practice",
     "/vocabulary", "/vocabulary/topics/environment", "/vocabulary/scholarship", "/reading", "/reading/rewilding", "/listening", "/speaking", "/speaking/grades-and-learning",
-    "/writing", "/writing/gig-economy", "/review", "/library", "/progress", "/settings", "/learn", "/sign-in"];
+    "/writing", "/writing/essays", "/writing/gig-economy", "/review", "/library", "/progress", "/settings", "/learn", "/sign-in"];
   const problems: string[] = [];
   for (const theme of ["light", "dark"]) {
     await page.goto("/");
@@ -340,6 +342,11 @@ test("reading library filters and multi-task texts; essay bank by type", async (
   await expect(page.getByText(/farmers' livelihoods/)).toBeVisible();
 
   await page.goto("/writing");
+  await expect(page.getByTestId("writing-categories").getByRole("link")).toHaveCount(2); // exactly two entry points
+  await expect(page.getByTestId("essay-list")).toHaveCount(0);
+  await expect(page.getByTestId("unfinished-essays")).toHaveCount(0);
+  await page.getByTestId("essay-entry").click();
+  await expect(page).toHaveURL(/\/writing\/essays$/);
   await page.getByRole("tab", { name: /Cause, problem and solution/ }).click();
   await expect(page.getByRole("heading", { name: /how to approach them/ })).toBeVisible();
   await expect(page.getByTestId("essay-list")).toContainText("Plastic in the oceans");

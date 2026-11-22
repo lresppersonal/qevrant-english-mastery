@@ -35,7 +35,7 @@ export interface WorkspaceTask {
 export function EssayWorkspace({ prompt }: { prompt: WritingPrompt }) {
   const task: WorkspaceTask = {
     slug: prompt.slug, title: prompt.title, minWords: prompt.minWords, href: `/writing/${prompt.slug}`, positionLabel: `Essay: ${prompt.title}`,
-    backHref: "/writing", backLabel: "Academic Writing", textLabel: "Your essay", variant: "essay",
+    backHref: "/writing/essays", backLabel: "Essay Writing", textLabel: "Your essay", variant: "essay",
     header: (
       <>
         <div className="mb-2 flex flex-wrap items-center gap-2"><LevelBadge level={prompt.level} /><span className="chip">{ESSAY_LABEL[prompt.genre]}</span>{prompt.topics.map((t) => <span key={t} className="chip">{getTheme(t)?.title ?? t}</span>)}<span className="chip">{prompt.minWords}+ words</span><span className="chip">about {prompt.suggestedMinutes} min</span></div>

@@ -87,7 +87,7 @@ export default function WritingPortfolio() {
 
       {writing.length === 0 && activeDrafts.length === 0 ? (
         <EmptyState title="Your portfolio is empty" body="Write and submit an essay to start building your portfolio. Drafts are saved automatically while you write."
-          action={<Link href="/writing" className="btn btn-primary">Choose an essay question</Link>} />
+          action={<Link href="/writing/essays" className="btn btn-primary">Choose an essay question</Link>} />
       ) : (
         <div className="space-y-8" data-testid="writing-portfolio">
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">

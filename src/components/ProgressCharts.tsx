@@ -43,6 +43,52 @@ export function CompletedDoughnut({ counts }: { counts: Record<Skill, number> })
   );
 }
 
+const ORDER: Skill[] = ["grammar", "writing", "vocabulary", "reading", "listening", "speaking"];
+const LABEL6: Record<Skill, string> = { ...SKILL_LABEL, grammar: "Grammar + Grammar Practice" };
+
+/**
+ * Overall progress per section: a circle of six equal segments. Each segment fills along its arc in
+ * proportion to the share of that section's material completed. Percentages are always printed too.
+ */
+export function SectionDonut({ values }: { values: Record<Skill, number> }) {
+  const [hover, setHover] = useState<Skill | null>(null);
+  const cx = 60, cy = 60, R = 46, W = 13, GAP = 3; // degrees of gap between segments
+  const pt = (a: number, r: number) => [cx + r * Math.cos(((a - 90) * Math.PI) / 180), cy + r * Math.sin(((a - 90) * Math.PI) / 180)];
+  const arc = (a0: number, a1: number) => { const [x0, y0] = pt(a0, R), [x1, y1] = pt(a1, R); return `M${x0.toFixed(2)} ${y0.toFixed(2)}A${R} ${R} 0 ${a1 - a0 > 180 ? 1 : 0} 1 ${x1.toFixed(2)} ${y1.toFixed(2)}`; };
+  const overall = ORDER.reduce((n, k) => n + values[k], 0) / ORDER.length;
+  const pc = (v: number) => (v > 0 && v < 0.01 ? "<1%" : `${Math.round(v * 100)}%`);
+  return (
+    <div className="flex flex-wrap items-center gap-6" data-testid="section-donut">
+      <svg viewBox="0 0 120 120" className="h-52 w-52 shrink-0" role="img" aria-label={`Overall progress per section: ${ORDER.map((k) => `${LABEL6[k]} ${pc(values[k])}`).join(", ")}`}>
+        {ORDER.map((k, i) => {
+          const a0 = i * 60 + GAP / 2, a1 = (i + 1) * 60 - GAP / 2;
+          const v = Math.max(0, Math.min(1, values[k]));
+          const on = hover === k;
+          return (
+            <g key={k} onMouseEnter={() => setHover(k)} onMouseLeave={() => setHover(null)} className="cursor-pointer" data-testid={`segment-${k}`}>
+              <title>{`${LABEL6[k]}: ${pc(v)} completed`}</title>
+              <path d={arc(a0, a1)} fill="none" stroke="var(--surface-2)" strokeWidth={W} />
+              <path d={arc(a0, a1)} fill="none" stroke={COLOR[k]} strokeOpacity={0.22} strokeWidth={on ? W + 2 : W} />
+              {v > 0 && <path d={arc(a0, a0 + Math.max(1.2, (a1 - a0) * v))} fill="none" stroke={COLOR[k]} strokeWidth={on ? W + 2 : W} />}
+            </g>
+          );
+        })}
+        <text x="60" y="58" textAnchor="middle" className="fill-[var(--text)] font-display text-[17px] font-extrabold">{hover ? pc(values[hover]) : pc(overall)}</text>
+        <text x="60" y="71" textAnchor="middle" className="fill-[var(--muted)] text-[6.5px]">{hover ? SKILL_LABEL[hover] : "overall"}</text>
+      </svg>
+      <ul className="grid min-w-[15rem] flex-1 gap-1.5 text-sm" aria-label="Legend">
+        {ORDER.map((k) => (
+          <li key={k} className={clsx("flex items-center gap-2 rounded-md px-1.5 py-0.5", hover === k && "bg-surface-2")} onMouseEnter={() => setHover(k)} onMouseLeave={() => setHover(null)}>
+            <span className="h-3 w-3 shrink-0 rounded-sm" style={{ background: COLOR[k] }} aria-hidden="true" />
+            <span className="flex-1">{LABEL6[k]}</span>
+            <span className="w-12 text-right font-semibold tabular-nums">{pc(values[k])}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 /** Active minutes per day for the last 14 days; hover or focus a bar for the exact figure. */
 export function StudyTimeBars({ minutes, days = 14 }: { minutes: Map<string, number>; days?: number }) {
   const today = new Date();

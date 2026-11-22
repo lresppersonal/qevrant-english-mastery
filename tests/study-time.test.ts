@@ -29,3 +29,12 @@ describe("study time", () => {
     expect(c.reading).toBe(1); expect(c.grammar).toBe(1); expect(c.vocabulary).toBe(0);
   });
 });
+
+import { sectionCompletion } from "@/lib/study-time";
+describe("section completion", () => {
+  it("combines grammar theory and practice and divides by real totals", () => {
+    const c = sectionCompletion({ grammarTheory: 0.5, grammarPractice: 0.1, learnedSenses: 10, totalSenses: 1000, textsDone: 7, totalTexts: 28, listenedResources: 0, totalResources: 18, speakingDone: 3, totalSpeaking: 0, writingDone: 2, totalWriting: 56 });
+    expect(c.grammar).toBeCloseTo(0.3); expect(c.vocabulary).toBeCloseTo(0.01); expect(c.reading).toBe(0.25);
+    expect(c.listening).toBe(0); expect(c.speaking).toBe(0); expect(c.writing).toBeCloseTo(2 / 56);
+  });
+});
