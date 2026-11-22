@@ -56,14 +56,15 @@ export function AuthForm({ mode }: { mode: "sign-in" | "sign-up" }) {
     const sb = supabaseBrowser();
     try {
       if (mode === "sign-up") {
-        const { data, error } = await sb.auth.signUp({
-          email, password,
-          options: { emailRedirectTo: `${location.origin}/auth/callback?next=/onboarding` },
-        });
+        // Server-side registration: the account is created already confirmed, so no email is sent.
+        const res = await fetch("/api/auth/sign-up", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ email, password }) });
+        const out = await res.json().catch(() => ({} as { error?: string }));
+        if (!res.ok) { setError(out.error ?? "Your account couldn't be created. Please try again."); return; }
+        const { error } = await sb.auth.signInWithPassword({ email, password });
         if (error) throw error;
-        // With email confirmation on, Supabase answers an existing address with a user that has no identities.
-        if (data.user && data.user.identities?.length === 0) { setError("An account with this email already exists. Sign in instead, or reset your password."); return; }
-        if (!data.session) { setInfo("Check your inbox and click the confirmation link. After that you can sign in with your email and password."); return; }
+        router.replace("/onboarding");
+        router.refresh();
+        return;
       } else {
         const { error } = await sb.auth.signInWithPassword({ email, password });
         if (error) throw error;
