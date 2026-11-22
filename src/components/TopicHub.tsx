@@ -1,9 +1,9 @@
 "use client";
-import { BackLink } from "./NavMemory";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 import { BookOpenText, Languages, Newspaper, PenLine, Mic, ListChecks, ArrowRight, Headphones } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import type { Exercise, GrammarLesson, Level, ReadingText, SpeakingPrompt, Theme, WritingPrompt } from "@/lib/content/schema";
 import { LEVELS } from "@/lib/content/schema";
 import { ESSAY_LABEL } from "@/lib/essay";
@@ -53,7 +53,7 @@ export function TopicHub(props: {
 
   return (
     <>
-      <BackLink href={`/vocabulary/topics/${props.theme.slug}`} label={`${props.theme.title} vocabulary`} />
+      <Link href={`/vocabulary/topics/${props.theme.slug}`} className="mb-2 inline-flex items-center gap-1 py-2.5 text-sm font-medium text-muted hover:text-ink" data-testid="hub-back"><ArrowLeft size={15} aria-hidden="true" /> {props.theme.title} vocabulary</Link>
       <PageHeader eyebrow={`Topic · ${props.theme.group}`} title={props.theme.title} intro={props.theme.summary} />
       <div className="scroll-row mb-6" role="group" aria-label="Filter by level">
         {(["all", ...LEVELS] as const).map((l) => (

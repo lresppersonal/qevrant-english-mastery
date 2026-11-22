@@ -162,7 +162,7 @@ export default function Dashboard() {
       </section>
       </div>
 
-      <div className="mt-6 grid gap-4 lg:grid-cols-2">
+      <div className="mt-6 grid items-start gap-4 lg:grid-cols-2">
         {/* 3. What are my weakest areas? */}
         <section className="card enter p-5" style={{ ["--i" as string]: 4 }} aria-labelledby="h-weak" data-testid="weak-areas">
           <h2 id="h-weak" className="flex items-center gap-2 text-lg font-bold"><TrendingDown size={18} aria-hidden="true" /> Weakest areas</h2>
@@ -193,7 +193,7 @@ export default function Dashboard() {
         </section>
       </div>
 
-      <div className="mt-6 grid gap-4 lg:grid-cols-3">
+      <div className="mt-6 grid items-start gap-4 lg:grid-cols-3">
         <div className="lg:col-span-2"><WeeklySkillProgress grid={grid} hasPlan={!!planSettings} /></div>
         <section className="card enter p-5" style={{ ["--i" as string]: 10 }} aria-labelledby="h-studied" data-testid="recently-studied">
           <h2 id="h-studied" className="flex items-center gap-2 text-lg font-bold"><History size={18} aria-hidden="true" /> Recently studied</h2>

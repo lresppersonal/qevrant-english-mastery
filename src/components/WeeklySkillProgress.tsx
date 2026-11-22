@@ -16,7 +16,8 @@ export function WeeklySkillProgress({ grid, hasPlan }: { grid: WeekGrid; hasPlan
         <p className="text-xs text-muted">{total} task{total === 1 ? "" : "s"} completed this week</p>
       </div>
       <div className="mt-3 overflow-x-auto">
-        <table className="w-full min-w-[34rem] border-separate border-spacing-1 text-xs">
+        <table className="w-full min-w-[34rem] table-fixed border-separate border-spacing-1 text-xs">
+          <colgroup><col className="w-32" />{grid.dates.map((d) => <col key={d} />)}</colgroup>
           <thead>
             <tr><th scope="col" className="sr-only">Area</th>
               {grid.dates.map((d, i) => <th key={d} scope="col" className={clsx("font-semibold", d === grid.today ? "text-ink" : "text-muted")}>{DAY[i]}{d === grid.today && <span className="sr-only"> (today)</span>}</th>)}

@@ -6,8 +6,7 @@ import type { DayView, Block } from "@/lib/plan/engine";
 export function skillOfEvent(e: Pick<ActivityEvent, "type" | "contentType">): Skill | null {
   switch (e.type) {
     case "exercise_completed": return e.contentType === "vocab" || e.contentType === "vocabulary" ? "vocabulary" : "grammar";
-    case "lesson_section_viewed": return e.contentType === "grammar_lesson" ? "grammar" : null;
-    case "review_completed": return "vocabulary";
+        case "review_completed": return "vocabulary";
     case "reading_completed": return "reading";
     case "listening_logged": return "listening";
     case "speaking_submitted": return "speaking";

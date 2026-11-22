@@ -37,7 +37,7 @@ export function LearningProfileForm({ submitLabel, onDone, onSkip }: { submitLab
   return (
     <form onSubmit={submit} className="space-y-7" data-testid="learning-profile">
       <fieldset>
-        <legend className="text-sm font-semibold">How confident do you feel in each area? <span className="font-normal text-muted">1 = I struggle considerably · 5 = very confident</span></legend>
+        <legend className="text-sm font-semibold">How confident do you feel in each area? <span className="font-normal text-muted">1 = Very weak · 2 = Weak · 3 = Average · 4 = Good · 5 = Excellent</span></legend>
         <ul className="mt-3 space-y-2.5">
           {SKILLS.map((s, i) => {
             const Icon = ICON[s];

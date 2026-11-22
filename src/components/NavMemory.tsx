@@ -41,10 +41,19 @@ function restoreScroll(key: string) {
   const y = readScrolls()[key];
   if (!y) return;
   const start = performance.now();
+  // Keep the position for a short while: late layout or the router's own scroll handling can move the page
+  // after the first restore. Any user input ends this immediately.
+  let user = false;
+  const stop = () => { user = true; };
+  const evs = ["wheel", "touchstart", "keydown", "mousedown"] as const;
+  evs.forEach((e) => window.addEventListener(e, stop, { once: true, passive: true }));
   const step = () => {
+    if (user) return;
     const room = document.documentElement.scrollHeight - window.innerHeight;
-    window.scrollTo(0, Math.min(y, room));
-    if (room >= y || performance.now() - start > 1500) return;
+    const target = Math.min(y, room);
+    if (Math.abs(window.scrollY - target) > 2) window.scrollTo(0, target);
+    const t = performance.now() - start;
+    if ((room >= y && t > 700) || t > 1500) { evs.forEach((e) => window.removeEventListener(e, stop)); return; }
     requestAnimationFrame(step);
   };
   requestAnimationFrame(step);
@@ -58,9 +67,9 @@ if (typeof window !== "undefined") {
   // Save the position at the moment the learner clicks, before any navigation starts
   document.addEventListener("click", () => { lastClick = performance.now(); saveScroll(liveLocation(), window.scrollY); }, true);
   window.addEventListener("scroll", () => {
-    // ignore the jump to the top that happens while a new page replaces the old one
+    // ignore jumps while a new page replaces the old one (to the top, or clamped because the new page is shorter)
     const t = performance.now();
-    if (window.scrollY === 0 && (t - lastChange < 600 || t - lastClick < 600)) return;
+    if (t - lastChange < 600 || t - lastClick < 600) return;
     saveScroll(liveLocation(), window.scrollY);
   }, { passive: true });
 }

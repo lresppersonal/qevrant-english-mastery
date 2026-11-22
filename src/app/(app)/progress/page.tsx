@@ -171,7 +171,7 @@ export default function ProgressPage() {
         <StatCard label="Skills practice" value={`${data.writing.length + data.speaking.length + data.listening.length}`} hint={`${data.writing.length} essays · ${data.speaking.length} speaking · ${data.listening.length} listening`} />
       </div>
 
-      <div className="mt-6 grid gap-6 lg:grid-cols-2">
+      <div className="mt-6 grid items-start gap-6 lg:grid-cols-2">
         <section className="card p-5 sm:p-6" aria-labelledby="h-done">
           <h2 id="h-done" className="text-lg font-bold">Completed material</h2>
           <p className="mb-4 mt-0.5 text-sm text-muted">Finished tasks in each area. Grammar includes Grammar Practice.</p>
