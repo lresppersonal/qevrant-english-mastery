@@ -7,8 +7,9 @@ import { useLearner } from "@/components/StoreProvider";
 import { useLearnerData } from "@/components/useLearnerData";
 import { PageHeader, LevelBadge, ProgressBar } from "@/components/ui";
 import { PROGRAMME, WEEK_TITLES } from "@/lib/plan/programme";
-import { planProgress, planInsights, readPlan, type Block, type BlockKey, type DayView, type PlanSettings } from "@/lib/plan/engine";
-import { getTheme } from "@/lib/content";
+import { planProgress, planInsights, readPlan, START_WEEK, type Block, type BlockKey, type DayView, type PlanSettings } from "@/lib/plan/engine";
+import { getTheme, getLesson, getReading, getWritingPrompt } from "@/lib/content";
+import type { PlanDay } from "@/lib/plan/programme";
 import { computePriorities, readAssessment, readOverrides, SKILL_LABEL, PRIORITY_LABEL, type Priority, type Skill, type SkillPriority } from "@/lib/plan/personal";
 import { LearningProfileForm } from "@/components/LearningProfileForm";
 
@@ -66,7 +67,10 @@ export default function PlanPage() {
   const { profile, store, refresh, saved, toast } = useLearner();
   const { data, error } = useLearnerData();
   const settings = readPlan(profile);
-  const [startWeek, setStartWeek] = useState<1 | 3>(1);
+  const [startLevel, setStartLevel] = useState<keyof typeof START_WEEK>("B2");
+  const [weeks, setWeeks] = useState(6);
+  const startWeek = START_WEEK[startLevel];
+  const maxWeeks = 7 - startWeek;
   const [intensity, setIntensity] = useState<"full" | "focused">("focused");
   const pd = useMemo(() => (data ? { ...data, saved } : null), [data, saved]);
   const assessment = readAssessment(profile);
@@ -82,7 +86,7 @@ export default function PlanPage() {
     await store.updateProfile({ preferences: { ...(profile?.preferences ?? {}), intensive: next } });
     await refresh();
   }
-  async function start() { await save({ startedAt: new Date().toISOString(), intensity, startWeek, skipped: {}, personal: personal && !!assessment }); toast(personal && assessment ? "Your personal study plan has started" : "Intensive Study Plan started"); }
+  async function start() { await save({ startedAt: new Date().toISOString(), intensity, startWeek, weeks: Math.min(weeks, maxWeeks), skipped: {}, personal: personal && !!assessment }); toast(personal && assessment ? "Your personal study plan has started" : "Intensive Study Plan started"); }
   async function setOverride(skill: Skill, p: Priority | "auto") {
     const next = { ...overrides }; if (p === "auto") delete next[skill]; else next[skill] = p;
     await store.updateProfile({ preferences: { ...(profile?.preferences ?? {}), priorities: next } });
@@ -107,16 +111,26 @@ export default function PlanPage() {
         <div className="grid gap-6 lg:grid-cols-[1.4fr_1fr]" data-testid="plan-intro">
           <section className="card p-5 sm:p-6" aria-labelledby="h-method">
             <h2 id="h-method" className="text-lg font-bold">The QEVRANT method</h2>
-            <ul className="mt-3 space-y-3">{PRINCIPLES.map(([t, d]) => <li key={t}><p className="font-semibold">{t}</p><p className="text-[15px] text-muted">{d}</p></li>)}</ul>
+            <div className="mt-3 divide-y divide-line rounded-xl border border-line">{PRINCIPLES.map(([t, d]) => (
+              <details key={t} className="group px-4 py-2.5"><summary className="flex cursor-pointer list-none items-center justify-between gap-2 font-semibold">{t}<ChevronDown size={16} className="shrink-0 text-muted transition-transform group-open:rotate-180" aria-hidden="true" /></summary><p className="mt-1.5 text-[15px] text-muted">{d}</p></details>
+            ))}</div>
             <p className="mt-4 rounded-xl bg-surface-2 px-4 py-3 text-sm text-muted">The plan combines learning principles that are widely discussed in educational research; it has not itself been tested in a controlled study, and results depend on regular, active use.</p>
           </section>
           <section className="card p-5 sm:p-6" aria-labelledby="h-start">
             <h2 id="h-start" className="text-lg font-bold">Start the plan</h2>
-            <p className="mt-1 text-sm text-muted">42 days: six themed study days and one review-and-assessment day each week. Self-paced: a new day opens when you finish the previous one.</p>
-            <fieldset className="mt-4"><legend className="text-sm font-semibold">Where to start</legend>
-              <div className="mt-2 grid gap-2">
-                {([[1, "Week 1 (B2)", "Tense, aspect and precision first"], [3, "Week 3 (B2+/C1)", "If your B2 grammar is already secure"]] as const).map(([v, l, h]) => (
-                  <label key={v} className={clsx("flex cursor-pointer items-start gap-3 rounded-xl border p-3", startWeek === v ? "border-primary bg-primary-soft" : "border-line")}><input type="radio" name="sw" className="mt-1" checked={startWeek === v} onChange={() => setStartWeek(v)} /><span><span className="block font-semibold">{l}</span><span className="text-sm text-muted">{h}</span></span></label>
+            <p className="mt-1 text-sm text-muted">Each week has six themed study days and one review day. Self-paced: a new day opens when you finish the previous one.</p>
+            <fieldset className="mt-4"><legend className="text-sm font-semibold">Your starting level</legend>
+              <div className="mt-2 grid grid-cols-4 gap-2" data-testid="plan-level">
+                {(["B2", "B2+", "C1", "C2"] as const).map((l) => (
+                  <label key={l} className={clsx("flex cursor-pointer items-center justify-center gap-2 rounded-xl border p-2.5 font-semibold", startLevel === l ? "border-primary bg-primary-soft text-primary" : "border-line")}><input type="radio" name="lvl" className="sr-only" checked={startLevel === l} onChange={() => setStartLevel(l)} />{l}</label>
+                ))}
+              </div>
+              <p className="mt-1.5 text-xs text-muted">Starts at week {startWeek} of the programme. A self-estimate; the plan adapts to your results.</p>
+            </fieldset>
+            <fieldset className="mt-4"><legend className="text-sm font-semibold">Duration</legend>
+              <div className="mt-2 flex flex-wrap gap-2" data-testid="plan-duration">
+                {Array.from({ length: maxWeeks }, (_, i) => i + 1).map((w) => (
+                  <label key={w} className={clsx("cursor-pointer rounded-xl border px-3 py-2 text-sm font-semibold", Math.min(weeks, maxWeeks) === w ? "border-primary bg-primary-soft text-primary" : "border-line")}><input type="radio" name="dur" className="sr-only" checked={Math.min(weeks, maxWeeks) === w} onChange={() => setWeeks(w)} />{w} {w === 1 ? "week" : "weeks"}</label>
                 ))}
               </div>
             </fieldset>
@@ -138,13 +152,10 @@ export default function PlanPage() {
           </section>
           <div className="lg:col-span-2"><PrioritiesCard priorities={priorities} hasAssessment={!!assessment} onOverride={setOverride} /></div>
           <section className="card p-5 sm:p-6 lg:col-span-2" aria-labelledby="h-weeks">
-            <h2 id="h-weeks" className="text-lg font-bold">The six weeks</h2>
-            <ol className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {WEEK_TITLES.map((t, i) => (
-                <li key={t} className="rounded-xl border border-line p-3"><p className="eyebrow">Week {i + 1}</p><p className="font-semibold">{t}</p>
-                  <p className="mt-1 text-sm text-muted">{PROGRAMME.filter((d) => d.week === i + 1 && d.kind === "study").map((d) => d.title).join(" · ")}</p></li>
-              ))}
-            </ol>
+            <h2 id="h-weeks" className="text-lg font-bold">Week by week</h2>
+            <div className="mt-3 divide-y divide-line rounded-xl border border-line" data-testid="plan-weeks">
+              {WEEK_TITLES.map((t, i) => <WeekAccordion key={t} n={i + 1} title={t} />)}
+            </div>
           </section>
         </div>
       ) : prog && (
@@ -234,21 +245,56 @@ function PrioritiesCard({ priorities, hasAssessment, onOverride, compact = false
             </ul>
           )}
           <div className="mt-4">
-            {!editing ? <button type="button" className="btn btn-ghost !min-h-9 !px-3 text-sm" onClick={() => setEditing(true)}><UserRound size={14} aria-hidden="true" /> {hasAssessment ? "Edit my self-assessment" : "Take the self-assessment"}</button>
+            {!editing ? <button type="button" className="btn btn-primary" onClick={() => setEditing(true)} data-testid="edit-assessment"><UserRound size={14} aria-hidden="true" /> {hasAssessment ? "Edit my self-assessment" : "Take the self-assessment"}</button>
               : <div className="rounded-xl border border-line p-4"><LearningProfileForm submitLabel="Save and update my priorities" onDone={() => setEditing(false)} /></div>}
           </div>
           <details className="mt-4 rounded-xl bg-surface-2 px-4 py-3 text-sm">
             <summary className="cursor-pointer font-semibold">How personalisation works</summary>
             <ul className="mt-2 list-disc space-y-1 pl-5 text-muted">
-              <li>Each area gets a need score from your confidence rating (1–5). Areas you chose to improve get extra weight.</li>
+              <li>Each area gets a need score from your rating (1–5): 1–2 start as high priority, 3 as medium, 4–5 as maintenance.</li>
               <li>Once there is enough evidence (for example 15 grammar answers, 15 flashcard reviews, 2 listening logs or 2 assessed essays in the last 30 days), your results count for 60% and your self-rating for 40%.</li>
               <li>High priority (at most two areas): the block is required every day, gets a little more time, and an extra focus block uses the same day&apos;s theme and grammar.</li>
               <li>Maintenance: the area stays in the plan, shorter or every other day, so it is revised regularly. Nothing is ever removed.</li>
-              <li>A priority you set yourself always wins. The standard plan stays available at any time.</li>
+              <li>A priority you set yourself always wins: editing your self-assessment never overwrites it. The standard plan stays available at any time.</li>
             </ul>
           </details>
         </div>
       )}
     </section>
+  );
+}
+
+const SKILL_ROWS: [string, (d: PlanDay) => string][] = [
+  ["Grammar", (d) => (Array.isArray(d.grammar) ? d.grammar : [d.grammar]).map((g) => getLesson(g)?.title ?? g).join(", ")],
+  ["Vocabulary", (d) => getTheme(d.theme)?.title ?? d.theme],
+  ["Reading", (d) => getReading(d.reading)?.title ?? d.reading],
+  ["Listening", (d) => d.listening.replace(/-/g, " ")],
+  ["Writing", (d) => (d.writing.kind === "essay" ? getWritingPrompt(d.writing.slug)?.title ?? "Essay" : "Visual data description")],
+  ["Speaking", (d) => d.speaking.replace(/-/g, " ")],
+];
+
+/** One programme week: its objectives and, per day, what each skill covers. */
+function WeekAccordion({ n, title }: { n: number; title: string }) {
+  const days = PROGRAMME.filter((d) => d.week === n && d.kind === "study");
+  return (
+    <details className="group px-4 py-3">
+      <summary className="flex cursor-pointer list-none items-center gap-3">
+        <span className="eyebrow w-16 shrink-0">Week {n}</span>
+        <span className="flex-1 font-semibold">{title}</span>
+        <span className="hidden text-xs text-muted sm:inline">{[...new Set(days.map((d) => d.level))].join(" → ")}</span>
+        <ChevronDown size={16} className="shrink-0 text-muted transition-transform group-open:rotate-180" aria-hidden="true" />
+      </summary>
+      <ol className="mt-3 space-y-3">
+        {days.map((d) => (
+          <li key={d.n} className="rounded-xl bg-surface-2 p-3">
+            <p className="flex flex-wrap items-center gap-2"><span className="text-sm text-muted">Day {d.n}</span><span className="font-semibold">{d.title}</span><LevelBadge level={d.level} /></p>
+            <p className="mt-0.5 text-sm">{d.objective}</p>
+            <dl className="mt-2 grid gap-x-4 gap-y-0.5 text-[13px] sm:grid-cols-2">
+              {SKILL_ROWS.map(([k, f]) => { const v = f(d); return v ? <div key={k} className="flex gap-2"><dt className="w-20 shrink-0 text-muted">{k}</dt><dd className="min-w-0">{v}</dd></div> : null; })}
+            </dl>
+          </li>
+        ))}
+      </ol>
+    </details>
   );
 }

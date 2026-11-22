@@ -99,8 +99,7 @@ test("new learner: onboard, study, answer, review the rule, save from text, revi
   await expect(page.getByTestId("library-list")).toContainText("setback");
   await expect(page.getByTestId("library-list")).toContainText("setbacks build character");
   await page.goto("/dashboard");
-  await expect(page.getByTestId("saved-count")).toContainText("1");
-  await expect(page.getByTestId("due-count")).toContainText("1");
+  await expect(page.getByTestId("weekly-skill-progress")).toBeVisible(); // real completed work, Monday to Sunday
   await expect(page.getByTestId("streak")).toContainText("1 day");
   await expect(page.getByTestId("continue-card")).toContainText("Is failure the best teacher?"); // continue learning
   await expect(page.getByTestId("recently-studied")).toContainText("Is failure the best teacher?");
@@ -112,7 +111,7 @@ test("new learner: onboard, study, answer, review the rule, save from text, revi
   await page.getByRole("button", { name: /^Good/ }).click();
   await expect(page.getByText("Session complete")).toBeVisible();
   await page.goto("/dashboard");
-  await expect(page.getByTestId("due-count")).toContainText("0");
+  await expect(page.getByTestId("weekly-skill-progress").getByRole("cell", { name: /Vocabulary, \w+: [1-9]\d* done/ })).toBeVisible();
 
   // Progress page shows the attempt
   await page.goto("/progress");
@@ -165,7 +164,7 @@ test("academic essay gets AI practice feedback linked to grammar lessons", async
   await fb.getByRole("link", { name: /Review the rule: Form/ }).click();
   await expect(page).toHaveURL(/\/grammar\/relative-clauses#form$/);
   await page.goto("/dashboard");
-  await expect(page.getByText("Learning from failure")).toBeVisible();
+  await expect(page.getByTestId("weekly-skill-progress").getByRole("cell", { name: /Academic Writing, \w+: 1 done/ })).toBeVisible();
 });
 
 test("writing portfolio: versions, comparison and recurring mistakes", async ({ page }) => {

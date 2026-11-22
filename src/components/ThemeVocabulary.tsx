@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import clsx from "clsx";
-import { Search } from "lucide-react";
 import { LEVELS, type Level } from "@/lib/content/schema";
 import { LEX_CLASSES } from "@/lib/lexclass";
 import { LevelBadge, Rich, EmptyState } from "./ui";
@@ -26,7 +25,6 @@ export function ThemeVocabulary({ entries, families, distinctions }: {
 }) {
   const [tab, setTab] = useState<string>("all");
   const [levels, setLevels] = useState<Level[]>([]);
-  const [q, setQ] = useState("");
 
   const counts = useMemo(() => {
     const c: Record<string, number> = { all: entries.length, academic: entries.filter((e) => e.academic).length, formation: families.length, distinctions: distinctions.length + entries.filter((e) => e.synonyms.length).length };
@@ -35,13 +33,11 @@ export function ThemeVocabulary({ entries, families, distinctions }: {
   }, [entries, families, distinctions]);
 
   const shown = useMemo(() => {
-    const term = q.trim().toLowerCase();
     return entries.filter((e) =>
       (tab === "all" || tab === "distinctions" || (tab === "academic" ? e.academic : e.lexClass === tab))
       && (tab !== "distinctions" || e.synonyms.length > 0)
-      && (!levels.length || levels.includes(e.level))
-      && (!term || `${e.lemma} ${e.definition} ${e.ru} ${e.synonyms.join(" ")} ${e.collocations.join(" ")}`.toLowerCase().includes(term)));
-  }, [entries, tab, levels, q]);
+      && (!levels.length || levels.includes(e.level)));
+  }, [entries, tab, levels]);
 
   const bySubtopic = useMemo(() => {
     const m = new Map<string, ThemeEntry[]>();
@@ -64,11 +60,6 @@ export function ThemeVocabulary({ entries, families, distinctions }: {
 
       {tab !== "formation" && (
         <div className="mb-5 flex flex-wrap items-center gap-3">
-          <label className="relative min-w-[220px] flex-1">
-            <span className="sr-only">Search this theme</span>
-            <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted" aria-hidden="true" />
-            <input className="input !pl-9" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search in English or Russian" />
-          </label>
           <div className="flex items-center gap-1.5" role="group" aria-label="Filter by CEFR level">
             <span className="text-sm text-muted">CEFR:</span>
             {LEVELS.map((l) => (
@@ -104,7 +95,7 @@ export function ThemeVocabulary({ entries, families, distinctions }: {
               <h2 className="mb-3 mt-8 text-lg font-bold">Synonyms</h2>
             </section>
           )}
-          {shown.length === 0 ? <EmptyState title="Nothing matches" body="Try another level or search term." /> : (
+          {shown.length === 0 ? <EmptyState title="Nothing matches" body="Try another level." /> : (
             <div className="space-y-6" data-testid="theme-entries">
               {bySubtopic.map(([sub, list]) => (
                 <section key={sub} aria-label={sub}>

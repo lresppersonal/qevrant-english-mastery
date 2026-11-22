@@ -290,7 +290,7 @@ test.describe("cookie consent", () => {
 
     // optional "preferences" storage is not written without consent
     await page.goto("/grammar/relative-clauses");
-    await page.getByRole("button", { name: /Show all parts/ }).click();
+    await expect(page.getByTestId("continue-recognise")).toBeVisible(); // the whole theory is on one page
     expect(await page.evaluate(() => localStorage.getItem("em-lesson-view"))).toBeNull();
 
     // the choice can be changed later, separately from the microphone

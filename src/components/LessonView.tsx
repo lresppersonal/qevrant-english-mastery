@@ -119,7 +119,7 @@ function Lesson({ lesson, cycle, tasks = [], stage, parent }: Props & { stage: G
 
       {GRAMMAR_STAGES.filter((k) => visited.has(k)).map((k) => (
         <div key={k} hidden={k !== stage} className={k === stage ? "stage-enter" : undefined} data-stage={k}>
-          {k === "understand" && <Theory lesson={lesson} linkCtx={linkCtx} />}
+          {k === "understand" && <Theory lesson={lesson} linkCtx={linkCtx} onContinue={() => goStage("recognise")} />}
           {k === "recognise" && <RecogniseStage lesson={lesson} readings={info.readings} linkCtx={linkCtx} onNext={() => goStage("practise")} />}
           {k === "practise" && <PractiseStage lesson={lesson} onTheory={() => goStage("understand")} />}
           {k === "produce" && <ProduceStage lesson={lesson} tasks={tasks} linkCtx={linkCtx} onNext={() => goStage("feedback")} />}
@@ -130,19 +130,19 @@ function Lesson({ lesson, cycle, tasks = [], stage, parent }: Props & { stage: G
 
       <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-line pt-5">
         {idx > 0 ? <button type="button" className="btn btn-ghost" onClick={() => goStage(GRAMMAR_STAGES[idx - 1])}><ArrowLeft size={16} aria-hidden="true" /> {stages[idx - 1].label}</button> : <span />}
-        {next && <button type="button" className="btn btn-primary" onClick={() => goStage(next)} data-testid="next-stage">Next stage: {stages[idx + 1].label} <ArrowRight size={16} aria-hidden="true" /></button>}
+        {next && stage !== "understand" && <button type="button" className="btn btn-primary" onClick={() => goStage(next)} data-testid="next-stage">Next stage: {stages[idx + 1].label} <ArrowRight size={16} aria-hidden="true" /></button>}
       </div>
     </article>
   );
 }
 
 /** Understand: the theory, one part at a time (or all), with a compact index on the right. */
-function Theory({ lesson, linkCtx }: { lesson: GrammarLesson; linkCtx: NavContext }) {
+function Theory({ lesson, linkCtx, onContinue }: { lesson: GrammarLesson; linkCtx: NavContext; onContinue: () => void }) {
   const { store, ready } = useLearner();
   const seen = useRef(new Set<string>());
   const parts = buildParts(lesson);
   const [active, setActive] = useState(parts[0]?.key ?? "A");
-  const [showAll, setShowAll] = useState(false);
+  const showAll = true; // the full theory is one page, read in order A–H
   const [menuOpen, setMenuOpen] = useState(false);
   const topRef = useRef<HTMLDivElement>(null);
   const idx = Math.max(0, parts.findIndex((p) => p.key === active));
@@ -150,8 +150,6 @@ function Theory({ lesson, linkCtx }: { lesson: GrammarLesson; linkCtx: NavContex
   // Parts are lettered in sequence for this lesson (a lesson without, say, a separate examples part has no gap).
   const letter = (key: string) => String.fromCharCode(65 + Math.max(0, parts.findIndex((p) => p.key === key)));
 
-  useEffect(() => { try { setShowAll(localStorage.getItem("em-lesson-view") === "all"); } catch { /* storage unavailable */ } }, []);
-  const toggleAll = () => { const v = !showAll; setShowAll(v); if (allowed("preferences")) { try { localStorage.setItem("em-lesson-view", v ? "all" : "parts"); } catch { /* ignore */ } } };
 
   const go = (key: string, focusId?: string) => {
     setActive(key);
@@ -167,7 +165,7 @@ function Theory({ lesson, linkCtx }: { lesson: GrammarLesson; linkCtx: NavContex
   useEffect(() => {
     const apply = () => {
       const h = decodeURIComponent(location.hash.split("#").pop() ?? "");
-      const pk = h.match(/^part-([A-I])$/)?.[1];
+      const pk = h.match(/^part-([A-H])$/)?.[1];
       if (pk && parts.some((p) => p.key === pk)) return go(pk);
       const owner = parts.find((p) => p.sections.some((s) => s.id === h));
       if (owner) go(owner.key, h);
@@ -211,8 +209,8 @@ function Theory({ lesson, linkCtx }: { lesson: GrammarLesson; linkCtx: NavContex
           <Blocks blocks={s.blocks} />
         </section>
       ))}
-      {p.key === "I" && <QuickCheck lesson={lesson} />}
-      {p.key === "I" && lesson.links.length > 0 && <WhereThisFits lesson={lesson} linkCtx={linkCtx} />}
+      {p.key === "H" && <QuickCheck lesson={lesson} />}
+      {p.key === "H" && lesson.links.length > 0 && <WhereThisFits lesson={lesson} linkCtx={linkCtx} />}
     </div>
   );
 
@@ -232,11 +230,8 @@ function Theory({ lesson, linkCtx }: { lesson: GrammarLesson; linkCtx: NavContex
       })}
     </ol>
   );
-  const viewToggle = (
-    <button type="button" onClick={toggleAll} className="mt-2 flex min-h-10 items-center gap-1.5 rounded-lg px-2.5 text-[13px] font-medium text-muted hover:text-ink" aria-pressed={showAll}>
-      {showAll ? <><Rows3 size={14} aria-hidden="true" /> One part at a time</> : <><ListTree size={14} aria-hidden="true" /> Show all parts</>}
-    </button>
-  );
+  const viewToggle = null;
+
 
   return (
     <div className="xl:grid xl:grid-cols-[minmax(0,1fr)_12.5rem] xl:gap-10" data-testid="theory">
@@ -251,15 +246,12 @@ function Theory({ lesson, linkCtx }: { lesson: GrammarLesson; linkCtx: NavContex
           {menuOpen && <nav id="lesson-index-compact" aria-label="Lesson parts" className="fade-up mt-2 rounded-xl border border-line bg-surface p-2">{index}{viewToggle}</nav>}
         </div>
         <div ref={topRef} className="scroll-mt-24" />
-        {showAll ? <div className="space-y-12">{parts.map(renderPart)}</div> : part && (
-          <div key={part.key} className="stage-enter">
-            {renderPart(part)}
-            <div className="mt-8 flex flex-wrap items-center justify-between gap-3">
-              {idx > 0 ? <button type="button" className="btn btn-ghost" onClick={() => go(parts[idx - 1].key)}><ArrowLeft size={16} aria-hidden="true" /> {letter(parts[idx - 1].key)}. {parts[idx - 1].title}</button> : <span />}
-              {idx < parts.length - 1 && <button type="button" className="btn btn-ghost" onClick={() => go(parts[idx + 1].key)}>{letter(parts[idx + 1].key)}. {parts[idx + 1].title} <ArrowRight size={16} aria-hidden="true" /></button>}
-            </div>
-          </div>
-        )}
+        <div className="space-y-12">{parts.map(renderPart)}</div>
+        <div className="mt-10 rounded-2xl border border-primary/30 bg-primary-soft p-5 text-center sm:p-6">
+          <p className="font-semibold">Finished the theory?</p>
+          <p className="mt-1 text-sm text-muted">Next, find the structure in a real passage.</p>
+          <button type="button" className="btn btn-primary mt-4" onClick={onContinue} data-testid="continue-recognise">Continue to Recognise <ArrowRight size={16} aria-hidden="true" /></button>
+        </div>
       </div>
       {/* Wide screens: a quiet, sticky reference index on the right */}
       <aside className="hidden xl:block" aria-label="Lesson parts">

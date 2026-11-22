@@ -1,4 +1,5 @@
 "use client";
+import { BackLink } from "./NavMemory";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
@@ -52,6 +53,7 @@ export function TopicHub(props: {
 
   return (
     <>
+      <BackLink href={`/vocabulary/topics/${props.theme.slug}`} label={`${props.theme.title} vocabulary`} />
       <PageHeader eyebrow={`Topic · ${props.theme.group}`} title={props.theme.title} intro={props.theme.summary} />
       <div className="scroll-row mb-6" role="group" aria-label="Filter by level">
         {(["all", ...LEVELS] as const).map((l) => (

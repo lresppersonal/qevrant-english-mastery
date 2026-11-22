@@ -2,20 +2,22 @@
 import Link from "next/link";
 import { useMemo } from "react";
 import clsx from "clsx";
-import { ArrowRight, RotateCcw, Bookmark, PenLine, Mic, Target, CheckCircle2, Clock, Compass, TrendingDown, Repeat, Sparkles, BookOpen, Newspaper, Trophy, History } from "lucide-react";
+import { ArrowRight, Target, CheckCircle2, Clock, Compass, TrendingDown, Sparkles, BookOpen, Newspaper, Trophy, History } from "lucide-react";
 import { useLearner, dailyGoalOf } from "@/components/StoreProvider";
 import { useLearnerData } from "@/components/useLearnerData";
-import { daysThisWeek } from "@/lib/progress";
-import { getSpeakingPrompt, getLesson, getReading, getExercise } from "@/lib/content";
+import { getLesson, getReading, getExercise } from "@/lib/content";
 import { streakState } from "@/lib/streak";
-import { writingTitle, writingHref } from "@/lib/writing-task";
 import { FlameGoal, TIER_LABEL } from "@/components/StreakFlame";
 
 import { todaysPlan, cycleInfo, type LearnerSnapshot } from "@/lib/learning";
 import { LevelBadge } from "@/components/ui";
-import { CountUp, Ring } from "@/components/Motion";
+import { CountUp } from "@/components/Motion";
 import { InstallBanner } from "@/components/PwaSupport";
 import { LearningCycle } from "@/components/LearningCycle";
+import { WeeklySkillProgress } from "@/components/WeeklySkillProgress";
+import { weeklySkillGrid } from "@/lib/weekly";
+import { readPlan, planProgress } from "@/lib/plan/engine";
+import { computePriorities, readAssessment, readOverrides } from "@/lib/plan/personal";
 
 const STAGE_STYLE: Record<string, string> = {
   Understand: "text-primary border-primary/40", Recognise: "text-primary border-primary/40", Practise: "text-accent-text border-accent/60",
@@ -32,20 +34,24 @@ export default function Dashboard() {
     return todaysPlan(snap);
   }, [data, profile, saved]);
 
+  const planSettings = readPlan(profile);
+  const grid = useMemo(() => {
+    if (!data) return null;
+    const pd = { ...data, saved };
+    const days = planSettings ? planProgress(planSettings, pd, computePriorities(readAssessment(profile), data, readOverrides(profile))).days : null;
+    return weeklySkillGrid(data.events, days);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [data, saved, profile]);
+
   if (error) return <p role="alert" className="text-danger">Couldn't load your progress: {error}</p>;
-  if (!data || !profile || !plan) return <DashboardSkeleton />;
+  if (!data || !profile || !plan || !grid) return <DashboardSkeleton />;
 
   // Live state from the provider (updates after every activity); computed here as a fallback while it loads.
   const st = live ?? streakState(data.events, dailyGoalOf(profile));
   const streak = st.streak;
   const recent = recentlyStudied(data.events);
-  const week = daysThisWeek(data.events);
   const name = profile.displayName?.split(" ")[0];
   const minutes = plan.tasks.filter((t) => !t.done).reduce((n, t) => n + t.minutes, 0);
-  const recentFeedback = [
-    ...data.writing.filter((w) => w.status !== "failed").map((w) => ({ kind: "writing" as const, at: w.createdAt, title: writingTitle(w.promptSlug), href: writingHref(w.promptSlug) })),
-    ...data.speaking.map((s) => ({ kind: "speaking" as const, at: s.createdAt, title: getSpeakingPrompt(s.promptSlug)?.title ?? "Speaking studio", href: s.promptSlug.startsWith("bank:") ? "/speaking" : `/speaking/${s.promptSlug}` })),
-  ].sort((a, b) => b.at.localeCompare(a.at)).slice(0, 3);
   const hour = new Date().getHours();
   const greeting = hour < 12 ? "Good morning" : hour < 18 ? "Good afternoon" : "Good evening";
 
@@ -156,20 +162,7 @@ export default function Dashboard() {
       </section>
       </div>
 
-      <div className="mt-6 grid gap-4 lg:grid-cols-3">
-        {/* 2. What should I revise? */}
-        <section className="card enter p-5" style={{ ["--i" as string]: 3 }} aria-labelledby="h-revise">
-          <h2 id="h-revise" className="flex items-center gap-2 text-lg font-bold"><Repeat size={18} aria-hidden="true" /> Revise</h2>
-          <ul className="mt-3 space-y-2 text-[15px]">
-            <li><Link href="/review" className="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 hover:bg-surface-2" data-testid="due-count"><span>Words due</span><strong className="font-display text-xl"><CountUp value={plan.revise.dueWords} /></strong></Link></li>
-            <li><Link href="/practice/smart?mode=mistakes" className="flex items-center justify-between gap-2 rounded-lg px-2 py-1.5 hover:bg-surface-2" data-testid="mistake-count"><span>Questions to retry</span><strong className="font-display text-xl"><CountUp value={plan.revise.mistakes} /></strong></Link></li>
-            {plan.revise.fading.slice(0, 2).map((f) => (
-              <li key={f.slug}><Link href={`/practice/smart?lesson=${f.slug}`} className="block rounded-lg px-2 py-1.5 text-sm hover:bg-surface-2">Refresh <strong>{f.title}</strong> <span className="text-muted">· last practised {f.days} days ago</span></Link></li>
-            ))}
-          </ul>
-          {plan.revise.dueWords + plan.revise.mistakes === 0 && plan.revise.fading.length === 0 && <p className="mt-2 text-sm text-muted">Nothing to revise right now. Save words while reading to build your review deck.</p>}
-        </section>
-
+      <div className="mt-6 grid gap-4 lg:grid-cols-2">
         {/* 3. What are my weakest areas? */}
         <section className="card enter p-5" style={{ ["--i" as string]: 4 }} aria-labelledby="h-weak" data-testid="weak-areas">
           <h2 id="h-weak" className="flex items-center gap-2 text-lg font-bold"><TrendingDown size={18} aria-hidden="true" /> Weakest areas</h2>
@@ -200,26 +193,8 @@ export default function Dashboard() {
         </section>
       </div>
 
-      <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <Link href="/progress" className="card card-link enter flex items-center gap-4 p-5" style={{ ["--i" as string]: 6 }}>
-          <Sparkles size={26} className="text-primary" aria-hidden="true" />
-          <div><p className="text-sm font-medium text-muted">Activities today</p><p className="font-display text-2xl font-extrabold"><CountUp value={st.today} /></p></div>
-        </Link>
-        <div className="card enter flex items-center gap-4 p-5" style={{ ["--i" as string]: 7 }}>
-          <Ring value={week / profile.weeklyGoalDays} size={56} stroke={6} label="Weekly goal"><span className="text-xs font-bold">{week}/{profile.weeklyGoalDays}</span></Ring>
-          <div><p className="text-sm font-medium text-muted">This week</p><p className="text-sm">{week >= profile.weeklyGoalDays ? "Goal reached — well done" : `${profile.weeklyGoalDays - week} more study day${profile.weeklyGoalDays - week === 1 ? "" : "s"} to your goal`}</p></div>
-        </div>
-        <Link href="/library" className="card card-link enter flex items-center gap-4 p-5" style={{ ["--i" as string]: 8 }} data-testid="saved-count">
-          <Bookmark size={26} className="text-primary" aria-hidden="true" />
-          <div><p className="text-sm font-medium text-muted">Personal Vocabulary</p><p className="font-display text-2xl font-extrabold"><CountUp value={saved.filter((s) => s.itemType !== "lesson_section").length} /></p></div>
-        </Link>
-        <Link href="/progress" className="card card-link enter flex items-center gap-4 p-5" style={{ ["--i" as string]: 9 }}>
-          <RotateCcw size={26} className="text-primary" aria-hidden="true" />
-          <div><p className="text-sm font-medium text-muted">Exercises completed</p><p className="font-display text-2xl font-extrabold"><CountUp value={data.attempts.length} /></p></div>
-        </Link>
-      </div>
-
       <div className="mt-6 grid gap-4 lg:grid-cols-3">
+        <div className="lg:col-span-2"><WeeklySkillProgress grid={grid} hasPlan={!!planSettings} /></div>
         <section className="card enter p-5" style={{ ["--i" as string]: 10 }} aria-labelledby="h-studied" data-testid="recently-studied">
           <h2 id="h-studied" className="flex items-center gap-2 text-lg font-bold"><History size={18} aria-hidden="true" /> Recently studied</h2>
           {recent.length === 0 ? <p className="mt-2 text-sm text-muted">Lessons, texts and exercises you open will appear here.</p> : (
@@ -229,29 +204,6 @@ export default function Dashboard() {
                   <r.icon size={16} className="shrink-0 text-muted" aria-hidden="true" />
                   <span className="min-w-0 flex-1 truncate font-medium">{r.title}</span>
                   <span className="shrink-0 text-xs text-muted">{ago(r.at)}</span>
-                </Link></li>
-              ))}
-            </ul>
-          )}
-        </section>
-        <section className="card enter p-5" style={{ ["--i" as string]: 11 }} aria-labelledby="h-practice">
-          <h2 id="h-practice" className="text-lg font-bold">Use your English</h2>
-          <p className="mt-1 text-sm text-muted">Produce language and get AI feedback that explains how to improve your own sentences.</p>
-          <div className="mt-4 flex flex-wrap gap-2">
-            <Link href="/writing" className="btn btn-ghost"><PenLine size={16} aria-hidden="true" /> Write an essay</Link>
-            <Link href="/speaking" className="btn btn-ghost"><Mic size={16} aria-hidden="true" /> Speak</Link>
-            <Link href="/practice/smart?mode=mixed" className="btn btn-ghost"><Target size={16} aria-hidden="true" /> Mixed grammar review</Link>
-          </div>
-        </section>
-        <section className="card enter p-5" style={{ ["--i" as string]: 12 }} aria-labelledby="h-recent">
-          <h2 id="h-recent" className="text-lg font-bold">Recent feedback</h2>
-          {recentFeedback.length === 0 ? <p className="mt-2 text-sm text-muted">Your essays and speaking attempts will appear here.</p> : (
-            <ul className="mt-2 divide-y divide-line">
-              {recentFeedback.map((r) => (
-                <li key={r.at}><Link href={r.href} className="flex items-center gap-3 py-2.5 transition-colors hover:text-primary">
-                  {r.kind === "writing" ? <PenLine size={16} aria-hidden="true" /> : <Mic size={16} aria-hidden="true" />}
-                  <span className="flex-1 font-medium">{r.title}</span>
-                  <span className="text-xs text-muted">{new Date(r.at).toLocaleDateString()}</span>
                 </Link></li>
               ))}
             </ul>

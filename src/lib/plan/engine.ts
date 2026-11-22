@@ -14,11 +14,16 @@ import { THEME_LISTENING } from "../listening";
  * A day begins when the previous day was completed (or skipped), so the plan is self-paced. The only
  * stored state is the enrolment itself and any days the learner chose to skip.
  */
-export interface PlanSettings { startedAt: string; intensity: "full" | "focused"; startWeek: 1 | 3; skipped: Record<string, string>; personal: boolean }
+export interface PlanSettings { startedAt: string; intensity: "full" | "focused"; startWeek: number; weeks?: number; skipped: Record<string, string>; personal: boolean }
 export const readPlan = (p: Profile | null): PlanSettings | null => {
   const raw = (p?.preferences as { intensive?: Partial<PlanSettings> } | undefined)?.intensive;
-  return raw && typeof raw.startedAt === "string" ? { startedAt: raw.startedAt, intensity: raw.intensity ?? "full", startWeek: raw.startWeek ?? 1, skipped: raw.skipped ?? {}, personal: raw.personal !== false } : null;
+  return raw && typeof raw.startedAt === "string" ? { startedAt: raw.startedAt, intensity: raw.intensity ?? "full", startWeek: Math.min(6, Math.max(1, Number(raw.startWeek) || 1)), weeks: raw.weeks, skipped: raw.skipped ?? {}, personal: raw.personal !== false } : null;
 };
+
+/** CEFR starting level → first programme week (the programme climbs from B2 in week 1 to C1–C2 in week 6). */
+export const START_WEEK: Record<"B2" | "B2+" | "C1" | "C2", number> = { B2: 1, "B2+": 3, C1: 4, C2: 5 };
+/** Weeks the learner chose, limited to what remains of the six-week programme. */
+export const planWeeks = (s: Pick<PlanSettings, "startWeek" | "weeks">) => Math.max(1, Math.min(7 - s.startWeek, s.weeks ?? 7 - s.startWeek));
 
 export interface PlanData {
   events: ActivityEvent[]; attempts: Attempt[]; responses: ResponseRow[]; cards: ReviewCardRow[];
@@ -190,9 +195,10 @@ export function planProgress(s: PlanSettings, data: PlanData, priorities?: Skill
   const shape = (d: PlanDay, start: string) => { const b = blocksFor(d, start, data, s); return s.personal && priorities ? personaliseDay(b, d, start, data, s, priorities) : b; };
   const days: DayView[] = [];
   let start: string | null = s.startedAt;
-  const first = s.startWeek === 3 ? 15 : 1;
+  const first = (s.startWeek - 1) * 7 + 1;
+  const last = first + planWeeks(s) * 7 - 1;
   for (const d of PROGRAMME) {
-    if (d.n < first) continue;
+    if (d.n < first || d.n > last) continue;
     if (!start) { days.push({ day: d, start: null, blocks: shape(d, "9999").map((b) => ({ ...b, doneAt: null, result: undefined })), status: "upcoming", completedAt: null, minutes: 0 }); continue; }
     const blocks = shape(d, start);
     const skipped = s.skipped[String(d.n)];

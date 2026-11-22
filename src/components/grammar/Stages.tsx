@@ -31,6 +31,7 @@ function useDraft(key: string, initial = "") {
 }
 
 /* ---------- Recognise ---------- */
+const REC_LABEL = { hit: "✓ Correct.", missed: "Missed.", wrong: "✗ Not this structure.", ok: "✓ Correctly left unselected." } as const;
 
 export function RecogniseStage({ lesson, readings, linkCtx, onNext }: { lesson: GrammarLesson; readings: { slug: string; title: string }[]; linkCtx: NavContext; onNext: () => void }) {
   const { store } = useLearner();
@@ -78,8 +79,13 @@ export function RecogniseStage({ lesson, readings, linkCtx, onNext }: { lesson: 
                     <span className={clsx("mt-1 grid h-5 w-5 shrink-0 place-items-center rounded-md border", on ? "border-primary bg-primary text-primary-fg" : "border-line")} aria-hidden="true">{on && <Check size={13} />}</span>
                     <span className="min-w-0 flex-1">
                       <Marked text={s.text} show={checked && s.has} />
-                      {checked && (state === "hit" || state === "missed") && s.note && <span className="mt-1 block text-[14.5px] text-muted">{state === "missed" ? "Missed: " : ""}{s.note}</span>}
-                      {checked && state === "wrong" && <span className="mt-1 block text-[14.5px] text-muted">This sentence does not use the structure.</span>}
+                      {checked && state && <span className="mt-1.5 block text-[14.5px]">
+                        <span className="mr-1.5 font-semibold">{REC_LABEL[state]}</span>
+                        <span className="text-muted">{state === "hit" || state === "missed"
+                          ? (s.note ?? `This sentence uses the structure from “${lesson.title}”.`) + (state === "missed" ? " Look for this form and its signal words when you reread." : "")
+                          : state === "wrong" ? (s.note ?? "It looks similar, but it does not use this structure: compare its form with Part C (Formation) and Part E (Comparison).")
+                          : null}</span>
+                      </span>}
                     </span>
                   </span>
                 </button>
@@ -91,6 +97,7 @@ export function RecogniseStage({ lesson, readings, linkCtx, onNext }: { lesson: 
           {!checked ? <button type="button" className="btn btn-primary" onClick={check} disabled={picked.size === 0}>Check my choices</button>
             : <>
               <p className="anim-pop font-semibold" role="status" data-testid="recognise-result">{right} of {rec.sentences.length} sentences identified correctly</p>
+              <p className="w-full text-sm text-muted">{right === rec.sentences.length ? "You recognise the form reliably. Practise will now ask you to choose and produce it." : "Read the note under each marked sentence. Mistakes here usually mean confusing this form with a similar one; Part E of the theory compares them."}</p>
               <button type="button" className="btn btn-ghost" onClick={reset}><RotateCcw size={15} aria-hidden="true" /> Try again</button>
               <button type="button" className="btn btn-primary" onClick={onNext}>Next: Practise <ArrowRight size={16} aria-hidden="true" /></button>
             </>}

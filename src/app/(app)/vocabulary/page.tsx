@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { themes, itemsInTheme, vocabItems, allSenses, LEVEL_ORDER } from "@/lib/content";
 import { PageHeader } from "@/components/ui";
-import { ArrowRight, Layers, TextQuote, Shuffle } from "lucide-react";
+import { ArrowRight, Layers, TextQuote, Shuffle, ChevronDown } from "lucide-react";
 
 export const metadata = { title: "Vocabulary" };
 
@@ -27,10 +27,13 @@ export default function Vocabulary() {
                     <Link href={`/vocabulary/topics/${t.slug}/practice`} className="btn btn-primary !min-h-8 shrink-0 !px-2.5 !py-1 text-xs" aria-label={`Practise ${t.title} with flashcards`}><Layers size={13} aria-hidden="true" /> Practice</Link>
                   </div>
                   <span className="mt-1 text-sm text-muted">{t.summary}</span>
-                  <span className="mt-3 text-sm font-semibold">{items.length} entries</span>
-                  <span className="mt-1 flex flex-wrap gap-x-3 text-xs text-muted" aria-label="Entries by CEFR level">
-                    {byLevel.filter(([, n]) => n).map(([l, n]) => <span key={l}>{l}: {n}</span>)}
-                  </span>
+                  <details className="group mt-3 text-sm">
+                    <summary className="flex cursor-pointer list-none items-center gap-1 font-semibold text-muted hover:text-ink">Topic stats <ChevronDown size={14} className="transition-transform group-open:rotate-180" aria-hidden="true" /></summary>
+                    <p className="mt-1">{items.length} entries</p>
+                    <p className="mt-0.5 flex flex-wrap gap-x-3 text-xs text-muted" aria-label="Entries by CEFR level">
+                      {byLevel.filter(([, n]) => n).map(([l, n]) => <span key={l}>{l}: {n}</span>)}
+                    </p>
+                  </details>
                   <span className="mt-3 flex flex-wrap gap-x-4 gap-y-1 border-t border-line pt-2.5 text-sm font-semibold">
                     <Link href={`/vocabulary/topics/${t.slug}`} className="inline-flex items-center gap-1 text-primary hover:underline">List <ArrowRight size={13} aria-hidden="true" /></Link>
                     <Link href={`/vocabulary/topics/${t.slug}/context`} className="inline-flex items-center gap-1 text-primary hover:underline"><TextQuote size={13} aria-hidden="true" /> In context</Link>

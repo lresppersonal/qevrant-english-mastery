@@ -11,7 +11,7 @@ describe("grammar lessons follow the teaching sequence", () => {
         expect(parts[0].key).toBe("A");
         expect(parts[0].sections[0].kind).toBe("core");
         expect(parts.map((p) => p.key).join("")).toBe([...parts.map((p) => p.key)].sort().join(""));
-        expect(parts.some((p) => p.key === "I")).toBe(true);
+        expect(parts.some((p) => p.key === "H")).toBe(true);
       });
       it("states mistakes as Incorrect → Correct → Why", () => {
         const rows = l.sections.filter((s) => s.kind === "errors").flatMap((s) => s.blocks).flatMap((b) => (b.type === "mistakes" ? b.rows : []));
